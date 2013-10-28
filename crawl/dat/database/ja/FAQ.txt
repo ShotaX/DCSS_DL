@@ -1,0 +1,451 @@
+########################################################
+# Frequently Asked Questions (FAQ.txt)
+########################################################
+# This file lists a number of Frequently Asked Questions and their
+# answers, and sometimes also questions we wish were asked more often.
+# :)
+#
+# Syntax is as follows:
+#  Q:key word, for the question
+#  A:key word, for the corresponding answer
+#
+# Questions are pushed into a menu in the order the questions are
+# defined in this file. Answers need not necessarily be right next to
+# the question, but it's easier to read if they are.
+#
+# There may be at most 52 questions, but it is recommended to keep the
+# number much lower than that.
+#
+# This file is not meant as an easy-access spoiler file, but rather
+# intended to answer general questions that crop up from time to time.
+#
+########################################################
+#
+# Translating txt -> html:
+#
+# * Use util/FAQ2html.pl to create the corresponding html file in the
+#   docs/ directory.
+# * All commands should be encased in single quotes, e.g. '?', which
+#   means they will be displayed in bold in the html. This will only
+#   work for commands that don't contain spaces.
+# * Emphasis using asterisks will be replaced with italics.
+# * Hyperlinks should begin with https:// and should never be directly
+#   followed by a dot (reorder the sentence, if need be), so they can be
+#   turned into properly clickable links.
+#
+T:html
+
+Dungeon Crawl Stone Soup - Frequently Asked Questions
+##############################################
+# Beginners' questions about playing the game.
+##############################################
+%%%%
+Q:goal
+
+このゲームの目的はなんですか?
+%%%%
+A:goal
+
+A: 生き残り、勝利することだ。それには迷宮の奥深くにある伝説のオーブを見つけ地上に戻す必要がある。オーブの存在するゾットの領域に侵入するには迷宮の分岐にあるゾットのルーンを3種集める必要がある。
+
+しかし、このゲームを始めたばかりならばそれに気に留める必要はない。様々な種族、スキル、信仰でできるだけ深層に行ったり、多くの分岐を楽しんでほしい。
+%%%%
+Q:userdir
+
+セーブファイル、資料室(morgue)、ダンプファイルが見つかりません！
+%%%%
+A:userdir
+
+あなたがオフライン(サーバーでなく)で遊んでいるならば、「chardump command("#")」は資料ファイルの場所の保存場所を表示する。この情報は起動画面の「ハイスコア」でも見ることができる。
+
+セーブファイルのディレクトリは資料室(morgue)と同じ場所で見つかります。
+
+あなたが保存場所を変更したいならばinitファイルの「morgue_dir」「save_dir」を書き換えてください。
+%%%%
+Q:drop
+
+アイテムの束の一部だけ落としたり/拾ったりできますか？
+%%%%
+A:drop
+
+A: 落とす/拾う時に、あなたは最初に望む数字を入力することでスタックの一部を選ぶことが出来る。そして次にアイテムを選ぶ。一部だけ選ばれたアイテムは「#」で表示される。
+
+あなたが一種のアイテムの束だけ拾いたいのであれば、「；」コマンドを使うことが出来る。それは数量の指定を求めてくるが指定しなければ「,」コマンドと同じように振る舞う。
+%%%%
+Q:roguelike difference
+
+他の有名なローグライクゲームとの違いはなんですか?
+%%%%
+A:roguelike difference
+
+A: まず、StoneSoupのゲームデザインの重要な原則のマニュアルを読んだかもしれない ('?N') 
+
+具体的な違いに関して、最も重要なものはたぶん以下だろう:
+
+* 種族は職業(または"クラス")より*重要*な要素だ 
+
+* 骨ファイルは彼らの装備やその死因を次のゲームに持ちこまない
+
+* あなたは店や他の場所でアイテムを売ることができない
+
+* 耐性は食事では無いく、突然変異、アイテムで得る
+
+* 祈りはアイテムや死体を神に捧げることに使用される。 神の能力は'a'bility コマンドで使用する。
+
+* 回避不能の死はあるが、間違いから学ぶならば新人プレイヤーでもスポイラー無しで勝利できる。優れたプレイヤーは連続して勝利できるだろう。
+
+また、我々の目的はCrawlに快適なインターフェイスを与える事であり, あなたはコマンドリスト ('??')を時々確認する必要がある。以下の命令は特に便利だ:
+
+* 'o', 探索が完了していない階層を自動探索する
+
+* 'G', 他の階層に自動移動する ('G?' for help)
+
+* 'X', 移動（と様々な他の目的）のために階層の地図を表示する ('X?')
+
+* 'Ctrl-F', 発見したアイテムを検索し、そこに移動する ('Ctrl-F?')
+
+* 'Tab', 近くのモンスターに接近し、自動で戦闘を行う。
+%%%%
+Q:survival
+
+どうすれば死を避けることができますか？予備知識が欲しいです
+%%%%
+A:survival
+
+A: あなたが寺院に到着するまでに戸惑っているならば、ヒントモードで遊ぶ必要があるかもしれない。
+
+また、種族と職業の組み合わせには、簡単な組み合わせとより挑戦的な難しい組み合わせがある (選択画面で灰色に表示されるもの)。あなたがCrawlに不慣れならば簡単な組み合わせを選ぶことが望ましい。通常あなたが初めて出会う怪物にはあなたの持つ最大の戦力を投入し戦う必要があるだろう。
+
+ヒントを得るために"#"コマンドでダンプを出力し、＠の溜り場Ⅱ(http://jbbs.livedoor.jp/game/9358/)でコメントを貰うのもいいだろう
+%%%%
+Q:downstairs
+
+下り階段を発見できません。何か見逃していますか？
+%%%%
+A:downstairs
+
+A: あなたが来た上階段からは下の階層に届かないのかもしれません。上の階に戻って他の下階段で降りてきてください。多くの階層が3つの上り階段と下り階段を持つことに注意するべきだ。これにはハッチは含まない。
+
+あなたが分岐の一つに居るならば、既に最深部に居る可能性があり、他の分岐に移動する必要があるかもしれない。ダンジョンの概要('Ctrl-O')もしくは他の分岐の階層を確認するためにdatabase('?/b')を確認せよ
+%%%%
+Q:stuck
+
+テレポートして行き止まりの部屋にたどり着きました。私は積みましたか？
+%%%%
+A:stuck
+
+A: 隠しドアのあった前のバージョンとは異なり、これは今のバージョンでは起こることはありません。もし起こったならばバグとして報告してください。
+
+If you're playing locally, be sure to upload your save file!
+
+If you're playing online console, you can create a copy of your save file for the developers to access by selecting the version you are playing and then pressing 'A' for Advanced options. Don't forget to include the server and your username in your bug report!
+
+いずれにせよ、あなたは掘削、分解、テレポートで脱出することが出来る。
+%%%%
+Q:starving
+
+私のキャラは飢え続けています。何か間違ったことをしていますか？
+%%%%
+A:starving
+
+A: 殆ど清掃された階層で多くの時間を過ごすことはあるだろう。あなたの種族は食べ物にうるさいかもしれない。あなたは草食でない限り汚染された肉も時節食べなければならない。あなたは死体を全て神に提供する前に、飢えの状況に気を配るべきだ。
+
+また、呪文詠唱はあなたを空腹にする。しかし高い知能とspellcastingはこの影響を少なくする。"II"を押すと飢えの影響についての情報を得られる。神の能力も同様に呪文と同様に満腹度を消費する子ことがある。
+%%%%
+Q:labyrinth
+
+私はラビリンスで動けず、出口を見つけることが出来ない。どうすれば脱出できますか?
+%%%%
+A:labyrinth
+
+A: ラビリンスから脱出するために以下の事を知っていると役に立つ事がある:
+
+* ラビリンスの外部の壁は岩でできており、出口に近づくにつれ石の壁、金属の壁に変化していく(出口のvaultの一部が金属の壁で無い事はある)
+
+* テレポートでは決して出口の近くには行けない。
+
+* 時々壁が再生成される。出口への道が閉ざされることは無いが、経路が変わることはある(これは左手の法則が完全に信用できないことを示す)
+
+出口は宝物とミノタウルスによって守られている。Don't let yourself get sidetracked by necromantic remnants of its ancestors.
+%%%%
+Q:cheating
+
+死ぬことのないチートモードはありますか？
+%%%%
+A:cheating
+
+A: チートモードはありませんが、Wizard modeがあります。ウィザードモードを実行するには"&"コマンドを入力し、質問に"y"で答える必要がある。ウィザードモードではハイスコアに記憶されないことに注意が必要だ。
+
+多くのプレイヤーはウィザードモードの長期の使用はあなたの技術に有害であると考えていることに注意が必要だ。
+%%%%
+Q:weapons
+
+素晴らしい武器を二つ手に入れた。どちらを選んだ方がいいだろうか？
+%%%%
+A:weapons
+
+A: "どちらが良いか"は片手両手持ち、アーティファクトのプロパティ、ブランド、分岐の出現モンスター、種族の適性に依存する。あなたが全くスキルを持っていない武器を使うのは大抵時間の無駄になるだろう。無害なモンスターを攻撃し、結果を比較することでどちらが良いか確かめられるだろう。
+
+大抵あなたにとって二つのエンチャントの内、武器精度の値よりも武器攻撃力の方が重要だ。武器の攻撃速度は対応する武器スキルを伸ばすことで軽減できる。
+%%%%
+Q:religion
+
+初心者はどの神を信仰するのが良いですか？
+%%%%
+A:religion
+
+A: 近接、遠距離武器を扱う場合、最も遊びやすい神はたぶんTrog(トログ)かOkawaru(オカワル)だろう。魔法を操るならばVehumet(ヴェフメット)、Sif Muna(シフ=ムーナ)。ゾンビを扱うならばYredelemnul(イレデレンヌル)がいいだろう。また頼りにならないXom(ゾム)は多くの楽しみを与える。
+
+あなたが祭壇に遭遇した時はいつも、必ず神の説明(祭壇の上で"p")を読み、十分納得したうえで選択すべきだ。信者は"^"の信仰画面で再読することが出来る。
+
+あなたはダンジョンの初め9階層の内に殆ど全ての神の祭壇を見つけることが出来るだろう。
+%%%%
+Q:ghosts
+
+I keep getting murdered by my own ghosts. Can I deactivate them?
+%%%%
+A:ghosts
+
+A: There isn't any such option, and we're not planning to add one, either.
+
+For a more constructive answer, once a ghost has been loaded onto a level, it won't be loaded again - unless you happen to die on that level, thus creating a bones file featuring more than one ghost. Keep in mind that you don't absolutely have to fight every monster you meet, and with ghosts it's even easier: they cannot leave the level they were created on.
+
+Alternatively, you could play a couple characters of strong species/background combinations for the sole purpose of busting those ghosts, e.g. Berserkers or spellcasters with Conjure Flame.
+%%%%
+Q:instadeath
+
+I went down these stairs and got killed instantly! Is this a bug?
+%%%%
+A:instadeath
+
+A: Probably not. While your death might be due to an ill-placed vault (this would be a bug), it is generally just really bad luck. We believe that a game is more fun if the risk of death is real. This means that such instant deaths cannot be fully avoided, as Crawl relies on randomness for posing challenges. It is important to realize that for highly skilled players, the margin of such deaths is really slim...
+%%%%
+Q:abyss
+
+I've somehow ended up in a place called "Abyss". How do I get out of here?
+%%%%
+A:abyss
+
+A: If you are in the Abyss for the first time, chances of getting out are slim. Still, here are a few general hints:
+
+* You need to find a gateway leading out of the Abyss. These are rare!
+
+* Don't stick around to fight; move as much as possible!
+
+* If you have it, use defensive equipment (weapons of protection, etc.).
+
+* Use teleportation to hopefully end up in a completely new part of the Abyss.
+
+* Teleportation might take much longer to kick in than in the Dungeon.
+
+* Consider switching your allegiance to Lugonu to get out of there.
+
+* Descending deeper in the Abyss will increase the chance of finding an exit out, but also increase the danger you face.
+%%%%
+Q:oklobs
+
+Oklob plants suck! Are you planning to remove them at last?
+%%%%
+A:oklobs
+
+A: No, we don't, because we feel that Oklob plants provide an interesting challenge. Resist the urge to kill them at once. If you absolutely need to bypass them, use your resources wisely.
+
+A hint: They cannot see invisible.
+%%%%
+Q:randart
+
+What do the terms "randart", "unrandart" and "egoitem" signify?
+%%%%
+A:randart
+
+A: Apart from the standard items you'll find lying around in the dungeon, you might also stumble upon artefacts which come in two varieties:
+
+* randart: a random artefact, usually a weapon or type of armour with random properties such as conferring resistances or abilities
+
+* unrandart: an artefact that looks like a randart but is really predefined. While a few (formerly known as "fixed artefacts") have special hardcoded effects, for most there's no further difference except that you may recognize them from previous games. In addition, most unrandarts come pre-identified.
+
+Neither of these types can be enchanted or branded, either temporarily or permanently. There is another type of special item that pops up a bit more frequently:
+
+* egoitem: these are ordinary items with one special property. For example, a short sword of venom, a cap of see invisible, or boots of running. These can be affected by enchanting scrolls and also by corrosion and acids. Weapons of this type are branded, and only divine intervention can change the brand.
+%%%%
+Q:interact
+
+Is there a way for me to interact with other players?
+%%%%
+A:interact
+
+A: If you play online on http://crawl.akrasiac.org, https://crawl.develz.org, or https://crawl.s-z.org you can watch games in progress, other players can watch you while you play, and you can kill other players' ghosts. You can even send and receive messages.
+
+Check https://crawl.develz.org/wordpress/howto for an explanation about how to play online.
+
+You can also chat in the Crawl channel (irc.freenode.net, ##crawl), or discuss in the Stone Soup forum (https://crawl.develz.org/tavern/), or in one of the other forums linked on the website.
+%%%%
+##############################################
+# Questions about the development process.
+##############################################
+Q:version
+
+When will development reach the "stable" version 1.0?
+%%%%
+A:version
+
+A: Actually, by now we consider Stone Soup to be reasonably stable for a game of such active development, so please don't get hung up about the 0.X versioning and give it a try.
+
+We've mostly kept the versioning for historic reasons and because it might cause undue confusion. We might decide to change that at some point, but maybe we won't.
+%%%%
+Q:beta
+
+Is there a way for me to play the new version before it is released?
+%%%%
+A:beta
+
+A: There certainly is! You can play "trunk" (what will eventually become the next version) online on any of the online servers; https://crawl.develz.org also hosts Windows and Mac binaries you can download. Note that trunk may be buggy, and that very rarely a bug may invalidate your saved games. If that doesn't bother you, go ahead and play!
+
+Be sure to reports bugs on our bug tracker (https://crawl.develz.org/mantis/) and to leave some feedback/suggestions on the development wiki (https://crawl.develz.org/wiki).
+
+When doing so, please mention the version (see '?v') you're currently playing, in case the bug's already been fixed or the feature already implemented.
+%%%%
+Q:bug
+
+The game keeps crashing. / I think I found a bug. What do I do?
+%%%%
+A:bug
+
+A: Please submit a bug report on Mantis (https://crawl.develz.org/mantis/), and give as much information as you can:
+
+* What were you doing at the time?
+
+* What did you expect to happen, what happened instead, etc.
+
+* Most importantly, what version are you playing?
+  (If you're not sure, you can check in-game with '?v'.)
+
+* Console or tiles?
+
+For crashes or monsters/items/levels behaving oddly, we probably need a save file. If you're playing online console, you can create a copy of your save file for the developers to access by selecting the version you are playing and then pressing 'A' for Advanced options. Don't forget to include the server and your username in your bug report!
+
+Sometimes a screenshot can be helpful. If there are error messages, please write them down. Short of a save file, a guide on how to reproduce the crash (or bug) can be useful; you can use wizard mode for this.
+
+Thanks in advance!
+%%%%
+Q:ideas
+
+I've got millions of ideas! Can I join the team?
+%%%%
+A:ideas
+
+A: Sorry, but no. At least not on ideas alone.
+
+All of the devteam members submitted a number of code intensive patches and/or took over responsibility over an important side project before joining. A good way to become indispensable is to help us with patches or vaults, etc.
+
+Please add your ideas in the appropriate section of the Mantis wiki: https://crawl.develz.org/wiki
+
+If they catch the interest of at least one coder, chances are they'll make it into the game.
+
+Note that your idea has a better chance of being accepted if you present the ramifications on gameplay. Since we put a lot of emphasis on the interface, a good proposal on how to make the game play smoother may go in without much ado.
+%%%%
+Q:feature
+
+Hey! Why did you close my feature request?
+%%%%
+A:feature
+
+A: If you submitted a report on our Mantis tracker, you will get an email any time someone replies to (or fiddles with) the thread in question. Once a thread has been resolved or closed, you can still access it by searching for requests with the "Resolved" and "Closed" status, respectively.
+
+We always try to give a reason for closing a request that has not been implemented, but it usually boils down to three reasons:
+
+* It doesn't fit into the Crawl world as we see it.
+
+* It violates Crawl's philosophy to avoid grinding and spoiler-heavy stuff.
+
+* We just don't think it's interesting enough to ever be implemented.
+
+Also, the Mantis tracker is primarily intended for bug reports and patches. Feature requests should generally be added to the wiki instead: https://crawl.develz.org/wiki
+
+Please don't let this stop you from bringing up more suggestions. Already the next one might generate heavy interest and excitement, and end up in the game. However, do try to be specific in your suggestions. If you cannot even explain the basics of your idea, why should we bother to flesh it out, let alone code it?
+%%%%
+Q:patch
+
+I've written a patch for a cool new feature! Where should I send it?
+%%%%
+A:patch
+
+A: Please submit it as a new issue on our Mantis tracker: https://crawl.develz.org/mantis/
+
+Keep in mind that without previous discussions, we may not be able to use the patch, or it might need heavy modification. In general, it is safer to first file your suggestions under Feature Requests and wait for people to become enthusiastic and give feedback before you submit a patch. If you want, you can also write a patch that implements an existing FR or fixes a bug.
+
+If you'd like to write a patch but don't know how to go about it, patch_guide.txt in the docs/develop/ directory is the file for you.
+
+We really appreciate your help!
+%%%%
+Q:help
+
+I cannot code, but I'd like to help improve the game. What can I do?
+%%%%
+A:help
+
+A: There are several areas where you can get creative and outside help is much appreciated. These are:
+
+* maps/vaults (see dat/ directory, docs/develop/levels/introduction.txt)
+
+* monster speech (see dat/database/, docs/develop/monster_speech.txt)
+
+* monster/item/spell descriptions (see dat/descript/)
+
+* tiles (see source/rltiles/, docs/develop/tiles_creation.txt)
+
+Also, if you'd like to write a patch but don't know how to go about it, read patch_guide.txt in the docs/develop/ directory.
+
+If you've got some cool addition, you can post it as a Mantis item. You can also help us by giving feedback on the most recent version or trunk (available via git, Windows and Mac binaries downloadable from https://crawl.develz.org/trunk/).
+
+Thanks a lot for your support!
+%%%%
+Q:changes
+
+What did you change in the most recent version?
+%%%%
+A:changes
+
+A: The admittedly highly subjective highlights of the most recent major release are listed along with the version information under '?v'. For more details, check out changelog.txt in the docs/ directory.
+%%%%
+##############################################
+# Questions about the Tiles version
+##############################################
+Q:tiles lag
+
+The Tiles version is awfully slow! How can I improve that?
+%%%%
+A:tiles lag
+
+A: Crawl renders its graphics using OpenGL and SDL. Because it uses OpenGL, it depends on a little bit of hardware acceleration to not run slowly. If your system is not set up to enable this, then Crawl will run quite poorly.
+
+On Windows, the default driver that ships with Windows is extremely slow. Make sure to update your graphics card driver to the latest one available. On Linux, you should be sure to enable DRI.
+
+In addition to these suggestions, you can also try to see whether tweaking some options will improve performance. See docs/tiles_help.txt for details. If things are still too laggy after all of that, you could try the non-graphical console version, or wait for a future version that does not depend on OpenGL.
+%%%%
+Q:tiles online
+
+Can I play Tiles online?
+%%%%
+A:tiles online
+
+A: A web-based tile interface is available at http://webtiles.akrasiac.org or https://crawl.s-z.org/, though it is missing some features of the local Tiles version.
+%%%%
+Q:tiles commands
+
+Is there a list of mouse commands anywhere?
+%%%%
+A:tiles commands
+
+Yes, check tiles_help.txt. You can also browse it in-game via the '?t' command.
+%%%%
+Q:tiles options
+
+Is there a way to modify the size of the tiles screen, the font, etc.?
+%%%%
+A:tiles options
+
+A: Yes. Play around with the options in settings/tiles_options.txt until you are satisfied. See docs/options_guide.txt for some explanations.
+
+It is currently not possible to modify any options from within the game itself.
+%%%%

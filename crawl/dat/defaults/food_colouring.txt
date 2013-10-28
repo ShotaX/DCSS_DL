@@ -1,0 +1,27 @@
+### Colouring of corpses, depending on whether you can eat them, and
+### whether it's safe to eat them.
+### Use menu_colour (inv) to colour items in your inventory or the
+### pickup menu.
+
+inv := menu_colour
+
+# Djinn can eat, but most foodstuff is useless.
+inv += $inedible:.*useless_item.*carrion.*
+
+inv += $forbidden:.*forbidden.*
+
+inv += $preferred:.*preferred.*
+
+# Corpses of undead (necrophages etc.)
+inv += $rot-inducing:.*rot-inducing.*
+
+# Poisonous corpses/chunks
+inv += $poisonous:.*poisonous.*
+
+inv += $inedible:.*inedible.*
+
+# Mutagenic corpses/chunks
+inv += $mutagenic:.*mutagenic.*
+
+# Contaminated corpses/chunks
+inv += $contaminated:.*contaminated.*

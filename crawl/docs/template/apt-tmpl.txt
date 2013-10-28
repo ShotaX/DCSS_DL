@@ -1,0 +1,69 @@
+TABLES OF APTITUDES
+
+The following three tables describe all aptitudes of the various species
+for the various skills. These are not necessary for winning in Crawl,
+neither explicit nor implicit. The qualitative information behind this
+sheet (i.e., which species is good at which tasks) can be obtained in
+two other, less sophisticated ways:
+- Read the species section in the manual about strengths and weaknesses.
+- Look at which combinations of species and background are recommended
+  (lightgrey).
+
+If you consider figuring out such things yourself to be fun, stop
+reading now. Otherwise, just go ahead.
+
+ -5  abysmal aptitude
+ -4  terrible aptitude (learning half as fast as at 0 aptitude)
+ -3  very poor aptitude
+ -2  poor aptitude
+ -1  slightly disfavoured aptitude
+  0  standard aptitude
+ +1  slightly favoured aptitude
+ +2  strong aptitude
+ +3  very strong aptitude
+ +4  outstanding aptitude (learning twice as fast as at 0 aptitude)
+ +5  exceptional aptitude
+
+Please note that many things affect how quickly a character will
+actually learn a skill. Thus, the numbers below are good enough for
+comparisons among species, but not necessarily among skills.
+
+There are three special values: HP, MP and Experience:
+- The HP and MP values indicate the percentages of hit points and magic
+  points that are gained per level. 0 is the Human standard, -1 is 10%
+  fewer points, +1 is 10% more points, etc.
+- The Experience value indicates how much experience has to be earned in
+  order to gain a new level. +1 is the Human standard, and all other
+  species (apart from Halfling and Kobold) are slower. These values use
+  the same scale as the skill aptitudes.
+
+The abbreviations used for the skills are:
+
+General skills, Experience   Melee and Ranged Combat     Spellcasting and Magic
+--------------------------   -----------------------     ----------------------
+Arm - Armour                 Fgt - Fighting              Spc - Spellcasting
+Ddg - Dodging                SBl - Short Blades          Coj - Conjurations
+Sth - Stealth                LBl - Long Blades           Hex - Hexes
+Shd - Shields                M&F - Maces & Flails        Cha - Charms
+                             Axs - Axes                  Sum - Summonings
+Inv - Invocations            Pla - Polearms              Nec - Necromancy
+Evo - Evocations             Stv - Staves                Trl - Translocations
+                             UC  - Unarmed Combat        Trm - Transmutations
+
+                             Thr - Throwing              Fir - Fire Magic
+HP  - hit points             Slg - Slings                Ice - Ice Magic
+MP  - magic points           Bws - Bows                  Air - Air Magic
+Exp - experience             Crb - Crossbows             Ear - Earth Magic
+                                                         Poi - Poison Magic
+
+
+                 Arm Ddg Sth Shd   Inv Evo            HP  MP  Exp
+----------------------------------------------------------------------
+
+
+                 Fgt SBl LBl M&F Axs Pla Stv UC    Thr Slg Bws Crb
+----------------------------------------------------------------------
+
+
+                 Spc Coj Hex Cha Sum Nec Trl Trm   Fir Ice Air Ear Poi
+----------------------------------------------------------------------

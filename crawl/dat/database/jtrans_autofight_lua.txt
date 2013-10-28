@@ -1,0 +1,111 @@
+#
+#dat/dlua/autofight.lua
+##############
+%%%%
+weapon
+
+ターゲットの地点まで向かうことが出来ない!
+#local wp = items.equipped_at("weapon")
+%%%%
+Failed to move towards target.
+
+#crawl.mpr("Failed to move towards target.")
+%%%%
+orc wizard
+
+%%%%
+orc_priest
+
+#info.orc_priest_wizard = (name == "orc priest" or name == "orc wizard") and 1 or 0
+%%%%
+can_attack
+
+%%%%
+safe
+
+%%%%
+distance
+
+%%%%
+constricting_you
+
+%%%%
+very_stabbable
+
+%%%%
+injury
+
+%%%%
+threat
+
+%%%%
+orc_priest_wizard
+
+#flag_order = {"can_attack", "safe", "distance", "constricting_you", "very_stabbable", "injury", "threat", "orc_priest_wizard"}
+%%%%
+Checking: (
+
+#--if m then crawl.mpr("Checking: (" .. x .. "," .. y .. ") " .. m:name()) end
+%%%%
+butterfly
+
+#if m:name() == "butterfly"
+%%%%
+orb of destruction
+
+#or m:name() == "orb of destruction" then
+%%%%
+... is firewood.
+
+……それは炎上している樹だ
+
+#--crawl.mpr("... is firewood.")
+%%%%
+ballistomycete
+
+#if string.find(m:name(), "ballistomycete") then
+%%%%
+false
+
+#AUTOFIGHT_THROW = string.lower(value) ~= "false"
+%%%%
+false
+
+#AUTOFIGHT_THROW_NOMOVE = string.lower(value) ~= "false"
+%%%%
+false
+
+#AUTOFIGHT_FIRE_STOP = string.lower(value) ~= "false"
+%%%%
+You are too confused!
+
+あなたは混乱しすぎている!
+#crawl.mpr("You are too confused!")
+%%%%
+You are 
+
+あなたは
+#crawl.mpr("You are " .. caught .. "!")
+%%%%
+You are too injured to fight recklessly!
+
+あなたは戦闘を行うには傷つき過ぎている!
+#crawl.mpr("You are too injured to fight recklessly!")
+%%%%
+No target in view!
+
+視界内にモンスターが見当たらない！
+#crawl.mpr("No target in view!")
+%%%%
+No target in range!
+
+敵が射程内に居ない！
+#crawl.mpr("No target in range!")
+%%%%
+Enabling autothrow.
+
+%%%%
+Disabling autothrow.
+
+#crawl.mpr(AUTOFIGHT_THROW and "Enabling autothrow." or "Disabling autothrow.")
+%%%%

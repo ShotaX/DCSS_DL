@@ -1,0 +1,9 @@
+%%%%
+Hellfire ability
+
+Düşmanlarını cehennem ateşiyle kavur.
+%%%%
+Animate Remains or Dead ability
+
+Bu tanımla karşılaşıyorsanız bu bir bug tur.
+%%%%

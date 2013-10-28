@@ -1,0 +1,1145 @@
+%%%%
+No ability
+
+#{ ABIL_NON_ABILITY, "No ability", 0, 0, 0, 0, 0, ABFLAG_NONE},
+%%%%
+Spit Poison
+
+#{ ABIL_SPIT_POISON, "Spit Poison", 0, 0, 40, 0, 0, ABFLAG_BREATH},
+%%%%
+Blink
+
+#{ ABIL_BLINK, "Blink", 0, 50, 50, 0, 0, ABFLAG_NONE},
+%%%%
+Breathe Fire
+
+#{ ABIL_BREATHE_FIRE, "Breathe Fire", 0, 0, 125, 0, 0, ABFLAG_BREATH},
+%%%%
+Breathe Frost
+
+#{ ABIL_BREATHE_FROST, "Breathe Frost", 0, 0, 125, 0, 0, ABFLAG_BREATH},
+%%%%
+Breathe Poison Gas
+
+#{ ABIL_BREATHE_POISON, "Breathe Poison Gas",
+%%%%
+Breathe Noxious Fumes
+
+#{ ABIL_BREATHE_MEPHITIC, "Breathe Noxious Fumes",
+%%%%
+Breathe Lightning
+
+#{ ABIL_BREATHE_LIGHTNING, "Breathe Lightning",
+%%%%
+Breathe Dispelling Energy
+
+#{ ABIL_BREATHE_POWER, "Breathe Dispelling Energy", 0, 0, 125, 0, 0, ABFLAG_BREATH},
+%%%%
+Breathe Sticky Flame
+
+#{ ABIL_BREATHE_STICKY_FLAME, "Breathe Sticky Flame",
+%%%%
+Breathe Steam
+
+#{ ABIL_BREATHE_STEAM, "Breathe Steam", 0, 0, 75, 0, 0, ABFLAG_BREATH},
+%%%%
+Bat Form
+
+#{ ABIL_TRAN_BAT, "Bat Form", 2, 0, 0, 0, 0, ABFLAG_NONE},
+%%%%
+Bottle Blood
+
+#{ ABIL_BOTTLE_BLOOD, "Bottle Blood", 0, 0, 0, 0, 0, ABFLAG_NONE}, // no costs
+%%%%
+Spit Acid
+
+#{ ABIL_SPIT_ACID, "Spit Acid", 0, 0, 125, 0, 0, ABFLAG_BREATH},
+%%%%
+Fly
+
+#{ ABIL_FLY, "Fly", 3, 0, 100, 0, 0, ABFLAG_NONE},
+%%%%
+Stop Flying
+
+#{ ABIL_STOP_FLYING, "Stop Flying", 0, 0, 0, 0, 0, ABFLAG_NONE},
+%%%%
+Hellfire
+
+#{ ABIL_HELLFIRE, "Hellfire", 0, 150, 200, 0, 0, ABFLAG_NONE},
+%%%%
+Release Delayed Fireball
+
+#{ ABIL_DELAYED_FIREBALL, "Release Delayed Fireball",
+%%%%
+Stop Singing
+
+#{ ABIL_STOP_SINGING, "Stop Singing",
+%%%%
+Self-Restoration
+
+#{ ABIL_MUMMY_RESTORATION, "Self-Restoration",
+%%%%
+Evoke
+
+#// any reason to label them as "Evoke" in the text, they don't
+%%%%
+Evoke Teleportation
+
+#{ ABIL_EVOKE_TELEPORTATION, "Evoke Teleportation",
+%%%%
+Evoke Blink
+
+#{ ABIL_EVOKE_BLINK, "Evoke Blink", 1, 0, 50, 0, 0, ABFLAG_NONE},
+%%%%
+Device Recharging
+
+#{ ABIL_RECHARGING, "Device Recharging", 1, 0, 0, 0, 0, ABFLAG_PERMANENT_MP},
+%%%%
+Evoke Berserk Rage
+
+#{ ABIL_EVOKE_BERSERK, "Evoke Berserk Rage", 0, 0, 0, 0, 0, ABFLAG_NONE},
+%%%%
+Evoke Invisibility
+
+#{ ABIL_EVOKE_TURN_INVISIBLE, "Evoke Invisibility",
+%%%%
+Turn Visible
+
+#{ ABIL_EVOKE_TURN_VISIBLE, "Turn Visible", 0, 0, 0, 0, 0, ABFLAG_NONE},
+%%%%
+Evoke Flight
+
+#{ ABIL_EVOKE_FLIGHT, "Evoke Flight", 1, 0, 100, 0, 0, ABFLAG_NONE},
+%%%%
+Evoke Fog
+
+#{ ABIL_EVOKE_FOG, "Evoke Fog", 2, 0, 250, 0, 0, ABFLAG_NONE},
+%%%%
+Evoke Teleport Control
+
+#{ ABIL_EVOKE_TELEPORT_CONTROL, "Evoke Teleport Control", 4, 0, 200, 0, 0, ABFLAG_NONE},
+%%%%
+End Transformation
+
+#{ ABIL_END_TRANSFORMATION, "End Transformation", 0, 0, 0, 0, 0, ABFLAG_NONE},
+%%%%
+Recite
+
+#{ ABIL_ZIN_RECITE, "Recite", 0, 0, 0, 0, 0, ABFLAG_BREATH},
+%%%%
+Vitalisation
+
+#{ ABIL_ZIN_VITALISATION, "Vitalisation", 0, 0, 0, 1, 0, ABFLAG_CONF_OK},
+%%%%
+Imprison
+
+#{ ABIL_ZIN_IMPRISON, "Imprison", 5, 0, 125, 4, 0, ABFLAG_NONE},
+%%%%
+Sanctuary
+
+#{ ABIL_ZIN_SANCTUARY, "Sanctuary", 7, 0, 150, 15, 0, ABFLAG_NONE},
+%%%%
+Cure All Mutations
+
+#{ ABIL_ZIN_CURE_ALL_MUTATIONS, "Cure All Mutations",
+%%%%
+Divine Shield
+
+#{ ABIL_TSO_DIVINE_SHIELD, "Divine Shield", 3, 0, 50, 2, 0, ABFLAG_NONE},
+%%%%
+Cleansing Flame
+
+#{ ABIL_TSO_CLEANSING_FLAME, "Cleansing Flame",
+%%%%
+Summon Divine Warrior
+
+#{ ABIL_TSO_SUMMON_DIVINE_WARRIOR, "Summon Divine Warrior",
+%%%%
+Receive Corpses
+
+#{ ABIL_KIKU_RECEIVE_CORPSES, "Receive Corpses",
+%%%%
+Torment
+
+#{ ABIL_KIKU_TORMENT, "Torment", 4, 0, 0, 8, 0, ABFLAG_NONE},
+%%%%
+Injury Mirror
+
+#{ ABIL_YRED_INJURY_MIRROR, "Injury Mirror", 0, 0, 0, 0, 0, ABFLAG_PIETY},
+%%%%
+Animate Remains
+
+#{ ABIL_YRED_ANIMATE_REMAINS, "Animate Remains",
+%%%%
+Recall Undead Slaves
+
+#{ ABIL_YRED_RECALL_UNDEAD_SLAVES, "Recall Undead Slaves",
+%%%%
+Animate Dead
+
+#{ ABIL_YRED_ANIMATE_DEAD, "Animate Dead", 2, 0, 100, 0, 0, ABFLAG_NONE},
+%%%%
+Drain Life
+
+#{ ABIL_YRED_DRAIN_LIFE, "Drain Life", 6, 0, 200, 2, 0, ABFLAG_NONE},
+%%%%
+Enslave Soul
+
+#{ ABIL_YRED_ENSLAVE_SOUL, "Enslave Soul", 8, 0, 150, 4, 0, ABFLAG_NONE},
+%%%%
+Animate Remains or Dead
+
+#{ ABIL_YRED_ANIMATE_REMAINS_OR_DEAD, "Animate Remains or Dead",
+%%%%
+Heroism
+
+#{ ABIL_OKAWARU_HEROISM, "Heroism", 2, 0, 50, 1, 0, ABFLAG_NONE},
+%%%%
+Finesse
+
+#{ ABIL_OKAWARU_FINESSE, "Finesse", 5, 0, 100, 4, 0, ABFLAG_NONE},
+%%%%
+Minor Destruction
+
+#{ ABIL_MAKHLEB_MINOR_DESTRUCTION, "Minor Destruction",
+%%%%
+Lesser Servant of Makhleb
+
+#{ ABIL_MAKHLEB_LESSER_SERVANT_OF_MAKHLEB, "Lesser Servant of Makhleb",
+%%%%
+Major Destruction
+
+#{ ABIL_MAKHLEB_MAJOR_DESTRUCTION, "Major Destruction",
+%%%%
+Greater Servant of Makhleb
+
+#{ ABIL_MAKHLEB_GREATER_SERVANT_OF_MAKHLEB, "Greater Servant of Makhleb",
+%%%%
+Channel Energy
+
+#{ ABIL_SIF_MUNA_CHANNEL_ENERGY, "Channel Energy",
+%%%%
+Forget Spell
+
+#{ ABIL_SIF_MUNA_FORGET_SPELL, "Forget Spell", 5, 0, 0, 8, 0, ABFLAG_NONE},
+%%%%
+Burn Spellbooks
+
+#{ ABIL_TROG_BURN_SPELLBOOKS, "Burn Spellbooks",
+%%%%
+Berserk
+
+#{ ABIL_TROG_BERSERK, "Berserk", 0, 0, 200, 0, 0, ABFLAG_NONE},
+%%%%
+Trog's Hand
+
+#{ ABIL_TROG_REGEN_MR, "Trog's Hand",
+%%%%
+Brothers in Arms
+
+#{ ABIL_TROG_BROTHERS_IN_ARMS, "Brothers in Arms",
+%%%%
+Divine Protection
+
+#{ ABIL_ELYVILON_LIFESAVING, "Divine Protection",
+%%%%
+Lesser Self-Healing
+
+#{ ABIL_ELYVILON_LESSER_HEALING_SELF, "Lesser Self-Healing",
+%%%%
+Lesser Healing
+
+#{ ABIL_ELYVILON_LESSER_HEALING_OTHERS, "Lesser Healing",
+%%%%
+Purification
+
+#{ ABIL_ELYVILON_PURIFICATION, "Purification", 3, 0, 300, 3, 0,
+%%%%
+Greater Self-Healing
+
+#{ ABIL_ELYVILON_GREATER_HEALING_SELF, "Greater Self-Healing",
+%%%%
+Greater Healing
+
+#{ ABIL_ELYVILON_GREATER_HEALING_OTHERS, "Greater Healing",
+%%%%
+Divine Vigour
+
+#{ ABIL_ELYVILON_DIVINE_VIGOUR, "Divine Vigour", 0, 0, 600, 6, 0,
+%%%%
+Depart the Abyss
+
+#{ ABIL_LUGONU_ABYSS_EXIT, "Depart the Abyss",
+%%%%
+Bend Space
+
+#{ ABIL_LUGONU_BEND_SPACE, "Bend Space", 1, 0, 50, 0, 0, ABFLAG_PAIN},
+%%%%
+Banish
+
+#{ ABIL_LUGONU_BANISH, "Banish",
+%%%%
+Corrupt
+
+#{ ABIL_LUGONU_CORRUPT, "Corrupt",
+%%%%
+Enter the Abyss
+
+#{ ABIL_LUGONU_ABYSS_ENTER, "Enter the Abyss",
+%%%%
+Draw One
+
+#{ ABIL_NEMELEX_DRAW_ONE, "Draw One", 2, 0, 0, 0, 0, ABFLAG_NONE},
+%%%%
+Peek at Two
+
+#{ ABIL_NEMELEX_PEEK_TWO, "Peek at Two", 3, 0, 0, 1, 0, ABFLAG_INSTANT},
+%%%%
+Triple Draw
+
+#{ ABIL_NEMELEX_TRIPLE_DRAW, "Triple Draw", 2, 0, 100, 2, 0, ABFLAG_NONE},
+%%%%
+Deal Four
+
+#{ ABIL_NEMELEX_DEAL_FOUR, "Deal Four", 8, 0, 200, 10, 0, ABFLAG_NONE},
+%%%%
+Stack Five
+
+#{ ABIL_NEMELEX_STACK_FIVE, "Stack Five", 5, 0, 250, 10, 0, ABFLAG_NONE},
+%%%%
+Smiting
+
+#{ ABIL_BEOGH_SMITING, "Smiting",
+%%%%
+Recall Orcish Followers
+
+#{ ABIL_BEOGH_RECALL_ORCISH_FOLLOWERS, "Recall Orcish Followers",
+%%%%
+Request Jelly
+
+#{ ABIL_JIYVA_CALL_JELLY, "Request Jelly", 2, 0, 20, 1, 0, ABFLAG_NONE},
+%%%%
+Jelly Paralyse
+
+#{ ABIL_JIYVA_JELLY_PARALYSE, "Jelly Paralyse", 0, 0, 0, 0, 0, ABFLAG_PIETY},
+%%%%
+Slimify
+
+#{ ABIL_JIYVA_SLIMIFY, "Slimify", 4, 0, 100, 8, 0, ABFLAG_NONE},
+%%%%
+Cure Bad Mutation
+
+#{ ABIL_JIYVA_CURE_BAD_MUTATION, "Cure Bad Mutation",
+%%%%
+Evolution
+
+#{ ABIL_FEDHAS_EVOLUTION, "Evolution", 2, 0, 0, 0, 0, ABFLAG_VARIABLE_FRUIT},
+%%%%
+Sunlight
+
+#{ ABIL_FEDHAS_SUNLIGHT, "Sunlight", 2, 0, 50, 0, 0, ABFLAG_NONE},
+%%%%
+Growth
+
+#{ ABIL_FEDHAS_PLANT_RING, "Growth", 2, 0, 0, 0, 0, ABFLAG_FRUIT},
+%%%%
+Reproduction
+
+#{ ABIL_FEDHAS_SPAWN_SPORES, "Reproduction", 4, 0, 100, 0, 0, ABFLAG_NONE},
+%%%%
+Rain
+
+#{ ABIL_FEDHAS_RAIN, "Rain", 4, 0, 150, 4, 0, ABFLAG_NONE},
+%%%%
+Bend Time
+
+#{ ABIL_CHEIBRIADOS_TIME_BEND, "Bend Time", 3, 0, 50, 1, 0, ABFLAG_NONE},
+%%%%
+Temporal Distortion
+
+#{ ABIL_CHEIBRIADOS_DISTORTION, "Temporal Distortion",
+%%%%
+Slouch
+
+#{ ABIL_CHEIBRIADOS_SLOUCH, "Slouch", 5, 0, 100, 8, 0, ABFLAG_NONE},
+%%%%
+Step From Time
+
+#{ ABIL_CHEIBRIADOS_TIME_STEP, "Step From Time",
+%%%%
+Scrying
+
+#{ ABIL_ASHENZARI_SCRYING, "Scrying",
+%%%%
+Transfer Knowledge
+
+#{ ABIL_ASHENZARI_TRANSFER_KNOWLEDGE, "Transfer Knowledge",
+%%%%
+End Transfer Knowledge
+
+#{ ABIL_ASHENZARI_END_TRANSFER, "End Transfer Knowledge",
+%%%%
+Stop Recall
+
+#{ ABIL_STOP_RECALL, "Stop Recall", 0, 0, 0, 0, 0, ABFLAG_NONE},
+%%%%
+Make mushroom circle
+
+#{ ABIL_MAKE_FUNGUS, "Make mushroom circle", 0, 0, 0, 0, 10, ABFLAG_ZOTDEF},
+%%%%
+Make dart trap
+
+#{ ABIL_MAKE_DART_TRAP, "Make dart trap", 0, 0, 0, 0, 5, ABFLAG_ZOTDEF},
+%%%%
+Make plant
+
+#{ ABIL_MAKE_PLANT, "Make plant", 0, 0, 0, 0, 2, ABFLAG_ZOTDEF},
+%%%%
+Make oklob sapling
+
+#{ ABIL_MAKE_OKLOB_SAPLING, "Make oklob sapling", 0, 0, 0, 0, 60, ABFLAG_ZOTDEF},
+%%%%
+Make burning bush
+
+#{ ABIL_MAKE_BURNING_BUSH, "Make burning bush", 0, 0, 0, 0, 200, ABFLAG_ZOTDEF},
+%%%%
+Make oklob plant
+
+#{ ABIL_MAKE_OKLOB_PLANT, "Make oklob plant", 0, 0, 0, 0, 250, ABFLAG_ZOTDEF},
+%%%%
+Make ice statue
+
+#{ ABIL_MAKE_ICE_STATUE, "Make ice statue", 0, 0, 0, 0, 2000, ABFLAG_ZOTDEF},
+%%%%
+Make crystal statue
+
+#{ ABIL_MAKE_OCS, "Make crystal statue", 0, 0, 0, 0, 2000, ABFLAG_ZOTDEF},
+%%%%
+Make silver statue
+
+#{ ABIL_MAKE_SILVER_STATUE, "Make silver statue", 0, 0, 0, 0, 3000, ABFLAG_ZOTDEF},
+%%%%
+Make curse skull
+
+#{ ABIL_MAKE_CURSE_SKULL, "Make curse skull",
+%%%%
+Zot-teleport
+
+#{ ABIL_MAKE_TELEPORT, "Zot-teleport", 0, 0, 0, 0, 2, ABFLAG_ZOTDEF},
+%%%%
+Make arrow trap
+
+#{ ABIL_MAKE_ARROW_TRAP, "Make arrow trap", 0, 0, 0, 0, 30, ABFLAG_ZOTDEF},
+%%%%
+Make bolt trap
+
+#{ ABIL_MAKE_BOLT_TRAP, "Make bolt trap", 0, 0, 0, 0, 300, ABFLAG_ZOTDEF},
+%%%%
+Make spear trap
+
+#{ ABIL_MAKE_SPEAR_TRAP, "Make spear trap", 0, 0, 0, 0, 50, ABFLAG_ZOTDEF},
+%%%%
+Make needle trap
+
+#{ ABIL_MAKE_NEEDLE_TRAP, "Make needle trap", 0, 0, 0, 0, 30, ABFLAG_ZOTDEF},
+%%%%
+Make net trap
+
+#{ ABIL_MAKE_NET_TRAP, "Make net trap", 0, 0, 0, 0, 2, ABFLAG_ZOTDEF},
+%%%%
+Make alarm trap
+
+#{ ABIL_MAKE_ALARM_TRAP, "Make alarm trap", 0, 0, 0, 0, 2, ABFLAG_ZOTDEF},
+%%%%
+Make blade trap
+
+#{ ABIL_MAKE_BLADE_TRAP, "Make blade trap", 0, 0, 0, 0, 3000, ABFLAG_ZOTDEF},
+%%%%
+Make oklob circle
+
+#{ ABIL_MAKE_OKLOB_CIRCLE, "Make oklob circle", 0, 0, 0, 0, 1000, ABFLAG_ZOTDEF},
+%%%%
+Acquire gold
+
+#{ ABIL_MAKE_ACQUIRE_GOLD, "Acquire gold",
+%%%%
+Acquirement
+
+#{ ABIL_MAKE_ACQUIREMENT, "Acquirement",
+%%%%
+Make water
+
+#{ ABIL_MAKE_WATER, "Make water", 0, 0, 0, 0, 10, ABFLAG_ZOTDEF},
+%%%%
+Make lightning spire
+
+#{ ABIL_MAKE_LIGHTNING_SPIRE, "Make lightning spire", 0, 0, 0, 0, 100, ABFLAG_ZOTDEF},
+%%%%
+Make bazaar
+
+#{ ABIL_MAKE_BAZAAR, "Make bazaar",
+%%%%
+Make altar
+
+#{ ABIL_MAKE_ALTAR, "Make altar", 0, 0, 0, 0, 50, ABFLAG_ZOTDEF},
+%%%%
+Make grenades
+
+#{ ABIL_MAKE_GRENADES, "Make grenades", 0, 0, 0, 0, 2, ABFLAG_ZOTDEF},
+%%%%
+Sage
+
+#{ ABIL_MAKE_SAGE, "Sage", 0, 0, 0, 0, 0, ABFLAG_ZOTDEF|ABFLAG_STAT_DRAIN},
+%%%%
+Remove Curse
+
+#{ ABIL_REMOVE_CURSE, "Remove Curse",
+%%%%
+Renounce Religion
+
+#{ ABIL_RENOUNCE_RELIGION, "Renounce Religion", 0, 0, 0, 0, 0, ABFLAG_NONE},
+%%%%
+Convert to Beogh
+
+#{ ABIL_CONVERT_TO_BEOGH, "Convert to Beogh", 0, 0, 0, 0, 0, ABFLAG_NONE},
+%%%%
+\n<w>a:</w> 
+
+#string text = "\n<w>a:</w> ";
+%%%%
+no special abilities
+
+#text += "no special abilities";
+%%%%
+#, 
+
+#text += ", ";
+%%%%
+DEBUG: NO RELEVANT MONSTER FOR %d
+
+#mprf("DEBUG: NO RELEVANT MONSTER FOR %d", abil.ability);
+%%%%
+Tendrils and shoots erupt from the earth and gnarl into the form of a plant.
+
+#return "Tendrils and shoots erupt from the earth and gnarl into the form of a plant.";
+%%%%
+A rhizome shoots up through the ground and merges with vitriolic spirits in the atmosphere.
+
+#return "A rhizome shoots up through the ground and merges with vitriolic spirits in the atmosphere.";
+%%%%
+A rhizome shoots up through the ground and merges with vitriolic spirits in the atmosphere.
+
+#return "A rhizome shoots up through the ground and merges with vitriolic spirits in the atmosphere.";
+%%%%
+Blackened shoots writhe from the ground and burst into flame!
+
+#return "Blackened shoots writhe from the ground and burst into flame!";
+%%%%
+Water vapor collects and crystallises into an icy humanoid shape.
+
+#return "Water vapor collects and crystallises into an icy humanoid shape.";
+%%%%
+Quartz juts from the ground and forms a humanoid shape. You smell citrus.
+
+#return "Quartz juts from the ground and forms a humanoid shape. You smell citrus.";
+%%%%
+Droplets of mercury fall from the ceiling and turn to silver, congealing into a humanoid shape.
+
+#return "Droplets of mercury fall from the ceiling and turn to silver, congealing into a humanoid shape.";
+%%%%
+You sculpt a terrible being from the primitive principle of evil.
+
+#return "You sculpt a terrible being from the primitive principle of evil.";
+%%%%
+You mount a charged rod inside a coil.
+
+#return "You mount a charged rod inside a coil.";
+%%%%
+#
+
+#return "";
+%%%%
+, %d %sMP
+
+#ret += make_stringf(", %d %sMP", abil.mp_cost,
+%%%%
+Permanent 
+
+#abil.flags & ABFLAG_PERMANENT_MP ? "Permanent " : "");
+%%%%
+, %d %s%s
+
+#ret += make_stringf(", %d %s%s", ep + abil.hp_cost.cost(you.hp_max),
+%%%%
+#Permanent 
+
+#abil.flags & ABFLAG_PERMANENT_HP ? "Permanent " : "",
+%%%%
+EP
+
+#you.species == SP_DJINNI ? "EP" : "HP");
+%%%%
+HP
+
+#you.species == SP_DJINNI ? "EP" : "HP");
+%%%%
+, %d ZP
+
+#ret += make_stringf(", %d ZP", (int)_zp_cost(abil));
+%%%%
+, Glow
+
+#ret += ", Glow";
+%%%%
+, Food
+
+#ret += ", Food"; // randomised and exact amount hidden from player
+%%%%
+, Piety
+
+#ret += ", Piety"; // randomised and exact amount hidden from player
+%%%%
+, Breath
+
+#ret += ", Breath";
+%%%%
+, Pain
+
+#ret += ", Pain";
+%%%%
+, Exhaustion
+
+#ret += ", Exhaustion";
+%%%%
+, Instant
+
+#ret += ", Instant"; // not really a cost, more of a bonus - bwr
+%%%%
+, Fruit
+
+#ret += ", Fruit";
+%%%%
+, Fruit or Piety
+
+#ret += ", Fruit or Piety";
+%%%%
+, Level drain
+
+#ret += ", Level drain";
+%%%%
+, Stat drain
+
+#ret += ", Stat drain";
+%%%%
+None
+
+#return "None";
+%%%%
+extremely large
+
+#return (value > 15 ? "extremely large" :
+%%%%
+large
+
+#value > 10 ? "large" :
+%%%%
+moderate
+
+#value > 5  ? "moderate" :
+%%%%
+small
+
+#"small");
+%%%%
+This ability costs: 
+
+#ret << "This ability costs: ";
+%%%%
+\nMax MP : 
+
+#ret << "\nMax MP : ";
+%%%%
+\nMP     : 
+
+#ret << "\nMP     : ";
+%%%%
+\nMax HP : 
+
+#ret << "\nMax HP : ";
+%%%%
+\nHP     : 
+
+#ret << "\nHP     : ";
+%%%%
+\nZP     : 
+
+#ret << "\nZP     : ";
+%%%%
+\nGlow   : 
+
+#ret << "\nGlow   : ";
+%%%%
+\nHunger : 
+
+#ret << "\nHunger : ";
+%%%%
+\nPiety  : 
+
+#ret << "\nPiety  : ";
+%%%%
+nothing.
+
+#ret << "nothing.";
+%%%%
+\nYou must catch your breath between uses of this ability.
+
+#ret << "\nYou must catch your breath between uses of this ability.";
+%%%%
+\nUsing this ability will hurt you.
+
+#ret << "\nUsing this ability will hurt you.";
+%%%%
+\nIt will drain your piety while it is active.
+
+#ret << "\nIt will drain your piety while it is active.";
+%%%%
+\nIt cannot be used when exhausted.
+
+#ret << "\nIt cannot be used when exhausted.";
+%%%%
+\nIt is instantaneous.
+
+#ret << "\nIt is instantaneous.";
+%%%%
+\nYou can use it even if confused.
+
+#ret << "\nYou can use it even if confused.";
+%%%%
+\nIt will lower your experience level by one when used.
+
+#ret << "\nIt will lower your experience level by one when used.";
+%%%%
+\nIt will temporarily drain your strength, intelligence or dexterity when used.
+
+#ret << "\nIt will temporarily drain your strength, intelligence or dexterity when used.";
+%%%%
+ ability
+
+#string lookup = getLongDescription(name + " ability");
+%%%%
+No description found.\n
+
+#lookup = "No description found.\n";
+%%%%
+#\n
+
+#res << name << "\n\n" << lookup << "\n"
+%%%%
+ ability
+
+#const string quote = getQuoteString(name + " ability");
+%%%%
+#\n\n
+
+#res << "\n\n" << quote;
+%%%%
+Sorry, you're too full to transform right now.
+
+#mpr("Sorry, you're too full to transform right now.");
+%%%%
+You're already flying!
+
+#mpr("You're already flying!");
+%%%%
+Renounce Religion
+
+#// At the very least the player has "Renounce Religion", but
+%%%%
+You cannot call out to %s while silenced.
+
+#mprf("You cannot call out to %s while silenced.",
+%%%%
+Sorry, you're not good enough to have a special ability.
+
+#mpr("Sorry, you're not good enough to have a special ability.");
+%%%%
+Use which ability? (? or * to list) 
+
+#msg::streams(MSGCH_PROMPT) << "Use which ability? (? or * to list) "
+%%%%
+You can't do that.
+
+#mpr("You can't do that.");
+%%%%
+You cannot call out to %s while silenced.
+
+#mprf("You cannot call out to %s while silenced.",
+%%%%
+hunger: %d, max. food_cost: %d, expected hunger: %d
+
+#dprf("hunger: %d, max. food_cost: %d, expected hunger: %d",
+%%%%
+There's no appreciative audience!
+
+#mpr("There's no appreciative audience!");
+%%%%
+There's no-one here to preach to!
+
+#mpr("There's no-one here to preach to!");
+%%%%
+There's already a sanctuary in place on this level.
+
+#mpr("There's already a sanctuary in place on this level.");
+%%%%
+Nothing ails you!
+
+#mpr("Nothing ails you!");
+%%%%
+You don't need to restore your stats or hit points!
+
+#mprf("You don't need to restore your stats or hit points!");
+%%%%
+You aren't in the Abyss!
+
+#mpr("You aren't in the Abyss!");
+%%%%
+You're already here!
+
+#mpr("You're already here!");
+%%%%
+You have nothing more to learn.
+
+#mpr("You have nothing more to learn.");
+%%%%
+You cannot teleport right now.
+
+#mpr("You cannot teleport right now.");
+%%%%
+It's too cloudy to do that here.
+
+#mpr("It's too cloudy to do that here.");
+%%%%
+Stopping flight right now would be fatal!
+
+#mpr("Stopping flight right now would be fatal!");
+%%%%
+Turning into a bat will reduce your strength to zero. Continue?
+
+#&& !yesno("Turning into a bat will reduce your strength to zero. Continue?", false, 'n'))
+%%%%
+Turning back right now would cause you to %s!
+
+#mprf("Turning back right now would cause you to %s!",
+%%%%
+burn
+
+#env.grid(you.pos()) == DNGN_LAVA ? "burn" : "drown");
+%%%%
+drown
+
+#env.grid(you.pos()) == DNGN_LAVA ? "burn" : "drown");
+%%%%
+Turning back will reduce your dexterity to zero. Continue?
+
+#&& !yesno("Turning back will reduce your dexterity to zero. Continue?", false, 'n'))
+%%%%
+You can't escape from the ground with such puny magic!
+
+#mpr("You can't escape from the ground with such puny magic!", MSGCH_WARN);
+%%%%
+You fail to use your ability.
+
+#mpr("You fail to use your ability.");
+%%%%
+Bad breath type!
+
+#die("Bad breath type!");
+%%%%
+Mushrooms don't grow well in such thickets.
+
+#mpr("Mushrooms don't grow well in such thickets.");
+%%%%
+Center fungus circle where?
+
+#args.top_prompt="Center fungus circle where?";
+%%%%
+Center oklob circle where?
+
+#args.top_prompt = "Center oklob circle where?";
+%%%%
+The dungeon trembles momentarily.
+
+#mpr("The dungeon trembles momentarily.");
+%%%%
+zotdef_bazaar
+
+#const map_def *mapidx = random_map_for_tag("zotdef_bazaar", false);
+%%%%
+A mystic portal forms.
+
+#mpr("A mystic portal forms.");
+%%%%
+A buggy portal flickers into view, then vanishes.
+
+#mpr("A buggy portal flickers into view, then vanishes.");
+%%%%
+The dungeon dims for a moment.
+
+#mpr("The dungeon dims for a moment.");
+%%%%
+You create a living grenade.
+
+#mpr("You create a living grenade.");
+%%%%
+You create a living grenade.
+
+#mpr("You create a living grenade.");
+%%%%
+zot ability
+
+#lose_stat(STAT_RANDOM, 1, true, "zot ability");
+%%%%
+zot ability
+
+#lose_stat(STAT_RANDOM, 1 + random2(3), true, "zot ability");
+%%%%
+You infuse your body with magical energy.
+
+#mpr("You infuse your body with magical energy.");
+%%%%
+Aiming: <white>Delayed Fireball</white>
+
+#"Aiming: <white>Delayed Fireball</white>",
+%%%%
+spit at
+
+#if (stop_attack_prompt(hitfunc, "spit at", _sticky_flame_can_hit))
+%%%%
+You spit a glob of burning liquid.
+
+#beam, false, "You spit a glob of burning liquid.");
+%%%%
+You breathe a blast of fire%c
+
+#snprintf(info, INFO_SIZE, "You breathe a blast of fire%c",
+%%%%
+You exhale a wave of freezing cold.
+
+#"You exhale a wave of freezing cold."))
+%%%%
+You exhale a blast of poison gas.
+
+#"You exhale a blast of poison gas."))
+%%%%
+You breathe a wild blast of lightning!
+
+#mpr("You breathe a wild blast of lightning!");
+%%%%
+You spit a glob of acid.
+
+#beam, true, "You spit a glob of acid."))
+%%%%
+You spit a bolt of dispelling energy.
+
+#"You spit a bolt of dispelling energy."))
+%%%%
+You spit a glob of burning liquid.
+
+#"You spit a glob of burning liquid."))
+%%%%
+You exhale a blast of scalding steam.
+
+#"You exhale a blast of scalding steam."))
+%%%%
+You exhale a blast of noxious fumes.
+
+#"You exhale a blast of noxious fumes."))
+%%%%
+You feel very comfortable in the air.
+
+#mpr("You feel very comfortable in the air.");
+%%%%
+You feel less transparent.
+
+#mpr("You feel less transparent.");
+%%%%
+You feel more buoyant.
+
+#mpr("You feel more buoyant.");
+%%%%
+With a swish of your cloak, you release a cloud of fog.
+
+#mpr("With a swish of your cloak, you release a cloud of fog.");
+%%%%
+You stop singing.
+
+#mpr("You stop singing.");
+%%%%
+You clear your throat and prepare to recite %s.
+
+#mprf(MSGCH_PLAIN, "You clear your throat and prepare to recite %s.",
+%%%%
+That recitation seems somehow inappropriate.
+
+#mpr("That recitation seems somehow inappropriate.");
+%%%%
+You cannot imprison yourself!
+
+#mpr("You cannot imprison yourself!");
+%%%%
+There is no monster there to imprison!
+
+#mpr("There is no monster there to imprison!");
+%%%%
+You cannot imprison that!
+
+#mpr("You cannot imprison that!");
+%%%%
+You cannot imprison a law-abiding creature!
+
+#mpr("You cannot imprison a law-abiding creature!");
+%%%%
+There are no corpses to sacrifice!
+
+#mpr("There are no corpses to sacrifice!");
+%%%%
+ torments the living!
+
+#simple_god_message(" torments the living!");
+%%%%
+Another wave of unholy energy enters you.
+
+#mpr("Another wave of unholy energy enters you.");
+%%%%
+You offer yourself to %s, and fill with unholy energy.
+
+#mprf("You offer yourself to %s, and fill with unholy energy.",
+%%%%
+You channel some magical energy.
+
+#mpr("You channel some magical energy.");
+%%%%
+You feel more confident with your borrowed prowess.
+
+#? "You feel more confident with your borrowed prowess."
+%%%%
+You gain the combat prowess of a mighty hero.
+
+#: "You gain the combat prowess of a mighty hero.");
+%%%%
+%s emits a piercing whistle.
+
+#if (stasis_blocks_effect(true, true, "%s emits a piercing whistle.",
+%%%%
+%s makes your neck tingle.
+
+#20, "%s makes your neck tingle."))
+%%%%
+Your hands get new energy.
+
+#? "Your hands get new energy."
+%%%%
+You can now deal lightning-fast blows.
+
+#: "You can now deal lightning-fast blows.");
+%%%%
+You renew your call for help.
+
+#mpr("You renew your call for help.");
+%%%%
+You beseech %s to protect your life.
+
+#mprf("You beseech %s to protect your life.",
+%%%%
+You cannot banish yourself!
+
+#mpr("You cannot banish yourself!");
+%%%%
+You stop recalling your allies.
+
+#mpr("You stop recalling your allies.");
+%%%%
+No corpses are in range.
+
+#mprf("No corpses are in range.");
+%%%%
+Jiyva
+
+#mg.non_actor_summoner = "Jiyva";
+%%%%
+your 
+
+#: ("your " + you.hand_name(true));
+%%%%
+A thick mucus forms on %s.
+
+#mprf(MSGCH_DURATION, "A thick mucus forms on %s.", msg.c_str());
+%%%%
+You extend your astral sight.
+
+#mpr("You extend your astral sight.");
+%%%%
+You gain astral sight.
+
+#mpr("You gain astral sight.");
+%%%%
+Really renounce your faith, foregoing its fabulous benefits?
+
+#if (yesno("Really renounce your faith, foregoing its fabulous benefits?",
+%%%%
+Are you sure you won't change your mind later?
+
+#&& yesno("Are you sure you won't change your mind later?",
+%%%%
+Sorry, you can't do that.
+
+#mpr("Sorry, you can't do that.");
+%%%%
+invalid ability
+
+#die("invalid ability");
+%%%%
+Cost: mp=%d; hp=%d; food=%d; piety=%d
+
+#dprf("Cost: mp=%d; hp=%d; food=%d; piety=%d",
+%%%%
+power out of control
+
+#"power out of control", NH_DEFAULT);
+%%%%
+  Ability - do what?                 
+
+#new ToggleableMenuEntry("  Ability - do what?                 "
+%%%%
+Cost                       Failure
+
+#"Cost                       Failure",
+%%%%
+  Ability - describe what?           
+
+#"  Ability - describe what?           "
+%%%%
+  Ability - do what?                 
+
+#new ToggleableMenuEntry("  Ability - do what?                 "
+%%%%
+ability
+
+#abil_menu.set_tag("ability");
+%%%%
+Press '<w>!</w>' or '<w>?</w>' to toggle 
+
+#"Press '<w>!</w>' or '<w>?</w>' to toggle "
+%%%%
+between ability selection and description.
+
+#"between ability selection and description."));
+%%%%
+    Zot Defence -
+
+#new ToggleableMenuEntry("    Zot Defence -",
+%%%%
+    Invocations - 
+
+#new ToggleableMenuEntry("    Invocations - ",
+%%%%

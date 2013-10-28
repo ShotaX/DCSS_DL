@@ -1,0 +1,639 @@
+#magic name
+%%%%
+Abjuration
+
+解放の宣誓
+%%%%
+Agony
+
+苦悶
+%%%%
+Airstrike
+
+旋風の一撃
+%%%%
+Alistair's Intoxication
+
+アリステイアの酩酊
+%%%%
+Animate Dead
+
+死霊の蘇生
+%%%%
+Apportation
+
+収拾
+%%%%
+Beastly Appendage
+
+半獣の躰
+%%%%
+Blade Hands
+
+刃の手
+%%%%
+Blink
+
+瞬間移動
+%%%%
+Bolt of Cold
+
+冷気の矢
+%%%%
+Bolt of Draining
+
+衰弱の矢
+%%%%
+Bolt of Fire
+
+猛火の矢
+%%%%
+Bolt of Inaccuracy
+
+不正確の矢
+%%%%
+Bolt of Magma
+
+溶岩の矢
+%%%%
+Borgnjor's Revivification
+
+ボーグンジョルの究極治癒
+%%%%
+Call Canine Familiar
+
+犬族のしもべ
+%%%%
+Cause Fear
+
+恐慌の喚起
+%%%%
+Chain Lightning
+
+連鎖稲妻
+%%%%
+Condensation Shield
+
+大気の盾
+%%%%
+Confuse
+
+混乱
+%%%%
+Confusing Touch
+
+混乱の一撃
+%%%%
+Conjure Ball Lightning
+
+魔術の球雷
+%%%%
+Conjure Flame
+
+火柱の幻出
+%%%%
+Control Teleport
+
+精密テレポート
+%%%%
+Control Undead
+
+アンデッドの指揮
+%%%%
+Controlled Blink
+
+精密瞬間移動
+%%%%
+Corona
+
+照明
+%%%%
+Corpse Rot
+
+死体の腐蝕
+%%%%
+Cure Poison
+
+毒の治療
+%%%%
+Darkness
+
+暗闇の喚起
+%%%%
+Dazzling Spray
+
+眩い光の放射
+%%%%
+Death's Door
+
+死のとば口
+%%%%
+Debugging Ray
+
+デバッグ光線
+%%%%
+Deflect Missiles
+
+飛来物の阻止
+%%%%
+Delayed Fireball
+
+遅延式ファイアボール
+%%%%
+Dig
+
+掘削
+%%%%
+Disjunction
+
+空間分離
+%%%%
+Dispersal
+
+転送
+%%%%
+Dragon Form
+
+ドラゴンの躯
+%%%%
+Ensorcelled Hibernation
+
+魔法の眠り
+%%%%
+Excruciating Wounds
+
+苦痛の傷痕
+%%%%
+Fire Brand
+
+火炎の武器
+%%%%
+Fireball
+
+ファイアボール
+%%%%
+Flame Tongue
+
+炎の舌先
+%%%%
+Flight
+
+飛翔
+%%%%
+Force Lance
+
+力場の槍
+%%%%
+Freeze
+
+氷結
+%%%%
+Freezing Cloud
+
+凍気の雲
+%%%%
+Fulminant Prism
+
+爆発性の晶柱
+%%%%
+Major Healing
+
+大いなる癒し
+%%%%
+Haste
+
+加速
+%%%%
+Haunt
+
+招霊
+%%%%
+Throw Icicle
+
+氷の矢
+%%%%
+Ice Storm
+
+凍てつく嵐
+%%%%
+Ignite Poison
+
+毒の燃焼
+%%%%
+Inner Flame
+
+内からの発火
+%%%%
+Invisibility
+
+透明化
+%%%%
+Iskenderun's Battlesphere
+
+イスケンデルンの戦闘球
+%%%%
+Iskenderun's Mystic Blast
+
+イスケンデルンの爆破の秘術
+%%%%
+Leda's Liquefaction
+
+レダの流動術
+%%%%
+Lehudib's Crystal Spear
+
+レフディブの水晶の槍
+%%%%
+Minor Healing
+
+小さき癒し
+%%%%
+Lee's Rapid Deconstruction
+
+リーの瞬間解体術
+%%%%
+Lethal Infusion
+
+死の装填
+%%%%
+Levitation
+
+浮遊
+%%%%
+Lightning Bolt
+
+稲妻の矢
+%%%%
+Magic Dart
+
+魔法の矢
+%%%%
+Malign Gateway
+
+邪悪の通り穴
+%%%%
+Mass Abjuration
+
+集団の解放
+%%%%
+Mass Confusion
+
+集団の混乱
+%%%%
+Mephitic Cloud
+
+悪臭の雲
+%%%%
+Metabolic Englaciation
+
+代謝の凍結
+%%%%
+Orb of Destruction
+
+破壊の爆烈球
+%%%%
+Ozocubu's Armour
+
+オゾクブの鎧
+%%%%
+Pain
+
+苦痛
+%%%%
+Paralyse
+
+金縛り
+%%%%
+Passage of Golubria
+
+ゴルブリアの隠れ道
+%%%%
+Passwall
+
+壁の透過
+%%%%
+Petrify
+
+石化
+%%%%
+Phase Shift
+
+位相変移
+%%%%
+Poison Arrow
+
+毒素の矢
+%%%%
+Poison Weapon
+
+毒の武器
+%%%%
+Poisonous Cloud
+
+猛毒の雲
+%%%%
+Polymorph
+
+他者の変容
+%%%%
+Portal Projectile
+
+射出物の転送
+%%%%
+Recall
+
+招来
+%%%%
+Regeneration
+
+再生
+%%%%
+Repel Missiles
+
+飛来物の防御
+%%%%
+Ring of Flames
+
+炎の円環
+%%%%
+Sandblast
+
+砂の突風
+%%%%
+Shadow Creatures
+
+影の怪物
+%%%%
+Shatter
+
+粉砕
+%%%%
+Shock
+
+電撃
+%%%%
+Shroud of Golubria
+
+ゴルブリアの外套
+%%%%
+Silence
+
+静寂
+%%%%
+Simulacrum
+
+幻像
+%%%%
+Slow
+
+減速
+%%%%
+Spider Form
+
+蜘蛛の躯
+%%%%
+Static Discharge
+
+空電放射
+%%%%
+Statue Form
+
+石像の躯
+%%%%
+Sticks to Snakes
+
+棒切れの蛇
+%%%%
+Sticky Flame
+
+焼夷の炎
+%%%%
+Sting
+
+毒針
+%%%%
+Stoneskin
+
+石の皮膚
+%%%%
+Striking
+
+力場の矢
+%%%%
+Sublimation of Blood
+
+血の昇華
+%%%%
+Summon Butterflies
+
+胡蝶の召換
+%%%%
+Summon Demon
+
+デーモンの召換
+%%%%
+Summon Dragon
+
+ドラゴンの召喚
+%%%%
+Summon Elemental
+
+精霊の召換
+%%%%
+Summon Greater Demon
+
+上位デーモンの召換
+%%%%
+Summon Horrible Things
+
+おぞましきものの召換
+%%%%
+Summon Hydra
+
+ヒドラの召喚
+%%%%
+Summon Small Mammal
+
+小動物の召換
+%%%%
+Summon Swarm
+
+蟲の召換
+%%%%
+Summon Ugly Thing
+
+醜きものの召喚
+%%%%
+Sure Blade
+
+確かなる刃
+%%%%
+Swiftness
+
+俊足
+%%%%
+Teleport Other
+
+他者のテレポート
+%%%%
+Throw Flame
+
+火炎の投射
+%%%%
+Throw Frost
+
+冷気の投射
+%%%%
+Thunderbolt
+
+雷霆の矢
+%%%%
+Tornado
+
+大竜巻
+%%%%
+Tukima's Dance
+
+ツキマーの舞踏
+%%%%
+Vampiric Draining
+
+ヴァンパイアの吸血
+%%%%
+Venom Bolt
+
+毒液の矢
+%%%%
+Warp Weapon
+
+歪曲の武器
+%%%%
+#
+Olgreb's Toxic Radiance
+
+オルグレブの毒気の光輪
+%%%%
+Summon Scorpions
+
+サソリの召換
+%%%%
+Fire Storm
+
+炎の嵐
+%%%%
+Enslavement
+
+隷属
+%%%%
+Heal Other
+
+他者の治癒
+%%%%
+Animate Skeleton
+
+スケルトンの造成
+%%%%
+Burn
+
+燃焼
+%%%%
+Ozocubu's Refrigeration
+
+オゾクブの瞬間凍結
+%%%%
+Summon Ice Beast
+
+氷の獣の召換
+%%%%
+Call Imp
+
+インプの召換
+%%%%
+Dispel Undead
+
+アンデッドの解呪
+%%%%
+Twisted Resurrection
+
+捻れた蘇生
+%%%%
+Cigotuvi's Degeneration
+
+シゴツヴィの変性
+%%%%
+Demonic Horde
+
+小悪魔の群れ
+%%%%
+Freezing Aura
+
+凍結の武器
+%%%%
+Bolt of Iron
+
+鉄塊の矢
+%%%%
+Stone Arrow
+
+石錐の矢
+%%%%
+Stonemail
+
+石の甲冑
+%%%%
+Alter Self
+
+自己の変容
+%%%%
+Ice Form
+
+氷の躯
+%%%%
+Necromutation
+
+死者の躯
+%%%%
+Death Channel
+
+死の霊媒術
+%%%%
+Searing Ray
+
+焼却の光線
+%%%%
+Malign Offering
+
+
+%%%%
+Summon Vermin
+
+
+%%%%
+Spectral Weapon
+
+幽体の武器
+%%%%
+Song of Shielding
+
+守りの歌
+%%%%
+Song of Slaying
+
+殺戮の歌
+%%%%
+Infusion
+
+魔力の装填
+%%%%
+Strip Resistance
+
+
+%%%%
+Wind Blast
+
+
+%%%%
+Discord
+
+精神不和
+%%%%
