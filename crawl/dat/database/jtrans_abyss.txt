@@ -1,0 +1,138 @@
+%%%%
+#Placing %s at (%d,%d)
+#
+#dprf("Placing %s at (%d,%d)",
+%%%%
+#abyss_rune
+#
+#"abyss_rune");
+%%%%
+#Placing abyssal rune at (%d,%d)
+#
+#dprf("Placing abyssal rune at (%d,%d)", chosen_spot.x, chosen_spot.y);
+%%%%
+#Placing abyss feature: %s.
+#
+#dprf("Placing abyss feature: %s.", dungeon_feature_name(which_feat));
+%%%%
+#abyss_exit
+#
+#&& _abyss_place_vault_tagged(abyss_genlevel_mask, "abyss_exit"))
+%%%%
+#Xom snickers loudly.
+#
+#xom messages are defined in xom.cc
+#
+#xom_is_stimulated(200, "Xom snickers loudly.", true);
+%%%%
+ is pulled into the abyss.
+
+はアビスに引きずり込まれた。
+#simple_monster_message(mon, " is pulled into the abyss.",
+%%%%
+#Nuke item stack at (%d, %d)
+#
+#dprf(DIAG_ABYSS, "Nuke item stack at (%d, %d)", p.x, p.y);
+%%%%
+#Moved vault (%s) from (%d,%d)-(%d,%d)
+#
+#dprf("Moved vault (%s) from (%d,%d)-(%d,%d)",
+%%%%
+#Expanding mask to cover vault %d (nvaults: %u)
+#
+#dprf("Expanding mask to cover vault %d (nvaults: %u)",
+%%%%
+#Abyss same-area teleport to (%d,%d).
+#
+#dprf(DIAG_ABYSS, "Abyss same-area teleport to (%d,%d).",
+%%%%
+#Shifting abyss at (%d,%d)
+#
+#dprf("Shifting abyss at (%d,%d)", you.pos().x, you.pos().y);
+%%%%
+#Number of items present: %d
+#
+#dprf("Number of items present: %d", j);
+%%%%
+#Number of monsters present: %d
+#
+#dprf("Number of monsters present: %d", j);
+%%%%
+#Number of clouds present: %d
+#
+#dprf("Number of clouds present: %d", env.cloud_no);
+%%%%
+#Examined %d features.
+#
+#dprf(DIAG_ABYSS, "Examined %d features.", ii);
+%%%%
+#Nuked %d features
+#
+#dprf(DIAG_ABYSS, "Nuked %d features", ii);
+%%%%
+#abyss
+#
+#const map_def *map = random_map_for_tag("abyss", false, true);
+%%%%
+#extra
+#
+#if (!_abyss_place_map(map) || map->has_tag("extra"))
+%%%%
+#_generate_area(). turns_on_level: %d, rune_on_floor: %s
+#
+#dprf(DIAG_ABYSS, "_generate_area(). turns_on_level: %d, rune_on_floor: %s",
+%%%%
+#yes
+#
+#env.turns_on_level, placed_abyssal_rune? "yes" : "no");
+%%%%
+#no
+#
+#env.turns_on_level, placed_abyssal_rune? "yes" : "no");
+%%%%
+#area_shift() - player at pos (%d, %d)
+#
+#dprf(DIAG_ABYSS, "area_shift() - player at pos (%d, %d)",
+%%%%
+#Abyss Coord (%d, %d)
+#
+#dprf("Abyss Coord (%d, %d)", abyssal_state.major_coord.x, abyssal_state.major_coord.y);
+%%%%
+# abyss
+#
+#env.level_build_method += " abyss";
+%%%%
+#abyss
+#
+#env.level_layout_types.insert("abyss");
+%%%%
+#generate_abyss(); turn_on_level: %d
+#
+#dprf("generate_abyss(); turn_on_level: %d", env.turns_on_level);
+%%%%
+#New area Abyss teleport.
+#
+#dprf(DIAG_ABYSS, "New area Abyss teleport.");
+%%%%
+#Placing %d corruption seeds (power: %d)
+#
+#dprf("Placing %d corruption seeds (power: %d)", nseeds, power);
+%%%%
+Lugonu's corruption
+
+#mg.non_actor_summoner = "Lugonu's corruption";
+%%%%
+This place is already infused with evil and corruption.
+
+この空間は既に邪悪と崩壊に満たされている。
+#mpr(jtrans("This place is already infused with evil and corruption."));
+%%%%
+'s Hand of Corruption reaches out!
+
+の崩壊の手は届かない！
+#simple_god_message(jtrans("'s Hand of Corruption reaches out!").c_str());
+%%%%
+Corrupted %s
+
+#take_note(Note(NOTE_MESSAGE, 0, 0, make_stringf("Corrupted %s",
+%%%%

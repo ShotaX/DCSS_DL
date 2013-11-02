@@ -1,0 +1,46 @@
+%%%%
+revokes the gift of sanctuary.
+
+は聖域を取り消した。
+#simple_god_message(jtrans("revokes the gift of sanctuary.").c_str(), GOD_ZIN);
+%%%%
+The sanctuary starts shrinking.
+
+聖域は縮み始めた。
+#mpr(jtrans("The sanctuary starts shrinking."), MSGCH_DURATION);
+%%%%
+The sanctuary disappears.
+
+聖域は消え去った。
+#mpr(jtrans("The sanctuary disappears."), MSGCH_DURATION);
+%%%%
+By Zin's power, hidden traps are revealed to you.
+
+ジンの力によって隠されたトラップは明らかになった。
+#mpr(jtrans("By Zin's power, hidden traps are revealed to you."),
+%%%%
+By Zin's power, the foul cloud within the sanctuary is swept away.
+
+ジンの力によって有害な雲は浄化された。
+#mpr(jtrans("By Zin's power, the foul cloud within the sanctuary is swept away."), MSGCH_GOD);
+%%%%
+By Zin's power, all foul fumes within the sanctuary are swept away.
+
+ジンの力によって有害な毒気は浄化された。
+#mpr(jtrans("By Zin's power, all foul fumes within the sanctuary are swept away."), MSGCH_GOD);
+%%%%
+By Zin's power, all blood is cleared from the sanctuary.
+
+ジンの力によって全ての流血は聖域から浄化された。
+#mpr(jtrans("By Zin's power, all blood is cleared from the sanctuary."),
+%%%%
+ turns to flee the light!
+
+光から逃げ出した！
+#simple_monster_message(seen_mon, " turns to flee the light!");
+%%%%
+The monsters scatter in all directions!
+
+全ての方向にモンスターは逃げ出した！
+#mpr(jtrans("The monsters scatter in all directions!"));
+%%%%

@@ -1,0 +1,93 @@
+%%%%
+The demon of the infinite void smiles upon you.
+
+無限の虚空に棲まう悪魔があなたに微笑みかけた。
+#mpr(jtrans("The demon of the infinite void smiles upon you."));
+%%%%
+#snickers.
+#
+#xom messages are defined in xom.cc
+#
+#simple_god_message(jtrans("snickers.").c_str(), GOD_XOM);
+%%%%
+#acquired
+#
+#mitm[thing_created].props["acquired"].get_int() = agent;
+%%%%
+Weapon
+
+武器
+#{ OBJ_WEAPONS,    "Weapon" },
+%%%%
+Armour
+
+防具
+#{ OBJ_ARMOUR,     "Armour" },
+%%%%
+Jewellery
+
+装身具
+#{ OBJ_JEWELLERY,  "Jewellery" },
+%%%%
+Book
+
+本
+#{ OBJ_BOOKS,      "Book" },
+%%%%
+Staff
+
+杖
+#{ OBJ_STAVES,     "Staff" },
+%%%%
+Wand
+
+ワンド
+#{ OBJ_WANDS,      "Wand" },
+%%%%
+Miscellaneous
+
+発動体
+#{ OBJ_MISCELLANY, "Miscellaneous" },
+%%%%
+Gold
+
+金貨
+#{ OBJ_GOLD,       "Gold" },
+%%%%
+Ammunition
+
+矢弾
+#{ OBJ_MISSILES,   "Ammunition" },
+%%%%
+Fruit
+
+果物
+#acq_classes[7].name = you_worship(GOD_FEDHAS) ? "Fruit":
+%%%%
+Blood
+
+血液
+#you.species == SP_VAMPIRE  ? "Blood":
+%%%%
+Food
+
+食料
+#"Food";
+%%%%
+#
+#
+#line += make_stringf("     %-*s", len, "");
+%%%%
+# [%c] %-*s
+#
+#line += make_stringf(" [%c] %-*s", i + 'a', len, acq_classes[i].name);
+%%%%
+What kind of item would you like to acquire? (\\ to view known items)
+
+どの種類のアイテムを獲得しますか？(\で鑑定済みのアイテムを見ることができます)
+#mpr(jtrans("What kind of item would you like to acquire? (\\ to view known items)"), MSGCH_PROMPT);
+%%%%
+#Acquirement interrupted by HUP signal.
+#
+#dprf("Acquirement interrupted by HUP signal.");
+%%%%

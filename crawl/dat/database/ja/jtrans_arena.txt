@@ -1,0 +1,361 @@
+%%%%
+Failed to create monster at (%d,%d) grd: %s
+
+#"Failed to create monster at (%d,%d) grd: %s",
+%%%%
+(%d) %s
+
+#text = make_stringf("(%d) %s", number, text.c_str());
+%%%%
+%s%s
+
+#cprintf("%s%s", string((sz - len) / 2, ' ').c_str(), text.c_str());
+%%%%
+arena_
+
+#string map_name = "arena_" + arena_type;
+%%%%
+"No arena maps named \"%s\""
+
+#throw make_stringf("No arena maps named \"%s\"", arena_type.c_str());
+%%%%
+"Failed to create arena named \"%s\""
+
+#throw make_stringf("Failed to create arena named \"%s\"",
+%%%%
+random v random
+
+#return "random v random";
+%%%%
+#,
+#
+#vector<string> monsters = split_string(",", spec);
+%%%%
+no_chain_summons
+
+#allow_chain_summons = !strip_tag(spec, "no_chain_summons");
+%%%%
+no_summons
+
+#allow_summons   = !strip_tag(spec, "no_summons");
+%%%%
+no_animate
+
+#allow_animate   = !strip_tag(spec, "no_animate");
+%%%%
+no_immobile
+
+#allow_immobile  = !strip_tag(spec, "no_immobile");
+%%%%
+no_bands
+
+#allow_bands     = !strip_tag(spec, "no_bands");
+%%%%
+allow_zero_xp
+
+#allow_zero_xp   =  strip_tag(spec, "allow_zero_xp");
+%%%%
+real_summons
+
+#real_summons    =  strip_tag(spec, "real_summons");
+%%%%
+move_summons
+
+#move_summons    =  strip_tag(spec, "move_summons");
+%%%%
+miscasts
+
+#miscasts        =  strip_tag(spec, "miscasts");
+%%%%
+respawn
+
+#respawn         =  strip_tag(spec, "respawn");
+%%%%
+move_respawns
+
+#move_respawns   =  strip_tag(spec, "move_respawns");
+%%%%
+summon_throttle:
+
+#summon_throttle = strip_number_tag(spec, "summon_throttle:");
+%%%%
+Can't set real_summons and respawn at same time.
+
+#throw (string("Can't set real_summons and respawn at same time."));
+%%%%
+cycle_random
+
+#cycle_random   = strip_tag(spec, "cycle_random");
+%%%%
+names
+
+#name_monsters  = strip_tag(spec, "names");
+%%%%
+random_uniques
+
+#random_uniques = strip_tag(spec, "random_uniques");
+%%%%
+t:
+
+#const int ntrials = strip_number_tag(spec, "t:");
+%%%%
+arena:
+
+#arena_type = strip_tag_prefix(spec, "arena:");
+%%%%
+default
+
+#arena_type = "default";
+%%%%
+delay:
+
+#const int arena_delay = strip_number_tag(spec, "delay:");
+%%%%
+arena_place:
+
+#string arena_place = strip_tag_prefix(spec, "arena_place:");
+%%%%
+Bad place '%s': %s
+
+#throw make_stringf("Bad place '%s': %s",
+%%%%
+ban_glyphs:
+
+#const string glyphs = strip_tag_prefix(spec, "ban_glyphs:");
+%%%%
+ v 
+
+#vector<string> factions = split_string(" v ", spec);
+%%%%
+ vs 
+
+#factions = split_string(" vs ", spec);
+%%%%
+Expected arena monster spec \"xxx v yyy\", 
+
+#throw make_stringf("Expected arena monster spec \"xxx v yyy\", "
+%%%%
+
+
+#"but got \"%s\"", spec.c_str());
+%%%%
+: %s
+
+#throw make_stringf("Bad monster spec \"%s\": %s",
+%%%%
+ (A)
+
+#faction_a.desc += " (A)";
+%%%%
+ (B)
+
+#faction_b.desc += " (B)";
+%%%%
+Crawl 
+
+#center_print(crawl_view.hudsz.x, string("Crawl ") + Version::Long);
+%%%%
+vs
+
+#center_print(crawl_view.hudsz.x, "vs");
+%%%%
+Round %d of %d
+
+#make_stringf("Round %d of %d",
+%%%%
+Arena
+
+#you.your_name = "Arena";
+%%%%
+Book-keeping says faction_a has negative active members.
+
+#mpr("Book-keeping says faction_a has negative active members.",
+%%%%
+Book-keeping says faction_b has negative active members.
+
+#mpr("Book-keeping says faction_b has negative active members.",
+%%%%
+Book-keeping error in faction member count.
+
+#mpr("Book-keeping error in faction member count.", MSGCH_ERROR);
+%%%%
+Both factions alive but one declared the winner.
+
+#mpr("Both factions alive but one declared the winner.",
+%%%%
+DIAG: 
+
+#prefix = "DIAG: ";
+%%%%
+ERROR: 
+
+#case MSGCH_ERROR: prefix = "ERROR: "; break;
+%%%%
+WARN: 
+
+#case MSGCH_WARN: prefix = "WARN: "; break;
+%%%%
+SOUND: 
+
+#case MSGCH_SOUND: prefix = "SOUND: "; break;
+%%%%
+TALK: 
+
+#case MSGCH_TALK: prefix = "TALK: "; break;
+%%%%
+%s\n
+
+#fprintf(file, "%s\n", msg.c_str());
+%%%%
+ERROR: Both sides have spawners, but the active member 
+
+#mpr("ERROR: Both sides have spawners, but the active member "
+%%%%
+count of one side has been reduced to zero!
+
+#"count of one side has been reduced to zero!", MSGCH_ERROR);
+%%%%
+arena miscast
+
+#random_range(1, 3), "arena miscast", NH_NEVER);
+%%%%
+Canceled contest at user request
+
+#mpr("Canceled contest at user request");
+%%%%
+Dismissing non-respawner %s to make room for 
+
+#"Dismissing non-respawner %s to make room for "
+%%%%
+respawner whose side has 0 active members.
+
+#"respawner whose side has 0 active members.",
+%%%%
+Teleporting respawner %s to make room for 
+
+#"Teleporting respawner %s to make room for "
+%%%%
+other respawner whose side has 0 active members.
+
+#"other respawner whose side has 0 active members.",
+%%%%
+---- Turn #%d ----
+
+#mprf("---- Turn #%d ----", turns);
+%%%%
+Tie declared, but faction_a won.
+
+#mpr("Tie declared, but faction_a won.", MSGCH_ERROR);
+%%%%
+Tie declared, but faction_b won.
+
+#mpr("Tie declared, but faction_b won.", MSGCH_ERROR);
+%%%%
+*BOTH* factions won?!
+
+#mpr("*BOTH* factions won?!", MSGCH_ERROR);
+%%%%
+Faction_a real winner.
+
+#mpr("Faction_a real winner.", MSGCH_ERROR);
+%%%%
+Faction_b real winner.
+
+#mpr("Faction_b real winner.", MSGCH_ERROR);
+%%%%
+Both sides dead.
+
+#mpr("Both sides dead.", MSGCH_ERROR);
+%%%%
+Tie
+
+#msg = "Tie";
+%%%%
+Winner: %s!
+
+#msg = "Winner: %s!";
+%%%%
+ ----------
+
+#msg = "---------- " + msg + " ----------";
+%%%%
+#
+#
+#arena_type = "";
+%%%%
+Results file already open
+
+#end(0, false, "Results file already open");
+%%%%
+#w
+#
+#file = fopen("arena.result", "w");
+%%%%
+#%s\n
+#
+#fprintf(file, "%s\n", spec.c_str());
+%%%%
+========================================\n
+
+#fprintf(file, "========================================\n");
+%%%%
+%d-%d
+
+#fprintf(file, "%d-%d", team_a_wins,
+%%%%
+-%d
+
+#fprintf(file, "-%d", ties);
+%%%%
+#\n
+#
+#fprintf(file, "\n");
+%%%%
+err: %s\n
+
+#fprintf(file, "err: %s\n", error.c_str());
+%%%%
+Final score: %s (%d); %s (%d) [%d ties]
+
+#mprf("Final score: %s (%d); %s (%d) [%d ties]",
+%%%%
+No random monsters for place '%s'
+
+#make_stringf("No random monsters for place '%s'",
+%%%%
+%s %s!
+
+#mprf("%s %s!",
+%%%%
+respawns
+
+#arena::is_respawning                ? "respawns" :
+%%%%
+is summoned
+
+#(summoned && ! arena::real_summons) ? "is summoned"
+%%%%
+enters the arena
+
+#: "enters the arena");
+%%%%
+Last arena monster was dismissed.
+
+#game_ended_with_error("Last arena monster was dismissed.");
+%%%%
+On turn #%d culled %d items dropped by monsters, done.
+
+#dprf("On turn #%d culled %d items dropped by monsters, done.",
+%%%%
+On turn #%d culled %d items dropped by monsters, culling some more.
+
+#dprf("On turn #%d culled %d items dropped by monsters, culling some more.",
+%%%%
+Culled %d (probably) ammo items, done.
+
+#dprf("Culled %d (probably) ammo items, done.",
+%%%%
+Culled %d items total, short of target %d.
+
+#dprf("Culled %d items total, short of target %d.",
+%%%%

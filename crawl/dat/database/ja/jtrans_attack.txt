@@ -1,0 +1,89 @@
+%%%%
+#bug
+#
+#attack_verb("bug"), verb_degree(), no_damage_message(),
+%%%%
+its
+
+それの
+#return jtrans("its").c_str();
+%%%%
+something
+
+#return actor_invisible? jtrans("it").c_str() : jtrans("something").c_str();
+%%%%
+it
+
+#case PRONOUN_SUBJECTIVE:    return jtrans("it").c_str();
+%%%%
+#its
+#
+#defined
+#
+#case PRONOUN_POSSESSIVE:    return jtrans("its").c_str();
+%%%%
+itself
+
+それ自身の
+#case PRONOUN_REFLEXIVE:     return jtrans("itself").c_str();
+%%%%
+ for %d
+
+#return make_stringf(" for %d", damage_done);
+%%%%
+#.
+#
+#return ".";
+%%%%
+#!
+#
+#return "!";
+%%%%
+#!
+#
+#return (damage_done < HIT_WEAK ? "." : "!");
+%%%%
+#.
+#
+#return ".";
+%%%%
+#!
+#
+#return "!";
+%%%%
+#!!
+#
+#return "!!";
+%%%%
+#!!!
+#
+#string ret = "!!!";
+%%%%
+#!
+#
+#ret += "!";
+%%%%
+completely
+
+完全に
+#return (ev_margin <= -20) ? jtrans("completely") :
+%%%%
+
+
+#(ev_margin <= -12) ? "" :
+%%%%
+closely
+
+ギリギリで
+#(ev_margin <= -6)  ? jtrans("closely")
+%%%%
+barely
+
+僅かに
+#: jtrans("barely");
+%%%%
+attack280%s %s %s%s"
+
+%s は%sを%s%s
+#jtrans("attack280%s %s %s%s").c_str(),
+%%%%

@@ -1,0 +1,125 @@
+%%%%
+ glares at your weapon.
+
+#<< " glares at your weapon."
+%%%%
+abandons you!
+
+はあなたを見捨てた！
+#if (simple_monster_message(*mi, jtrans("abandons you!").c_str()))
+%%%%
+reclaims one of your granted undead slaves!
+
+はあなたに与えた不死の奴隷を回収した！
+#simple_god_message(jtrans("reclaims one of your granted undead slaves!").c_str());
+%%%%
+reclaims your granted undead slaves!
+
+はあなたに与えた不死の奴隷達を回収した！
+#simple_god_message(jtrans("reclaims your granted undead slaves!").c_str());
+%%%%
+reclaims some of your granted undead slaves!
+
+はあなたに与えた不死の奴隷達を回収した！
+#simple_god_message(jtrans("reclaims some of your granted undead slaves!").c_str());
+%%%%
+'s voice booms out, \"Who do you think you are?\"
+
+の声が響き渡った:『お前は何様のつもりだ？』
+#慣用句である。直訳すると「お前はお前が誰だと考えている？」
+#simple_god_message(jtrans("'s voice booms out, \"Who do you think you are?\"").c_str(), GOD_BEOGH);
+%%%%
+One of your followers decides to abandon you.
+
+あなたの信奉者はあなたを裏切った！
+#chan << jtrans("One of your followers decides to abandon you.").c_str();
+%%%%
+Your followers decide to abandon you.
+
+あなたの信奉者達はあなたを裏切った！
+#chan << jtrans("Your followers decide to abandon you.").c_str();
+%%%%
+Some of your followers decide to abandon you.
+
+あなたの信奉者達はあなたを裏切った！
+#chan << jtrans("Some of your followers decide to abandon you.").c_str();
+%%%%
+#good_god_
+#
+#string full_key = "good_god_";
+%%%%
+#non
+#
+#full_key += "non";
+%%%%
+#neutral_holy_being_
+#
+#full_key += "neutral_holy_being_";
+%%%%
+#reaction
+#
+#string key = "reaction";
+%%%%
+#_humanoid
+#
+#key += "_humanoid";
+%%%%
+#speech
+#
+#_print_good_god_holy_being_speech(true, "speech", holy,
+%%%%
+#reaction
+#
+#string key = "reaction";
+%%%%
+#_humanoid
+#
+#key += "_humanoid";
+%%%%
+#speech
+#
+#_print_good_god_holy_being_speech(false, "speech", holy,
+%%%%
+#beogh_converted_orc_
+#
+#string msg = getSpeakString("beogh_converted_orc_" + key);
+%%%%
+#reaction_battle_follower
+#
+#_print_converted_orc_speech("reaction_battle_follower", orc,
+%%%%
+#speech_battle_follower
+#
+#_print_converted_orc_speech("speech_battle_follower", orc,
+%%%%
+#reaction_battle
+#
+#_print_converted_orc_speech("reaction_battle", orc,
+%%%%
+#speech_battle
+#
+#_print_converted_orc_speech("speech_battle", orc, MSGCH_TALK);
+%%%%
+#reaction_sight
+#
+#_print_converted_orc_speech("reaction_sight", orc,
+%%%%
+#speech_sight
+#
+#_print_converted_orc_speech("speech_sight", orc, MSGCH_TALK);
+%%%%
+%s stares at you suspiciously for a moment, then relaxes.
+
+%sの視線は一瞬疑い深くあなたに向けられたが、その後緩和された。
+#mprf(MSGCH_GOD, jtrans("%s stares at you suspiciously for a moment, then relaxes.").c_str(),
+%%%%
+%s trembles before you.
+
+%sはあなたの前で揺れ出した。
+#mprf(MSGCH_GOD, jtrans("%s trembles before you.").c_str(),
+%%%%
+%s looks hungrier.
+
+%sは食物に飢えているように見える。
+#mprf(MSGCH_MONSTER_ENCHANT, jtrans("%s looks hungrier.").c_str(),
+%%%%
