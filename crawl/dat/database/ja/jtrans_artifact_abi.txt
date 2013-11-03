@@ -213,15 +213,16 @@ good for stabbing
 #//Fixme_ja(エゴ武器の説明)
 It emits flame when wielded, causing extra injury to most foes and up to double damage against particularly susceptible opponents.
 
-これは炎を放っており、大抵の敵に追加ダメージを与える。炎が苦手な敵には倍の追加ダメージを与える
+これは炎を放っており、大抵の敵に追加ダメージを与える。炎が苦手な敵には倍の追加ダメージを与える。
 %%%%
 Big, fiery blades are also staple armaments of hydra-hunters.
 
-また、燃える武器もヒドラを狩るための主要な武器だ
+また、燃える刃はヒドラを狩るためにも重要だ。
 %%%%
 It has been specially enchanted to freeze those struck by it, causing extra injury to most foes and up to double damage against particularly susceptible opponents. It can also slow down cold-blooded creatures.
 
-これは命中すると相手を凍らせ、大抵の敵に追加ダメージを与える。冷気が苦手な敵には倍の追加ダメージを与える
+これは命中すると相手を凍らせ、大抵の敵に追加ダメージを与える。冷気が苦手な敵には倍の追加ダメージを与える。
+さらに冷血動物を減速させることがある。
 %%%%
 It has been blessed by the Shining One to cause great damage to the undead and demons.
 

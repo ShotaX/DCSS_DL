@@ -1,0 +1,122 @@
+%%%%
+#Power: %d, MR: %d, target: %d, roll: %d
+#
+#dprf("Power: %d, MR: %d, target: %d, roll: %d",
+%%%%
+#invalid body weight
+#
+#die("invalid body weight");
+%%%%
+#invalid AC rule
+#
+#die("invalid AC rule");
+%%%%
+#clinging
+#
+#return props.exists("clinging") && props["clinging"].get_bool();
+%%%%
+#clinging
+#
+#props["clinging"] = clinging;
+%%%%
+#clinging
+#
+#else if (props.exists("clinging"))
+%%%%
+#clinging
+#
+#props.erase("clinging");
+%%%%
+%s fall off the %s.
+
+%sは%sから落下した
+#mprf(jtrans("%s fall off the %s.").c_str(), name(DESC_THE).c_str(),
+%%%%
+door
+
+扉
+#door ? jtrans("door").c_str()
+%%%%
+wall
+
+壁
+#jtrans("wall").c_str());
+%%%%
+#clinging
+#
+#if (props.exists("clinging"))
+%%%%
+#clinging
+#
+#props["clinging"] = false;
+%%%%
+%s %s %s grip on %s.
+
+%sは%sを締付けから%s
+#mprf(jtrans("%s %s %s grip on %s.").c_str(),
+%%%%
+release
+
+開放した
+#intentional ? jtrans("release").c_str() : jtrans("lose").c_str());
+%%%%
+lose
+
+失った
+#intentional ? jtrans("release").c_str() : jtrans("lose").c_str());
+%%%%
+but do no damage.
+
+しかし損傷を与えられなかった。
+#exclams = jtrans("but do no damage.");
+%%%%
+#!
+#
+#exclams = "!";
+%%%%
+#!!
+#
+#exclams = "!!";
+%%%%
+#!!!
+#
+#exclams = "!!!";
+%%%%
+#!
+#
+#exclams += "!";
+%%%%
+%s %s constrict%s%s
+
+%sは%sを締め付けた%s%s
+#mprf(jtrans("%s %s constrict%s%s").c_str(),
+%%%%
+You
+
+#(is_player() ? jtrans("You").c_str()
+%%%%
+ for %d
+
+#make_stringf(" for %d", damage).c_str(),
+%%%%
+%s %s constricted%s%s
+
+%sは締め付けられた%s%s
+#mprf(jtrans("%s %s constricted%s%s").c_str(),
+%%%%
+are
+
+#defender->conj_verb("are").c_str(),
+%%%%
+ for %d
+
+#make_stringf(" for %d", damage).c_str(),
+%%%%
+constrict at: %s df: %s base %d dur %d ac %d tsc %d inf %d
+
+#dprf("constrict at: %s df: %s base %d dur %d ac %d tsc %d inf %d",
+%%%%
+#???
+#
+#oss << "???";
+%%%%

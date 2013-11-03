@@ -1,0 +1,1542 @@
+%%%%
+It affects your AC (%d).
+
+それはあなたのACに影響する(%d)
+%%%%
+It affects your evasion (%d).
+
+それはあなたのEVに影響する(%d)
+%%%%
+It affects your strength (%d).
+
+それはあなたの腕力に影響する(%d)
+%%%%
+It affects your intelligence (%d).
+
+それはあなたの知能に影響する(%d)
+%%%%
+It affects your dexterity (%d).
+
+それはあなたの器用さに影響する(%d)
+%%%%
+It affects your accuracy (%d).
+
+それはあなたの命中率に影響する(%d)
+%%%%
+It affects your damage-dealing abilities (%d).
+
+それはあなたのダメージを与える能力に影響する(%d)
+%%%%
+#こんな文章が説明欄にあっただろうか？
+#fire
+
+
+%%%%
+#こんな文章が説明欄にあっただろうか？
+#cold
+
+
+%%%%
+It insulates you from electricity.
+
+それはあなたを電気から絶縁する
+%%%%
+It protects you from poison.
+
+それはあなたを毒から保護する
+%%%%
+#こんな文章が説明欄にあっただろうか？
+#negative energy
+
+
+%%%%
+It affects your resistance to hostile enchantments.
+
+それはあなたの敵対的な呪文に対する耐性に影響する
+%%%%
+It affects your health (%d).
+
+それはあなたの体力に影響する(%d)
+%%%%
+It affects your magic capacity (%d).
+
+それはあなたの魔力の容量に影響する(%d)
+%%%%
+It enhances your eyesight.
+
+それはあなたの視力を強化する
+%%%%
+It lets you turn invisible.
+
+これはあなたに透明化の発動を可能とさせる
+%%%%
+It lets you fly.
+
+これはあなたに飛行の発動を可能とさせる
+%%%%
+It lets you blink.
+
+これはあなたに瞬間移動の発動を可能とさせる
+%%%%
+It lets you go berserk.
+
+これはあなたにテレポートの発動を可能とさせる
+%%%%
+It makes noises.
+
+これは騒音を発する
+%%%%
+It prevents spellcasting.
+
+これは呪文の詠唱を阻害する
+%%%%
+It causes teleportation.
+
+それはテレポートを引き起こす
+%%%%
+It prevents most forms of teleportation.
+
+それはほとんどのタイプのテレポートを阻害する
+%%%%
+It makes you angry.
+
+これはあなたに怒りをもたらす
+%%%%
+It may recurse itself.
+
+これは再び呪いにかかる
+%%%%
+It protects you against confusion.
+
+これはあなたを混乱から保護する
+%%%%
+It causes magical contamination when unequipped.
+
+これは持っているだけで魔力汚染を引き起こす
+%%%%
+It protects you from missiles.
+
+これはあなたを飛来物から保護する
+%%%%
+It can be evoked to emit clouds of fog.
+
+これはあなたに煙幕の放出の発動を可能とする
+%%%%
+It increases your rate of regeneration.
+
+これはあなたの回復力を増加させる
+%%%%
+#文章の並びを変更しなければならない。保留
+#It makes you extremely vulnerable to
+
+
+%%%%
+#It makes you very vulnerable to
+
+
+%%%%
+#It makes you vulnerable to
+
+
+%%%%
+#It protects you from
+
+
+%%%%
+#It greatly protects you from
+
+
+%%%%
+#//Fixme_ja(武器、防具の酸への抵抗性か？)
+Its enchantment level renders it %s to acidic corrosion.
+
+これに付与されている魔力が腐食に対する%sをこれに与えている
+%%%%
+immune
+
+免疫
+%%%%
+extremely resistant
+
+極めて高い耐性
+%%%%
+Being made of crystal renders it very resistant to acidic corrosion.
+
+これを構成している水晶が腐食に対する極めて高い耐性をこれに与えている
+%%%%
+Being of dwarven fabrication renders it very resistant to acidic corrosion.
+
+ドワーフによる製作により、腐食に対する極めて高い耐性がこれに与えられている
+%%%%
+resistant
+
+耐性
+%%%%
+somewhat resistant
+
+少しの耐性
+%%%%
+#//Fixme_ja(両手持ちか片手か)。片手/両手の武器の説明は？
+It is a one handed weapon.
+
+これは片手持ちの武器だ
+%%%%
+It is a two handed weapon.
+
+これは両手持ちの武器だ
+%%%%
+#//Fixme_ja(槍の発動、斧の複数攻撃、短剣の不意打ちの説明など)
+It can be evoked to extend its reach.
+
+これは発動によって射程を延ばすことが出来る
+%%%%
+It can hit multiple enemies in an arc around the wielder.
+
+これは使い手を中心に弧を描くように一度に多くの敵に攻撃を当てることが出来る
+%%%%
+extremely
+
+極めて
+%%%%
+particularly
+
+特に
+%%%%
+It is
+
+それは
+%%%%
+good for stabbing
+
+不意打ちに向いている
+%%%%
+#//Fixme_ja(エゴ武器の説明)
+It emits flame when wielded, causing extra injury to most foes and up to double damage against particularly susceptible opponents.
+
+これは炎を放っており、大抵の敵に追加ダメージを与える。炎が苦手な敵には倍の追加ダメージを与える。
+%%%%
+Big, fiery blades are also staple armaments of hydra-hunters.
+
+また、燃える刃はヒドラを狩るためにも重要だ。
+%%%%
+It has been specially enchanted to freeze those struck by it, causing extra injury to most foes and up to double damage against particularly susceptible opponents. It can also slow down cold-blooded creatures.
+
+これは命中すると相手を凍らせ、大抵の敵に追加ダメージを与える。冷気が苦手な敵には倍の追加ダメージを与える。
+さらに冷血動物を減速させることがある。
+%%%%
+It has been blessed by the Shining One to cause great damage to the undead and demons.
+
+これは『輝けるもの』の祝福を受けている。特にアンデットに効果があり、また地獄とパンデモニウムの邪悪な存在にも大きなダメージを与える
+%%%%
+It charges the ammunition it shoots with electricity; occasionally upon a hit, such missiles may discharge and cause terrible harm.
+
+これは電撃を放つ弾丸を装填する; 命中時に時として電気エネルギーを放出し、恐ろしい損害を与える
+%%%%
+Occasionally, upon striking a foe, it will discharge some electrical energy and cause terrible harm.
+
+これは敵に命中した際に時として電気エネルギーを放出し、恐ろしい損害を与える
+%%%%
+This legendary weapon is deadly to all dragonkind.
+
+この伝説的な武器は全ての龍族に対して致命的である
+%%%%
+It poisons the ammo it fires.
+
+これは発射する矢や弾に毒を付与する
+%%%%
+It poisons the flesh of those it strikes.
+
+これは命中した相手を毒に冒す
+%%%%
+It protects the one who wields it against injury (+5 to AC).
+
+これは手にした者を負傷から保護する。(+5 AC)
+%%%%
+It affects your evasion (+5 to EV).
+
+これはあなたのEVに影響する。(+5 EV)
+%%%%
+A truly terrible weapon, it drains the life of those it strikes.
+
+実に恐るべき武器である。これは命中すると相手の生命力を衰弱させる
+%%%%
+Attacks with this weapon take half as long, but cause slightly less damage.
+
+これは手にした者に２倍の速さでの射撃を可能とさせる、しかし少々損傷が少なくなる
+%%%%
+Any
+
+全てのこれから発射された
+%%%%
+fired from it inflicts extra damage.
+
+は敵に対して強烈なダメージを与える
+%%%%
+It inflicts extra damage upon your enemies.
+
+これは敵に対して強烈なダメージを与える
+%%%%
+It turns projectiles fired from it into bolts of flame.
+
+これは発射された矢や弾を炎で包む
+%%%%
+It turns projectiles fired from it into bolts of frost.
+
+これは発射された矢や弾を凍気で包む
+%%%%
+Each time it fires, it turns the launched projectile into a different, random type of bolt.
+
+これを発射するたびに、装填された弾丸を別のランダムな種類の魔力の付与された弾丸に変更する
+%%%%
+Each time it hits an enemy it has a different, random effect.
+
+これが敵に命中するたびに違う種類のランダムな効果を与える
+%%%%
+It inflicts no extra harm, but heals its wielder somewhat when it strikes a living foe.
+
+これは追加のダメージは与えないが、生命ある敵を攻撃した際に、装備した者を幾らか癒す
+%%%%
+In the hands of one skilled in necromantic magic, it inflicts extra damage on living creatures.
+
+これは死霊術の熟練者の手に振るわれる時、生命あるモンスターに追加のダメージを及ぼす。
+%%%%
+It warps and distorts space around it. Unwielding it can cause banishment or high damage.
+
+これは周囲の空間を捻じ曲げ歪ませる。この武器を変更するとき、アビスへの追放か膨大な損傷を受ける
+%%%%
+It can be evoked to extend its reach.
+
+これは発動によって射程を伸ばすことができる
+%%%%
+A skilled user can throw it in such a way that it will return to its owner.
+
+熟練した者は所有者の元に戻ってくるようにこれを投げることができる
+%%%%
+Ammo fired by it will pass through the targets it hits, potentially hitting all targets in its path until it reaches maximum range.
+
+これは命中した目標を貫き、射程の限界までの全ての目標を貫く潜在能力を持っている
+%%%%
+If a monster killed with it leaves a corpse in good enough shape, the corpse will be animated as a zombie friendly to the killer.
+
+もしこの武器でモンスターを倒し良い形状の死体が残った時、その死体はこの武器の使い手の僕としてよみがえるだろう。
+%%%%
+It disrupts the flow of magical energy around spellcasters and certain magical creatures (including the wielder).
+
+これは魔術師や特定の魔法生物の周囲の魔力の流れを妨害する(もちろんこの武器の使い手も含めて)
+%%%%
+#//Fixme_ja(988.この武器には幾つかの隠された特性があるかもしれない。)
+This weapon may have some hidden properties.
+
+この武器には幾つかの隠された特性があるかもしれない
+%%%%
+#//Fixme_ja(武器のカテゴリー)
+This weapon falls into the
+
+この武器は
+%%%%
+'%s' category.
+
+'%s' のカテゴリーに属している
+%%%%
+It is too large for you to wield.
+
+それはあなたが装備するには大きすぎる
+%%%%
+Demonspawn deal slightly more damage with it.
+
+悪魔の血族はこの武器で少々多くの損傷を与えることが出来る
+%%%%
+It is well-crafted and durable. Dwarves deal slightly more damage with it.
+
+これは上手く作られており、耐久性がある。ドワーフはこの武器で少々多くの損傷を与えることが出来る
+%%%%
+Orcs deal slightly more damage with it.
+
+オークはこの武器で少々多くの損傷を与えることが出来る
+%%%%
+Elves are slightly more accurate with it.
+
+エルフはこの武器で少々多くの損傷を与えることが出来る
+%%%%
+It cannot be enchanted further.
+
+これに更なる魔力を付与することはできない
+%%%%
+#ここも文章の追加が必要か
+It can be maximally enchanted to +
+
+これはまだ強化することができる(最大 +
+%%%%
+#//Throwing net
+
+
+%%%%
+threw
+
+投げた
+%%%%
+or
+
+もしくは
+%%%%
+fired
+
+発射した
+%%%%
+It turns into a bolt of flame.
+
+これは炎の矢に変化する
+%%%%
+It turns into a bolt of frost.
+
+これは氷の矢に変化する
+%%%%
+When
+
+
+%%%%
+thrown,
+
+
+%%%%
+fired from an appropriate launcher,
+
+
+%%%%
+it turns into a bolt of
+
+
+%%%%
+It is coated with poison.
+
+これには毒が塗られている
+%%%%
+It is tipped with asphyxiating poison.
+
+これには神経毒が付けられている
+%%%%
+It is tipped with a paralysing substance.
+
+これには麻痺物質が付けられている
+%%%%
+It is coated with a substance that causes slowness of the body.
+
+これは減速を引き起こす物質で覆われている
+%%%%
+It is coated with a fast-acting tranquilizer.
+
+これは即効性の麻酔で覆われている
+%%%%
+It is tipped with a substance that causes confusion.
+
+これは混乱を引き起こす物質が付けられている
+%%%%
+#It has been contaminated by something likely to cause disease.
+
+
+%%%%
+It is tipped with a substance that causes a mindless rage, making people attack friend and foe alike.
+
+これは心無き憤怒を引き起こす物質が付けられており、仲間を敵と同じように攻撃する
+%%%%
+A skilled user can throw it in such a way that it will return to its owner.
+
+熟練した者は所有者の元に戻ってくるようにこれを投げることができる
+%%%%
+It will pass through any targets it hits, potentially hitting all targets in its path until it reaches maximum range.
+
+これは命中した目標を貫き、射程の限界までの全ての目標を貫く潜在能力を持っている
+%%%%
+Any target it hits will blink, with a tendency towards blinking further away from the one who
+
+これが命中した目標は使い手から遠ざけられるように瞬間移動する
+%%%%
+it.
+
+
+%%%%
+It will explode into fragments upon hitting a target, hitting an obstruction, or reaching the end of its range.
+
+それは物体に命中したり、射程の隅まで到達すると断片に爆発をおこす
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+It is more deadly when thrown by
+
+それは
+%%%%
+dwarves
+
+ドワーフ
+%%%%
+elves
+
+エルフ
+%%%%
+orcs
+
+オーク
+%%%%
+, and it
+
+が扱った場合さらに致命的になり、
+%%%%
+.(more deadly)
+
+が扱った場合さらに致命的になる
+%%%%
+It
+
+それ
+%%%%
+is more effective in conjunction with
+
+は
+%%%%
+launchers.
+
+と連動するとより効果的である。
+%%%%
+It will always be destroyed upon impact.
+
+これは使用後に必ず破損する
+%%%%
+#//base rate
+Base armour rating:
+
+鎧の基礎AC:
+%%%%
+#?違うかも
+Encumbrance rating:
+
+鎧の限界強化値:
+%%%%
+All pieces of ammunition may get destroyed upon impact.
+
+全ての発射物は使用後に破壊される
+%%%%
+#//Fixme_ja_describe_ego_armour
+It allows its wearer to slither at a great speed.
+
+これは着用者に非常な速さで移動することを可能とさせる
+%%%%
+It allows its wearer to run at a great speed.
+
+これは着用者に非常な速さで走ることを可能とさせる
+%%%%
+It protects its wearer from heat and fire.
+
+これは着用者を熱と火から保護する
+%%%%
+It protects its wearer from cold.
+
+これは着用者を冷気から保護する
+%%%%
+It protects its wearer from poison.
+
+これは着用者を毒から保護する
+%%%%
+It allows its wearer to see invisible things.
+
+これは着用者が見えざる者を見ることを可能とさせる
+%%%%
+description += "When activated it hides its wearer from "
+                "the sight of others, but also increases "
+                "their metabolic rate by a large amount.";
+
+これは発動することで着用者を一時的に透明にするが、透明化の最中には代謝エネルギーの消費が大幅に増加する
+%%%%
+It increases the physical power of its wearer (+3 to strength).
+
+これは着用者の物理的な力を増大させる。(+3 腕力)
+%%%%
+It increases the dexterity of its wearer (+3 to dexterity).
+
+これは着用者の器用さを増大させる。(+3 器用さ) 
+%%%%
+It makes you more clever (+3 to intelligence).
+
+これは着用者の知力を増大させる。(+3 知力) 
+%%%%
+It can be activated to allow its wearer to fly indefinitely.
+
+これは発動することで着用者を飛行させることができる
+%%%%
+It increases its wearer's resistance to enchantments.
+
+これは着用者の魔法への抵抗力を増大させる
+%%%%
+It protects its wearer from harm (+3 to AC).
+
+これは着用者を負傷から保護する。(+3 AC) 
+%%%%
+It enhances the stealth of its wearer.
+
+これは着用者の隠密性を高める
+%%%%
+It protects its wearer from the effects of both cold and heat.
+
+これは着用者を熱と冷気の両方の効果から保護する
+%%%%
+It protects its wearer from the effects of negative energy.
+
+これは着用者を負のエネルギーの影響からある程度保護する
+%%%%
+It increases the power of its wearer's magical spells.
+
+これは着用者の呪文の力を増大させる
+%%%%
+It protects its wearer's possessions from damage and destruction.
+
+これは着用者の所持品を損害や破壊から保護する
+%%%%
+It reflects blocked things back in the direction they came from.
+
+これは飛来物を防御し、発射元に跳ね返す
+%%%%
+It shields its wearer from harm at the cost of magical power.
+
+これは損傷を魔力によって防御する
+%%%%
+These improve your skills with ranged weaponry but interfere slightly with melee combat.
+
+これはあなたの遠距離武器の技術を向上させるが、近接戦闘に少し干渉する
+%%%%
+This armour may have some hidden properties.
+
+この防具には幾つかの隠された特性があるかもしれない
+%%%%
+It is well-crafted and durable.
+
+これは巧みに造られていて、非常に耐久力がある
+%%%%
+It is well-crafted and unobstructive
+
+これは巧みに造られていて、体の動きを妨げない
+%%%%
+It is well-crafted and lightweight
+
+これは巧みに造られていて、軽量だ
+%%%%
+, and helps its wearer avoid being noticed
+
+、そして着用者の隠密行動の助けになる
+%%%%
+It fits
+
+それは
+%%%%
+well.
+
+にぴったりと合う
+%%%%
+Enchanting it will turn it into a suit of magical armour.
+
+それに魔力を注ぐと、不思議な魔法の鎧に変化する
+%%%%
+It can be maximally enchanted to +
+
+それは最大 +
+%%%%
+.(max_armour)
+
+まで魔力を付与できる
+%%%%
+
+
+
+%%%%
+It affects your AC (
+
+これはあなたのACに影響を与える
+%%%%
+).
+
+
+%%%%
+It affects your evasion (
+
+これはあなたのEVに影響を与える
+%%%%
+It affects your strength (
+
+これはあなたの腕力に影響を与える
+%%%%
+It affects your intelligence (
+
+これはあなたの知力に影響を与える
+%%%%
+It affects your dexterity (
+
+これはあなたの器用さに影響を与える
+%%%%
+It affects your accuracy (
+
+これはあなたの命中力に影響を与える
+%%%%
+It affects your damage-dealing abilities (
+
+これはあなたのダメージを与える能力に影響を与える
+%%%%
+This
+
+この
+%%%%
+amulet
+
+護符
+%%%%
+ring
+
+指輪
+%%%%
+may have hidden properties.
+
+には幾つかの隠された特性があるかもしれない
+%%%%
+#// describe_misc_item
+This isn't a deck at all!
+
+これはデッキではない!
+%%%%
+Drawn card(s):
+
+引いたカード:
+%%%%
+Next card(s):
+
+次のカード:
+%%%%
+Marked card(s):
+
+積み込んだカード:
+%%%%
+Seen card(s):
+
+見たカード:
+%%%%
+#// Fixme_ja(呪文の説明欄)
+Spells                             Type                      Level
+
+呪文                               分類                      レベル
+%%%%
+This book is beyond your current level of understanding.
+
+この本の内容は現在のあなたの理解力を遥かに越えている
+%%%%
+#//Fixme_ja_wand_max
+It can have at most
+
+これは最大で
+%%%%
+charges.
+
+回まで充填することができる
+%%%%
+It is fully charged.
+
+これは限界まで充填されている
+%%%%
+Unfortunately, it has no charges left.
+
+残念ながら、これには残り回数が無い
+%%%%
+#// Fixme_ja_food
+It looks nice and ripe.
+
+この肉は素晴らしく熟成された様子だ
+%%%%
+In fact, it is rotting away before your eyes.
+
+これは腐敗が進行しているように見える
+%%%%
+Eating it is completely out of the question!
+
+これを食べるなんて問題外だ!
+%%%%
+It looks rather unpleasant.
+
+この肉はどちらかというと不味そうだ
+%%%%
+This meat is poisonous.
+
+この肉は有毒だ
+%%%%
+Eating this meat will cause random mutations.
+
+この肉を食べるとランダムの突然変異を受けるだろう
+%%%%
+Eating this meat will cause rotting.
+
+この肉を食べると腐敗を引き起こすだろう
+%%%%
+Meat like this tastes awful and provides far less nutrition.
+
+この肉は酷い味であり、ほとんど栄養を提供しない
+%%%%
+This meat is poisonous
+
+この肉は有毒であり
+%%%%
+and provides less nutrition even for the poison-resistant
+
+毒への耐性を持っていてもほとんど栄養を与えない
+%%%%
+disapproves of eating such meat.
+
+はその肉を食べることを承認しない
+%%%%
+It uses its own magic reservoir for casting spells, and recharges automatically according to the recharging rate.
+
+これは呪文を唱えるための独自の魔力の充電池を持っており、充填値に応じた速さで魔力が自動で回復する
+%%%%
+It can currently hold
+
+これは現在
+%%%%
+charges. It can be magically
+
+の充填値を持っている。これは
+%%%%
+recharged to contain up to
+
+最大
+%%%%
+charges.
+
+まで充填することができる
+%%%%
+Its capacity can be increased no further.
+
+これの容量はこれ以上増加することができない
+%%%%
+Its current recharge rate is
+
+これの現在の魔力回復速度は
+%%%%
+. It can be magically
+
+である。
+%%%%
+recharged up to +
+
+魔力回復速度の最大値は
+%%%%
+Its recharge rate is at maximum.
+
+魔力回復速度は最大値だ
+%%%%
+It can have at most
+
+それは最大
+%%%%
+charges and +
+
+の充填値と
+%%%%
+recharge rate.
+
+の魔力自動回復速度を持つことが出来る
+%%%%
+It falls into the 'Maces & Flails' category.
+
+これは'鈍器'のカテゴリーに当てはまる
+%%%%
+It falls into the 'Staves' category.
+
+これは'杖'のカテゴリーに当てはまる
+%%%%
+            description << "\nOnce released, the spirits within this device "
+                           "will dissipate, leaving it inert, though new ones "
+                           "may be attracted as its bearer battles through the "
+                           "dungeon and grows in power and wisdom.";
+
+
+%%%%
+The device is presently inert.
+
+この装置は現在は発動状態で無い
+%%%%
+It has a curse placed upon it.
+
+これには呪いがかかっている
+%%%%
+has a curse placed upon it, and it
+
+これには呪いがかかっており、
+%%%%
+weighs around
+
+重量が
+%%%%
+aum.
+
+aumだ
+%%%%
+This ancient artefact cannot be changed by magic or mundane means.
+
+この伝説のアーティファクトは魔法やその他の手段で変化させることが出来ない
+%%%%
+It is an ancient artefact.
+
+これは伝説のアーティファクト
+%%%%
+#//Fixme_ja_godhate
+opposes the use of such an
+
+はそのような
+%%%%
+evil
+
+邪悪
+%%%%
+unholy
+
+不浄
+%%%%
+item.
+
+なアイテムの使用に反対する
+%%%%
+disapproves of the use of such an item.
+
+はそのようなアイテムの使用を承認しない
+%%%%
+Press '<w>!</w>' or <w>Right-click</w> to toggle between the overview and the extended description.
+
+'<w>!</w>' or <w>Right-click</w>を押すことで一覧と追加説明の画面を切り替えることが出来る。
+%%%%
+Select a spell to read its description, to
+
+それを記憶するか忘れるため、
+%%%%
+memorise it or to forget it.
+
+もしくは説明を見るために呪文を選択せよ
+%%%%
+Select a spell to read its description.
+
+説明を見るために呪文を選択せよ
+%%%%
+#//
+<cyan>Adjust to which letter? </cyan>
+
+<cyan>どの文字に移動しますか? </cyan>
+%%%%
+#//
+Level: %d        School%s: %s        Fail: %s
+
+レベル: %d       領域%s: %s          失敗率: %s
+%%%%
+威力 :
+
+
+%%%%
+射程 :
+
+
+%%%%
+空腹度 :
+
+
+%%%%
+騒音 :
+
+
+%%%%
+#//Fixme_ja(召喚上限)
+You can sustain at most
+
+あなたは最大
+%%%%
+creatures summoned by this spell.
+
+体までの怪物をこの呪文によって維持できる
+%%%%
+frowns upon the use of this spell.
+
+はその呪文の使用にしかめっ面をする
+%%%%
+You'd be excommunicated if you dared to cast it!
+
+あなたはその呪文の詠唱を試みた場合即座に破門される!
+%%%%
+supports the use of this spell.
+
+はその呪文の詠唱を支援する
+%%%%
+The spell is scrawled in ancient runes that are beyond your current level of understanding.
+
+その呪文は古代のルーン文字によって殴り書きされており、現在のあなたの理解力を超えている
+%%%%
+This spell will have no effect right now.
+
+この呪文は現在効力をもたらさない
+%%%%
+(F)orget this spell by destroying the book.
+
+この呪文を本を破壊することで(F)忘却する
+%%%%
+Sif Muna frowns upon the destroying of books.
+
+シフ＝ムーナは本の破壊に対してしかめっ面をする
+%%%%
+(M)emorise this spell.
+
+この呪文を(M)記憶する
+%%%%
+#//Fixme_ja_describe_draconian_role
+It darts around disconcertingly without taking a step.
+
+それは歩む事無く、当惑するほどの速度で疾走する
+%%%%
+Its scales are sooty from years of magical pyrotechnics.
+
+その鱗は長年の魔力の爆発により煤焦げている
+%%%%
+In its gaze you see all the malefic power of its terrible god.
+
+あなたに向けられたその視線の中には恐るべき神の悪意ある力が備わっている
+%%%%
+Crackling balls of pure energy hum and spark up and down its scaled fists and arms.
+
+音を鳴らす純粋な魔力球を唸らせ、その鱗付いた拳と腕を高速で動かしている
+%%%%
+It looks especially reptilian, and eager for company.
+
+それは特に爬虫類に似ており、軍勢を呼び出す事に熱心に見える
+%%%%
+It looks unnaturally strong and dangerous with its fists.
+
+それは不自然に強力であり、危険な拳を持っている
+%%%%
+It wields a deadly weapon with menacing efficiency.
+
+それは能率的に威圧ができる致命的な武器を持っている
+%%%%
+Sparks crackle and flare out of its mouth and nostrils.
+
+パチパチと音を鳴らし、口と鼻の外に火花を散らしている
+%%%%
+Liquid flames drip from its mouth.
+
+炎上する液体がその口から垂れている
+%%%%
+Acid fumes swirl around it.
+
+酸性のガスを周囲に渦巻かせている
+%%%%
+Venom steams and drips from its jaws.
+
+その顎から猛毒の瘴気としずくを垂らしている
+%%%%
+Its outline shimmers with wild energies.
+
+奇妙なエネルギーが体の周りに揺らめいている
+%%%%
+Smoke pours from its nostrils.
+
+その鼻から煙を噴出している
+%%%%
+Frost pours from its nostrils.
+
+その鼻から冷気を噴出している
+%%%%
+Its scales and tail are adapted to the water.
+
+その鱗と尾鰭が水に適合している
+%%%%
+It is cloaked in a pall of superheated steam.
+
+それは過熱された水蒸気に包まれている
+%%%%
+A muscular
+
+筋肉の
+%%%%
+brown-
+
+茶色の
+%%%%
+black-
+
+黒の
+%%%%
+mottled-
+
+斑紋の
+%%%%
+yellow-
+
+黄色の
+%%%%
+green-
+
+緑の
+%%%%
+purple-
+
+紫の
+%%%%
+red-
+
+赤の
+%%%%
+white-
+
+白の
+%%%%
+grey-
+
+灰色の
+%%%%
+pale-
+
+青白の
+%%%%
+scaled humanoid with wings.
+
+鱗に包まれた翼を持った人間型の生物だ
+%%%%
+divine
+
+神聖な
+%%%%
+special
+
+特別な
+%%%%
+magical
+
+魔法的な
+%%%%
+#//Fixme_ja(前記のモンスター耐性がここで使われている)
+immune to
+
+に対する免疫を持っている
+%%%%
+very resistant to
+
+に対する強力な耐性を持っている
+%%%%
+resistant to
+
+に対する耐性を持っている
+%%%%
+looks
+
+に見える
+%%%%
+is very brittle
+
+は特別脆い
+%%%%
+and susceptible to disintegration.
+
+そして崩壊の影響を受けやすい
+%%%%
+is susceptible to
+
+の影響を受けやすい
+#        result << uppercase_first(pronoun) << " is susceptible to "
+#               << comma_separated_line(suscept.begin(), suscept.end())
+#               << ".\n";
+#並び替えが必要
+#
+%%%%
+is %s to hostile enchantments.
+
+は敵対的な魔法に対する%s耐性を持っている
+#確認必要
+%%%%
+is outlined in light.
+
+は光の中で照らされている
+%%%%
+is glowing with mutagenic radiation.
+
+は突然変異性の放射で輝いている
+%%%%
+can see invisible.
+
+は見えざるものを見ることができる
+%%%%
+can sense the presence of invisible creatures.
+
+は周囲の見えざるものを感知することが出来る
+%%%%
+is
+
+
+%%%%
+very slow
+
+とても遅い
+%%%%
+slow
+
+遅い
+%%%%
+extremely fast
+
+凄まじく早い
+%%%%
+very fast
+
+とても速い
+%%%%
+fast
+
+速い
+%%%%
+can fly by flapping
+
+は翼をはばたかせて飛ぶことができる
+%%%%
+wings.
+
+
+%%%%
+can fly.
+
+は飛行できる
+%%%%
+cannot regenerate.
+
+は自然回復しない
+%%%%
+regenerates quickly.
+
+は急速に回復する
+%%%%
+tiny
+
+非常に小さい
+%%%%
+very small
+
+とても小さい
+%%%%
+small
+
+小さい
+%%%%
+large
+
+大きい
+%%%%
+very large
+
+とても大きい
+%%%%
+giant
+
+巨大だ
+%%%%
+huge
+
+とてつもなく巨大だ
+%%%%
+#//Fixme_ja_mon_db
+It wants to drink your blood!
+
+それはあなたの血を欲しがっている!
+%%%%
+It has come for your soul!
+
+それはあなたの魂を欲している!
+%%%%
+#//player_ghost
+is incapable of using stairs.
+
+は階段を使用することが出来ない
+%%%%
+is mindless.
+
+は精神を持っていない
+%%%%
+is vulnerable to silver and hated by Zin.
+
+は銀に弱く、ジンに嫌われている
+%%%%
+This monster has been summoned, and is thus only temporary. Killing it yields no experience, nutrition or items
+
+このモンスターは一時的に召喚された者であり、これを殺すことで経験値、アイテム、栄養を得る事は出来ない
+%%%%
+, and it is incapable of using stairs
+
+、またこれは階段を使用できない
+%%%%
+        inf.body << "\n" << "This monster has been summoned in a durable "
+                       "way, and only partially exists. Killing it yields no "
+                       "experience, nutrition or items. You cannot easily "
+                       "abjure it, though.\n";
+
+
+%%%%
+        inf.body << "\n" << "You have summoned too many monsters of this kind "
+                            "to sustain them all, and thus this one will "
+                            "shortly expire.\n";
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+#// Fixme_ja(パンデモデーモンの説明を生成)

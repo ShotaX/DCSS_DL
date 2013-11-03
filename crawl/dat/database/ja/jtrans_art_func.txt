@@ -1,0 +1,325 @@
+%%%%
+The Sceptre summons one of its servants.
+
+#mpr("The Sceptre summons one of its servants.");
+%%%%
+You don't feel so good about this...
+
+#mpr("You don't feel so good about this...");
+%%%%
+The air shimmers briefly.
+
+#mpr("The air shimmers briefly.");
+%%%%
+The Sword of Cerebov burns away your fire resistance.
+
+#mpr("The Sword of Cerebov burns away your fire resistance.");
+%%%%
+The Sword of Cerebov burns away %s fire resistance.
+
+#mprf("The Sword of Cerebov burns away %s fire resistance.",
+%%%%
+the Scythe of Curses
+
+#"the Scythe of Curses", NH_NEVER);
+%%%%
+A shiver runs down your spine.
+
+#_equip_mpr(show_msgs, "A shiver runs down your spine.");
+%%%%
+You're too close to death to use this item.
+
+#mpr("You're too close to death to use this item.");
+%%%%
+You feel the staff feeding on your energy!
+
+#mpr("You feel the staff feeding on your energy!");
+%%%%
+You smell chlorine.
+
+#_equip_mpr(show_msgs, "You smell chlorine.");
+%%%%
+The staff glows a sickly green.
+
+#_equip_mpr(show_msgs, "The staff glows a sickly green.");
+%%%%
+The smell of chlorine vanishes.
+
+#_equip_mpr(show_msgs, "The smell of chlorine vanishes.");
+%%%%
+The staff's sickly green glow vanishes.
+
+#_equip_mpr(show_msgs, "The staff's sickly green glow vanishes.");
+%%%%
+You sense an aura of extreme power.
+
+#_equip_mpr(show_msgs, "You sense an aura of extreme power.");
+%%%%
+ss_welcome
+
+#if (!item->props.exists("ss_welcome"))
+%%%%
+The sword says, \"Hi! I'm the Singing Sword!\"
+
+#mprf(MSGCH_TALK, "The sword says, \"Hi! I'm the Singing Sword!\"");
+%%%%
+ss_welcome
+
+#item->props["ss_welcome"].get_bool() = true;
+%%%%
+The Singing Sword hums in delight!
+
+#mpr("The Singing Sword hums in delight!", MSGCH_TALK);
+%%%%
+Singing Sword
+
+#set_artefact_name(*item, "Singing Sword");
+%%%%
+The Singing Sword sighs.
+
+#_equip_mpr(show_msgs, "The Singing Sword sighs.", MSGCH_TALK);
+%%%%
+Sulking Sword
+
+#new_name = "Sulking Sword";
+%%%%
+Singing Sword
+
+#new_name = "Singing Sword";
+%%%%
+Screaming Sword
+
+#new_name = "Screaming Sword";
+%%%%
+silenced
+
+#const char *tenname[] =  {"silenced", "no_tension", "low_tension",
+%%%%
+no_tension
+
+#const char *tenname[] =  {"silenced", "no_tension", "low_tension",
+%%%%
+low_tension
+
+#const char *tenname[] =  {"silenced", "no_tension", "low_tension",
+%%%%
+high_tension
+
+#"high_tension", "SCREAM"};
+%%%%
+SCREAM
+
+#"high_tension", "SCREAM"};
+%%%%
+singing sword 
+
+#string msg = getSpeakString("singing sword " + key);
+%%%%
+You feel pruney.
+
+#_equip_mpr(show_msgs, "You feel pruney.");
+%%%%
+A terribly searing pain shoots up your arm!
+
+#_equip_mpr(show_msgs, "A terribly searing pain shoots up your arm!");
+%%%%
+You feel bloodthirsty!
+
+#_equip_mpr(show_msgs, "You feel bloodthirsty!");
+%%%%
+You feel less violent.
+
+#_equip_mpr(show_msgs, "You feel less violent.");
+%%%%
+the Staff of Wucad Mu
+
+#"the Staff of Wucad Mu", NH_NEVER);
+%%%%
+The staff is unable to affect your essence.
+
+#mpr("The staff is unable to affect your essence.");
+%%%%
+Your reserves of magic are full.
+
+#mpr("Your reserves of magic are full.");
+%%%%
+Magical energy flows into your mind!
+
+#mpr("Magical energy flows into your mind!");
+%%%%
+You feel a strange hunger, and smell blood in the air...
+
+#"You feel a strange hunger, and smell blood in the air...");
+%%%%
+You feel a bloodthirsty glee!
+
+#_equip_mpr(show_msgs, "You feel a bloodthirsty glee!");
+%%%%
+You feel strangely empty.
+
+#_equip_mpr(show_msgs, "You feel strangely empty.");
+%%%%
+You sense an extremely unholy aura.
+
+#_equip_mpr(show_msgs, "You sense an extremely unholy aura.");
+%%%%
+the Sword of Zonguldrok
+
+#"the Sword of Zonguldrok");
+%%%%
+shield of the gong
+
+#string msg = getSpeakString("shield of the gong");
+%%%%
+You hear a strange loud sound.
+
+#msg = "You hear a strange loud sound.";
+%%%%
+A thin mist springs up around you!
+
+#_equip_mpr(show_msgs, "A thin mist springs up around you!");
+%%%%
+Visions of slaying %s flood into your mind.
+
+#mprf("Visions of slaying %s flood into your mind.",
+%%%%
+Your confusion fades away as the thirst for blood takes over your mind.
+
+#mpr("Your confusion fades away as the thirst for blood takes over your mind.");
+%%%%
+Your thirst for blood fades away.
+
+#mpr("Your thirst for blood fades away.");
+%%%%
+You feel an overwhelming desire to commit suicide.
+
+#? "You feel an overwhelming desire to commit suicide."
+%%%%
+You feel an overwhelming desire to slay dragons!
+
+#: "You feel an overwhelming desire to slay dragons!");
+%%%%
+<green>You see the lance glow as it kills you.</green>
+
+#mpr("<green>You see the lance glow as it kills you.</green>");
+%%%%
+Killed a drac with hd %d.
+
+#dprf("Killed a drac with hd %d.", hd);
+%%%%
+<green>The lance glows as it skewers %s.</green>
+
+#mprf("<green>The lance glows as it skewers %s.</green>",
+%%%%
+%s %s blasted by disruptive energy!
+
+#mprf("%s %s blasted by disruptive energy!",
+%%%%
+are
+
+#defender->is_player() ? "are" : "is");
+%%%%
+is
+
+#defender->is_player() ? "are" : "is");
+%%%%
+Time to lay down the shillelagh law.
+
+#_equip_mpr(show_msgs, "Time to lay down the shillelagh law.");
+%%%%
+You feel oddly protected from the elements.
+
+#_equip_mpr(show_msgs, "You feel oddly protected from the elements.");
+%%%%
+You no longer feel protected from the elements.
+
+#_equip_mpr(show_msgs, "You no longer feel protected from the elements.");
+%%%%
+The light fades from your surroundings.
+
+#_equip_mpr(show_msgs, "The light fades from your surroundings.");
+%%%%
+The light returns to your surroundings.
+
+#_equip_mpr(show_msgs, "The light returns to your surroundings.");
+%%%%
+the plutonium sword
+
+#"the plutonium sword", NH_NEVER);
+%%%%
+Mutagenic energy flows through the plutonium sword!
+
+#mpr("Mutagenic energy flows through the plutonium sword!");
+%%%%
+bugger
+
+#const char *verb = "bugger", *adv = "";
+%%%%
+cleave
+
+#case 0: verb = "cleave", adv = " in twain"; break;
+%%%%
+ in twain
+
+#case 0: verb = "cleave", adv = " in twain"; break;
+%%%%
+pulverise
+
+#case 1: verb = "pulverise", adv = " into thin bloody mist"; break;
+%%%%
+ into thin bloody mist
+
+#case 1: verb = "pulverise", adv = " into thin bloody mist"; break;
+%%%%
+hew
+
+#case 2: verb = "hew", adv = " savagely"; break;
+%%%%
+ savagely
+
+#case 2: verb = "hew", adv = " savagely"; break;
+%%%%
+fatally mangle
+
+#case 3: verb = "fatally mangle", adv = ""; break;
+%%%%
+dissect
+
+#case 4: verb = "dissect", adv = " like a pig carcass"; break;
+%%%%
+ like a pig carcass
+
+#case 4: verb = "dissect", adv = " like a pig carcass"; break;
+%%%%
+chop
+
+#case 5: verb = "chop", adv = " into pieces"; break;
+%%%%
+ into pieces
+
+#case 5: verb = "chop", adv = " into pieces"; break;
+%%%%
+butcher
+
+#case 6: verb = "butcher", adv = " messily"; break;
+%%%%
+ messily
+
+#case 6: verb = "butcher", adv = " messily"; break;
+%%%%
+slaughter
+
+#case 7: verb = "slaughter", adv = " joyfully"; break;
+%%%%
+ joyfully
+
+#case 7: verb = "slaughter", adv = " joyfully"; break;
+%%%%
+%s %s%s %s%s.
+
+#mprf("%s %s%s %s%s.", attacker->name(DESC_THE).c_str(), verb,
+%%%%
+s
+
+#attacker->is_player() ? "" : "s", defender->name(DESC_THE).c_str(),
+%%%%

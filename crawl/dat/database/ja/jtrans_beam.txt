@@ -1,0 +1,1450 @@
+%%%%
+#zapping: power=%d
+#
+#dprf(DIAG_BEAM, "zapping: power=%d", power);
+%%%%
+You hear a mighty clap of thunder!
+
+あなたは雷鳴が力強く轟くのを耳にした！
+#noisy(25, you.pos(), jtrans("You hear a mighty clap of thunder!").c_str());
+%%%%
+#orb of energy
+#
+#if (pbolt.name != "orb of energy"
+%%%%
+#unimportant
+#
+#pbolt.name = "unimportant";
+%%%%
+#Beam cancelled.
+#
+#dprf(DIAG_BEAM, "Beam cancelled.");
+%%%%
+Couldn't find zap type %d
+
+#mprf(MSGCH_ERROR, "Couldn't find zap type %d", z_type);
+%%%%
+#skipping beam hit, affected them twice already
+#
+#dprf(DIAG_BEAM, "skipping beam hit, affected them twice already");
+%%%%
+#chaos beam: old_deg = %5.2f, new_deg = %5.2f, shift = %5.2f
+#
+#dprf(DIAG_BEAM, "chaos beam: old_deg = %5.2f, new_deg = %5.2f, shift = %5.2f",
+%%%%
+#beam '%s', source '%s', item '%s'; has range -1
+#
+#ASSERTM(range >= 0, "beam '%s', source '%s', item '%s'; has range -1",
+%%%%
+#player
+#
+#((beam_source == NON_MONSTER && source == you.pos()) ? "player"
+%%%%
+#unknown
+#
+#? menv[beam_source].name(DESC_PLAIN, true) : "unknown")).c_str(),
+%%%%
+#none
+#
+#(item ? item->name(DESC_PLAIN, false, true) : "none").c_str());
+%%%%
+%s appears from out of thin air!
+
+%sは何処からともなく現れた！
+#mprf(jtrans("%s appears from out of thin air!").c_str(),
+%%%%
+#%s%s%s [%s] (%d,%d) to (%d,%d): 
+#
+#dprf(DIAG_BEAM, "%s%s%s [%s] (%d,%d) to (%d,%d): "
+%%%%
+#gl=%d col=%d flav=%d hit=%d dam=%dd%d range=%d
+#
+#"gl=%d col=%d flav=%d hit=%d dam=%dd%d range=%d",
+%%%%
+#beam
+#
+#(is_beam) ? "beam" : "missile",
+%%%%
+#missile
+#
+#(is_beam) ? "beam" : "missile",
+%%%%
+#*
+#
+#(is_explosion) ? "*" :
+%%%%
+#
+#
+#(is_big_cloud) ? "+" : "",
+%%%%
+#
+#
+#(is_tracer) ? " tracer" : "",
+%%%%
+You hear a grinding noise.
+
+あなたは岩を削る騒音を耳にした。
+#mpr(jtrans("You hear a grinding noise."), MSGCH_SOUND);
+%%%%
+The damaged grate falls apart.
+
+壊れかけた格子は崩れ去った
+#mpr(jtrans("The damaged grate falls apart."));
+%%%%
+beam865_slime
+
+粘液性の物質
+#wall = "slime";
+%%%%
+beam867_weird stuff
+
+奇妙な物質
+#wall = "weird stuff";
+%%%%
+rock
+
+岩
+#wall = "rock";
+%%%%
+%s %s shatters into small pieces.
+
+%s %sは小さな欠片に砕け散った。
+#mprf(jtrans("%s %s shatters into small pieces.").c_str(),
+%%%%
+The
+
+その
+%%%%
+Some
+
+幾らかの
+#mprf("%s %s shatters into small pieces.",
+#                agent() && agent()->is_player() ? "The" : "Some",
+#                wall.c_str());
+%%%%
+veto
+
+#|| env.markers.property_at(pos(), MAT_ANY, "veto_fire") == "veto"
+%%%%
+The tree burns like a torch!
+
+木は松明のように燃え上がった！
+#emit_message(MSGCH_PLAIN, "The tree burns like a torch!");
+%%%%
+You smell burning wood.
+
+#emit_message(MSGCH_PLAIN, "You smell burning wood.");
+%%%%
+#You hear a grinding noise.
+#
+#already defined
+#
+#msg = jtrans("You hear a grinding noise.");
+%%%%
+The grate screeches as it bends and collapses.
+
+鉄格子は折れ曲がり音を立てた。
+#msg = jtrans("The grate screeches as it bends and collapses.");
+%%%%
+You hear the screech of bent metal.
+
+あなたは金属が曲がったような音を聞いた。
+#msg = jtrans("You hear the screech of bent metal.");
+%%%%
+The grate bends and collapses.
+
+鉄格子は曲がり、崩壊した。
+#msg = jtrans("The grate bends and collapses.");
+%%%%
+You hear a hideous screaming!
+
+あなたは恐ろしい叫び声を聞いた！
+#msg = jtrans("You hear a hideous screaming!");
+%%%%
+The idol screams as its substance crumbles away!
+
+偶像を構成する物質が崩壊し、叫び声をあげた！
+#msg = jtrans("The idol screams as its substance crumbles away!");
+%%%%
+The idol twists and shakes as its substance crumbles away!
+
+偶像を構成する物質が崩壊し、捩れ、叫び声をあげた！
+#msg = jtrans("The idol twists and shakes as its substance crumbles away!");
+%%%%
+The tree breaks and falls down!
+
+木は破壊され、倒れた！
+#msg = jtrans("The tree breaks and falls down!");
+%%%%
+You hear timber falling.
+
+あなたは木が倒れる音を聞いた
+#msg = jtrans("You hear timber falling.");
+%%%%
+#veto
+#
+#if (env.markers.property_at(pos(), MAT_ANY, "veto_disintegrate") == "veto")
+%%%%
+#beam::hit_wall yet not solid: %s
+#
+#die("beam::hit_wall yet not solid: %s", dungeon_feature_name(feat));
+%%%%
+Your line of fire to 
+
+#string prompt = "Your line of fire to ";
+%%%%
+the targeted 
+
+#prompt += "the targeted "
+%%%%
+ is blocked by 
+
+#prompt += " is blocked by "
+%%%%
+Continue anyway?
+
+続けますか？
+#prompt += jtrans("Continue anyway?");
+%%%%
+The %s protects %s from harm.
+
+%sは%sを損傷から守った
+#mprf(jtrans("The %s protects %s from harm.").c_str(),
+%%%%
+#fire_beam() called on already done beam 
+#
+#dprf(DIAG_BEAM, "fire_beam() called on already done beam "
+%%%%
+#'%s' (item = '%s')
+#
+#"'%s' (item = '%s')", name.c_str(),
+%%%%
+#none
+#
+#item ? item->name(DESC_PLAIN).c_str() : "none");
+%%%%
+%s appears from out of your range of vision.
+
+%s はあなたの視界外から現れた
+#mprf(jtrans("%s appears from out of your range of vision.").c_str(),
+%%%%
+completely resists.
+
+は完全に抵抗した。
+#(original > 0) ? jtrans("completely resists.").c_str()
+%%%%
+appears unharmed.
+ 	
+には効いていないようだ。
+#: jtrans("appears unharmed.").c_str());
+%%%%
+resists.
+
+は抵抗した。
+#simple_monster_message(mons, jtrans("resists.").c_str());
+%%%%
+melts!
+
+は溶けだした！
+#simple_monster_message(mons, jtrans("melts!").c_str());
+%%%%
+is on fire!
+
+は燃えている！
+#simple_monster_message(mons, jtrans("is on fire!").c_str());
+%%%%
+is burned terribly!
+
+は激しく燃えあがった！
+#simple_monster_message(mons, jtrans("is burned terribly!").c_str());
+%%%%
+is scalded terribly!
+
+はひどく火傷をしている！
+#simple_monster_message(mons, jtrans("is scalded terribly!").c_str());
+%%%%
+shrugs off the wave.
+
+は波に肩をすくめた
+#simple_monster_message(mons, jtrans("shrugs off the wave.").c_str());
+%%%%
+ is doused terribly!
+
+#simple_monster_message(mons, " is doused terribly!");
+%%%%
+#completely resists.
+#
+#(original > 0) ? jtrans("completely resists.").c_str()
+%%%%
+#appears unharmed.
+#
+#: jtrans("appears unharmed.").c_str());
+%%%%
+#resists.
+#
+#simple_monster_message(mons, jtrans("resists.").c_str());
+%%%%
+is frozen!
+
+は凍りついた！
+#simple_monster_message(mons, jtrans("is frozen!").c_str());
+%%%%
+#completely resists.
+#
+#(original > 0) ? jtrans("completely resists.").c_str()
+%%%%
+#appears unharmed.
+#
+#: jtrans("appears unharmed.").c_str());
+%%%%
+#completely resists.
+#
+#(original > 0) ? jtrans("completely resists.").c_str()
+%%%%
+#appears unharmed.
+#
+#: jtrans("appears unharmed.").c_str());
+%%%%
+#completely resists.
+#
+#(original > 0) ? jtrans("completely resists.").c_str()
+%%%%
+#appears unharmed.
+#
+#: jtrans("appears unharmed.").c_str());
+%%%%
+partially resists.
+
+は幾らか耐性を示した。
+#simple_monster_message(mons, jtrans("partially resists.").c_str());
+%%%%
+#completely resists.
+#
+#simple_monster_message(mons, jtrans("completely resists.").c_str());
+%%%%
+ resists.
+
+は抵抗した。
+#simple_monster_message(mons, " resists.");
+%%%%
+#completely resists.
+#
+#simple_monster_message(mons, jtrans("completely resists.").c_str());
+%%%%
+#appears unharmed.
+#
+#hurted == 0 ? jtrans("appears unharmed.").c_str()
+%%%%
+writhes in agony!
+
+は苦痛に身もだえした！
+#: jtrans("writhes in agony!").c_str());
+%%%%
+appears unharmed.
+
+#hurted == 0 ? jtrans("appears unharmed.").c_str():
+%%%%
+ is terribly seared!
+
+はひどく焼き爛れた！
+#dam > 30	   ? " is terribly seared!"
+%%%%
+is seared!
+
+は焼き爛れた！
+#								   			   : jtrans("is seared!").c_str());
+%%%%
+#partially resists.
+#
+#simple_monster_message(mons, jtrans("partially resists.").c_str());
+%%%%
+#is frozen!
+#
+#simple_monster_message(mons, jtrans("is frozen!").c_str());
+%%%%
+#partially resists.
+#
+#simple_monster_message(mons, jtrans("partially resists.").c_str());
+%%%%
+#melts!
+#
+#simple_monster_message(mons, jtrans("melts!").c_str());
+%%%%
+#is burned terribly!
+#
+#simple_monster_message(mons, jtrans("is burned terribly!").c_str());
+%%%%
+#completely resists.
+#
+#(original > 0) ? jtrans("completely resists.").c_str()
+%%%%
+#appears unharmed.
+#
+#: jtrans("appears unharmed.").c_str());
+%%%%
+#melts!
+#
+#simple_monster_message(mons, jtrans("melts!").c_str());
+%%%%
+#is burned terribly!
+#
+#simple_monster_message(mons, jtrans("is burned terribly!").c_str());
+%%%%
+#appears unharmed.
+#
+#simple_monster_message(mons, jtrans("appears unharmed.").c_str());
+%%%%
+The beam of light passes harmlessly through %s.
+
+#mprf(jtrans("The beam of light passes harmlessly through %s.").c_str(),
+%%%%
+#is burned terribly!
+#
+#simple_monster_message(mons, jtrans("is burned terribly!").c_str());
+%%%%
+is harmlessly tossed around.
+
+は無害の風に翻弄されている。
+#simple_monster_message(mons, jtrans("is harmlessly tossed around.").c_str());
+%%%%
+gets badly buffeted.
+
+は酷く打ちのめされた。
+#simple_monster_message(mons, jtrans("gets badly buffeted.").c_str());
+%%%%
+ partially resists.
+
+は幾らか耐性を示した。
+#simple_monster_message(mons, " partially resists.");
+%%%%
+ completely resists.
+
+は完全に抵抗した。
+#(original > 0) ? " completely resists."
+%%%%
+ appears unharmed.
+
+には効いていないようだ。
+#: " appears unharmed.");
+%%%%
+is unaffected.
+
+は影響を受けていない。
+#if (simple_monster_message(mons, jtrans("is unaffected.").c_str()))
+%%%%
+ looks frightened!
+ 
+は脅えあがったようだ！
+#case ENCH_FEAR:      msg = " looks frightened!";      break;
+%%%%
+ looks rather confused.
+
+はひどく混乱したようだ。
+#case ENCH_CONFUSION: msg = " looks rather confused."; break;
+%%%%
+ submits to your will.
+
+#case ENCH_CHARM:     msg = " submits to your will.";  break;
+%%%%
+suddenly stops moving!
+
+は突然動きを停止した！
+#&& simple_monster_message(mons, jtrans("suddenly stops moving!").c_str()))
+%%%%
+is moving more slowly.
+
+は動きが遅くなった。
+#&& simple_monster_message(mons, jtrans("is moving more slowly.").c_str()))
+%%%%
+convulses.
+
+は激しく振動した。
+#simple_monster_message(mons, jtrans("convulses.").c_str());
+%%%%
+looks even sicker.
+
+は更に重く毒に冒されたようだ。
+#old_pois.degree > 0 ? jtrans("looks even sicker.").c_str()
+%%%%
+is poisoned.
+
+は毒に冒されたようだ。
+#: jtrans("is poisoned.").c_str());
+%%%%
+is covered in liquid flames!
+
+は燃えたぎる液体に包まれた！
+#simple_monster_message(mons, jtrans("is covered in liquid flames!").c_str());
+%%%%
+#mystic blast
+#
+#beam.name           = "mystic blast";
+%%%%
+#orb of energy
+#
+#beam.aux_source     = "orb of energy";
+%%%%
+The orb of energy explodes!
+
+エネルギーの球体が爆発した！
+#mpr(jtrans("The orb of energy explodes!"));
+%%%%
+%s life force is offered up.
+
+#mprf("%s life force is offered up.", victim->name(DESC_ITS).c_str());
+%%%%
+%s %s healed.
+
+#mprf("%s %s healed.", ai->name(DESC_THE).c_str(),
+%%%%
+are
+
+#ai->conj_verb("are").c_str());
+%%%%
+#noxious blast
+#
+#if (name == "noxious blast")
+%%%%
+#blast of poison
+#
+#if (name == "blast of poison")
+%%%%
+#foul vapour
+#
+#if (name == "foul vapour")
+%%%%
+#freezing blast
+#
+#if (name == "freezing blast")
+%%%%
+#freezing blast
+#
+#if (name == "freezing blast")
+%%%%
+#freezing blast
+#
+#if (name == "foul vapour" || name == "freezing blast")
+%%%%
+#orb of energy
+#
+#if (name == "orb of energy")
+%%%%
+The wave splashes down.
+
+波がぶつかってきた。
+#mprf("%s", jtrans("The wave splashes down.").c_str());
+%%%%
+You hear a splash.
+
+あなたは波の音を聞いた
+#noisy(25, pos(), jtrans("You hear a splash.").c_str());
+%%%%
+#orb of electricity
+#
+#if  (name == "orb of electricity"
+%%%%
+#metal orb
+#
+#|| name == "metal orb"
+%%%%
+#great blast of cold
+#
+#|| name == "great blast of cold")
+%%%%
+#fiery breath
+#
+#if ((name == "fiery breath" && you.species == SP_RED_DRACONIAN)
+%%%%
+#searing blast
+#
+#|| name == "searing blast") // monster and player red draconian breath abilities
+%%%%
+#orb of energy
+#
+#if (name == "orb of energy")
+%%%%
+%s %s!
+
+#mprf("%s %s!",
+%%%%
+A fungus suddenly grows.
+
+菌は突然大きくなった
+#mpr(jtrans("A fungus suddenly grows."));
+%%%%
+#bolt of fire
+#
+#return (name == "bolt of fire"
+%%%%
+#bolt of magma
+#
+#|| name == "bolt of magma"
+%%%%
+#fireball
+#
+#|| name == "fireball"
+%%%%
+#bolt of lightning
+#
+#|| name == "bolt of lightning"
+%%%%
+#hellfire
+#
+#|| name.find("hellfire") != string::npos
+%%%%
+You hear a sizzling sound!
+
+あなたはジュージューという音を耳にした。
+#mpr(jtrans("You hear a sizzling sound!"), MSGCH_SOUND);
+%%%%
+#blast of poison
+#
+#if (name == "blast of poison")
+%%%%
+#great blast of cold
+#
+#if (name == "great blast of cold")
+%%%%
+#ball of steam
+#
+#if (name == "ball of steam")
+%%%%
+#poison gas
+#
+#if (name == "poison gas")
+%%%%
+#blast of choking fumes
+#
+#if (name == "blast of choking fumes")
+%%%%
+#blast of calcifying dust
+#
+#if (name == "blast of calcifying dust")
+%%%%
+#trail of fire
+#
+#if (name == "trail of fire")
+%%%%
+#ice storm
+#
+#if (name == "ice storm")
+%%%%
+#great blast of fire
+#
+#if (name == "great blast of fire")
+%%%%
+#exploding inner flame
+#
+#else if (MON_KILL(thrower) || aux_source == "exploding inner flame")
+%%%%
+#Beam attack: %d, defence: %d
+#
+#dprf(DIAG_BEAM, "Beam attack: %d, defence: %d", attack, defence);
+%%%%
+#Beam new attack: %d, defence: %d
+#
+#dprf(DIAG_BEAM, "Beam new attack: %d, defence: %d", attack, defence);
+%%%%
+#
+#
+#return "";
+%%%%
+#self
+#
+#return "self";
+%%%%
+#beam flavour: %d
+#
+#dprf(DIAG_BEAM, "beam flavour: %d", flavour);
+%%%%
+#Bolt reflected by neither player nor 
+#
+#dprf(DIAG_BEAM, "Bolt reflected by neither player nor "
+%%%%
+#monster (bolt = %s, item = %s)
+#
+#"monster (bolt = %s, item = %s)", name.c_str(),
+%%%%
+#none
+#
+#item ? item->name(DESC_PLAIN).c_str() : "none");
+%%%%
+That %s is likely to hit you. Continue anyway?
+
+その%sはあなたに命中しそうだ。本当に続行しますか？
+#string prompt = make_stringf(jtrans("That %s is likely to hit you. Continue anyway?").c_str(),
+%%%%
+beam
+
+光線
+#item ? name.c_str() : jtrans("beam").c_str());
+%%%%
+hits
+
+当てた
+#hit_verb = engulfs ? jtrans("engulfs").c_str() : jtrans("hits").c_str();
+%%%%
+The %s %s you!
+
+%sはあなたに%s!
+#mprf(jtrans("The %s %s you!").c_str(), name.c_str(), hit_verb.c_str());
+%%%%
+#Beamshield: hit: %d, block %d
+#
+#dprf(DIAG_BEAM, "Beamshield: hit: %d, block %d", testhit, block);
+%%%%
+Your %s reflects the %s!
+
+あなたの%sは%sを反射した！
+#mprf(jtrans("Your %s reflects the %s!").c_str(),
+%%%%
+You block the %s.
+
+あなたは%sを防いだ。
+#mprf(jtrans("You block the %s.").c_str(), name.c_str());
+%%%%
+The %s misses you.
+
+%sはあなたに当たらなかった。
+#mprf(jtrans("The %s misses you.").c_str(), name.c_str());
+%%%%
+The %s is repelled.
+
+%sははじかれた。
+%%%%
+You deflect the %s!
+
+あなたは%sを逸らした！
+#mprf("%s",defl == 1 ? jtrans("The %s is repelled.").c_str() : jtrans("You deflect the %s!").c_str());
+%%%%
+You momentarily phase out as the %s passes through you.
+
+あなたは一瞬位相をずらして%sを擦り抜けた。
+#mprf(jtrans("You momentarily phase out as the %s passes through you.").c_str(), name.c_str());
+%%%%
+engulfs
+
+包み込んだ
+%%%%
+#hits
+#
+#hit_verb = engulfs ? jtrans("engulfs").c_str() : jtrans("hits").c_str();
+%%%%
+The %s %s you!
+
+%s はあなたに%s!
+#mprf(jtrans("The %s %s you!").c_str(), name.c_str(), hit_verb.c_str());
+%%%%
+Helpless, you fail to dodge the %s.
+
+為す術が無い！あなたは%sの回避に失敗した
+#mprf(jtrans("Helpless, you fail to dodge the %s.").c_str(), name.c_str());
+%%%%
+Something tries to affect you, but you resist.
+
+何かがあなたに影響を及ぼそうとした。しかしあなたは抵抗した
+#mpr(jtrans("Something tries to affect you, but you resist."));
+%%%%
+Strange energies course through your body.
+
+奇怪なエネルギーがあなたの体内を激しく流れた。
+#mpr(jtrans("Strange energies course through your body."));
+%%%%
+#/
+#
+#(get_source_name() + "/" + aux_source));
+%%%%
+This spell isn't strong enough to banish yourself.
+
+この呪文はあなたを追放するほど強力ではない。
+#mpr(jtrans("This spell isn't strong enough to banish yourself."));
+%%%%
+#by nerve-wracking pain
+#
+#aux_source = "by nerve-wracking pain";
+%%%%
+#agony
+#
+#if (name.find("agony") != string::npos)
+%%%%
+Your body is wracked with pain!
+
+あなたの肉体は苦痛に破壊された！
+#mpr(jtrans("Your body is wracked with pain!"));
+%%%%
+Pain shoots through your body!
+
+苦痛があなたの体を撃ち抜いた！
+#mpr(jtrans("Pain shoots through your body!"));
+%%%%
+You convulse!
+
+あなたは激しく痙攣した！
+#mpr(jtrans("You convulse!"));
+%%%%
+#by dispel undead
+#
+#aux_source = "by dispel undead";
+%%%%
+You are blasted!
+
+あなたは爆破された！
+#mpr(jtrans("You are blasted!"));
+%%%%
+#disintegration bolt
+#
+#aux_source = "disintegration bolt";
+%%%%
+You feel like a pig.
+
+あなたは豚のようになった.
+#mpr(jtrans("You feel like a pig."));
+%%%%
+You feel %sfirmly anchored in space.
+
+#mprf(jtrans("You feel %sfirmly anchored in space.").c_str(),
+%%%%
+more
+
+#you.duration[DUR_DIMENSION_ANCHOR] ? jtrans("more").c_str() : "");
+%%%%
+Your teleport is interrupted.
+
+あなたのテレポートは中断された。
+#mpr(jtrans("Your teleport is interrupted.").c_str());
+%%%%
+Your magical defenses are stripped away!
+
+あなたの魔法防御ははぎ取られた！
+#mpr(jtrans("Your magical defenses are stripped away!").c_str());
+%%%%
+Software bugs nibble your toes!
+
+#mpr(jtrans("Software bugs nibble your toes!").c_str());
+%%%%
+#engulfs
+#
+#hits
+#
+#hit_verb = engulfs ? jtrans("engulfs").c_str() : jtrans("hits").c_str();
+%%%%
+#The %s %s you!
+#
+#mprf(jtrans("The %s %s you!").c_str(), name.c_str(), hit_verb.c_str());
+%%%%
+#Player damage: rolled=%d; before AC=%d; after AC=%d
+#
+#dprf(DIAG_BEAM, "Player damage: rolled=%d; before AC=%d; after AC=%d",
+%%%%
+#
+#
+#hurted = check_your_resists(hurted, flavour, "", this);
+%%%%
+Your attached jelly eats %s!
+
+あなたに付属しているジェリーは%sを食べた！
+#mprf(jtrans("Your attached jelly eats %s!").c_str(), item->name(DESC_THE).c_str());
+%%%%
+You feel a little better.
+
+あなたは少し元気になった
+#mpr(jtrans("You feel a little better.").c_str());
+%%%%
+#sticky flame
+#
+#if (name == "sticky flame")
+%%%%
+#hellfire
+#
+#if (flavour == BEAM_LAVA || name.find("hellfire") != string::npos)
+%%%%
+#ball of steam
+#
+#if (flavour == BEAM_FIRE && name != "ball of steam")
+%%%%
+#Damage: %d
+#
+#dprf(DIAG_BEAM, "Damage: %d", hurted);
+%%%%
+#flood of elemental water
+#
+#|| (name == "flood of elemental water"))
+%%%%
+#orb of energy
+#
+#if (name == "orb of energy")
+%%%%
+#is unaffected.
+#
+#if (simple_monster_message(mon, jtrans("is unaffected.").c_str()))
+%%%%
+is dazzled.
+
+%%%%
+is dazzled.
+
+は目がくらんでいる。
+#simple_monster_message(mons, jtrans("is dazzled.").c_str());
+%%%%
+#splash of liquid fire
+#
+#if (name == "sticky flame" || name == "splash of liquid fire")
+%%%%
+#splash of liquid fire
+#
+#if (name == "splash of liquid fire")
+%%%%
+The sticky flame splashes onto %s!
+
+%sに焼夷の炎が炸裂した
+#mprf(jtrans("The sticky flame splashes onto %s!").c_str(),
+%%%%
+#bolt of dispelling energy
+#
+#if (name == "bolt of dispelling energy" || origin_spell == SPELL_QUICKSILVER_BOLT)
+%%%%
+#freezing breath
+#
+#(name == "freezing breath" && mon->flight_mode()) ||
+%%%%
+#lance of force
+#
+#(name == "lance of force" && dmg > 0) ||
+%%%%
+#flood of elemental water
+#
+#(name == "flood of elemental water"))
+%%%%
+#spray of energy
+#
+#if (name == "spray of energy")
+%%%%
+ is bolstered by the flame.
+
+#simple_monster_message(mon, " is bolstered by the flame.");
+%%%%
+#chilling blast
+#
+#const bool drac_breath = (name == "freezing breath" || name == "chilling blast");
+%%%%
+%s %s blown backwards by the freezing wind.
+
+%s %s 凍える風によって後方に吹き飛ばされた
+#mprf(jtrans("%s %s blown backwards by the freezing wind.").c_str(),
+%%%%
+#are
+#
+#act->conj_verb("are").c_str());
+%%%%
+%s %s knocked back by the %s.
+
+%s %s %sに後方に押し返された
+#mprf(jtrans("%s %s knocked back by the %s.").c_str(),
+%%%%
+#are
+#
+#act->conj_verb("are").c_str(),
+%%%%
+#lance of force
+#
+#if (name == "lance of force" && coinflip())
+%%%%
+%s reflects the %s off %s!
+
+%sは%sで%sを跳ね返した！
+#mprf(jtrans("%s reflects the %s off %s!").c_str(),
+%%%%
+The %s bounces off of thin air!
+
+%sは跳ね返されて消えた。
+#mprf(jtrans("The %s bounces off of thin air!").c_str(), name.c_str());
+%%%%
+%s blocks the %s.
+
+%s は %s を防いだ。
+#mprf(jtrans("%s blocks the %s.").c_str(),
+%%%%
+You hear a hideous screaming!
+
+あなたは耳障りな金切り声を耳にした！
+#mpr(jtrans("You hear a hideous screaming!"), MSGCH_SOUND);
+%%%%
+The statue screams as its substance crumbles away!
+
+像は金切り声をあげながら崩壊した！
+#mpr(jtrans("The statue screams as its substance crumbles away!"),
+%%%%
+The statue twists and shakes as its substance crumbles away!
+
+像は捻れ、振動し、そして崩壊した！
+#mpr(jtrans("The statue twists and shakes as its substance crumbles away!"));
+%%%%
+protects %s plant from harm.
+
+は%s植物を損傷から守った
+#make_stringf(jtrans("protects %s plant from harm.").c_str(),
+%%%%
+#your
+#
+#attitude == ATT_FRIENDLY ? jtrans("your").c_str() : "").c_str(),
+%%%%
+The %s passes through %s.
+
+%sは %s を通過した。
+#mprf(jtrans("The %s passes through %s.").c_str(), name.c_str(), mon->name(DESC_THE).c_str());
+%%%%
+#hits
+#
+#hit_verb = engulfs ? jtrans("engulfs").c_str() : jtrans("hits").c_str();
+%%%%
+The %s %s %s.
+
+%sは%sに%s
+#mprf(jtrans("The %s %s %s.").c_str(), name.c_str(),
+%%%%
+beam4549_something
+
+何者か
+#: jtrans("something").c_str(),hit_verb.c_str());
+%%%%
+%s
+
+#mprf(MSGCH_SOUND, "%s", noise_msg.c_str());
+%%%%
+#Monster: %s; Damage: pre-AC: %d; post-AC: %d; post-resist: %d
+#
+#dprf(DIAG_BEAM, "Monster: %s; Damage: pre-AC: %d; post-AC: %d; post-resist: %d",
+%%%%
+#scroll of immolation
+#
+#|| aux_source == "scroll of immolation" && !effect_known);
+%%%%
+beam_4649_deflects
+
+逸らした
+%%%%
+beam_4649_repels
+
+はじいた
+#string deflects = (defl == 2) ? "deflects" : "repels";
+#msg::stream << mon->name(DESC_THE) << " "
+#            << deflects << " the " << name
+#            << '!' << endl;
+%%%%
+beam_4650 
+
+は
+#string deflects = (defl == 2) ? "deflects" : "repels";
+#msg::stream << mon->name(DESC_THE) << " "
+#            << deflects << " the " << name
+#            << '!' << endl;
+%%%%
+beam_4651 the 
+
+を
+#string deflects = (defl == 2) ? "deflects" : "repels";
+#msg::stream << mon->name(DESC_THE) << " "
+#            << deflects << " the " << name
+#            << '!' << endl;
+%%%%
+beam_4658_ momentarily phases 
+は一瞬位相を
+
+#msg::stream << mon->name(DESC_THE) << " momentarily phases "
+#            << "out as the " << name << " passes through "
+#            << mon->pronoun(PRONOUN_OBJECTIVE) << ".\n";
+%%%%
+beam_4659_out as the 
+ずらして
+
+#msg::stream << mon->name(DESC_THE) << " momentarily phases "
+#            << "out as the " << name << " passes through "
+#            << mon->pronoun(PRONOUN_OBJECTIVE) << ".\n";
+%%%%
+passes through
+を擦り抜けた。
+
+#msg::stream << mon->name(DESC_THE) << " momentarily phases "
+#            << "out as the " << name << " passes through "
+#            << mon->pronoun(PRONOUN_OBJECTIVE) << ".\n";
+%%%%
+#\n
+#
+#<< "\n";
+%%%%
+beam_4664_The 
+
+#msg::stream << "The " << name << " misses "
+#                      << mon->name(DESC_THE) << '.' << endl;
+%%%%
+beam_4664 
+は
+
+#msg::stream << "The " << name << " misses "
+#                      << mon->name(DESC_THE) << '.' << endl;
+%%%%
+beam_4665_misses
+から外れた。
+
+#msg::stream << "The " << name << " misses "
+#                      << mon->name(DESC_THE) << '.' << endl;
+%%%%
+#your miscasting
+#
+#&& aux_source.find("your miscasting") != string::npos))
+%%%%
+#hits
+#
+#hit_verb = engulfs ? jtrans("engulfs").c_str() : jtrans("hits").c_str();
+%%%%
+The %s %s %s.
+
+%sは %s を %s
+#mprf(jtrans("The %s %s %s.").c_str(),
+%%%%
+#something
+#
+#
+#mon->name(DESC_THE).c_str() : jtrans("something").c_str(),
+%%%%
+#%s
+#
+#mprf(MSGCH_SOUND, "%s", noise_msg.c_str());
+%%%%
+The %s hits something.
+
+%sは何者かに命中した。
+#mprf(MSGCH_SOUND, jtrans("The %s hits something.").c_str(), name.c_str());
+%%%%
+#sticky flame
+#
+#&& name != "sticky flame"
+%%%%
+#splash of liquid fire
+#
+#&& name != "splash of liquid fire"
+%%%%
+#lightning arc
+#
+#&& name != "lightning arc")
+%%%%
+#great blast of fire
+#
+#if (name == "great blast of fire" && mon->type == MONS_FIRE_VORTEX)
+%%%%
+%s,%s%s
+
+%sは%s%sになった
+#mprf(jtrans("%s,%s%s").c_str(),
+%%%%
+for a moment.
+
+一瞬
+#is_visible ? jtrans("for a moment.").c_str()
+%%%%
+#
+#
+#: "",
+%%%%
+#
+#
+#if (mon->malmutate("")) // exact source doesn't matter
+%%%%
+wobbles for a moment.
+
+は一瞬ぐらついた
+#simple_monster_message(mon, jtrans("wobbles for a moment.").c_str());
+%%%%
+convulses!
+
+は身震いした！
+#if (simple_monster_message(mon, jtrans("convulses!").c_str()))
+%%%%
+#HD: %d; pow: %d
+#
+#dprf(DIAG_BEAM, "HD: %d; pow: %d", mon->hit_dice, ench_power);
+%%%%
+'s soul is too badly injured.
+
+の魂は酷く傷つきすぎている。
+#simple_monster_message(mon, jtrans("'s soul is too badly injured.").c_str());
+%%%%
+'s soul is now ripe for the taking.
+
+の魂を刈り取る準備が完了した。
+#simple_monster_message(mon, jtrans("'s soul is now ripe for the taking.").c_str());
+%%%%
+convulses in agony!
+
+は苦痛にのた打ち回った！
+#if (simple_monster_message(mon, jtrans("convulses in agony!").c_str()))
+%%%%
+#agony
+#
+#if (name.find("agony") != string::npos) // agony
+%%%%
+is blasted.
+
+は爆破された
+#if (simple_monster_message(mon, jtrans("is blasted.").c_str()))
+%%%%
+looks drowsy...
+
+はまどろんでいる……。
+#if (simple_monster_message(mon, jtrans("looks drowsy...").c_str()))
+%%%%
+seems to speed up.
+
+の動作が高速になったようだ。
+#&& simple_monster_message(mon, jtrans("seems to speed up.").c_str()))
+%%%%
+seems to grow stronger.
+
+は力強くなったようだ。
+#if (simple_monster_message(mon, jtrans("seems to grow stronger.").c_str()))
+%%%%
+'s wounds heal themselves!
+
+の傷は良くなった！
+#if (simple_monster_message(mon, jtrans("'s wounds heal themselves!").c_str()))
+%%%%
+is healed somewhat.
+
+は癒された。
+#else if (simple_monster_message(mon, jtrans("is healed somewhat.").c_str()))
+%%%%
+appears confused.
+
+は混乱したようだ。
+#if (simple_monster_message(mon, jtrans("appears confused.").c_str()))
+%%%%
+falls asleep!
+
+は眠りに落ちた！
+#if (simple_monster_message(mon, jtrans("falls asleep!").c_str()))
+%%%%
+flickers and vanishes
+
+明滅して姿を消した！
+#if (enchant_monster_invisible(mon, jtrans("flickers and vanishes").c_str()))
+%%%%
+is repulsed!
+
+は撃退された！
+#simple_monster_message(mon, jtrans("is repulsed!").c_str());
+%%%%
+is charmed.
+
+は魅了された
+#if (simple_monster_message(mon, jtrans("is charmed.").c_str()))
+%%%%
+is filled with an intense inner flame!
+
+は強烈な内なる炎に満たされている！
+#? jtrans("is filled with an intense inner flame!").c_str()
+%%%%
+is filled with an inner flame.
+
+は内なる炎に満たされている！
+#: jtrans("is filled with an inner flame.").c_str()))
+%%%%
+ is firmly anchored in space.
+
+#if (simple_monster_message(mon, " is firmly anchored in space."))
+%%%%
+%s magical defenses are stripped away.
+
+%の魔法防御ははぎ取られた。
+#mprf(jtrans("%s magical defenses are stripped away.").c_str(),
+%%%%
+#is unaffected.
+#
+#defined.
+#
+#simple_monster_message(mon, jtrans("is unaffected.").c_str());
+%%%%
+#hellfire
+#
+#else if (name.find("hellfire") != string::npos)
+%%%%
+The 
+
+#tmp  = "The " + item->name(DESC_PLAIN, false, false, false)
+%%%%
+ explodes!
+
+#+ " explodes!";
+%%%%
+You hear an explosion!
+
+#hearMsg = "You hear an explosion!";
+%%%%
+#hellfire
+#
+#if (name.find("hellfire") != string::npos)
+%%%%
+The hellfire explodes!
+
+#seeMsg  = "The hellfire explodes!";
+%%%%
+You hear a strangely unpleasant explosion!
+
+#hearMsg = "You hear a strangely unpleasant explosion!";
+%%%%
+#fireball
+#
+#if (name == "fireball")
+%%%%
+#The fireball explodes!
+#
+#seeMsg  = "The fireball explodes!";
+%%%%
+You hear an explosion!
+
+#hearMsg = "You hear an explosion!";
+%%%%
+#orb of electricity
+#
+#if (name == "orb of electricity")
+%%%%
+The orb of electricity explodes!
+
+#seeMsg  = "The orb of electricity explodes!";
+%%%%
+You hear a clap of thunder!
+
+#hearMsg = "You hear a clap of thunder!";
+%%%%
+#metal orb
+#
+#if (name == "metal orb")
+%%%%
+The orb explodes into a blast of deadly shrapnel!
+
+#seeMsg  = "The orb explodes into a blast of deadly shrapnel!";
+%%%%
+#You hear an explosion!
+#
+#hearMsg = "You hear an explosion!";
+%%%%
+#blast of shrapnel
+#
+#name    = "blast of shrapnel";
+%%%%
+#great blast of fire
+#
+#if (name == "great blast of fire")
+%%%%
+A raging storm of fire appears!
+
+#seeMsg  = "A raging storm of fire appears!";
+%%%%
+You hear a raging storm!
+
+#hearMsg = "You hear a raging storm!";
+%%%%
+#great blast of cold
+#
+#if (name == "great blast of cold")
+%%%%
+The blast explodes into a great storm of ice!
+
+#seeMsg  = "The blast explodes into a great storm of ice!";
+%%%%
+You hear a raging storm!
+
+#hearMsg = "You hear a raging storm!";
+%%%%
+#ice storm
+#
+#name       = "ice storm";
+%%%%
+#stinking cloud
+#
+#if (name == "stinking cloud")
+%%%%
+#The beam explodes into a vile cloud!
+#
+#seeMsg     = "The beam explodes into a vile cloud!";
+%%%%
+You hear a loud \'bang\'!
+
+#hearMsg    = "You hear a loud \'bang\'!";
+%%%%
+#foul vapour
+#
+#if (name == "foul vapour")
+%%%%
+The ball explodes into a vile cloud!
+
+#seeMsg     = "The ball explodes into a vile cloud!";
+%%%%
+You hear a loud \'bang\'!
+
+#hearMsg    = "You hear a loud \'bang\'!";
+%%%%
+#stinking cloud
+#
+#name = "stinking cloud";
+%%%%
+#silver bolt
+#
+#if (name == "silver bolt")
+%%%%
+The silver bolt explodes into a blast of light!
+
+#seeMsg  = "The silver bolt explodes into a blast of light!";
+%%%%
+The dungeon gets brighter for a moment.
+
+#hearMsg = "The dungeon gets brighter for a moment.";
+%%%%
+#ghostly fireball
+#
+#if (name == "ghostly fireball")
+%%%%
+The ghostly flame explodes!
+
+#seeMsg  = "The ghostly flame explodes!";
+%%%%
+You hear the shriek of haunting fire!
+
+#hearMsg = "You hear the shriek of haunting fire!";
+%%%%
+The beam explodes into a cloud of software bugs!
+
+#seeMsg  = "The beam explodes into a cloud of software bugs!";
+%%%%
+You hear the sound of one hand!
+
+#hearMsg = "You hear the sound of one hand!";
+%%%%
+%s%s
+
+#mprf(MSGCH_GOD, "%s%s", name.c_str(),
+%%%%
+By Zin's power contained
+
+はジンの力により抑制された
+#									jtrans("By Zin's power contained").c_str());
+%%%%
+#explosion at (%d, %d) : g=%d c=%d f=%d hit=%d dam=%dd%d r=%d
+#
+#dprf(DIAG_BEAM, "explosion at (%d, %d) : g=%d c=%d f=%d hit=%d dam=%dd%d r=%d",
+%%%%
+#%s
+#
+#mprf(MSGCH_SOUND, "%s", noise_msg.c_str());
+%%%%
+#sticky fire
+#
+#if (flavour == BEAM_FIRE && name == "sticky fire")
+%%%%
+#sticky fire
+#
+#return "sticky fire";
+%%%%
+#lightning
+#
+#return "lightning";
+%%%%
