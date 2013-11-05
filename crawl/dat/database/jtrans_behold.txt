@@ -1,0 +1,92 @@
+%%%%
+%s's singing sounds muted, and has no effect on you.
+
+%s の歌声は不明瞭であり、そのためあなたに効果が無い。
+#mprf(jtrans("%s's singing sounds muted, and has no effect on you.").c_str(),
+%%%%
+The melody is strangely muted, and has no effect on you.
+
+旋律は妙に不明瞭であり、そのためあなたに効果が無い。
+#mpr(jtrans("The melody is strangely muted, and has no effect on you."));
+%%%%
+%s's is no longer quite as mesmerising!
+
+%s はもはや魅了されていない！
+#mprf(jtrans("%s's is no longer quite as mesmerising!").c_str(), mon->name(DESC_THE).c_str());
+%%%%
+Your mesmeriser suddenly seems less interesting!
+
+突然に彼女に興味が無くなった！
+#mpr(jtrans("Your mesmeriser suddenly seems less interesting!"));
+%%%%
+You are mesmerised by %s!
+
+あなたは %s によって魅了されている！
+#mprf(MSGCH_WARN, jtrans("You are mesmerised by %s!").c_str(),
+%%%%
+For a moment, your mind becomes perfectly clear!
+
+一瞬、あなたの精神は完全に澄みきった！
+#mprf("%s",jtrans("For a moment, your mind becomes perfectly clear!").c_str());
+%%%%
+%s's singing becomes strangely muted.
+
+%s の歌は奇妙に静まった
+#mprf(jtrans("%s's singing becomes strangely muted.").c_str(),
+%%%%
+Something's singing becomes strangely muted.
+
+何者かの歌は奇妙に静まった
+#mpr(jtrans("Something's singing becomes strangely muted."));
+%%%%
+%s's is no longer quite as mesmerising!
+
+%s はもはや魅了されていない！
+#mprf(jtrans("%s's is no longer quite as mesmerising!").c_str(), mon->name(DESC_THE).c_str());
+%%%%
+#Your mesmeriser suddenly seems less interesting!
+#
+#defined.
+#
+#mpr(jtrans("Your mesmeriser suddenly seems less interesting!"));
+%%%%
+You can no longer hear %s's singing!
+
+あなたは %s の歌を聴くことができなくなった
+#mprf(jtrans("You can no longer hear %s's singing!").c_str(),
+%%%%
+The silence clears your mind.
+
+静寂はあなたの心を澄みきらせた
+#mpr(jtrans("The silence clears your mind."));
+%%%%
+%s stops singing.
+
+%s は歌をやめた
+#mprf(jtrans("%s stops singing.").c_str(), mon->name(DESC_THE).c_str());
+%%%%
+%s is no longer quite as mesmerising!
+
+%s はもはや魅了されていない！
+#mprf(jtrans(jtrans("%s is no longer quite as mesmerising!").c_str()).c_str(), mon->name(DESC_THE).c_str());
+%%%%
+Something stops singing.
+
+何者かは歌をやめた。
+#mpr(jtrans("Something stops singing."));
+%%%%
+Your mesmeriser is now quite boring!
+
+彼女は今かなり退屈そうだ。
+#mpr(jtrans("Your mesmeriser is now quite boring!"));
+%%%%
+You break out of your daze!
+
+あなたは眩暈から抜け出した！
+#mpr(coinflip() ? jtrans("You break out of your daze!")
+%%%%
+You are no longer entranced.
+
+あなたはもう魅了されていない。
+#: jtrans("You are no longer entranced."),
+%%%%

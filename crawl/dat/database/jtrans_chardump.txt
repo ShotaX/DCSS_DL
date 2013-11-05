@@ -1,0 +1,1237 @@
+%%%%
+header
+
+#{ "header",         _sdump_header        },
+%%%%
+stats
+
+#{ "stats",          _sdump_stats         },
+%%%%
+location
+
+#{ "location",       _sdump_location      },
+%%%%
+religion
+
+#{ "religion",       _sdump_religion      },
+%%%%
+burden
+
+#{ "burden",         _sdump_burden        },
+%%%%
+hunger
+
+#{ "hunger",         _sdump_hunger        },
+%%%%
+transform
+
+#{ "transform",      _sdump_transform     },
+%%%%
+visits
+
+#{ "visits",         _sdump_visits        },
+%%%%
+gold
+
+#{ "gold",           _sdump_gold          },
+%%%%
+misc
+
+#{ "misc",           _sdump_misc          },
+%%%%
+turns_by_place
+
+#{ "turns_by_place", _sdump_turns_by_place},
+%%%%
+notes
+
+#{ "notes",          _sdump_notes         },
+%%%%
+inventory
+
+#{ "inventory",      _sdump_inventory     },
+%%%%
+skills
+
+#{ "skills",         _sdump_skills        },
+%%%%
+spells
+
+#{ "spells",         _sdump_spells        },
+%%%%
+mutations
+
+#{ "mutations",      _sdump_mutations     },
+%%%%
+messages
+
+#{ "messages",       _sdump_messages      },
+%%%%
+screenshot
+
+#{ "screenshot",     _sdump_screenshot    },
+%%%%
+kills_by_place
+
+#{ "kills_by_place", _sdump_kills_by_place},
+%%%%
+kills
+
+#{ "kills",          _sdump_kills         },
+%%%%
+overview
+
+#{ "overview",       _sdump_overview      },
+%%%%
+hiscore
+
+#{ "hiscore",        _sdump_hiscore       },
+%%%%
+monlist
+
+#{ "monlist",        _sdump_monster_list  },
+%%%%
+vaults
+
+#{ "vaults",         _sdump_vault_list    },
+%%%%
+spell_usage
+
+#{ "spell_usage",    _sdump_action_counts }, // compat
+%%%%
+action_counts
+
+#{ "action_counts",  _sdump_action_counts },
+%%%%
+#
+#
+#{ "",               _sdump_newline       },
+%%%%
+-
+
+#{ "-",              _sdump_separator     },
+%%%%
+#
+#
+#dump_params par(text, "", full_id, se);
+%%%%
+ DCSS
+
+#type += " DCSS";
+%%%%
+ version 
+
+#par.text += " " + type + " version " + Version::Long;
+%%%%
+ (tiles)
+
+#par.text += " (tiles)";
+%%%%
+ (webtiles)
+
+#par.text += " (webtiles)";
+%%%%
+ (console)
+
+#par.text += " (console)";
+%%%%
+ (console)
+
+#par.text += " (console)";
+%%%%
+ character file.\n\n
+
+#par.text += " character file.\n\n";
+%%%%
+\n\n
+
+#par.text += "\n\n";
+%%%%
+are
+
+#string verb = par.se? "were" : "are";
+%%%%
+ overloaded with stuff.\n
+
+#par.text += "You " + verb + " overloaded with stuff.\n";
+%%%%
+ encumbered.\n
+
+#par.text += "You " + verb + " encumbered.\n";
+%%%%
+You were 
+
+#par.text += "You were ";
+%%%%
+You are 
+
+#par.text += "You are ";
+%%%%
+.\n\n
+
+#par.text += ".\n\n";
+%%%%
+are
+
+#string verb = par.se? "were" : "are";
+%%%%
+ in spider-form.
+
+#text += "You " + verb + " in spider-form.";
+%%%%
+ in 
+
+#text += "You " + verb + " in ";
+%%%%
+vampire 
+
+#text += "vampire ";
+%%%%
+bat-form.
+
+#text += "bat-form.";
+%%%%
+ blades.
+
+#text += "Your " + blade_parts() + " " + verb + " blades.";
+%%%%
+ a stone statue.
+
+#text += "You " + verb + " a stone statue.";
+%%%%
+ a creature of crystalline ice.
+
+#text += "You " + verb + " a creature of crystalline ice.";
+%%%%
+ a fearsome dragon!
+
+#text += "You " + verb + " a fearsome dragon!";
+%%%%
+ in lich-form.
+
+#text += "You " + verb + " in lich-form.";
+%%%%
+ a filthy swine.
+
+#text += "You " + verb + " a filthy swine.";
+%%%%
+One of your tentacles %s a temporary spike.
+
+#text += make_stringf("One of your tentacles %s a temporary spike.",
+%%%%
+has
+
+#par.se ? "had" : "has");
+%%%%
+You %s grown temporary %s.
+
+#text += make_stringf("You %s grown temporary %s.",
+%%%%
+have
+
+#par.se ? "had" : "have", appendage_name());
+%%%%
+ an sentient fungus.
+
+#text += "You " + verb + " an sentient fungus.";
+%%%%
+ an animated tree.
+
+#text += "You " + verb + " an animated tree.";
+%%%%
+ an acidic jelly.
+
+#text += "You " + verb + " an acidic jelly.";
+%%%%
+ a porcupine.
+
+#text += "You " + verb + " a porcupine.";
+%%%%
+ a barely coherent strand of gas.
+
+#text += "You " + verb + " a barely coherent strand of gas.";
+%%%%
+\n\n
+
+#text += "\n\n";
+%%%%
+have 
+
+#string have = "have ";
+%%%%
+seen
+
+#string seen = "seen";
+%%%%
+
+
+#have = "";
+%%%%
+saw
+
+#seen = "saw";
+%%%%
+You %svisited %d branch
+
+#text += make_stringf("You %svisited %d branch",
+%%%%
+es
+
+#text += "es";
+%%%%
+ of the dungeon, and %s %d of its levels.\n
+
+#text += make_stringf(" of the dungeon, and %s %d of its levels.\n",
+%%%%
+You %svisited Pandemonium %d time
+
+#text += make_stringf("You %svisited Pandemonium %d time",
+%%%%
+s
+
+#text += "s";
+%%%%
+, and %s %d of its levels.\n
+
+#text += make_stringf(", and %s %d of its levels.\n",
+%%%%
+You %svisited the Abyss %d time
+
+#text += make_stringf("You %svisited the Abyss %d time",
+%%%%
+s
+
+#text += "s";
+%%%%
+.\n
+
+#text += ".\n";
+%%%%
+You %svisited %d bazaar
+
+#text += make_stringf("You %svisited %d bazaar",
+%%%%
+s
+
+#text += "s";
+%%%%
+.\n
+
+#text += ".\n";
+%%%%
+You %s%s %d Ziggurat
+
+#text += make_stringf("You %s%s %d Ziggurat",
+%%%%
+completed
+
+#(num_zigs == you.zigs_completed) ? "completed"
+%%%%
+visited
+
+#: "visited",
+%%%%
+s
+
+#text += "s";
+%%%%
+ (completing %d)
+
+#text += make_stringf(" (completing %d)", you.zigs_completed);
+%%%%
+, and %s %d of %s levels
+
+#text += make_stringf(", and %s %d of %s levels",
+%%%%
+its
+
+#num_zigs > 1 ? "their" : "its");
+%%%%
+ (deepest: %d)
+
+#text += make_stringf(" (deepest: %d)", you.zig_max);
+%%%%
+.\n
+
+#text += ".\n";
+%%%%
+ (%d times)
+
+#name += make_stringf(" (%d times)", place_info.num_visits);
+%%%%
+also visited: 
+
+#text += "You " + have + "also visited: "
+%%%%
+.\n
+
+#+ ".\n";
+%%%%
+\n
+
+#text += "\n";
+%%%%
+have 
+
+#const char* have = "have ";
+%%%%
+
+
+#have = "";
+%%%%
+You %scollected %d gold pieces.\n
+
+#text += make_stringf("You %scollected %d gold pieces.\n", have,
+%%%%
+You %sspent %d gold pieces at shops.\n
+
+#text += make_stringf("You %sspent %d gold pieces at shops.\n", have,
+%%%%
+You %sdonated %d gold pieces.\n
+
+#text += make_stringf("You %sdonated %d gold pieces.\n", have,
+%%%%
+You %sused %d gold pieces for miscellaneous 
+
+#text += make_stringf("You %sused %d gold pieces for miscellaneous "
+%%%%
+purposes.\n
+
+#"purposes.\n", have,
+%%%%
+\n
+
+#text += "\n";
+%%%%
+
+
+#static string _sdump_turns_place_info(PlaceInfo place_info, string name = "")
+%%%%
+%14s | %5.1f | %5.1f | %5.1f | %5.1f | %5.1f | %13.1f\n
+
+#make_stringf("%14s | %5.1f | %5.1f | %5.1f | %5.1f | %5.1f | %13.1f\n",
+%%%%
+ N/A 
+
+#out = replace_all(out, " nan ", " N/A ");
+%%%%
+Table legend:\n
+
+#"Table legend:\n"
+%%%%
+ A = Turns spent in this place as a percentage of turns spent in the\n
+
+#" A = Turns spent in this place as a percentage of turns spent in the\n"
+%%%%
+     entire game.\n
+
+#"     entire game.\n"
+%%%%
+ B = Non-inter-level travel turns spent in this place as a percentage of\n
+
+#" B = Non-inter-level travel turns spent in this place as a percentage of\n"
+%%%%
+     non-inter-level travel turns spent in the entire game.\n
+
+#"     non-inter-level travel turns spent in the entire game.\n"
+%%%%
+ C = Inter-level travel turns spent in this place as a percentage of\n
+
+#" C = Inter-level travel turns spent in this place as a percentage of\n"
+%%%%
+     turns spent in this place.\n
+
+#"     turns spent in this place.\n"
+%%%%
+ D = Turns resting spent in this place as a percentage of non-inter-level\n
+
+#" D = Turns resting spent in this place as a percentage of non-inter-level\n"
+%%%%
+     travel turns spent in this place.\n
+
+#"     travel turns spent in this place.\n"
+%%%%
+ E = Turns spent auto-exploring this place as a percentage of\n
+
+#" E = Turns spent auto-exploring this place as a percentage of\n"
+%%%%
+     non-inter-level travel turns spent in this place.\n
+
+#"     non-inter-level travel turns spent in this place.\n"
+%%%%
+ F = Non-inter-level travel turns spent in this place divided by the\n
+
+#" F = Non-inter-level travel turns spent in this place divided by the\n"
+%%%%
+     number of levels of this place that you've seen.\n\n
+
+#"     number of levels of this place that you've seen.\n\n";
+%%%%
+               
+
+#text += "               ";
+%%%%
+    A       B       C       D       E               F\n
+
+#text += "    A       B       C       D       E               F\n";
+%%%%
+               
+
+#text += "               ";
+%%%%
++-------+-------+-------+-------+-------+----------------------\n
+
+#text += "+-------+-------+-------+-------+-------+----------------------\n";
+%%%%
+Total
+
+#text += _sdump_turns_place_info(you.global_info, "Total");
+%%%%
+               
+
+#text += "               ";
+%%%%
++-------+-------+-------+-------+-------+----------------------\n
+
+#text += "+-------+-------+-------+-------+-------+----------------------\n";
+%%%%
+\n
+
+#text += "\n";
+%%%%
+\n
+
+#par.text += "\n";
+%%%%
+\n
+
+#par.text += string(79, '-') + "\n";
+%%%%
+>s
+
+#if (!clua.callfn(par.section.c_str(), ">s", &luatext)
+%%%%
+\n
+
+#par.text += "Lua dump error: " + clua.error + "\n";
+%%%%
+\n
+
+#return "\n";
+%%%%
+\n
+
+#+ "\n";
+%%%%
+Message History\n\n
+
+#par.text += "Message History\n\n";
+%%%%
+\n\n
+
+#par.text += "\n\n";
+%%%%
+\nNotes\nTurn   | Place    | Note\n
+
+#text += "\nNotes\nTurn   | Place    | Note\n";
+%%%%
+--------------------------------------------------------------\n
+
+#text += "--------------------------------------------------------------\n";
+%%%%
+\n
+
+#text += "\n";
+%%%%
+\n
+
+#text += "\n";
+%%%%
+You escaped
+
+#par.text += "You escaped";
+%%%%
+You were 
+
+#par.text += "You were " + prep_branch_level_name();
+%%%%
+You are 
+
+#par.text += "You are " + prep_branch_level_name();
+%%%%
+.
+
+#par.text += ".";
+%%%%
+\n
+
+#par.text += "\n";
+%%%%
+You worshipped 
+
+#text += "You worshipped ";
+%%%%
+You worship 
+
+#text += "You worship ";
+%%%%
+.\n
+
+#text += ".\n";
+%%%%
+\n
+
+#text += "\n";
+%%%%
+is
+
+#string verb = par.se ? "was" : "is";
+%%%%
+ demanding penance.\n
+
+#text += " " + verb + " demanding penance.\n";
+%%%%
+You were 
+
+#text += "You were ";
+%%%%
+You are 
+
+#text += "You are ";
+%%%%
+\n
+
+#text += "\n";
+%%%%
+You aren't carrying anything.
+
+#text += "You aren't carrying anything.";
+%%%%
+\n
+
+#text += "\n";
+%%%%
+Inventory:\n\n
+
+#text += "Inventory:\n\n";
+%%%%
+Hand weapons
+
+#case OBJ_WEAPONS:    text += "Hand weapons";    break;
+%%%%
+Missiles
+
+#case OBJ_MISSILES:   text += "Missiles";        break;
+%%%%
+Armour
+
+#case OBJ_ARMOUR:     text += "Armour";          break;
+%%%%
+Magical devices
+
+#case OBJ_WANDS:      text += "Magical devices"; break;
+%%%%
+Comestibles
+
+#case OBJ_FOOD:       text += "Comestibles";     break;
+%%%%
+Scrolls
+
+#case OBJ_SCROLLS:    text += "Scrolls";         break;
+%%%%
+Jewellery
+
+#case OBJ_JEWELLERY:  text += "Jewellery";       break;
+%%%%
+Potions
+
+#case OBJ_POTIONS:    text += "Potions";         break;
+%%%%
+Books
+
+#case OBJ_BOOKS:      text += "Books";           break;
+%%%%
+Magical staves
+
+#case OBJ_STAVES:     text += "Magical staves";  break;
+%%%%
+Rods
+
+#case OBJ_RODS:       text += "Rods";            break;
+%%%%
+Orbs of Power
+
+#case OBJ_ORBS:       text += "Orbs of Power";   break;
+%%%%
+Miscellaneous
+
+#case OBJ_MISCELLANY: text += "Miscellaneous";   break;
+%%%%
+Carrion
+
+#case OBJ_CORPSES:    text += "Carrion";         break;
+%%%%
+Bad item class
+
+#die("Bad item class");
+%%%%
+\n
+
+#text += "\n";
+%%%%
+ 
+
+#text += " ";
+%%%%
+)
+
+#text += "\n" "   (" + origin_desc(you.inv[j]) + ")";
+%%%%
+\n
+
+#text += "\n";
+%%%%
+\n\n
+
+#text += "\n\n";
+%%%%
+   Skills:\n
+
+#text += "   Skills:\n";
+%%%%
+\n
+
+#text += "\n";
+%%%%
+\n
+
+#text += "\n";
+%%%%
+/
+
+#ret = "/";
+%%%%
+have
+
+#string verb = par.se? "had" : "have";
+%%%%
+ one spell level left.
+
+#text += "You " + verb + " one spell level left.";
+%%%%
+cannot
+
+#verb = par.se? "couldn't" : "cannot";
+%%%%
+ memorise any spells.
+
+#text += "You " + verb + " memorise any spells.";
+%%%%
+You had 
+
+#text += "You had ";
+%%%%
+You have 
+
+#text += "You have ";
+%%%%
+%d spell levels left.
+
+#text += make_stringf("%d spell levels left.", spell_levels);
+%%%%
+\n
+
+#text += "\n";
+%%%%
+don't
+
+#verb = par.se? "didn't" : "don't";
+%%%%
+ know any spells.\n\n
+
+#text += "You " + verb + " know any spells.\n\n";
+%%%%
+know
+
+#verb = par.se? "knew" : "know";
+%%%%
+ the following spells:\n\n
+
+#text += "You " + verb + " the following spells:\n\n";
+%%%%
+\n
+
+#text += " Your Spells              Type           Power        Failure   Level  Hunger" "\n";
+%%%%
+ - 
+
+#spell_line += " - ";
+%%%%
+  
+
+#spell_line += "  ";
+%%%%
+%-5d
+
+#spell_line += make_stringf("%-5d", spell_difficulty(spell));
+%%%%
+\n
+
+#spell_line += "\n";
+%%%%
+\n\n
+
+#text += "\n\n";
+%%%%
+
+
+#static string _sdump_kills_place_info(PlaceInfo place_info, string name = "")
+%%%%
+
+
+#return "";
+%%%%
+%14s | %5.1f | %5.1f | %5.1f | %5.1f | %5.1f |
+
+#make_stringf("%14s | %5.1f | %5.1f | %5.1f | %5.1f | %5.1f |"
+%%%%
+ %13.1f\n
+
+#" %13.1f\n",
+%%%%
+ N/A 
+
+#out = replace_all(out, " nan ", " N/A ");
+%%%%
+
+
+#string result = "";
+%%%%
+Table legend:\n
+
+#"Table legend:\n"
+%%%%
+ A = Kills in this place as a percentage of kills in entire the game.\n
+
+#" A = Kills in this place as a percentage of kills in entire the game.\n"
+%%%%
+ B = Kills by you in this place as a percentage of kills by you in\n
+
+#" B = Kills by you in this place as a percentage of kills by you in\n"
+%%%%
+     the entire game.\n
+
+#"     the entire game.\n"
+%%%%
+ C = Kills by friends in this place as a percentage of kills by\n
+
+#" C = Kills by friends in this place as a percentage of kills by\n"
+%%%%
+     friends in the entire game.\n
+
+#"     friends in the entire game.\n"
+%%%%
+ D = Other kills in this place as a percentage of other kills in the\n
+
+#" D = Other kills in this place as a percentage of other kills in the\n"
+%%%%
+     entire game.\n
+
+#"     entire game.\n"
+%%%%
+ E = Experience gained in this place as a percentage of experience\n
+
+#" E = Experience gained in this place as a percentage of experience\n"
+%%%%
+     gained in the entire game.\n
+
+#"     gained in the entire game.\n"
+%%%%
+ F = Experience gained in this place divided by the number of levels of\n
+
+#" F = Experience gained in this place divided by the number of levels of\n"
+%%%%
+     this place that you have seen.\n\n
+
+#"     this place that you have seen.\n\n";
+%%%%
+               
+
+#header += "               ";
+%%%%
+    A       B       C       D       E               F\n
+
+#header += "    A       B       C       D       E               F\n";
+%%%%
+               
+
+#header += "               ";
+%%%%
++-------+-------+-------+-------+-------+----------------------\n
+
+#header += "+-------+-------+-------+-------+-------+----------------------\n";
+%%%%
+               
+
+#string footer = "               ";
+%%%%
++-------+-------+-------+-------+-------+----------------------\n
+
+#footer += "+-------+-------+-------+-------+-------+----------------------\n";
+%%%%
+Total
+
+#result += _sdump_kills_place_info(you.global_info, "Total");
+%%%%
+\n
+
+#text += header + result + footer + "\n";
+%%%%
+\n\n
+
+#par.text += "\n\n";
+%%%%
+\n\n
+
+#par.text += "\n\n";
+%%%%
+\n
+
+#par.text += wordwrap_line(monlist, 80) + "\n";
+%%%%
+\n
+
+#par.text += "\n";
+%%%%
+Vault maps used:\n
+
+#par.text += "Vault maps used:\n";
+%%%%
+Melee
+
+#return "Melee";
+%%%%
+ Fire
+
+#return " Fire";
+%%%%
+Throw
+
+#return "Throw";
+%%%%
+ Cast
+
+#return " Cast";
+%%%%
+Invok
+
+#return "Invok";
+%%%%
+ Abil
+
+#return " Abil";
+%%%%
+Evoke
+
+#return "Evoke";
+%%%%
+  Use
+
+#return "  Use";
+%%%%
+ Stab
+
+#return " Stab";
+%%%%
+Error
+
+#return "Error";
+%%%%
+Normal
+
+#"Normal",
+%%%%
+Distracted
+
+#"Distracted",
+%%%%
+Confused
+
+#"Confused",
+%%%%
+Fleeing
+
+#"Fleeing",
+%%%%
+Invisible
+
+#"Invisible",
+%%%%
+Held in net/web
+
+#"Held in net/web",
+%%%%
+Petrifying
+
+#"Petrifying", // could be nice to combine the two
+%%%%
+Petrified
+
+#"Petrified",
+%%%%
+Paralysed
+
+#"Paralysed",
+%%%%
+Sleeping
+
+#"Sleeping",
+%%%%
+Betrayed ally
+
+#"Betrayed ally",
+%%%%
+other
+
+#return "other";
+%%%%
+Unarmed
+
+#return ((subtype == -1) ? "Unarmed"
+%%%%
+Wand
+
+#return "Wand";
+%%%%
+Rod
+
+#return "Rod";
+%%%%
+Deck
+
+#return "Deck";
+%%%%
+Miscellaneous
+
+#return "Miscellaneous";
+%%%%
+Error
+
+#return "Error";
+%%%%
+Error
+
+#return "Error";
+%%%%
+Action
+
+#par.text += make_stringf("\n%-24s", "Action");
+%%%%
+ | %2d-%2d
+
+#par.text += make_stringf(" | %2d-%2d", lt * 3 + 1, lt * 3 + 3);
+%%%%
+total
+
+#par.text += make_stringf(" || %5s", "total");
+%%%%
+\n-------------------------
+
+#par.text += "\n-------------------------";
+%%%%
++-------
+
+#par.text += "+-------";
+%%%%
+++-------\n
+
+#par.text += "++-------\n";
+%%%%
+: 
+
+#par.text += ": ";
+%%%%
+       
+
+#par.text += "       ";
+%%%%
+ |%6d
+
+#par.text += make_stringf(" |%6d", ltotal);
+%%%%
+ |      
+
+#par.text += " |      ";
+%%%%
+ ||%6d
+
+#par.text += make_stringf(" ||%6d", ac->second[27]);
+%%%%
+\n
+
+#par.text += "\n";
+%%%%
+\n
+
+#par.text += "\n";
+%%%%
+\n
+
+#text += "\n";
+%%%%
+\n\n
+
+#text += "\n\n";
+%%%%
+starving
+
+#"starving",
+%%%%
+near starving
+
+#"near starving",
+%%%%
+very hungry
+
+#"very hungry",
+%%%%
+hungry
+
+#"hungry",
+%%%%
+not hungry
+
+#"not hungry",
+%%%%
+full
+
+#"full",
+%%%%
+very full
+
+#"very full",
+%%%%
+completely stuffed
+
+#"completely stuffed",
+%%%%
+bloodless
+
+#"bloodless",
+%%%%
+near bloodless
+
+#"near bloodless",
+%%%%
+very thirsty
+
+#"very thirsty",
+%%%%
+thirsty
+
+#"thirsty",
+%%%%
+not thirsty
+
+#"not thirsty",
+%%%%
+full
+
+#"full",
+%%%%
+very full
+
+#"very full",
+%%%%
+almost alive
+
+#"almost alive",
+%%%%
+
+
+#: "");
+%%%%
+.lst
+
+#stash_file_name += ".lst";
+%%%%
+.map
+
+#string map_file_name = file_name + ".map";
+%%%%
+.txt
+
+#file_name += ".txt";
+%%%%
+File name: %s
+
+#dprf("File name: %s", file_name.c_str());
+%%%%
+Char dumped successfully.
+
+#mprf("Char dumped successfully.");
+%%%%
+Char dumped to '%s'.
+
+#mprf("Char dumped to '%s'.", file_name.c_str());
+%%%%
+Error opening file '%s'
+
+#mprf(MSGCH_ERROR, "Error opening file '%s'", file_name.c_str());
+%%%%
+notes
+
+#scr.set_tag("notes");
+%%%%
+Turn   | Place    | Note
+
+#scr.set_title(new MenuEntry("Turn   | Place    | Note"));
+%%%%
+\n
+
+#vector<string> parts = split_string("\n", suffix);
+%%%%
+| 
+
+#string("| ") + parts[j]));
+%%%%
+.where
+
+#+ string(".where");
+%%%%
+%s:status=%s\n
+
+#fprintf(handle, "%s:status=%s\n",
+%%%%
+
+
+#status? status : "");
+%%%%
+timestamp-<player>-<starttime>.ts
+
+#// "timestamp-<player>-<starttime>.ts". All timestamps are standard Unix
+%%%%
+syscalls.h
+
+##include "syscalls.h"
+%%%%
+-
+
+#const string filename = "timestamp-" + you.your_name + "-"
+%%%%
+.ts
+
+#return morgue_directory() + strip_filename_unsafe_chars(filename) + ".ts";
+%%%%
+rb
+
+#if (FILE *inh = fopen_u(filename.c_str(), "rb"))
+%%%%
+ab
+
+#timestamp_file = fopen_u(filename.c_str(), "ab");
+%%%%
+active
+
+#void whereis_record(const char *status = "active");
+%%%%

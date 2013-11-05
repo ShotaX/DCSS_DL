@@ -1,0 +1,2550 @@
+%%%%
+Lua user scripts
+
+#"Lua user scripts",
+%%%%
+Tile support
+
+#"Tile support",
+%%%%
+Web Tile support
+
+#"Web Tile support",
+%%%%
+Wizard mode
+
+#"Wizard mode",
+%%%%
+Debug mode
+
+#"Debug mode",
+%%%%
+POSIX regexps
+
+#"POSIX regexps",
+%%%%
+PCRE regexps
+
+#"PCRE regexps",
+%%%%
+Glob patterns
+
+#"Glob patterns",
+%%%%
+Sound support
+
+#"Sound support",
+%%%%
+Milestones
+
+#"Milestones",
+%%%%
+This is <w>
+
+#return string("This is <w>" CRAWL " ") + Version::Long + "</w>\n";
+%%%%
+<w>Features</w>\n
+
+#string result  = "<w>Features</w>\n";
+%%%%
+--------\n
+
+#result += "--------\n";
+%%%%
+# * 
+#
+#result += " * ";
+%%%%
+#\n
+#
+#result += "\n";
+%%%%
+#r
+#
+#FILE* fp = fopen_u(datafile_path("changelog.txt", false).c_str(), "r");
+%%%%
+#
+#
+#return "";
+%%%%
+#
+#
+#string result = "";
+%%%%
+Stone Soup 
+
+#if (help.find("Stone Soup ") == 0)
+%%%%
+#Stone Soup 
+#
+#if (help.find(string("Stone Soup ")+Version::Major) == string::npos)
+%%%%
+Highlights
+
+#if (help.find("Highlights") != string::npos)
+%%%%
+#<w>
+#
+#string text  = "<w>";
+%%%%
+#</w>
+#
+#text += "</w>";
+%%%%
+#\n
+#
+#text += "\n";
+%%%%
+#\n
+#
+#result += "\n";
+%%%%
+#\n\n
+#
+#result += "\n\n";
+%%%%
+For earlier changes, see changelog.txt 
+
+#result += "For earlier changes, see changelog.txt "
+%%%%
+in the docs/ directory.
+
+#"in the docs/ directory.";
+%%%%
+For a list of changes, see changelog.txt in the docs/ 
+
+#result += "For a list of changes, see changelog.txt in the docs/ "
+%%%%
+directory.
+
+#"directory.";
+%%%%
+#\n\n
+#
+#result += "\n\n";
+%%%%
+version
+
+#cmd_version.set_tag("version");
+%%%%
+Adjust (i)tems, (s)pells, or (a)bilities?
+
+どれを入れ替えますか? (i)アイテム, (s)呪文,(a)能力
+#mpr(jtrans("Adjust (i)tems, (s)pells, or (a)bilities?"), MSGCH_PROMPT);
+%%%%
+Adjust which item?
+
+どのアイテムを入れ替えますか？
+#from_slot = prompt_invent_item("Adjust which item?", MT_INVLIST, -1);
+%%%%
+Adjust to which letter? 
+
+どの文字に入れ替えますか？
+#to_slot = prompt_invent_item("Adjust to which letter? ",
+%%%%
+Adjust which spell?
+
+どの呪文を入れ替えますか？
+#mpr(jtrans("Adjust which spell?"), MSGCH_PROMPT);
+%%%%
+#Adjust which spell?
+#
+#--defined.
+#keyin = list_spells(false, false, false, "Adjust which spell?");
+%%%%
+#Adjust which spell?
+#
+#--defined.
+#keyin = list_spells(false, false, false, "Adjust which spell?");
+%%%%
+You don't know that spell.
+
+あなたはその呪文を知らない。
+#mpr(jtrans("You don't know that spell."));
+%%%%
+%c - %s
+
+#mprf_nocap("%c - %s", keyin, jtrans(spell_title(spell)).c_str());
+%%%%
+Adjust to which letter?
+#
+#--defined.
+#mpr(jtrans("Adjust to which letter?"), MSGCH_PROMPT);
+%%%%
+Adjust to which letter?
+#
+#--defined.
+#keyin = list_spells(true, false, false, "Adjust to which letter?");
+%%%%
+%c - %s
+
+#mprf_nocap("%c - %s", input_2, spell_title(get_spell_by_letter(input_2)));
+%%%%
+%c - %s
+
+#mprf_nocap("%c - %s", input_1, jtrans(spell_title(spell)).c_str());
+%%%%
+You don't currently have any abilities.
+
+あなたは現在のところ特殊能力を持っていない。
+#mpr(jtrans("You don't currently have any abilities."));
+%%%%
+Adjust which ability?
+
+どの特殊能力を入れ替えますか？
+#mpr(jtrans("Adjust which ability?"), MSGCH_PROMPT);
+%%%%
+No such ability.
+
+そのような能力は無い。
+#mpr(jtrans("No such ability."));
+%%%%
+%c - %s
+
+#mprf_nocap("%c - %s", static_cast<char>(talents[selected].hotkey),
+%%%%
+Adjust to which letter?
+#
+#--defined.
+#mpr(jtrans("Adjust to which letter?"), MSGCH_PROMPT);
+%%%%
+That would be singularly pointless.
+
+それ単独では無意味でしょう。
+#mpr(jtrans("That would be singularly pointless."));
+%%%%
+Swapping with
+
+双方を交換する
+#mprf("%s: %c - %s", jtrans("Swapping with").c_str(),
+%%%%
+Moving to
+
+移動する
+#mprf("%s: %c - %s", jtrans("Moving to").c_str(),
+%%%%
+#
+#
+#estr.str("");
+%%%%
+#Cloak  
+#
+#estr << ((i == EQ_CLOAK)       ? "Cloak  " :
+%%%%
+#Helmet 
+#
+#(i == EQ_HELMET)      ? "Helmet " :
+%%%%
+#Gloves 
+#
+#(i == EQ_GLOVES)      ? "Gloves " :
+%%%%
+#Shield 
+#
+#(i == EQ_SHIELD)      ? "Shield " :
+%%%%
+#Armour 
+#
+#(i == EQ_BODY_ARMOUR) ? "Armour " :
+%%%%
+#Barding
+#
+#|| you.species == SP_NAGA) ? "Barding"
+%%%%
+#Boots  
+#
+#: "Boots  ")
+%%%%
+#unknown
+#
+#: "unknown")
+%%%%
+# : 
+#
+#<< " : ";
+%%%%
+    (unavailable)
+
+#estr << "    (unavailable)";
+%%%%
+    (currently unavailable)
+
+#estr << "    (currently unavailable)";
+%%%%
+equip
+
+#"equip");
+%%%%
+    (restricted)
+
+#estr << "    (restricted)";
+%%%%
+    none
+
+#estr << "    none";
+%%%%
+#equip
+#
+#colour = menu_colour(estr.str(), "", "equip");
+%%%%
+Left ring
+
+#(i == EQ_LEFT_RING)  ? "Left ring" :
+%%%%
+Right ring
+
+#(i == EQ_RIGHT_RING) ? "Right ring" :
+%%%%
+Amulet
+
+#(i == EQ_AMULET)     ? "Amulet" :
+%%%%
+1st ring
+
+#(i == EQ_RING_ONE)   ? "1st ring" :
+%%%%
+2nd ring
+
+#(i == EQ_RING_TWO)   ? "2nd ring" :
+%%%%
+3rd ring
+
+#(i == EQ_RING_THREE) ? "3rd ring" :
+%%%%
+4th ring
+
+#(i == EQ_RING_FOUR)  ? "4th ring" :
+%%%%
+5th ring
+
+#(i == EQ_RING_FIVE)  ? "5th ring" :
+%%%%
+6th ring
+
+#(i == EQ_RING_SIX)   ? "6th ring" :
+%%%%
+7th ring
+
+#(i == EQ_RING_SEVEN) ? "7th ring" :
+%%%%
+8th ring
+
+#(i == EQ_RING_EIGHT) ? "8th ring"
+%%%%
+unknown
+
+#: "unknown";
+%%%%
+#    (currently unavailable)
+#
+#item = "    (currently unavailable)";
+%%%%
+#equip
+#
+#colour = menu_colour(item, prefix, "equip");
+%%%%
+#    none
+#
+#item = "    none";
+%%%%
+#equip
+#
+#colour = menu_colour(item, "", "equip");
+%%%%
+%-*s: %s
+
+#item = chop_string(make_stringf("%-*s: %s",
+%%%%
+# 
+#
+#jstr = item + " ";
+%%%%
+wiz
+
+#if (tag == "wiz")
+%%%%
+<h>Examine surroundings ('<w>x</w><h>' in main):\n
+
+#"<h>Examine surroundings ('<w>x</w><h>' in main):\n"
+%%%%
+<w>Esc</w> : cancel (also <w>Space</w>, <w>x</w>)\n
+
+#"<w>Esc</w> : cancel (also <w>Space</w>, <w>x</w>)\n"
+%%%%
+<w>Dir.</w>: move cursor in that direction\n
+
+#"<w>Dir.</w>: move cursor in that direction\n"
+%%%%
+<w>.</w> : move to cursor (also <w>Enter</w>, <w>Del</w>)\n
+
+#"<w>.</w> : move to cursor (also <w>Enter</w>, <w>Del</w>)\n"
+%%%%
+<w>g</w> : pick up item at cursor\n
+
+#"<w>g</w> : pick up item at cursor\n"
+%%%%
+<w>v</w> : describe monster under cursor\n
+
+#"<w>v</w> : describe monster under cursor\n"
+%%%%
+<w>+</w> : cycle monsters forward (also <w>=</w>)\n
+
+#"<w>+</w> : cycle monsters forward (also <w>=</w>)\n"
+%%%%
+<w>-</w> : cycle monsters backward\n
+
+#"<w>-</w> : cycle monsters backward\n"
+%%%%
+<w>*</w> : cycle objects forward\n
+
+#"<w>*</w> : cycle objects forward\n"
+%%%%
+<w>/</w> : cycle objects backward (also <w>;</w>)\n
+
+#"<w>/</w> : cycle objects backward (also <w>;</w>)\n"
+%%%%
+<w>^</w> : cycle through traps\n
+
+#"<w>^</w> : cycle through traps\n"
+%%%%
+<w>_</w> : cycle through altars\n
+
+#"<w>_</w> : cycle through altars\n"
+%%%%
+<w><<</w>/<w>></w> : cycle through up/down stairs\n
+
+#"<w><<</w>/<w>></w> : cycle through up/down stairs\n"
+%%%%
+<w>Tab</w> : cycle through shops and portals\n
+
+#"<w>Tab</w> : cycle through shops and portals\n"
+%%%%
+<w>r</w> : move cursor to you\n
+
+#"<w>r</w> : move cursor to you\n"
+%%%%
+<w>e</w> : create/remove travel exclusion\n
+
+#"<w>e</w> : create/remove travel exclusion\n"
+%%%%
+<w>Ctrl-L</w> : targetting via monster list\n
+
+#"<w>Ctrl-L</w> : targetting via monster list\n"
+%%%%
+<w>Ctrl-P</w> : repeat prompt\n
+
+#"<w>Ctrl-P</w> : repeat prompt\n"
+%%%%
+<h>Wizard targetting commands:</h>\n
+
+#"<h>Wizard targetting commands:</h>\n"
+%%%%
+<w>Ctrl-C</w> : cycle through beam paths\n
+
+#"<w>Ctrl-C</w> : cycle through beam paths\n"
+%%%%
+<w>D</w>: get debugging information about the monster\n
+
+#"<w>D</w>: get debugging information about the monster\n"
+%%%%
+<w>o</w>: give item to monster\n
+
+#"<w>o</w>: give item to monster\n"
+%%%%
+<w>F</w>: cycle monster friendly/good neutral/neutral/hostile\n
+
+#"<w>F</w>: cycle monster friendly/good neutral/neutral/hostile\n"
+%%%%
+<w>Ctrl-H</w>: heal the monster to full hit points\n
+
+#"<w>Ctrl-H</w>: heal the monster to full hit points\n"
+%%%%
+<w>P</w>: apply divine blessing to monster\n
+
+#"<w>P</w>: apply divine blessing to monster\n"
+%%%%
+<w>m</w>: move monster or player\n
+
+#"<w>m</w>: move monster or player\n"
+%%%%
+<w>M</w>: cause spell miscast for monster or player\n
+
+#"<w>M</w>: cause spell miscast for monster or player\n"
+%%%%
+<w>s</w>: force monster to shout or speak\n
+
+#"<w>s</w>: force monster to shout or speak\n"
+%%%%
+<w>S</w>: make monster a summoned monster\n
+
+#"<w>S</w>: make monster a summoned monster\n"
+%%%%
+<w>w</w>: calculate shortest path to any point on the map\n
+
+#"<w>w</w>: calculate shortest path to any point on the map\n"
+%%%%
+</w>: get debugging information about a portal\n
+
+#"<w>\"</w>: get debugging information about a portal\n"
+%%%%
+<w>~</w>: polymorph monster to specific type\n
+
+#"<w>~</w>: polymorph monster to specific type\n"
+%%%%
+<w>,</w>: bring down the monster to 1 hp\n
+
+#"<w>,</w>: bring down the monster to 1 hp\n"
+%%%%
+<w>Ctrl-B</w>: banish monster\n
+
+#"<w>Ctrl-B</w>: banish monster\n"
+%%%%
+<w>Ctrl-K</w>: kill monster\n
+
+#"<w>Ctrl-K</w>: kill monster\n"
+%%%%
+<h>Targetting (zap wands, cast spells, etc.):\n
+
+#"<h>Targetting (zap wands, cast spells, etc.):\n"
+%%%%
+Most keys from examine surroundings work.\n
+
+#"Most keys from examine surroundings work.\n"
+%%%%
+Some keys fire at the target. By default,\n
+
+#"Some keys fire at the target. By default,\n"
+%%%%
+range is respected and beams don't stop.\n
+
+#"range is respected and beams don't stop.\n"
+%%%%
+<w>Enter</w> : fire (<w>Space</w>, <w>Del</w>)\n
+
+#"<w>Enter</w> : fire (<w>Space</w>, <w>Del</w>)\n"
+%%%%
+<w>.</w> : fire, stop at target\n
+
+#"<w>.</w> : fire, stop at target\n"
+%%%%
+<w>@</w> : fire, stop at target, ignore range\n
+
+#"<w>@</w> : fire, stop at target, ignore range\n"
+%%%%
+<w>!</w> : fire, don't stop, ignore range\n
+
+#"<w>!</w> : fire, don't stop, ignore range\n"
+%%%%
+<w>p</w> : fire at Previous target (also <w>f</w>)\n
+
+#"<w>p</w> : fire at Previous target (also <w>f</w>)\n"
+%%%%
+<w>:</w> : show/hide beam path\n
+
+#"<w>:</w> : show/hide beam path\n"
+%%%%
+<w>Shift-Dir.</w> : fire straight-line beam\n
+
+#"<w>Shift-Dir.</w> : fire straight-line beam\n"
+%%%%
+#\n
+#
+#"\n"
+%%%%
+<h>Firing or throwing a missile:\n
+
+#"<h>Firing or throwing a missile:\n"
+%%%%
+<w>(</w> : cycle to next suitable missile.\n
+
+#"<w>(</w> : cycle to next suitable missile.\n"
+%%%%
+<w>)</w> : cycle to previous suitable missile.\n
+
+#"<w>)</w> : cycle to previous suitable missile.\n"
+%%%%
+<w>i</w> : choose from Inventory.\n
+
+#"<w>i</w> : choose from Inventory.\n"
+%%%%
+------------------------------------------
+
+#&& (strstr(buf, "------------------------------------------"
+%%%%
+------------------------------
+
+#"------------------------------") == buf));
+%%%%
+#crawl_manual.txt
+#
+#{ "crawl_manual.txt",  '*', true },
+%%%%
+#../README.txt
+#
+#{ "../README.txt",     '!', false },
+%%%%
+#aptitudes.txt
+#
+#{ "aptitudes.txt",     '%', false },
+%%%%
+#quickstart.txt
+#
+#{ "quickstart.txt",    '^', false },
+%%%%
+#macros_guide.txt
+#
+#{ "macros_guide.txt",  '~', false },
+%%%%
+#options_guide.txt
+#
+#{ "options_guide.txt", '&', false },
+%%%%
+#tiles_help.txt
+#
+#{ "tiles_help.txt",    'T', false },
+%%%%
+#
+#
+#: Menu(_flags, "", _text_only), sort_alpha(true),
+%%%%
+Describe which? 
+
+何の説明ですか?
+#string prompt = "Describe which? ";
+%%%%
+(CTRL-S to sort by monster toughness)
+
+#prompt += "(CTRL-S to sort by monster toughness)";
+%%%%
+(CTRL-S to sort by name)
+
+#prompt += "(CTRL-S to sort by name)";
+%%%%
+ spell
+
+#if (!ends_with(key, " spell"))
+%%%%
+ card
+
+#if (!ends_with(key, " card"))
+%%%%
+ ability
+
+#if (!ends_with(key, " ability"))
+%%%%
+A shop
+
+#keys[i] = "A shop";
+%%%%
+#
+#
+#keys[i] = feature_description(type, NUM_TRAPS, "", DESC_A,
+%%%%
+ card
+
+#if (keys[i] == lowercase_string(card_name(card)) + " card")
+%%%%
+ card
+
+#keys[i] = string(card_name(card)) + " card";
+%%%%
+ spell
+
+#if (ends_with(key, " spell"))
+%%%%
+\nThis is a testing spell, only available via the 
+
+#desc += "\nThis is a testing spell, only available via the "
+%%%%
+&Z wizard command.
+
+#"&Z wizard command.";
+%%%%
+\nThis is a monster-only spell, only available via the 
+
+#desc += "\nThis is a monster-only spell, only available via the "
+%%%%
+&Z wizard command.
+
+#"&Z wizard command.";
+%%%%
+\nOdd, this spell can't be found anywhere. Please 
+
+#desc += "\nOdd, this spell can't be found anywhere. Please "
+%%%%
+file a bug report.
+
+#"file a bug report.";
+%%%%
+\n\nYou aren't in wizard mode, so you shouldn't be 
+
+#desc += "\n\nYou aren't in wizard mode, so you shouldn't be "
+%%%%
+seeing this entry. Please file a bug report.
+
+#"seeing this entry. Please file a bug report.";
+%%%%
+ spell
+
+#if (ends_with(key, " spell"))
+%%%%
+\nType:       
+
+#desc += "\nType:       ";
+%%%%
+/
+
+#desc += "/" ;
+%%%%
+None
+
+#desc += "None";
+%%%%
+\nLevel:      %d
+
+#desc += make_stringf("\nLevel:      %d", spell_difficulty(type));
+%%%%
+\n
+
+#desc += "\n";
+%%%%
+\n\nThis spell can be found in the following book
+
+#desc += "\n\nThis spell can be found in the following book";
+%%%%
+s
+
+#desc += "s";
+%%%%
+:\n
+
+#desc += ":\n";
+%%%%
+\n
+
+#desc += comma_separated_line(books.begin(), books.end(), "\n", "\n");
+%%%%
+\n\n... and the following rod
+
+#desc += "\n\n... and the following rod";
+%%%%
+s
+
+#desc += "s";
+%%%%
+:\n
+
+#desc += ":\n";
+%%%%
+\n
+
+#desc += comma_separated_line(rods.begin(), rods.end(), "\n", "\n");
+%%%%
+\n\nThis spell can be found in the following rod
+
+#desc += "\n\nThis spell can be found in the following rod";
+%%%%
+s
+
+#desc += "s";
+%%%%
+#:\n
+#
+#desc += ":\n";
+%%%%
+#\n
+#
+#desc += comma_separated_line(rods.begin(), rods.end(), "\n", "\n");
+%%%%
+\n\nThis spell is not found in any books or rods.
+
+#desc += "\n\nThis spell is not found in any books or rods.";
+%%%%
+#
+#
+#string footer = "")
+%%%%
+#\n\n
+#
+#inf.suffix = "\n\n" + god_name(which_god) +
+%%%%
+ won't accept worship from undead or evil beings.
+
+#" won't accept worship from undead or evil beings.";
+%%%%
+#\n
+#
+#desc += "\n";
+%%%%
+#\n
+#
+#desc += "\n";
+%%%%
+#\n\n
+#
+#desc += "\n\n";
+%%%%
+spell
+
+#&& (type == "item" || type == "spell"))
+%%%%
+#\n
+#
+#desc += "\n";
+%%%%
+#\n
+#
+#desc += "\n";
+%%%%
+#\n
+#
+#desc += "\n";
+%%%%
+spell
+
+#else if (type == "spell"
+%%%%
+This book is beyond your current level 
+
+#desc += "This book is beyond your current level "
+%%%%
+of understanding.
+
+#"of understanding.";
+%%%%
+description
+
+#tiles_crt_control show_as_menu(CRT_MENU, "description");
+%%%%
+No questions found in FAQ! Please submit a bug report!
+
+#mpr("No questions found in FAQ! Please submit a bug report!");
+%%%%
+Frequently Asked Questions
+
+#MenuEntry *title = new MenuEntry("Frequently Asked Questions");
+%%%%
+    
+
+#question = "    " + fss[j].tostring();
+%%%%
+No answer found in the FAQ! Please submit a 
+
+#answer = "No answer found in the FAQ! Please submit a "
+%%%%
+bug report!
+
+#"bug report!";
+%%%%
+\n
+
+#answer = "Q: " + getFAQ_Question(key) + "\n" + answer;
+%%%%
+faq_entry
+
+#tiles_crt_control show_as_menu(CRT_MENU, "faq_entry");
+%%%%
+Describe a Monster
+
+どの説明を見ますか? (M)モンスター, (S)呪文, (K)スキル, (I)アイテム, (F)施設, (G)神々, (A)能力, (B)分岐, (C)カード
+#mpr(jtrans("Describe a Monster"), MSGCH_PROMPT);
+%%%%
+monster
+
+#type       = "monster";
+%%%%
+ Enter a single letter to list monsters displayed by 
+
+#extra      = " Enter a single letter to list monsters displayed by "
+%%%%
+that symbol.
+
+#"that symbol.";
+%%%%
+spell
+
+#type         = "spell";
+%%%%
+ spell
+
+#suffix       = " spell";
+%%%%
+skill
+
+#type   = "skill";
+%%%%
+ability
+
+#type   = "ability";
+%%%%
+ ability
+
+#suffix = " ability";
+%%%%
+card
+
+#type   = "card";
+%%%%
+ card
+
+#suffix = " card";
+%%%%
+item
+
+#type        = "item";
+%%%%
+ Enter a single letter to list items displayed by 
+
+#extra       = " Enter a single letter to list items displayed by "
+%%%%
+that symbol.
+
+#"that symbol.";
+%%%%
+feature
+
+#type   = "feature";
+%%%%
+god
+
+#type       = "god";
+%%%%
+branch
+
+#type           = "branch";
+%%%%
+Okay, then.
+
+#*error_inout = "Okay, then.";
+%%%%
+
+
+#string regex = "";
+%%%%
+Describe a %s; partial names and regexps are fine.%s
+
+#"Describe a %s; partial names and regexps are fine.%s",
+%%%%
+Describe what?
+
+#mpr(jtrans("Describe what?"), MSGCH_PROMPT);
+%%%%
+Okay, then.
+
+#*error_inout = "Okay, then.";
+%%%%
+Description must contain at least 
+
+#*error_inout = "Description must contain at least "
+%%%%
+one non-space.
+
+#"one non-space.";
+%%%%
+
+
+#if (want_regex && !(*filter)(regex, ""))
+%%%%
+No monsters with symbol '
+
+#*error_inout  = "No monsters with symbol '";
+%%%%
+'.
+
+#*error_inout += "'.";
+%%%%
+No items with symbol '
+
+#*error_inout  = "No items with symbol '";
+%%%%
+'.
+
+#*error_inout += "'.";
+%%%%
+No matching 
+
+#*error_inout  = "No matching ";
+%%%%
+.
+
+#*error_inout += ".";
+%%%%
+Too many monsters with symbol '
+
+#*error_inout  = "Too many monsters with symbol '";
+%%%%
+' to display
+
+#*error_inout += "' to display";
+%%%%
+Too many matching 
+
+#os << "Too many matching " << pluralise(type)
+%%%%
+) to display.
+
+#<< " (" << key_list.size() << ") to display.";
+%%%%
+This entry is an exact match for '
+
+#string footer = "This entry is an exact match for '";
+%%%%
+'. To see non-exact matches, press space.
+
+#footer += "'. To see non-exact matches, press space.";
+%%%%
+description
+
+#desc_menu.set_tag("description");
+%%%%
+fake
+
+#fake_mon.props["fake"] = true;
+%%%%
+#(<
+#
+#string prefix = "(<";
+%%%%
+#>
+#
+#prefix += ">";
+%%%%
+#</
+#
+#prefix += "</";
+%%%%
+#>) 
+#
+#prefix += ">) ";
+%%%%
+#
+#
+#help_highlighter(string = "");
+%%%%
+#
+#
+#pattern(highlight_string == "" ? get_species_key() : highlight_string)
+%%%%
+Draconian
+
+#strip_tag(result, "Draconian");
+%%%%
+#  
+#
+#result += "  ";
+%%%%
+#
+#
+#string highlight_string = "")
+%%%%
+help
+
+#cmd_help.set_tag("help");
+%%%%
+<h>Dungeon Crawl Help\n
+
+#"<h>Dungeon Crawl Help\n"
+%%%%
+#\n
+#
+#"\n"
+%%%%
+Press one of the following keys to\n
+
+#"Press one of the following keys to\n"
+%%%%
+obtain more information on a certain\n
+
+#"obtain more information on a certain\n"
+%%%%
+aspect of Dungeon Crawl.\n
+
+#"aspect of Dungeon Crawl.\n"
+%%%%
+<w>?</w>: List of commands\n
+
+#"<w>?</w>: List of commands\n"
+%%%%
+<w>!</w>: Read Me!\n
+
+#"<w>!</w>: Read Me!\n"
+%%%%
+<w>^</w>: Quickstart Guide\n
+
+#"<w>^</w>: Quickstart Guide\n"
+%%%%
+<w>:</w>: Browse character notes\n
+
+#"<w>:</w>: Browse character notes\n"
+%%%%
+<w>~</w>: Macros help\n
+
+#"<w>~</w>: Macros help\n"
+%%%%
+<w>&</w>: Options help\n
+
+#"<w>&</w>: Options help\n"
+%%%%
+<w>%</w>: Table of aptitudes\n
+
+#"<w>%</w>: Table of aptitudes\n"
+%%%%
+<w>/</w>: Lookup description\n
+
+#"<w>/</w>: Lookup description\n"
+%%%%
+<w>Q</w>: FAQ\n
+
+#"<w>Q</w>: FAQ\n"
+%%%%
+<w>T</w>: Tiles key help\n
+
+#"<w>T</w>: Tiles key help\n"
+%%%%
+<w>V</w>: Version information\n
+
+#"<w>V</w>: Version information\n"
+%%%%
+<w>Home</w>: This screen\n
+
+#"<w>Home</w>: This screen\n",
+%%%%
+<h>Manual Contents\n\n
+
+#"<h>Manual Contents\n\n"
+%%%%
+<w>*</w>       Table of contents\n
+
+#"<w>*</w>       Table of contents\n"
+%%%%
+<w>A</w>.      Overview\n
+
+#"<w>A</w>.      Overview\n"
+%%%%
+<w>B</w>.      Starting Screen\n
+
+#"<w>B</w>.      Starting Screen\n"
+%%%%
+<w>C</w>.      Attributes and Stats\n
+
+#"<w>C</w>.      Attributes and Stats\n"
+%%%%
+<w>D</w>.      Exploring the Dungeon\n
+
+#"<w>D</w>.      Exploring the Dungeon\n"
+%%%%
+<w>E</w>.      Experience and Skills\n
+
+#"<w>E</w>.      Experience and Skills\n"
+%%%%
+<w>F</w>.      Monsters\n
+
+#"<w>F</w>.      Monsters\n"
+%%%%
+<w>G</w>.      Items\n
+
+#"<w>G</w>.      Items\n"
+%%%%
+<w>H</w>.      Spellcasting\n
+
+#"<w>H</w>.      Spellcasting\n"
+%%%%
+<w>I</w>.      Targetting\n
+
+#"<w>I</w>.      Targetting\n"
+%%%%
+<w>J</w>.      Religion\n
+
+#"<w>J</w>.      Religion\n"
+%%%%
+<w>K</w>.      Mutations\n
+
+#"<w>K</w>.      Mutations\n"
+%%%%
+<w>L</w>.      Licence, Contact, History\n
+
+#"<w>L</w>.      Licence, Contact, History\n"
+%%%%
+<w>M</w>.      Macros, Options, Performance\n
+
+#"<w>M</w>.      Macros, Options, Performance\n"
+%%%%
+<w>N</w>.      Philosophy\n
+
+#"<w>N</w>.      Philosophy\n"
+%%%%
+<w>1</w>.      List of Character Species\n
+
+#"<w>1</w>.      List of Character Species\n"
+%%%%
+<w>2</w>.      List of Character Backgrounds\n
+
+#"<w>2</w>.      List of Character Backgrounds\n"
+%%%%
+<w>3</w>.      List of Skills\n
+
+#"<w>3</w>.      List of Skills\n"
+%%%%
+<w>4</w>.      List of Keys and Commands\n
+
+#"<w>4</w>.      List of Keys and Commands\n"
+%%%%
+<w>5</w>.      List of Enchantments\n
+
+#"<w>5</w>.      List of Enchantments\n"
+%%%%
+<w>6</w>.      Inscriptions\n
+
+#"<w>6</w>.      Inscriptions\n",
+%%%%
+#
+#
+#cmd_help.add_item_string("");
+%%%%
+#r
+#
+#FILE* fp = fopen_u(datafile_path(fname, false).c_str(), "r");
+%%%%
+#
+#
+#cmd_help.add_item_string("");
+%%%%
+#
+#
+#cmd_help.add_item_string("");
+%%%%
+#\n
+#
+#vector<string> lines = split_string("\n", help, false, true);
+%%%%
+level-map
+
+#_show_specific_help(getHelpString("level-map"));
+%%%%
+pick-up
+
+#_show_specific_help(getHelpString("pick-up"));
+%%%%
+known-menu
+
+#_show_specific_help(getHelpString("known-menu"));
+%%%%
+interlevel-travel.branch.prompt
+
+#_show_specific_help(getHelpString("interlevel-travel.branch.prompt"));
+%%%%
+interlevel-travel.depth.prompt
+
+#_show_specific_help(getHelpString("interlevel-travel.depth.prompt"));
+%%%%
+stash-search.prompt
+
+#_show_specific_help(getHelpString("stash-search.prompt"));
+%%%%
+butchering
+
+#_show_specific_help(getHelpString("butchering"));
+%%%%
+skill-menu
+
+#_show_specific_help(getHelpString("skill-menu"));
+%%%%
+#<
+#
+#if (strcmp(command_name.c_str(), "<") == 0)
+%%%%
+#<
+#
+#command_name += "<";
+%%%%
+#</w>
+#
+#string line = "<w>" + command_name + "</w>";
+%%%%
+# 
+#
+#line += " ";
+%%%%
+#\n
+#
+#line += ": " + untag_tiles_console(desc) + "\n";
+%%%%
+#\n
+#
+#line += "\n";
+%%%%
+#\n
+#
+#line += "\n";
+%%%%
+<h>Movement:\n
+
+#"<h>Movement:\n"
+%%%%
+To move in a direction or to attack, \n
+
+#"To move in a direction or to attack, \n"
+%%%%
+use the numpad (try Numlock off and \n
+
+#"use the numpad (try Numlock off and \n"
+%%%%
+on) or vi keys:\n
+
+#"on) or vi keys:\n",
+%%%%
+                 <w>7 8 9      % % %
+
+#_add_insert_commands(cols, 0, "                 <w>7 8 9      % % %",
+%%%%
+#                  \\|/        \\|/
+
+#_add_insert_commands(cols, 0, "                  \\|/        \\|/", 0);
+%%%%
+                 <w>4</w>-<w>5</w>-<w>6</w>      <w>%</w>-<w>%</w>-<w>%</w>
+
+#_add_insert_commands(cols, 0, "                 <w>4</w>-<w>5</w>-<w>6</w>      <w>%</w>-<w>%</w>-<w>%</w>",
+%%%%
+#                  /|\\        /|\\
+
+#_add_insert_commands(cols, 0, "                  /|\\        /|\\", 0);
+%%%%
+                 <w>1 2 3      % % %
+
+#_add_insert_commands(cols, 0, "                 <w>1 2 3      % % %",
+%%%%
+<h>Rest/Search:\n
+
+#"<h>Rest/Search:\n",
+%%%%
+wait a turn (also <w>.</w>, <w>Del</w>)
+
+1ターン待機する(<w>.</w>, <w>Del</w>も同じ)
+#_add_command(cols, 0, CMD_WAIT, jtrans("wait a turn (also <w>.</w>, <w>Del</w>)"), 2);
+%%%%
+rest and long wait; stops when
+
+長期間休息する:HP,MPが回復する,
+#_add_command(cols, 0, CMD_REST, jtrans("rest and long wait; stops when"), 2);
+%%%%
+Health or Magic become full,
+
+敵に遭遇する,100ターン経過する
+#string text2 = jtrans("Health or Magic become full,") + "\n"
+%%%%
+100turn
+
+と休息は停止される。
+#				 + jtrans("100turn") + "\n";
+%%%%
+<h>Extended Movement:
+
+<yellow>拡張コマンド:</yellow>
+#string text3 = jtrans("<h>Extended Movement:") + "\n";
+%%%%
+auto-explore
+
+自動探索
+#_add_command(cols, 0, CMD_EXPLORE, jtrans("auto-explore"));
+%%%%
+interlevel travel
+
+階層移動
+#_add_command(cols, 0, CMD_INTERLEVEL_TRAVEL, jtrans("interlevel travel"));
+%%%%
+Find items
+
+検索コマンド
+#_add_command(cols, 0, CMD_SEARCH_STASHES, jtrans("Find items"));
+%%%%
+set Waypoint
+
+中間地点の設定
+#_add_command(cols, 0, CMD_FIX_WAYPOINT, jtrans("set Waypoint"));
+%%%%
+<w>/ Dir.</w>, <w>Shift-Dir.</w>: long walk\n
+
+<w>/ Dir.</w>, <w>Shift-Dir.</w>: 長距離移動
+#"<w>/ Dir.</w>, <w>Shift-Dir.</w>: long walk\n"
+%%%%
+<w>* Dir.</w>, <w>Ctrl-Dir.</w> : open/close door, \n
+
+<w>* Dir.</w>, <w>Ctrl-Dir.</w> : 扉の開閉,
+#"<w>* Dir.</w>, <w>Ctrl-Dir.</w> : open/close door, \n"
+%%%%
+         untrap, attack without move\n
+
+罠の解除、移動せずに攻撃
+#"         untrap, attack without move\n",
+%%%%
+#\n
+#
+#"\n"
+%%%%
+<h>Item types (and common commands)\n
+
+#"<h>Item types (and common commands)\n",
+%%%%
+<cyan>)</cyan> : hand weapons (<w>%</w>ield)
+
+#_add_insert_commands(cols, 0, "<cyan>)</cyan> : hand weapons (<w>%</w>ield)",
+%%%%
+<brown>(</brown> : missiles (<w>%</w>uiver, 
+
+#_add_insert_commands(cols, 0, "<brown>(</brown> : missiles (<w>%</w>uiver, "
+%%%%
+<w>%</w>ire, <w>%</w>/<w>%</w> cycle)
+
+#"<w>%</w>ire, <w>%</w>/<w>%</w> cycle)",
+%%%%
+<cyan>[</cyan> : armour (<w>%</w>ear and <w>%</w>ake off)
+
+#_add_insert_commands(cols, 0, "<cyan>[</cyan> : armour (<w>%</w>ear and <w>%</w>ake off)",
+%%%%
+<brown>percent</brown> : corpses and food 
+
+#_add_insert_commands(cols, 0, "<brown>percent</brown> : corpses and food "
+%%%%
+(<w>%</w>hop up and <w>%</w>at)
+
+#"(<w>%</w>hop up and <w>%</w>at)",
+%%%%
+<w>?</w> : scrolls (<w>%</w>ead)
+
+#_add_insert_commands(cols, 0, "<w>?</w> : scrolls (<w>%</w>ead)",
+%%%%
+<magenta>!</magenta> : potions (<w>%</w>uaff)
+
+#_add_insert_commands(cols, 0, "<magenta>!</magenta> : potions (<w>%</w>uaff)",
+%%%%
+<blue>=</blue> : rings (<w>%</w>ut on and <w>%</w>emove)
+
+#_add_insert_commands(cols, 0, "<blue>=</blue> : rings (<w>%</w>ut on and <w>%</w>emove)",
+%%%%
+</red> : amulets (<w>%</w>ut on and <w>%</w>emove)
+
+#_add_insert_commands(cols, 0, "<red>\"</red> : amulets (<w>%</w>ut on and <w>%</w>emove)",
+%%%%
+<lightgrey>/</lightgrey> : wands (e<w>%</w>oke)
+
+#_add_insert_commands(cols, 0, "<lightgrey>/</lightgrey> : wands (e<w>%</w>oke)",
+%%%%
+<lightcyan>
+
+#string item_types = "<lightcyan>";
+%%%%
+</lightcyan> : books (<w>%</w>ead, <w>%</w>emorise, <w>%</w>ap, <w>%</w>ap)
+
+#"</lightcyan> : books (<w>%</w>ead, <w>%</w>emorise, <w>%</w>ap, <w>%</w>ap)";
+%%%%
+<brown>\\</brown> : staves and rods (<w>%</w>ield and e<w>%</w>oke)
+
+#_add_insert_commands(cols, 0, "<brown>\\</brown> : staves and rods (<w>%</w>ield and e<w>%</w>oke)",
+%%%%
+<lightgreen>}</lightgreen> : miscellaneous items (e<w>%</w>oke)
+
+#_add_insert_commands(cols, 0, "<lightgreen>}</lightgreen> : miscellaneous items (e<w>%</w>oke)",
+%%%%
+<yellow>$</yellow> : gold (<w>%</w> counts gold)
+
+#_add_insert_commands(cols, 0, "<yellow>$</yellow> : gold (<w>%</w> counts gold)",
+%%%%
+<lightmagenta>0</lightmagenta> : the Orb of Zot\n
+
+#"<lightmagenta>0</lightmagenta> : the Orb of Zot\n"
+%%%%
+    Carry it to the surface and win!\n
+
+#"    Carry it to the surface and win!\n",
+%%%%
+<h>Other Gameplay Actions:\n
+
+<h>その他の操作:
+#"<h>Other Gameplay Actions:\n",
+%%%%
+use special Ability (<w>%!</w> for help)
+
+特別な能力を使う (<w>a!</w> でヘルプ)
+#_add_insert_commands(cols, 0, 2, jtrans("use special Ability (<w>%!</w> for help)"),
+%%%%
+Pray (<w>%</w> and <w>%!</w> for help)
+
+祈る (<w>p</w> and <w>p!</w> でヘルプ)
+#_add_insert_commands(cols, 0, 2, jtrans("Pray (<w>%</w> and <w>%!</w> for help)"),
+%%%%
+cast spell, abort without targets
+
+呪文詠唱。対象が居ないと中止する
+#_add_command(cols, 0, CMD_CAST_SPELL, jtrans("cast spell, abort without targets"), 2);
+%%%%
+cast spell, no matter what
+
+呪文詠唱。
+#_add_command(cols, 0, CMD_FORCE_CAST_SPELL, jtrans("cast spell, no matter what"), 2);
+%%%%
+list all spells
+
+記憶した呪文の一覧
+#_add_command(cols, 0, CMD_DISPLAY_SPELLS, jtrans("list all spells"), 2);
+%%%%
+tell allies (<w>%t</w> to shout)
+
+仲間に命令をする (<w>tt</w> で叫ぶ)
+#_add_insert_commands(cols, 0, 2, jtrans("tell allies (<w>%t</w> to shout)"),
+%%%%
+re-do previous command
+
+前のコマンドを繰り返す
+#_add_command(cols, 0, CMD_PREV_CMD_AGAIN, jtrans("re-do previous command"), 2);
+%%%%
+repeat next command # of times
+
+指定回数コマンドを繰り返す
+#_add_command(cols, 0, CMD_REPEAT_CMD, jtrans("repeat next command # of times"), 2);
+%%%%
+<h>Non-Gameplay Commands / Info\n
+
+<h>情報/設定コマンド
+#"<h>Non-Gameplay Commands / Info\n",
+%%%%
+show Previous messages
+
+以前のメッセージの表示
+#_add_command(cols, 0, CMD_REPLAY_MESSAGES, jtrans("show Previous messages"));
+%%%%
+Redraw screen
+
+画面の再描写
+#_add_command(cols, 0, CMD_REDRAW_SCREEN, jtrans("Redraw screen"));
+%%%%
+Clear main and level maps
+
+マップの消去
+#_add_command(cols, 0, CMD_CLEAR_MAP, jtrans("Clear main and level maps"));
+%%%%
+annotate the dungeon level
+
+階層の注釈
+#_add_command(cols, 0, CMD_ANNOTATE_LEVEL, jtrans("annotate the dungeon level"), 2);
+%%%%
+dump character to file
+
+ダンプの出力
+#_add_command(cols, 0, CMD_CHARACTER_DUMP, jtrans("dump character to file"), 2);
+%%%%
+add note (use <w>%:</w> to read notes)
+
+ノートへの記入 (<w>?:</w> でノートを読む)
+#_add_insert_commands(cols, 0, 2, jtrans("add note (use <w>%:</w> to read notes)"),
+%%%%
+add macro (also <w>Ctrl-D</w>)
+
+マクロの設定 (<w>Ctrl-D</w>も同じ)
+#_add_command(cols, 0, CMD_MACRO_ADD, jtrans("add macro (also <w>Ctrl-D</w>)"), 2);
+%%%%
+reassign inventory/spell letters
+
+アイテム、呪文の入れ替え
+#_add_command(cols, 0, CMD_ADJUST_INVENTORY, jtrans("reassign inventory/spell letters"), 2);
+%%%%
+edit player doll
+
+プレイヤードールの編集
+#_add_command(cols, 0, CMD_EDIT_PLAYER_TILE, jtrans("edit player doll"), 2);
+%%%%
+<w>F12</w> : read messages (online play only)
+
+#cols.add_formatted(0, "<w>F12</w> : read messages (online play only)",
+%%%%
+read messages (online play only)
+
+メッセージを読む (オンラインのみ)
+#_add_command(cols, 0, CMD_READ_MESSAGES, jtrans("read messages (online play only)"), 2);
+%%%%
+<h>Game Saving and Quitting:\n
+
+ゲームのセーブと終了:
+#"<h>Game Saving and Quitting:\n",
+%%%%
+Save game and exit
+
+セーブし、終了する
+#_add_command(cols, 1, CMD_SAVE_GAME, jtrans("Save game and exit"));
+%%%%
+Save and exit without query
+
+即座にゲームをセーブし終了する
+#_add_command(cols, 1, CMD_SAVE_GAME_NOW, jtrans("Save and exit without query"));
+%%%%
+Suicide the current character
+
+自殺する
+#_add_command(cols, 1, CMD_QUIT, jtrans("Suicide the current character"));
+%%%%
+         and quit the game\n
+
+#cols.add_formatted(1, "         and quit the game\n",
+%%%%
+<h>Player Character Information:\n
+
+#"<h>Player Character Information:\n",
+%%%%
+display character status
+
+キャラのステータスの表示
+#_add_command(cols, 1, CMD_DISPLAY_CHARACTER_STATUS, jtrans("display character status"), 2);
+%%%%
+show skill screen
+
+スキル画面
+#_add_command(cols, 1, CMD_DISPLAY_SKILLS, jtrans("show skill screen"), 2);
+%%%%
+show resistances
+
+耐性一覧
+#_add_command(cols, 1, CMD_RESISTS_SCREEN, jtrans("show resistances"), 2);
+%%%%
+show religion screen
+
+信仰画面
+#_add_command(cols, 1, CMD_DISPLAY_RELIGION, jtrans("show religion screen"), 2);
+%%%%
+show Abilities/mutations
+
+能力/変異一覧
+#_add_command(cols, 1, CMD_DISPLAY_MUTATIONS, jtrans("show Abilities/mutations"), 2);
+%%%%
+show item knowledge
+
+鑑定済みのアイテムの知識
+#_add_command(cols, 1, CMD_DISPLAY_KNOWN_OBJECTS, jtrans("show item knowledge"), 2);
+%%%%
+show runes collected
+
+収集したルーン一覧
+#_add_command(cols, 1, CMD_DISPLAY_RUNES, jtrans("show runes collected"), 2);
+%%%%
+display worn armour
+
+装備中の鎧の表示
+#_add_command(cols, 1, CMD_LIST_ARMOUR, jtrans("display worn armour"), 2);
+%%%%
+display worn jewellery
+
+装備している装飾品の表示
+#_add_command(cols, 1, CMD_LIST_JEWELLERY, jtrans("display worn jewellery"), 2);
+%%%%
+display gold in possession
+
+所持金の表示
+#_add_command(cols, 1, CMD_LIST_GOLD, jtrans("display gold in possession"), 2);
+%%%%
+display experience info
+
+経験値の表示
+#_add_command(cols, 1, CMD_EXPERIENCE_CHECK, jtrans("display experience info"), 2);
+%%%%
+<h>Dungeon Interaction and Information:\n
+
+#"<h>Dungeon Interaction and Information:\n",
+%%%%
+<w>%</w>/<w>%</w> : Open/Close door
+
+<w>O</w>/<w>C</w> : 扉を開く/閉じる
+#_add_insert_commands(cols, 1, "<w>%</w>/<w>%</w> : Open/Close door",
+%%%%
+<w>%</w>/<w>%</w> : use staircase
+
+<w><</w>/<w>></w> : 階段を使う
+#_add_insert_commands(cols, 1, "<w>%</w>/<w>%</w> : use staircase",
+%%%%
+examine occupied tile and
+
+下の床を調べ、重なったアイテムを拾う
+#_add_command(cols, 1, CMD_INSPECT_FLOOR, jtrans("examine occupied tile and"));
+%%%%
+         pickup part of a single stack\n
+
+#cols.add_formatted(1, "         pickup part of a single stack\n",
+%%%%
+eXamine surroundings/targets
+
+周囲/目標を調べる
+#_add_command(cols, 1, CMD_LOOK_AROUND, jtrans("eXamine surroundings/targets"));
+%%%%
+eXamine level map (<w>%?</w> for help)
+
+階層のマップを調べる (<w>X?</w> でヘルプ)
+#_add_insert_commands(cols, 1, 7, "eXamine level map (<w>%?</w> for help)",
+%%%%
+list monsters, items, features
+
+視界内の怪物、アイテム、施設の一覧
+#_add_command(cols, 1, CMD_FULL_VIEW, jtrans("list monsters, items, features"));
+%%%%
+         in view\n
+
+#cols.add_formatted(1, "         in view\n",
+%%%%
+toggle terrain-only view
+
+地形のみを表示するように切り替える
+#_add_command(cols, 1, CMD_SHOW_TERRAIN, jtrans("toggle terrain-only view"));
+%%%%
+colour monsters in view by HP
+
+視界内のモンスターのHPの表示
+#_add_command(cols, 1, CMD_TOGGLE_VIEWPORT_MONSTER_HP, jtrans("colour monsters in view by HP"));
+%%%%
+show dungeon Overview
+
+迷宮の概要を表示
+#_add_command(cols, 1, CMD_DISPLAY_OVERMAP, jtrans("show dungeon Overview"));
+%%%%
+toggle auto-pickup
+
+自動拾いの切り替え
+#_add_command(cols, 1, CMD_TOGGLE_AUTOPICKUP, jtrans("toggle auto-pickup"));
+%%%%
+change ally pickup behaviour
+
+仲間の自動拾いの変更
+#_add_command(cols, 1, CMD_TOGGLE_FRIENDLY_PICKUP, jtrans("change ally pickup behaviour"));
+%%%%
+set your travel speed to your
+
+#_add_command(cols, 1, CMD_TOGGLE_TRAVEL_SPEED, "set your travel speed to your");
+%%%%
+         slowest ally\n
+
+#cols.add_formatted(1, "         slowest ally\n",
+%%%%
+<h>Item Interaction (inventory):\n
+
+<h>アイテムへの干渉 (持ち物):
+#"<h>Item Interaction (inventory):\n",
+%%%%
+show Inventory list
+
+持ち物の表示
+#_add_command(cols, 1, CMD_DISPLAY_INVENTORY, jtrans("show Inventory list"), 2);
+%%%%
+show inventory of equipped items
+
+装備の表示
+#_add_command(cols, 1, CMD_LIST_EQUIPMENT, jtrans("show inventory of equipped items"), 2);
+%%%%
+inscribe item
+
+銘を刻む
+#_add_command(cols, 1, CMD_INSCRIBE_ITEM, jtrans("inscribe item"), 2);
+%%%%
+Fire next appropriate item
+
+装填されたアイテムを発射する
+#_add_command(cols, 1, CMD_FIRE, jtrans("Fire next appropriate item"), 2);
+%%%%
+select an item and Fire it
+
+アイテムを選び、発射する
+#_add_command(cols, 1, CMD_THROW_ITEM_NO_QUIVER, jtrans("select an item and Fire it"), 2);
+%%%%
+select item slot to be quivered
+
+アイテムの装填
+#_add_command(cols, 1, CMD_QUIVER_ITEM, jtrans("select item slot to be quivered"), 2);
+%%%%
+Drain corpses
+
+死体を吸う
+#string interact = (you.species == SP_VAMPIRE ? jtrans("Drain corpses")
+%%%%
+Eat food
+
+食糧を食べる
+#: jtrans("Eat food"));
+%%%%
+(tries floor first)
+
+(初めに床にある物を)
+#interact += jtrans("(tries floor first)") + "\n";
+%%%%
+Quaff a potion
+
+薬を飲む
+#_add_command(cols, 1, CMD_QUAFF, jtrans("Quaff a potion"), 2);
+%%%%
+Read a scroll or book
+
+本か巻物を読む
+#_add_command(cols, 1, CMD_READ, jtrans("Read a scroll or book"), 2);
+%%%%
+Memorise a spell from a book
+
+魔法書から記憶する
+#_add_command(cols, 1, CMD_MEMORISE_SPELL, jtrans("Memorise a spell from a book"), 2);
+%%%%
+Wield an item (<w>-</w> for none)
+
+アイテムを手に持つ (<w>-</w> で外す)
+#_add_command(cols, 1, CMD_WIELD_WEAPON, jtrans("Wield an item (<w>-</w> for none)"), 2);
+%%%%
+wield item a, or switch to b
+
+持っているアイテムをa,bの物に変更する
+#_add_command(cols, 1, CMD_WEAPON_SWAP, jtrans("wield item a, or switch to b"), 2);
+%%%%
+(use <w>%</w> to assign slots)
+
+    (<w>=</w> でアイテムの入れ替え)
+#_add_insert_commands(cols, 1, jtrans("(use <w>%</w> to assign slots)"),
+%%%%
+eVoke power of wielded item
+
+手に持ったアイテムを発動する
+#_add_command(cols, 1, CMD_EVOKE_WIELDED, jtrans("eVoke power of wielded item"), 2);
+%%%%
+eVoke wand and miscellaneous item
+
+ワンド、その他のアイテムの発動
+#_add_command(cols, 1, CMD_EVOKE, jtrans("eVoke wand and miscellaneous item"), 2);
+%%%%
+<w>%</w>/<w>%</w> : Wear or Take off armour
+
+<w>W</w>/<w>T</w> : 鎧の装備、取り外し
+#_add_insert_commands(cols, 1, jtrans("<w>%</w>/<w>%</w> : Wear or Take off armour"),
+%%%%
+<w>%</w>/<w>%</w> : Put on or Remove jewellery
+
+<w>P</w>/<w>R</w> : 装飾品の装備、取り外し
+#_add_insert_commands(cols, 1, jtrans("<w>%</w>/<w>%</w> : Put on or Remove jewellery"),
+%%%%
+<h>Item Interaction (floor):\n
+
+<h>アイテムへの干渉 (床):
+#"<h>Item Interaction (floor):\n",
+%%%%
+pick up items (also <w>g</w>)
+
+アイテムを拾う (<w>g</w>も同じ)
+#_add_command(cols, 1, CMD_PICKUP, jtrans("pick up items (also <w>g</w>)"), 2);
+%%%%
+    (press twice for pick up menu)\n
+
+    (二回入力することでメニューを開く)
+#"    (press twice for pick up menu)\n",
+%%%%
+Drop an item
+
+アイテムを落とす
+#_add_command(cols, 1, CMD_DROP, jtrans("Drop an item"), 2);
+%%%%
+<w>%#</w>: Drop exact number of items
+
+<w>d#</w>: 個数を指定して落とす
+#_add_insert_commands(cols, 1, jtrans("<w>%#</w>: Drop exact number of items"),
+%%%%
+Drop the last item(s) you picked up
+
+最後に拾ったアイテムを落とす
+#_add_command(cols, 1, CMD_DROP_LAST, jtrans("Drop the last item(s) you picked up"), 2);
+%%%%
+Chop up a corpse
+
+死体を捌く
+#_add_command(cols, 1, CMD_BUTCHER, jtrans("Chop up a corpse"), 2);
+%%%%
+Drain corpses on
+
+床の死体から吸血する
+#string interact = (you.species == SP_VAMPIRE ? jtrans("Drain corpses on")
+%%%%
+Eat food from
+
+床の食糧を食べる
+#: jtrans("Eat food from"));
+%%%%
+#
+#
+#interact += jtrans("");
+%%%%
+<h>Additional help:\n
+
+#"<h>Additional help:\n",
+%%%%
+Many commands have context sensitive 
+
+#"Many commands have context sensitive "
+%%%%
+help, among them <w>%</w>, <w>%</w>, <w>%</w> (or any 
+
+#"help, among them <w>%</w>, <w>%</w>, <w>%</w> (or any "
+%%%%
+form of targetting), <w>%</w>, and <w>%</w>.\n
+
+#"form of targetting), <w>%</w>, and <w>%</w>.\n"
+%%%%
+You can read descriptions of your 
+
+#"You can read descriptions of your "
+%%%%
+current spells (<w>%</w>), skills (<w>%?</w>) and 
+
+#"current spells (<w>%</w>), skills (<w>%?</w>) and "
+%%%%
+abilities (<w>%!</w>).
+
+#"abilities (<w>%!</w>).";
+%%%%
+<h>Movement:\n
+
+#"<h>Movement:\n"
+%%%%
+To move in a direction or to attack, \n
+
+#"To move in a direction or to attack, \n"
+%%%%
+use the numpad (try Numlock off and \n
+
+#"use the numpad (try Numlock off and \n"
+%%%%
+on) or vi keys:\n
+
+#"on) or vi keys:\n",
+%%%%
+                 <w>7 8 9      % % %
+
+#_add_insert_commands(cols, 0, "                 <w>7 8 9      % % %",
+%%%%
+                  \\|/        \\|/
+
+#_add_insert_commands(cols, 0, "                  \\|/        \\|/", 0);
+%%%%
+                 <w>4</w>-<w>5</w>-<w>6</w>      <w>%</w>-<w>%</w>-<w>%</w>
+
+#_add_insert_commands(cols, 0, "                 <w>4</w>-<w>5</w>-<w>6</w>      <w>%</w>-<w>%</w>-<w>%</w>",
+%%%%
+                  /|\\        /|\\
+
+#_add_insert_commands(cols, 0, "                  /|\\        /|\\", 0);
+%%%%
+                 <w>1 2 3      % % %
+
+#_add_insert_commands(cols, 0, "                 <w>1 2 3      % % %",
+%%%%
+ 
+
+#cols.add_formatted(0, " ", false, true, _cmdhelp_textfilter);
+%%%%
+<w>Shift-Dir.</w> runs into one direction
+
+#cols.add_formatted(0, "<w>Shift-Dir.</w> runs into one direction",
+%%%%
+<w>%</w> or <w>%</w> : ascend/descend the stairs
+
+#_add_insert_commands(cols, 0, "<w>%</w> or <w>%</w> : ascend/descend the stairs",
+%%%%
+autoexplore
+
+#_add_command(cols, 0, CMD_EXPLORE, "autoexplore", 2);
+%%%%
+<h>Rest/Search:\n
+
+#"<h>Rest/Search:\n",
+%%%%
+wait a turn (also <w>.</w>, <w>Del</w>)
+
+#_add_command(cols, 0, CMD_WAIT, "wait a turn (also <w>.</w>, <w>Del</w>)", 2);
+%%%%
+rest and long wait; stops when
+
+#_add_command(cols, 0, CMD_REST, "rest and long wait; stops when", 2);
+%%%%
+    Health or Magic become full,\n
+
+#"    Health or Magic become full,\n"
+%%%%
+    something is detected, or after\n
+
+#"    something is detected, or after\n"
+%%%%
+    100 turns over (<w>numpad-5</w>)\n
+
+#"    100 turns over (<w>numpad-5</w>)\n",
+%%%%
+\n<h>Attacking monsters\n
+
+#"\n<h>Attacking monsters\n"
+%%%%
+Walking into a monster will attack it\n
+
+#"Walking into a monster will attack it\n"
+%%%%
+with the wielded weapon or barehanded.
+
+#"with the wielded weapon or barehanded.",
+%%%%
+\n<h>Ranged combat and magic\n
+
+#"\n<h>Ranged combat and magic\n",
+%%%%
+<w>%</w> to throw/fire missiles
+
+#_add_insert_commands(cols, 0, "<w>%</w> to throw/fire missiles",
+%%%%
+<w>%</w>/<w>%</w> to cast spells 
+
+#_add_insert_commands(cols, 0, "<w>%</w>/<w>%</w> to cast spells "
+%%%%
+(<w>%?/%</w> lists spells)
+
+#"(<w>%?/%</w> lists spells)",
+%%%%
+Memorise a new spell
+
+#_add_command(cols, 0, CMD_MEMORISE_SPELL, "Memorise a new spell", 2);
+%%%%
+read a book to forget a spell
+
+#_add_command(cols, 0, CMD_READ, "read a book to forget a spell", 2);
+%%%%
+<h>Item types (and common commands)\n
+
+#1, "<h>Item types (and common commands)\n",
+%%%%
+<console><cyan>)</cyan> : </console>
+
+#"<console><cyan>)</cyan> : </console>"
+%%%%
+hand weapons (<w>%</w>ield)
+
+#"hand weapons (<w>%</w>ield)",
+%%%%
+<console><brown>(</brown> : </console>
+
+#"<console><brown>(</brown> : </console>"
+%%%%
+missiles (<w>%</w>uiver, <w>%</w>ire, <w>%</w>/<w>%</w> cycle)
+
+#"missiles (<w>%</w>uiver, <w>%</w>ire, <w>%</w>/<w>%</w> cycle)",
+%%%%
+<console><cyan>[</cyan> : </console>
+
+#"<console><cyan>[</cyan> : </console>"
+%%%%
+armour (<w>%</w>ear and <w>%</w>ake off)
+
+#"armour (<w>%</w>ear and <w>%</w>ake off)",
+%%%%
+<console><brown>percent</brown> : </console>
+
+#"<console><brown>percent</brown> : </console>"
+%%%%
+corpses and food (<w>%</w>hop up and <w>%</w>at)
+
+#"corpses and food (<w>%</w>hop up and <w>%</w>at)",
+%%%%
+<console><w>?</w> : </console>
+
+#"<console><w>?</w> : </console>"
+%%%%
+scrolls (<w>%</w>ead)
+
+#"scrolls (<w>%</w>ead)",
+%%%%
+<console><magenta>!</magenta> : </console>
+
+#"<console><magenta>!</magenta> : </console>"
+%%%%
+potions (<w>%</w>uaff)
+
+#"potions (<w>%</w>uaff)",
+%%%%
+<console><blue>=</blue> : </console>
+
+#"<console><blue>=</blue> : </console>"
+%%%%
+rings (<w>%</w>ut on and <w>%</w>emove)
+
+#"rings (<w>%</w>ut on and <w>%</w>emove)",
+%%%%
+</red> : </console>
+
+#"<console><red>\"</red> : </console>"
+%%%%
+amulets (<w>%</w>ut on and <w>%</w>emove)
+
+#"amulets (<w>%</w>ut on and <w>%</w>emove)",
+%%%%
+<console><lightgrey>/</lightgrey> : </console>
+
+#"<console><lightgrey>/</lightgrey> : </console>"
+%%%%
+wands (e<w>%</w>oke)
+
+#"wands (e<w>%</w>oke)",
+%%%%
+<console><lightcyan>
+
+#"<console><lightcyan>";
+%%%%
+</lightcyan> : </console>
+
+#"</lightcyan> : </console>"
+%%%%
+books (<w>%</w>ead, <w>%</w>emorise, <w>%</w>ap, <w>%</w>ap)
+
+#"books (<w>%</w>ead, <w>%</w>emorise, <w>%</w>ap, <w>%</w>ap)";
+%%%%
+<console><brown>
+
+#"<console><brown>";
+%%%%
+</brown> : </console>
+
+#"</brown> : </console>"
+%%%%
+staves and rods (<w>%</w>ield and e<w>%</w>oke)
+
+#"staves and rods (<w>%</w>ield and e<w>%</w>oke)";
+%%%%
+ 
+
+#cols.add_formatted(1, " ", false, true, _cmdhelp_textfilter);
+%%%%
+list inventory (select item to view it)
+
+#_add_command(cols, 1, CMD_DISPLAY_INVENTORY, "list inventory (select item to view it)", 2);
+%%%%
+pick up item from ground (also <w>g</w>)
+
+#_add_command(cols, 1, CMD_PICKUP, "pick up item from ground (also <w>g</w>)", 2);
+%%%%
+drop item
+
+#_add_command(cols, 1, CMD_DROP, "drop item", 2);
+%%%%
+drop the last item(s) you picked up
+
+#_add_command(cols, 1, CMD_DROP_LAST, "drop the last item(s) you picked up", 2);
+%%%%
+<h>Additional important commands\n
+
+#"<h>Additional important commands\n",
+%%%%
+Save the game and exit
+
+#_add_command(cols, 1, CMD_SAVE_GAME_NOW, "Save the game and exit", 2);
+%%%%
+show previous messages
+
+#_add_command(cols, 1, CMD_REPLAY_MESSAGES, "show previous messages", 2);
+%%%%
+use an ability
+
+#_add_command(cols, 1, CMD_USE_ABILITY, "use an ability", 2);
+%%%%
+show character overview
+
+#_add_command(cols, 1, CMD_RESISTS_SCREEN, "show character overview", 2);
+%%%%
+show religion overview
+
+#_add_command(cols, 1, CMD_DISPLAY_RELIGION, "show religion overview", 2);
+%%%%
+show map of the whole level
+
+#_add_command(cols, 1, CMD_DISPLAY_MAP, "show map of the whole level", 2);
+%%%%
+show dungeon overview
+
+#_add_command(cols, 1, CMD_DISPLAY_OVERMAP, "show dungeon overview", 2);
+%%%%
+\n<h>Targetting\n
+
+#"\n<h>Targetting\n"
+%%%%
+<w>Enter</w> or <w>.</w> or <w>Del</w> : confirm target\n
+
+#"<w>Enter</w> or <w>.</w> or <w>Del</w> : confirm target\n"
+%%%%
+<w>+</w> and <w>-</w> : cycle between targets\n
+
+#"<w>+</w> and <w>-</w> : cycle between targets\n"
+%%%%
+<w>f</w> or <w>p</w> : shoot at previous target\n
+
+#"<w>f</w> or <w>p</w> : shoot at previous target\n"
+%%%%
+         if still alive and in sight\n
+
+#"         if still alive and in sight\n",
+%%%%
+<yellow>Player stats</yellow>\n
+
+#"<yellow>Player stats</yellow>\n"
+%%%%
+<w>A</w>      : set all skills to level\n
+
+#"<w>A</w>      : set all skills to level\n"
+%%%%
+<w>Ctrl-D</w> : change enchantments/durations\n
+
+#"<w>Ctrl-D</w> : change enchantments/durations\n"
+%%%%
+<w>g</w>      : exercise a skill\n
+
+#"<w>g</w>      : exercise a skill\n"
+%%%%
+<w>Ctrl-L</w> : change experience level\n
+
+#"<w>Ctrl-L</w> : change experience level\n"
+%%%%
+<w>r</w>      : change character's species\n
+
+#"<w>r</w>      : change character's species\n"
+%%%%
+<w>s</w>      : gain 20000 skill points\n
+
+#"<w>s</w>      : gain 20000 skill points\n"
+%%%%
+<w>S</w>      : set skill to level\n
+
+#"<w>S</w>      : set skill to level\n"
+%%%%
+<w>x</w>      : gain an experience level\n
+
+#"<w>x</w>      : gain an experience level\n"
+%%%%
+<w>$</w>      : get 1000 gold\n
+
+#"<w>$</w>      : get 1000 gold\n"
+%%%%
+<w>]</w>      : get a mutation\n
+
+#"<w>]</w>      : get a mutation\n"
+%%%%
+<w>_</w>      : gain religion\n
+
+#"<w>_</w>      : gain religion\n"
+%%%%
+<w>^</w>      : set piety to a value\n
+
+#"<w>^</w>      : set piety to a value\n"
+%%%%
+<w>@</w>      : set Str Int Dex\n
+
+#"<w>@</w>      : set Str Int Dex\n"
+%%%%
+<w>#</w>      : load character from a dump file\n
+
+#"<w>#</w>      : load character from a dump file\n"
+%%%%
+<w>Z</w>      : gain lots of Zot Points\n
+
+#"<w>Z</w>      : gain lots of Zot Points\n"
+%%%%
+<w>&</w>      : list all divine followers\n
+
+#"<w>&</w>      : list all divine followers\n"
+%%%%
+\n
+
+#"\n"
+%%%%
+<yellow>Create level features</yellow>\n
+
+#"<yellow>Create level features</yellow>\n"
+%%%%
+<w>L</w>      : place a vault by name\n
+
+#"<w>L</w>      : place a vault by name\n"
+%%%%
+<w>p</w>      : make a portal\n
+
+#"<w>p</w>      : make a portal\n"
+%%%%
+<w>T</w>      : make a trap\n
+
+#"<w>T</w>      : make a trap\n"
+%%%%
+<w><<</w>/<w>></w>    : create up/down staircase\n
+
+#"<w><<</w>/<w>></w>    : create up/down staircase\n"
+%%%%
+<w>(</w>      : turn cell into feature\n
+
+#"<w>(</w>      : turn cell into feature\n"
+%%%%
+<w>\\</w>      : make a shop\n
+
+#"<w>\\</w>      : make a shop\n"
+%%%%
+<w>Ctrl-K</w> : mark all vaults as unused\n
+
+#"<w>Ctrl-K</w> : mark all vaults as unused\n"
+%%%%
+\n
+
+#"\n"
+%%%%
+<yellow>Other level related commands</yellow>\n
+
+#"<yellow>Other level related commands</yellow>\n"
+%%%%
+<w>Ctrl-A</w> : generate new Abyss area\n
+
+#"<w>Ctrl-A</w> : generate new Abyss area\n"
+%%%%
+<w>b</w>      : controlled blink\n
+
+#"<w>b</w>      : controlled blink\n"
+%%%%
+<w>Ctrl-B</w> : controlled teleport\n
+
+#"<w>Ctrl-B</w> : controlled teleport\n"
+%%%%
+<w>B</w>      : banish yourself to the Abyss\n
+
+#"<w>B</w>      : banish yourself to the Abyss\n"
+%%%%
+<w>k</w>      : shift section of a labyrinth\n
+
+#"<w>k</w>      : shift section of a labyrinth\n"
+%%%%
+<w>R</w>      : change monster spawn rate\n
+
+#"<w>R</w>      : change monster spawn rate\n"
+%%%%
+<w>Ctrl-S</w> : change Abyss speed\n
+
+#"<w>Ctrl-S</w> : change Abyss speed\n"
+%%%%
+<w>u</w>/<w>d</w>    : shift up/down one level\n
+
+#"<w>u</w>/<w>d</w>    : shift up/down one level\n"
+%%%%
+<w>~</w>      : go to a specific level\n
+
+#"<w>~</w>      : go to a specific level\n"
+%%%%
+<w>:</w>      : find branches and overflow\n
+
+#"<w>:</w>      : find branches and overflow\n"
+%%%%
+         temples in the dungeon\n
+
+#"         temples in the dungeon\n"
+%%%%
+<w>;</w>      : list known levels and counters\n
+
+#"<w>;</w>      : list known levels and counters\n"
+%%%%
+<w>{</w>      : magic mapping\n
+
+#"<w>{</w>      : magic mapping\n"
+%%%%
+<w>}</w>      : detect all traps on level\n
+
+#"<w>}</w>      : detect all traps on level\n"
+%%%%
+<w>)</w>      : change Shoals' tide speed\n
+
+#"<w>)</w>      : change Shoals' tide speed\n"
+%%%%
+<w>Ctrl-E</w> : dump level builder information\n
+
+#"<w>Ctrl-E</w> : dump level builder information\n"
+%%%%
+<w>Ctrl-R</w> : regenerate current level\n
+
+#"<w>Ctrl-R</w> : regenerate current level\n"
+%%%%
+<w>P</w>      : create a level based on a vault\n
+
+#"<w>P</w>      : create a level based on a vault\n",
+%%%%
+<yellow>Other player related effects</yellow>\n
+
+#"<yellow>Other player related effects</yellow>\n"
+%%%%
+<w>c</w>      : card effect\n
+
+#"<w>c</w>      : card effect\n"
+%%%%
+<w>Ctrl-G</w> : save/load ghost (bones file)\n
+
+#"<w>Ctrl-G</w> : save/load ghost (bones file)\n"
+%%%%
+<w>h</w>/<w>H</w>    : heal yourself (super-Heal)\n
+
+#"<w>h</w>/<w>H</w>    : heal yourself (super-Heal)\n"
+%%%%
+<w>Ctrl-H</w> : set hunger state\n
+
+#"<w>Ctrl-H</w> : set hunger state\n"
+%%%%
+<w>X</w>      : make Xom do something now\n
+
+#"<w>X</w>      : make Xom do something now\n"
+%%%%
+<w>z</w>      : cast spell by number/name\n
+
+#"<w>z</w>      : cast spell by number/name\n"
+%%%%
+<w>Ctrl-M</w> : memorise spell\n
+
+#"<w>Ctrl-M</w> : memorise spell\n"
+%%%%
+<w>W</w>      : god wrath\n
+
+#"<w>W</w>      : god wrath\n"
+%%%%
+<w>w</w>      : god mollification\n
+
+#"<w>w</w>      : god mollification\n"
+%%%%
+<w>Ctrl-P</w> : polymorph into a form\n
+
+#"<w>Ctrl-P</w> : polymorph into a form\n"
+%%%%
+<w>Ctrl-V</w> : toggle xray vision\n
+
+#"<w>Ctrl-V</w> : toggle xray vision\n"
+%%%%
+\n
+
+#"\n"
+%%%%
+<yellow>Monster related commands</yellow>\n
+
+#"<yellow>Monster related commands</yellow>\n"
+%%%%
+<w>D</w>      : detect all monsters\n
+
+#"<w>D</w>      : detect all monsters\n"
+%%%%
+<w>G</w>      : dismiss all monsters\n
+
+#"<w>G</w>      : dismiss all monsters\n"
+%%%%
+<w>m</w>/<w>M</w>    : create monster by number/name\n
+
+#"<w>m</w>/<w>M</w>    : create monster by number/name\n"
+%%%%
+</w>      : list monsters\n
+
+#"<w>\"</w>      : list monsters\n"
+%%%%
+\n
+
+#"\n"
+%%%%
+<yellow>Item related commands</yellow>\n
+
+#"<yellow>Item related commands</yellow>\n"
+%%%%
+<w>a</w>      : acquirement\n
+
+#"<w>a</w>      : acquirement\n"
+%%%%
+<w>C</w>      : (un)curse item\n
+
+#"<w>C</w>      : (un)curse item\n"
+%%%%
+<w>i</w>/<w>I</w>    : identify/unidentify inventory\n
+
+#"<w>i</w>/<w>I</w>    : identify/unidentify inventory\n"
+%%%%
+<w>o</w>/<w>%</w>    : create an object\n
+
+#"<w>o</w>/<w>%</w>    : create an object\n"
+%%%%
+<w>t</w>      : tweak object properties\n
+
+#"<w>t</w>      : tweak object properties\n"
+%%%%
+<w>v</w>      : show gold value of an item\n
+
+#"<w>v</w>      : show gold value of an item\n"
+%%%%
+<w>-</w>      : get a god gift\n
+
+#"<w>-</w>      : get a god gift\n"
+%%%%
+<w>|</w>      : create all predefined artefacts\n
+
+#"<w>|</w>      : create all predefined artefacts\n"
+%%%%
+<w>+</w>      : make randart from item\n
+
+#"<w>+</w>      : make randart from item\n"
+%%%%
+<w>'</w>      : list items\n
+
+#"<w>'</w>      : list items\n"
+%%%%
+<w>J</w>      : Jiyva off-level sacrifice\n
+
+#"<w>J</w>      : Jiyva off-level sacrifice\n"
+%%%%
+\n
+
+#"\n"
+%%%%
+<yellow>Debugging commands</yellow>\n
+
+#"<yellow>Debugging commands</yellow>\n"
+%%%%
+<w>f</w>      : quick fight simulation\n
+
+#"<w>f</w>      : quick fight simulation\n"
+%%%%
+<w>F</w>      : single scale fsim\n
+
+#"<w>F</w>      : single scale fsim\n"
+%%%%
+<w>Ctrl-F</w> : double scale fsim\n
+
+#"<w>Ctrl-F</w> : double scale fsim\n"
+%%%%
+<w>Ctrl-I</w> : item generation stats\n
+
+#"<w>Ctrl-I</w> : item generation stats\n"
+%%%%
+<w>O</w>      : measure exploration time\n
+
+#"<w>O</w>      : measure exploration time\n"
+%%%%
+<w>Ctrl-t</w> : enter in-game Lua interpreter\n
+
+#"<w>Ctrl-t</w> : enter in-game Lua interpreter\n"
+%%%%
+<w>Ctrl-X</w> : Xom effect stats\n
+
+#"<w>Ctrl-X</w> : Xom effect stats\n"
+%%%%
+<w>Ctrl-Q</w> : make some debug messages quiet\n
+
+#"<w>Ctrl-Q</w> : make some debug messages quiet\n"
+%%%%
+\n
+
+#"\n"
+%%%%
+<yellow>Other wizard commands</yellow>\n
+
+#"<yellow>Other wizard commands</yellow>\n"
+%%%%
+(not prefixed with <w>&</w>!)\n
+
+#"(not prefixed with <w>&</w>!)\n"
+%%%%
+<w>x?</w>     : list targeted commands\n
+
+#"<w>x?</w>     : list targeted commands\n"
+%%%%
+<w>X?</w>     : list map-mode commands\n
+
+#"<w>X?</w>     : list map-mode commands\n",
+%%%%

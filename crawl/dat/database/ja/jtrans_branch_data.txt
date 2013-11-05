@@ -1,0 +1,293 @@
+%%%%
+Dungeon
+
+%%%%
+the Dungeon
+
+%%%%
+D
+
+#"Dungeon", "the Dungeon", "D",
+%%%%
+Temple
+
+%%%%
+the Ecumenical Temple
+
+%%%%
+Temple
+
+#"Temple", "the Ecumenical Temple", "Temple",
+%%%%
+the Orcish Mines
+
+%%%%
+Orcish Mines
+
+%%%%
+Orc
+
+#"Orcish Mines", "the Orcish Mines", "Orc",
+%%%%
+Elven Halls
+
+%%%%
+the Elven Halls
+
+%%%%
+Elf
+
+#"Elven Halls", "the Elven Halls", "Elf",
+%%%%
+Dwarven Hall
+
+%%%%
+the Dwarven Hall
+
+%%%%
+Dwarf
+
+#"Dwarven Hall", "the Dwarven Hall", "Dwarf",
+%%%%
+the Lair of Beasts
+
+%%%%
+Lair
+
+#"Lair", "the Lair of Beasts", "Lair",
+%%%%
+Swamp
+
+%%%%
+the Swamp
+
+#"Swamp", "the Swamp", "Swamp",
+%%%%
+Shoals
+
+%%%%
+the Shoals
+
+#"Shoals", "the Shoals", "Shoals",
+%%%%
+Snake Pit
+
+%%%%
+the Snake Pit
+
+%%%%
+Snake
+
+#"Snake Pit", "the Snake Pit", "Snake",
+%%%%
+Spider Nest
+
+%%%%
+the Spider Nest
+
+%%%%
+Spider
+
+#"Spider Nest", "the Spider Nest", "Spider",
+%%%%
+Slime Pits
+
+%%%%
+the Pits of Slime
+
+%%%%
+Slime
+
+#"Slime Pits", "the Pits of Slime", "Slime",
+%%%%
+Vaults
+
+%%%%
+the Vaults
+
+#"Vaults", "the Vaults", "Vaults",
+%%%%
+Hall of Blades
+
+%%%%
+the Hall of Blades
+
+%%%%
+Blade
+
+#"Hall of Blades", "the Hall of Blades", "Blade",
+%%%%
+Crypt
+
+%%%%
+the Crypt
+
+#"Crypt", "the Crypt", "Crypt",
+%%%%
+Tomb
+
+%%%%
+the Tomb of the Ancients
+
+#"Tomb", "the Tomb of the Ancients", "Tomb",
+%%%%
+Hell
+
+%%%%
+the Vestibule of Hell
+
+#"Hell", "the Vestibule of Hell", "Hell",
+%%%%
+Dis
+
+%%%%
+the Iron City of Dis
+
+#"Dis", "the Iron City of Dis", "Dis",
+%%%%
+Gehenna
+
+%%%%
+Geh
+
+#"Gehenna", "Gehenna", "Geh",
+%%%%
+Cocytus
+
+%%%%
+Coc
+
+#"Cocytus", "Cocytus", "Coc",
+%%%%
+Tartarus
+
+%%%%
+Tar
+
+#"Tartarus", "Tartarus", "Tar",
+%%%%
+Zot
+
+%%%%
+the Realm of Zot
+
+#"Zot", "the Realm of Zot", "Zot",
+%%%%
+Forest
+
+%%%%
+the Enchanted Forest
+
+#"Forest", "the Enchanted Forest", "Forest",
+%%%%
+Abyss
+
+%%%%
+the Abyss
+
+#"Abyss", "the Abyss", "Abyss",
+%%%%
+Pandemonium
+
+%%%%
+Pan
+
+#"Pandemonium", "Pandemonium", "Pan",
+%%%%
+Ziggurat
+
+%%%%
+a ziggurat
+
+%%%%
+Zig
+
+#"Ziggurat", "a ziggurat", "Zig",
+%%%%
+You land on top of a ziggurat so tall you cannot make out the ground.
+
+#"You land on top of a ziggurat so tall you cannot make out the ground.",
+%%%%
+Labyrinth
+
+%%%%
+a labyrinth
+
+%%%%
+Lab
+
+#"Labyrinth", "a labyrinth", "Lab",
+%%%%
+Bazaar
+
+%%%%
+a bazaar
+
+#"Bazaar", "a bazaar", "Bazaar",
+%%%%
+You enter an inter-dimensional bazaar!
+
+#"You enter an inter-dimensional bazaar!",
+%%%%
+Trove
+
+%%%%
+a treasure trove
+
+#"Trove", "a treasure trove", "Trove",
+%%%%
+Sewer
+
+%%%%
+a sewer
+
+#"Sewer", "a sewer", "Sewer",
+%%%%
+Ossuary
+
+%%%%
+an ossuary
+
+#"Ossuary", "an ossuary", "Ossuary",
+%%%%
+Bailey
+
+%%%%
+a bailey
+
+#"Bailey", "a bailey", "Bailey",
+%%%%
+Ice Cave
+
+%%%%
+an ice cave
+
+%%%%
+IceCv
+
+#"Ice Cave", "an ice cave", "IceCv",
+%%%%
+Volcano
+
+%%%%
+a volcano
+
+#"Volcano", "a volcano", "Volcano",
+%%%%
+Wizlab
+
+%%%%
+a wizard's laboratory
+
+%%%%
+WizLab
+
+#"Wizlab", "a wizard's laboratory", "WizLab",
+%%%%
+Void
+
+%%%%
+a void
+
+#"Void", "a void", "Void",
+%%%%

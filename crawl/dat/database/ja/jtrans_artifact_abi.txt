@@ -206,7 +206,7 @@ It is
 
 それは
 %%%%
-good for stabbing
+good for stabbing unaware enemies.
 
 不意打ちに向いている
 %%%%
@@ -264,11 +264,11 @@ Attacks with this weapon take half as long, but cause slightly less damage.
 
 これは手にした者に２倍の速さでの射撃を可能とさせる、しかし少々損傷が少なくなる
 %%%%
-Any
+Any fired from
 
 全てのこれから発射された
 %%%%
-fired from it inflicts extra damage.
+it inflicts extra damage.
 
 は敵に対して強烈なダメージを与える
 %%%%
@@ -363,9 +363,13 @@ It cannot be enchanted further.
 これに更なる魔力を付与することはできない
 %%%%
 #ここも文章の追加が必要か
-It can be maximally enchanted to +
+It can be maximally enchanted to +_wep
 
 これはまだ強化することができる(最大 +
+%%%%
+.(max_wep)
+
+まで魔力を付与できる)
 %%%%
 #//Throwing net
 
@@ -453,19 +457,23 @@ Any target it hits will blink, with a tendency towards blinking further away fro
 %%%%
 it.
 
-
+。
 %%%%
 It will explode into fragments upon hitting a target, hitting an obstruction, or reaching the end of its range.
 
 それは物体に命中したり、射程の隅まで到達すると断片に爆発をおこす
 %%%%
+Compared to normal ammo, it does 30% more damage, is destroyed upon impact only 1/10th of the time, and weighs three times as much.
 
-
-
+それは通常の同種の武器よりも30％ダメージが増加し、通常の1/10の確率で破損する。しかし通常の3倍の重量がある。
 %%%%
+Silver sears all those touched by chaos.
 
-
-
+銀は触れる全ての混沌の存在を焼き尽くす。それは通常の同種の武器に比べて、混沌の存在や変異性の存在に対して75%ダメージが増加する。また、変異の度合いに応じた損傷をプレイヤーに与える。変異した存在でもこの武器を扱う事は出来ることに注意せよ。この武器は通常の同種の武器の2倍の重さがある。
+#            description += jtrans("Silver sears all those touched by chaos.")
+#                "Compared to normal ammo, it does 75% more damage to "
+#                "chaotic and magically transformed beings. It also does extra damage against mutated beings according to how mutated they are. With due care, silver ammo can still be handled by those it affects. It weighs twice as much "
+#                "as normal ammo.";
 %%%%
 
 
@@ -499,7 +507,7 @@ orcs
 
 が扱った場合さらに致命的になる
 %%%%
-It
+It_throw
 
 それ
 %%%%
@@ -518,12 +526,12 @@ It will always be destroyed upon impact.
 #//base rate
 Base armour rating:
 
-鎧の基礎AC:
+鎧の基礎AC: 
 %%%%
 #?違うかも
 Encumbrance rating:
 
-鎧の限界強化値:
+鎧の負担度: 
 %%%%
 All pieces of ammunition may get destroyed upon impact.
 
@@ -554,10 +562,11 @@ It allows its wearer to see invisible things.
 
 これは着用者が見えざる者を見ることを可能とさせる
 %%%%
-description += "When activated it hides its wearer from "
-                "the sight of others, but also increases "
-                "their metabolic rate by a large amount.";
+When activated it hides its wearer from the sight of others, but also increases their metabolic rate by a large amount.
 
+#description += "When activated it hides its wearer from "
+#                "the sight of others, but also increases "
+#                "their metabolic rate by a large amount.";
 これは発動することで着用者を一時的に透明にするが、透明化の最中には代謝エネルギーの消費が大幅に増加する
 %%%%
 It increases the physical power of its wearer (+3 to strength).
@@ -657,6 +666,8 @@ It can be maximally enchanted to +
 まで魔力を付与できる
 %%%%
 
+%%%%
+
 
 
 %%%%
@@ -692,7 +703,7 @@ It affects your damage-dealing abilities (
 
 これはあなたのダメージを与える能力に影響を与える
 %%%%
-This
+This_des
 
 この
 %%%%
@@ -715,19 +726,19 @@ This isn't a deck at all!
 %%%%
 Drawn card(s):
 
-引いたカード:
+引いたカード: 
 %%%%
 Next card(s):
 
-次のカード:
+次のカード: 
 %%%%
 Marked card(s):
 
-積み込んだカード:
+マークされたカード: 
 %%%%
 Seen card(s):
 
-見たカード:
+見たカード: 
 %%%%
 #// Fixme_ja(呪文の説明欄)
 Spells                             Type                      Level
@@ -802,7 +813,7 @@ disapproves of eating such meat.
 %%%%
 It uses its own magic reservoir for casting spells, and recharges automatically according to the recharging rate.
 
-これは呪文を唱えるための独自の魔力の充電池を持っており、充填値に応じた速さで魔力が自動で回復する
+これは呪文を唱えるための独自の魔力の充電池を持っており、充電池に応じた速さで魔力が自動で回復する
 %%%%
 It can currently hold
 
@@ -810,7 +821,7 @@ It can currently hold
 %%%%
 charges. It can be magically
 
-の充填値を持っている。これは
+の充電池を持っている。これは
 %%%%
 recharged to contain up to
 
@@ -826,7 +837,7 @@ Its capacity can be increased no further.
 %%%%
 Its current recharge rate is
 
-これの現在の魔力回復速度は
+これの現在の充填回数は
 %%%%
 . It can be magically
 
@@ -834,11 +845,11 @@ Its current recharge rate is
 %%%%
 recharged up to +
 
-魔力回復速度の最大値は
+充填回数の最大値は
 %%%%
 Its recharge rate is at maximum.
 
-魔力回復速度は最大値だ
+最大まで充填されている
 %%%%
 It can have at most
 
@@ -846,11 +857,11 @@ It can have at most
 %%%%
 charges and +
 
-の充填値と
+の充電池と
 %%%%
 recharge rate.
 
-の魔力自動回復速度を持つことが出来る
+の限界充填回数を持つことが出来る
 %%%%
 It falls into the 'Maces & Flails' category.
 
@@ -881,7 +892,7 @@ has a curse placed upon it, and it
 %%%%
 weighs around
 
-重量が
+の重量は
 %%%%
 aum.
 
@@ -938,25 +949,25 @@ Select a spell to read its description.
 <cyan>どの文字に移動しますか? </cyan>
 %%%%
 #//
-Level: %d        School%s: %s        Fail: %s
+%sLevel: %d        School%s: %s        Fail: %s
 
-レベル: %d       領域%s: %s          失敗率: %s
+%sレベル: %d       領域%s: %s          失敗率: %s
 %%%%
-威力 :
+Power :
 
-
+威力 : 
 %%%%
-射程 :
+Range :
 
-
+射程 : 
 %%%%
-空腹度 :
+Hunger:
 
-
+空腹度 : 
 %%%%
-騒音 :
+Noise :
 
-
+騒音 : 
 %%%%
 #//Fixme_ja(召喚上限)
 You can sustain at most
@@ -1127,15 +1138,15 @@ magical
 #//Fixme_ja(前記のモンスター耐性がここで使われている)
 immune to
 
-に対する免疫を持っている
+以下の免疫を持っている: 
 %%%%
 very resistant to
 
-に対する強力な耐性を持っている
+以下の強力な耐性を持っている: 
 %%%%
 resistant to
 
-に対する耐性を持っている
+以下の耐性を持っている: 
 %%%%
 looks
 
@@ -1179,7 +1190,7 @@ can sense the presence of invisible creatures.
 
 は周囲の見えざるものを感知することが出来る
 %%%%
-is
+
 
 
 %%%%
@@ -1209,7 +1220,7 @@ can fly by flapping
 %%%%
 wings.
 
-
+。
 %%%%
 can fly.
 
@@ -1281,18 +1292,20 @@ This monster has been summoned, and is thus only temporary. Killing it yields no
 
 、またこれは階段を使用できない
 %%%%
-        inf.body << "\n" << "This monster has been summoned in a durable "
-                       "way, and only partially exists. Killing it yields no "
-                       "experience, nutrition or items. You cannot easily "
-                       "abjure it, though.\n";
+This monster has been summoned in a durable way, and only partially exists. Killing it yields no experience, nutrition or items. You cannot easily abjure it, though.
 
-
+このモンスターは強力な方法で召喚され、部分的にこの世界に存在している。このモンスターを倒すことは全く経験値、アイテム、栄養値をもたらさない。最も、あなたは容易くそれを解放することはできない
+#        inf.body << "\n" << "This monster has been summoned in a durable "
+#                       "way, and only partially exists. Killing it yields no "
+#                       "experience, nutrition or items. You cannot easily "
+#                       "abjure it, though.\n";
 %%%%
-        inf.body << "\n" << "You have summoned too many monsters of this kind "
-                            "to sustain them all, and thus this one will "
-                            "shortly expire.\n";
+You have summoned too many monsters of this kind to sustain them all, and thus this one will shortly expire.
 
-
+あなたは維持できる以上の同種のモンスターを召喚しているため、すぐさま召喚モンスターは消え去ってしまうだろう
+#        inf.body << "\n" << "You have summoned too many monsters of this kind "
+#                            "to sustain them all, and thus this one will "
+#                            "shortly expire.\n";
 %%%%
 
 

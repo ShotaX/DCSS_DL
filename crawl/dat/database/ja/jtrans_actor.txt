@@ -93,6 +93,7 @@ but do no damage.
 %%%%
 You
 
+あなた
 #(is_player() ? jtrans("You").c_str()
 %%%%
  for %d
@@ -106,6 +107,7 @@ You
 %%%%
 are
 
+は
 #defender->conj_verb("are").c_str(),
 %%%%
  for %d

@@ -1,0 +1,77 @@
+%%%%
+#bjnh.lyku
+#
+#const char *vikeys = "bjnh.lyku";
+%%%%
+#%s
+#
+#cprintf("%s", chop_string(buf, max(wrapcol + 1 - wherex(), 0), false).c_str());
+%%%%
+#%s
+#
+#cprintf("%s", wordwrap_line(buf, avail).c_str());
+%%%%
+#%s
+#
+#wrapcprintf(wrapcol, "%s", buffer);
+%%%%
+#abort_get_line
+#
+#tiles.json_write_string("msg", "abort_get_line");
+%%%%
+#get_line
+#
+#tiles.json_write_string("msg", "get_line");
+%%%%
+#tag
+#
+#tiles.json_write_string("tag", tag);
+%%%%
+#prefill
+#
+#tiles.json_write_string("prefill", buffer);
+%%%%
+#maxlen
+#
+#tiles.json_write_int("maxlen", (int) bufsz - 1);
+%%%%
+#size
+#
+#tiles.json_write_int("size", (int) min(bufsz - 1, strlen(buffer) + 15));
+%%%%
+#%s
+#
+#wrapcprintf(wrapcol, "%s", buffer);
+%%%%
+#%s 
+#
+#wrapcprintf(wrapcol, "%s ", cur);
+%%%%
+#
+#
+#wrapcprintf(wrapcol, "%s%*s", cur, pos, "");
+%%%%
+#
+#
+#wrapcprintf(wrapcol, "%s%*s", buffer, ew, "");
+%%%%
+#
+#
+#wrapcprintf(wrapcol, "%s%*s", buffer, clear, "");
+%%%%
+#
+#
+#wrapcprintf(wrapcol, "%*s", erase, "");
+%%%%
+#%s 
+#
+#wrapcprintf(wrapcol, "%s ", cur);
+%%%%
+#%s
+#
+#wrapcprintf(wrapcol, "%s", buffer);
+%%%%
+#%s
+#
+#wrapcprintf(wrapcol, "%s", cur);
+%%%%

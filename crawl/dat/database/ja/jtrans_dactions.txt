@@ -1,0 +1,150 @@
+%%%%
+holy beings go hostile
+
+#"holy beings go hostile",
+%%%%
+unholy/evil go hostile
+
+#"unholy/evil go hostile",
+%%%%
+unclean/chaotic go hostile
+
+#"unclean/chaotic go hostile",
+%%%%
+spellcasters go hostile
+
+#"spellcasters go hostile",
+%%%%
+yred slaves go hostile
+
+#"yred slaves go hostile",
+%%%%
+beogh orcs and their summons go hostile
+
+#"beogh orcs and their summons go hostile",
+%%%%
+fellow slimes go hostile
+
+#"fellow slimes go hostile",
+%%%%
+plants go hostile (allowing reconversion)
+
+#"plants go hostile (allowing reconversion)",
+%%%%
+old enslaved souls go poof
+
+#"old enslaved souls go poof",
+%%%%
+holy beings allow another conversion attempt
+
+#"holy beings allow another conversion attempt",
+%%%%
+slimes allow another conversion attempt
+
+#"slimes allow another conversion attempt",
+%%%%
+holy beings go neutral
+
+#"holy beings go neutral",
+%%%%
+Trog's gifts go hostile
+
+#"Trog's gifts go hostile",
+%%%%
+shuffle decks
+
+#"shuffle decks",
+%%%%
+reapply passive mapping
+
+#"reapply passive mapping",
+%%%%
+remove Jiyva altars
+
+#"remove Jiyva altars",
+%%%%
+Pikel's slaves go good-neutral
+
+#"Pikel's slaves go good-neutral",
+%%%%
+corpses rot
+
+#"corpses rot",
+%%%%
+Tomb loses -cTele
+
+#"Tomb loses -cTele",
+%%%%
+slimes allow another conversion attempt
+
+#"slimes allow another conversion attempt",
+%%%%
+hogs to humans
+
+#"hogs to humans",
+%%%%
+end spirit howl
+
+#"end spirit howl",
+%%%%
+pikel_band
+
+#&& mon->props.exists("pikel_band")
+%%%%
+freed slave
+
+#&& mon->mname != "freed slave");
+%%%%
+kirke_band
+
+#&& (mon->props.exists("kirke_band")
+%%%%
+howl_called
+
+#&& mon->props.exists("howl_called"));
+%%%%
+scheduling delayed action: %s
+
+#dprf("scheduling delayed action: %s", daction_names[act]);
+%%%%
+going hostile: %s
+
+#dprf("going hostile: %s", mon->name(DESC_PLAIN, true).c_str());
+%%%%
+turns against you!
+
+はあなたに敵対した！
+#simple_monster_message(mon, jtrans("turns against you!").c_str());
+%%%%
+is freed.
+
+は自由になった。
+#simple_monster_message(mon, jtrans("is freed.").c_str());
+%%%%
+freed slave
+
+#mon->mname = "freed slave";
+%%%%
+becomes indifferent.
+
+は無関心になった。
+#simple_monster_message(mon, jtrans("becomes indifferent.").c_str());
+%%%%
+spirit_wolf_total
+
+#you.props["spirit_wolf_total"].get_int()++;
+%%%%
+applying delayed action: %s
+
+#dprf("applying delayed action: %s", daction_names[act]);
+%%%%
+The hog vanishes!
+
+豚は消え去った！
+#mpr(jtrans("The hog vanishes!"));
+%%%%
+#%s appears from out of thin air!
+#
+#--defined.
+#		mprf(jtrans("%s appears from out of thin air!").c_str(), mon->name(DESC_A).c_str());
+%%%%

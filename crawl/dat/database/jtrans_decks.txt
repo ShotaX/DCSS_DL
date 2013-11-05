@@ -1,0 +1,1255 @@
+%%%%
+This card doesn't seem to belong here.
+
+このカードはこのデッキの物ではないようだ。
+#mpr(jtrans("This card doesn't seem to belong here."));
+%%%%
+#cards
+#
+#ASSERT(props.exists("cards"));
+%%%%
+#cards
+#
+#return props["cards"].get_vector().size();
+%%%%
+#cards
+#
+#ASSERT(props.exists("cards"));
+%%%%
+#cards
+#
+#CrawlVector &cards = props["cards"].get_vector();
+%%%%
+#card_flags
+#
+#CrawlVector &flags = props["card_flags"].get_vector();
+%%%%
+#cards
+#
+#const CrawlVector    &cards = props["cards"].get_vector();
+%%%%
+#card_flags
+#
+#const CrawlVector    &flags = props["card_flags"].get_vector();
+%%%%
+#cards
+#
+#CrawlVector    &cards = props["cards"].get_vector();
+%%%%
+#card_flags
+#
+#CrawlVector    &flags = props["card_flags"].get_vector();
+%%%%
+the Portal
+
+#case CARD_PORTAL:          return "the Portal";
+%%%%
+the Warp
+
+#case CARD_WARP:            return "the Warp";
+%%%%
+Swap
+
+#case CARD_SWAP:            return "Swap";
+%%%%
+Velocity
+
+#case CARD_VELOCITY:        return "Velocity";
+%%%%
+Damnation
+
+#case CARD_DAMNATION:       return "Damnation";
+%%%%
+Solitude
+
+#case CARD_SOLITUDE:        return "Solitude";
+%%%%
+the Elixir
+
+#case CARD_ELIXIR:          return "the Elixir";
+%%%%
+Battlelust
+
+#case CARD_BATTLELUST:      return "Battlelust";
+%%%%
+Metamorphosis
+
+#case CARD_METAMORPHOSIS:   return "Metamorphosis";
+%%%%
+the Helm
+
+#case CARD_HELM:            return "the Helm";
+%%%%
+the Blade
+
+#case CARD_BLADE:           return "the Blade";
+%%%%
+the Shadow
+
+#case CARD_SHADOW:          return "the Shadow";
+%%%%
+the Potion
+
+#case CARD_POTION:          return "the Potion";
+%%%%
+Focus
+
+#case CARD_FOCUS:           return "Focus";
+%%%%
+Shuffle
+
+#case CARD_SHUFFLE:         return "Shuffle";
+%%%%
+Experience
+
+#case CARD_EXPERIENCE:      return "Experience";
+%%%%
+the Helix
+
+#case CARD_HELIX:           return "the Helix";
+%%%%
+the Sage
+
+#case CARD_SAGE:            return "the Sage";
+%%%%
+Dowsing
+
+#case CARD_DOWSING:         return "Dowsing";
+%%%%
+the Trowel
+
+#case CARD_TROWEL:          return "the Trowel";
+%%%%
+the Minefield
+
+#case CARD_MINEFIELD:       return "the Minefield";
+%%%%
+the Stairs
+
+#case CARD_STAIRS:          return "the Stairs";
+%%%%
+the Genie
+
+#case CARD_GENIE:           return "the Genie";
+%%%%
+the Tomb
+
+#case CARD_TOMB:            return "the Tomb";
+%%%%
+Water
+
+#case CARD_WATER:           return "Water";
+%%%%
+Vitrification
+
+#case CARD_GLASS:           return "Vitrification";
+%%%%
+the Banshee
+
+#case CARD_BANSHEE:         return "the Banshee";
+%%%%
+Wild Magic
+
+#case CARD_WILD_MAGIC:      return "Wild Magic";
+%%%%
+the Crusade
+
+#case CARD_CRUSADE:         return "the Crusade";
+%%%%
+the Herd
+
+#case CARD_SUMMON_ANIMAL:   return "the Herd";
+%%%%
+the Pentagram
+
+#case CARD_SUMMON_DEMON:    return "the Pentagram";
+%%%%
+the Dance
+
+#case CARD_SUMMON_WEAPON:   return "the Dance";
+%%%%
+Foxfire
+
+#case CARD_SUMMON_FLYING:   return "Foxfire";
+%%%%
+the Bones
+
+#case CARD_SUMMON_SKELETON: return "the Bones";
+%%%%
+Repulsiveness
+
+#case CARD_SUMMON_UGLY:     return "Repulsiveness";
+%%%%
+Xom
+
+#case CARD_XOM:             return "Xom";
+%%%%
+Famine
+
+#case CARD_FAMINE:          return "Famine";
+%%%%
+the Feast
+
+#case CARD_FEAST:           return "the Feast";
+%%%%
+Warpwright
+
+#case CARD_WARPWRIGHT:      return "Warpwright";
+%%%%
+Flight
+
+#case CARD_FLIGHT:          return "Flight";
+%%%%
+Vitriol
+
+#case CARD_VITRIOL:         return "Vitriol";
+%%%%
+Flame
+
+#case CARD_FLAME:           return "Flame";
+%%%%
+Frost
+
+#case CARD_FROST:           return "Frost";
+%%%%
+Venom
+
+#case CARD_VENOM:           return "Venom";
+%%%%
+the Spark
+
+#case CARD_SPARK:           return "the Spark";
+%%%%
+the Hammer
+
+#case CARD_HAMMER:          return "the Hammer";
+%%%%
+Pain
+
+#case CARD_PAIN:            return "Pain";
+%%%%
+Torment
+
+#case CARD_TORMENT:         return "Torment";
+%%%%
+the Bargain
+
+#case CARD_BARGAIN:         return "the Bargain";
+%%%%
+Wrath
+
+#case CARD_WRATH:           return "Wrath";
+%%%%
+the Wraith
+
+#case CARD_WRAITH:          return "the Wraith";
+%%%%
+the Curse
+
+#case CARD_CURSE:           return "the Curse";
+%%%%
+the Swine
+
+#case CARD_SWINE:           return "the Swine";
+%%%%
+the Alchemist
+
+#case CARD_ALCHEMIST:       return "the Alchemist";
+%%%%
+the Orb
+
+#case CARD_ORB:             return "the Orb";
+%%%%
+the Mercenary
+
+#case CARD_MERCENARY:       return "the Mercenary";
+%%%%
+a buggy card
+
+#case NUM_CARDS:            return "a buggy card";
+%%%%
+a very buggy card
+
+#return "a very buggy card";
+%%%%
+#cards
+#
+#CrawlVector    &cards = props["cards"].get_vector();
+%%%%
+#card_flags
+#
+#CrawlVector    &flags = props["card_flags"].get_vector();
+%%%%
+deal
+
+扱った
+%%%%
+draw
+
+引いた
+#const char *verb = (_flags & CFLAG_DEALT) ? "deal" : "draw";
+%%%%
+You %s %s.
+
+あなたは%sを%s。
+#mprf(jtrans("You %s %s.").c_str(), card_name(card), jtrans(verb).c_str());
+%%%%
+You %s a card... It is %s.
+
+あなたはカードを%s……それは%sだ。
+#mprf(jtrans("You %s a card... It is %s.").c_str(), jtrans(verb).c_str(), card_name(card));
+%%%%
+#cards
+#
+#CrawlVector    &cards = props["cards"].get_vector();
+%%%%
+#card_flags
+#
+#CrawlVector    &flags = props["card_flags"].get_vector();
+%%%%
+#drawn_cards
+#
+#CrawlVector &drawn = props["drawn_cards"].get_vector();
+%%%%
+#drawn_cards
+#
+#const CrawlVector &drawn = props["drawn_cards"].get_vector();
+%%%%
+This isn't a deck at all!
+
+#strm << "This isn't a deck at all!" << endl;
+%%%%
+#cards
+#
+#if (!props.exists("cards")
+%%%%
+#cards
+#
+#|| props["cards"].get_type() != SV_VEC
+%%%%
+#cards
+#
+#|| props["cards"].get_vector().get_type() != SV_BYTE
+%%%%
+#cards
+#
+#if (!props.exists("cards"))
+%%%%
+Seems this deck never had any cards in the first place!
+
+#strm << "Seems this deck never had any cards in the first place!";
+%%%%
+#cards
+#
+#else if (props["cards"].get_type() != SV_VEC)
+%%%%
+'cards' property isn't a vector.
+
+#strm << "'cards' property isn't a vector.";
+%%%%
+#cards
+#
+#if (props["cards"].get_vector().get_type() != SV_BYTE)
+%%%%
+'cards' vector doesn't contain bytes.
+
+#strm << "'cards' vector doesn't contain bytes.";
+%%%%
+Strange, this deck is already empty.
+
+#strm << "Strange, this deck is already empty.";
+%%%%
+ But there should have been 
+
+#strm << " But there should have been " <<  cards_left
+%%%%
+ cards left.
+
+#<< " cards left.";
+%%%%
+A swarm of software bugs snatches the deck from you 
+
+#<< "A swarm of software bugs snatches the deck from you "
+%%%%
+and whisks it away.
+
+#"and whisks it away." << endl;
+%%%%
+#cards
+#
+#CrawlVector &cards = props["cards"].get_vector();
+%%%%
+#card_flags
+#
+#CrawlVector &flags = props["card_flags"].get_vector();
+%%%%
+ buggy cards found in the deck, discarding them.
+
+#strm << num_buggy << " buggy cards found in the deck, discarding them."
+%%%%
+Oops, all of the cards seem to be gone.
+
+#strm << "Oops, all of the cards seem to be gone." << endl
+%%%%
+A swarm of software bugs snatches the deck from you 
+
+#<< "A swarm of software bugs snatches the deck from you "
+%%%%
+and whisks it away.
+
+#"and whisks it away." << endl;
+%%%%
+Deck was created with zero cards???
+
+#strm << "Deck was created with zero cards???" << endl;
+%%%%
+Deck was created with *negative* cards?!
+
+#strm << "Deck was created with *negative* cards?!" << endl;
+%%%%
+Deck has more cards than it was created with?
+
+#strm << "Deck has more cards than it was created with?" << endl;
+%%%%
+ more cards than flags.
+
+#strm << (num_cards - num_flags) << " more cards than flags.";
+%%%%
+More cards than flags.
+
+#strm << "More cards than flags.";
+%%%%
+ more cards than flags.
+
+#strm << (num_cards - num_flags) << " more cards than flags.";
+%%%%
+More cards than flags.
+
+#strm << "More cards than flags.";
+%%%%
+#num_marked
+#
+#if (props["num_marked"].get_byte() > static_cast<char>(num_cards))
+%%%%
+More cards marked than in the deck?
+
+#strm << "More cards marked than in the deck?" << endl;
+%%%%
+#num_marked
+#
+#props["num_marked"] = static_cast<char>(num_marked);
+%%%%
+#num_marked
+#
+#else if (props["num_marked"].get_byte() != static_cast<char>(num_marked))
+%%%%
+Oops, counted 
+
+#strm << "Oops, counted " << static_cast<int>(num_marked)
+%%%%
+ marked cards, but num_marked is 
+
+#<< " marked cards, but num_marked is "
+%%%%
+#num_marked
+#
+#<< (static_cast<int>(props["num_marked"].get_byte()));
+%%%%
+Oops, book-keeping on marked cards is wrong.
+
+#strm << "Oops, book-keeping on marked cards is wrong.";
+%%%%
+#num_marked
+#
+#props["num_marked"] = static_cast<char>(num_marked);
+%%%%
+ cards, or 
+
+#strm << "Have you used " << deck.plus2 << " cards, or "
+%%%%
+? Oops.
+
+#<< (deck.plus - num_cards) << "? Oops.";
+%%%%
+Oops, book-keeping on used cards is wrong.
+
+#strm << "Oops, book-keeping on used cards is wrong.";
+%%%%
+ cards left, not 
+
+#strm << "There are " << num_cards << " cards left, not "
+%%%%
+.  Oops.
+
+#<< (-deck.plus2) << ".  Oops.";
+%%%%
+Oops, book-keeping on cards left is wrong.
+
+#strm << "Oops, book-keeping on cards left is wrong.";
+%%%%
+Problems might not have been completely fixed; 
+
+#if (!yesno("Problems might not have been completely fixed; "
+%%%%
+still use deck?
+
+#"still use deck?", true, 'n'))
+%%%%
+That isn't a deck!
+
+それはデッキではない！
+#mpr(jtrans("That isn't a deck!"));
+%%%%
+Draw from which deck?
+
+#const int slot = _choose_inventory_deck("Draw from which deck?");
+%%%%
+This is %s.
+
+これは %s だ
+#mprf(jtrans("This is %s.").c_str(), deck.name(DESC_A).c_str());
+%%%%
+Peek at which deck?
+
+#const int slot = _choose_inventory_deck("Peek at which deck?");
+%%%%
+A card falls out of the deck.
+
+カードがデッキから外れた。
+#mpr(jtrans("A card falls out of the deck."));
+%%%%
+#cards
+#
+#CrawlVector &cards     = deck.props["cards"].get_vector();
+%%%%
+There's only one card in the deck!
+
+デッキにカードが一枚しか残っていない！
+#mpr(jtrans("There's only one card in the deck!"));
+%%%%
+#num_marked
+#
+#deck.props["num_marked"]++;
+%%%%
+You draw two cards from the deck. They are: %s and %s.
+
+二枚のカードを引いた。それは %s と %s だ。
+#mprf(jtrans("You draw two cards from the deck. They are: %s and %s.").c_str(),
+%%%%
+You shuffle the cards back into the deck.
+
+あなたはカードを戻し、シャッフルした。
+#mpr(jtrans("You shuffle the cards back into the deck."));
+%%%%
+#num_marked
+#
+#deck.props["num_marked"]++;
+%%%%
+You get a glimpse of the first card. It is %s.
+
+あなたは最初のカードを垣間見た。それは %s だ
+#mprf(jtrans("You get a glimpse of the first card. It is %s.").c_str(), card_name(card));
+%%%%
+Deal from which deck?
+
+どのデッキに能力を使用しますか？
+#const int slot = _choose_inventory_deck(jtrans("Deal from which deck?").c_str());
+%%%%
+#num_marked
+#
+#if (props["num_marked"].get_byte() > 0)
+%%%%
+You cannot deal from marked decks.
+
+あなたはマークされたデッキを能力の対象に出来ない
+#mpr(jtrans("You cannot deal from marked decks."));
+%%%%
+#stacked
+#
+#if (props["stacked"].get_bool())
+%%%%
+This deck seems insufficiently random for dealing.
+
+このデッキはランダム性が不十分なため、能力を使用できない。
+#mpr(jtrans("This deck seems insufficiently random for dealing."));
+%%%%
+There's only one card left!
+
+一枚のカードしか残っていない！
+#mpr(jtrans("There's only one card left!"));
+%%%%
+The deck only has %d cards.
+
+デッキには%d枚のカードしか残っていない。
+#mprf(jtrans("The deck only has %d cards.").c_str(), num_cards);
+%%%%
+Nemelex gives you another card to finish dealing.
+
+ネメレクスはディールを完了するため、あなたにもう一枚のカードを与えた。
+#mpr(jtrans("Nemelex gives you another card to finish dealing."));
+%%%%
+%u - %s
+
+#cprintf("%u - %s", i+1, card_name(draws[i]));
+%%%%
+# card
+#
+#string desc = getLongDescription(name + " card");
+%%%%
+No description found.
+
+#desc = "No description found.";
+%%%%
+#</w>\n
+#
+#data << "<w>" << name << "</w>\n"
+%%%%
+#\n
+#
+#<< "\n";
+%%%%
+Stack which deck?
+
+#const int slot = _choose_inventory_deck("Stack which deck?");
+%%%%
+#num_marked
+#
+#if (props["num_marked"].get_byte() > 0)
+%%%%
+You can't stack a marked deck.
+
+あなたはマークされたデッキをスタックできない。
+#mpr(jtrans("You can't stack a marked deck."));
+%%%%
+#There's only one card left!
+#
+#--defined.
+#mpr(jtrans("There's only one card left!"));
+%%%%
+The deck only has %d cards.
+
+#mprf(jtrans("The deck only has %d cards.").c_str(), num_cards);
+%%%%
+The deck has exactly five cards.
+
+デッキには丁度５枚のカードがある。
+#mpr(jtrans("The deck has exactly five cards."));
+%%%%
+You draw the first five cards out of %d and discard the rest.
+
+あなたは5枚のカードを引き、残りの%dのカードは塵になった。
+#mprf(jtrans("You draw the first five cards out of %d and discard the rest.").c_str(),
+%%%%
+#deck_stack
+#
+#tiles_crt_control show_as_menu(CRT_MENU, "deck_stack");
+%%%%
+#num_marked
+#
+#props["num_marked"] = static_cast<char>(num_to_stack);
+%%%%
+#stacked
+#
+#props["stacked"] = true;
+%%%%
+Press a digit to select a card, then another digit 
+
+#cprintf("Press a digit to select a card, then another digit "
+%%%%
+to swap it.
+
+#"to swap it.");
+%%%%
+Press ? for the card descriptions, or Enter to 
+
+#cprintf("Press ? for the card descriptions, or Enter to "
+%%%%
+accept.
+
+#"accept.");
+%%%%
+Are you done? (press y or Y to confirm)
+
+#cprintf("Are you done? (press y or Y to confirm)");
+%%%%
+Triple draw from which deck?
+
+#const int slot = _choose_inventory_deck("Triple draw from which deck?");
+%%%%
+There's only one card left!
+
+#mpr(jtrans("There's only one card left!"));
+%%%%
+You draw... (choose one card, ? for their descriptions)
+
+あなたはカードを引いた…… (一枚のカードを選んでください, ? でカードの説明をみる)
+#mpr(jtrans("You draw... (choose one card, ? for their descriptions)"));
+%%%%
+# - 
+#
+#msg::streams(MSGCH_PROMPT) << (static_cast<char>(i + 'a')) << " - "
+%%%%
+#num_marked
+#
+#uint8_t num_marked_left = deck.props["num_marked"].get_byte();
+%%%%
+#num_marked
+#
+#deck.props["num_marked"] = num_marked_left;
+%%%%
+You %s a card...
+
+あなたはカードを%s
+#deal
+#draw
+#--defined.
+#
+#mprf(jtrans("You %s a card...").c_str(), deal ? jtrans("deal").c_str() : jtrans("draw").c_str());
+%%%%
+#num_marked
+#
+#|| props["num_marked"].get_byte() > 0)
+%%%%
+seems to have exchanged this card behind your back!
+
+はあなたの後ろでカードを交換しているようだ
+#simple_god_message(jtrans("seems to have exchanged this card behind your back!").c_str(), GOD_NEMELEX_XOBEH);
+%%%%
+It's actually %s.
+
+それはなんと%sだった
+#mprf(jtrans("It's actually %s.").c_str(), card_name(card));
+%%%%
+#num_marked
+#
+#props["num_marked"]--;
+%%%%
+Your skill with magical items lets you identify the deck.
+
+魔法のアイテムに関する技能から、このデッキの種類が判明した。
+#mpr(jtrans("Your skill with magical items lets you identify the deck."));
+%%%%
+#unset deck rarity
+#
+#die("unset deck rarity");
+%%%%
+#Power level: %d
+#
+#dprf("Power level: %d", power_level);
+%%%%
+You spin around.
+
+#mpr(jtrans("You spin around."));
+%%%%
+protects you from inadvertent hurry.
+
+#return simple_god_message(jtrans("protects you from inadvertent hurry.").c_str());
+%%%%
+drawing a card
+
+#banished("drawing a card");
+%%%%
+The power of the Abyss blocks your magic.
+
+アビスの力があなたの魔法を妨害した。
+#mpr(jtrans("The power of the Abyss blocks your magic."));
+%%%%
+protects you from inadvertent hurry.
+
+は不注意による加速からあなたを守った。
+#simple_god_message(jtrans("protects you from inadvertent hurry.").c_str());
+%%%%
+A shaft materialises beneath you!
+
+落とし穴があなたの足元に実体化した
+#mpr(jtrans("A shaft materialises beneath you!"));
+%%%%
+No stairs available to move.
+
+#mpr(jtrans("No stairs available to move."));
+%%%%
+dealt
+
+扱った
+%%%%
+drawn
+
+引いた
+#const char *participle = dealt ? jtrans("dealt").c_str() : jtrans("drawn").c_str();
+%%%%
+You have %s %s.
+
+あなたは%sを%s
+#mprf(jtrans("You have %s %s.").c_str(), card_name(card), participle);
+%%%%
+You have 
+
+#string prompt = "You have ";
+%%%%
+ 
+
+#prompt += " ";
+%%%%
+.
+
+#prompt += ".";
+%%%%
+You feel deadly.
+
+#0, "You feel deadly.");
+%%%%
+You feel your rage building.
+
+#0, "You feel your rage building.");
+%%%%
+You feel resistant.
+
+あなたは耐性を感じた。
+#mpr(jtrans("You feel resistant."));
+%%%%
+A magical shield forms in front of you.
+
+魔法の盾があなたの前に現れた。
+#mpr(jtrans("A magical shield forms in front of you."));
+%%%%
+You feel like a smilodon for a moment.
+
+あなたは一瞬スミロドンになったように感じた。
+#mpr(jtrans("You feel like a smilodon for a moment."));
+%%%%
+%s vibrate crazily for a second.
+
+#mprf(jtrans("%s vibrate crazily for a second.").c_str(),
+%%%%
+Your %s twitch.
+
+#mprf(jtrans("Your %s twitch.").c_str(), you.hand_name(true).c_str());
+%%%%
+You feel more catlike.
+
+あなたはさらに猫になったように感じた。
+#mpr(you.duration[DUR_STEALTH] ? jtrans("You feel more catlike.")
+%%%%
+You feel stealthy.
+
+#: jtrans("You feel stealthy."));
+%%%%
+#protects you from inadvertent hurry.
+#
+#--defined.
+#simple_god_message(jtrans("protects you from inadvertent hurry.").c_str());
+%%%%
+the wrath of 
+
+#cause = "the wrath of " + god_name(which_god);
+%%%%
+the capriciousness of Xom
+
+#cause = "the capriciousness of Xom";
+%%%%
+the 'helpfulness' of 
+
+#cause = "the 'helpfulness' of " + god_name(which_god);
+%%%%
+the Focus card
+
+#const string cause = _god_wrath_stat_check("the Focus card");
+%%%%
+the Shuffle card
+
+#const string cause = _god_wrath_stat_check("the Shuffle card");
+%%%%
+Shuffle card: Str %d[%d], Int %d[%d], Dex %d[%d]
+
+#"Shuffle card: Str %d[%d], Int %d[%d], Dex %d[%d]",
+%%%%
+You feel more experienced.
+
+あなたは更なる経験を感じた。
+#mpr(jtrans("You feel more experienced."));
+%%%%
+You feel knowledgeable.
+
+あなたは経験を感じた。
+#mpr(jtrans("You feel knowledgeable."));
+%%%%
+helix card
+
+#if (!delete_mutation(RANDOM_BAD_MUTATION, "helix card", false, false, false, true))
+%%%%
+You feel transcendent for a moment.
+
+あなたは一瞬超越したと感じた。
+#mpr(jtrans("You feel transcendent for a moment."));
+%%%%
+helix card
+
+#mutate(RANDOM_MUTATION, "helix card");
+%%%%
+#helix card
+#
+#delete_mutation(RANDOM_MUTATION, "helix card");
+%%%%
+#helix card
+#
+#mutate(RANDOM_MUTATION, "helix card");
+%%%%
+#helix card
+#
+#delete_mutation(RANDOM_MUTATION, "helix card");
+%%%%
+#helix card
+#
+#"helix card");
+%%%%
+#helix card
+#
+#delete_mutation(RANDOM_MUTATION, "helix card");
+%%%%
+#helix card
+#
+#mutate(RANDOM_MUTATION, "helix card");
+%%%%
+#helix card
+#
+#delete_mutation(RANDOM_MUTATION, "helix card");
+%%%%
+#helix card
+#
+#mutate(RANDOM_GOOD_MUTATION, "helix card");
+%%%%
+#helix card
+#
+#delete_mutation(RANDOM_MUTATION, "helix card");
+%%%%
+#helix card
+#
+#mutate(RANDOM_MUTATION, "helix card");
+%%%%
+#helix card
+#
+#mutate(RANDOM_GOOD_MUTATION, "helix card");
+%%%%
+#helix card
+#
+#mutate(RANDOM_MUTATION, "helix card");
+%%%%
+#helix card
+#
+#delete_mutation(RANDOM_MUTATION, "helix card");
+%%%%
+#helix card
+#
+#mutate(RANDOM_GOOD_MUTATION, "helix card");
+%%%%
+You feel omnipotent.
+
+#mpr(jtrans("You feel omnipotent."));  // All skills maxed.
+%%%%
+You feel studious about %s.
+
+あなたは%sに対して勉強熱心になった。
+#mprf(MSGCH_PLAIN, jtrans("You feel studious about %s.").c_str(), skill_name(result));
+%%%%
+#Will redirect %d xp, bonus = %d%%\n
+#
+#dprf("Will redirect %d xp, bonus = %d%%\n", xp, (power / 25) * 2);
+%%%%
+You create a pond!
+
+あなたは池を作成した！
+#mpr(jtrans("You create a pond!"));
+%%%%
+You feel the tide rushing in!
+
+あなたは急に潮を感じた！
+#mpr(jtrans("You feel the tide rushing in!"));
+%%%%
+Water floods your area!
+
+あなたの周辺が水で満たされた！
+#mpr(jtrans("Water floods your area!"));
+%%%%
+You sense traps nearby.
+
+あなたは周囲の罠を感知した
+#mpr(jtrans("You sense traps nearby."));
+%%%%
+You sense items nearby.
+
+あなたは周囲のアイテムを感知した
+#mpr(jtrans("You sense items nearby."));
+%%%%
+You feel telepathic!
+
+#"You feel telepathic!");
+%%%%
+An altar to %s grows from the floor before you!
+
+%sの祭壇が床からあなたの前に現れた！
+#mprf(jtrans("An altar to %s grows from the floor before you!").c_str(),
+%%%%
+The dungeon trembles momentarily.
+
+迷宮が一瞬震えた
+#return mpr(jtrans("The dungeon trembles momentarily."));
+%%%%
+trowel_portal
+
+#const map_def *map = random_map_for_tag("trowel_portal", true, true);
+%%%%
+A portal flickers into view, then vanishes.
+
+ポータルが目の前でちらつき、消えてしまった
+#mpr(jtrans("A portal flickers into view, then vanishes."));
+%%%%
+A mystic portal forms.
+
+神秘的なポータルが形成された
+#mpr(jtrans("A mystic portal forms."));
+%%%%
+the Trowel card
+
+#RANDOM_ELEMENT(statues), "the Trowel card",
+%%%%
+A menacing statue appears!
+
+威嚇する像が現れた！
+#mpr(jtrans("A menacing statue appears!"));
+%%%%
+You construct a golem!
+
+ゴーレムが構成された！
+#mpr(jtrans("You construct a golem!"));
+%%%%
+The constructs glare at each other.
+
+構成物はお互いににらみ合った
+#mpr(jtrans("The constructs glare at each other."));
+%%%%
+A statue takes form beside you.
+
+像はあなたの傍で構成された
+#mpr(jtrans("A statue takes form beside you."));
+%%%%
+魔神が形成され、雷のごとく叫んだ:『定命の者よ、願いを叶えてやろう！』
+
+#mpr(jtrans("A genie takes form and thunders: \"Choose your reward, mortal!\""));
+%%%%
+魔神が形成され、雷のごとく叫んだ:『愚か者め！私の邪魔をするな！』
+
+#mpr(jtrans("A genie takes form and thunders: \"You disturbed me, fool!\""));
+%%%%
+You somehow manage to escape divine attention...
+
+あなたは何とか神の注目を逃れた……
+#mpr(jtrans("You somehow manage to escape divine attention..."));
+%%%%
+You feel a malignant aura surround you.
+
+あなたは悪性のオーラを周囲に感じた
+#mpr(jtrans("You feel a malignant aura surround you."));
+%%%%
+is converted.
+
+#simple_monster_message(*mi, jtrans("is converted.").c_str());
+%%%%
+You see a puff of smoke.
+
+#mpr(jtrans("You see a puff of smoke."));
+%%%%
+#You see a puff of smoke.
+#
+#mpr(jtrans("You see a puff of smoke."));
+%%%%
+You sense the presence of something unfriendly.
+
+あなたは非友好的な存在を感じた
+#mpr(jtrans("You sense the presence of something unfriendly."));
+%%%%
+#You see a puff of smoke.
+#
+#mpr(jtrans("You see a puff of smoke."));
+%%%%
+#You see a puff of smoke.
+#
+#mpr(jtrans("You see a puff of smoke."));
+%%%%
+#You see a puff of smoke.
+#
+#mpr(jtrans("You see a puff of smoke."));
+%%%%
+#dbname
+#
+#mon->props["dbname"].get_string() = mons_class_name(merctypes[merc]);
+%%%%
+is repulsed!
+
+#simple_monster_message(mon, jtrans("is repulsed!").c_str());
+%%%%
+You cannot afford %s fee of %d gold!
+
+あなたは%sに支払う%dの手間賃が無い！
+#mprf(jtrans("You cannot afford %s fee of %d gold!").c_str(),
+%%%%
+attacks!
+
+は攻撃してきた！
+#simple_monster_message(mon, jtrans("attacks!").c_str());
+%%%%
+#mercenary_fee
+#
+#mon->props["mercenary_fee"] = fee;
+%%%%
+#mercenary_fee
+#
+#int fee = mon->props["mercenary_fee"].get_int();
+%%%%
+Pay %s fee of %d gold?
+
+%sに%dの金貨を支払いますか？
+#const string prompt = make_stringf(jtrans("Pay %s fee of %d gold?").c_str(),
+%%%%
+#mercenary_fee
+#
+#mon->props.erase("mercenary_fee");
+%%%%
+#attacks!
+#
+#--defined.
+#simple_monster_message(mon, jtrans("attacks!").c_str());
+%%%%
+joins your ranks!
+
+はあなたの仲間入りをした！
+#simple_monster_message(mon, jtrans("joins your ranks!").c_str());
+%%%%
+%d gold available to spend.
+
+#dprf("%d gold available to spend.", gold_available);
+%%%%
+You feel better.
+
+#mpr(jtrans("You feel better."));
+%%%%
+Gained %d health, %d gold remaining.
+
+#dprf("Gained %d health, %d gold remaining.", hp, gold_available);
+%%%%
+You feel your power returning.
+
+#mpr(jtrans("You feel your power returning."));
+%%%%
+Gained %d magic, %d gold remaining.
+
+#dprf("Gained %d magic, %d gold remaining.", mp, gold_available);
+%%%%
+%d of your gold pieces vanish!
+
+%dの金貨が消え去った!
+#mprf(jtrans("%d of your gold pieces vanish!").c_str(), gold_used);
+%%%%
+#drawn
+#
+#const char *participle = (flags & CFLAG_DEALT) ? "dealt" : "drawn";
+%%%%
+#Card power: %d, rarity: %d
+#
+#dprf("Card power: %d, rarity: %d", power, rarity);
+%%%%
+You have %s %s.
+
+#mprf(jtrans("You have %s %s.").c_str(), participle, card_name(which_card));
+%%%%
+Xom roars with laughter!
+
+ゾムは大笑いした！
+#god_speaks(GOD_XOM, jtrans("Xom roars with laughter!").c_str());
+%%%%
+Xom laughs nastily.
+
+ゾムは嫌らしく笑った
+#god_speaks(GOD_XOM, jtrans("Xom laughs nastily.").c_str());
+%%%%
+a card of wild magic
+
+#"a card of wild magic");
+%%%%
+You feel rather smug.
+
+あなたはむしろ満足していると感じた
+#mpr(jtrans("You feel rather smug."));
+%%%%
+You feel a horrible emptiness.
+
+あなたは恐ろしい虚空を感じた
+#mpr(jtrans("You feel a horrible emptiness."));
+%%%%
+You feel like a pig.
+
+#mpr(jtrans("You feel like a pig."));
+%%%%
+You have %s a buggy card!
+
+#mprf("You have %s a buggy card!", participle);
+%%%%
+#cards
+#
+#return (!item.props.exists("cards")
+%%%%
+#cards
+#
+#|| item.props["cards"].get_type() != SV_VEC
+%%%%
+#cards
+#
+#|| item.props["cards"].get_vector().get_type() != SV_BYTE
+%%%%
+#unset deck rarity
+#
+#die("unset deck rarity");
+%%%%
+#cards
+#
+#ASSERT(!props.exists("cards"));
+%%%%
+#cards
+#
+#props["cards"].new_vector(SV_BYTE, fl).resize((vec_size)item.plus);
+%%%%
+#card_flags
+#
+#props["card_flags"].new_vector(SV_BYTE, fl).resize((vec_size)item.plus);
+%%%%
+#drawn_cards
+#
+#props["drawn_cards"].new_vector(SV_BYTE, fl);
+%%%%
+#num_marked
+#
+#props["num_marked"]        = (char) 0;
+%%%%
+#card_flags
+#
+#if (!props.exists("card_flags"))
+%%%%
+#card_flags
+#
+#CrawlVector &flags = props["card_flags"].get_vector();
+%%%%
+#num_marked
+#
+#props["num_marked"] = static_cast<char>(0);
+%%%%
+Shuffling: %s on %s
+
+#mprf(MSGCH_DIAGNOSTICS, "Shuffling: %s on %s",
+%%%%
+Shuffling in inventory: %s
+
+#mprf(MSGCH_DIAGNOSTICS, "Shuffling in inventory: %s",
+%%%%
+You hear Nemelex Xobeh chuckle.
+
+#god_speaks(GOD_NEMELEX_XOBEH, "You hear Nemelex Xobeh chuckle.");
+%%%%

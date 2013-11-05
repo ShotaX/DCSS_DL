@@ -1,0 +1,300 @@
+%%%%
+#kill category not matching killer type
+#
+#die("kill category not matching killer type");
+%%%%
+Invalid tile requested for cloud: '%s'.
+
+#mprf(MSGCH_ERROR, "Invalid tile requested for cloud: '%s'.", tile.c_str());
+%%%%
+#
+#
+#tile = "";
+%%%%
+#
+#
+#string name = "",
+%%%%
+#
+#
+#string tile = "", int excl_rad = -1)
+%%%%
+#veto
+#
+#if (env.markers.property_at(*ai, MAT_ANY, "veto_fire") == "veto")
+%%%%
+The forest fire spreads!
+
+森林火災が拡散した！
+#mpr(jtrans("The forest fire spreads!"));
+%%%%
+The rain has left you waist-deep in water!
+
+雨はあなたの腰までの深さが残っている！
+#mpr(jtrans("The rain has left you waist-deep in water!"));
+%%%%
+#
+#
+#c.name        = "";
+%%%%
+#
+#
+#c.tile        = "";
+%%%%
+%s %s in the rain.
+
+%s は雨の中で %s
+#mprf(jtrans("%s %s in the rain.").c_str(),
+%%%%
+steam
+
+蒸されている
+%%%%
+sizzle
+
+焼けるように暑がっている
+#jtrans("steam").c_str() : jtrans("sizzle").c_str()).c_str());
+%%%%
+You choke on the stench!
+
+あなたは悪臭で窒息しそうだ!
+#mpr(jtrans("You choke on the stench!"));
+%%%%
+#
+#
+#poison_player(1, agent ? agent->name(DESC_A) : "",
+%%%%
+Strange energies course through your body.
+
+#mpr(jtrans("Strange energies course through your body."));
+%%%%
+mutagenic cloud
+
+#"mutagenic cloud");
+%%%%
+#mutagenic cloud
+#
+#defined.
+#
+#else if (mons->malmutate("mutagenic cloud"))
+%%%%
+%s %s %d damage from cloud: %s.
+
+#mprf(MSGCH_DIAGNOSTICS, "%s %s %d damage from cloud: %s.",
+%%%%
+take
+
+#act->conj_verb("take").c_str(),
+%%%%
+#
+#
+#KILLED_BY_CLOUD, cloud.cloud_name("", true).c_str());
+%%%%
+#?
+#
+#"?",
+%%%%
+flame
+
+%%%%
+noxious fumes
+
+%%%%
+freezing vapour
+
+%%%%
+poison gas
+
+#"flame", "noxious fumes", "freezing vapour", "poison gas",
+%%%%
+black smoke
+
+%%%%
+grey smoke
+
+%%%%
+blue smoke
+
+#"black smoke", "grey smoke", "blue smoke",
+%%%%
+purple smoke
+
+%%%%
+translocational energy
+
+%%%%
+fire
+
+#"purple smoke", "translocational energy", "fire",
+%%%%
+steam
+
+#"steam",
+%%%%
+gloom
+
+#"gloom",
+%%%%
+ink
+
+#"ink",
+%%%%
+calcifying dust
+
+#"calcifying dust",
+%%%%
+blessed fire
+
+%%%%
+foul pestilence
+
+%%%%
+thin mist
+
+#"blessed fire", "foul pestilence", "thin mist",
+%%%%
+seething chaos
+
+%%%%
+rain
+
+%%%%
+mutagenic fog
+
+%%%%
+magical condensation
+
+#"seething chaos", "rain", "mutagenic fog", "magical condensation",
+%%%%
+raging winds
+
+#"raging winds",
+%%%%
+sparse dust
+
+%%%%
+ghostly flame
+
+#"sparse dust", "ghostly flame",
+%%%%
+#?
+#
+#"?",
+%%%%
+roaring flames
+
+%%%%
+#noxious fumes
+#
+#--defined.
+%%%%
+#freezing vapours
+#
+#--defined.
+%%%%
+#poison gas
+#
+#--defined.
+#
+#"roaring flames", "noxious fumes", "freezing vapours", "poison gas",
+%%%%
+#black smoke
+#
+#grey smoke
+#
+#blue smoke
+#
+#--defined.
+#
+#"black smoke", "grey smoke", "blue smoke",
+%%%%
+#purple smoke
+#translocational energy
+#roaring flames
+#
+#--defined.
+#
+#"purple smoke", "translocational energy", "roaring flames",
+%%%%
+a cloud of scalding steam
+
+#"a cloud of scalding steam",
+%%%%
+thick gloom
+
+#"thick gloom",
+%%%%
+ink
+
+#"ink",
+%%%%
+#calcifying dust
+#
+#--defined.
+#
+#"calcifying dust",
+%%%%
+blessed fire
+
+%%%%
+dark miasma
+
+%%%%
+#thin mist
+#
+#--defined.
+%%%%
+seething chaos
+
+%%%%
+the rain
+
+#"blessed fire", "dark miasma", "thin mist", "seething chaos", "the rain",
+%%%%
+#mutagenic fog
+#magical condensation
+#raging winds
+#
+#--defined.
+#
+#"mutagenic fog", "magical condensation", "raging winds",
+%%%%
+#sparse dust
+#ghostly flame
+#
+#--defined.
+#
+#"sparse dust", "ghostly flame",
+%%%%
+buggy goodness
+
+#? "buggy goodness"
+%%%%
+#invalid killer type
+#
+#die("invalid killer type");
+%%%%
+#invalid kill category
+#
+#case KC_NCATEGORIES: die("invalid kill category");
+%%%%
+%s are standing in the rain.
+
+%sは雨の中に立っている。
+#mprf(jtrans("%s are standing in the rain.").c_str(),
+%%%%
+%s %s in %s.
+
+%s は %s に%s
+#mprf(jtrans("%s %s in %s.").c_str(),
+%%%%
+baskin
+
+浸っている。
+#beneficial ? jtrans("baskin").c_str()
+%%%%
+are engulfedin
+
+飲み込まれている。
+#: jtrans("are engulfedin").c_str());
+%%%%

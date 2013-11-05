@@ -1327,3 +1327,7 @@ between ability selection and description.
 
 #new ToggleableMenuEntry("    Invocations - ",
 %%%%
+small_abl
+
+少々
+%%%%
