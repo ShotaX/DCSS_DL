@@ -126,346 +126,8 @@ Me19
 #
 %%%%
 #
-################################
-#abl-show.cc
-#######################################
-
-%%%%
-You feel more confident with your borrowed prowess.
-
-あなたは借用した才能によってより自信を感じた
-%%%%
-You gain the combat prowess of a mighty hero.
-
-あなたは英雄のような戦闘の才覚を得た
-%%%%
-Your hands get new energy.
-
-あなたの腕は更なる力を得た
-%%%%
-You can now deal lightning-fast blows.
-
-あなたは神速の如き一撃を扱うことが出来る
-%%%%
-You beseech %s to protect your life.
-
-あなたは%sに生命を保護してほしいと懇願した
-%%%%
-No corpses are in range.
-
-視界内に死体が無い
-%%%%
-A thick mucus forms on %s.
-
-%sの上に厚い粘液が形成された
-%%%%
-You offer yourself to %s, and fill with unholy energy.
-
-あなたは%sに自分自身を提供し、邪悪な力で満たされた
-%%%%
-You stop singing.
-
-あなたは歌を停止した
-%%%%
-torments the living!
-
- は生ける者に苦悶を与えた！
-%%%%
-abl1
-
-あなたはアビリティを持っていない
 #
-#(getGameStartDescription("abl"));
-%%%%
-abl2
-
-あなたは変化中だ
-#
-#("Sorry, you're too full to transform right now.")
-%%%%
-abl3
-
-あなたは既に飛行している
-#
-#//("You're already flying!")
-%%%%
-abl4
-
-静寂中は祈ることが出来ない。
-#
-#
-%%%%
-abl5
-
-あなたはアビリティを持っていない
-#
-#
-%%%%
-abl6
-
-あなたは混乱している！
-#
-#
-%%%%
-abl7
-
-あなたはそれを行うことができない
-#
-#
-%%%%
-abl8
-
-お目が高い聴衆が一人もいない！
-#
-#
-%%%%
-abl9
-
-聴衆が一人もいない！
-#
-#
-%%%%
-abl10
-
-この階層には既に他の聖域がある。
-#
-#
-%%%%
-abl11
-
-あなたを悩ませるものは一つもない
-#
-#("Nothing ails you!")
-%%%%
-abl12
-
-あなたはあなたのステータスやHPを復元する必要が無い。
-#
-#("You don't need to restore your stats or hit points!")
-%%%%
-abl13
-
-あなたはアビスの中に居ない！
-#
-#("You aren't in the Abyss!")
-%%%%
-abl14
-
-あなたは既にアビスに居る！
-#
-#("You're already here!")
-%%%%
-abl15
-
-あなたはこれ以上学ぶ必要が無い。
-#
-#("You have nothing more to learn.")
-%%%%
-abl16
-
-あなたは現在テレポートできない。
-#
-#("You cannot teleport right now.")
-%%%%
-abl17
-
-ここは既に煙幕で一杯だ。
-#
-#("It's too cloudy to do that here.")
-%%%%
-abl18
-
-今すぐに致命的な結果をもたらす飛行を停止すべきだ！
-#
-#("Stopping flight right now would be fatal!");
-%%%%
-abl19
-
-今停止すると溺死か焼死を引き起こす！
-#
-#Turning back right now would cause you to %s!
-%%%%
-abl20
-
-今停止すると器用さが0になる。続けますか？
-#機能できない。
-#"Turning back will reduce your dexterity to zero. Continue?"
-%%%%
-abl21
-
-ちっぽけな魔力では地面から逃れることはできない！
-#
-#You can't escape from the ground with such puny magic!
-%%%%
-abl22
-
-あなたの能力は失敗した。
-#
-#("You fail to use your ability.")
-%%%%
-abl23
-
-キノコはそのような茂みでは成長しない。
-#
-#("Mushrooms don't grow well in such thickets.")
-%%%%
-abl24
-
-オーブからの光が罠の魔力を防いだ！
-#
-#Radiation from the Orb interferes with the trap's magic!");
-%%%%
-abl25
-
-ダンジョンが一瞬震えた
-#
-#("The dungeon trembles momentarily.")
-%%%%
-abl26
-
-神秘的なポータルが形成された。
-#
-#(A mystic portal forms)
-%%%%
-abl27
-
-ダンジョンが一瞬暗くなった
-#
-#("The dungeon dims for a moment.")
-%%%%
-abl28
-
-あなたは生きた手榴弾を作り出した。
-#
-#("You create a living grenade.")
-%%%%
-abl29
-
-あなたは魔法のエネルギーを体に吹き込んだ。
-#
-#("You infuse your body with magical energy.")
-%%%%
-abl30
-
-あなたは強大な稲妻の爆風を吐いた！
-#
-#("You breathe a wild blast of lightning!")
-%%%%
-abl31
-
-あなたは空気中に居ることが非常に快適に感じる。
-#
-#("You feel very comfortable in the air.")
-%%%%
-abl32
-
-あなたの透明化が解けて来ている。
-#
-#("You feel less transparent.")
-%%%%
-abl33
-
-あなたはより浮力を感じる。
-#
-#("You feel more buoyant.")
-%%%%
-abl34
-
-あなたのクロークから煙幕が解放された
-#
-#("With a swish of your cloak, you release a cloud of fog.");
-%%%%
-abl35
-
-その朗読は不適切に見える。
-#
-#(That recitation seems somehow inappropriate.)
-%%%%
-abl36
-
-あなたは自分自身を収容することはできない！
-#
-#("You cannot imprison yourself!")
-%%%%
-abl37
-
-収容すべきモンスターがそこには居ない。
-#
-#("There is no monster there to imprison!")
-%%%%
-abl38
-
-それを収容することはできない！
-#
-#("You cannot imprison that!")
-%%%%
-abl39
-
-あなたは法を守っているモンスターを収容することはできない！
-#
-#("You cannot imprison a law-abiding creature!");
-%%%%
-abl40
-
-ここには生贄に捧げる死体が無い。
-#
-#("There are no corpses to sacrifice!")
-%%%%
-abl41
-
-不浄なエネルギーがあなたの中に入った。
-#
-#("Another wave of unholy energy enters you.")
-%%%%
-abl42
-
-あなたは少々の魔力を取り込んだ。
-#
-#(""You channel some magical energy.");
-%%%%
-abl43
-
-あなたは神に助けを求めた。
-#
-#("You renew your call for help.");
-%%%%
-abl50
-
-あなた自身を追放することはできない！
-#
-#("You cannot banish yourself!")
-%%%%
-abl45
-
-あなたは仲間の呼び出しを停止した。
-#
-#("You stop recalling your allies.")
-%%%%
-abl46
-
-あなたの星状の視界は延長された。
-#
-#("You extend your astral sight.")
-%%%%
-abl47
-
-あなたは星状の視界を得た。
-#
-#("You gain astral sight.")
-%%%%
-abl48
-
-すみません、それをすることはできません。
-#
-#Sorry, you can't do that.
-%%%%
-Use which ability? (? or * to list)
-
-どの能力を使いますか? (? or * で一覧) 
-%%%%
-#
-#
-#om.cc
+#Xom.cc
 ##################################
 Xom1
 
@@ -2022,10 +1684,6 @@ Too many matches; use a more specific search.
 Within the labyrinth you'll only be able to teleport away from the exit!
 
 ラビリンスの内部では出口から離れた場所にしかテレポートできない！
-%%%%
-Continue anyway?
-
-続けますか？
 %%%%
 Warning, next level annotated:
 
@@ -3694,10 +3352,6 @@ You sense an intense heat on the other side of the rock.
 
 あなたは壁の向こう側に強烈な熱を感じ取った
 %%%%
-looks rather confused.
-
-はむしろ混乱しているように見える
-%%%%
 Your head spins!
 
 あなたの頭の中はくるくる回った！
@@ -3771,10 +3425,6 @@ spl
 #########################################################
 #spl-monech.cc
 #########################################################
-is unaffected.
-
-は影響を受けていない
-%%%%
 resists.
 
 は呪文に抵抗した
@@ -4453,67 +4103,67 @@ Your skull vibrates slightly.
 あなたの頭蓋骨は軽く振動した
 #mpr("You suddenly feel drained of magical energy!", MSGCH_WARN);
 %%%%
-spl
+An unnatural silence engulfs you.
 
-
+不自然な静寂があなたを包み込んだ
 #mpr("You suddenly recall your previous life!");
 %%%%
-spl
+Magical energy is drained from your %s
 
-
+あなたの%sのエネルギーが吸われた
 #mpr("You have damaged your brain!");
 %%%%
-spl
+
 
 
 #mpr("You have a terrible headache.");
 %%%%
-spl
+
 
 
 #mpr("You feel extremely cold.");
 %%%%
-spl
+
 
 
 #msg = replace_all(msg, "'s body", "");
 %%%%
-spl
+You feel very strange.
 
-
+あなたは非常に奇妙な感覚を味わった
 #you_msg      = "Sparks fly from your @hands@!";
 %%%%
-spl
+
 
 
 #mon_msg_seen = "Sparks fly from @the_monster@'s @hands@!";
 %%%%
-spl
+Wisps of shadow whirl around...
 
-
+影の断片が周囲に渦巻いた
 #you_msg      = "The air around you crackles with energy!";
 %%%%
-spl
+
 
 
 #mon_msg_seen = "The air around @the_monster@ crackles "
 %%%%
-spl
+
 
 
 #you_msg      = "Wisps of smoke drift from your @hands@.";
 %%%%
-spl
+
 
 
 #mon_msg_seen = "Wisps of smoke drift from @the_monster@'s "
 %%%%
-spl
+
 
 
 #you_msg = "You feel a strange surge of energy!";
 %%%%
-spl
+
 
 
 #you_msg      = "You are momentarily dazzled by a flash of light!";
@@ -6922,11 +6572,6 @@ You can't see any targets in that direction!
 
 あなたはその方向に目標が見つからない！
 #mpr("You can't see any targets in that direction!");
-%%%%
-You hear a mighty clap of thunder!
-
-あなたは雷鳴が力強く轟くのを耳にした！
-#     const char* msg = "You hear a mighty clap of thunder!";
 %%%%
 spl
 
@@ -10415,6 +10060,26 @@ clumsy
 
 不器用になった
 %%%%
+weakened
+
+弱くなった
+%%%%
+dopey
+
+愚かになった
+%%%%
+strength
+
+腕力
+%%%%
+intelligence
+
+知能
+%%%%
+dexterity
+
+器用さ
+%%%%
 #        mprf((amount > 0) ? MSGCH_INTRINSIC_GAIN : MSGCH_WARN,
 #             "You feel %s.",
 #             stat_desc(which_stat, (amount > 0) ? SD_INCREASE : SD_DECREASE));
@@ -10434,7 +10099,7 @@ Your divine stamina protects you from %s loss.
 %%%%
 You feel %s%s.
 
-あなたは%s %s なったように感じた
+あなたは%s %s と感じた
 #    mprf(stat_loss > 0 ? MSGCH_WARN : MSGCH_PLAIN,
 #         "You feel %s%s.",
 #         stat_desc(which_stat, SD_LOSS),
@@ -13585,7 +13250,7 @@ radiates an aura of fear!
 
 は恐怖のオーラを放射した！
 %%%%
- draws from the surrounding life force!
+draws from the surrounding life force!
 
 は周囲から生命力を引き出した！
 %%%%
@@ -13599,7 +13264,7 @@ The surrounding life force dissipates!
 は癒された
 " is healed."
 %%%%
- drains the heat from the surrounding environment!
+drains the heat from the surrounding environment!
 
 は周辺から熱が奪った！
 %%%%
@@ -13705,10 +13370,6 @@ protects your fellow warrior from evil magic!
 shields your ally from puny magic!
 
 はあなたの仲間をつまらない魔法から守った！
-%%%%
-looks frightened!
-
-は驚愕した！
 %%%%
 puts on a burst of speed!
 
@@ -14496,19 +14157,6 @@ spines
 
 
 %%%%
-The %s protects %s from harm.
-
-%sは%sを損傷から守った
-#            mprf("The %s protects %s from harm.",
-#                 raw_feature_description(defender->pos()).c_str(),
-#                 defender->name(DESC_THE).c_str());
-%%%%
-
-
-
-#mprf("The %s protects %s from harm.",
-#                     feat_name.c_str(),
-#                     defender->name(DESC_THE).c_str());
 %%%%
 You hit the %s.
 
@@ -14785,16 +14433,6 @@ Melee-Block
 #            debug_damage_number().c_str(),
 #             mons_attack_desc().c_str(), //試験的にmons_attack_descを取り除いてみた
 #             attack_strength_punctuation().c_str());
-%%%%
-%sha%sni%s%s
-
-%s は%sを%s%s
-#special_damage_message = make_stringf(
-#            getGameStartDescription("%sha%sni%s%s").c_str(),
-#            atk_name(DESC_THE).c_str(),
-#			defender_name().c_str(),
-#            attacker->conj_verb(verb).c_str(),
-#            special_attack_punctuation().c_str());
 %%%%
 You %s %s%s%s%s
 
@@ -15945,11 +15583,6 @@ Char dump unsuccessful! Sorry about that.
 
 残念ながらキャラクターのダンプは失敗しました
 #mpr("Char dump unsuccessful! Sorry about that.");
-%%%%
-You can't see that place.
-
-あなたはその場所を見ることができない
-#mpr("You can't see that place.");
 %%%%
 Save game and exit?
 
@@ -18612,11 +18245,6 @@ You feel your power returning.
 あなたは魔法の力が戻ってくるのを感じた
 #mpr("You feel your power returning.");
 %%%%
-You feel a little better.
-
-あなたは少し元気になった
-# mpr("You feel a little better.");
-%%%%
 Your %s are %sbound.
 
 あなたの%sは呪縛されて%s
@@ -19028,6 +18656,14 @@ You draw life from your surroundings.
 あなたは周囲から生命を吸いだした
 #mpr("You draw life from your surroundings.");
 %%%%
+Something draws the life force from your surroundings.
+
+何者かはあなたの周囲から生命力を吸いだした
+%%%%
+%s hurt by the noise.
+
+%s は騒音によって傷ついた
+%%%%
 You draw life from %s.
 
 あなたは%sから生命を吸いだした
@@ -19316,6 +18952,9 @@ have finished
 stoplearn
 
 中止した
+%%%%
+The heat is drained from your surroundings.
+%%%%
 %%%%
 #########################################################
 #food.cc
@@ -21304,192 +20943,28 @@ You sense the disappearance of the force that prevented you from remembering whe
 #mpr("Ran out of altars for temple!", MSGCH_ERROR);
 %%%%
 #########################################################
-#dgn-shoals.cc
-#########################################################
-
-
-#mprf("The net is swept off %s.", mvictim->name(DESC_THE).c_str());
-%%%%
-
-
-
-#mpr("The tide washes the net away!");
-%%%%
-
-
-
-#mprf(MSGCH_WARN, "The tide rushes in under you.");
-%%%%
-
-
-
-#mprf(MSGCH_SOUND, "The tide is released from %s call.",
-#                 apostrophise(mons->name(DESC_YOUR, true)).c_str());
-#            if (you.see_cell(mons->pos()))
-#                flash_view_delay(ETC_WATER, 150);
-%%%%
-
-
-
-#mprf(MSGCH_WARN, "Not in Shoals or no heightmap; tide not available.");
-%%%%
-
-
-
-#mprf(MSGCH_PROMPT,
-#             "Tide inertia: %d. New value "
-#             "(smaller = faster tide) or use +/- to change tide: ",
-#             TIDE_MULTIPLIER);
-%%%%
-#########################################################
 #dgn-overview.cc
 #########################################################
-Cleared annotation.
-
-注釈を消去した
-%%%%
-Dungeon Overview and Level Annotations
-
-                    <white>ダンジョンの構成 と 階層の注釈</white>
-%%%%
-Branches:
-
-<green>分岐:</green>
-%%%%
-(use <white>G</white> to reach them and <white>?/B</white> for more information)
-
-( <white>G</white> で分岐まで移動する。 <white>?/B</white> で 更なる分岐の情報を得る)
-%%%%
-Altars:
-
-<green>祭壇:</green>
-%%%%
-use information about gods
-
-( <white>Ctrl-F "altar"</white> で祭壇を検索する。<white>?/G</white> で神々についての情報を得る)
-%%%%
-Shops:
-
-<green>店:</green>
-%%%%
-yellow denotes antique shop)
-
-( <white>Ctrl-F "shop"</white> で店舗を検索する - 黄色は「骨董屋」を意味する)
-%%%%
-Portals:
-
-<green>ポータル:</green>
-%%%%
-Annotations
-
-<green>注釈</green>
-%%%%
-Current level annotation:
-
-現在の階層の注釈：
-#mpr("Current level annotation: " +
-#            colour_string(get_level_annotation(li, true, true), LIGHTGREY),
-#            MSGCH_PROMPT);
 %%%%
 Cleared.
 
 消去しました
 #mpr("Cleared.");
 %%%%
-New annotation for
-
-新しい注釈
-%%%%
-(include '!' for warning):
-
-(注意のために '!' が含まれる)
-%%%%
-Marked for pickup.
-
-
-%%%%
 #########################################################
 #delay.cc
 #########################################################
-leaps out from its hiding place under the floor!
-
-は床下の隠れ場所から現れた！
 %%%%
-opens the door.
-
-は扉を開けた
 %%%%
-opens the gate.
-
-は門を開けた
-%%%%
-appears from thin air!
-
-はどこからともなく現れた！
-%%%%
-surfaces briefly.
-
-は素早く地上に出てきた
-%%%%
-forms itself from the air.
-
-は大気中から出現した
-%%%%
-surfaces.
-
-は地上に出てきた
-%%%%
-bursts forth from the
-
-の中から何を吐きだした!
-%%%%
-emerges from the water.
-
-は水の中から現れた
-%%%%
-Ashenzari warns you:
-
-アシェンザリはあなたに警告した:
-%%%%
-grants you knowledge of %s.
-
- はあなたに %s の知識を与えた
-%%%%
-You continue butchering the corpse.
-
-あなたは解体を続行した。
-%%%%
-butchering
-
-解体
-%%%%
-You stop %s the corpse.
-
-あなたは死体の%sを停止した
-#mprf("You stop %s the corpse%s.", butcher_verb.c_str(),
-#             multiple_corpses ? "s" : "");
-%%%%
-bottling blood from
-
-血詰め
 %%%%
 the corpse
 
 死体
 %%%%
-Your memorisation is interrupted.
-
-あなたの学習は中断させられた
-#mpr("Your memorisation is interrupted.");
-%%%%
 wostop
 
 を止めた
 %%%%
-You stop dropping stuff.
-
-持ち物を落とすことを中断した
-#mpr("You stop dropping stuff.");
 %%%%
 Your recitation is interrupted.
 
@@ -21501,132 +20976,21 @@ You feel short of breath.
 あなたは息切れを感じた
 #mpr("You feel short of breath.");
 %%%%
-You stop draining the corpse.
-
-あなたは死体から血を吸うのをやめた
-#mpr("You stop draining the corpse.");
-%%%%
-All blood oozes out of the corpse!
-
-全ての血は死体から滲み出てしまった!
-#mpr("All blood oozes out of the corpse!");
 %%%%
 your armour
 
 あなたの鎧
 %%%%
-putting on
-
-着ること
-%%%%
-removing
-
-外すこと
-%%%%
-ascending
-
-登ること
-%%%%
-You stop %s your armour.
-
-あなたは鎧を%sを停止した
-#mprf("You stop %s your armour.",
-#                     delay.type == DELAY_ARMOUR_ON ? "putting on"
-#                                                   : "removing");
-%%%%
-descending
-
-下ること
-%%%%
-You stop %s the stairs.
-
-あなたは階段を%sをやめた
-#mprf("You stop %s the stairs.",
-#                 delay.type == DELAY_ASCENDING_STAIRS ? "ascending"
-#                                                      : "descending");
-%%%%
-Your meditation is interrupted.
-
-あなたの瞑想は中断させられた。
-#mpr("Your meditation is interrupted.");
-%%%%
-You start putting on your armour.
-
-あなたは鎧を装備し始めた
-#mpr("You start putting on your armour.", MSGCH_MULTITURN_ACTION);
-%%%%
-You start removing your armour.
-
-あなたは鎧を外し始めた
-#mpr("You start removing your armour.", MSGCH_MULTITURN_ACTION);
 %%%%
 You start bottling blood from %s.
 
-あなたは%sの血詰めを開始した
 #mprf(MSGCH_MULTITURN_ACTION,
 #                     "You start bottling blood from %s.",
 #                     mitm[delay.parm1].name(DESC_THE).c_str());
 %%%%
-You start butchering %s with your %s.
-
-あなたは %s を %s で捌き始めた
-#mprf(MSGCH_MULTITURN_ACTION,
-#                     "You start butchering %s with your %s.",
-#                     mitm[delay.parm1].name(DESC_THE).c_str(), tool.c_str());
-%%%%
 with your
 
 あなたの
-%%%%
-You start memorising the spell.
-
-あなたは呪文の学習を開始した
-#mpr("You start memorising the spell.", MSGCH_MULTITURN_ACTION);
-%%%%
-"You begin to meditate on the wall."
-
-あなたは壁に向かって瞑想を開始した
-#mpr("You begin to meditate on the wall.", MSGCH_MULTITURN_ACTION);
-%%%%
-You clear your throat and prepare to recite %s.
-
-あなたは%sの朗読の準備をした
-#mprf(MSGCH_PLAIN, "You clear your throat and prepare to recite %s.",
-#                 _get_zin_recite_speech(delay.trits, delay.len,
-#                                        delay.parm1, -1).c_str());
-%%%%
-You cannot bottle blood anymore!
-
-あなたは今は血を詰めることができない!
-#mpr("You cannot bottle blood anymore!");
-%%%%
-The corpse rots away into a skeleton!
-
-その死体は朽ち果て、骸骨になりかけている！
-#mpr("The corpse rots away into a skeleton!");
-%%%%
-The corpse rots.
-
-その死体は腐っている
-#mpr("The corpse rots.", MSGCH_ROTTEN_MEAT);
-%%%%
-You stop bottling this corpse's foul-smelling blood!
-
-あなたはこの死体の悪臭のする血を詰めることをやめた
-#mpr("You stop bottling this corpse's foul-smelling "
-#                            "blood!");
-%%%%
-You continue putting on %s.
-
-あなたは %s を装備し続けている
-#mprf(MSGCH_MULTITURN_ACTION, "You continue putting on %s.",
-#                 you.inv[delay.parm1].name(DESC_YOUR).c_str());
-%%%%
-You continue taking off %s.
-
-あなたは %s を外し続けている
-#mprf(MSGCH_MULTITURN_ACTION, "You continue taking off %s.",
-#                 you.inv[delay.parm1].name(DESC_YOUR).c_str());
 %%%%
 You finish taking off %s.
 
@@ -21639,66 +21003,6 @@ You finish reciting %s
 closure
 
 終結し
-%%%%
-#mprf(MSGCH_MULTITURN_ACTION, "You continue butchering the corpse.");
-%%%%
-You continue bottling blood from the corpse.
-
-あなたは死体から血を詰め続けている
-#mprf(MSGCH_MULTITURN_ACTION, "You continue bottling blood from "
-#                                         "the corpse.");
-%%%%
-You continue memorising.
-
-あなたは学習を続けている
-#mpr("You continue memorising.", MSGCH_MULTITURN_ACTION);
-%%%%
-You continue meditating on the rock.
-
-あなたは壁に向かって瞑想を続けている
-#mpr("You continue meditating on the rock.",
-#                MSGCH_MULTITURN_ACTION);
-%%%%
-
-
-
-#mprf(MSGCH_MULTITURN_ACTION, "\"%s\"",
-#                 _get_zin_recite_speech(delay.trits, delay.len,
-#                                        delay.parm1, delay.duration).c_str());
-%%%%
-You continue eating.
-
-あなたは食事を続けている
-#mpr("You continue eating.", MSGCH_MULTITURN_ACTION);
-%%%%
-This corpse has started to rot.
-
-この死体は腐り始めた
-#mpr("This corpse has started to rot.", MSGCH_ROTTEN_MEAT);
-%%%%
-You continue drinking.
-
-あなたは吸血を続けている
-#mprf(MSGCH_MULTITURN_ACTION, "You continue drinking.");
-%%%%
-finish taking off
-
-外し終えた
-#mprf("You finish taking off %s.",
-#             you.inv[delay.parm1].name(DESC_YOUR).c_str());
-%%%%
-You finish eating.
-
-あなたは食べ終えた
-#mprf("You finish eating.");
-%%%%
-ripping
-
-切り裂き
-%%%%
-chopping
-
-捌き
 %%%%
 finish into pieces
 
@@ -21716,150 +21020,10 @@ Eat?
 
 食べますか
 %%%%
-You finish drinking.
-
-あなたは飲み終えた
-#mprf("You finish drinking.");
-%%%%
-You finish memorising.
-
-あなたは学習を終えた
-#mpr("You finish memorising.");
-%%%%
 finish reciting
 
 朗読を終えた
 #mprf(MSGCH_PLAIN, "You finish reciting %s", speech.c_str());
-%%%%
-You finish merging with the rock.
-
-あなたは岩に溶け込んだ。
-#mpr("You finish merging with the rock.");
-%%%%
-yet there is something new on the other side.You quickly turn back.
-
-まだ向こうに岩が残っている...あなたは今すぐ引き返した
-#mpr("...yet there is something new on the other side. "
-#                        "You quickly turn back.");
-%%%%
-and sense your way blocked. You quickly turn back.
-
-あなたは壁が防衛されていることに気付いた...あなたは今すぐ引き返した
-#mpr("...and sense your way blocked. You quickly turn back.");
-%%%%
-bottling its blood
-
-血詰め
-%%%%
-The corpse rots away into a skeleton just before you finish %s!
-
-あなたが%sが終わる前に死体は腐ってしまった
-#mprf("The corpse rots away into a skeleton just before you "
-#                     "finish %s!",
-#                     (delay.type == DELAY_BOTTLE_BLOOD ? "bottling its blood"
-#                                                       : "butchering"));
-%%%%
-You finish bottling this corpse's blood.
-
-あなたは死体の血を詰め終えた
-#mpr("You finish bottling this corpse's blood.");
-%%%%
-You finish %s %s into pieces.
-
-あなたは%s %s を細切れにした
-#mprf("You finish %s %s into pieces.",
-#                     delay.parm3 <= SLOT_CLAWS ? "ripping" : "chopping",
-#                     mitm[delay.parm1].name(DESC_THE).c_str());
-%%%%
-expects more respect for your departed relatives.
-
-は亡くなったあなたの同朋に対する敬意を期待している
-%%%%
-expects more respect for holy creatures!
-
-は無くなった神聖な生き物に対する敬意を期待している！
-%%%%
-expects more respect for this departed soul.
-
-は過ぎ去った魂に対する敬意を期待している！
-%%%%
-You enjoyed that.
-
-あなたはそれを楽しんだ
-#mpr("You enjoyed that.");
-%%%%
-butchering the corpse
-
-死体を捌くこと
-%%%%
-You stop %s.
-
-あなたは%sをやめた
-#mprf("You stop %s.",
-#                 delay.type == DELAY_BUTCHER ? "butchering the corpse"
-#                                             : "bottling this corpse's blood");
-%%%%
-bottling this corpse's blood
-
-この死体から血を詰めること
-%%%%
-You finish doing something
-
-あなたはそれをやり終えた。
-#mpr("You finish doing something.");
-%%%%
-You finish putting on %s.
-
-あなたは %s を装備し終えた
-#mprf("You finish putting on %s.", arm.name(DESC_YOUR).c_str());
-%%%%
-Done waiting
-
-休息を終了した
-#mpr("Done waiting.");
-%%%%
-
-
-
-#mpr("Lua not initialised", MSGCH_DIAGNOSTICS);
-%%%%
-You sense a monster nearby
-
-あなたは近くにモンスターを感じた
-# mpr("You sense a monster nearby.", MSGCH_WARN);
-%%%%
-%s is too close now for your liking.
-
-%sに近づきすぎている！
-#mprf(MSGCH_WARN, "%s is too close now for your liking.",
-#                 mon->name(DESC_THE).c_str());
-%%%%
-Deactivating autopickup; reactivate with <w>%s</w>.
-
-自動拾いを無効化した:次のキーで再開できます <w>%s</w>
-#mprf(MSGCH_WARN,
-#                 "Deactivating autopickup; reactivate with <w>%s</w>.",
-#                 command_to_string(CMD_TOGGLE_AUTOPICKUP).c_str());
-%%%%
-Reactivating autopickup.
-
-自動拾いを再開した
-#mprf(MSGCH_WARN, "Reactivating autopickup.");
-%%%%
-HP restored.
-
-HPは完全に回復した
-#mpr("HP restored.");
-%%%%
-Magic restored.
-
-MPは完全に回復した
-#mpr("Magic restored.");
-%%%%
-Delay-1111
-
-に遭遇した
-#text += " comes into view.";
 %%%%
 You smell something rotten.
 
@@ -21903,493 +21067,6 @@ Ugh! There is something really disgusting in your inventory.
 %%%%
 
 
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-#########################################################
-#decks.cc
-#########################################################
-%d of your gold pieces vanish!
-
-%dの金貨が消え去った!
-%%%%
-This card doesn't seem to belong here.
-
-このカードはこのデッキの物ではないようだ
-#mpr("This card doesn't seem to belong here.");
-%%%%
-You %s %s.
-
-あなたは%sを%s
-#mprf("You %s %s.", verb, card_name(card));
-%%%%
-deal
-
-扱った
-%%%%
-draw
-
-引いた
-%%%%
-You %s a card... It is %s.
-
-あなたはカードを%s……それは%sだ
-#mprf("You %s a card... It is %s.", verb, card_name(card));
-%%%%
-That isn't a deck!
-
-それはデッキではない！
-#mpr("That isn't a deck!");
-%%%%
-This is %s.
-
-これは %s だ
-# mprf("This is %s.", deck.name(DESC_A).c_str());
-%%%%
-A card falls out of the deck.
-
-カードがデッキから外れた
-#mpr("A card falls out of the deck.");
-%%%%
-There's only one card in the deck!
-
-デッキにカードが一枚しか残っていない！
-#mpr("There's only one card in the deck!");
-%%%%
-You draw two cards from the deck. They are: %s and %s.
-
-二枚のカードを引いた。それは %s と %s だ
-#mprf("You draw two cards from the deck. They are: %s and %s.",
-#         card_name(card1), card_name(card2));
-%%%%
-You shuffle the cards back into the deck.
-
-あなたはカードを戻し、シャッフルした
-#mpr("You shuffle the cards back into the deck.");
-%%%%
-You get a glimpse of the first card. It is %s.
-
-あなたは最初のカードを垣間見た。それは %s だ
-#mprf("You get a glimpse of the first card. It is %s.", card_name(card));
-%%%%
-You cannot deal from marked decks.
-
-あなたはマークされたデッキを能力の対象に出来ない
-#mpr("You cannot deal from marked decks.");
-%%%%
-This deck seems insufficiently random for dealing.
-
-このデッキはランダム性が不十分なため、能力を使用できない
-#mpr("This deck seems insufficiently random for dealing.");
-%%%%
-Deal from which deck?
-
-どのデッキに能力を使用しますか？
-%%%%
-There's only one card left!
-
-一枚のカードしか残っていない！
-#mpr("There's only one card left!");
-%%%%
-The deck only has %d cards.
-
-デッキには%d枚のカードしか残っていない
-#mprf("The deck only has %d cards.", num_cards);
-%%%%
-Nemelex gives you another card to finish dealing.
-
-ネメレクスはあなたにもう一枚のカードを与えた
-#mpr("Nemelex gives you another card to finish dealing.");
-%%%%
-You can't stack a marked deck.
-
-あなたはマークされたデッキをスタックできない
-#mpr("You can't stack a marked deck.");
-%%%%
-
-
-
-#mpr("There's only one card left!");
-%%%%
-
-
-
-#mprf("The deck only has %d cards.", num_cards);
-%%%%
-The deck has exactly five cards.
-
-デッキは丁度５枚のカードしかない
-#mpr("The deck has exactly five cards.");
-%%%%
-You draw the first five cards out of %d and discard the rest.
-
-あなたは5枚のカードを引き、残りの%dのカードは塵になった
-#mprf("You draw the first five cards out of %d and discard the rest.",
-#             num_cards);
-%%%%
-
-
-
-#mpr("There's only one card left!");
-%%%%
-You draw... (choose one card, ? for their descriptions)
-
-あなたはカードを引いた…… (一枚のカードを選んでください, ? でカードの説明をみる)
-#mpr("You draw... (choose one card, ? for their descriptions)");
-%%%%
-You %s a card...
-
-あなたはカードを%s
-#mprf("You %s a card...", deal ? "deal" : "draw");
-%%%%
-It's actually %s.
-
-それはなんと%sだった
-#mprf("It's actually %s.", card_name(card));
-%%%%
-seems to have exchanged this card behind your back!
-
-はあなたの後ろでカードを交換しているようだ
-%%%%
-Your skill with magical items lets you identify the deck.
-
-魔法のアイテムに関する技能から、このデッキの種類が判明した
-#mpr("Your skill with magical items lets you identify the deck.");
-%%%%
-
-
-
-# mpr("You spin around.");
-%%%%
-The power of the Abyss blocks your magic.
-
-アビスの力があなたの魔法を妨害した
-#mpr("The power of the Abyss blocks your magic.");
-%%%%
-A shaft materialises beneath you!
-
-落とし穴があなたの足元に実体化した
-#mpr("A shaft materialises beneath you!");
-%%%%
-No stairs available to move.
-
-
-#mpr("No stairs available to move.");
-%%%%
-You have %s %s.
-
-あなたは%sを%s
-%%%%
-dealt
-
-扱った
-%%%%
-drawn
-
-引いた
-#mprf("You have %s %s.", participle, card_name(card));
-%%%%
-You feel resistant.
-
-あなたは耐性を感じた
-#mpr("You feel resistant.");
-%%%%
-A magical shield forms in front of you.
-
-魔法の盾があなたの前に現れた
-#mpr("A magical shield forms in front of you.");
-%%%%
-You feel like a smilodon for a moment.
-
-あなたは一瞬スミロドンになったように感じた
-#mpr("You feel like a smilodon for a moment.");
-%%%%
-
-
-
-#mprf("%s vibrate%s crazily for a second.",
-#                 wpn->name(DESC_YOUR).c_str(),
-#                 wpn->quantity == 1 ? "s" : "");
-%%%%
-
-
-
-#mprf("Your %s twitch.", you.hand_name(true).c_str());
-%%%%
-You feel more catlike.
-
-あなたはさらに猫になったように感じた
-%%%%
-
-
-
-# mpr(you.duration[DUR_STEALTH] ? "You feel more catlike."
-#                                      : "You feel stealthy.");
-%%%%
-protects you from inadvertent hurry.
-
-は不注意の加速からあなたを守った
-%%%%
-You feel more experienced.
-
-あなたは更なる経験を感じた
-#mpr("You feel more experienced.");
-%%%%
-You feel knowledgeable.
-
-あなたは経験を感じた
-#mpr("You feel knowledgeable.");
-%%%%
-You feel transcendent for a moment.
-
-あなたは一瞬超越したと感じた
-# mpr("You feel transcendent for a moment.");
-%%%%
-
-
-
-# mpr("You feel omnipotent.");
-%%%%
-You feel studious about %s.
-
-あなたは%sに対して勉強熱心になった
-# mprf(MSGCH_PLAIN, "You feel studious about %s.", skill_name(result));
-%%%%
-You create a pond!
-
-あなたは池を作成した！
-#mpr("You create a pond!");
-%%%%
-You feel the tide rushing in!
-
-あなたは急に潮を感じた！
-#mpr("You feel the tide rushing in!");
-%%%%
-Water floods your area!
-
-あなたの周辺が水で満たされた！
-#mpr("Water floods your area!");
-%%%%
-You sense traps nearby.
-
-あなたは周囲の罠を感知した
-#mpr("You sense traps nearby.");
-%%%%
-You sense items nearby.
-
-あなたは周囲のアイテムを感知した
-#mpr("You sense items nearby.");
-%%%%
-An altar to %s grows from the floor before you!
-
-%sの祭壇が床からあなたの前に現れた！
-#mprf("An altar to %s grows from the floor before you!",
-#         god_name(god).c_str());
-%%%%
-The dungeon trembles momentarily.
-
-迷宮が一瞬震えた
-#return mpr("The dungeon trembles momentarily.");
-%%%%
-A portal flickers into view, then vanishes.
-
-ポータルが目の前でちらつき、消えてしまった
-# mpr("A portal flickers into view, then vanishes.");
-%%%%
-A mystic portal forms.
-
-神秘的なポータルが形成された
-#mpr("A mystic portal forms.");
-%%%%
-A menacing statue appears!
-
-威嚇する像が現れた！
-# mpr("A menacing statue appears!");
-%%%%
-You construct a golem!
-
-ゴーレムが構成された！
-#mpr("You construct a golem!");
-%%%%
-The constructs glare at each other.
-
-構成物はお互いににらみ合った
-#mpr("The constructs glare at each other.");
-%%%%
-A statue takes form beside you.
-
-像はあなたの傍で構成された
-#mpr("A statue takes form beside you.");
-%%%%
-A genie takes form and thunders: \"Choose your reward, mortal!\"
-
-魔神が形成され、雷のごとく叫んだ:『定命の者よ、願いを叶えてやろう！』
-#mpr("A genie takes form and thunders: "
-#            "\"Choose your reward, mortal!\"");
-%%%%
-A genie takes form and thunders: \"You disturbed me, fool!\"
-
-魔神が形成され、雷のごとく叫んだ:『愚か者め！私の邪魔をするな！』
-#mpr("A genie takes form and thunders: "
-#            "\"You disturbed me, fool!\"");
-%%%%
-You somehow manage to escape divine attention...
-
-あなたは何とか神の注目を逃れた……
-#mpr("You somehow manage to escape divine attention...");
-%%%%
-You feel a malignant aura surround you.
-
-あなたは悪性のオーラを周囲に感じた
-#mpr("You feel a malignant aura surround you.");
-%%%%
-You sense the presence of something unfriendly.
-
-あなたは非友好的な存在を感じた
-#mpr("You see a puff of smoke.");
-%%%%
-
-
-
-#mpr("You see a puff of smoke.");
-%%%%
-
-
-
-#mpr("You see a puff of smoke.");
-%%%%
-
-
-
-#mpr("You see a puff of smoke.");
-%%%%
-You cannot afford %s fee of %d gold!
-
-あなたは%sに支払う%dの手間賃が無い！
-#mprf("You cannot afford %s fee of %d gold!",
-#             mon->name(DESC_ITS).c_str(), fee);
-%%%%
-attacks!
-
-は攻撃してきた！
-%%%%
-Pay %s fee of %d gold?
-
-%sに%dの金貨を支払いますか？
-%%%%
-joins your ranks!
-
-はあなたの仲間入りをした！
-%%%%
-
-
-
-#mpr("You feel better.");
-%%%%
-
-
-
-# mpr("You feel your power returning.");
-%%%%
-Some of your gold vanishes!
-
-幾らかの金貨が消え去った！
-#mpr("Some of your gold vanishes!");
-%%%%
-
-
-
-#mprf("You have %s %s.", participle, card_name(which_card));
-%%%%
-
-
-
-#mprf("You have %s %s.", participle, card_name(which_card));
-%%%%
-Xom roars with laughter!
-
-ゾムは大笑いした！
-%%%%
-Xom laughs nastily.
-
-ゾムは嫌らしく笑った
-%%%%
-You feel rather smug.
-
-あなたはむしろ満足していると感じた
-#mpr("You feel rather smug.");
-%%%%
-You feel a horrible emptiness.
-
-あなたは恐ろしい虚空を感じた
-#mpr("You feel a horrible emptiness.");
-%%%%
-
-
-
-#mpr("You feel like a pig.");
-%%%%
-
-
-
-#mprf("You have %s a buggy card!", participle);
-%%%%
-
-
-
-#mprf(MSGCH_DIAGNOSTICS, "Shuffling: %s on %s",
-#                 item.name(DESC_PLAIN).c_str(),
-#                 level_id::current().describe().c_str());
-%%%%
-
-
-
-#mprf(MSGCH_DIAGNOSTICS, "Shuffling in inventory: %s",
-#                 item.name(DESC_PLAIN).c_str());
 %%%%
 #########################################################
 #database.cc
@@ -22414,669 +21091,7 @@ You feel a horrible emptiness.
 
 #mpr("Unbalanced @, bailing.", MSGCH_DIAGNOSTICS);
 %%%%
-#########################################################
-#dactions.cc
-#########################################################
-The hog vanishes!
-
-豚は消え去った！
-#mpr("The hog vanishes!");
-%%%%
-%s appears from out of thin air!
-
-%sは外部からどこからともなく現れた！
-#mprf("%s appears from out of thin air!",
-#                mon->name(DESC_A).c_str());
-%%%%
-#########################################################
-#command.cc
-#########################################################
-Describe what?
-
-何の説明ですか?
-%%%%
-Adjust (i)tems, (s)pells, or (a)bilities?
-
-どれを調整しますか? (i)アイテム, (s)呪文,(a)能力
-#mpr("Adjust (i)tems, (s)pells, or (a)bilities? ", MSGCH_PROMPT);
-%%%%
-Adjust which spell?
-
-どの呪文を調整しますか？
-#mpr("Adjust which spell? ", MSGCH_PROMPT);
-%%%%
-You don't know that spell.
-
-あなたはその呪文を知らない。
-#mpr("You don't know that spell.");
-%%%%
-Adjust to which letter?
-
-どの文字に入れ替えますか？
-#mpr("Adjust to which letter? ", MSGCH_PROMPT);
-%%%%
-You don't currently have any abilities.
-
-あなたは現在のところ特殊能力を持っていない
-#mpr("You don't currently have any abilities.");
-%%%%
-Adjust which ability?
-
-どの特殊能力を入れ替えますか？
-#mpr("Adjust which ability? ", MSGCH_PROMPT);
-%%%%
-No such ability
-
-そのような能力は無い
-#mpr("No such ability.");
-%%%%
-
-
-
-#mpr("Adjust to which letter?", MSGCH_PROMPT);
-%%%%
-That would be singularly pointless.
-
-それ単独では無意味でしょう
-# mpr("That would be singularly pointless.");
-%%%%
-Swapping with
-
-双方を交換する
-#mprf("Swapping with: %c - %s", static_cast<char>(keyin),
-#                 ability_name(talents[i].which));
-%%%%
-Moving to
-
-移動する
-#mprf("Moving to: %c - %s", static_cast<char>(keyin),
-#             ability_name(talents[selected].which));
-%%%%
-
-
-
-#mpr("No questions found in FAQ! Please submit a bug report!");
-%%%%
-Describe a Monster
-
-どの説明を見ますか? (M)モンスター, (S)呪文, (K)スキル, (I)アイテム, (F)施設, (G)神々, (A)能力, (B)分岐, (C)カード
-#mpr("Describe a (M)onster, (S)pell, s(K)ill, (I)tem, (F)eature, (G)od, "
-#        "(A)bility, (B)ranch, or (C)ard? ", MSGCH_PROMPT);
-%%%%
-
-
-
-#mpr("Describe what? ", MSGCH_PROMPT);
-%%%%
-wait a turn (also <w>.</w>, <w>Del</w>)
-
-1ターン待機する(<w>.</w>, <w>Del</w>も同じ)
-%%%%
-rest and long wait; stops when
-
-長期間休息する:HP,MPが回復する,
-
-
-%%%%
-Health or Magic become full,
-
-    敵に遭遇する,100ターン経過する
-%%%%
-100turn
-
-    と休息は停止される。
-%%%%
-<h>Extended Movement:
-
-<yellow>拡張コマンド:</yellow>
-%%%%
-auto-explore
-
-自動探索
-%%%%
-interlevel travel
-
-階層移動
-%%%%
-Find items
-
-検索コマンド
-%%%%
-set Waypoint
-
-中間地点の設定
-%%%%
-use special Ability (<w>%!</w> for help)
-
-特別な能力を使う (<w>a!</w> でヘルプ)
-%%%%
-Pray (<w>%</w> and <w>%!</w> for help)
-
-祈る (<w>p</w> and <w>p!</w> でヘルプ)
-%%%%
-cast spell, abort without targets
-
-呪文詠唱。対象が居ないと中止する
-%%%%
-cast spell, no matter what
-
-呪文詠唱
-%%%%
-tell allies (<w>%t</w> to shout)
-
-仲間に命令をする (<w>tt</w> で叫ぶ)
-%%%%
-re-do previous command
-
-前のコマンドを繰り返す
-%%%%
-repeat next command # of times
-
-指定回数コマンドを繰り返す
-%%%%
-show Previous messages
-
-以前のメッセージの表示
-%%%%
-Redraw screen
-
-画面の再描写
-%%%%
-Clear main and level maps
-
-マップの消去
-%%%%
-annotate the dungeon level
-
-階層の注釈
-%%%%
-dump character to file
-
-ダンプの出力
-%%%%
-add note (use <w>%:</w> to read notes)
-
-ノートへの記入 (<w>?:</w> でノートを読む)
-%%%%
-add macro (also <w>Ctrl-D</w>)
-
-マクロの設定 (<w>Ctrl-D</w>も同じ)
-%%%%
-reassign inventory/spell letters
-
-アイテム、呪文の入れ替え
-%%%%
-edit player doll
-
-プレイヤードールの編集
-%%%%
-read messages (online play only)
-
-メッセージを読む (オンラインのみ)
-%%%%
-Save game and exit
-
-セーブし、終了する
-%%%%
-Save and exit without query
-
-即座にゲームをセーブし終了する
-%%%%
-Suicide the current character
-
-自殺する
-%%%%
-display character status
-
-キャラのステータスの表示
-%%%%
-show skill screen
-
-スキル画面
-%%%%
-show resistances
-
-耐性一覧
-%%%%
-show religion screen
-
-信仰画面
-%%%%
-show Abilities/mutations
-
-能力/変異一覧
-%%%%
-show item knowledge
-
-鑑定済みのアイテムの知識
-%%%%
-show runes collected
-
-収集したルーン一覧
-%%%%
-display worn armour
-
-装備中の鎧の表示
-%%%%
-display gold in possession
-
-所持金の表示
-%%%%
-display experience info
-
-経験値の表示
-%%%%
-examine occupied tile and
-
-下の床を調べ、重なったアイテムを拾う
-%%%%
-eXamine surroundings/targets
-
-周囲/目標を調べる
-%%%%
-list monsters, items, features
-
-視界内の怪物、アイテム、施設の一覧
-%%%%
-toggle terrain-only view
-
-地形のみを表示するように切り替える
-%%%%
-colour monsters in view by HP
-
-視界内のモンスターのHPの表示
-%%%%
-show dungeon Overview
-
-迷宮の概要を表示
-%%%%
-toggle auto-pickup
-
-自動拾いの切り替え
-%%%%
-change ally pickup behaviour
-
-仲間の自動拾いの変更
-%%%%
-show Inventory list
-
-持ち物の表示
-%%%%
-show inventory of equipped items
-
-装備の表示
-%%%%
-inscribe item
-
-銘を刻む
-%%%%
-Fire next appropriate item
-
-装填されたアイテムを発射する
-%%%%
-select an item and Fire it
-
-アイテムを選び、発射する
-%%%%
-select item slot to be quivered
-
-アイテムの装填
-%%%%
-Drain corpses
-
-死体を吸う
-%%%%
-Eat food
-
-食糧を食べる
-%%%%
-(tries floor first)
-
-(初めに床にある物を)
-%%%%
-Quaff a potion
-
-薬を飲む
-%%%%
-Read a scroll or book
-
-本か巻物を読む
-%%%%
-Memorise a spell from a book
-
-魔法書から記憶する
-%%%%
-Wield an item (<w>-</w> for none)
-
-アイテムを手に持つ (<w>-</w> で外す)
-%%%%
-wield item a, or switch to b
-
-持っているアイテムをa,bの物に変更する
-%%%%
-(use <w>%</w> to assign slots)
-
-    (<w>=</w> でアイテムの入れ替え)
-%%%%
-eVoke power of wielded item
-
-手に持ったアイテムを発動する
-%%%%
-eVoke wand and miscellaneous item
-
-ワンド、その他のアイテムの発動
-%%%%
-<w>%</w>/<w>%</w> : Wear or Take off armour
-
-<w>W</w>/<w>T</w> : 鎧の装備、取り外し
-%%%%
-<w>%</w>/<w>%</w> : Put on or Remove jewellery
-
-<w>P</w>/<w>R</w> : 装飾品の装備、取り外し
-%%%%
-pick up items (also <w>g</w>)
-
-アイテムを拾う (<w>g</w>も同じ)
-%%%%
-Drop an item
-
-アイテムを落とす
-%%%%
-<w>%#</w>: Drop exact number of items
-
-<w>d#</w>: 個数を指定して落とす
-%%%%
-Drop the last item(s) you picked up
-
-最後に拾ったアイテムを落とす
-%%%%
-Chop up a corpse
-
-死体を捌く
-%%%%
-Drain corpses on
-
-床の死体から吸血する
-%%%%
-Eat food from
-
-床の食糧を食べる
-%%%%
-list all spells
-
-記憶した呪文の一覧
-%%%%
-display worn jewellery
-
-装備している装飾品の表示
-%%%%
-<w>/ Dir.</w>, <w>Shift-Dir.</w>: long walk
-
-<w>/ Dir.</w>, <w>Shift-Dir.</w>: 長距離移動
-%%%%
-<w>* Dir.</w>, <w>Ctrl-Dir.</w> : open/close door,
-
-<w>* Dir.</w>, <w>Ctrl-Dir.</w> : 扉の開閉,
-%%%%
-untrap, attack without move
-
-罠の解除、移動せずに攻撃
-%%%%
-<h>Other Gameplay Actions:
-
-<h>その他の操作:
-%%%%
-<h>Non-Gameplay Commands / Info
-
-<h>情報/設定コマンド
-%%%%
-<h>Game Saving and Quitting:
-
-ゲームのセーブと終了:
-%%%%
-<w>%</w>/<w>%</w> : Open/Close door
-
-<w>O</w>/<w>C</w> : 扉を開く/閉じる
-%%%%
-<w>%</w>/<w>%</w> : use staircase
-
-<w><</w>/<w>></w> : 階段を使う
-%%%%
-eXamine level map (<w>%?</w> for help)
-
-階層のマップを調べる (<w>X?</w> でヘルプ)
-%%%%
-<h>Item Interaction (inventory):
-
-<h>アイテムへの干渉 (持ち物):
-%%%%
-<h>Item Interaction (floor):
-
-<h>アイテムへの干渉 (床):
-%%%%
-(press twice for pick up menu)
-
-    (二回入力することでメニューを開く)
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-#########################################################
-#cloud.cc
-#########################################################
-
-
-
-#mprf(MSGCH_ERROR, "Invalid tile requested for cloud: '%s'.", tile.c_str());
-%%%%
-The forest fire spreads!
-
-森から火が噴きあがった！
-#mpr("The forest fire spreads!");
-%%%%
-The rain has left you waist-deep in water!
-
-雨はあなたの腰までの深さが残っている！
-#mpr("The rain has left you waist-deep in water!");
-%%%%
-%s %s in the rain.
-
-%s は雨の中で %s
-%%%%
-steam
-
-蒸されている
-%%%%
-sizzle
-
-焼けるように暑がっている
-#mprf("%s %s in the rain.",
-#                     act->name(DESC_THE).c_str(),
-#                     act->conj_verb(silenced(act->pos())?
-#                                    "steam" : "sizzle").c_str());
-%%%%
-You choke on the stench!
-
-あなたは悪臭で窒息しそうだ!
-#mpr("You choke on the stench!");
-%%%%
-%s %s standing in the rain.
-
-%s %s 雨の中に立っている
-#mprf("%s %s standing in the rain.",
-#                     act->name(DESC_THE).c_str(),
-#                     act->conj_verb("are").c_str());
-%%%%
-%s %s in %s.
-
-%s は %s に%s
-%%%%
-baskin
-
-浸っている
-#mprf("%s %s in %s.",
-#                 act->name(DESC_THE).c_str(),
-#                 beneficial ? act->conj_verb("bask").c_str()
-#                 : (act->conj_verb("are") + " engulfed").c_str(),
-#                 cloud_name().c_str());
-%%%%
-are engulfedin
-
-飲み込まれている
-%%%%
-#########################################################
-#behold.cc
-#########################################################
-%s's singing sounds muted, and has no effect on you.
-
-%s の歌声は不明瞭であり、そのためあなたに効果が無い
-#mprf("%s's singing sounds muted, and has no effect on you.",
-#                     mon->name(DESC_THE).c_str());
-%%%%
-The melody is strangely muted, and has no effect on you.
-
-旋律は妙に不明瞭であり、そのためあなたに効果が無い
-#mpr("The melody is strangely muted, and has no effect on you.");
-%%%%
-%s's is no longer quite as mesmerising!
-
-%s はもはや魅了されていない！
-#mprf("%s's is no longer quite as mesmerising!", mon->name(DESC_THE).c_str());
-%%%%
-Your mesmeriser suddenly seems less interesting!
-
-突然に彼女に興味が無くなった！
-#mpr("Your mesmeriser suddenly seems less interesting!");
-%%%%
-You are mesmerised by %s!
-
-あなたは %s によって魅了されている
-#mprf(MSGCH_WARN, "You are mesmerised by %s!",
-#                             mon->name(DESC_THE).c_str());
-%%%%
-For a moment, your mind becomes perfectly clear!
-
-一瞬、あなたの精神は完全に澄みきった！
-#mprf("For a moment, your mind becomes perfectly clear!");
-%%%%
-%s's singing becomes strangely muted.
-
-%s の歌は奇妙に静まった
-#mprf("%s's singing becomes strangely muted.",
-#                     mon->name(DESC_THE).c_str());
-%%%%
-Something's singing becomes strangely muted.
-
-何者かの歌は奇妙に静まった
-#mpr("Something's singing becomes strangely muted.");
-%%%%
-You can no longer hear %s's singing!
-
-あなたは %s の歌を聴くことができなくなった
-#mprf("You can no longer hear %s's singing!",
-#                     mon->name(DESC_THE).c_str());
-%%%%
-The silence clears your mind.
-
-静寂はあなたの心を澄みきらせた
-#mpr("The silence clears your mind.");
-%%%%
-%s stops singing.
-
-%s は歌をやめた
-# mprf("%s stops singing.", mon->name(DESC_THE).c_str());
-%%%%
-%s is no longer quite as mesmerising!
-
-%s はもはや魅了されていない！
-%%%%
-Something stops singing.
-
-何者かは歌をやめた
-#mpr("Something stops singing.");
-%%%%
-Your mesmeriser is now quite boring
-
-彼女は今かなり退屈そうだ
-#mpr("Your mesmeriser is now quite boring!");
-%%%%
-You break out of your daze!
-
-あなたは眩暈から抜け出した！
-#mpr(coinflip() ? "You break out of your daze!"
-#                       : "You are no longer entranced.",
-%%%%
-You are no longer entranced.
-
-あなたはもう魅了されていない
-%%%%
-#########################################################
+######################################
 #beam.cc
 #########################################################
 %%%%
@@ -23084,195 +21099,18 @@ You feel %sfirmly anchored in space.
 
 あなたは%sしっかりと空間に固定されていると感じた
 %%%%
-Your teleport is interrupted.
 
-あなたのテレポートは中断された
-%%%%
-Your magical defenses are stripped away!
-
-あなたの魔法防御ははぎ取られた！
-%%%%
-The %s %s you!
-
-%s はあなたに%s!
-%%%%
-Your attached jelly eats %s!
-
-あなたに付属しているジェリーは%sを食べた！
-%%%%
-%s magical defenses are stripped away.
-
-%sの魔法防御ははぎ取られた
-%%%%
-That %s is likely to hit you. Continue anyway?
-
-その%sはあなたに命中します。本当に続行しますか？
-%%%%
-The %s passes through %s.
-
-%sは %s を通過した
-%%%%
-The %s %s %s.
-
-%sは%sに%s
-%%%%
-somethingni
-
-何者か
-%%%%
-beam
-
-光線
-#"beam"
-%%%%
-Continue anyway?
-
- 本当に続行しますか？
-%%%%
-You hear a mighty clap of thunder!
-
-あなたは雷鳴が力強く轟くのを耳にした！
-%%%%
-The grate screeches as it bends and collapses.
-
-鉄格子は折れ曲がり音を立てた
-%%%%
-You hear the screech of bent metal.
-
-あなたは金属が曲がったような音を聞いた
-%%%%
-The grate bends and collapses.
-
-鉄格子は曲がり、崩壊した
-%%%%
-You hear a hideous screaming!
-
-あなたは恐ろしい叫び声を聞いた！
-%%%%
-The idol screams as its substance crumbles away!
-
-偶像を構成する物質が崩壊し、叫び声をあげた！
-%%%%
-The idol twists and shakes as its substance crumbles away!
-
-偶像を構成する物質が崩壊し、捩れ、叫び声をあげた！
-%%%%
-The tree breaks and falls down!
-
-木は破壊され、倒れた！
-%%%%
-You hear timber falling.
-
-あなたは木が倒れる音を聞いた
-%%%%
 
 #mprf(MSGCH_ERROR, "Couldn't find zap type %d", z_type);
-%%%%
-%s appears from out of thin air!
-
-%sは何処からともなく現れた！
-#mprf("%s appears from out of thin air!",
-#                 article_a(name, false).c_str());
-%%%%
-You hear a grinding noise.
-
-あなたは岩を削る騒音を耳にした。
-#mpr("You hear a grinding noise.", MSGCH_SOUND);
-%%%%
-The damaged grate falls apart.
-
-壊れかけた格子は崩れ去った
-# mpr("The damaged grate falls apart.");
-%%%%
-%s %s shatters into small pieces.
-
-%s %sは小さな欠片に砕け散った
-#mprf("%s %s shatters into small pieces.",
-#                 agent() && agent()->is_player() ? "The" : "Some",
-#                 wall.c_str());
-%%%%
-slimeno
-
-粘液性の
-%%%%
-weird stuffno
-
-不気味な素材の
-%%%%
-rockno
-
-岩の
-#mprf("The %s protects %s from harm.",
-#                     raw_feature_description(act->pos()).c_str(),
-#                     act->name(DESC_THE).c_str());
-%%%%
-%s appears from out of your range of vision.
-
-%s はあなたの視界外から現れた
-#mprf("%s appears from out of your range of vision.",
-#                 article_a(name, false).c_str());
-%%%%
-appears unharmed.
-
-は損傷を受けていないようだ
 %%%%
 The beam of light passes harmlessly through %s.
 
 %sに光の光線は無害のようだ
 %%%%
-is burned terribly!
-
-は酷く焼けただれた！
-#mprf("The beam of light passes harmlessly through %s.",
-#                         mons->name(DESC_THE, true).c_str());
-%%%%
-The orb of energy explodes!
-
-エネルギーの球体が爆発した
-#mpr("The orb of energy explodes!");
-%%%%
-The wave splashes down.
-
-波がぶつかってきた
-#mprf("The wave splashes down.");
-%%%%
-You hear a splash
-
-あなたは波の音を聞いた
-%%%%
-A fungus suddenly grows.
-
-菌は突然大きくなった
-#mpr("A fungus suddenly grows.");
-%%%%
-You hear a sizzling sound!
-
-あなたはジュージューという音を耳にした。
-#mpr("You hear a sizzling sound!", MSGCH_SOUND);
-%%%%
-The %s %s you!
-
-%sはあなたに%s!
-#mprf("The %s %s you!", name.c_str(), hit_verb.c_str());
-%%%%
-engulfs
-
-包み込んだ
-%%%%
-hits
-
-当てた
 %%%%
 reflects
 
 反射した
-Your %s reflects the %s!
-
-あなたの%sは%sを反射した！
-#mprf("Your %s reflects the %s!",
-#                      you.shield()->name(DESC_PLAIN).c_str(),
-#                      name.c_str());
-#                ident_reflector(you.shield());
 %%%%
 out as the
 
@@ -23282,14 +21120,8 @@ passes through
 
 を躱した
 %%%%
-You block the %s.
-
-あなたは%sを防衛した
-#mprf("You block the %s.", name.c_str());
-%%%%
 The %s misses you.
 
-%sはあなたに当たらなかった
 %%%%
 misses
 
@@ -23308,25 +21140,13 @@ repels_mon
 
 防いだ
 %%%%
-The %s is repelled.
-
-%sは防御された
-%%%%
-You deflect the %s!
-
-あなたは%sを阻止した！
-#mprf(defl == 1 ? "The %s is repelled." : "You deflect the %s!",
-#             name.c_str());
-%%%%
 You momentarily phase out as the %s passes through you.
 
-一時的な防御が時間切れになったと感じた
 #mprf("You momentarily phase out as the %s "
 #             "passes through you.", name.c_str());
 %%%%
 Helpless, you fail to dodge the %s.
 
-為す術が無い！あなたは%sの回避に失敗した
 #mprf("The %s %s you!", name.c_str(), hit_verb.c_str());
 %%%%
 Helpless
@@ -23338,89 +21158,14 @@ you fail to dodge the
 
 の回避に失敗した
 %%%%
-Something tries to affect you, but you resist.
-
-何かがあなたに影響を及ぼそうとした。しかしあなたは抵抗した
-#mpr("Something tries to affect you, but you resist.");
-%%%%
-Strange energies course through your body.
-
-奇怪なエネルギーがあなたの体内を激しく流れた。
-#mpr("Strange energies course through your body.");
-%%%%
-This spell isn't strong enough to banish yourself.
-
-この呪文はあなたを追放するほど強力ではない。
-#pr("This spell isn't strong enough to banish yourself.");
-%%%%
-Your body is wracked with pain!
-
-あなたの肉体は苦痛に破壊された！
-#mpr("Your body is wracked with pain!");
-%%%%
-Pain shoots through your body!
-
-苦痛があなたの体を撃ち抜いた！
-#mpr("Pain shoots through your body!");
-%%%%
-You convulse!
-
-あなたは激しく痙攣した！
-#mpr("You convulse!");
-%%%%
 You are blasted!
 
-あなたは爆破された！
 #mpr("You are blasted!");
-%%%%
-You feel like a pig.
-
-あなたは豚のようになった
-#mpr("You feel like a pig.");
 %%%%
 
 
 
 #mpr("Software bugs nibble your toes!");
-%%%%
-The sticky flame splashes onto %s!
-
-%sに焼夷の炎が炸裂した
-#mprf("The sticky flame splashes onto %s!",
-#                         mi->name(DESC_THE).c_str());
-%%%%
-%s %s blown backwards by the freezing wind.
-
-%s %s 凍える風によって後方に吹き飛ばされた
-#mprf("%s %s blown backwards by the freezing wind.",
-#                     act->name(DESC_THE).c_str(),
-#                     act->conj_verb("are").c_str());
-%%%%
-%s %s knocked back by the %s.
-
-%s %s %sに後方に押し返された
-#mprf("%s %s knocked back by the %s.",
-#                     act->name(DESC_THE).c_str(),
-#                     act->conj_verb("are").c_str(),
-#                     name.c_str());
-%%%%
-%s reflects the %s off %s!
-
-%sは%sで%sを跳ね返した！
-#mprf("%s reflects the %s off %s %s!",
-#                         mon->name(DESC_THE).c_str(),
-#                         name.c_str(),
-#                         mon->pronoun(PRONOUN_POSSESSIVE).c_str(),
-#                         shield->name(DESC_PLAIN).c_str());
-%%%%
-The %s bounces off of thin air!
-
-%sは跳ね返されて消えた
-# mprf("The %s bounces off of thin air!", name.c_str());
-%%%%
-%s blocks the %s.
-
-%s は %s を防御した
 %%%%
 block
 
@@ -23429,239 +21174,13 @@ block
 #                     mon->name(DESC_THE).c_str(), name.c_str());
 %%%%
 
-%%%%
-You hear a hideous screaming!
-
-あなたは耳障りな金切り声を耳にした！
-#mpr("You hear a hideous screaming!", MSGCH_SOUND);
-%%%%
-The statue screams as its substance crumbles away!
-
-像は金切り声をあげながら崩壊した！
-#mpr("The statue screams as its substance crumbles away!",
-#                    MSGCH_SOUND);
-%%%%
-The statue twists and shakes as its substance crumbles away!
-
-像は捻れ、振動し、そして崩壊した！
-#mpr("The statue twists and shakes as its substance "
-#                "crumbles away!");
-%%%%
-The %s %s %s.
-
-%sは %s を %s
-#mprf("The %s %s %s.",
-#             name.c_str(),
-##            hit_verb.c_str(),
-#            mon->observable() ?
-#                 mon->name(DESC_THE).c_str() : "something");
-%%%%
-
 
 
 #mprf(MSGCH_SOUND, "%s", noise_msg.c_str());
 %%%%
-The %s hits something.
-
-%s は何者かに当てた
-#mprf(MSGCH_SOUND, "The %s hits something.", name.c_str());
-%%%%
-for a moment.
-
-一瞬
-%%%%
 natta
 
 なった
-%%%%
-%s,%s%s
-
-%sは%s%sになった
-#mprf("%s %s%s",
-#                 monster_name.c_str(),
-#                 how.c_str(),
-#                 is_visible ? " for a moment."
-#                            : "!");
-%%%%
-By Zin's power contained
-
-はジンの力により抑制された
-#  mprf(MSGCH_GOD, "By Zin's power, the %s is contained.",
-#                 name.c_str());
-%%%%
-flickers and vanishes
-
-明転し透明
-%%%%
-#########################################################
-#arena.cc
-#########################################################
-
-
-
-#mpr("The sanctuary starts shrinking.", MSGCH_DURATION);
-%%%%
-
-
-
-#mpr("The sanctuary disappears.", MSGCH_DURATION);
-%%%%
-
-
-
-#mpr("By Zin's power, hidden traps are revealed to you.",
-#            MSGCH_GOD);
-%%%%
-
-
-
-#mpr("By Zin's power, the foul cloud within the sanctuary is "
-#            "swept away.", MSGCH_GOD);
-%%%%
-
-
-
-# mpr("By Zin's power, all foul fumes within the sanctuary are "
-#            "swept away.", MSGCH_GOD);
-%%%%
-
-
-
-#mpr("By Zin's power, all blood is cleared from the sanctuary.",
-#            MSGCH_GOD);
-%%%%
-
-
-
-# mpr("The monsters scatter in all directions!");
-%%%%
-#########################################################
-#areas.cc
-#########################################################
-revokes the gift of sanctuary.
-
- は聖域を取り消した
-%%%%
-The sanctuary starts shrinking
-
-聖域は萎縮を始めた
-%%%%
-The sanctuary disappears.
-
-聖域は消え去った
-%%%%
-By Zin's power, hidden traps are revealed to you.
-
-ジンの力によって隠されたトラップは明らかになった
-%%%%
-By Zin's power, the foul cloud within the sanctuary is swept away.
-
-ジンの力によって有害な雲は浄化された
-%%%%
-By Zin's power, all foul fumes within the sanctuary are swept away.
-
-ジンの力によって有害な毒気は浄化された
-%%%%
-By Zin's power, all blood is cleared from the sanctuary.
-
-ジンの力によって全ての流血は聖域から浄化された
-%%%%
-The monsters scatter in all directions!
-
-全ての方向にモンスターは散乱した!
-%%%%
-#########################################################
-#actor.cc
-#########################################################
-%s fall off the %s.
-
-%sは%sから落下した
-%%%%
-door
-
-扉
-%%%%
-wall
-
-壁
-#            mprf("%s fall%s off the %s.", name(DESC_THE).c_str(),
-#                 is_player() ? "" : "s", door ? "door" : "wall");
-#
-#
-%%%%
-%s %s %s grip on %s.
-
-%sは%sを締付けから%s
-#mprf(getGameStartDescription("%s %s %s grip on %s.").c_str(),
-#                name(DESC_THE).c_str(),
-#                conj_verb(intentional ? "release" : "lose").c_str(),
-#                pronoun(PRONOUN_POSSESSIVE).c_str(),
-##               constrictee->name(DESC_THE).c_str());
-%%%%
-grip on
-
-締め付けから
-%%%%
-release
-
-開放した
-%%%%
-%s %s constrict%s%s
-
-%s は %s を締め付けた%s%s
-%%%%
-%s constricted%s%s
-
-%s は締め付けられた%s%s
-%%%%
-lose
-
-失った
-%%%%
-constrict
-
-締め付けた
-%%%%
-constricted
-
-締め付けられた
-%%%%
-but do no damage.
-
-しかし損傷を与えられなかった。
-#########################################################
-#acquire.cc
-#########################################################
-The demon of the infinite void smiles upon you.
-
-無限の虚空に棲まう悪魔があなたに微笑みかけた。
-#mpr("The demon of the infinite void smiles upon you.");
-%%%%
-What kind of item would you like to acquire? (\\ to view known items)
-
-どの種類のアイテムを獲得しますか？(\で鑑定済みのアイテムを見ることができます)
-%%%%
-#mprf("%-29s[c] Jewellery [d] Book%s",
-#            you.species == SP_FELID ? "" : "[a] Weapon [b] Armour",
-#            you.species == SP_FELID ? "" : " [e] Staff");
-#        mprf("%-11s[g] Miscellaneous %-9s     [i] Gold %s",
-#            you.species == SP_FELID ? "" : "[f] Wand",
-#            you.species == SP_MUMMY ? "" : you.religion == GOD_FEDHAS ? "[h] Fruit" : "[h] Food ",
-#            you.species == SP_FELID ? "" : "[j] Ammunition");
-#        mpr("What kind of item would you like to acquire? (\\ to view known items)", MSGCH_PROMPT);
-%%%%
-#########################################################
-#abyss.cc
-#########################################################
-This place is already infused with evil and corruption.
-
-この空間は既に悪と崩壊に満たされている。
-#mpr("This place is already infused with evil and corruption.");
-%%%%
-'s Hand of Corruption reaches out!
-
- の崩壊の手は届かない！
-#
 %%%%
 #########################################################
 #newgame.cc
@@ -23679,339 +21198,11 @@ Newgame-1
 #########################################################
 #directn.cc
 #########################################################
-Press: ? - help
-
-入力: ? - ヘルプ
-%%%%
-, v - describe
-
-, v - 説明
-%%%%
-, . - travel
-
-, . - 探索
-%%%%
-, g - get item
-
-, g - アイテムを拾う
-%%%%
-, Shift-Dir - straight line
-
-, Shift-Dir - 真っ直ぐ
-%%%%
-, Dir - move target cursor
-
-, Dir - カーソルの移動
-%%%%
-No monsters, items or features are visible.
-
-視界内に怪物、アイテム、施設が無い
-%%%%
-There's something in the way.
-
-その方向には何かがある
-%%%%
-Sorry, you can't target what you can't see.
-
-残念ながら、目標を見ることが出来ない
-%%%%
-That would be overly suicidal.
-
-それは自殺的だ
-%%%%
-Really target yourself?
-
-本当にあなた自身を狙いますか？
-%%%%
-Sorry, you can't target yourself.
-
-残念ながら、あなたを標的にできない
-%%%%
-All monsters which could be auto-targeted are covered by a wall or statue which interrupts your line of fire, even though it doesn't interrupt your line of sight.
-
-モンスターは像、壁によって射線を遮断している
-%%%%
-To return to the main mode, press <w>Escape</w>.
-
-メインモードに入るには、<w>Escape</w> を押してください
-%%%%
-You can't see any item there.
-
-あなたはその場所のアイテムを見ることが出来ない
-%%%%
-Out of range.
-
-射程外だ
-%%%%
-%s: <lightgrey>%s</lightgrey>
-
-%s: <lightgrey>%s</lightgrey>
-%%%%
-Aim
-
-照準
-%%%%
-There is something else lying underneath.
-
-ここには何かがある
-%%%%
-This spell doesn't need a beam path.
-
-この呪文は光線のように経路を必要としない
-%%%%
-Your target is gone.
-
-あなたの目標は消え去った
-%%%%
-You cannot set exclusions on this level.
-
-あなたはこの階層に探索禁域を設定できない
-%%%%
-Placed new exclusion.
-
-新しい探索禁域を設定した
-%%%%
-Removed exclusion.
-
-探索禁域を削除した
-%%%%
-Reduced exclusion size to a single square.
-
-探索禁域のサイズを一マス分取り除いた
-%%%%
-There is
-
-ここには
-%%%%
-here.
-
-がある
-%%%%
-There is an entrance to
-
-ここは入口だ：
-%%%%
-Beware, for starvation awaits!
-
-注意せよ、飢餓が待ち受けている！
-%%%%
-wielding
-
-装備している
-%%%%
-sleepwalking
-
-寝ながら歩いている
-%%%%
-resting
-
-休息している
-%%%%
-retreating
-
-退却している
-%%%%
-hasn't noticed you
-
-あなたに気付いていない
-%%%%
-clinging
-
-登っている
-%%%%
-mesmerising
-
-魅了されている
-%%%%
-friendly
-
-友好的だ
-%%%%
-peaceful
-
-平和的だ
-%%%%
-indifferent
-
-無関心だ
-%%%%
-summoned
-
-召喚された
-%%%%
-durably summoned
-
-恒久的に召喚された
-%%%%
-haloed
-
-光輪に照らされた
-%%%%
-umbra
-
-影に覆われた
-%%%%
-suppressed
-
-抑圧されている
-%%%%
-possessable
-
-所有できる
-%%%%
-disembodied soul
-
-実体が無い魂
-%%%%
-reflecting injuries
-
-損傷の反射
-%%%%
-inner flame
-
-内部からの発火
-%%%%
-is retreating.\n
-
-は退却している\n
-%%%%
-doesn't appear to have noticed you.\n
-
-はあなたに気付いているように見えない\n
-%%%%
-is friendly.\n
-
-は友好的だ\n
-%%%%
-seems to be peaceful towards you.\n
-
-はあなたに対して平和的に見える\n
-%%%%
-is indifferent to you.\n
-
-はあなたに無関心のようだ\n
-%%%%
-has been summoned.\n
-
-は召喚されている\n
 %%%%
 has been summoned but will not time out.\n
 
 は恒久的に召喚されている\n
 %%%%
-is illuminated by a divine halo.\n
-
-は神聖な光輪によって照らされている\n
-%%%%
-is wreathed by an unholy umbra.\n
-
-は不浄な影に取りつかれている\n
-%%%%
-is surrounded by an aura of magical suppression.\n
-
-は魔法的な抑圧のオーラに囲まれている\n
-%%%%
-is mindless.\n
-
-には精神が無い\n
-%%%%
-is chaotic.\n
-
-は混沌の存在だ\n
-%%%%
-soul is ripe for the taking.\n
-
-の魂は刈り取られ奪われた\n
-%%%%
-is a disembodied soul.\n
-
-は実体の無い魂だ\n
-%%%%
-is reflecting injuries back at attackers.\n
-
-は攻撃してきた者に損傷を反射する\n
-%%%%
-is filled with an inner flame.\n
-
-は内部からの発火に満たされている
-%%%%
-charmed
-
-魅了された
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-neutral
-
-自然な
-%%%%
-dancing weapon
-
-踊る武器
-%%%%
-pandemonium lord
-
-パンデモニウムの君主
-%%%%
-ghost
-
-幽霊
-%%%%
-illusion
-
-幻影
-%%%%
-This square %s.
-
-このマスには%s
-%%%%
-There is a cloud of %s here.
-
-ここには%sの雲がある
-%%%%
-You see %s here.
-
-ここには%sが見える
-%%%%
-You.
-
-あなただ
-%%%%
-There is a strange disturbance in the water here.
-
-ここの水面には奇妙な乱れがある
-%%%%
-There is a strange disturbance in the cloud here.
-
-ここの雲には奇妙な乱れがある
-%%%%
-%s is out of range.
-
-%sは射程外だ
-%%%%
-(<w>Right-click</w> for more information.)
-
-(<w>Right-click</w> で更なる説明を見る)
-%%%%
-(Press <w>v</w> for more information.)
-
-( <w>v</w> で更なる説明を見る)
-%%%%
-(Right-click for more information.)
-
-(Right-click で更なる説明を見る)
-%%%%
-(Press 'v' for more information.)
-
-( 'v' で更なる説明を見る)
-%%%%
-
 Directn-1
 
 ここには
@@ -24046,44 +21237,6 @@ shita
 
 した
 #
-%%%%
-#########################################################
-#attack.cc
-#########################################################
-completely
-
- 完全に
-#" completely" :
-%%%%
-closely
-
- 殆ど
-#" closely"
-%%%%
-barely
-
- 僅かに
-#" barely";
-%%%%
-its
-
-それの
-%%%%
-itself
-
-それ自身の
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
 %%%%
 #########################################################
 #misc.cc
@@ -24298,6 +21451,46 @@ The portal repels %s, its terrible forces doing untold damage!
 ##################################################
 #status.cc
 ##################################################
+%%%%
+engulfed (cannot breathe)
+
+浸水している(ブレスを吐く事が出来ない)
+%%%%
+You are engulfed in water and unable to breathe.
+
+あなたは浸水しており、ブレスを吐くことができない
+%%%%
+Drain
+
+衰弱
+%%%%
+very heavily drained
+
+とても重い衰弱
+%%%%
+Your life force is very heavily drained.
+
+あなたの生命力はとても重く衰弱している
+%%%%
+heavily drained
+
+重い衰弱
+%%%%
+Your life force is heavily drained.
+
+あなたの生命力は重い衰弱している
+%%%%
+drained_sta
+
+衰弱している
+%%%%
+Your life force is drained.
+
+あなたの
+%%%%
+Ray
+
+光線
 %%%%
 You are studyingwo
 
@@ -25413,25 +22606,6 @@ Drop what? (_ for help)
 ######################
 #simple_monster_message
 ######################
-abandons you!
-
-はあなたを見捨てた！
-%%%%
-turns against you!
-
-はあなたに敵対した！
-%%%%
-is freed.
-
-は自由になった
-%%%%
-becomes indifferent.
-
-は無関心になった
-%%%%
-protects you from inadvertent hurry.
-
-
 %%%%
 is converted.
 
@@ -25683,165 +22857,13 @@ is pulled into the abyss.
 は奈落の底に引き込まれた
 %%%%
 #####beam#####
-completely resists.
-
-は完全に抵抗した
-%%%%
-appears unharmed.
-
-は損傷を受けていない
-%%%%
-melts!
-
-は融けた！
-%%%%
-is on fire!
-
-は燃えている！
-%%%%
-is burned terribly!
-
-は酷く焼けている！
-%%%%
-is scalded terribly!
-
-はひどく火傷をしている！
-%%%%
-shrugs off the wave.
-
-は波に肩をすくめた
-%%%%
-is frozen!
-
-は凍えた！
-%%%%
-%s frozen.
-
-%sは凍えた
 %%%%
 The monsters around %s are frozen!
 
 %sの周囲のモンスターは凍えた!
 %%%%
-partially resists.
-
-は部分的に抵抗した
-%%%%
-writhes in agony!
-
-は苦痛に身もだえした！
-%%%%
-is seared!
-
-は焼き爛れた！
-%%%%
-is burned terribly!
-
-は恐ろしく燃え上がった！
-%%%%
-is harmlessly tossed around.
-
-は無害の風に翻弄されている
-%%%%
 gets badly buffeted.
 
-は酷く打ちのめされた
-%%%%
-suddenly stops moving!
-
-は突然動きを停止した！
-%%%%
-is moving more slowly.
-
-は動きが遅くなった
-%%%%
-convulses.
-
-は激しく振動した
-%%%%
-looks even sicker.
-
-は更に重く毒に冒されたようだ
-%%%%
-is poisoned.
-
-は毒に冒されたようだ
-%%%%
-is covered in liquid flames!
-
-は燃えたぎる液体に包まれた！
-%%%%
-is dazzled.
-
-は目がくらんでいる
-%%%%
-protects %s plant from harm.
-
-は%s植物を損傷から守った
-%%%%
-wobbles for a moment.
-
-は一瞬ぐらついた
-%%%%
-'s soul is too badly injured.
-
-の魂は酷く傷ついた
-%%%%
-'s soul is now ripe for the taking.
-
-の魂は刈り取られた
-%%%%
-is blasted.
-
-は爆破された
-%%%%
-looks drowsy...
-
-は眠たくなった...
-%%%%
-convulses in agony!
-
-は苦痛にのた打ち回った！
-%%%%
-seems to speed up.
-
-は加速した
-%%%%
-seems to grow stronger.
-
-は力強くなった
-%%%%
-'s wounds heal themselves!
-
-の傷は良くなった！
-%%%%
-is healed somewhat.
-
-は癒された
-%%%%
-appears confused.
-
-は混乱した
-%%%%
-falls asleep!
-
-は眠りに落ちた！
-%%%%
-is repulsed!
-
-は撃退された！
-%%%%
-is charmed.
-
-は魅了された
-%%%%
-is filled with an intense inner flame!
-
-は強烈な内なる炎に満たされている！
-%%%%
-is filled with an inner flame.
-
-は内なる炎に満たされている！
 %%%%
 You hear an explosion!
 
@@ -25902,10 +22924,6 @@ The silver bolt explodes into a blast of light!
 The dungeon gets brighter for a moment.
 
 一瞬迷宮内に激しい閃光が発生した
-%%%%
-convulses!
-
-は身震いした！
 %%%%
 is blasted by Zin's holy word!
 
@@ -27050,38 +24068,6 @@ Omniscient
 
 全知全能の賢者
 %%%%
-It greatly speeds your metabolism.
-
-これはあなたの新陳代謝を非常に加速する。
-%%%%
-It speeds your metabolism.
-
-これはあなたの新陳代謝を加速する。
-%%%%
-It greatly slows your metabolism.
-
-これはあなたの新陳代謝を減速する。
-%%%%
-It slows your metabolism.
-
-これはあなたの新陳代謝を減速する。
-%%%%
-It makes you %s%s stealthy.
-
-これはあなたの隠密性を%s%s。
-%%%%
-much
-
-とても
-%%%%
-less_des
-
-減少させる
-%%%%
-more_des
-
-増加させる
-%%%%
 It affects your evasion (%d).
 
 それはあなたのAC(%d)に影響する
@@ -27184,385 +24170,7 @@ de
 #####################################
 #ability(abl-show.ccに移動予定)
 ######################################
-Lesser Healing
-
-小さき癒し
 %%%%
-No ability
-
-特殊能力なし
-%%%%
-Spit Poison
-
-毒の唾液
-%%%%
-Blink
-
-瞬間移動
-%%%%
-Breathe Fire
-
-火炎のブレス
-%%%%
-Breathe Frost
-
-凍気のブレス
-%%%%
-Breathe Poison Gas
-
-毒ガスのブレス
-%%%%
-Breathe Noxious Fumes
-
-悪臭雲のブレス
-%%%%
-Breathe Lightning
-
-稲妻のブレス
-%%%%
-Breathe Dispelling Energy
-
-解呪のブレス
-%%%%
-Breathe Sticky Flame
-
-焼夷のブレス
-%%%%
-Breathe Steam
-
-蒸気のブレス
-%%%%
-Bat Form
-
-蝙蝠の躰
-%%%%
-Bottle Blood
-
-血の薬の作成
-%%%%
-Spit Acid
-
-酸の唾液
-%%%%
-#Fly
-
-
-%%%%
-Stop Flying
-
-飛行の停止
-%%%%
-Hellfire
-
-地獄の業火
-%%%%
-Release Delayed Fireball
-
-遅延式ファイアボール
-%%%%
-Self-Restoration
-
-能力の回復
-%%%%
-Evoke Teleportation
-
-テレポートの喚起
-%%%%
-Evoke Blink
-
-瞬間移動の喚起
-%%%%
-Device Recharging
-
-魔法道具の充填
-%%%%
-Evoke Berserk Rage
-
-バーサークの喚起
-%%%%
-Evoke Invisibility
-
-透明化の喚起
-%%%%
-Turn Visible
-
-可視の存在に戻る
-%%%%
-Evoke Flight
-
-飛行の喚起
-%%%%
-Evoke Fog
-
-煙幕の喚起
-%%%%
-Recite
-
-朗読
-%%%%
-Vitalisation
-
-生命の活性化
-%%%%
-Imprison
-
-収監
-%%%%
-Sanctuary
-
-聖域
-%%%%
-Cure All Mutations
-
-全ての突然変異の治療
-%%%%
-Divine Shield
-
-神気の盾
-%%%%
-Cleansing Flame
-
-浄化の炎
-%%%%
-Summon Divine Warrior
-
-神聖な従者の召喚
-%%%%
-Receive Corpses
-
-死体の受理
-%%%%
-Torment
-
-苦痛の紋章
-%%%%
-Injury Mirror
-
-損傷の反射
-%%%%
-Animate Remains
-
-死体の蘇生
-%%%%
-Recall Undead Slaves
-
-不死の僕の招集
-%%%%
-Animate Dead
-
-死者達の蘇生
-%%%%
-Drain Life
-
-生命力の吸収
-%%%%
-Enslave Soul
-
-魂の隷属
-%%%%
-Animate Remains or Dead
-
-死者の蘇生
-%%%%
-Heroism
-
-英雄補正
-%%%%
-Finesse
-
-早業の技巧
-%%%%
-Minor Destruction
-
-小さき破壊
-%%%%
-Lesser Servant of Makhleb
-
-マクレブの小さきしもべ
-%%%%
-Major Destruction
-
-大いなる破壊
-%%%%
-Greater Servant of Makhleb
-
-マクレブの大いなるしもべ
-%%%%
-Channel Energy
-
-魔力の吸収
-%%%%
-Forget Spell
-
-呪文の忘却
-%%%%
-Burn Spellbooks
-
-魔法書の焼却
-%%%%
-End Transformation
-
-変身の停止
-%%%%
-Berserk
-
-バーサーク
-%%%%
-Trog's Hand
-
-トログの御手
-%%%%
-Brothers in Arms
-
-戦友の召喚
-%%%%
-Divine Protection
-
-絶対絶命時の防護
-%%%%
-Lesser Self-Healing
-
-小さき癒し
-%%%%
-Lesser Healing
-
-他者への小さき癒し
-%%%%
-Purification
-
-聖杯の清め
-%%%%
-Greater Self-Healing
-
-大いなる癒し
-%%%%
-Greater Healing
-
-他者への大いなる癒し
-%%%%
-Divine Vigour
-
-神秘の活力
-%%%%
-Depart the Abyss
-
-アビスからの離脱
-%%%%
-Bend Space
-
-空間の歪曲
-%%%%
-Banish
-
-追放
-%%%%
-Corrupt
-
-階層の崩壊
-%%%%
-Enter the Abyss
-
-アビスへの門
-%%%%
-Draw One
-
-ドロー・ワン
-%%%%
-Peek at Two
-
-ピーク・ツー
-%%%%
-Triple Draw
-
-トリプル・ドロー
-%%%%
-Deal Four
-
-ディール・フォー
-%%%%
-Stack Five
-
-スタック・ファイブ
-%%%%
-Smiting
-
-打擲の一撃
-%%%%
-Recall Orcish Followers
-
-オークの下僕の招集
-%%%%
-Request Jelly
-
-ジェリーの要請
-%%%%
-Jelly Paralyse
-
-ジェリーの停止
-%%%%
-Slimify
-
-スライム化
-%%%%
-Cure Bad Mutation
-
-悪性変異の治療
-%%%%
-Evolution
-
-植物の改良
-%%%%
-Sunlight
-
-陽光
-%%%%
-Growth
-
-迷宮草の生育
-%%%%
-Reproduction
-
-胞子の繁殖
-%%%%
-Rain
-
-降雨
-%%%%
-Bend Time
-
-時間の歪曲
-%%%%
-Temporal Distortion
-
-現世の歪曲
-%%%%
-Slouch
-
-屈服
-%%%%
-Step From Time
-
-時間からの離脱
-%%%%
-Scrying
-
-幻視
-%%%%
-Transfer Knowledge
-
-知識の移行
-%%%%
-End Transfer Knowledge
-
-知識の移行の停止
-%%%%
-Stop recall
-
-招集の停止
-%%%%
-Renounce Religion
-
-信仰の放棄
 %%%%
 #the Shining One
 
@@ -28325,50 +24933,6 @@ appreciates your kill.
 
  はあなたの殺しを高く評価している
 %%%%
-#################################
-#attitude-change.cc
-##################################
-%%%%
-%s stares at you suspiciously for a moment, then relaxes.
-
-%sの視線は一瞬疑い深くあなたに向けられたが、その後緩和された
-%%%%
-%s trembles before you.
-
-%sはあなたの前で揺れ出した
-%%%%
-%s looks hungrier.
-
-%sは食物に飢えているように見える
-%%%%
-reclaims one of your granted undead slaves!
-
- はあなたに与えた不死の奴隷を回収した！
-%%%%
-reclaims your granted undead slaves!
-
- はあなたに与えた不死の奴隷達を回収した！
-%%%%
-reclaims some of your granted undead slaves!
-
- はあなたに与えた不死の奴隷達を回収した！
-%%%%
-'s voice booms out, \"Who do you think you are?\"
-
- の声が響き渡った:『お前は何を考えているのだ？』
-%%%%
-One of your followers decides to abandon you.
-
-あなたの信奉者はあなたを裏切った！
-%%%%
-Your followers decide to abandon you.
-
-あなたの信奉者達はあなたを裏切った！
-%%%%
-Some of your followers decide to abandon you.
-
-あなたの信奉者達はあなたを裏切った！
-%%%%
 #####################################################
 #godplayer.cc
 ######################################################
@@ -28469,40 +25033,6 @@ displeased
 
 %%%%
 
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
 %%%%
 
 
@@ -28587,9 +25117,9 @@ You cannot enchant this weapon.
 
 あなたはこの武器に魔力を込めることが出来ない
 %%%%
+restored
 
-
-
+は回復した
 %%%%
 
 
@@ -28623,6 +25153,50 @@ Your summoned allies%s are left behind.
 Your mindless thrall%s behind.
 
 あなたの精神なき奴隷は取り残された
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+severely
+
+激しく
+%%%%
+
+
+
 %%%%
 
 

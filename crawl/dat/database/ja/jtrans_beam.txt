@@ -1031,39 +1031,17 @@ beam_4649_repels
 #            << deflects << " the " << name
 #            << '!' << endl;
 %%%%
-beam_4650 
+%s %s the %s!
 
-は
+%sは%sを%s！
 #string deflects = (defl == 2) ? "deflects" : "repels";
 #msg::stream << mon->name(DESC_THE) << " "
 #            << deflects << " the " << name
 #            << '!' << endl;
 %%%%
-beam_4651 the 
+%s momentarily phases out as the %s passes through.
 
-を
-#string deflects = (defl == 2) ? "deflects" : "repels";
-#msg::stream << mon->name(DESC_THE) << " "
-#            << deflects << " the " << name
-#            << '!' << endl;
-%%%%
-beam_4658_ momentarily phases 
-は一瞬位相を
-
-#msg::stream << mon->name(DESC_THE) << " momentarily phases "
-#            << "out as the " << name << " passes through "
-#            << mon->pronoun(PRONOUN_OBJECTIVE) << ".\n";
-%%%%
-beam_4659_out as the 
-ずらして
-
-#msg::stream << mon->name(DESC_THE) << " momentarily phases "
-#            << "out as the " << name << " passes through "
-#            << mon->pronoun(PRONOUN_OBJECTIVE) << ".\n";
-%%%%
-passes through
-を擦り抜けた。
-
+%sは一瞬位相をずらして%sを擦り抜けた。
 #msg::stream << mon->name(DESC_THE) << " momentarily phases "
 #            << "out as the " << name << " passes through "
 #            << mon->pronoun(PRONOUN_OBJECTIVE) << ".\n";
@@ -1072,20 +1050,9 @@ passes through
 #
 #<< "\n";
 %%%%
-beam_4664_The 
+The %s misses %s.
 
-#msg::stream << "The " << name << " misses "
-#                      << mon->name(DESC_THE) << '.' << endl;
-%%%%
-beam_4664 
-は
-
-#msg::stream << "The " << name << " misses "
-#                      << mon->name(DESC_THE) << '.' << endl;
-%%%%
-beam_4665_misses
-から外れた。
-
+%sは%sから外れた。
 #msg::stream << "The " << name << " misses "
 #                      << mon->name(DESC_THE) << '.' << endl;
 %%%%

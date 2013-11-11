@@ -1,0 +1,1610 @@
+%%%%
+#, f/p - 
+#
+#hint_string = ", f/p - " + f_target->name(DESC_PLAIN);
+%%%%
+#, f - 
+#
+#hint_string += ", f - " + f_target->name(DESC_PLAIN);
+%%%%
+#, p - 
+#
+#hint_string += ", p - " + p_target->name(DESC_PLAIN);
+%%%%
+Press: ? - help
+
+入力: ? - ヘルプ
+#string prompt = jtrans("Press: ? - help");
+%%%%
+, v - describe
+
+, v - 説明
+#prompt += jtrans(", v - describe");
+%%%%
+, . - travel
+
+, . - 探索
+#prompt += jtrans(", . - travel");
+%%%%
+, g - get item
+
+, g - アイテムを拾う
+#prompt += jtrans(", g - get item");
+%%%%
+, Shift-Dir - straight line
+
+, Shift-Dir - 真っ直ぐ
+#prompt += jtrans(", Shift-Dir - straight line");
+%%%%
+, Dir - move target cursor
+
+, Dir - カーソルの移動
+#prompt += jtrans(", Dir - move target cursor");
+%%%%
+%s
+
+#void print(const string &str) { cprintf("%s", str.c_str()); }
+%%%%
+No items found in stash, but top item is %s
+
+#mprf(MSGCH_ERROR, "No items found in stash, but top item is %s",
+%%%%
+No monsters, items or features are visible.
+
+視界内に怪物、アイテム、施設が無い
+#mprf("%s",jtrans("No monsters, items or features are visible.").c_str());
+%%%%
+#
+#
+#string title = "";
+%%%%
+Monsters
+
+#title  = "Monsters";
+%%%%
+#/
+#
+#title += "/";
+%%%%
+Items
+
+#title += "Items";
+%%%%
+#/
+#
+#title += "/";
+%%%%
+Features
+
+#title += "Features";
+%%%%
+Visible 
+
+#title = "Visible " + title;
+%%%%
+ (select to view/travel, '!' to examine):
+
+#string title1 = title + " (select to view/travel, '!' to examine):";
+%%%%
+ (select for more detail, '!' to view/travel):
+
+#title += " (select for more detail, '!' to view/travel):";
+%%%%
+pickup
+
+#desc_menu.set_tag("pickup");
+%%%%
+Monsters
+
+#desc_menu.add_entry(new MenuEntry("Monsters", MEL_SUBTITLE));
+%%%%
+#
+#
+#string prefix = "";
+%%%%
+#>
+#
+#prefix = "(<" + col_string + ">"
+%%%%
+#<<
+#
+#+ (g.ch == '<' ? "<<" : stringize_glyph(g.ch))
+%%%%
+#>) 
+#
+#+ "</" + col_string + ">) ";
+%%%%
+, keeping you mesmerised
+
+#str += ", keeping you mesmerised";
+%%%%
+#, 
+#
+#str += ", " + mi->damage_desc();
+%%%%
+#, 
+#
+#str += ", " + consinfo;
+%%%%
+#         
+#
+#str = "         " + fss[j].tostring();
+%%%%
+Items
+
+#desc_menu.add_entry(new MenuEntry("Items", MEL_SUBTITLE));
+%%%%
+pickup
+
+#me->tag = "pickup";
+%%%%
+Features
+
+#desc_menu.add_entry(new MenuEntry("Features", MEL_SUBTITLE));
+%%%%
+#
+#
+#string desc = "";
+%%%%
+#>
+#
+#desc = "(<" + colour_str + ">";
+%%%%
+#>) 
+#
+#desc += "</" + colour_str +">) ";
+%%%%
+ (not visited)
+
+#desc += " (not visited)";
+%%%%
+#description
+#
+#me->tag        = "description";
+%%%%
+Here
+
+#args.target_prefix = "Here";
+%%%%
+Move the cursor around to observe a square.
+
+#args.may_target_monster = "Move the cursor around to observe a square.";
+%%%%
+There's something in the way.
+
+その方向には何かがある
+#mpr(jtrans("There's something in the way."),
+%%%%
+Sorry, you can't target what you can't see.
+
+残念ながら、目標を見ることが出来ない
+#mpr(jtrans("Sorry, you can't target what you can't see."),
+%%%%
+That would be overly suicidal.
+
+それは自殺的だ
+#mpr(jtrans("That would be overly suicidal."), MSGCH_EXAMINE_FILTER);
+%%%%
+Really target yourself?
+
+本当にあなた自身を狙いますか？
+#return yesno(jtrans("Really target yourself?").c_str(), false, 'n');
+%%%%
+Sorry, you can't target yourself.
+
+残念ながら、あなたを標的にできない
+#mpr(jtrans("Sorry, you can't target yourself."), MSGCH_EXAMINE_FILTER);
+%%%%
+Are you sure you want to fizzle?
+
+#return yesno("Are you sure you want to fizzle?", false, 'n');
+%%%%
+All monsters which could be auto-targeted are covered by a wall or statue which interrupts your line of fire, even though it doesn't interrupt your line of sight.
+
+モンスターは像、壁によって射線を遮断している
+#mpr(jtrans("All monsters which could be auto-targeted are covered by a wall or statue which interrupts your line of fire, even though it doesn't interrupt your line of sight."),
+%%%%
+To return to the main mode, press <w>Escape</w>.
+
+メインモードに入るには、<w>Escape</w> を押してください
+#mpr(jtrans("To return to the main mode, press <w>Escape</w>."),
+%%%%
+That is beyond the maximum range.
+
+#mpr(hitfunc? hitfunc->why_not : jtrans("That is beyond the maximum range."),
+%%%%
+You can't see any item there.
+
+あなたはその場所のアイテムを見ることが出来ない
+#mpr(jtrans("You can't see any item there."), MSGCH_EXAMINE_FILTER);
+%%%%
+Marked for pickup.
+
+#mpr(jtrans("Marked for pickup."), MSGCH_EXAMINE_FILTER);
+%%%%
+Targetting interrupted by HUP signal.
+
+#mpr("Targetting interrupted by HUP signal.", MSGCH_ERROR);
+%%%%
+Out of range.
+
+射程外だ
+#mpr(hitfunc ? hitfunc->why_not : jtrans("Out of range."), MSGCH_EXAMINE_FILTER);
+%%%%
+#water
+#
+#case DNGN_DEEP_WATER: return jtrans("water");
+%%%%
+#lava
+#
+#case DNGN_LAVA:       return jtrans("lava");
+%%%%
+#
+#
+#default:              return "";
+%%%%
+#
+#
+#return "";
+%%%%
+#
+#
+#return is_sanctuary(target()) ? "sanctuary" : "";
+%%%%
+#
+#
+#return silenced(target()) ? "silenced" : "";
+%%%%
+Disturbance
+
+#text = "Disturbance";
+%%%%
+# (
+#
+#text += " ("
+%%%%
+#, 
+#
+#+ comma_separated_line(suffixes.begin(), suffixes.end(), ", ")
+%%%%
+#)
+#
+#+ ")";
+%%%%
+%s: <lightgrey>%s</lightgrey>
+
+#mprf(MSGCH_PROMPT, "%s: <lightgrey>%s</lightgrey>",
+%%%%
+Aim
+
+#target_prefix ? target_prefix : jtrans("Aim").c_str(),
+%%%%
+%s: %s
+
+#mprf(MSGCH_PROMPT, "%s: %s",
+%%%%
+Aim
+
+照準
+#target_prefix ? target_prefix : jtrans("Aim").c_str(),
+%%%%
+#%s.
+#
+#mprf(MSGCH_FLOOR_ITEMS, "%s.",
+%%%%
+There is something else lying underneath.
+
+ここには何かがある
+#mprf(MSGCH_FLOOR_ITEMS, "%s",jtrans("There is something else lying underneath.").c_str());
+%%%%
+%s
+
+#mprf(MSGCH_EXAMINE_FILTER, "%s",
+%%%%
+This spell doesn't need a beam path.
+
+この呪文は光線のように経路を必要としない
+#mprf(MSGCH_EXAMINE_FILTER, "%s",jtrans("This spell doesn't need a beam path.").c_str());
+%%%%
+Your target is gone.
+
+あなたの目標は消え去った
+#mpr(jtrans("Your target is gone."), MSGCH_EXAMINE_FILTER);
+%%%%
+#
+#
+#string marker_result = "";
+%%%%
+Trying to run portal debug at %d/%d...
+
+#mprf(MSGCH_DIAGNOSTICS, "Trying to run portal debug at %d/%d...",
+%%%%
+#portal_debug
+#
+#env.markers.property_at(target(), MAT_ANY, "portal_debug").c_str();
+%%%%
+Got result: %s!
+
+#mprf(MSGCH_DIAGNOSTICS, "Got result: %s!",
+%%%%
+nothing
+
+#marker_result.empty() ? "nothing" : marker_result.c_str());
+%%%%
+Brought monster down to 1 HP.
+
+#mpr("Brought monster down to 1 HP.");
+%%%%
+You cannot set exclusions on this level.
+
+あなたはこの階層に探索禁域を設定できない
+#mpr(jtrans("You cannot set exclusions on this level."));
+%%%%
+Placed new exclusion.
+
+新しい探索禁域を設定した
+#mpr(jtrans("Placed new exclusion."));
+%%%%
+Removed exclusion.
+
+探索禁域を削除した
+#mpr(jtrans("Removed exclusion."));
+%%%%
+Reduced exclusion size to a single square.
+
+探索禁域を一マスに縮小した
+#mpr(jtrans("Reduced exclusion size to a single square."));
+%%%%
+#
+#
+#string desc = "";
+%%%%
+[unseen terrain]
+
+#const char *unseen_desc = "[unseen terrain]";
+%%%%
+#[
+#
+#desc = "[" + feature_description_at(gc, false, DESC_PLAIN, false)
+%%%%
+#]
+#
+#+ "]";
+%%%%
+#.\n
+#
+#+ ".\n";
+%%%%
+#\n
+#
+#desc += uppercase_first(wounds) + "\n";
+%%%%
+#.\n
+#
+#desc += "It is " + constrictions + ".\n";
+%%%%
+There is a cloud of 
+
+#inf.prefix = "There is a cloud of " + cloud_name_at_index(cloudidx)
+%%%%
+ here.\n\n
+
+#+ " here.\n\n";
+%%%%
+You can't see that place.
+
+あなたはその場所を見ることができない。
+#mpr(jtrans("You can't see that place."), MSGCH_EXAMINE_FILTER);
+%%%%
+(out of bounds)
+
+#dprf("(out of bounds)");
+%%%%
+(map: %x)
+
+#dprf("(map: %x)", env.map_knowledge(where).flags);
+%%%%
+dd
+
+#maybe_bool x = clua.callmbooleanfn("ch_target_monster", "dd",
+%%%%
+#dd
+#
+#maybe_bool x = clua.callmbooleanfn("ch_target_monster_expl", "dd",
+%%%%
+[%s]
+
+#mprf(MSGCH_EXAMINE_FILTER, "[%s]", desc.c_str());
+%%%%
+There is
+
+ここには
+#string prefix = jtrans("There is");
+%%%%
+here.
+
+がある
+#string suffix = jtrans("here.");
+%%%%
+There is an entrance to
+
+ここは入口だ：
+#prefix = jtrans("There is an entrance to");
+%%%%
+Beware, for starvation awaits!
+
+注意せよ、飢餓が待ち受けている！
+#mpr(jtrans("Beware, for starvation awaits!"), MSGCH_EXAMINE);
+%%%%
+#!
+#
+#if (add_stop && !ends_with(desc, ".") && !ends_with(desc, "!")
+%%%%
+#?
+#
+#&& !ends_with(desc, "?"))
+%%%%
+#.
+#
+#desc += ".";
+%%%%
+#The 
+#
+#if (starts_with(desc, "the ") || starts_with(desc, "The ")
+%%%%
+#A 
+#
+#|| starts_with(desc, "a ") || starts_with(desc, "A ")
+%%%%
+#An 
+#
+#|| starts_with(desc, "an ") || starts_with(desc, "An ")
+%%%%
+#Some 
+#
+#|| starts_with(desc, "some ") || starts_with(desc, "Some "))
+%%%%
+#the 
+#
+#return "the " + desc;
+%%%%
+#
+#
+#return "";
+%%%%
+dart trap
+
+#return "dart trap";
+%%%%
+arrow trap
+
+#return "arrow trap";
+%%%%
+needle trap
+
+#return "needle trap";
+%%%%
+bolt trap
+
+#return "bolt trap";
+%%%%
+spear trap
+
+#return "spear trap";
+%%%%
+blade trap
+
+#return "blade trap";
+%%%%
+net trap
+
+#return "net trap";
+%%%%
+gas trap
+
+#return "gas trap";
+%%%%
+alarm trap
+
+#return "alarm trap";
+%%%%
+shaft
+
+#return "shaft";
+%%%%
+teleportation trap
+
+#return "teleportation trap";
+%%%%
+Zot trap
+
+#return "Zot trap";
+%%%%
+passage of Golubria
+
+#return "passage of Golubria";
+%%%%
+pressure plate
+
+#return "pressure plate";
+%%%%
+web
+
+#return "web";
+%%%%
+Error: invalid trap type %d
+
+#die("Error: invalid trap type %d", trap);
+%%%%
+undefined trap
+
+#return "undefined trap";
+%%%%
+stone wall
+
+#return "stone wall";
+%%%%
+wall of the weird stuff which makes up Pandemonium
+
+#return "wall of the weird stuff which makes up Pandemonium";
+%%%%
+rock wall
+
+#return "rock wall";
+%%%%
+slime covered rock wall
+
+#return "slime covered rock wall";
+%%%%
+unnaturally hard rock wall
+
+#return "unnaturally hard rock wall";
+%%%%
+the open sea
+
+#return "the open sea";
+%%%%
+the endless lava
+
+#return "the endless lava";
+%%%%
+closed door
+
+#return "closed door";
+%%%%
+runed door
+
+#return "runed door";
+%%%%
+sealed door
+
+#return "sealed door";
+%%%%
+metal wall
+
+#return "metal wall";
+%%%%
+wall of green crystal
+
+#return "wall of green crystal";
+%%%%
+translucent rock wall
+
+#return "translucent rock wall";
+%%%%
+translucent stone wall
+
+#return "translucent stone wall";
+%%%%
+translucent unnaturally hard rock wall
+
+#return "translucent unnaturally hard rock wall";
+%%%%
+iron grate
+
+#return "iron grate";
+%%%%
+tree
+
+#return "tree";
+%%%%
+mangrove
+
+#return "mangrove";
+%%%%
+idol of Beogh
+
+#return "idol of Beogh";
+%%%%
+orcish idol
+
+#return "orcish idol";
+%%%%
+granite statue
+
+#return "granite statue";
+%%%%
+some lava
+
+#return "some lava";
+%%%%
+some deep water
+
+#return "some deep water";
+%%%%
+some shallow water
+
+#return "some shallow water";
+%%%%
+floor
+
+#return "floor";
+%%%%
+open door
+
+#return "open door";
+%%%%
+escape hatch in the floor
+
+#return "escape hatch in the floor";
+%%%%
+escape hatch in the ceiling
+
+#return "escape hatch in the ceiling";
+%%%%
+stone staircase leading down
+
+#return "stone staircase leading down";
+%%%%
+stone staircase leading up
+
+#return "stone staircase leading up";
+%%%%
+sealed passage leading down
+
+#return "sealed passage leading down";
+%%%%
+sealed passage leading up
+
+#return "sealed passage leading up";
+%%%%
+staircase leading out of the dungeon
+
+#return "staircase leading out of the dungeon";
+%%%%
+gateway to Hell
+
+#return "gateway to Hell";
+%%%%
+gateway back into the Dungeon
+
+#return "gateway back into the Dungeon";
+%%%%
+short-range portal
+
+#return "short-range portal";
+%%%%
+mechanical trap
+
+#return "mechanical trap";
+%%%%
+magical trap
+
+#return "magical trap";
+%%%%
+natural trap
+
+#return "natural trap";
+%%%%
+web
+
+#return "web";
+%%%%
+shop
+
+#return "shop";
+%%%%
+abandoned shop
+
+#return "abandoned shop";
+%%%%
+labyrinth entrance
+
+#return "labyrinth entrance";
+%%%%
+gateway to the Iron City of Dis
+
+#return "gateway to the Iron City of Dis";
+%%%%
+gateway to the ashen valley of Gehenna
+
+#return "gateway to the ashen valley of Gehenna";
+%%%%
+gateway to the freezing wastes of Cocytus
+
+#return "gateway to the freezing wastes of Cocytus";
+%%%%
+gateway to the decaying netherworld of Tartarus
+
+#return "gateway to the decaying netherworld of Tartarus";
+%%%%
+one-way gate to the infinite horrors of the Abyss
+
+#return "one-way gate to the infinite horrors of the Abyss";
+%%%%
+gateway leading out of the Abyss
+
+#return "gateway leading out of the Abyss";
+%%%%
+gateway leading deeper into the Abyss
+
+#return "gateway leading deeper into the Abyss";
+%%%%
+exit through the horrors of the Abyss
+
+#return "exit through the horrors of the Abyss";
+%%%%
+empty arch of ancient stone
+
+#return "empty arch of ancient stone";
+%%%%
+one-way gate leading to the halls of Pandemonium
+
+#return "one-way gate leading to the halls of Pandemonium";
+%%%%
+gate leading out of Pandemonium
+
+#return "gate leading out of Pandemonium";
+%%%%
+gate leading to another region of Pandemonium
+
+#return "gate leading to another region of Pandemonium";
+%%%%
+staircase to the Dwarven Hall
+
+#return "staircase to the Dwarven Hall";
+%%%%
+staircase to the Orcish Mines
+
+#return "staircase to the Orcish Mines";
+%%%%
+staircase to the Lair
+
+#return "staircase to the Lair";
+%%%%
+staircase to the Slime Pits
+
+#return "staircase to the Slime Pits";
+%%%%
+staircase to the Vaults
+
+#return "staircase to the Vaults";
+%%%%
+staircase to the Crypt
+
+#return "staircase to the Crypt";
+%%%%
+staircase to the Hall of Blades
+
+#return "staircase to the Hall of Blades";
+%%%%
+gate to the Realm of Zot
+
+#return "gate to the Realm of Zot";
+%%%%
+staircase to the Ecumenical Temple
+
+#return "staircase to the Ecumenical Temple";
+%%%%
+staircase to the Snake Pit
+
+#return "staircase to the Snake Pit";
+%%%%
+staircase to the Elven Halls
+
+#return "staircase to the Elven Halls";
+%%%%
+staircase to the Tomb
+
+#return "staircase to the Tomb";
+%%%%
+staircase to the Swamp
+
+#return "staircase to the Swamp";
+%%%%
+staircase to the Shoals
+
+#return "staircase to the Shoals";
+%%%%
+hole to the Spider Nest
+
+#return "hole to the Spider Nest";
+%%%%
+staircase to the Enchanted Forest
+
+#return "staircase to the Enchanted Forest";
+%%%%
+gate leading to a distant place
+
+#return "gate leading to a distant place";
+%%%%
+gate leading back out of here
+
+#return "gate leading back out of here";
+%%%%
+portal to somewhere
+
+#return "portal to somewhere";
+%%%%
+collapsed entrance
+
+#return "collapsed entrance";
+%%%%
+staircase back to the Dungeon
+
+#return "staircase back to the Dungeon";
+%%%%
+staircase back to the Lair
+
+#return "staircase back to the Lair";
+%%%%
+crawl-hole back to the Lair
+
+#return "crawl-hole back to the Lair";
+%%%%
+staircase back to the Vaults
+
+#return "staircase back to the Vaults";
+%%%%
+staircase back to the Mines
+
+#return "staircase back to the Mines";
+%%%%
+staircase back to the Forest
+
+#return "staircase back to the Forest";
+%%%%
+staircase back to the Crypt
+
+#return "staircase back to the Crypt";
+%%%%
+gate leading back out of this place
+
+#return "gate leading back out of this place";
+%%%%
+glowing silver altar of Zin
+
+#return "glowing silver altar of Zin";
+%%%%
+glowing golden altar of the Shining One
+
+#return "glowing golden altar of the Shining One";
+%%%%
+ancient bone altar of Kikubaaqudgha
+
+#return "ancient bone altar of Kikubaaqudgha";
+%%%%
+basalt altar of Yredelemnul
+
+#return "basalt altar of Yredelemnul";
+%%%%
+shimmering altar of Xom
+
+#return "shimmering altar of Xom";
+%%%%
+radiant altar of Vehumet
+
+#return "radiant altar of Vehumet";
+%%%%
+iron altar of Okawaru
+
+#return "iron altar of Okawaru";
+%%%%
+burning altar of Makhleb
+
+#return "burning altar of Makhleb";
+%%%%
+deep blue altar of Sif Muna
+
+#return "deep blue altar of Sif Muna";
+%%%%
+bloodstained altar of Trog
+
+#return "bloodstained altar of Trog";
+%%%%
+sparkling altar of Nemelex Xobeh
+
+#return "sparkling altar of Nemelex Xobeh";
+%%%%
+white marble altar of Elyvilon
+
+#return "white marble altar of Elyvilon";
+%%%%
+corrupted altar of Lugonu
+
+#return "corrupted altar of Lugonu";
+%%%%
+roughly hewn altar of Beogh
+
+#return "roughly hewn altar of Beogh";
+%%%%
+viscous altar of Jiyva
+
+#return "viscous altar of Jiyva";
+%%%%
+blossoming altar of Fedhas
+
+#return "blossoming altar of Fedhas";
+%%%%
+snail-covered altar of Cheibriados
+
+#return "snail-covered altar of Cheibriados";
+%%%%
+shattered altar of Ashenzari
+
+#return "shattered altar of Ashenzari";
+%%%%
+fountain of clear blue water
+
+#return "fountain of clear blue water";
+%%%%
+fountain of sparkling water
+
+#return "fountain of sparkling water";
+%%%%
+fountain of blood
+
+#return "fountain of blood";
+%%%%
+dry fountain
+
+#return "dry fountain";
+%%%%
+explore horizon
+
+#return "explore horizon";
+%%%%
+detected altar
+
+#return "detected altar";
+%%%%
+detected shop or portal
+
+#return "detected shop or portal";
+%%%%
+#
+#
+#return "";
+%%%%
+feature_description
+
+#"feature_description");
+%%%%
+#
+#
+#string covering_description = "";
+%%%%
+, spattered with blood
+
+#covering_description = ", spattered with blood";
+%%%%
+, covered with glowing mold
+
+#covering_description = ", covered with glowing mold";
+%%%%
+, covered with mold
+
+#covering_description = ", covered with mold";
+%%%%
+door_description_prefix
+
+#"door_description_prefix");
+%%%%
+door_description_suffix
+
+#"door_description_suffix");
+%%%%
+door_description_noun
+
+#"door_description_noun");
+%%%%
+door_description_adjective
+
+#"door_description_adjective");
+%%%%
+door_description_veto
+
+#"door_description_veto");
+%%%%
+veto
+
+#if (door_desc_veto.empty() || door_desc_veto != "veto")
+%%%%
+open 
+
+#desc += "open ";
+%%%%
+runed 
+
+#desc += "runed ";
+%%%%
+sealed 
+
+#desc += "sealed ";
+%%%%
+closed 
+
+#desc += "closed ";
+%%%%
+an abandoned shop
+
+#return thing_do_grammar(dtype, add_stop, false, "an abandoned shop");
+%%%%
+UNAMED PORTAL VAULT ENTRY
+
+#"UNAMED PORTAL VAULT ENTRY");
+%%%%
+
+
+#string desc = "";
+%%%%
+wielding
+
+装備している
+#desc += jtrans("wielding");
+%%%%
+and
+
+#desc += jtrans("and");
+%%%%
+#
+#
+#return (" " + si->describe());
+%%%%
+ (unknown stair)
+
+#return " (unknown stair)";
+%%%%
+
+
+#return "";
+%%%%
+%s is %s.
+
+%sは%sである。
+#return make_stringf(jtrans("%s is %s.").c_str(),
+%%%%
+#
+#
+#+ "";
+%%%%
+#
+#
+#return "";
+%%%%
+sleepwalking
+
+寝ながら歩いている
+%%%%
+resting
+
+休息している
+#descs.push_back(mi.is(MB_CONFUSED) ? jtrans("sleepwalking").c_str() : jtrans("resting").c_str());
+%%%%
+retreating
+
+退却している
+#descs.push_back(jtrans("retreating"));
+%%%%
+hasn't noticed you
+
+あなたに気付いていない
+#descs.push_back(jtrans("hasn't noticed you"));
+%%%%
+clinging
+
+登っている
+#descs.push_back(jtrans("clinging"));
+%%%%
+mesmerising
+
+魅了されている
+#descs.push_back(jtrans("mesmerising"));
+%%%%
+friendly
+
+友好的だ
+#descs.push_back(jtrans("friendly"));
+%%%%
+peaceful
+
+平和的だ
+#descs.push_back(jtrans("peaceful"));
+%%%%
+indifferent
+
+無関心だ
+#descs.push_back(jtrans("indifferent"));
+%%%%
+summoned
+
+召喚された
+#descs.push_back(jtrans("summoned"));
+%%%%
+durably summoned
+
+恒久的に召喚された
+#descs.push_back(jtrans("durably summoned"));
+%%%%
+expiring
+
+#descs.push_back("expiring");
+%%%%
+haloed
+
+光輪に照らされた
+#descs.push_back(jtrans("haloed"));
+%%%%
+umbra
+
+影に覆われた
+#descs.push_back(jtrans("umbra"));
+%%%%
+suppressed
+
+抑圧されている
+#descs.push_back(jtrans("suppressed"));
+%%%%
+possessable
+
+所有できる
+#descs.push_back(jtrans("possessable")); // FIXME: better adjective
+%%%%
+disembodied soul
+
+実体が無い魂
+#descs.push_back(jtrans("disembodied soul"));
+%%%%
+reflecting injuries
+
+損傷の反射
+#descs.push_back(jtrans("reflecting injuries"));
+%%%%
+inner flame
+
+内部からの発火
+#descs.push_back(jtrans("inner flame"));
+%%%%
+fire blocked by 
+
+#descs.push_back("fire blocked by " // FIXME, renamed features
+%%%%
+#
+#
+#+ feature_description(mi.fire_blocker, NUM_TRAPS, "",
+%%%%
+#
+#
+#string text    = "";
+%%%%
+ is clinging to the wall.\n
+
+#text += pronoun + " is clinging to the wall.\n";
+%%%%
+You are mesmerised by her song.\n
+
+#text += "You are mesmerised by her song.\n";
+%%%%
+ appears to be 
+
+#text += pronoun + " appears to be "
+%%%%
+sleepwalking
+
+#+ (mi.is(MB_CONFUSED) ? "sleepwalking"
+%%%%
+resting
+
+#: "resting")
+%%%%
+#.\n
+#
+#+ ".\n";
+%%%%
+is retreating.\n
+
+は退却している\n
+#text += pronoun + jtrans("is retreating.\n");
+%%%%
+doesn't appear to have noticed you.\n
+
+はあなたに気付いているように見えない\n
+#text += pronoun + jtrans("doesn't appear to have noticed you.\n");
+%%%%
+is friendly.\n
+
+は友好的だ\n
+#text += pronoun + jtrans("is friendly.\n");
+%%%%
+seems to be peaceful towards you.\n
+
+はあなたに対して平和的に見える\n
+#text += pronoun + jtrans("seems to be peaceful towards you.\n");
+%%%%
+ is indifferent to you.\n
+
+はあなたに無関心のようだ\n
+#text += pronoun + " is indifferent to you.\n";
+%%%%
+ has been summoned
+
+は召喚されている\n
+#text += pronoun + " has been summoned";
+%%%%
+, and is expiring
+
+#text += ", and is expiring";
+%%%%
+ but will not time out
+
+#text += " but will not time out";
+%%%%
+.\n
+
+#text += ".\n";
+%%%%
+is illuminated by a divine halo.\n
+
+は神聖な光輪によって照らされている\n
+#text += pronoun + jtrans("is illuminated by a divine halo.\n");
+%%%%
+is wreathed by an unholy umbra.\n
+
+は不浄な影に取りつかれている\n
+#text += pronoun + jtrans("is wreathed by an unholy umbra.\n");
+%%%%
+is surrounded by an aura of magical suppression.\n
+
+は魔法的な抑圧のオーラに囲まれている\n
+#text += pronoun + jtrans("is surrounded by an aura of magical suppression.\n");
+%%%%
+is mindless.\n
+
+には精神が無い\n
+#text += pronoun + jtrans("is mindless.\n");
+%%%%
+is chaotic.\n
+
+は混沌の存在だ\n
+#text += pronoun + jtrans("is chaotic.\n");
+%%%%
+soul is ripe for the taking.\n
+
+の魂は刈り取られようとしている\n
+#+ jtrans("soul is ripe for the taking.\n");
+%%%%
+is a disembodied soul.\n
+
+は実体の無い魂だ\n
+#text += pronoun + jtrans("is a disembodied soul.\n");
+%%%%
+is reflecting injuries back at attackers.\n
+
+は攻撃してきた者に損傷を反射する\n
+#text += pronoun + jtrans("is reflecting injuries back at attackers.\n");
+%%%%
+is filled with an inner flame.\n
+
+は内部からの発火に満たされている
+#text += pronoun + jtrans("is filled with an inner flame.\n");
+%%%%
+Your line of fire to 
+
+#text += string("Your line of fire to ") + mi.pronoun(PRONOUN_OBJECTIVE)
+%%%%
+ is blocked by 
+
+#+ " is blocked by " // FIXME: renamed features
+%%%%
+#
+#
+#+ feature_description(mi.fire_blocker, NUM_TRAPS, "",
+%%%%
+#\n
+#
+#+ "\n";
+%%%%
+#.
+#
+#string text = uppercase_first(get_monster_equipment_desc(mi)) + ".";
+%%%%
+# 
+#
+#text += " " + uppercase_first(wounds_desc);
+%%%%
+#.
+#
+#text += " It is" + constriction_desc + ".";
+%%%%
+#
+#
+#string desc = "";
+%%%%
+#
+#
+#string str = "";
+%%%%
+charmed
+
+魅了された
+#str = jtrans("charmed");
+%%%%
+#friendly
+#
+#str = jtrans("friendly");
+%%%%
+#peaceful
+#
+#str = jtrans("peaceful");
+%%%%
+insane
+
+#str = "insane";
+%%%%
+neutral
+
+自然な
+#str = jtrans("neutral");
+%%%%
+#, 
+#
+#str += ", ";
+%%%%
+#summoned
+#
+#str += jtrans("summoned");
+%%%%
+, 
+
+#str += ", ";
+%%%%
+durably summoned
+
+#str += jtrans("durably summoned");
+%%%%
+#, 
+#
+#str += ", ";
+%%%%
+#expiring
+#
+#str += "expiring";
+%%%%
+# 
+#
+#str += " ";
+%%%%
+dancing weapon
+
+踊る武器
+#str += jtrans("dancing weapon");
+%%%%
+pandemonium lord
+
+パンデモニウムの君主
+#str += jtrans("pandemonium lord");
+%%%%
+ghost
+
+幽霊
+#str += jtrans("ghost");
+%%%%
+illusion
+
+幻影
+#str += jtrans("illusion");
+%%%%
+#)
+3
+#desc += " (" + str + ")";
+%%%%
+#
+#
+#string weap = "";
+%%%%
+# 
+#
+#return " " + mi.full_name(DESC_A);
+%%%%
+#,
+#
+#desc += ",";
+%%%%
+#wand_known
+#
+#const bool mon_has_wand = mi.props.exists("wand_known") && mon_wnd;
+%%%%
+#,
+#
+#? " and" : ",";
+%%%%
+ wearing 
+
+#desc += " wearing ";
+%%%%
+#,
+#
+#desc += (!mon_rng && !mon_qvr && !mon_carry) ? " and" : ",";
+%%%%
+ wearing 
+
+#desc += " wearing ";
+%%%%
+#,
+#
+#desc += (!mon_qvr && !mon_carry) ? " and" : ",";
+%%%%
+ wearing 
+
+#desc += " wearing ";
+%%%%
+#,
+#
+#desc += !mon_carry ? " and" : ",";
+%%%%
+ quivering 
+
+#desc += " quivering ";
+%%%%
+ and
+
+#desc += " and";
+%%%%
+ carrying 
+
+#desc += " carrying ";
+%%%%
+ and 
+
+#desc += " and ";
+%%%%
+#wand_known
+#
+#if (mi.props["wand_known"])
+%%%%
+a wand
+
+#desc += "a wand";
+%%%%
+lies inside a sanctuary
+
+#areas.push_back("lies inside a sanctuary");
+%%%%
+is shrouded in silence
+
+#areas.push_back("is shrouded in silence");
+%%%%
+is lit by a halo
+
+#areas.push_back("is lit by a halo");
+%%%%
+is wreathed by an umbra
+
+#areas.push_back("is wreathed by an umbra");
+%%%%
+thrums with a field of magical suppression
+
+#areas.push_back("thrums with a field of magical suppression");
+%%%%
+is liquefied
+
+#areas.push_back("is liquefied");
+%%%%
+is covered in magical glow
+
+#areas.push_back("is covered in magical glow");
+%%%%
+is bathed in translocation energy
+
+#areas.push_back("is bathed in translocation energy");
+%%%%
+This square %s.
+
+このマスには%s
+#mprf(jtrans("This square %s.").c_str(),
+%%%%
+There is a cloud of %s here.
+
+ここには%sの雲がある
+#mprf(MSGCH_EXAMINE, jtrans("There is a cloud of %s here.").c_str(),
+%%%%
+You see %s here.
+
+ここには%sが見える
+#mprf(MSGCH_FLOOR_ITEMS, jtrans("You see %s here.").c_str(), name.c_str());
+%%%%
+#There is something else lying underneath.
+#
+#--defined.
+#mpr(jtrans("There is something else lying underneath."), MSGCH_FLOOR_ITEMS);
+%%%%
+#?
+#
+#desc = "?";
+%%%%
+#)
+#
+#marker = " (" + desc + ")";
+%%%%
+ (height: %d)
+
+#height_desc = make_stringf(" (height: %d)", (*env.heightmap)(where));
+%%%%
+ [Vault: %s (%d,%d)-(%d,%d) (%dx%d)]
+
+#vault = make_stringf(" [Vault: %s (%d,%d)-(%d,%d) (%dx%d)]",
+%%%%
+(%d,%d): %s - %s (%d/%s)%s%s%s%s map: %x
+
+#dprf("(%d,%d): %s - %s (%d/%s)%s%s%s%s map: %x",
+%%%%
+You.
+
+あなただ。
+#mpr(jtrans("You."), MSGCH_EXAMINE_FILTER);
+%%%%
+There is a non-visible %smonster here.
+
+#mprf(MSGCH_DIAGNOSTICS, "There is a non-visible %smonster here.",
+%%%%
+exposed by water 
+
+#_mon_exposed_in_water(mon) ? "exposed by water " :
+%%%%
+
+
+#_mon_exposed_in_cloud(mon) ? "exposed by cloud " : "");
+%%%%
+There is a strange disturbance in the water here.
+
+ここの水面には奇妙な乱れがある
+#mpr(jtrans("There is a strange disturbance in the water here."),
+%%%%
+There is a strange disturbance in the cloud here.
+
+ここの雲には奇妙な乱れがある
+#mpr(jtrans("There is a strange disturbance in the cloud here."),
+%%%%
+%s is out of range.
+
+%sは射程外だ
+#mprf(MSGCH_EXAMINE_FILTER, jtrans("%s is out of range.").c_str(),
+%%%%
+(<w>Right-click</w> for more information.)
+
+(<w>Right-click</w> で更なる説明を見る)
+#msg = jtrans("(<w>Right-click</w> for more information.)");
+%%%%
+(Press <w>v</w> for more information.)
+
+( <w>v</w> で更なる説明を見る)
+#msg = jtrans("(Press <w>v</w> for more information.)");
+%%%%
+#(<w>Right-click</w> for more information.)
+#
+#feature_desc += jtrans("(<w>Right-click</w> for more information.)");
+%%%%
+#(Press <w>v</w> for more information.)
+#
+#feature_desc += jtrans("(Press <w>v</w> for more information.)");
+%%%%
+(Right-click for more information.)
+
+(Right-click で更なる説明を見る)
+#feature_desc += jtrans("(Right-click for more information.)");
+%%%%
+(Press 'v' for more information.)
+
+( 'v' で更なる説明を見る)
+#feature_desc += jtrans("(Press 'v' for more information.)");
+%%%%

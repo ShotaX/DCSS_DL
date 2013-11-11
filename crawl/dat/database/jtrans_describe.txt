@@ -1,0 +1,4597 @@
+%%%%
+#%d
+#
+#sprintf(value_str, plussed ? "%+d" : "%d", valu);
+%%%%
+#%s
+#
+#void print(const string &str) { cprintf("%s", str.c_str()); }
+%%%%
+Regen
+
+#case RING_REGENERATION:      return "Regen";
+%%%%
+SustAb
+
+#case RING_SUSTAIN_ABILITIES: return "SustAb";
+%%%%
+Hunger-
+
+#case RING_SUSTENANCE:        return "Hunger-";
+%%%%
+Wiz
+
+#case RING_WIZARDRY:          return "Wiz";
+%%%%
+Fire
+
+#case RING_FIRE:              return "Fire";
+%%%%
+Ice
+
+#case RING_ICE:               return "Ice";
+%%%%
++/*Tele
+
+#case RING_TELEPORTATION:     return "+/*Tele";
+%%%%
++cTele
+
+#case RING_TELEPORT_CONTROL:  return "+cTele";
+%%%%
+Clar
+
+#case AMU_CLARITY:            return "Clar";
+%%%%
+Ward
+
+#case AMU_WARDING:            return "Ward";
+%%%%
+rCorr
+
+#case AMU_RESIST_CORROSION:   return "rCorr";
+%%%%
+Gourm
+
+#case AMU_THE_GOURMAND:       return "Gourm";
+%%%%
+Cons
+
+#case AMU_CONSERVATION:       return "Cons";
+%%%%
+cFly
+
+#case AMU_CONTROLLED_FLIGHT:  return "cFly";
+%%%%
+rMut
+
+#case AMU_RESIST_MUTATION:    return "rMut";
+%%%%
+Spirit
+
+#case AMU_GUARDIAN_SPIRIT:    return "Spirit";
+%%%%
+Faith
+
+#case AMU_FAITH:              return "Faith";
+%%%%
+Stasis
+
+#case AMU_STASIS:             return "Stasis";
+%%%%
+Inacc
+
+#case AMU_INACCURACY:         return "Inacc";
+%%%%
+#
+#
+#return "";
+%%%%
+-Cast
+
+#{ "-Cast",  ARTP_PREVENT_SPELLCASTING,  2 },
+%%%%
+-Tele
+
+#{ "-Tele",  ARTP_PREVENT_TELEPORTATION, 2 },
+%%%%
+Contam
+
+#{ "Contam", ARTP_MUTAGENIC,             2 },
+%%%%
+*Rage
+
+#{ "*Rage",  ARTP_ANGRY,                 2 },
+%%%%
+*Tele
+
+#{ "*Tele",  ARTP_CAUSE_TELEPORTATION,   2 },
+%%%%
+Hunger
+
+#{ "Hunger", ARTP_METABOLISM,            2 }, // handled specially
+%%%%
+Noisy
+
+#{ "Noisy",  ARTP_NOISES,                2 },
+%%%%
++Blink
+
+#{ "+Blink", ARTP_BLINK,                 2 },
+%%%%
++Rage
+
+#{ "+Rage",  ARTP_BERSERK,               2 },
+%%%%
++Inv
+
+#{ "+Inv",   ARTP_INVISIBLE,             2 },
+%%%%
++Fly
+
+#{ "+Fly",   ARTP_FLY,                   2 },
+%%%%
++Fog
+
+#{ "+Fog",   ARTP_FOG,                   2 },
+%%%%
+rElec
+
+#{ "rElec",  ARTP_ELECTRICITY,           2 },
+%%%%
+rPois
+
+#{ "rPois",  ARTP_POISON,                2 },
+%%%%
+rF
+
+#{ "rF",     ARTP_FIRE,                  1 },
+%%%%
+rC
+
+#{ "rC",     ARTP_COLD,                  1 },
+%%%%
+rN
+
+#{ "rN",     ARTP_NEGATIVE_ENERGY,       1 },
+%%%%
+MR
+
+#{ "MR",     ARTP_MAGIC,                 2 }, // handled specially
+%%%%
+HP
+
+#{ "HP",     ARTP_HP,                    0 },
+%%%%
+MP
+
+#{ "MP",     ARTP_MAGICAL_POWER,         0 },
+%%%%
+AC
+
+#{ "AC",     ARTP_AC,                    0 },
+%%%%
+EV
+
+#{ "EV",     ARTP_EVASION,               0 },
+%%%%
+Str
+
+#{ "Str",    ARTP_STRENGTH,              0 },
+%%%%
+Dex
+
+#{ "Dex",    ARTP_DEXTERITY,             0 },
+%%%%
+Int
+
+#{ "Int",    ARTP_INTELLIGENCE,          0 },
+%%%%
+Acc
+
+#{ "Acc",    ARTP_ACCURACY,              0 },
+%%%%
+Dam
+
+#{ "Dam",    ARTP_DAMAGE,                0 },
+%%%%
+SInv
+
+#{ "SInv",   ARTP_EYESIGHT,              2 },
+%%%%
+Stlth
+
+#{ "Stlth",  ARTP_STEALTH,               2 }, // handled specially
+%%%%
+Curse
+
+#{ "Curse",  ARTP_CURSED,                2 },
+%%%%
+Clar
+
+#{ "Clar",   ARTP_CLARITY,               2 },
+%%%%
+RMsl
+
+#{ "RMsl",   ARTP_RMSL,                  2 },
+%%%%
+Regen
+
+#{ "Regen",  ARTP_REGENERATION,          2 },
+%%%%
+#,
+#
+#ego += ",";
+%%%%
+#+
+#
+#work << "+";
+%%%%
+#-
+#
+#work << "-";
+%%%%
+#++
+#
+#work << "++";
+%%%%
+#+
+#
+#work << "+";
+%%%%
+#--
+#
+#work << "--";
+%%%%
+#-
+#
+#work << "-";
+%%%%
+#
+#
+#return "";
+%%%%
+# 
+#
+#" ", " ");
+%%%%
+#,
+#
+#if (ends_with(item.inscription, ","))
+%%%%
+# 
+#
+#item.inscription += " ";
+%%%%
+#, 
+#
+#item.inscription += ", ";
+%%%%
+It affects your AC (%d).
+
+それはあなたのACに影響する(%d)
+#{ ARTP_AC, "It affects your AC (%d).", false },
+%%%%
+It affects your evasion (%d).
+
+それはあなたのEVに影響する(%d)
+#{ ARTP_EVASION, "It affects your evasion (%d).", false},
+%%%%
+It affects your strength (%d).
+
+それはあなたの腕力に影響する(%d)
+#{ ARTP_STRENGTH, "It affects your strength (%d).", false},
+%%%%
+It affects your intelligence (%d).
+
+それはあなたの知能に影響する(%d)
+#{ ARTP_INTELLIGENCE, "It affects your intelligence (%d).", false},
+%%%%
+It affects your dexterity (%d).
+
+それはあなたの器用さに影響する(%d)
+#{ ARTP_DEXTERITY, "It affects your dexterity (%d).", false},
+%%%%
+It affects your accuracy (%d).
+
+それはあなたの命中率に影響する(%d)
+#{ ARTP_ACCURACY, "It affects your accuracy (%d).", false},
+%%%%
+It affects your damage-dealing abilities (%d).
+
+それはあなたのダメージを与える能力に影響する(%d)
+#{ ARTP_DAMAGE, "It affects your damage-dealing abilities (%d).", false},
+%%%%
+fire
+
+火炎
+#{ ARTP_FIRE, "fire", true},
+%%%%
+cold
+
+冷気
+#{ ARTP_COLD, "cold", true},
+%%%%
+It insulates you from electricity.
+
+それはあなたを電気から絶縁する
+#{ ARTP_ELECTRICITY, "It insulates you from electricity.", false},
+%%%%
+It protects you from poison.
+
+それはあなたを毒から保護する
+#{ ARTP_POISON, "It protects you from poison.", false},
+%%%%
+negative energy
+
+負のエネルギー
+#{ ARTP_NEGATIVE_ENERGY, "negative energy", true},
+%%%%
+It affects your resistance to hostile enchantments.
+
+それはあなたの敵対的な呪文に対する耐性に影響する
+#{ ARTP_MAGIC, "It affects your resistance to hostile enchantments.", false},
+%%%%
+It affects your health (%d).
+
+それはあなたの体力に影響する(%d)
+#{ ARTP_HP, "It affects your health (%d).", false},
+%%%%
+It affects your magic capacity (%d).
+
+それはあなたの魔力の容量に影響する(%d)
+#{ ARTP_MAGICAL_POWER, "It affects your magic capacity (%d).", false},
+%%%%
+It enhances your eyesight.
+
+それはあなたの視力を強化する
+#{ ARTP_EYESIGHT, "It enhances your eyesight.", false},
+%%%%
+It lets you turn invisible.
+
+これはあなたに透明化の発動を可能とさせる
+#{ ARTP_INVISIBLE, "It lets you turn invisible.", false},
+%%%%
+It lets you fly.
+
+これはあなたに飛行の発動を可能とさせる
+#{ ARTP_FLY, "It lets you fly.", false},
+%%%%
+It lets you blink.
+
+これはあなたに瞬間移動の発動を可能とさせる
+#{ ARTP_BLINK, "It lets you blink.", false},
+%%%%
+It lets you go berserk.
+
+これはあなたに狂戦士化の発動を可能とさせる
+#{ ARTP_BERSERK, "It lets you go berserk.", false},
+%%%%
+It makes noises.
+
+これは騒音を発する
+#{ ARTP_NOISES, "It makes noises.", false},
+%%%%
+It prevents spellcasting.
+
+これは呪文の詠唱を阻害する
+#{ ARTP_PREVENT_SPELLCASTING, "It prevents spellcasting.", false},
+%%%%
+It causes teleportation.
+
+それはテレポートを引き起こす
+#{ ARTP_CAUSE_TELEPORTATION, "It causes teleportation.", false},
+%%%%
+It prevents most forms of teleportation.
+
+それはほとんどのタイプのテレポートを阻害する
+#{ ARTP_PREVENT_TELEPORTATION, "It prevents most forms of teleportation.",
+%%%%
+It makes you angry.
+
+これはあなたに怒りをもたらす
+#{ ARTP_ANGRY,  "It makes you angry.", false},
+%%%%
+It may recurse itself.
+
+これは自分自身に呪いをかけることがある
+#{ ARTP_CURSED, "It may recurse itself.", false},
+%%%%
+It protects you against confusion.
+
+これはあなたを混乱から保護する
+#{ ARTP_CLARITY, "It protects you against confusion.", false},
+%%%%
+It causes magical contamination when unequipped.
+
+これは装備を解除するとき魔力汚染を引き起こす
+#{ ARTP_MUTAGENIC, "It causes magical contamination when unequipped.", false},
+%%%%
+It protects you from missiles.
+
+これはあなたを飛来物から保護する
+#{ ARTP_RMSL, "It protects you from missiles.", false},
+%%%%
+It can be evoked to emit clouds of fog.
+
+これはあなたに煙幕の放出の発動を可能とする
+#{ ARTP_FOG, "It can be evoked to emit clouds of fog.", false},
+%%%%
+It increases your rate of regeneration.
+
+これはあなたの回復力を増加させる
+#{ ARTP_REGENERATION, "It increases your rate of regeneration.", false},
+%%%%
+#%+d
+#
+#snprintf(buf, sizeof buf, "%+d", proprt[propdescs[i].property]);
+%%%%
+#%d
+#
+#sdesc = replace_all(sdesc, "%d", buf);
+%%%%
+It makes you extremely vulnerable to %s.
+
+これはあなたを極度に%sから弱くする。
+#"It makes you extremely vulnerable to %s.",
+%%%%
+It makes you very vulnerable to %s.
+
+これはあなたを非常に%sから弱くする。
+#"It makes you very vulnerable to %s.",
+%%%%
+It makes you vulnerable to %s.
+
+これはあなたを%sから弱くする。
+#"It makes you vulnerable to %s.",
+%%%%
+Buggy descriptor! %s
+
+これが見えたらバグ。
+#"Buggy descriptor! %s",
+%%%%
+It protects you from %s.
+
+これはあなたを%sから保護する。
+#"It protects you from %s.",
+%%%%
+It greatly protects you from %s.
+
+これはあなたを%sから強力に保護する。
+#"It greatly protects you from %s.",
+%%%%
+It renders you almost immune to %s.
+
+これはあなたに%sへのほぼ完全な免疫を与える。
+#"It renders you almost immune to %s."
+%%%%
+It greatly speeds your metabolism.
+
+これはあなたの新陳代謝を非常に加速させる。
+#description += "\n" + jtrans("It greatly speeds your metabolism.");
+%%%%
+It speeds your metabolism.
+
+これはあなたの新陳代謝を加速させる。
+#description += "\n" + jtrans("It speeds your metabolism.");
+%%%%
+It greatly slows your metabolism.
+
+これはあなたの新陳代謝を非常に減速させる。
+#description += "\n" + jtrans("It greatly slows your metabolism.");
+%%%%
+It slows your metabolism.
+
+これはあなたの新陳代謝を減速させる。
+#description += "\n" + jtrans("It slows your metabolism.");
+%%%%
+It makes you %s%s stealthy.
+
+これはあなたの隠密性を%s%sさせる。
+#snprintf(buf, sizeof buf, jtrans("It makes you %s%s stealthy.").c_str(),
+%%%%
+much
+
+とても
+#(stval < -20 || stval > 20) ? jtrans("much").c_str() : "",
+%%%%
+less_des
+
+減少
+%%%%
+more_des
+
+増加
+#(stval < 0) ? jtrans("less_des").c_str() : jtrans("more_des").c_str());
+%%%%
+dart
+
+%%%%
+arrow
+
+%%%%
+spear
+
+#"dart", "arrow", "spear",
+%%%%
+teleport
+
+%%%%
+alarm
+
+%%%%
+blade
+
+#"teleport", "alarm", "blade",
+%%%%
+bolt
+
+%%%%
+net
+
+%%%%
+Zot
+
+%%%%
+needle
+
+#"bolt", "net", "Zot", "needle",
+%%%%
+shaft
+
+%%%%
+passage
+
+%%%%
+pressure plate
+
+%%%%
+web
+
+#"shaft", "passage", "pressure plate", "web",
+%%%%
+gas
+
+#"gas",
+%%%%
+#
+#
+#return "";
+%%%%
+any
+
+#if (tspec == "random" || tspec == "any")
+%%%%
+noteleport
+
+#else if (tspec == "nonteleport" || tspec == "noteleport"
+%%%%
+notele
+
+#|| tspec == "nontele" || tspec == "notele")
+%%%%
+huge, barrel-shaped 
+
+#"huge, barrel-shaped ",
+%%%%
+wispy, insubstantial 
+
+#"wispy, insubstantial ",
+%%%%
+spindly 
+
+#"spindly ",
+%%%%
+skeletal 
+
+#"skeletal ",
+%%%%
+horribly deformed 
+
+#"horribly deformed ",
+%%%%
+spiny 
+
+#"spiny ",
+%%%%
+waif-like 
+
+#"waif-like ",
+%%%%
+scaly 
+
+#"scaly ",
+%%%%
+sickeningly deformed 
+
+#"sickeningly deformed ",
+%%%%
+bruised and bleeding 
+
+#"bruised and bleeding ",
+%%%%
+sickly 
+
+#"sickly ",
+%%%%
+mass of writhing tentacles for a 
+
+#"mass of writhing tentacles for a ",
+%%%%
+mass of ropey tendrils for a 
+
+#"mass of ropey tendrils for a ",
+%%%%
+tree trunk-like 
+
+#"tree trunk-like ",
+%%%%
+hairy 
+
+#"hairy ",
+%%%%
+furry 
+
+#"furry ",
+%%%%
+fuzzy 
+
+#"fuzzy ",
+%%%%
+obese 
+
+#"obese ",
+%%%%
+fat 
+
+#"fat ",
+%%%%
+slimy 
+
+#"slimy ",
+%%%%
+wrinkled 
+
+#"wrinkled ",
+%%%%
+metallic 
+
+#"metallic ",
+%%%%
+glassy 
+
+#"glassy ",
+%%%%
+crystalline 
+
+#"crystalline ",
+%%%%
+muscular 
+
+#"muscular ",
+%%%%
+icky 
+
+#"icky ",
+%%%%
+swollen 
+
+#"swollen ",
+%%%%
+lumpy 
+
+#"lumpy ",
+%%%%
+armoured 
+
+#"armoured ",
+%%%%
+carapaced 
+
+#"carapaced ",
+%%%%
+slender 
+
+#"slender ",
+%%%%
+ with small insectoid wings
+
+#" with small insectoid wings",
+%%%%
+ with large insectoid wings
+
+#" with large insectoid wings",
+%%%%
+ with moth-like wings
+
+#" with moth-like wings",
+%%%%
+ with butterfly wings
+
+#" with butterfly wings",
+%%%%
+ with huge, bat-like wings
+
+#" with huge, bat-like wings",
+%%%%
+ with fleshy wings
+
+#" with fleshy wings",
+%%%%
+ with small, bat-like wings
+
+#" with small, bat-like wings",
+%%%%
+ with hairy wings
+
+#" with hairy wings",
+%%%%
+ with great feathered wings
+
+#" with great feathered wings",
+%%%%
+ with shiny metal wings
+
+#" with shiny metal wings",
+%%%%
+ who hovers in mid-air
+
+#" who hovers in mid-air",
+%%%%
+ with sacs of gas hanging from its back
+
+#" with sacs of gas hanging from its back",
+%%%%
+ covered in tiny crawling spiders
+
+#" covered in tiny crawling spiders",
+%%%%
+ covered in tiny crawling insects
+
+#" covered in tiny crawling insects",
+%%%%
+ and the head of a crocodile
+
+#" and the head of a crocodile",
+%%%%
+ and the head of a hippopotamus
+
+#" and the head of a hippopotamus",
+%%%%
+ and a cruel curved beak for a mouth
+
+#" and a cruel curved beak for a mouth",
+%%%%
+ and a straight sharp beak for a mouth
+
+#" and a straight sharp beak for a mouth",
+%%%%
+ and no head at all
+
+#" and no head at all",
+%%%%
+ and a hideous tangle of tentacles for a mouth
+
+#" and a hideous tangle of tentacles for a mouth",
+%%%%
+ and an elephantine trunk
+
+#" and an elephantine trunk",
+%%%%
+ and an evil-looking proboscis
+
+#" and an evil-looking proboscis",
+%%%%
+ and dozens of eyes
+
+#" and dozens of eyes",
+%%%%
+ and two ugly heads
+
+#" and two ugly heads",
+%%%%
+ and a long serpentine tail
+
+#" and a long serpentine tail",
+%%%%
+ and a pair of huge tusks growing from its jaw
+
+#" and a pair of huge tusks growing from its jaw",
+%%%%
+ and a single huge eye, in the centre of its forehead
+
+#" and a single huge eye, in the centre of its forehead",
+%%%%
+ and spikes of black metal for teeth
+
+#" and spikes of black metal for teeth",
+%%%%
+ and a disc-shaped sucker for a head
+
+#" and a disc-shaped sucker for a head",
+%%%%
+ and huge, flapping ears
+
+#" and huge, flapping ears",
+%%%%
+ and a huge, toothy maw in the centre of its chest
+
+#" and a huge, toothy maw in the centre of its chest",
+%%%%
+ and a giant snail shell on its back
+
+#" and a giant snail shell on its back",
+%%%%
+ and a dozen heads
+
+#" and a dozen heads",
+%%%%
+ and the head of a jackal
+
+#" and the head of a jackal",
+%%%%
+ and the head of a baboon
+
+#" and the head of a baboon",
+%%%%
+ and a huge, slobbery tongue
+
+#" and a huge, slobbery tongue",
+%%%%
+ who is covered in oozing lacerations
+
+#" who is covered in oozing lacerations",
+%%%%
+ and the head of a frog
+
+#" and the head of a frog",
+%%%%
+ and the head of a yak
+
+#" and the head of a yak",
+%%%%
+ and eyes out on stalks
+
+#" and eyes out on stalks",
+%%%%
+ It seethes with hatred of the living.
+
+#" It seethes with hatred of the living.",
+%%%%
+ Tiny orange flames dance around it.
+
+#" Tiny orange flames dance around it.",
+%%%%
+ Tiny purple flames dance around it.
+
+#" Tiny purple flames dance around it.",
+%%%%
+ It is surrounded by a weird haze.
+
+#" It is surrounded by a weird haze.",
+%%%%
+ It glows with a malevolent light.
+
+#" It glows with a malevolent light.",
+%%%%
+ It looks incredibly angry.
+
+#" It looks incredibly angry.",
+%%%%
+ It oozes with slime.
+
+#" It oozes with slime.",
+%%%%
+ It dribbles constantly.
+
+#" It dribbles constantly.",
+%%%%
+ Mould grows all over it.
+
+#" Mould grows all over it.",
+%%%%
+ It looks diseased.
+
+#" It looks diseased.",
+%%%%
+ It looks as frightened of you as you are of it.
+
+#" It looks as frightened of you as you are of it.",
+%%%%
+ It moves in a series of hideous convulsions.
+
+#" It moves in a series of hideous convulsions.",
+%%%%
+ It moves with an unearthly grace.
+
+#" It moves with an unearthly grace.",
+%%%%
+ It hungers for your soul!
+
+#" It hungers for your soul!",
+%%%%
+ It leaves a glistening oily trail.
+
+#" It leaves a glistening oily trail.",
+%%%%
+ It shimmers before your eyes.
+
+#" It shimmers before your eyes.",
+%%%%
+ It is surrounded by a brilliant glow.
+
+#" It is surrounded by a brilliant glow.",
+%%%%
+ It radiates an aura of extreme power.
+
+#" It radiates an aura of extreme power.",
+%%%%
+ has 
+
+#description << "A powerful demon, " << name << " has ";
+%%%%
+body
+
+#description << article_a(a_body) << "body";
+%%%%
+#.
+#
+#description << ".";
+%%%%
+ It stinks of brimstone.
+
+#description << " It stinks of brimstone.";
+%%%%
+ It is surrounded by a sickening stench.
+
+#description << " It is surrounded by a sickening stench.";
+%%%%
+ It smells like rotting flesh
+
+#description << " It smells like rotting flesh"
+%%%%
+ - yum!
+
+#" - yum!" : ".");
+%%%%
+\nAccuracy rating: 
+
+#description += "\nAccuracy rating: ";
+%%%%
+#    
+#
+#description += "    ";
+%%%%
+Damage rating: 
+
+#description += "Damage rating: ";
+%%%%
+#   
+#
+#description += "   ";
+%%%%
+Base attack delay: 
+
+#description += "Base attack delay: ";
+%%%%
+#%
+#
+#description += "%";
+%%%%
+Its enchantment level renders it %s to acidic corrosion.
+
+これに付与されている魔力が腐食に対する%sをこれに与えている
+#	string corrosion_resistance = "\n" + jtrans("Its enchantment level renders it %s to acidic corrosion.");
+%%%%
+#
+#
+#return "";
+%%%%
+immune
+
+免疫
+#return make_stringf(format, jtrans("immune").c_str());
+%%%%
+extremely resistant
+
+極めて高い耐性
+#return make_stringf(format, jtrans("extremely resistant").c_str());
+%%%%
+Being made of crystal renders it very resistant to acidic corrosion.
+
+これを構成している水晶が腐食に対する極めて高い耐性をこれに与えている
+#return "\n" + jtrans("Being made of crystal renders it very resistant to acidic corrosion.");
+%%%%
+Being of dwarven fabrication renders it very resistant to acidic corrosion.
+
+ドワーフによる製作により、腐食に対する極めて高い耐性がこれに与えられている
+#return "\n" + jtrans("Being of dwarven fabrication renders it very resistant to acidic corrosion.");
+%%%%
+resistant
+
+耐性
+#return make_stringf(format, jtrans("resistant").c_str());
+%%%%
+somewhat resistant
+
+少しの耐性
+#return make_stringf(format, jtrans("somewhat resistant").c_str());
+%%%%
+#
+#
+#return "";
+%%%%
+It is a one handed weapon.
+
+これは片手持ちの武器だ
+#description += jtrans("It is a one handed weapon.");
+%%%%
+It is a two handed weapon.
+
+これは両手持ちの武器だ
+#description += jtrans("It is a two handed weapon.");
+%%%%
+#
+#
+#description = "";
+%%%%
+#\n
+#
+#description += "\n";
+%%%%
+It can be evoked to extend its reach.
+
+これは発動によって射程を延ばすことが出来る
+#description += "\n\n" + jtrans("It can be evoked to extend its reach.");
+%%%%
+It can hit multiple enemies in an arc around the wielder.
+
+これは使い手を中心に弧を描くように一度に多くの敵に攻撃を当てることが出来る
+#description += "\n\n" + jtrans("It can hit multiple enemies in an arc around the wielder.");
+%%%%
+extremely
+
+極めて
+#string adj = (item.sub_type == WPN_DAGGER) ? jtrans("extremely")
+%%%%
+particularly
+
+特に
+#: jtrans("particularly");
+%%%%
+It is %s good for stabbing unaware enemies.
+
+これは%s不意打ちに向いている
+#make_stringf(jtrans("It is %s good for stabbing unaware enemies.").c_str(), adj.c_str());
+%%%%
+#\n\n
+#
+#description += "\n\n";
+%%%%
+It emits flame when wielded, causing extra injury to most foes and up to double damage against particularly susceptible opponents.
+
+これは炎を放っており、大抵の敵に追加ダメージを与える。炎が苦手な敵には倍の追加ダメージを与える。
+#description += jtrans("It emits flame when wielded, causing extra injury to most foes and up to double damage against particularly susceptible opponents.");
+%%%%
+Big, fiery blades are also staple armaments of hydra-hunters.
+
+また、燃える刃はヒドラを狩るためにも重要だ。
+#description += jtrans("Big, fiery blades are also staple armaments of hydra-hunters.");
+%%%%
+It has been specially enchanted to freeze those struck by it, causing extra injury to most foes and up to double damage against particularly susceptible opponents. It can also slow down cold-blooded creatures.
+
+これは命中すると相手を凍らせ、大抵の敵に追加ダメージを与える。冷気が苦手な敵には倍の追加ダメージを与える。
+さらに冷血動物を減速させることがある。
+#description += jtrans("It has been specially enchanted to freeze those struck by it, causing extra injury to most foes and up to double damage against particularly susceptible opponents. It can also slow down cold-blooded creatures.");
+%%%%
+It has been blessed by the Shining One to cause great damage to the undead and demons.
+
+これは『輝けるもの』の祝福を受けている。特にアンデットに効果があり、また地獄とパンデモニウムの邪悪な存在にも大きなダメージを与える
+#description += jtrans("It has been blessed by the Shining One to cause great damage to the undead and demons.");
+%%%%
+It charges the ammunition it shoots with electricity; occasionally upon a hit, such missiles may discharge and cause terrible harm.
+
+これは矢弾に電撃を込める; 命中時に時として電気エネルギーを放出し、恐ろしい損害を与える
+#description += jtrans("It charges the ammunition it shoots with electricity; occasionally upon a hit, such missiles may discharge and cause terrible harm.");
+%%%%
+Occasionally, upon striking a foe, it will discharge some electrical energy and cause terrible harm.
+
+これは敵に命中した際に時として電気エネルギーを放出し、恐ろしい損害を与える
+#description += jtrans("Occasionally, upon striking a foe, it will discharge some electrical energy and cause terrible harm.");
+%%%%
+It is not especially effective against all of orcish descent.
+
+これは全てのオークの血族に対して特に有効というわけではない
+#description += jtrans("It is not especially effective against all of orcish descent.");
+%%%%
+This legendary weapon is deadly to all dragonkind.
+
+この伝説的な武器は全ての龍族に対して致命的である
+#description += jtrans("This legendary weapon is deadly to all dragonkind.");
+%%%%
+It poisons the ammo it fires.
+
+これは発射する矢や弾に毒を付与する
+#description += jtrans("It poisons the ammo it fires.");
+%%%%
+It poisons the flesh of those it strikes.
+
+これは命中した相手を毒に冒す
+#description += jtrans("It poisons the flesh of those it strikes.");
+%%%%
+It protects the one who wields it against injury (+5 to AC).
+
+これは手にした者を負傷から保護する。(+5 AC)
+#description += jtrans("It protects the one who wields it against injury (+5 to AC).");
+%%%%
+It affects your evasion (+5 to EV).
+
+これはあなたの回避力に影響する。(+5 EV)
+#description += jtrans("It affects your evasion (+5 to EV).");
+%%%%
+A truly terrible weapon, it drains the life of those it strikes.
+
+実に恐るべき武器である。これは命中すると相手の生命力を衰弱させる
+#description += jtrans("A truly terrible weapon, it drains the life of those it strikes.");
+%%%%
+Attacks with this weapon take half as long, but cause slightly less damage.
+
+これは手にした者に２倍の速さでの射撃を可能とさせるが、しかし少々与える損傷が少なくなる
+#description += jtrans("Attacks with this weapon take half as long, but cause slightly less damage.");
+%%%%
+Any %s fired from it inflicts extra damage.
+
+これにより発射される全ての%sは追加の損傷を与える。
+#description += make_stringf(jtrans("Any %s fired from it inflicts extra damage.").c_str(),
+%%%%
+It inflicts extra damage upon your enemies.
+
+これは敵に追加の損傷を与える。
+#description += jtrans("It inflicts extra damage upon your enemies.");
+%%%%
+It turns projectiles fired from it into bolts of flame.
+
+これは発射する矢弾を炎で包む
+#description += jtrans("It turns projectiles fired from it into bolts of flame.");
+%%%%
+It turns projectiles fired from it into bolts of frost.
+
+これは発射する矢弾を凍気で包む
+#description += jtrans("It turns projectiles fired from it into bolts of frost.");
+%%%%
+Each time it fires, it turns the launched projectile into a different, random type of bolt.
+
+これは発射する矢弾に属性を付与する。属性は発射毎に無作為に決定される。
+#description += jtrans("Each time it fires, it turns the launched projectile into a different, random type of bolt.");
+%%%%
+Each time it hits an enemy it has a different, random effect.
+
+これは敵に命中するたびに何らかの効果を与えるが、その効果は無作為に決定される。
+#description += jtrans("Each time it hits an enemy it has a different, random effect.");
+%%%%
+It inflicts no extra harm, but heals its wielder somewhat when it strikes a living foe.
+
+これは追加のダメージは与えないが、生命ある敵を攻撃した際に、使用者を幾らか癒す。
+#description += jtrans("It inflicts no extra harm, but heals its wielder somewhat when it strikes a living foe.");
+%%%%
+In the hands of one skilled in necromantic magic, it inflicts extra damage on living creatures.
+
+これは死霊術の熟練者の手に振るわれる時、生命あるモンスターに追加のダメージを及ぼす。
+#description += jtrans("In the hands of one skilled in necromantic magic, it inflicts extra damage on living creatures.");
+%%%%
+It warps and distorts space around it. Unwielding it can cause banishment or high damage.
+
+これは周囲の空間を捻じ曲げ歪ませる。これを装備から外すとき、アビスへの追放か膨大な損傷を受ける。
+#description += jtrans("It warps and distorts space around it. Unwielding it can cause banishment or high damage.");
+%%%%
+It can be evoked to extend its reach.
+
+これは発動によって射程を伸ばすことができる
+#description += jtrans("It can be evoked to extend its reach.");
+%%%%
+A skilled user can throw it in such a way that it will return to its owner.
+
+熟練した者は所有者の元に戻ってくるようにこれを投げることができる
+#description += jtrans("A skilled user can throw it in such a way that it will return to its owner.");
+%%%%
+Ammo fired by it will pass through the targets it hits, potentially hitting all targets in its path until it reaches maximum range.
+
+これは命中した目標を貫き、射程の限界までの全ての目標を貫く潜在能力を持っている
+#description += jtrans("Ammo fired by it will pass through the targets it hits, potentially hitting all targets in its path until it reaches maximum range.");
+%%%%
+If a monster killed with it leaves a corpse in good enough shape, the corpse will be animated as a zombie friendly to the killer.
+
+もしこの武器でモンスターを倒し良い形状の死体が残った時、その死体はこの武器の使い手の僕としてよみがえるだろう。
+#description += jtrans("If a monster killed with it leaves a corpse in good enough shape, the corpse will be animated as a zombie friendly to the killer.");
+%%%%
+It disrupts the flow of magical energy around spellcasters and certain magical creatures (including the wielder).
+
+これは魔術師や特定の魔法生物の周囲の魔力の流れを妨害する(もちろんこの武器の使い手も含めて)
+#description += jtrans("It disrupts the flow of magical energy around spellcasters and certain magical creatures (including the wielder).");
+%%%%
+#\n
+#
+#description += "\n";
+%%%%
+This weapon may have some hidden properties.
+
+この武器には幾つかの隠された特性があるかもしれない
+#description += "\n" + jtrans("This weapon may have some hidden properties.");
+%%%%
+This weapon falls into the '%s' category.
+
+この武器は'%s' のカテゴリーに属している
+#make_stringf(jtrans("This weapon falls into the '%s' category.").c_str(),
+%%%%
+buggy
+
+#skill == SK_FIGHTING ? "buggy" : skill_name(skill));
+%%%%
+It is too large for you to wield.
+
+それはあなたが装備するには大きすぎる
+#description += "\n" + jtrans("It is too large for you to wield.");
+%%%%
+Demonspawn deal slightly more damage with it.
+
+悪魔の血族はこの武器で少々多くの損傷を与えることが出来る
+#description += "\n" + jtrans("Demonspawn deal slightly more damage with it.");
+%%%%
+It is well-crafted and durable. Dwarves deal slightly more damage with it.
+
+これは上手く作られており、耐久性がある。ドワーフはこの武器で少々多くの損傷を与えることが出来る
+#description += "\n" + jtrans("It is well-crafted and durable. Dwarves deal slightly more damage with it.");
+%%%%
+Orcs deal slightly more damage with it.
+
+オークはこの武器で少々多くの損傷を与えることが出来る
+#description += "\n" + jtrans("Orcs deal slightly more damage with it.");
+%%%%
+Elves are slightly more accurate with it.
+
+エルフがこの武器を扱うとき少々命中精度が良くなる
+#description += "\n" + jtrans("Elves are slightly more accurate with it.");
+%%%%
+It cannot be enchanted further.
+
+これはこれ以上強化できない。
+#description += "\n" + jtrans("It cannot be enchanted further.");
+%%%%
+It can be maximally enchanted to +%d, +%d
+
+これは最大 +%d, +%d まで強化することができる。
+#description += make_stringf(jtrans("It can be maximally enchanted to +%d, +%d").c_str(), MAX_WPN_ENCHANT, MAX_WPN_ENCHANT);
+%%%%
+It can be maximally enchanted to +%d
+
+これは最大 +%d まで強化することができる。
+#description += make_stringf(jtrans("It can be maximally enchanted to +%d").c_str() , MAX_WPN_ENCHANT);
+%%%%
+brand-new
+
+#how = "brand-new";
+%%%%
+a little worn
+
+#how = "a little worn";
+%%%%
+slightly damaged
+
+#how = "slightly damaged";
+%%%%
+damaged
+
+#how = "damaged";
+%%%%
+heavily frayed
+
+#how = "heavily frayed";
+%%%%
+\n\nIt looks 
+
+#description += "\n\nIt looks ";
+%%%%
+#.
+#
+#description += ".";
+%%%%
+#\n\n
+#
+#description += "\n\n";
+%%%%
+threw
+
+投げた
+#threw_or_fired += jtrans("threw");
+%%%%
+or
+
+もしくは
+#threw_or_fired += jtrans("or");
+%%%%
+fired
+
+発射した
+#threw_or_fired += jtrans("fired");
+%%%%
+It turns into a bolt of flame.
+
+これは炎の矢に変化する
+#description += jtrans("It turns into a bolt of flame.");
+%%%%
+It turns into a bolt of frost.
+
+これは氷の矢に変化する
+#description += jtrans("It turns into a bolt of frost.");
+%%%%
+a random type
+
+#bolt_name = jtrans("a random type");
+%%%%
+When
+
+#description += jtrans("When");
+%%%%
+thrown,
+
+#description += jtrans("thrown,");
+%%%%
+or
+
+#description += jtrans("or");
+%%%%
+fired from an appropriate launcher,
+
+#description += jtrans("fired from an appropriate launcher,");
+%%%%
+it turns into a bolt of
+
+#description += jtrans("it turns into a bolt of");
+%%%%
+#.
+#
+#description += ".";
+%%%%
+It is coated with poison.
+
+これには毒が塗られている
+#description += jtrans("It is coated with poison.");
+%%%%
+It is tipped with asphyxiating poison.
+
+これには神経毒が付けられている
+#description += jtrans("It is tipped with asphyxiating poison.");
+%%%%
+It is tipped with a paralysing substance.
+
+これには麻痺物質が付けられている
+#description += jtrans("It is tipped with a paralysing substance.");
+%%%%
+It is coated with a substance that causes slowness of the body.
+
+これは減速を引き起こす物質で覆われている
+#description += jtrans("It is coated with a substance that causes slowness of the body.");
+%%%%
+It is coated with a fast-acting tranquilizer.
+
+これは即効性の麻酔で覆われている
+#description += jtrans("It is coated with a fast-acting tranquilizer.");
+%%%%
+It is tipped with a substance that causes confusion.
+
+これは混乱を引き起こす物質が付けられている
+#description += jtrans("It is tipped with a substance that causes confusion.");
+%%%%
+It has been contaminated by something likely to cause disease.
+
+これは病気を引き起こす物質が付けられている
+#description += jtrans("It has been contaminated by something likely to cause disease.");
+%%%%
+It is tipped with a substance that causes a mindless rage, making people attack friend and foe alike.
+
+これは心無き憤怒を引き起こす物質が付けられており、仲間を敵と同じように攻撃する
+#description += jtrans("It is tipped with a substance that causes a mindless rage, making people attack friend and foe alike.");
+%%%%
+A skilled user can throw it in such a way that it will return to its owner.
+
+熟練した者は所有者の元に戻ってくるようにこれを投げることができる
+#description += jtrans("A skilled user can throw it in such a way that it will return to its owner.");
+%%%%
+It will pass through any targets it hits, potentially hitting all targets in its path until it reaches maximum range.
+
+これは命中した目標を貫き、射程の限界までの全ての目標を貫く潜在能力を持っている
+#description += jtrans("It will pass through any targets it hits, potentially hitting all targets in its path until it reaches maximum range.");
+%%%%
+Any target it hits will blink, with a tendency towards blinking further away from the one who %s it.
+
+これが命中した目標は使い手から遠ざけられるように瞬間移動する。
+#description += make_stringf(jtrans("Any target it hits will blink, with a tendency towards blinking further away from the one who %s it.").c_str(),
+%%%%
+It will explode into fragments upon hitting a target, hitting an obstruction, or reaching the end of its range.
+
+それは物体に命中したり、射程の隅まで到達すると断片に爆発をおこす
+#description += jtrans("It will explode into fragments upon hitting a target, hitting an obstruction, or reaching the end of its range.");
+%%%%
+Compared to normal ammo, it does 30% more damage, is destroyed upon impact only 1/10th of the time, and weighs three times as much.
+
+それは通常の同種の武器よりも30％ダメージが増加し、通常の1/10の確率で破損する。しかし通常の3倍の重量がある。
+#description += jtrans("Compared to normal ammo, it does 30% more damage, is destroyed upon impact only 1/10th of the time, and weighs three times as much.");
+%%%%
+Silver sears all those touched by chaos.
+
+銀は触れる全ての混沌の存在を焼き尽くす。それは通常の同種の武器に比べて、混沌の存在や変異性の存在に対して75%ダメージが増加する。また、変異の度合いに応じた損傷をプレイヤーに与える。変異した存在でもこの武器を扱う事は出来ることに注意せよ。この武器は通常の同種の武器の2倍の重さがある。
+#            description += jtrans("Silver sears all those touched by chaos.")
+#                "Compared to normal ammo, it does 75% more damage to "
+#                "chaotic and magically transformed beings. It also does extra damage against mutated beings according to how mutated they are. With due care, silver ammo can still be handled by those it affects. It weighs twice as much "
+#                "as normal ammo.";
+%%%%
+#\n
+#
+#description += "\n";
+%%%%
+#\n
+#
+#description += "\n";
+%%%%
+dwarves
+
+ドワーフ
+%%%%
+elves
+
+エルフ
+%%%%
+orcs
+
+オーク
+#string race_s = (race == ISFLAG_DWARVEN) ? jtrans("dwarves") :
+#                (race == ISFLAG_ELVEN)   ? jtrans("elves")
+#                                         : jtrans("orcs");
+%%%%
+It is more deadly when thrown by %s, and 
+
+これは%sが投擲するとより致命的になり、
+#description += make_stringf(jtrans("It is more deadly when thrown by %s, and ").c_str(), racs_s.c_str());
+%%%%
+it is more effective in conjunction with %s launchers.
+
+%sにより発射されるとより効果的である。
+#description += make_stringf(jtrans("it is more effective in conjunction with %s launchers.").c_str(), 
+%%%%
+It is more deadly when thrown by %s.
+
+これは%sが投擲するとより致命的になる。
+#description += make_stringf(jtrans("It is more deadly when thrown by %s.").c_str(), racs_s.c_str());
+%%%%
+It is more effective in conjunction with %s launchers.
+
+これは%sにより発射されるとより効果的である。
+#description += jtrans("It is more effective in conjunction with %s launchers.").c_str(), 
+%%%%
+It will always be destroyed upon impact.
+
+これは使用後に必ず破損する
+#description += "\n" + jtrans("It will always be destroyed upon impact.");
+%%%%
+Base armour rating:
+
+鎧の基礎防御力(ACに影響): 
+#description += "\n" + jtrans("Base armour rating:");
+%%%%
+#       
+#
+#description += "       ";
+%%%%
+Encumbrance rating:
+
+鎧の行動阻害(EVに影響): 
+#description += jtrans("Encumbrance rating:");
+%%%%
+All pieces of ammunition may get destroyed upon impact.
+
+全ての発射物は使用後に破壊されることがある。
+#description += "\n" + jtrans("All pieces of ammunition may get destroyed upon impact.");
+%%%%
+#\n
+#
+#description += "\n";
+%%%%
+#\n\n
+#
+#description += "\n\n";
+%%%%
+It allows its wearer to slither at a great speed.
+
+これは着用者に非常な速さで移動することを可能とさせる。
+#description += jtrans("It allows its wearer to slither at a great speed.");
+%%%%
+It allows its wearer to run at a great speed.
+
+これは着用者に非常な速さで走ることを可能とさせる。
+#description += jtrans("It allows its wearer to run at a great speed.");
+%%%%
+It protects its wearer from heat and fire.
+
+これは着用者を熱と火から保護する。
+#description += jtrans("It protects its wearer from heat and fire.");
+%%%%
+It protects its wearer from cold.
+
+これは着用者を冷気から保護する。
+#description += jtrans("It protects its wearer from cold.");
+%%%%
+It protects its wearer from poison.
+
+これは着用者を毒から保護する。
+#description += jtrans("It protects its wearer from poison.");
+%%%%
+It allows its wearer to see invisible things.
+
+これは着用者が見えざる者を見ることを可能とさせる。
+#description += jtrans("It allows its wearer to see invisible things.");
+%%%%
+When activated it hides its wearer from the sight of others, but also increases their metabolic rate by a large amount.
+
+これは発動することで着用者を一時的に透明にするが、透明化の最中には代謝エネルギーの消費が大幅に増加する。
+#description += jtrans("When activated it hides its wearer from the sight of others, but also increases their metabolic rate by a large amount.");
+%%%%
+It increases the physical power of its wearer (+3 to strength).
+
+これは着用者の物理的な力を増大させる。(+3 腕力)
+#description += jtrans("It increases the physical power of its wearer (+3 to strength).");
+%%%%
+It increases the dexterity of its wearer (+3 to dexterity).
+
+これは着用者の器用さを増大させる。(+3 器用さ)
+#description += jtrans("It increases the dexterity of its wearer (+3 to dexterity).");
+%%%%
+It makes you more clever (+3 to intelligence).
+
+これは着用者の知力を増大させる。(+3 知力) 
+#description += jtrans("It makes you more clever (+3 to intelligence).");
+%%%%
+It is very cumbersome, thus slowing your movement.
+
+#description += jtrans("It is very cumbersome, thus slowing your movement.");
+%%%%
+It can be activated to allow its wearer to fly indefinitely.
+
+これは発動することで着用者を飛行させることができる
+#description += jtrans("It can be activated to allow its wearer to fly indefinitely.");
+%%%%
+It increases its wearer's resistance to enchantments.
+
+これは着用者の魔法への抵抗力を増大させる
+#description += jtrans("It increases its wearer's resistance to enchantments.");
+%%%%
+It protects its wearer from harm (+3 to AC).
+
+これは着用者を負傷から保護する。(+3 AC) 
+#description += jtrans("It protects its wearer from harm (+3 to AC).");
+%%%%
+It enhances the stealth of its wearer.
+
+これは着用者の隠密性を高める
+#description += jtrans("It enhances the stealth of its wearer.");
+%%%%
+It protects its wearer from the effects of both cold and heat.
+
+これは着用者を熱と冷気の両方の効果から保護する
+#description += jtrans("It protects its wearer from the effects of both cold and heat.");
+%%%%
+It protects its wearer from the effects of negative energy.
+
+これは着用者を負のエネルギーの影響からある程度保護する
+#description += jtrans("It protects its wearer from the effects of negative energy.");
+%%%%
+It increases the power of its wearer's magical spells.
+
+これは着用者の呪文の力を増大させる
+#description += jtrans("It increases the power of its wearer's magical spells.");
+%%%%
+It protects its wearer's possessions from damage and destruction.
+
+これは着用者の所持品を損害や破壊から保護する
+#description += jtrans("It protects its wearer's possessions from damage and destruction.");
+%%%%
+It reflects blocked things back in the direction they came from.
+
+これは飛来物を防御し、発射元に跳ね返す
+#description += jtrans("It reflects blocked things back in the direction they came from.");
+%%%%
+It shields its wearer from harm at the cost of magical power.
+
+これは使用者の魔力を消費して損傷を軽減する。
+#description += jtrans("It shields its wearer from harm at the cost of magical power.");
+%%%%
+These improve your skills with ranged weaponry but interfere slightly with melee combat.
+
+これはあなたの遠距離武器の技術を向上させるが、近接戦闘を少々邪魔する。
+#description += jtrans("These improve your skills with ranged weaponry but interfere slightly with melee combat.");
+%%%%
+#\n
+#
+#description += "\n";
+%%%%
+This armour may have some hidden properties.
+
+この防具には幾つかの隠された特性があるかもしれない。
+#description += "\n" + jtrans("This armour may have some hidden properties.");
+%%%%
+#\n
+#
+#description += "\n";
+%%%%
+It is well-crafted and durable.
+
+これは巧みに造られていて、非常に耐久力がある
+#description += "\n" + jtrans("It is well-crafted and durable.");
+%%%%
+It is well-crafted and unobstructive
+
+これは巧みに造られていて、体の動きを妨げない
+#description += "\n" + jtrans("It is well-crafted and unobstructive");
+%%%%
+It is well-crafted and lightweight
+
+これは巧みに造られていて、軽量だ
+#description += "\n" + jtrans("It is well-crafted and lightweight");
+%%%%
+, and helps its wearer avoid being noticed
+
+、そして着用者の隠密行動の助けになる
+#description += jtrans(", and helps its wearer avoid being noticed");
+%%%%
+#.
+#
+#description += ".";
+%%%%
+It fits %s well.
+
+それは%sにぴったりと合う。
+#description += "\n" + make_stringf(jtrans("It fits %s well.").c_str(), race_s.c_str());
+%%%%
+#dwarves
+#
+#--defined.
+#description += (race == ISFLAG_DWARVEN) ? jtrans("dwarves") :
+%%%%
+#elves
+#
+#--defined.
+#(race == ISFLAG_ELVEN)   ? jtrans("elves")
+%%%%
+#orcs
+#
+#--defined.
+#: jtrans("orcs");
+%%%%
+Enchanting it will turn it into a suit of magical armour.
+
+それに魔力を注ぐと、不思議な魔法の鎧に変化する
+#description += "\n" + jtrans("Enchanting it will turn it into a suit of magical armour.");
+%%%%
+It can be maximally enchanted to +%d.
+
+それは最大 +%d まで強化できる。
+#description += "\n" + make_stringf(jtrans("It can be maximally enchanted to +%d.").c_str(), max_ench);
+%%%%
+#It cannot be enchanted further.
+#
+#--defined.
+#description += "\n" + jtrans("It cannot be enchanted further.");
+%%%%
+It affects your AC (
+
+これはあなたのACに影響を与える
+#description += "\n" + jtrans("It affects your AC (");
+%%%%
+#).
+#
+#description += ").";
+%%%%
+It affects your evasion (
+
+これはあなたのEVに影響を与える
+#description += "\n" + jtrans("It affects your evasion (");
+%%%%
+#).
+#
+#description += ").";
+%%%%
+It affects your strength (
+
+これはあなたの腕力に影響を与える
+#description += "\n" + jtrans("It affects your strength (");
+%%%%
+#).
+#
+#description += ").";
+%%%%
+It affects your intelligence (
+
+これはあなたの知力に影響を与える
+#description += "\n" + jtrans("It affects your intelligence (");
+%%%%
+#).
+#
+#description += ").";
+%%%%
+It affects your dexterity (
+
+これはあなたの器用さに影響を与える
+#description += "\n" + jtrans("It affects your dexterity (");
+%%%%
+#).
+#
+#description += ").";
+%%%%
+It affects your accuracy (
+
+これはあなたの命中力に影響を与える
+#description += "\n" + jtrans("It affects your accuracy (");
+%%%%
+#).
+#
+#description += ").";
+%%%%
+It affects your damage-dealing abilities (
+
+これはあなたのダメージを与える能力に影響を与える
+#description += "\n" + jtrans("It affects your damage-dealing abilities (");
+%%%%
+#).
+#
+#description += ").";
+%%%%
+This buggy ring affects neither your 
+
+#description += "This buggy ring affects neither your "
+%%%%
+accuracy nor your damage-dealing 
+
+#"accuracy nor your damage-dealing "
+%%%%
+abilities.
+
+#"abilities.";
+%%%%
+This %s may have hidden properties.
+
+この%sには幾つかの隠された特性があるかもしれない
+#description += "\n" + make_stringf(jtrans("This %s may have hidden properties.").c_str(),
+%%%%
+#amulet
+#ring
+#
+#--defined.
+#description += (jewellery_is_amulet(item) ? jtrans("amulet") : jtrans("ring"));
+%%%%
+This isn't a deck at all!
+
+これはデッキではない!
+#desc += jtrans("This isn't a deck at all!") + "\n";
+%%%%
+#cards
+#
+#if (!props.exists("cards")
+%%%%
+#cards
+#
+#|| props["cards"].get_type() != SV_VEC
+%%%%
+#cards
+#
+#|| props["cards"].get_vector().get_type() != SV_BYTE
+%%%%
+#\n
+#
+#description += "\n";
+%%%%
+#
+#
+#return "";
+%%%%
+Drawn card(s):
+
+引いたカード: 
+#description += jtrans("Drawn card(s):");
+%%%%
+#, 
+#
+#description += ", ";
+%%%%
+#\n
+#
+#description += "\n";
+%%%%
+Next card(s):
+
+次のカード: 
+#description += jtrans("Next card(s):");
+%%%%
+#, 
+#
+#description += ", ";
+%%%%
+#\n
+#
+#description += "\n";
+%%%%
+Marked card(s):
+
+マークされたカード: 
+#description += jtrans("Marked card(s):");
+%%%%
+#, 
+#
+#description += ", ";
+%%%%
+#\n
+#
+#description += "\n";
+%%%%
+Seen card(s):
+
+見たカード: 
+#description += jtrans("Seen card(s):");
+%%%%
+#, 
+#
+#description += ", ";
+%%%%
+#\n
+#
+#description += "\n";
+%%%%
+\n\nSpells                             Type                      Level\n
+
+呪文                               分類                      レベル
+#desc += "\n\nSpells                             Type                      Level\n";
+%%%%
+#
+#
+#string name = (is_memorised(stype) ? "*" : "");
+%%%%
+Evocations
+
+#schools = "Evocations";
+%%%%
+%d\n
+
+#desc += make_stringf("%d\n", spell_difficulty(stype));
+%%%%
+#.
+#
+#description << name << ".";
+%%%%
+#\n\n
+#
+#description << "\n\n"
+%%%%
+base: 
+
+#<< "base: " << static_cast<int>(item.base_type)
+%%%%
+ sub: 
+
+#<< " sub: " << static_cast<int>(item.sub_type)
+%%%%
+ plus2: 
+
+#<< " plus: " << item.plus << " plus2: " << item.plus2
+%%%%
+ special: 
+
+#<< " special: " << item.special
+%%%%
+#\n
+#
+#<< "\n"
+%%%%
+quant: 
+
+#<< "quant: " << item.quantity
+%%%%
+ colour: 
+
+#<< " colour: " << static_cast<int>(item.colour)
+%%%%
+ flags: 
+
+#<< " flags: " << hex << setw(8) << item.flags
+%%%%
+#\n
+#
+#<< dec << "\n"
+%%%%
+ y: 
+
+#<< "x: " << item.pos.x << " y: " << item.pos.y
+%%%%
+ link: 
+
+#<< " link: " << item.link
+%%%%
+ slot: 
+
+#<< " slot: " << item.slot
+%%%%
+ ident_type: 
+
+#<< " ident_type: "
+%%%%
+ book_number: 
+
+#<< " book_number: " << item.book_number()
+%%%%
+\nannotate: 
+
+#<< "\nannotate: "
+%%%%
+#\n\n
+#
+#description << "\n\n";
+%%%%
+#[
+#
+#description << "["
+%%%%
+#]
+#
+#<< "]";
+%%%%
+#\n
+#
+#description << "\n";
+%%%%
+#\n
+#
+#db_desc += "\n";
+%%%%
+[ERROR: no desc for item name '
+
+#description << "[ERROR: no desc for item name '" << db_name
+%%%%
+#']\n
+#
+#<< "']\n";
+%%%%
+#.\n
+#
+#description << ".\n";
+%%%%
+# 
+#
+#description << " ";
+%%%%
+This book is beyond your current level of understanding.
+
+この本の内容は現在のあなたの理解力を遥かに越えている。
+#description << "\n" + jtrans("This book is beyond your current level of understanding.");
+%%%%
+#//Fixme_ja_wand_max
+It can have at most %d charges
+
+これは最大で %d 回まで充填できる。
+#description << "\n" + make_stringf(jtrans("It can have at most %d charges").c_str(), max_charges);
+%%%%
+It is fully charged.
+
+これは限界まで充填されている
+#description << "\n" + jtrans("It is fully charged.");
+%%%%
+Unfortunately, it has no charges left.
+
+残念ながら、これには残り回数が無い
+#description << "\n" + jtrans("Unfortunately, it has no charges left.");
+%%%%
+#// Fixme_ja_food
+It looks nice and ripe.
+
+この肉は素晴らしく熟成された様子だ
+#description << jtrans("It looks nice and ripe.");
+%%%%
+In fact, it is rotting away before your eyes.
+
+これは腐敗が進行しているように見える
+#description << jtrans("In fact, it is rotting away before your eyes.");
+%%%%
+Eating it is completely out of the question!
+
+これを食べるなんて問題外だ!
+#description << jtrans("Eating it is completely out of the question!");
+%%%%
+It looks rather unpleasant.
+
+この肉はどちらかというと不味そうだ
+#description << jtrans("It looks rather unpleasant.");
+%%%%
+This meat is poisonous.
+
+この肉は有毒だ
+#description << "\n\n" + jtrans("This meat is poisonous.");
+%%%%
+Eating this meat will cause random mutations.
+
+この肉を食べるとランダムの突然変異を受けるだろう
+#description << "\n\n" + jtrans("Eating this meat will cause random mutations.");
+%%%%
+Eating this meat will cause rotting.
+
+この肉を食べると腐敗を引き起こすだろう
+#description << "\n\n" + jtrans("Eating this meat will cause rotting.");
+%%%%
+Meat like this tastes awful and provides far less nutrition.
+
+この肉は酷い味であり、ほとんど栄養を提供しない
+#description << "\n\n" + jtrans("Meat like this tastes awful and provides far less nutrition.");
+%%%%
+This meat is poisonous
+
+この肉は有毒であり
+#description << "\n\n" + jtrans("This meat is poisonous");
+%%%%
+and provides less nutrition even for the poison-resistant
+
+毒への耐性を持っていてもほとんど栄養を与えない
+#description << jtrans("and provides less nutrition even for the poison-resistant");
+%%%%
+#.
+#
+#description << ".";
+%%%%
+#\n\n
+#
+#description << "\n\n" << uppercase_first(god_name(you.religion))
+%%%%
+disapproves of eating such meat.
+
+はその肉を食べることを承認しない
+#<< jtrans("disapproves of eating such meat.");
+%%%%
+It uses its own magic reservoir for casting spells, and recharges automatically according to the recharging rate.
+
+これは呪文を唱えるための独自の魔力容量を持っており、充填速度に応じて魔力が自動で回復する
+#"\n" + jtrans("It uses its own magic reservoir for casting spells, and recharges automatically according to the recharging rate.");
+%%%%
+It can currently hold %d charges. 
+
+これは現在 %d の魔力容量を持っている。
+#description << "\n" + make_stringf(jtrans("It can currently hold %d charges. ").c_str(), num_charges)
+%%%%
+It can be magically recharged to contain up to %d charges.
+
+これは %d まで魔力容量を増加させることができる。
+#<< make_stringf(jtrans("It can be magically recharged to contain up to %d charges.").c_str(), max_charges);
+%%%%
+Its capacity can be increased no further.
+
+これの魔力容量はこれ以上増加させることができない。
+#description << "\n" + jtrans("Its capacity can be increased no further.");
+%%%%
+Its current recharge rate is %s%d. 
+
+これの現在の充填速度は %s%d である。
+#description << "\n" + make_stringf(jtrans("Its current recharge rate is %s%d. ").c_str(), 
+%%%%
+It can be magically recharged up to +%d.
+
+充填速度は最大 +%d まで強化できる。
+#<< make_stringf(jtrans("It can be magically recharged up to +%d."), max_recharge_rate);
+%%%%
+Its recharge rate is at maximum.
+
+充填速度は最大まで強化されている。
+#description << "\n" + jtrans("Its recharge rate is at maximum.");
+%%%%
+It can have at most %d charges and +%d recharge rate.
+
+これは最大 %d の魔力容量、+%d の充填速度まで強化することができる。
+#description << "\n" + make_stringf(jtrans("It can have at most %d charges and +%d recharge rate.").c_str(), max_charges, max_recharge_rate);
+%%%%
+#\n
+#
+#string stats = "\n";
+%%%%
+It falls into the 'Maces & Flails' category.
+
+これは'鈍器'のカテゴリーに当てはまる
+#description << "\n\n" + jtrans("It falls into the 'Maces & Flails' category.");
+%%%%
+#\n
+#
+#string stats = "\n";
+%%%%
+It falls into the 'Staves' category.
+
+これは'杖'のカテゴリーに当てはまる
+#description << "\n\n" + jtrans("It falls into the 'Staves' category.");
+%%%%
+Once released, the spirits within this device will dissipate, leaving it inert, though new ones may be attracted as its bearer battles through the dungeon and grows in power and wisdom.
+
+#description << "\n" + jtrans("Once released, the spirits within this device will dissipate, leaving it inert, though new ones may be attracted as its bearer battles through the dungeon and grows in power and wisdom.");
+%%%%
+The device is presently inert.
+
+この装置は現在発動状態できない。
+#description << "\n\n" + jtrans("The device is presently inert.");
+%%%%
+#timer
+#
+#ASSERT(props.exists("timer"));
+%%%%
+#timer
+#
+#CrawlVector &timer = props["timer"].get_vector();
+%%%%
+\nQuantity: 
+
+#description << "\nQuantity: " << stack.quantity
+%%%%
+        Timer size: 
+
+#<< "        Timer size: " << (int) timer.size();
+%%%%
+\nTimers:\n
+
+#description << "\nTimers:\n";
+%%%%
+#  
+#
+#description << (timer[i].get_int()) << "  ";
+%%%%
+#Bad item class
+#
+#die("Bad item class");
+%%%%
+\nIt has a curse placed upon it.
+
+これには呪いがかかっている
+#description << "\nIt has a curse placed upon it.";
+%%%%
+#\n
+#
+#description << "\n";
+%%%%
+It has a curse placed upon it, and 
+
+これには呪いがかかっており、
+#description << jtrans("It has a curse placed upon it, and ");
+%%%%
+it weighs around %d.%d aum.
+
+その重量は %d.%d aumだ。
+#description << make_stringf(jtrans("it weighs around %d.%d aum.").c_str(), (mass / 10), (mass % 10));
+%%%%
+It weighs around %d.%d aum.
+
+その重量は %d.%d aumだ。
+#description << make_stringf(jtrans("It weighs around %d.%d aum.").c_str(), (mass / 10), (mass % 10)); 
+%%%%
+This ancient artefact cannot be changed by magic or mundane means.
+
+この伝説のアーティファクトは魔法やその他の手段で変化させることが出来ない。
+#description << "\n\n" + jtrans("This ancient artefact cannot be changed by magic or mundane means.");
+%%%%
+It is an ancient artefact.
+
+これは伝説のアーティファクト。
+#description << "\n\n" + jtrans("It is an ancient artefact.");
+%%%%
+#\n\n
+#
+#description << "\n\n" << uppercase_first(god_name(you.religion))
+%%%%
+%s opposes the use of such an %s item.
+
+%sはそのような%sなアイテムの使用に反対する
+#<< make_stringf(jtrans("%s opposes the use of such an %s item.").c_str(), 
+%%%%
+evil
+
+邪悪
+#description << jtrans("evil");
+%%%%
+unholy
+
+不浄
+#description << jtrans("unholy");
+%%%%
+#\n\n
+#
+#description << "\n\n" << uppercase_first(god_name(you.religion))
+%%%%
+disapproves of the use of such an item.
+
+はそのようなアイテムの使用を承認しない
+#<< jtrans("disapproves of the use of such an item.");
+%%%%
+#.
+#
+#description << "\n" << origin_desc(item) << ".";
+%%%%
+Stash search prefixes: 
+
+#description << "\n\n" << "Stash search prefixes: "
+%%%%
+\nMenu/colouring prefixes: 
+
+#description << "\nMenu/colouring prefixes: " << menu_prefix;
+%%%%
+a shop
+
+#string db_name   = feat == DNGN_ENTER_SHOP ? "a shop" : desc;
+%%%%
+#!
+#
+#if (!ends_with(desc, ".") && !ends_with(desc, "!")
+%%%%
+#?
+#
+#&& !ends_with(desc, "?"))
+%%%%
+#.
+#
+#inf.title += ".";
+%%%%
+feature_description_long
+
+#env.markers.property_at(pos, MAT_ANY, "feature_description_long");
+%%%%
+Press '<w>!</w>' or <w>Right-click</w> to toggle between the overview and the extended description.
+
+'<w>!</w>' か <w>Right-click</w>を押すことで一覧と追加説明の画面を切り替えることが出来る。
+%%%%
+Press '<w>!</w>' to toggle between the overview and the extended description.
+
+'<w>!</w>' を押すことで一覧と追加説明の画面を切り替えることが出来る。
+%%%%
+#describe_feature
+#
+#tiles_crt_control show_as_menu(CRT_MENU, "describe_feature");
+%%%%
+Select a spell to read its description, to memorise it or to forget it.
+
+それを記憶するか忘れるため、もしくは説明を見るために呪文を選択せよ。
+#cprintf("%s", jtrans("Select a spell to read its description, to memorise it or to forget it.").c_str());
+%%%%
+Select a spell to read its description.
+
+説明を見るために呪文を選択せよ。
+#cprintf("%s", jtrans("Select a spell to read its description.").c_str());
+%%%%
+freeform
+
+#"freeform");
+%%%%
+highlighter
+
+#highlighter->init(coord_def(0, 0), coord_def(0, 0), "highlighter");
+%%%%
+You can 
+
+#string prompt = "You can ";
+%%%%
+#i
+#
+#if (clua.callbooleanfn(false, "ch_item_wieldable", "i", &item))
+%%%%
+(w)ield
+
+#act_str[CMD_WIELD_WEAPON]       = "(w)ield";
+%%%%
+(u)nwield
+
+#act_str[CMD_UNWIELD_WEAPON]     = "(u)nwield";
+%%%%
+(q)uiver
+
+#act_str[CMD_QUIVER_ITEM]        = "(q)uiver";
+%%%%
+(w)ear
+
+#act_str[CMD_WEAR_ARMOUR]        = "(w)ear";
+%%%%
+(t)ake off
+
+#act_str[CMD_REMOVE_ARMOUR]      = "(t)ake off";
+%%%%
+e(v)oke
+
+#act_str[CMD_EVOKE]              = "e(v)oke";
+%%%%
+(e)at
+
+#act_str[CMD_EAT]                = "(e)at";
+%%%%
+(r)ead
+
+#act_str[CMD_READ]               = "(r)ead";
+%%%%
+(p)ut on
+
+#act_str[CMD_WEAR_JEWELLERY]     = "(p)ut on";
+%%%%
+(r)emove
+
+#act_str[CMD_REMOVE_JEWELLERY]   = "(r)emove";
+%%%%
+(q)uaff
+
+#act_str[CMD_QUAFF]              = "(q)uaff";
+%%%%
+(d)rop
+
+#act_str[CMD_DROP]               = "(d)rop";
+%%%%
+(i)nscribe
+
+#act_str[CMD_INSCRIBE_ITEM]      = "(i)nscribe";
+%%%%
+(=)adjust
+
+#act_str[CMD_ADJUST_INVENTORY]   = "(=)adjust";
+%%%%
+#, 
+#
+#prompt += ", ";
+%%%%
+# or 
+#
+#prompt += " or ";
+%%%%
+#.
+#
+#prompt += " the " + item.name(DESC_BASENAME) + ".";
+%%%%
+#</cyan>
+#
+#prompt = "<cyan>" + prompt + "</cyan>";
+%%%%
+describe_item
+
+#tiles_crt_control show_as_menu(CRT_MENU, "describe_item");
+%%%%
+#\n
+#
+#formatted_string::parse_string("\n").display();
+%%%%
+Replace inscription with what? 
+
+#string prompt = is_inscribed ? "Replace inscription with what? "
+%%%%
+Inscribe with what? 
+
+#: "Inscribe with what? ";
+%%%%
+#</cyan>
+#
+#prompt = "<cyan>" + prompt + "</cyan>";
+%%%%
+<cyan>Adjust to which letter? </cyan>
+
+<cyan>どの文字に移動しますか? </cyan>
+#string prompt = jtrans("<cyan>Adjust to which letter? </cyan>");
+%%%%
+\nLevel: %d
+
+#"\nLevel: %d",
+%%%%
+%sLevel: %d        School%s: %s        Fail: %s
+
+%sレベル: %d       領域%s: %s          失敗率: %s
+#jtrans("%sLevel: %d        School%s: %s        Fail: %s").c_str(),
+%%%%
+#\n
+#
+#				 "\n",
+%%%%
+#
+#
+#schools.find("/") != string::npos ? "" : "",
+%%%%
+Power :
+
+威力 : 
+#description += "\n\n" + jtrans("Power :");
+%%%%
+Range :
+
+射程 : 
+#description += "\n" + jtrans("Range :");
+%%%%
+Hunger:
+
+空腹度 : 
+#description += "\n" + jtrans("Hunger:");
+%%%%
+Noise :
+
+騒音 : 
+#description += "\n" + jtrans("Noise :");
+%%%%
+#\n
+#
+#description += "\n";
+%%%%
+#\n\n
+#
+#description += "\n\n";
+%%%%
+ spell
+
+#+ " spell");
+%%%%
+This spell has no description. 
+
+#description += "This spell has no description. "
+%%%%
+Casting it may therefore be unwise. 
+
+#"Casting it may therefore be unwise. "
+%%%%
+Instead, go fix it. 
+
+#"Instead, go fix it. ";
+%%%%
+Please file a bug report.
+
+#"Please file a bug report.";
+%%%%
+#//Fixme_ja(召喚上限)
+You can sustain at most %d creatures summoned by this spell.
+
+あなたは最大 %d 体までの怪物をこの呪文によって維持できる
+#description += make_stringf(jtrans("You can sustain at most %d creatures summoned by this spell.").c_str(), 
+%%%%
+frowns upon the use of this spell.
+
+はその呪文の使用にしかめっ面をする
+#+ jtrans("frowns upon the use of this spell.") + "\n";
+%%%%
+You'd be excommunicated if you dared to cast it!
+
+あなたはその呪文の詠唱を試みた場合即座に破門される!
+#description += jtrans("You'd be excommunicated if you dared to cast it!") + "\n";
+%%%%
+supports the use of this spell.
+
+はその呪文の詠唱を支援する
+#+ jtrans("supports the use of this spell.") + "\n";
+%%%%
+The spell is scrawled in ancient runes that are beyond your current level of understanding.
+
+その呪文は古代のルーン文字によって殴り書きされており、現在のあなたの理解力を超えている。
+#description += jtrans("The spell is scrawled in ancient runes that are beyond your current level of understanding.") + "\n";
+%%%%
+This spell will have no effect right now.
+
+この呪文は現在効力をもたらさない
+#description += jtrans("This spell will have no effect right now.") + "\n";
+%%%%
+ spell
+
+#const string quote = getQuoteString(string(spell_title(spell)) + " spell");
+%%%%
+#\n
+#
+#description += "\n" + quote;
+%%%%
+#\n
+#
+#description += "\n" + desc_cannot_memorise_reason(form) + "\n";
+%%%%
+(F)orget this spell by destroying the book.
+
+(F)この呪文を本を破壊することで忘却する
+#description += "\n" + jtrans("(F)orget this spell by destroying the book.") + "\n";
+%%%%
+Sif Muna frowns upon the destroying of books.
+
+シフ＝ムーナは本の破壊に対してしかめっ面をする
+#description +=jtrans("Sif Muna frowns upon the destroying of books.") + "\n";
+%%%%
+(M)emorise this spell.
+
+(M)この呪文を記憶する
+#description += "\n" + jtrans("(M)emorise this spell.") + "\n";
+%%%%
+#describe_spell
+#
+#tiles_crt_control show_as_menu(CRT_MENU, "describe_spell");
+%%%%
+#//Fixme_ja_describe_draconian_role
+It darts around disconcertingly without taking a step.
+
+それは歩む事無く、当惑するほどの速度で疾走する
+#return jtrans("It darts around disconcertingly without taking a step.");
+%%%%
+Its scales are sooty from years of magical pyrotechnics.
+
+その鱗は長年の魔力の爆発により煤焦げている
+#return jtrans("Its scales are sooty from years of magical pyrotechnics.");
+%%%%
+In its gaze you see all the malefic power of its terrible god.
+
+あなたに向けられたその視線の中には恐るべき神の悪意ある力が備わっている
+#return jtrans("In its gaze you see all the malefic power of its terrible god.");
+%%%%
+Crackling balls of pure energy hum and spark up and down its scaled fists and arms.
+
+音を鳴らす純粋な魔力球を唸らせ、その鱗付いた拳と腕を高速で動かしている
+#return jtrans("Crackling balls of pure energy hum and spark up and down its scaled fists and arms.");
+%%%%
+It looks especially reptilian, and eager for company.
+
+それは特に爬虫類に似ており、軍勢を呼び出す事に熱心に見える
+#return jtrans("It looks especially reptilian, and eager for company.");
+%%%%
+It looks unnaturally strong and dangerous with its fists.
+
+それは不自然に強力であり、危険な拳を持っている
+#return jtrans("It looks unnaturally strong and dangerous with its fists.");
+%%%%
+It wields a deadly weapon with menacing efficiency.
+
+それは能率的に威圧ができる致命的な武器を持っている
+#return jtrans("It wields a deadly weapon with menacing efficiency.");
+%%%%
+#
+#
+#return "";
+%%%%
+Sparks crackle and flare out of its mouth and nostrils.
+
+パチパチと音を鳴らし、口と鼻の外に火花を散らしている
+#return jtrans("Sparks crackle and flare out of its mouth and nostrils.");
+%%%%
+Liquid flames drip from its mouth.
+
+炎上する液体がその口から垂れている
+#return jtrans("Liquid flames drip from its mouth.");
+%%%%
+Acid fumes swirl around it.
+
+酸性のガスを周囲に渦巻かせている
+#return jtrans("Acid fumes swirl around it.");
+%%%%
+Venom steams and drips from its jaws.
+
+その顎から猛毒の瘴気としずくを垂らしている
+#return jtrans("Venom steams and drips from its jaws.");
+%%%%
+Its outline shimmers with wild energies.
+
+奇妙なエネルギーが体の周りに揺らめいている
+#return jtrans("Its outline shimmers with wild energies.");
+%%%%
+Smoke pours from its nostrils.
+
+その鼻から煙を噴出している
+#return jtrans("Smoke pours from its nostrils.");
+%%%%
+Frost pours from its nostrils.
+
+その鼻から冷気を噴出している
+#return jtrans("Frost pours from its nostrils.");
+%%%%
+Its scales and tail are adapted to the water.
+
+その鱗と尾鰭が水に適合している
+#return jtrans("Its scales and tail are adapted to the water.");
+%%%%
+It is cloaked in a pall of superheated steam.
+
+それは過熱された水蒸気に包まれている
+#return jtrans("It is cloaked in a pall of superheated steam.");
+%%%%
+#
+#
+#return "";
+%%%%
+#A 
+#
+#description += "A ";
+%%%%
+A muscular
+
+筋肉の
+#description += jtrans("A muscular");
+%%%%
+brown-
+
+茶色の
+#case MONS_DRACONIAN:            description += jtrans("brown-");   break;
+%%%%
+black-
+
+黒の
+#case MONS_BLACK_DRACONIAN:      description += jtrans("black-");   break;
+%%%%
+mottled-
+
+斑紋の
+#case MONS_MOTTLED_DRACONIAN:    description += jtrans("mottled-"); break;
+%%%%
+yellow-
+
+黄色の
+#case MONS_YELLOW_DRACONIAN:     description += jtrans("yellow-");  break;
+%%%%
+green-
+
+緑の
+#case MONS_GREEN_DRACONIAN:      description += jtrans("green-");   break;
+%%%%
+purple-
+
+紫の
+#case MONS_PURPLE_DRACONIAN:     description += jtrans("purple-");  break;
+%%%%
+red-
+
+赤の
+#case MONS_RED_DRACONIAN:        description += jtrans("red-");     break;
+%%%%
+white-
+
+白の
+#case MONS_WHITE_DRACONIAN:      description += jtrans("white-");   break;
+%%%%
+grey-
+
+灰色の
+#case MONS_GREY_DRACONIAN:       description += jtrans("grey-");    break;
+%%%%
+pale-
+
+青白の
+#case MONS_PALE_DRACONIAN:       description += jtrans("pale-");    break;
+%%%%
+scaled humanoid with wings.
+
+鱗に包まれた翼を持った人間型の生物だ
+#description += jtrans("scaled humanoid with wings.");
+%%%%
+# 
+#
+#description += " " + drac_col;
+%%%%
+# 
+#
+#description += " " + drac_role;
+%%%%
+It has the head of 
+
+#string description = "It has the head of ";
+%%%%
+, the head of 
+
+#description += ", the head of ";
+%%%%
+another 
+
+#description += "another ";
+%%%%
+, and the head of 
+
+#description += ", and the head of ";
+%%%%
+yet 
+
+#description += "yet ";
+%%%%
+#another 
+#
+#--defined.
+#description += "another ";
+%%%%
+. It has the body of 
+
+#description += ". It has the body of ";
+%%%%
+#chimera_batty
+#
+#const bool has_wings = mi.props.exists("chimera_batty")
+%%%%
+#chimera_wings
+#
+#|| mi.props.exists("chimera_wings");
+%%%%
+#chimera_legs
+#
+#if (mi.props.exists("chimera_legs"))
+%%%%
+#chimera_legs
+#
+#get_chimera_part(&mi, mi.props["chimera_legs"].get_int());
+%%%%
+#, 
+#
+#description += ", ";
+%%%%
+, and 
+
+#description += ", and ";
+%%%%
+the legs of 
+
+#description += "the legs of ";
+%%%%
+chimera_batty
+
+#monster_type wing_part = mi.props.exists("chimera_batty") ?
+%%%%
+chimera_batty
+
+#get_chimera_part(&mi, mi.props["chimera_batty"].get_int())
+%%%%
+chimera_wings
+
+#: get_chimera_part(&mi, mi.props["chimera_wings"].get_int());
+%%%%
+ and the wings of 
+
+#description += " and the wings of ";
+%%%%
+ and it hovers like 
+
+#description += " and it hovers like ";
+%%%%
+ and it moves like 
+
+#description += " and it moves like "; // Unseen horrors
+%%%%
+#.
+#
+#description += ".";
+%%%%
+electricity
+
+#return "electricity";
+%%%%
+poison
+
+#return "poison";
+%%%%
+fire
+
+#return "fire";
+%%%%
+steam
+
+#return "steam";
+%%%%
+cold
+
+#return "cold";
+%%%%
+acid
+
+#return "acid";
+%%%%
+rotting
+
+#return "rotting";
+%%%%
+negative energy
+
+#return "negative energy";
+%%%%
+buggy resistance
+
+#return "buggy resistance";
+%%%%
+harmless
+
+#case MTHRT_TRIVIAL: return "harmless";
+%%%%
+easy
+
+#case MTHRT_EASY:    return "easy";
+%%%%
+dangerous
+
+#case MTHRT_TOUGH:   return "dangerous";
+%%%%
+extremely dangerous
+
+#case MTHRT_NASTY:   return "extremely dangerous";
+%%%%
+buggily threatening
+
+#default:            return "buggily threatening";
+%%%%
+#
+#
+#return "";
+%%%%
+divine
+
+神聖な
+%%%%
+special
+
+特別な
+%%%%
+magical
+
+魔法的な
+#string adj = priest ? "divine" : natural ? "special" : "magical";
+%%%%
+#
+#
+#return "";
+%%%%
+has mastered one of the following spellbooks:
+
+は以下の呪文書の一つを習得している：
+#result << jtrans("has mastered one of the following spellbooks:") + "\n";
+%%%%
+has mastered the following spells:
+
+は以下の呪文を習得している：
+#result << jtrans("has mastered the following spells:");
+%%%%
+possesses the following %s abilities:
+
+は以下の%s特殊能力を保有している：
+#result << make_stringf(jtrans("possesses the following %s abilities:").c_str(), jtrans(adj));
+%%%%
+possesses one of the following sets of %s abilities:\n
+
+は以下の%s特殊能力の組のうち、一つを保有している：
+#result << make_stringf(jtrans("possesses one of the following sets of %s abilities:\n").c_str(), jtrans(adj));
+%%%%
+Book
+
+%%%%
+ Set 
+
+#result << (caster ? " Book " : " Set ") << i+1 << ": ";
+%%%%
+#, 
+#
+#result << ", ";
+%%%%
+#\n
+#
+#result << "\n";
+%%%%
+immune to
+
+以下の免疫を持っている: 
+#const string tmp = jtrans("immune to")
+%%%%
+very resistant to
+
+以下の強力な耐性を持っている: 
+#const string tmp = jtrans("very resistant to")
+%%%%
+resistant to
+
+以下の耐性を持っている: 
+#const string tmp = jtrans("resistant to")
+%%%%
+ha
+
+#result << uppercase_first(pronoun) << jtrans("ha") <<_get_threat_desc(mi.threat)
+%%%%
+looks
+
+に見える
+#<< jtrans("looks") << "\n";
+%%%%
+%s is %s.\n
+
+%s は %s。\n
+#result << make_stringf(jtrans("%s is %s.\n").c_str(),
+%%%%
+; and 
+
+；そして 
+%%%%
+; 
+
+； 
+#"; and ", "; ")
+%%%%
+#.\n
+#
+#<< ".\n";
+%%%%
+is very brittle
+
+は特別脆く、
+#result << uppercase_first(pronoun) << jtrans("is very brittle")
+%%%%
+and susceptible to disintegration.
+
+そして分解されやすい
+#<< jtrans("and susceptible to disintegration.") + "\n";
+%%%%
+%s is susceptible to %s.\n
+
+%s は %s に弱い。\n
+#result << make_stringf(jtrans("%s is susceptible to %s.\n").c_str(),
+%%%%
+is %s to hostile enchantments.
+
+は敵対的な魔法に対する%s耐性を持っている
+#<< make_stringf(jtrans("is %s to hostile enchantments.").c_str(),
+%%%%
+#\n
+#
+#magic_res_adjective(mr).c_str()) + "\n";
+%%%%
+cannot move.
+
+#result << uppercase_first(pronoun) << jtrans("cannot move.") + "\n";
+%%%%
+is outlined in light.
+
+は光の中で照らされている
+#result << uppercase_first(pronoun) << jtrans("is outlined in light.") + "\n";
+%%%%
+is glowing with mutagenic radiation.
+
+は突然変異性の放射で輝いている
+#result << uppercase_first(pronoun) << jtrans("is glowing with mutagenic radiation.") + "\n";
+%%%%
+can see invisible.
+
+は見えざるものを見ることができる
+#result << uppercase_first(pronoun) << jtrans("can see invisible.") + "\n";
+%%%%
+can sense the presence of invisible creatures.
+
+は周囲の見えざるものを感知することが出来る
+#result << uppercase_first(pronoun) << jtrans("can sense the presence of invisible creatures.") + "\n";
+%%%%
+ha
+
+#result << uppercase_first(pronoun) << jtrans("ha");
+%%%%
+very slow
+
+とても遅い
+#result << jtrans("very slow");
+%%%%
+slow
+
+遅い
+#result << jtrans("slow");
+%%%%
+extremely fast
+
+凄まじく早い
+#result << jtrans("extremely fast");
+%%%%
+very fast
+
+とても速い
+#result << jtrans("very fast");
+%%%%
+fast
+
+速い
+#result << jtrans("fast");
+%%%%
+#.\n
+#
+#result << ".\n";
+%%%%
+can fly by flapping
+
+は翼をはばたかせて飛ぶことができる。
+#result << uppercase_first(pronoun)<< jtrans("can fly by flapping wings.")
+%%%%
+can fly.
+
+は飛行できる
+#result << uppercase_first(pronoun) << jtrans("can fly.") + "\n";
+%%%%
+cannot regenerate.
+
+は自然回復しない
+#result << uppercase_first(pronoun) << jtrans("cannot regenerate.") + "\n";
+%%%%
+regenerates quickly.
+
+は急速に回復する
+#result << uppercase_first(pronoun) << jtrans("regenerates quickly.") + "\n";
+%%%%
+tiny
+
+非常に小さい
+#"tiny",
+%%%%
+very small
+
+とても小さい
+#"very small",
+%%%%
+small
+
+小さい
+#"small",
+%%%%
+large
+
+大きい
+#"large",
+%%%%
+very large
+
+とても大きい
+#"very large",
+%%%%
+giant
+
+巨大だ
+#"giant",
+%%%%
+huge
+
+とてつもなく巨大だ
+#"huge",
+%%%%
+is as big as
+
+#result << uppercase_first(pronoun) << jtrans("is as big as")
+%%%%
+#\n
+#
+#<< "\n";
+%%%%
+ha
+
+#result << uppercase_first(pronoun) << jtrans("ha") << jtrans(sizes[mi.body_size()]) << ".\n";
+%%%%
+cocytus
+
+#return "cocytus";
+%%%%
+dis
+
+#return "dis";
+%%%%
+tartarus
+
+#return "tartarus";
+%%%%
+gehenna
+
+#return "gehenna";
+%%%%
+#.
+#
+#inf.title = uppercase_first(mi.full_name(DESC_A, true)) + ".";
+%%%%
+#dbname
+#
+#if (mi.props.exists("dbname"))
+%%%%
+#dbname
+#
+#db_name = mi.props["dbname"].get_string();
+%%%%
+# 
+#
+#db_name += " " + _serpent_of_hell_flavour(mi.type);
+%%%%
+cap-
+
+#symbol = "cap-" + symbol;
+%%%%
+_prefix
+
+#string symbol_prefix = "__" + symbol + "_prefix";
+%%%%
+_suffix
+
+#string symbol_suffix = "__" + symbol + "_suffix";
+%%%%
+#\n
+#
+#inf.quote += "\n";
+%%%%
+It wants to drink your blood!
+
+それはあなたの血を欲しがっている!
+#inf.body << "\n" + jtrans("It wants to drink your blood!") + "\n";
+%%%%
+It has come for your soul!
+
+それはあなたの魂を欲している!
+#inf.body <<  "\n" + jtrans("It has come for your soul!") + "\n";
+%%%%
+#\n
+#
+#inf.body << "\n" << _describe_draconian(mi) << "\n";
+%%%%
+The apparition of
+
+#inf.body << jtrans("The apparition of") << get_ghost_description(mi) << ".\n";
+%%%%
+An illusion of
+
+#inf.body << jtrans("An illusion of") << get_ghost_description(mi) << ".\n";
+%%%%
+#\n
+#
+#inf.body << _describe_demon(mi.mname, mi.fly) << "\n";
+%%%%
+#\n
+#
+#inf.body << "\n" << _describe_chimera(mi) << "\n";
+%%%%
+If this monster is a \"program bug\", then it's 
+
+#inf.body << "If this monster is a \"program bug\", then it's "
+%%%%
+recommended that you save your game and reload.  Please report 
+
+#"recommended that you save your game and reload.  Please report "
+%%%%
+monsters who masquerade as program bugs or run around the 
+
+#"monsters who masquerade as program bugs or run around the "
+%%%%
+dungeon without a proper description to the authorities.\n
+
+#"dungeon without a proper description to the authorities.\n";
+%%%%
+#__
+#
+#string symbol_suffix = "__";
+%%%%
+_suffix
+
+#symbol_suffix += "_suffix";
+%%%%
+_examine
+
+#suffix += getLongDescription(symbol_suffix + "_examine");
+%%%%
+#\n
+#
+#inf.body << "\n" << suffix;
+%%%%
+#\n
+#
+#inf.body << "\n" << result;
+%%%%
+#\n
+#
+#inf.body << "\n" << uppercase_first(mi.pronoun(PRONOUN_SUBJECTIVE))
+%%%%
+is incapable of using stairs.
+
+は階段を使用することが出来ない
+#<< jtrans("is incapable of using stairs.") + "\n";
+%%%%
+is mindless.
+
+は精神を持っていない
+#inf.body << uppercase_first(mi.pronoun(PRONOUN_SUBJECTIVE)) << jtrans("is mindless.") + "\n";
+%%%%
+is vulnerable to silver and hated by Zin.
+
+は銀に弱く、ジンに嫌われている
+#<< jtrans("is vulnerable to silver and hated by Zin.") + "\n";
+%%%%
+This monster has been summoned, and is thus only temporary. Killing it yields no experience, nutrition or items
+
+このモンスターは一時的に召喚された者であり、これを殺すことで経験値、アイテム、栄養を得る事は出来ない
+#inf.body << "\n" << jtrans("This monster has been summoned, and is thus only temporary. Killing it yields no experience, nutrition or items");
+%%%%
+, and it is incapable of using stairs
+
+、またこれは階段を使用できない
+#inf.body << jtrans(", and it is incapable of using stairs");
+%%%%
+#.\n
+#
+#inf.body << ".\n";
+%%%%
+This monster has been summoned in a durable way, and only partially exists. Killing it yields no experience, nutrition or items. You cannot easily abjure it, though.
+
+このモンスターは強力な方法で召喚され、部分的にこの世界に存在している。このモンスターを倒すことは全く経験値、アイテム、栄養値をもたらさない。最も、あなたは容易くそれを解放することはできない
+#inf.body << "\n" << jtrans("This monster has been summoned in a durable way, and only partially exists. Killing it yields no experience, nutrition or items. You cannot easily abjure it, though.") + "\n";
+%%%%
+You have summoned too many monsters of this kind to sustain them all, and thus this one will shortly expire.
+
+あなたは維持できる以上の同種のモンスターを召喚しているため、すぐさま召喚モンスターは消え去ってしまうだろう。
+#inf.body << "\n" << jtrans("You have summoned too many monsters of this kind to sustain them all, and thus this one will shortly expire.")+ "\n";
+%%%%
+#\n
+#
+#inf.quote += "\n";
+%%%%
+\nPlaced by map: %s
+
+#inf.body << make_stringf("\nPlaced by map: %s",
+%%%%
+\nMonster health: 
+
+#inf.body << "\nMonster health: "
+%%%%
+#\n
+#
+#<< mons.hit_points << "/" << mons.max_hit_points << "\n";
+%%%%
+Monster foe: 
+
+#inf.body << "Monster foe: "
+%%%%
+(none)
+
+#: "(none)");
+%%%%
+#friendly
+#
+#attitude.push_back("friendly");
+%%%%
+#neutral
+#
+#attitude.push_back("neutral");
+%%%%
+#good_neutral
+#
+#attitude.push_back("good_neutral");
+%%%%
+#strict_neutral
+#
+#attitude.push_back("strict_neutral");
+%%%%
+#pacified
+#
+#attitude.push_back("pacified");
+%%%%
+#wont_attack
+#
+#attitude.push_back("wont_attack");
+%%%%
+#; 
+#
+#inf.body << "; " << comma_separated_line(attitude.begin(),
+%%%%
+#; 
+#
+#"; ", "; ");
+%%%%
+")"\n\nMonster Spells:\n
+
+#inf.body << jtrans("")"\n\nMonster Spells:\n";
+%%%%
+#: 
+#
+#inf.body << "    " << i << ": "
+%%%%
+# (
+#
+#<< " (" << static_cast<int>(hspell_pass[i])
+%%%%
+#)
+#
+#<< ")";
+%%%%
+")"\n\nMonster Inventory:\n
+
+#inf.body << jtrans("")"\n\nMonster Inventory:\n";
+%%%%
+#: 
+#
+#inf.body << "    " << i << ": "
+%%%%
+blame
+
+#if (mons.props.exists("blame"))
+%%%%
+\n\nMonster blame chain:\n
+
+#inf.body << "\n\nMonster blame chain:\n";
+%%%%
+#blame
+#
+#const CrawlVector& blame = mons.props["blame"].get_vector();
+%%%%
+#\n
+#
+#inf.body << "    " << it->get_string() << "\n";
+%%%%
+#\n
+#
+#inf.footer += "\n" + footer;
+%%%%
+#describe_monster
+#
+#tiles_crt_control show_as_menu(CRT_MENU, "describe_monster");
+%%%%
+weakling
+
+#"weakling",
+%%%%
+average
+
+#"average",
+%%%%
+experienced
+
+#"experienced",
+%%%%
+powerful
+
+#"powerful",
+%%%%
+mighty
+
+#"mighty",
+%%%%
+great
+
+#"great",
+%%%%
+awesomely powerful
+
+#"awesomely powerful",
+%%%%
+legendary
+
+#"legendary"
+%%%%
+#%s %s %s
+#
+#string desc = make_stringf("%s %s %s", rank,
+%%%%
+#%s %s%s
+#
+#desc = make_stringf("%s %s%s",
+%%%%
+# the 
+#
+#gstr << mi.mname << " the "
+%%%%
+# 
+#
+#<< ", " << _xl_rank_name(mi.u.ghost.xl_rank) << " ";
+%%%%
+# 
+#
+#<< " "
+%%%%
+# of 
+#
+#gstr << " of "
+%%%%
+%%%%
+#(
+#
+#"(" +
+%%%%
+#Various
+#
+#"Various" : make_cost_description(abil))
+%%%%
+#)
+#
+#+ ")";
+%%%%
+(None)
+
+#if (cost != "(None)")
+%%%%
+#%s\n
+#
+#cprintf("%s\n", buf.c_str());
+%%%%
+You can provide lesser healing for yourself and others.
+
+#jtrans("You can provide lesser healing for yourself and others.").c_str(),
+%%%%
+dekiru
+
+#buf = jtrans("Youha") + buf + jtrans("dekiru");
+%%%%
+Godly wrath is upon you!
+
+#return (penance >= 50) ? jtrans("Godly wrath is upon you!").c_str() :
+%%%%
+You've transgressed heavily! Be penitent!
+
+#(penance >= 20) ? jtrans("You've transgressed heavily! Be penitent!").c_str() :
+%%%%
+You are under penance.
+
+#(penance >=  5) ? jtrans("You are under penance.").c_str()
+%%%%
+You should show more discipline.
+
+#: jtrans("You should show more discipline.").c_str();
+%%%%
+A prized avatar of
+
+#return (you.piety >= piety_breakpoint(5)) ? godname + jtrans("A prized avatar of").c_str():
+%%%%
+A favoured servant of
+
+#(you.piety >= piety_breakpoint(4)) ? godname + jtrans("A favoured servant of").c_str():
+%%%%
+A shining star in the eyes of
+
+#(you.piety >= piety_breakpoint(3)) ? godname + jtrans("A shining star in the eyes of").c_str():
+%%%%
+A rising star in the eyes of
+
+#(you.piety >= piety_breakpoint(2)) ? godname + jtrans("A rising star in the eyes of").c_str():
+%%%%
+is most pleased with you.
+
+#(you.piety >= piety_breakpoint(1)) ? uppercase_first(godname) + jtrans("is most pleased with you.").c_str() :
+%%%%
+is pleased with you.
+
+#(you.piety >= piety_breakpoint(0)) ? uppercase_first(godname) + jtrans("is pleased with you.").c_str()
+%%%%
+is noncommittal.
+
+#: uppercase_first(godname) + jtrans("is noncommittal.").c_str();
+%%%%
+#
+#
+#string result = "";
+%%%%
+You can pray at an altar to donate your money.
+
+#result += jtrans("You can pray at an altar to donate your money.");
+%%%%
+# 
+#
+#result += " ";
+%%%%
+You can have all your mutations cured.
+
+#result += jtrans("You can have all your mutations cured.");
+%%%%
+# 
+#
+#result += " ";
+%%%%
+You radiate a
+
+#result += jtrans("You radiate a");
+%%%%
+large
+
+#result += jtrans("large");
+%%%%
+#
+#
+#result += "";
+%%%%
+small
+
+#result += jtrans("small");
+%%%%
+righteous aura, and all beings within it are easier to hit.
+
+#result += jtrans("righteous aura, and all beings within it are easier to hit.");
+%%%%
+# 
+#
+#result += " ";
+%%%%
+You can pray at an altar to have your weapon blessed, especially a long blade or demon weapon.
+
+#result += jtrans("You can pray at an altar to have your weapon blessed, especially a long blade or demon weapon.");
+%%%%
+You can pray to destroy weapons on the ground in Elyvilon name. Inscribe them with !p, !* or =p to avoid sacrificing them accidentally.
+
+#result += jtrans("You can pray to destroy weapons on the ground in Elyvilon name. Inscribe them with !p, !* or =p to avoid sacrificing them accidentally.");
+%%%%
+You can pray at an altar to have your weapon corrupted.
+
+#result += jtrans("You can pray at an altar to have your weapon corrupted.");
+%%%%
+You can pray at an altar to have your necromancy enhanced.
+
+#result += jtrans("You can pray at an altar to have your necromancy enhanced.");
+%%%%
+You can pray to sacrifice all orcish remains on your square.
+
+#result += jtrans("You can pray to sacrifice all orcish remains on your square.");
+%%%%
+You can pray to sacrifice all items on your square. Inscribe items with !p, !* or =p to avoid sacrificing them accidentally. See the detailed description to sacrifice only some kinds of items.
+
+#result += jtrans("You can pray to sacrifice all items on your square. Inscribe items with !p, !* or =p to avoid sacrificing them accidentally. See the detailed description to sacrifice only some kinds of items.");
+%%%%
+Evolving plants requires fruit, and evolving fungi requires piety.
+
+#result += jtrans("Evolving plants requires fruit, and evolving fungi requires piety.");
+%%%%
+# 
+#
+#result += " ";
+%%%%
+You can pray to sacrifice all fresh corpses on your square.
+
+#result += jtrans("You can pray to sacrifice all fresh corpses on your square.");
+%%%%
+Buglet
+
+%%%%
+Firebug
+
+%%%%
+Bogeybug
+
+%%%%
+Bugger
+
+#{"Buglet",             "Firebug",               "Bogeybug",                 "Bugger",
+%%%%
+Bugbear
+
+%%%%
+Bugged One
+
+%%%%
+Giant Bug
+
+%%%%
+Lord of the Bugs
+
+#"Bugbear",            "Bugged One",            "Giant Bug",                "Lord of the Bugs"},
+%%%%
+Blasphemer
+
+%%%%
+Anchorite
+
+%%%%
+Apologist
+
+%%%%
+Pious
+
+#{"Blasphemer",         "Anchorite",             "Apologist",                "Pious",
+%%%%
+Devout
+
+%%%%
+Orthodox
+
+%%%%
+Immaculate
+
+%%%%
+Bringer of Law
+
+#"Devout",             "Orthodox",              "Immaculate",               "Bringer of Law"},
+%%%%
+Honourless
+
+%%%%
+Acolyte
+
+%%%%
+Righteous
+
+%%%%
+Unflinching
+
+#{"Honourless",         "Acolyte",               "Righteous",                "Unflinching",
+%%%%
+Holy Warrior
+
+%%%%
+Exorcist
+
+%%%%
+Demon Slayer
+
+%%%%
+Bringer of Light
+
+#"Holy Warrior",       "Exorcist",              "Demon Slayer",             "Bringer of Light"},
+%%%%
+Tormented
+
+%%%%
+Purveyor of Pain
+
+%%%%
+Death's Scholar
+
+%%%%
+Merchant of Misery
+
+#{"Tormented",          "Purveyor of Pain",      "Death's Scholar",          "Merchant of Misery",
+%%%%
+Death's Artisan
+
+%%%%
+Dealer of Despair
+
+%%%%
+Black Sun
+
+%%%%
+Lord of Darkness
+
+#"Death's Artisan",    "Dealer of Despair",     "Black Sun",                "Lord of Darkness"},
+%%%%
+Traitor
+
+%%%%
+Zealot
+
+%%%%
+Exhumer
+
+%%%%
+Fey %s
+
+#{"Traitor",            "Zealot",                "Exhumer",                  "Fey %s",
+%%%%
+Soul Tainter
+
+%%%%
+Sculptor of Flesh
+
+%%%%
+Harbinger of Death
+
+%%%%
+Grim Reaper
+
+#"Soul Tainter",       "Sculptor of Flesh",     "Harbinger of Death",       "Grim Reaper"},
+%%%%
+Toy
+
+#{"Toy",                "Toy",                   "Toy",                      "Toy",
+%%%%
+#Toy
+#
+#"Toy",                "Toy",                   "Toy",                      "Toy"},
+%%%%
+Meek
+
+%%%%
+Sorcerer's Apprentice
+
+%%%%
+Scholar of Destruction
+
+%%%%
+Caster of Ruination
+
+#{"Meek",               "Sorcerer's Apprentice", "Scholar of Destruction",   "Caster of Ruination",
+%%%%
+Battle Magician
+
+%%%%
+Warlock
+
+%%%%
+Annihilator
+
+%%%%
+Luminary of Lethal Lore
+
+#"Battle Magician",    "Warlock",               "Annihilator",              "Luminary of Lethal Lore"},
+%%%%
+Coward
+
+%%%%
+Struggler
+
+%%%%
+Combatant
+
+%%%%
+Warrior
+
+#{"Coward",             "Struggler",             "Combatant",                "Warrior",
+%%%%
+Knight
+
+%%%%
+Warmonger
+
+%%%%
+Commander
+
+%%%%
+Victor of a Thousand Battles
+
+#"Knight",             "Warmonger",             "Commander",                "Victor of a Thousand Battles"},
+%%%%
+Orderly
+
+%%%%
+Spawn of Chaos
+
+%%%%
+Disciple of Annihilation
+
+%%%%
+Fanfare of Bloodshed
+
+#{"Orderly",            "Spawn of Chaos",        "Disciple of Annihilation", "Fanfare of Bloodshed",
+%%%%
+Fiendish
+
+%%%%
+Demolition %s
+
+%%%%
+Pandemonic
+
+%%%%
+Champion of Chaos
+
+#"Fiendish",           "Demolition %s",         "Pandemonic",               "Champion of Chaos"},
+%%%%
+Ignorant
+
+%%%%
+Disciple
+
+%%%%
+Student
+
+%%%%
+Adept
+
+#{"Ignorant",           "Disciple",              "Student",                  "Adept",
+%%%%
+Scribe
+
+%%%%
+Scholar
+
+%%%%
+Sage
+
+%%%%
+Genius of the Arcane
+
+#"Scribe",             "Scholar",               "Sage",                     "Genius of the Arcane"},
+%%%%
+Puny
+
+%%%%
+Troglodyte
+
+%%%%
+Angry Troglodyte
+
+%%%%
+Frenzied
+
+#{"Puny",               "Troglodyte",            "Angry Troglodyte",         "Frenzied",
+%%%%
+%s of Prey
+
+%%%%
+Rampant
+
+%%%%
+Wild %s
+
+%%%%
+Bane of Scribes
+
+#"%s of Prey",         "Rampant",               "Wild %s",                  "Bane of Scribes"},
+%%%%
+Unlucky %s
+
+%%%%
+Pannier
+
+%%%%
+Jester
+
+%%%%
+Fortune-Teller
+
+#{"Unlucky %s",         "Pannier",               "Jester",                   "Fortune-Teller",
+%%%%
+Soothsayer
+
+%%%%
+Magus
+
+%%%%
+Cardsharp
+
+%%%%
+Hand of Fortune
+
+#"Soothsayer",         "Magus",                 "Cardsharp",                "Hand of Fortune"},
+%%%%
+Sinner
+
+%%%%
+Comforter
+
+%%%%
+Caregiver
+
+%%%%
+Practitioner
+
+#{"Sinner",             "Comforter",             "Caregiver",                "Practitioner",
+%%%%
+Pacifier
+
+%%%%
+Purifying %s
+
+%%%%
+Faith Healer
+
+%%%%
+Bringer of Life
+
+#"Pacifier",           "Purifying %s",          "Faith Healer",             "Bringer of Life"},
+%%%%
+Pure
+
+%%%%
+Abyss-Baptised
+
+%%%%
+Unweaver
+
+%%%%
+Distorting %s
+
+#{"Pure",               "Abyss-Baptised",        "Unweaver",                 "Distorting %s",
+%%%%
+Agent of Entropy
+
+%%%%
+Schismatic
+
+%%%%
+Envoy of Void
+
+%%%%
+Corrupter of Planes
+
+#"Agent of Entropy",   "Schismatic",            "Envoy of Void",            "Corrupter of Planes"},
+%%%%
+Apostate
+
+%%%%
+Messenger
+
+%%%%
+Proselytiser
+
+%%%%
+Priest
+
+#{"Apostate",           "Messenger",             "Proselytiser",             "Priest",
+%%%%
+Missionary
+
+%%%%
+Evangelist
+
+%%%%
+Apostle
+
+%%%%
+Messiah
+
+#"Missionary",         "Evangelist",            "Apostle",                  "Messiah"},
+%%%%
+Scum
+
+%%%%
+Jelly
+
+%%%%
+Squelcher
+
+%%%%
+Dissolver
+
+#{"Scum",               "Jelly",                 "Squelcher",                "Dissolver",
+%%%%
+Putrid Slime
+
+%%%%
+Consuming %s
+
+%%%%
+Archjelly
+
+%%%%
+Royal Jelly
+
+#"Putrid Slime",       "Consuming %s",          "Archjelly",                "Royal Jelly"},
+%%%%
+Walking Fertiliser
+
+%%%%
+Green %s
+
+%%%%
+Inciter
+
+%%%%
+Photosynthesist
+
+#{"Walking Fertiliser", "Green %s",              "Inciter",                  "Photosynthesist",
+%%%%
+Cultivator
+
+%%%%
+Green Death
+
+%%%%
+Nimbus
+
+%%%%
+Force of Nature
+
+#"Cultivator",         "Green Death",           "Nimbus",                   "Force of Nature"},
+%%%%
+Unwound %s
+
+%%%%
+Timekeeper
+
+%%%%
+Righteous Timekeeper
+
+%%%%
+Chronographer
+
+#{"Unwound %s",         "Timekeeper",            "Righteous Timekeeper",     "Chronographer",
+%%%%
+Splendid Chronographer
+
+%%%%
+Chronicler
+
+%%%%
+Eternal Chronicler
+
+%%%%
+Ticktocktomancer
+
+#"Splendid Chronographer", "Chronicler",        "Eternal Chronicler",       "Ticktocktomancer"},
+%%%%
+Star-crossed
+
+%%%%
+Cursed
+
+%%%%
+Initiated
+
+%%%%
+Seer
+
+#{"Star-crossed",       "Cursed",                "Initiated",                "Seer",
+%%%%
+Soothsayer
+
+%%%%
+Oracle
+
+%%%%
+Illuminatus
+
+%%%%
+Omniscient
+
+#"Soothsayer",         "Oracle",                "Illuminatus",              "Omniscient"},
+%%%%
+#%s
+#
+#title = replace_all(title, "%s",
+%%%%
+Ashenzari won't support your skills until you bind yourself with cursed items.
+
+#return jtrans("Ashenzari won't support your skills until you bind yourself with cursed items.");
+%%%%
+Shield hand
+
+#static const char* bondage_parts[NUM_ET] = { "Weapon hand", "Shield hand",
+%%%%
+Jewellery
+
+#"Armour", "Jewellery" };
+%%%%
+High
+
+#static const char* bonus_level[3] = { "Low", "Medium", "High" };
+%%%%
+Bound part
+
+#desc << setw(18) << "Bound part";
+%%%%
+Boosted skills
+
+#desc << setw(30) << "Boosted skills";
+%%%%
+Bonus\n
+
+#desc << "Bonus\n";
+%%%%
+Hands
+
+#desc << "Hands";
+%%%%
+Magic schools
+
+#skills += "Magic schools";
+%%%%
+#, 
+#
+#skills += ", ";
+%%%%
+# and 
+#
+#skills += " and ";
+%%%%
+#\n
+#
+#desc << bonus_level[bonus -1] << "\n";
+%%%%
+#%s%s\n
+#
+#cprintf("%s%s\n", string(len / 2, ' ').c_str(), godname.c_str());
+%%%%
+#\n
+#
+#cprintf("\n");
+%%%%
+#\n
+#
+#cprintf("\n");
+%%%%
+#\n
+#
+#cprintf("\n");
+%%%%
+#\n
+#
+#cprintf("\n");
+%%%%
+#\n
+#
+#cprintf("\n");
+%%%%
+#
+#
+#broken = "";
+%%%%
+Note that Trog does not demand training of the Invocations skill. All abilities are purely based on piety.
+
+#broken = jtrans("Note that Trog does not demand training of the Invocations skill. All abilities are purely based on piety.");
+%%%%
+Healing hostile monsters may pacify them, turning them
+
+#broken = jtrans("Healing hostile monsters may pacify them, turning them")
+%%%%
+neutral. Pacification works best on natural beasts,
+
+#+  jtrans("neutral. Pacification works best on natural beasts,")
+%%%%
+worse on monsters of your species, worse on other
+
+#+  jtrans("worse on monsters of your species, worse on other")
+%%%%
+species, worst of all on demons and undead, and not at
+
+#+  jtrans("species, worst of all on demons and undead, and not at")
+%%%%
+all on sleeping or mindless monsters. If it succeeds,
+
+#+  jtrans("all on sleeping or mindless monsters. If it succeeds,");
+%%%%
+The piety increase when sacrificing mostly depends
+
+#broken = jtrans("The piety increase when sacrificing mostly depends")
+%%%%
+on the value of the item. To prevent items from
+
+#+  jtrans("on the value of the item. To prevent items from")
+%%%%
+#\n\n
+#
+#+  "\n\n"
+%%%%
+Nemelex Xobeh gifts various types of decks of cards.
+
+#+  jtrans("Nemelex Xobeh gifts various types of decks of cards.")
+%%%%
+Each deck type comes in three power levels: plain,
+
+#+  jtrans("Each deck type comes in three power levels: plain,")
+%%%%
+ornate, legendary. The latter contain very powerful
+
+#+  jtrans("ornate, legendary. The latter contain very powerful")
+%%%%
+card effects, potentially hazardous. High piety and
+
+#+  jtrans("card effects, potentially hazardous. High piety and")
+%%%%
+#\n\n
+#
+#					   +  "\n\n";
+%%%%
+#
+#
+#string desc = "";
+%%%%
+decks of Escape      -- armour
+
+#desc = jtrans("decks of Escape      -- armour");
+%%%%
+decks of Destruction -- weapons and ammunition
+
+#desc = jtrans("decks of Destruction -- weapons and ammunition");
+%%%%
+decks of Dungeons    -- jewellery, books, miscellaneous items
+
+#desc = jtrans("decks of Dungeons    -- jewellery, books, miscellaneous items");
+%%%%
+decks of Summoning   -- corpses, chunks, blood
+
+#desc = jtrans("decks of Summoning   -- corpses, chunks, blood");
+%%%%
+decks of Wonders     -- consumables: food, potions, scrolls, wands
+
+#desc = jtrans("decks of Wonders     -- consumables: food, potions, scrolls, wands");
+%%%%
+# <white>%c</white> %s%s%s\n
+#
+#broken += make_stringf(" <white>%c</white> %s%s%s\n",
+%%%%
+#- <darkgrey>
+#
+#active ? "+ " : "- <darkgrey>",
+%%%%
+#</darkgrey>
+#
+#active ? "" : "</darkgrey>");
+%%%%
+#\n
+#
+#cprintf("\n");
+%%%%
+#\n
+#
+#cprintf("\n");
+%%%%
+Press '<w>!</w>'
+
+#"Press '<w>!</w>'"
+%%%%
+ or <w>Right-click</w>
+
+#" or <w>Right-click</w>"
+%%%%
+ to toggle between the overview and the more detailed 
+
+#" to toggle between the overview and the more detailed "
+%%%%
+description.
+
+#"description.").display();
+%%%%
+Religion
+
+#cprintf(jtrans("Religion").c_str());
+%%%%
+#\n
+#
+#cprintf("\n");
+%%%%
+#\n
+#
+#cprintf("\n");
+%%%%
+You are not religious.
+
+#cprintf(jtrans("You are not religious.").c_str());
+%%%%
+#%s
+#
+#cprintf("%s", uppercase_first(god_name(which_god, true)).c_str());
+%%%%
+#\n\n
+#
+#cprintf("\n\n");
+%%%%
+#%s
+#
+#cprintf("%s", get_linebreak_string(god_desc.c_str(), numcols).c_str());
+%%%%
+#\n\n
+#
+#cprintf("\n\n");
+%%%%
+Title -
+
+#cprintf(jtrans("Title -").c_str());
+%%%%
+# 
+#
+#cprintf(" ");
+%%%%
+#%s
+#
+#cprintf("%s", title.c_str());
+%%%%
+#\n\n
+#
+#cprintf("\n\n");
+%%%%
+Favour-
+
+#cprintf(jtrans("Favour-").c_str());
+%%%%
+# 
+#
+#cprintf(" ");
+%%%%
+Come back to the one true church!
+
+#which_god_penance = 2; // == "Come back to the one true church!"
+%%%%
+%s doesn't play fair with you.
+
+#? jtrans("%s doesn't play fair with you.").c_str() :
+%%%%
+%s's wrath is upon you!
+
+#(which_god_penance >= 50)   ? jtrans("%s's wrath is upon you!").c_str() :
+%%%%
+%s is annoyed with you.
+
+#(which_god_penance >= 20)   ? jtrans("%s is annoyed with you.").c_str() :
+%%%%
+%s well remembers your sins.
+
+#(which_god_penance >=  5)   ? jtrans("%s well remembers your sins.").c_str() :
+%%%%
+%s is ready to forgive your sins.
+
+#(which_god_penance >   0)   ? jtrans("%s is ready to forgive your sins.").c_str() :
+%%%%
+%s is ambivalent towards you.
+
+#(you.worshipped[which_god]) ? jtrans("%s is ambivalent towards you.").c_str()
+%%%%
+%s is neutral towards you.
+
+#: jtrans("%s is neutral towards you.").c_str(),
+%%%%
+#\n%s
+#
+#cprintf("\n%s", ash_describe_bondage(ETF_ALL, true).c_str());
+%%%%
+Granted powers:
+
+#const char *header = jtrans("Granted powers:").c_str();
+%%%%
+(Cost)
+
+#const char *cost   = jtrans("(Cost)").c_str();
+%%%%
+#\n\n%s%*s%s\n
+#
+#cprintf("\n\n%s%*s%s\n", header,
+%%%%
+#
+#
+#"", cost);
+%%%%
+carefully2
+
+#const char *how = (prot_chance >= 85) ? "carefully2" :
+%%%%
+often2
+
+#(prot_chance >= 55) ? "often2" :
+%%%%
+sometimes2
+
+#(prot_chance >= 25) ? "sometimes2"
+%%%%
+occasionally2
+
+#: "occasionally2";
+%%%%
+#
+#
+#const char *when = "";
+%%%%
+, especially when called upon
+
+#when = jtrans(", especially when called upon").c_str();
+%%%%
+, and always does so when called upon
+
+#when = jtrans(", and always does so when called upon").c_str();
+%%%%
+#
+#
+#buf += "";
+%%%%
+watches over you
+
+#buf += jtrans("watches over you");
+%%%%
+#
+#
+#buf += "";
+%%%%
+carefully3
+
+#const char *how = (you.piety >= 150) ? jtrans("carefully3").c_str() :
+%%%%
+often3
+
+#(you.piety >= 100) ? jtrans("often3").c_str() :
+%%%%
+sometimes3
+
+#(you.piety >=  50) ? jtrans("sometimes3").c_str() :
+%%%%
+occasionally3
+
+#jtrans("occasionally3").c_str();
+%%%%
+# 
+#
+#buf += " ";
+%%%%
+shields you from chaos.
+
+#buf += jtrans("shields you from chaos.");
+%%%%
+#
+#
+#buf += "";
+%%%%
+carefully4
+
+#const char *how = (you.piety >= 150) ? jtrans("carefully4").c_str() :
+%%%%
+often4
+
+#(you.piety >= 100) ? jtrans("often4").c_str() :
+%%%%
+sometimes4
+
+#(you.piety >=  50) ? jtrans("sometimes4").c_str() :
+%%%%
+occasionally4
+
+#jtrans("occasionally4").c_str();
+%%%%
+# 
+#
+#buf += " ";
+%%%%
+shields you from negative energy.
+
+#buf += jtrans("shields you from negative energy.");
+%%%%
+#
+#
+#buf += "";
+%%%%
+You can call upon
+
+#string buf = jtrans("You can call upon")
+%%%%
+to burn spellbooks in your surroundings.
+
+#+ jtrans("to burn spellbooks in your surroundings.");
+%%%%
+carefully5
+
+#const char *how = (you.piety >= 150) ? jtrans("carefully5").c_str() :
+%%%%
+often5
+
+#(you.piety >= 100) ? jtrans("often5").c_str() :
+%%%%
+sometimes5
+
+#(you.piety >=  50) ? jtrans("sometimes5").c_str() :
+%%%%
+occasionally5
+
+#jtrans("occasionally5").c_str();
+%%%%
+# 
+#
+#buf += " ";
+%%%%
+shields your consumables from destruction.
+
+#buf += jtrans("shields your consumables from destruction.");
+%%%%
+
+
+#buf += "";
+%%%%
+%s shields you from corrosive effects.
+
+#cprintf(jtrans("%s shields you from corrosive effects.").c_str(),
+%%%%
+#\n
+#
+#				cprintf("\n");
+%%%%
+when your fellow slimes consume items.
+
+#string buf = jtrans("when your fellow slimes consume items.");
+%%%%
+You gain nutrition
+
+#	buf += jtrans("You gain nutrition");
+%%%%
+, power and health
+
+#buf += jtrans(", power and health");
+%%%%
+and power
+
+#buf += jtrans("and power");
+%%%%
+#\n
+#
+#				cprintf("\n");
+%%%%
+You can pray to speed up decomposition.
+
+#jtrans("You can pray to speed up decomposition.").c_str(),
+%%%%
+You can walk through plants and fire through allied plants.
+
+#jtrans("You can walk through plants and fire through allied plants.").c_str(),
+%%%%
+You are provided with a bounty of information.
+
+#jtrans("You are provided with a bounty of information.").c_str(),
+%%%%
+You can pray to bestow
+
+#string buf = jtrans("You can pray to bestow").c_str()
+%%%%
+curse upon scrolls that usually remove them.
+
+#+ jtrans("curse upon scrolls that usually remove them.").c_str();
+%%%%
+slows and strengthens your metabolism.
+
+#+ jtrans("slows and strengthens your metabolism.").c_str(),
+%%%%
+You can provide lesser healing for others.
+
+#jtrans("You can provide lesser healing for others.").c_str(),
+%%%%
+some of Vehumet's most lethal spells
+
+#offer = jtrans("some of Vehumet's most lethal spells").c_str();
+%%%%
+memorisecan
+
+#jtrans("You cann").c_str() + offer + jtrans("memorisecan").c_str(),
+%%%%
+None.
+
+#cprintf(jtrans("None.").c_str());
+%%%%
+#\n
+#
+#			cprintf("\n");
+%%%%
+#%s
+#
+#cprintf("%s", extra.c_str());
+%%%%
+Press '<w>!</w>'
+
+#"Press '<w>!</w>'"
+%%%%
+ or <w>Right-click</w>
+
+#" or <w>Right-click</w>"
+%%%%
+ to toggle between the overview and the more detailed 
+
+#" to toggle between the overview and the more detailed "
+%%%%
+description.
+
+#"description.").display();
+%%%%
+#
+#
+#string result = "";
+%%%%
+#\n\n
+#
+#result += "\n\n";
+%%%%
+#\n
+#
+#result += "\n";
+%%%%
+How on earth did you manage to pick this up?
+
+#result += jtrans("How on earth did you manage to pick this up?").c_str();
+%%%%
+#\n
+#
+#result += "\n";
+%%%%
+Note that Trog doesn't use Invocations, due to its close connection to magic.
+
+#result += jtrans("Note that Trog doesn't use Invocations, due to its close connection to magic.").c_str();
+%%%%
+#\n
+#
+#result += "\n";
+%%%%
+Note that Nemelex uses Evocations rather than Invocations.
+
+#result += jtrans("Note that Nemelex uses Evocations rather than Invocations.").c_str();
+%%%%
+#\n
+#
+#result += "\n";
+%%%%
+This is the skill all of Nemelex's abilities rely on.
+
+#result += jtrans("This is the skill all of Nemelex's abilities rely on.").c_str();
+%%%%
+#\n
+#
+#result += "\n";
+%%%%
+Keep in mind, though, that Trog will greatly disapprove of this.
+
+#result += jtrans("Keep in mind, though, that Trog will greatly disapprove of this.").c_str();
+%%%%
+#describe_skill
+#
+#tiles_crt_control show_as_menu(CRT_MENU, "describe_skill");
+%%%%
+ verbose
+
+#lookup += " verbose";
+%%%%
+#.
+#
+#return result + ".";
+%%%%
+#\n
+#
+#ostr << "\n";
+%%%%
+#\n\n
+#
+#str = replace_all(ostr.str(), "\n\n\n\n", "\n\n");
+%%%%
+#\n\n
+#
+#str = replace_all(str, "\n\n\n", "\n\n");
+%%%%
