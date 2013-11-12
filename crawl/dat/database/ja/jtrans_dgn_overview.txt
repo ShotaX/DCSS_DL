@@ -1,0 +1,362 @@
+%%%%
+<lightred>Buggy buglands</lightred>
+
+#return "<lightred>Buggy buglands</lightred>";
+%%%%
+#<yellow>%s</yellow>
+#
+#return make_stringf("<yellow>%s</yellow>", branches[br].shortname);
+%%%%
+#<w>(</w>
+#
+#case SHOP_WEAPON:          return "<w>(</w>";
+%%%%
+#<yellow>(</yellow>
+#
+#case SHOP_WEAPON_ANTIQUE:  return "<yellow>(</yellow>";
+%%%%
+#<w>[</w>
+#
+#case SHOP_ARMOUR:          return "<w>[</w>";
+%%%%
+#<yellow>[</yellow>
+#
+#case SHOP_ARMOUR_ANTIQUE:  return "<yellow>[</yellow>";
+%%%%
+#<w>*</w>
+#
+#case SHOP_GENERAL:         return "<w>*</w>";
+%%%%
+#<yellow>*</yellow>
+#
+#case SHOP_GENERAL_ANTIQUE: return "<yellow>*</yellow>";
+%%%%
+#<w>=</w>
+#
+#case SHOP_JEWELLERY:       return "<w>=</w>";
+%%%%
+#<w>/</w>
+#
+#case SHOP_WAND:            return "<w>/</w>";
+%%%%
+#<w>+</w>
+#
+#case SHOP_BOOK:            return "<w>+</w>";
+%%%%
+#<w>%</w>
+#
+#case SHOP_FOOD:            return "<w>%</w>";
+%%%%
+#<w>!</w>
+#
+#case SHOP_DISTILLERY:      return "<w>!</w>";
+%%%%
+#<w>?</w>
+#
+#case SHOP_SCROLL:          return "<w>?</w>";
+%%%%
+#<w>}</w>
+#
+#case SHOP_MISCELLANY:      return "<w>}</w>";
+%%%%
+#<w>x</w>
+#
+#default:                   return "<w>x</w>";
+%%%%
+#] 
+#
+#return "[" + pos.id.describe(false, true) + "] ";
+%%%%
+#:
+#
+#disp += coloured_branch(ci_portals->second)+ ":";
+%%%%
+#)
+#
+#disp += " (" + note + ")";
+%%%%
+#\n
+#
+#disp += "\n";
+%%%%
+Dungeon Overview and Level Annotations
+
+                    <white>ダンジョンの構成 と 階層の注釈</white>
+#disp += jtrans("Dungeon Overview and Level Annotations") + "\n";
+%%%%
+Branches:
+
+<green>分岐:</green>
+#disp += "\n" + jtrans("Branches:");
+%%%%
+(use <white>G</white> to reach them and <white>?/B</white> for more information)
+
+( <white>G</white> で分岐まで移動する。 <white>?/B</white> で 更なる分岐の情報を得る)
+#disp += jtrans("(use <white>G</white> to reach them and <white>?/B</white> for more information)");
+%%%%
+#\n
+#
+#disp += "\n";
+%%%%
+# 
+#
+#entry_desc += " " + it->describe(false, true);
+%%%%
+<yellow>%*s</yellow> <darkgrey>(%d/%d)</darkgrey>%s
+
+#"<yellow>%*s</yellow> <darkgrey>(%d/%d)</darkgrey>%s",
+%%%%
+#\n
+#
+#? "\n"
+%%%%
+#\n
+#
+#disp += "\n";
+%%%%
+<darkgrey>%6s: %s:%d-%d</darkgrey>
+
+#"<darkgrey>%6s: %s:%d-%d</darkgrey>",
+%%%%
+<darkgrey>%6s: %s:%d</darkgrey>
+
+#"<darkgrey>%6s: %s:%d</darkgrey>",
+%%%%
+#\n
+#
+#? "\n"
+%%%%
+#\n
+#
+#disp += "\n";
+%%%%
+#
+#
+#return "";
+%%%%
+Altars:
+
+<green>祭壇:</green>
+#disp += "\n" + jtrans("Altars:");
+%%%%
+use information about gods
+
+( <white>Ctrl-F "altar"</white> で祭壇を検索する。<white>?/G</white> で神々についての情報を得る)
+#disp += jtrans("use information about gods");
+%%%%
+#\n
+#
+#disp += "\n";
+%%%%
+#\n
+#
+#disp += god_name(god, false) + "\n";
+%%%%
+#darkgrey
+#
+#colour = "darkgrey";
+%%%%
+#white
+#
+#colour = "white";
+%%%%
+#lightred
+#
+#colour = (you.penance[god] > 10) ? "red" : "lightred";
+%%%%
+#magenta
+#
+#colour = "magenta";
+%%%%
+#yellow
+#
+#colour = "yellow";
+%%%%
+#brown
+#
+#colour = "brown";
+%%%%
+#darkgrey
+#
+#if (!print_unseen && !strcmp(colour, "darkgrey"))
+%%%%
+#darkgrey
+#
+#colour = "darkgrey";
+%%%%
+<%s>%s</%s>
+
+#snprintf(buffer, sizeof buffer, "<%s>%s</%s>",
+%%%%
+#\n
+#
+#disp += "\n";
+%%%%
+#\n
+#
+#disp += "\n";
+%%%%
+Shops:
+
+<green>店:</green>
+#disp +="\n" + jtrans("Shops:");
+%%%%
+yellow denotes antique shop)
+
+( <white>Ctrl-F "shop"</white> で店舗を検索する - 黄色は「骨董屋」を意味する)
+#disp += jtrans("yellow denotes antique shop)");
+%%%%
+#\n
+#
+#disp += "\n";
+%%%%
+#\n
+#
+#disp += "\n";
+%%%%
+#   
+#
+#disp += "   ";
+%%%%
+#<lightgrey>
+#
+#disp += "<lightgrey>";
+%%%%
+# 
+#
+#disp += " ";
+%%%%
+#</lightgrey>
+#
+#disp += "</lightgrey>";
+%%%%
+#\n
+#
+#disp += "\n";
+%%%%
+Portals:
+
+<green>ポータル:</green>
+#disp += "\n" + jtrans("Portals:") + "\n";
+%%%%
+#\n
+#
+#disp += _get_coloured_level_annotation(i) + "\n";
+%%%%
+Annotations
+
+<green>注釈</green>
+#return "\n" + jtrans("Annotations") + "\n" + disp;
+%%%%
+#overview_note
+#
+#env.markers.property_at(pos, MAT_ANY, "overview_note");
+%%%%
+#
+#
+#string note = "";
+%%%%
+#, 
+#
+#string sep = ", ";
+%%%%
+#; 
+#
+#sep = "; ";
+%%%%
+#, 
+#
+#name += ", " + short_ghost_description(mons, true);
+%%%%
+royal jelly
+
+#if (strstr(name.c_str(), "royal jelly")
+%%%%
+Royal Jelly
+
+#|| strstr(name.c_str(), "Royal Jelly"))
+%%%%
+Royal Jelly
+
+#name = "Royal Jelly";
+%%%%
+Lernaean hydra
+
+#if (strstr(name.c_str(), "Lernaean hydra"))
+%%%%
+Lernaean hydra
+
+#name = "Lernaean hydra";
+%%%%
+Serpent of Hell
+
+#if (strstr(name.c_str(), "Serpent of Hell"))
+%%%%
+Serpent of Hell
+
+#name = "Serpent of Hell";
+%%%%
+Blork
+
+#if (strstr(name.c_str(), "Blork"))
+%%%%
+Blork the orc
+
+#name = "Blork the orc";
+%%%%
+original_was_unique
+
+#&& !(mons->props.exists("original_was_unique")
+%%%%
+original_was_unique
+
+#&& mons->props["original_was_unique"].get_bool())
+%%%%
+#
+#
+#string note = "";
+%%%%
+#, 
+#
+#note += ", ";
+%%%%
+#, 
+#
+#note += ", ";
+%%%%
+#</yellow>
+#
+#string place = "<yellow>" + li.describe() + "</yellow>";
+%%%%
+#!
+#
+#int col = level_annotation_has("!", li) ? LIGHTRED : WHITE;
+%%%%
+# 
+#
+#return place + " " + get_level_annotation(li, false, false, true, col);
+%%%%
+Annotate level on other end of current stairs?
+
+#if (yesno("Annotate level on other end of current stairs?", true, 'n'))
+%%%%
+Current level annotation:
+
+現在の階層の注釈：
+#mpr(jtrans("Current level annotation:") +
+%%%%
+New annotation for
+
+新しい注釈
+#const string prompt = jtrans("New annotation for").c_str() + li.describe()
+%%%%
+(include '!' for warning):
+
+(注意のために '!' が含まれる)
+#+ jtrans("(include '!' for warning):").c_str();
+%%%%
+Cleared annotation.
+
+注釈を消去した
+#mpr(jtrans("Cleared annotation."));
+%%%%

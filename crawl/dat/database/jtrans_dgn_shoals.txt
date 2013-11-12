@@ -1,0 +1,49 @@
+%%%%
+#
+#
+#mons_place(mgen_data::hostile_at(MONS_PLANT, "", false, 0, 0, p));
+%%%%
+# shoals+ [%d]
+#
+#env.level_build_method += make_stringf(" shoals+ [%d]", you.depth);
+%%%%
+#shoals
+#
+#env.level_layout_types.insert("shoals");
+%%%%
+The net is swept off %s.
+
+#mprf("The net is swept off %s.", mvictim->name(DESC_THE).c_str());
+%%%%
+The tide washes the net away!
+
+#mpr("The tide washes the net away!");
+%%%%
+The tide rushes in under you.
+
+#mprf(MSGCH_WARN, "The tide rushes in under you.");
+%%%%
+#tide_seed
+#
+#return find_marker_positions_by_prop("tide_seed");
+%%%%
+The tide is released from %s call.
+
+#mprf(MSGCH_SOUND, "The tide is released from %s call.",
+%%%%
+Not in Shoals or no heightmap; tide not available.
+
+#mprf(MSGCH_WARN, "Not in Shoals or no heightmap; tide not available.");
+%%%%
+Tide inertia: %d. New value 
+
+#"Tide inertia: %d. New value "
+%%%%
+(smaller = faster tide) or use +/- to change tide: 
+
+#"(smaller = faster tide) or use +/- to change tide: ",
+%%%%
+#
+#
+#mpr("");
+%%%%

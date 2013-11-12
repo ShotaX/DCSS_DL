@@ -1,0 +1,631 @@
+%%%%
+butchering
+
+解体
+#(delay.type == DELAY_BUTCHER      ? jtrans("butchering") :
+%%%%
+bottling blood from
+
+血詰め
+#delay.type == DELAY_BOTTLE_BLOOD ? jtrans("bottling blood from")
+%%%%
+sacrificing
+
+#: "sacrificing");
+%%%%
+You stop %s the corpse.
+
+あなたは死体の%sを停止した。
+#mprf(jtrans("You stop %s the corpse.").c_str(), butcher_verb.c_str());
+%%%%
+Your memorisation is interrupted.
+
+あなたの学習は中断させられた。
+#mpr(jtrans("Your memorisation is interrupted."));
+%%%%
+You stop dropping stuff.
+
+持ち物を落とすことを中断した。
+#mpr(jtrans("You stop dropping stuff."));
+%%%%
+You stop draining the corpse.
+
+あなたは死体から血を吸うのをやめた
+#mpr(jtrans("You stop draining the corpse."));
+%%%%
+All blood oozes out of the corpse!
+
+全ての血は死体から滲み出てしまった！
+#mpr(jtrans("All blood oozes out of the corpse!"));
+%%%%
+Keep equipping yourself?
+
+#"Keep equipping yourself?" :
+%%%%
+Keep disrobing?
+
+#"Keep disrobing?", false, 0, false))
+%%%%
+You stop %s your armour.
+
+あなたは鎧を%sを停止した。
+#mprf(jtrans("You stop %s your armour.").c_str(),
+%%%%
+putting on
+
+着ること
+#delay.type == DELAY_ARMOUR_ON ? jtrans("putting on").c_str()
+%%%%
+removing
+
+外すこと
+#: jtrans("removing").c_str());
+%%%%
+You stop %s the stairs.
+
+あなたは階段を%sをやめた。
+#mprf(jtrans("You stop %s the stairs.").c_str(),
+%%%%
+ascending
+
+登ること
+#delay.type == DELAY_ASCENDING_STAIRS ? jtrans("ascending").c_str()
+%%%%
+descending
+
+下ること
+#: jtrans("descending").c_str());
+%%%%
+Your meditation is interrupted.
+
+あなたの瞑想は中断させられた。
+#mpr(jtrans("Your meditation is interrupted."));
+%%%%
+Switch back to main weapon?
+
+#const char* prompt_str  = "Switch back to main weapon?";
+%%%%
+#handle_interrupted_swap() called while already swapping weapons
+#
+#die("handle_interrupted_swap() called while already swapping weapons");
+%%%%
+You start putting on your armour.
+
+あなたは鎧を装備し始めた。
+#mpr(jtrans("You start putting on your armour."), MSGCH_MULTITURN_ACTION);
+%%%%
+You start removing your armour.
+
+あなたは鎧を外し始めた。
+#mpr(jtrans("You start removing your armour."), MSGCH_MULTITURN_ACTION);
+%%%%
+You start bottling blood from %s.
+
+あなたは%sの血詰めを開始した。
+#jtrans("You start bottling blood from %s.").c_str(),
+%%%%
+#knife
+#
+#case SLOT_BUTCHERING_KNIFE: tool = "knife"; break;
+%%%%
+#claws
+#
+#case SLOT_CLAWS:            tool = "claws"; break;
+%%%%
+#teeth
+#
+#case SLOT_TEETH:            tool = "teeth"; break;
+%%%%
+#beak and talons
+#
+#case SLOT_BIRDIE:           tool = "beak and talons"; break;
+%%%%
+You start butchering %s with your %s.
+
+あなたは %s を %s で捌き始めた。
+#jtrans("You start butchering %s with your %s.").c_str(),
+%%%%
+grants you knowledge of %s.
+
+ はあなたに %s の知識を与えた。
+#string message = make_stringf(jtrans("grants you knowledge of %s.").c_str(),
+%%%%
+You start memorising the spell.
+
+あなたは呪文の学習を開始した。
+#mpr(jtrans("You start memorising the spell."), MSGCH_MULTITURN_ACTION);
+%%%%
+You begin to meditate on the wall.
+
+あなたは壁に向かって瞑想を開始した。
+#mpr(jtrans("You begin to meditate on the wall."), MSGCH_MULTITURN_ACTION);
+%%%%
+You cannot bottle blood anymore!
+
+あなたは今は血を詰めることができない！
+#mpr(jtrans("You cannot bottle blood anymore!"));
+%%%%
+The corpse rots away into a skeleton!
+
+その死体は朽ち果て、骸骨になりかけている！
+#mpr(jtrans("The corpse rots away into a skeleton!"));
+%%%%
+The corpse rots.
+
+その死体は腐っている。
+#mpr(jtrans("The corpse rots."), MSGCH_ROTTEN_MEAT);
+%%%%
+You stop bottling this corpse's foul-smelling blood!
+
+あなたはこの死体の悪臭のする血を詰めることをやめた。
+#mpr(jtrans("You stop bottling this corpse's foul-smelling blood!"));
+%%%%
+#Delay type: %d (%s), duration: %d
+#
+#dprf("Delay type: %d (%s), duration: %d",
+%%%%
+You continue putting on %s.
+
+あなたは %s を装備し続けている。
+#mprf(MSGCH_MULTITURN_ACTION, jtrans("You continue putting on %s.").c_str(),
+%%%%
+You continue taking off %s.
+
+あなたは %s を外し続けている。
+#mprf(MSGCH_MULTITURN_ACTION, jtrans("You continue taking off %s.").c_str(),
+%%%%
+You continue butchering the corpse
+
+あなたは解体を続行した。
+#mprf(MSGCH_MULTITURN_ACTION, "%s", jtrans("You continue butchering the corpse").c_str());
+%%%%
+You continue bottling blood from the corpse.
+
+あなたは死体から血を詰め続けている。
+#mprf(MSGCH_MULTITURN_ACTION, "%s",jtrans("You continue bottling blood from the corpse.").c_str());
+%%%%
+You continue memorising.
+
+あなたは学習を続けている。
+#mpr(jtrans("You continue memorising."), MSGCH_MULTITURN_ACTION);
+%%%%
+You continue meditating on the rock.
+
+あなたは壁に向かって瞑想を続けている。
+#mpr(jtrans("You continue meditating on the rock."),
+%%%%
+You continue eating.
+
+あなたは食事を続けている。
+#mpr(jtrans("You continue eating."), MSGCH_MULTITURN_ACTION);
+%%%%
+This corpse has started to rot.
+
+この死体は腐り始めた。
+#mpr(jtrans("This corpse has started to rot."), MSGCH_ROTTEN_MEAT);
+%%%%
+You continue drinking.
+
+あなたは吸血を続けている。
+#mprf(MSGCH_MULTITURN_ACTION, "%s", jtrans("You continue drinking.").c_str());
+%%%%
+You finish taking off %s.
+
+外し終えた。
+#mprf(jtrans("You finish taking off %s.").c_str(),
+%%%%
+You finish eating.
+
+あなたは食べ終えた。
+#mprf("%s",jtrans("You finish eating.").c_str());
+%%%%
+You finish drinking.
+
+あなたは飲み終えた
+#mprf("%s",jtrans("You finish drinking.").c_str());
+%%%%
+You finish memorising.
+
+あなたは学習を終えた
+#mpr(jtrans("You finish memorising."));
+%%%%
+You finish merging with the rock.
+
+あなたは岩に溶け込んだ。
+#mpr(jtrans("You finish merging with the rock."));
+%%%%
+yet there is something new on the other side.You quickly turn back.
+
+まだ向こうに岩が残っている...あなたは今すぐ引き返した。
+#mpr(jtrans("yet there is something new on the other side.You quickly turn back."));
+%%%%
+and sense your way blocked. You quickly turn back.
+
+あなたは壁が防衛されていることに気付いた...あなたは今すぐ引き返した。
+#mpr(jtrans("and sense your way blocked. You quickly turn back."));
+%%%%
+The corpse rots away into a skeleton just before you finish %s!
+
+あなたが%sが終わる前に死体は腐ってしまった。
+#mprf(jtrans("The corpse rots away into a skeleton just before you finish %s!").c_str(),
+%%%%
+bottling its blood
+
+血詰め
+#(delay.type == DELAY_BOTTLE_BLOOD ? jtrans("bottling its blood").c_str()
+%%%%
+butchering
+
+解体
+#: jtrans("butchering").c_str()));
+%%%%
+You finish bottling this corpse's blood.
+
+あなたは死体の血を詰め終えた。
+#mpr(jtrans("You finish bottling this corpse's blood."));
+%%%%
+You finish %s %s into pieces.
+
+あなたは%s %s を細切れにした。
+#mprf(jtrans("You finish %s %s into pieces.").c_str(),
+%%%%
+ripping
+
+切り裂き
+%%%%
+chopping
+
+捌き
+#delay.parm3 <= SLOT_CLAWS ? jtrans("ripping").c_str() : jtrans("chopping").c_str(),
+%%%%
+expects more respect for your departed relatives.
+
+は亡くなったあなたの同朋に対する敬意を期待している
+#simple_god_message(jtrans("expects more respect for your departed relatives.").c_str());
+%%%%
+expects more respect for holy creatures!
+
+は無くなった神聖な生き物に対する敬意を期待している！
+#simple_god_message(jtrans("expects more respect for holy creatures!").c_str());
+%%%%
+expects more respect for this departed soul.
+
+は過ぎ去った魂に対する敬意を期待している！
+#simple_god_message(jtrans("expects more respect for this departed soul.").c_str());
+%%%%
+You enjoyed that.
+
+あなたはそれを楽しんだ。
+#mpr(jtrans("You enjoyed that."));
+%%%%
+You stop %s.
+
+あなたは%sをやめた
+#mprf(jtrans("You stop %s.").c_str(),
+%%%%
+butchering the corpse
+
+死体を捌くこと
+#delay.type == DELAY_BUTCHER ? jtrans("butchering the corpse").c_str()
+%%%%
+bottling this corpse's blood
+
+この死体から血を詰めること
+#: jtrans("bottling this corpse's blood").c_str());
+%%%%
+You finish doing something.
+
+あなたはそれをやり終えた。
+#mpr(jtrans("You finish doing something."));
+%%%%
+You finish putting on %s.
+
+あなたは %s を装備し終えた。
+#mprf(jtrans("You finish putting on %s.").c_str(), arm.name(DESC_YOUR).c_str());
+%%%%
+Done waiting.
+
+休息を終了した。
+#mpr(jtrans("Done waiting."));
+%%%%
+#Expiring macro delay on turn: %d
+#
+#dprf("Expiring macro delay on turn: %d", you.num_turns);
+%%%%
+Lua not initialised
+
+#mpr("Lua not initialised", MSGCH_DIAGNOSTICS);
+%%%%
+#s
+#
+#if (!clua.callbooleanfn(false, "c_macro", "s", macroname))
+%%%%
+Lua error: %s
+
+#mprf(MSGCH_ERROR, "Lua error: %s", clua.error.c_str());
+%%%%
+#1:ssA
+#
+#bool ran = clua.callfn("c_interrupt_activity", "1:ssA",
+%%%%
+#c_interrupt_macro
+#
+#if (delay == DELAY_MACRO && clua.callbooleanfn(true, "c_interrupt_macro",
+%%%%
+#sA
+#
+#"sA", interrupt_name, &at))
+%%%%
+You sense a monster nearby.
+
+あなたは近くにモンスターを感じた。
+#mpr(jtrans("You sense a monster nearby."), MSGCH_WARN);
+%%%%
+%s is too close now for your liking.
+
+%sに近づきすぎている！
+#mprf(MSGCH_WARN, jtrans("%s is too close now for your liking.").c_str(),
+%%%%
+ (%s)
+
+#text += make_stringf(" (%s)",
+%%%%
+opens the door.
+
+は扉を開けた。
+#text += jtrans("opens the door.");
+%%%%
+opens the gate.
+
+は門を開けた。
+#text += jtrans("opens the gate.");
+%%%%
+appears from thin air!
+
+はどこからともなく現れた！
+#text += jtrans("appears from thin air!");
+%%%%
+ leaps into view!
+
+視界に跳び込んできた！
+#text += " leaps into view!";
+%%%%
+surfaces briefly.
+
+は素早く地上に出てきた
+#text += jtrans("surfaces briefly.");
+%%%%
+forms itself from the air.
+
+は大気中から出現した
+#text += jtrans("forms itself from the air.");
+%%%%
+leaps out from its hiding place under the floor!
+
+は床下の隠れ場所から現れた！
+#text += jtrans("leaps out from its hiding place under the floor!");
+%%%%
+surfaces.
+
+は地上に出てきた
+#text += jtrans("surfaces.");
+%%%%
+%%%%
+lava
+
+溶岩
+#text += jtrans("lava");
+%%%%
+water
+
+水
+#text += jtrans("water");
+%%%%
+realm of bugdom
+
+bugdomの領域
+#text += "realm of bugdom";
+%%%%
+ bursts forth from the %s
+
+%sの中から突如現れた。
+#text += make_stringf(jtrans(" bursts forth from the %s.").c_str(),
+%%%%
+#
+#
+#text += "";
+%%%%
+emerges from the water.
+
+は水の中から現れた
+#text += jtrans("emerges from the water.");
+%%%%
+ comes into view.
+
+に遭遇した
+#text += (jtrans("Delay-1111"));
+%%%%
+#ash_id
+#
+#bool ash_id = mon->props.exists("ash_id") && mon->props["ash_id"];
+%%%%
+Ashenzari warns you:
+
+アシェンザリはあなたに警告した:
+#ash_warning = jtrans("Ashenzari warns you:");
+%%%%
+ is
+
+#" " + uppercase_first(mon->pronoun(PRONOUN_SUBJECTIVE)) + " is"
+%%%%
+.
+
+#+ mweap + ".";
+%%%%
+Deactivating autopickup; reactivate with <w>%s</w>.
+
+自動拾いを無効化した:次のキーで再開できます <w>%s</w>
+#jtrans("Deactivating autopickup; reactivate with <w>%s</w>.").c_str(),
+%%%%
+Reactivating autopickup.
+
+自動拾いを再開した
+#mprf(MSGCH_WARN, "%s",jtrans("Reactivating autopickup.").c_str());
+%%%%
+#Activity interrupt: %s
+#
+#dprf("Activity interrupt: %s", _activity_interrupt_name(ai));
+%%%%
+%s restored.
+
+%sは完全に回復した。
+%%%%
+#EP
+#HP
+#--defined.
+#mprf(jtrans("%s restored.").c_str(), you.species == SP_DJINNI ? "EP" : "HP");
+%%%%
+Magic restored.
+
+MPは完全に回復した
+#mpr(jtrans("Magic restored."));
+%%%%
+force
+
+%%%%
+keypress
+
+%%%%
+full_hp
+
+%%%%
+full_mp
+
+%%%%
+statue
+
+#"force", "keypress", "full_hp", "full_mp", "statue",
+%%%%
+hungry
+
+%%%%
+message
+
+%%%%
+hp_loss
+
+%%%%
+burden
+
+%%%%
+stat
+
+#"hungry", "message", "hp_loss", "burden", "stat",
+%%%%
+monster
+
+%%%%
+monster_attack
+
+%%%%
+teleport
+
+%%%%
+hit_monster
+
+%%%%
+sense_monster
+
+#"monster", "monster_attack", "teleport", "hit_monster", "sense_monster"
+%%%%
+#
+#
+#return "";
+%%%%
+not_delayed
+
+%%%%
+eat
+
+%%%%
+vampire_feed
+
+%%%%
+armour_on
+
+%%%%
+armour_off
+
+#"not_delayed", "eat", "vampire_feed", "armour_on", "armour_off",
+%%%%
+jewellery_on
+
+%%%%
+memorise
+
+%%%%
+butcher
+
+%%%%
+bottle_blood
+
+%%%%
+weapon_swap
+
+#"jewellery_on", "memorise", "butcher", "bottle_blood", "weapon_swap",
+%%%%
+ascending_stairs
+
+#"passwall", "drop_item", "multidrop", "ascending_stairs",
+%%%%
+descending_stairs
+
+#"descending_stairs",
+%%%%
+recite
+
+#"recite",
+%%%%
+run
+
+%%%%
+rest
+
+%%%%
+travel
+
+%%%%
+macro
+
+#"run", "rest", "travel", "macro",
+%%%%
+macro_process_key
+
+%%%%
+interruptible
+
+%%%%
+uninterruptible
+
+#"macro_process_key", "interruptible", "uninterruptible"
+%%%%
+#armor_on
+#
+#if (name == "armor_on")
+%%%%
+#armor_off
+#
+#if (name == "armor_off")
+%%%%
+#memorize
+#
+#if (name == "memorize")
+%%%%
+#jewelry_on
+#
+#if (name == "jewelry_on")
+%%%%
+#
+#
+#return "";
+%%%%

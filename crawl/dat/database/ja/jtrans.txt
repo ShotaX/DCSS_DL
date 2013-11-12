@@ -15584,11 +15584,6 @@ Char dump unsuccessful! Sorry about that.
 残念ながらキャラクターのダンプは失敗しました
 #mpr("Char dump unsuccessful! Sorry about that.");
 %%%%
-You can't see that place.
-
-あなたはその場所を見ることができない
-#mpr("You can't see that place.");
-%%%%
 Save game and exit?
 
 ゲームを保存して終了しますか？
@@ -20948,192 +20943,28 @@ You sense the disappearance of the force that prevented you from remembering whe
 #mpr("Ran out of altars for temple!", MSGCH_ERROR);
 %%%%
 #########################################################
-#dgn-shoals.cc
-#########################################################
-
-
-#mprf("The net is swept off %s.", mvictim->name(DESC_THE).c_str());
-%%%%
-
-
-
-#mpr("The tide washes the net away!");
-%%%%
-
-
-
-#mprf(MSGCH_WARN, "The tide rushes in under you.");
-%%%%
-
-
-
-#mprf(MSGCH_SOUND, "The tide is released from %s call.",
-#                 apostrophise(mons->name(DESC_YOUR, true)).c_str());
-#            if (you.see_cell(mons->pos()))
-#                flash_view_delay(ETC_WATER, 150);
-%%%%
-
-
-
-#mprf(MSGCH_WARN, "Not in Shoals or no heightmap; tide not available.");
-%%%%
-
-
-
-#mprf(MSGCH_PROMPT,
-#             "Tide inertia: %d. New value "
-#             "(smaller = faster tide) or use +/- to change tide: ",
-#             TIDE_MULTIPLIER);
-%%%%
-#########################################################
 #dgn-overview.cc
 #########################################################
-Cleared annotation.
-
-注釈を消去した
-%%%%
-Dungeon Overview and Level Annotations
-
-                    <white>ダンジョンの構成 と 階層の注釈</white>
-%%%%
-Branches:
-
-<green>分岐:</green>
-%%%%
-(use <white>G</white> to reach them and <white>?/B</white> for more information)
-
-( <white>G</white> で分岐まで移動する。 <white>?/B</white> で 更なる分岐の情報を得る)
-%%%%
-Altars:
-
-<green>祭壇:</green>
-%%%%
-use information about gods
-
-( <white>Ctrl-F "altar"</white> で祭壇を検索する。<white>?/G</white> で神々についての情報を得る)
-%%%%
-Shops:
-
-<green>店:</green>
-%%%%
-yellow denotes antique shop)
-
-( <white>Ctrl-F "shop"</white> で店舗を検索する - 黄色は「骨董屋」を意味する)
-%%%%
-Portals:
-
-<green>ポータル:</green>
-%%%%
-Annotations
-
-<green>注釈</green>
-%%%%
-Current level annotation:
-
-現在の階層の注釈： -> 
-#mpr("Current level annotation: " +
-#            colour_string(get_level_annotation(li, true, true), LIGHTGREY),
-#            MSGCH_PROMPT);
 %%%%
 Cleared.
 
 消去しました
 #mpr("Cleared.");
 %%%%
-New annotation for
-
-新しい注釈 -> 
-%%%%
-(include '!' for warning):
-
- (文頭に'!' が含まれて居ると注釈の階層に来た時に警告が出る)
-%%%%
-Marked for pickup.
-
-
-%%%%
 #########################################################
 #delay.cc
 #########################################################
-leaps out from its hiding place under the floor!
-
-は床下の隠れ場所から現れた！
 %%%%
-opens the door.
-
-は扉を開けた
 %%%%
-opens the gate.
-
-は門を開けた
-%%%%
-appears from thin air!
-
-はどこからともなく現れた！
-%%%%
-surfaces briefly.
-
-は素早く地上に出てきた
-%%%%
-forms itself from the air.
-
-は大気中から出現した
-%%%%
-surfaces.
-
-は地上に出てきた
-%%%%
-bursts forth from the
-
-の中から何を吐きだした!
-%%%%
-emerges from the water.
-
-は水の中から現れた
-%%%%
-Ashenzari warns you:
-
-アシェンザリはあなたに警告した:
-%%%%
-grants you knowledge of %s.
-
- はあなたに %s の知識を与えた
-%%%%
-You continue butchering the corpse.
-
-あなたは解体を続行した。
-%%%%
-butchering
-
-解体
-%%%%
-You stop %s the corpse.
-
-あなたは死体の%sを停止した
-#mprf("You stop %s the corpse%s.", butcher_verb.c_str(),
-#             multiple_corpses ? "s" : "");
-%%%%
-bottling blood from
-
-血詰め
 %%%%
 the corpse
 
 死体
 %%%%
-Your memorisation is interrupted.
-
-あなたの学習は中断させられた
-#mpr("Your memorisation is interrupted.");
-%%%%
 wostop
 
 を止めた
 %%%%
-You stop dropping stuff.
-
-持ち物を落とすことを中断した
-#mpr("You stop dropping stuff.");
 %%%%
 Your recitation is interrupted.
 
@@ -21145,125 +20976,21 @@ You feel short of breath.
 あなたは息切れを感じた
 #mpr("You feel short of breath.");
 %%%%
-You stop draining the corpse.
-
-あなたは死体から血を吸うのをやめた
-#mpr("You stop draining the corpse.");
-%%%%
-All blood oozes out of the corpse!
-
-全ての血は死体から滲み出てしまった!
-#mpr("All blood oozes out of the corpse!");
 %%%%
 your armour
 
 あなたの鎧
 %%%%
-putting on
-
-着ること
-%%%%
-removing
-
-外すこと
-%%%%
-ascending
-
-登ること
-%%%%
-You stop %s your armour.
-
-あなたは鎧を%sを停止した
-#mprf("You stop %s your armour.",
-#                     delay.type == DELAY_ARMOUR_ON ? "putting on"
-#                                                   : "removing");
-%%%%
-descending
-
-下ること
-%%%%
-You stop %s the stairs.
-
-あなたは階段を%sをやめた
-#mprf("You stop %s the stairs.",
-#                 delay.type == DELAY_ASCENDING_STAIRS ? "ascending"
-#                                                      : "descending");
-%%%%
-Your meditation is interrupted.
-
-あなたの瞑想は中断させられた。
-#mpr("Your meditation is interrupted.");
-%%%%
-You start putting on your armour.
-
-あなたは鎧を装備し始めた
-#mpr("You start putting on your armour.", MSGCH_MULTITURN_ACTION);
-%%%%
-You start removing your armour.
-
-あなたは鎧を外し始めた
-#mpr("You start removing your armour.", MSGCH_MULTITURN_ACTION);
 %%%%
 You start bottling blood from %s.
 
-あなたは%sの血詰めを開始した
 #mprf(MSGCH_MULTITURN_ACTION,
 #                     "You start bottling blood from %s.",
 #                     mitm[delay.parm1].name(DESC_THE).c_str());
 %%%%
-You start butchering %s with your %s.
-
-あなたは %s を %s で捌き始めた
-#mprf(MSGCH_MULTITURN_ACTION,
-#                     "You start butchering %s with your %s.",
-#                     mitm[delay.parm1].name(DESC_THE).c_str(), tool.c_str());
-%%%%
 with your
 
 あなたの
-%%%%
-You start memorising the spell.
-
-あなたは呪文の学習を開始した
-#mpr("You start memorising the spell.", MSGCH_MULTITURN_ACTION);
-%%%%
-"You begin to meditate on the wall."
-
-あなたは壁に向かって瞑想を開始した
-#mpr("You begin to meditate on the wall.", MSGCH_MULTITURN_ACTION);
-%%%%
-You cannot bottle blood anymore!
-
-あなたは今は血を詰めることができない!
-#mpr("You cannot bottle blood anymore!");
-%%%%
-The corpse rots away into a skeleton!
-
-その死体は朽ち果て、骸骨になりかけている！
-#mpr("The corpse rots away into a skeleton!");
-%%%%
-The corpse rots.
-
-その死体は腐っている
-#mpr("The corpse rots.", MSGCH_ROTTEN_MEAT);
-%%%%
-You stop bottling this corpse's foul-smelling blood!
-
-あなたはこの死体の悪臭のする血を詰めることをやめた
-#mpr("You stop bottling this corpse's foul-smelling "
-#                            "blood!");
-%%%%
-You continue putting on %s.
-
-あなたは %s を装備し続けている
-#mprf(MSGCH_MULTITURN_ACTION, "You continue putting on %s.",
-#                 you.inv[delay.parm1].name(DESC_YOUR).c_str());
-%%%%
-You continue taking off %s.
-
-あなたは %s を外し続けている
-#mprf(MSGCH_MULTITURN_ACTION, "You continue taking off %s.",
-#                 you.inv[delay.parm1].name(DESC_YOUR).c_str());
 %%%%
 You finish taking off %s.
 
@@ -21276,66 +21003,6 @@ You finish reciting %s
 closure
 
 終結し
-%%%%
-#mprf(MSGCH_MULTITURN_ACTION, "You continue butchering the corpse.");
-%%%%
-You continue bottling blood from the corpse.
-
-あなたは死体から血を詰め続けている
-#mprf(MSGCH_MULTITURN_ACTION, "You continue bottling blood from "
-#                                         "the corpse.");
-%%%%
-You continue memorising.
-
-あなたは学習を続けている
-#mpr("You continue memorising.", MSGCH_MULTITURN_ACTION);
-%%%%
-You continue meditating on the rock.
-
-あなたは壁に向かって瞑想を続けている
-#mpr("You continue meditating on the rock.",
-#                MSGCH_MULTITURN_ACTION);
-%%%%
-
-
-
-#mprf(MSGCH_MULTITURN_ACTION, "\"%s\"",
-#                 _get_zin_recite_speech(delay.trits, delay.len,
-#                                        delay.parm1, delay.duration).c_str());
-%%%%
-You continue eating.
-
-あなたは食事を続けている
-#mpr("You continue eating.", MSGCH_MULTITURN_ACTION);
-%%%%
-This corpse has started to rot.
-
-この死体は腐り始めた
-#mpr("This corpse has started to rot.", MSGCH_ROTTEN_MEAT);
-%%%%
-You continue drinking.
-
-あなたは吸血を続けている
-#mprf(MSGCH_MULTITURN_ACTION, "You continue drinking.");
-%%%%
-finish taking off
-
-外し終えた
-#mprf("You finish taking off %s.",
-#             you.inv[delay.parm1].name(DESC_YOUR).c_str());
-%%%%
-You finish eating.
-
-あなたは食べ終えた
-#mprf("You finish eating.");
-%%%%
-ripping
-
-切り裂き
-%%%%
-chopping
-
-捌き
 %%%%
 finish into pieces
 
@@ -21353,150 +21020,10 @@ Eat?
 
 食べますか
 %%%%
-You finish drinking.
-
-あなたは飲み終えた
-#mprf("You finish drinking.");
-%%%%
-You finish memorising.
-
-あなたは学習を終えた
-#mpr("You finish memorising.");
-%%%%
 finish reciting
 
 朗読を終えた
 #mprf(MSGCH_PLAIN, "You finish reciting %s", speech.c_str());
-%%%%
-You finish merging with the rock.
-
-あなたは岩に溶け込んだ。
-#mpr("You finish merging with the rock.");
-%%%%
-yet there is something new on the other side.You quickly turn back.
-
-まだ向こうに岩が残っている...あなたは今すぐ引き返した
-#mpr("...yet there is something new on the other side. "
-#                        "You quickly turn back.");
-%%%%
-and sense your way blocked. You quickly turn back.
-
-あなたは壁が防衛されていることに気付いた...あなたは今すぐ引き返した
-#mpr("...and sense your way blocked. You quickly turn back.");
-%%%%
-bottling its blood
-
-血詰め
-%%%%
-The corpse rots away into a skeleton just before you finish %s!
-
-あなたが%sが終わる前に死体は腐ってしまった
-#mprf("The corpse rots away into a skeleton just before you "
-#                     "finish %s!",
-#                     (delay.type == DELAY_BOTTLE_BLOOD ? "bottling its blood"
-#                                                       : "butchering"));
-%%%%
-You finish bottling this corpse's blood.
-
-あなたは死体の血を詰め終えた
-#mpr("You finish bottling this corpse's blood.");
-%%%%
-You finish %s %s into pieces.
-
-あなたは%s %s を細切れにした
-#mprf("You finish %s %s into pieces.",
-#                     delay.parm3 <= SLOT_CLAWS ? "ripping" : "chopping",
-#                     mitm[delay.parm1].name(DESC_THE).c_str());
-%%%%
-expects more respect for your departed relatives.
-
-は亡くなったあなたの同朋に対する敬意を期待している
-%%%%
-expects more respect for holy creatures!
-
-は無くなった神聖な生き物に対する敬意を期待している！
-%%%%
-expects more respect for this departed soul.
-
-は過ぎ去った魂に対する敬意を期待している！
-%%%%
-You enjoyed that.
-
-あなたはそれを楽しんだ
-#mpr("You enjoyed that.");
-%%%%
-butchering the corpse
-
-死体を捌くこと
-%%%%
-You stop %s.
-
-あなたは%sをやめた
-#mprf("You stop %s.",
-#                 delay.type == DELAY_BUTCHER ? "butchering the corpse"
-#                                             : "bottling this corpse's blood");
-%%%%
-bottling this corpse's blood
-
-この死体から血を詰めること
-%%%%
-You finish doing something
-
-あなたはそれをやり終えた。
-#mpr("You finish doing something.");
-%%%%
-You finish putting on %s.
-
-あなたは %s を装備し終えた
-#mprf("You finish putting on %s.", arm.name(DESC_YOUR).c_str());
-%%%%
-Done waiting
-
-休息を終了した
-#mpr("Done waiting.");
-%%%%
-
-
-
-#mpr("Lua not initialised", MSGCH_DIAGNOSTICS);
-%%%%
-You sense a monster nearby
-
-あなたは近くにモンスターを感じた
-# mpr("You sense a monster nearby.", MSGCH_WARN);
-%%%%
-%s is too close now for your liking.
-
-%sに近づきすぎている！
-#mprf(MSGCH_WARN, "%s is too close now for your liking.",
-#                 mon->name(DESC_THE).c_str());
-%%%%
-Deactivating autopickup; reactivate with <w>%s</w>.
-
-自動拾いを無効化した:次のキーで再開できます <w>%s</w>
-#mprf(MSGCH_WARN,
-#                 "Deactivating autopickup; reactivate with <w>%s</w>.",
-#                 command_to_string(CMD_TOGGLE_AUTOPICKUP).c_str());
-%%%%
-Reactivating autopickup.
-
-自動拾いを再開した
-#mprf(MSGCH_WARN, "Reactivating autopickup.");
-%%%%
-HP restored.
-
-HPは完全に回復した
-#mpr("HP restored.");
-%%%%
-Magic restored.
-
-MPは完全に回復した
-#mpr("Magic restored.");
-%%%%
-Delay-1111
-
-に遭遇した
-#text += " comes into view.";
 %%%%
 You smell something rotten.
 
@@ -21671,339 +21198,11 @@ Newgame-1
 #########################################################
 #directn.cc
 #########################################################
-Press: ? - help
-
-入力: ? - ヘルプ
-%%%%
-, v - describe
-
-, v - 説明
-%%%%
-, . - travel
-
-, . - 探索
-%%%%
-, g - get item
-
-, g - アイテムを拾う
-%%%%
-, Shift-Dir - straight line
-
-, Shift-Dir - 真っ直ぐ
-%%%%
-, Dir - move target cursor
-
-, Dir - カーソルの移動
-%%%%
-No monsters, items or features are visible.
-
-視界内に怪物、アイテム、施設が無い
-%%%%
-There's something in the way.
-
-その方向には何かがある
-%%%%
-Sorry, you can't target what you can't see.
-
-残念ながら、目標を見ることが出来ない
-%%%%
-That would be overly suicidal.
-
-それは自殺的だ
-%%%%
-Really target yourself?
-
-本当にあなた自身を狙いますか？
-%%%%
-Sorry, you can't target yourself.
-
-残念ながら、あなたを標的にできない
-%%%%
-All monsters which could be auto-targeted are covered by a wall or statue which interrupts your line of fire, even though it doesn't interrupt your line of sight.
-
-モンスターは像、壁によって射線を遮断している
-%%%%
-To return to the main mode, press <w>Escape</w>.
-
-メインモードに入るには、<w>Escape</w> を押してください
-%%%%
-You can't see any item there.
-
-あなたはその場所のアイテムを見ることが出来ない
-%%%%
-Out of range.
-
-射程外だ
-%%%%
-%s: <lightgrey>%s</lightgrey>
-
-%s: <lightgrey>%s</lightgrey>
-%%%%
-Aim
-
-照準
-%%%%
-There is something else lying underneath.
-
-ここには何かがある
-%%%%
-This spell doesn't need a beam path.
-
-この呪文は光線のように経路を必要としない
-%%%%
-Your target is gone.
-
-あなたの目標は消え去った
-%%%%
-You cannot set exclusions on this level.
-
-あなたはこの階層に探索禁域を設定できない
-%%%%
-Placed new exclusion.
-
-新しい探索禁域を設定した
-%%%%
-Removed exclusion.
-
-探索禁域を削除した
-%%%%
-Reduced exclusion size to a single square.
-
-探索禁域のサイズを一マス分取り除いた
-%%%%
-There is
-
-ここには
-%%%%
-here.
-
-がある
-%%%%
-There is an entrance to
-
-ここは入口だ：
-%%%%
-Beware, for starvation awaits!
-
-注意せよ、飢餓が待ち受けている！
-%%%%
-wielding
-
-装備している
-%%%%
-sleepwalking
-
-寝ながら歩いている
-%%%%
-resting
-
-休息している
-%%%%
-retreating
-
-退却している
-%%%%
-hasn't noticed you
-
-あなたに気付いていない
-%%%%
-clinging
-
-登っている
-%%%%
-mesmerising
-
-魅了されている
-%%%%
-friendly
-
-友好的だ
-%%%%
-peaceful
-
-平和的だ
-%%%%
-indifferent
-
-無関心だ
-%%%%
-summoned
-
-召喚された
-%%%%
-durably summoned
-
-恒久的に召喚された
-%%%%
-haloed
-
-光輪に照らされた
-%%%%
-umbra
-
-影に覆われた
-%%%%
-suppressed
-
-抑圧されている
-%%%%
-possessable
-
-所有できる
-%%%%
-disembodied soul
-
-実体が無い魂
-%%%%
-reflecting injuries
-
-損傷の反射
-%%%%
-inner flame
-
-内部からの発火
-%%%%
-is retreating.\n
-
-は退却している\n
-%%%%
-doesn't appear to have noticed you.\n
-
-はあなたに気付いているように見えない\n
-%%%%
-is friendly.\n
-
-は友好的だ\n
-%%%%
-seems to be peaceful towards you.\n
-
-はあなたに対して平和的に見える\n
-%%%%
-is indifferent to you.\n
-
-はあなたに無関心のようだ\n
-%%%%
-has been summoned.\n
-
-は召喚されている\n
 %%%%
 has been summoned but will not time out.\n
 
 は恒久的に召喚されている\n
 %%%%
-is illuminated by a divine halo.\n
-
-は神聖な光輪によって照らされている\n
-%%%%
-is wreathed by an unholy umbra.\n
-
-は不浄な影に取りつかれている\n
-%%%%
-is surrounded by an aura of magical suppression.\n
-
-は魔法的な抑圧のオーラに囲まれている\n
-%%%%
-is mindless.\n
-
-には精神が無い\n
-%%%%
-is chaotic.\n
-
-は混沌の存在だ\n
-%%%%
-soul is ripe for the taking.\n
-
-の魂は刈り取られ奪われた\n
-%%%%
-is a disembodied soul.\n
-
-は実体の無い魂だ\n
-%%%%
-is reflecting injuries back at attackers.\n
-
-は攻撃してきた者に損傷を反射する\n
-%%%%
-is filled with an inner flame.\n
-
-は内部からの発火に満たされている
-%%%%
-charmed
-
-魅了された
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-neutral
-
-自然な
-%%%%
-dancing weapon
-
-踊る武器
-%%%%
-pandemonium lord
-
-パンデモニウムの君主
-%%%%
-ghost
-
-幽霊
-%%%%
-illusion
-
-幻影
-%%%%
-This square %s.
-
-このマスには%s
-%%%%
-There is a cloud of %s here.
-
-ここには%sの雲がある
-%%%%
-You see %s here.
-
-ここには%sが見える
-%%%%
-You.
-
-あなただ
-%%%%
-There is a strange disturbance in the water here.
-
-ここの水面には奇妙な乱れがある
-%%%%
-There is a strange disturbance in the cloud here.
-
-ここの雲には奇妙な乱れがある
-%%%%
-%s is out of range.
-
-%sは射程外だ
-%%%%
-(<w>Right-click</w> for more information.)
-
-(<w>Right-click</w> で更なる説明を見る)
-%%%%
-(Press <w>v</w> for more information.)
-
-( <w>v</w> で更なる説明を見る)
-%%%%
-(Right-click for more information.)
-
-(Right-click で更なる説明を見る)
-%%%%
-(Press 'v' for more information.)
-
-( 'v' で更なる説明を見る)
-%%%%
-
 Directn-1
 
 ここには
@@ -24869,38 +24068,6 @@ Omniscient
 
 全知全能の賢者
 %%%%
-It greatly speeds your metabolism.
-
-これはあなたの新陳代謝を非常に加速する。
-%%%%
-It speeds your metabolism.
-
-これはあなたの新陳代謝を加速する。
-%%%%
-It greatly slows your metabolism.
-
-これはあなたの新陳代謝を減速する。
-%%%%
-It slows your metabolism.
-
-これはあなたの新陳代謝を減速する。
-%%%%
-It makes you %s%s stealthy.
-
-これはあなたの隠密性を%s%s。
-%%%%
-much
-
-とても
-%%%%
-less_des
-
-減少させる
-%%%%
-more_des
-
-増加させる
-%%%%
 It affects your evasion (%d).
 
 それはあなたのAC(%d)に影響する
@@ -25865,40 +25032,6 @@ displeased
 
 
 %%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
-
-%%%%
-
-
 
 %%%%
 
