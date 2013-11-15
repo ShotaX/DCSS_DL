@@ -1,0 +1,829 @@
+%%%%
+You switch back to your bare hands.
+
+あなたは素手に戻った
+#mpr(jtrans("You switch back to your bare hands."));
+%%%%
+Not switching back to %s.
+
+%sに装備を戻すことができない
+#mprf(jtrans("Not switching back to %s.").c_str(),
+%%%%
+Desecrating this corpse would be a sin. Continue anyway?
+
+この死体を捌くことに罪を感じる。続けますか？
+#|| !yesno(jtrans("Desecrating this corpse would be a sin. Continue anyway?").c_str(),
+%%%%
+You could %s this corpse's blood instead. Continue anyway?
+
+それよりもこの死体%sした方が良い。続けますか？
+#const string msg = make_stringf(jtrans("You could %s this corpse's blood instead. Continue anyway?").c_str(),
+%%%%
+drain or bottle
+
+吸血か瓶詰
+%%%%
+drain
+
+吸血
+#? jtrans("drain or bottle").c_str() : jtrans("drain").c_str());
+%%%%
+%s: to rot %d, contam %d -> badness %d
+
+#dprf("%s: to rot %d, contam %d -> badness %d",
+%%%%
+butcher
+
+解体
+#string verb = (bottle_blood ? "bottle" : "butcher");
+%%%%
+corpse
+
+#noun    = "corpse";
+%%%%
+it
+
+#pronoun = jtrans("it");
+%%%%
+corpses
+
+#noun    = "corpses";
+%%%%
+them
+
+#pronoun = jtrans("them");
+%%%%
+You might want to also %s the %s in your pack.
+
+あなたの荷物の中の%sを%sすることもできます
+#mprf(jtrans("You might want to also %s the %s in your pack.").c_str(),noun.c_str(), verb.c_str()
+%%%%
+If you dropped the %s in your pack you could %s %s.
+
+もしあなたが荷物の中の%sを落とせば、あなたは%sを%sできる
+#mprf(jtrans("If you dropped the %s in your pack you could %s %s.").c_str(),
+%%%%
+There isn't anything here!
+
+ここには何もない！
+#mpr(jtrans("There isn't anything here!"));
+%%%%
+You are too berserk to search for a butchering tool!
+
+あなたは武器を変更するには狂戦士化しすぎている！
+#mpr(jtrans("You are too berserk to search for a butchering tool!"));
+%%%%
+There isn't anything to %s here.
+
+ここには%sする物が無い
+#mprf(jtrans("There isn't anything to %s here.").c_str(),
+%%%%
+bottle
+
+瓶詰
+%%%%
+#butcher
+#
+#bottle_blood ? jtrans("bottle").c_str() : jtrans("butcher").c_str());
+%%%%
+There isn't anything suitable to %s here.
+
+ここには%sに適したものがない
+#mprf(jtrans("There isn't anything suitable to %s here.").c_str(),
+%%%%
+#bottle
+#
+#bottle_blood ? jtrans("bottle").c_str() 
+%%%%
+#butcher
+#
+#: jtrans("butcher").c_str());
+%%%%
+Choose a corpse to bottle
+
+#select_items(meat, bottle_blood ? "Choose a corpse to bottle"
+%%%%
+Choose a corpse to butcher
+
+#: "Choose a corpse to butcher",
+%%%%
+%s %s? [(y)es/(c)hop/(n)o/(a)ll/(q)uit/?]
+
+%sを%sする？ [(y)はい/(c)解体/(n)いいえ/(a)全て/(q)中止/?]
+#mprf(MSGCH_PROMPT, jtrans("%s %s? [(y)es/(c)hop/(n)o/(a)ll/(q)uit/?]").c_str(),
+%%%%
+#Bottle
+#
+#bottle_blood ? jtrans("Bottle").c_str() 
+%%%%
+#Butcher
+#
+#: jtrans("Butcher").c_str());
+%%%%
+There isn't anything suitable to %s here.
+
+ここには%sに適したものは無い
+%%%%
+There isn't anything else to %s here.
+
+ここには%sするものは他に無い
+#mprf(Options.confirm_butcher == CONFIRM_NEVER ? 
+#               jtrans("There isn't anything suitable to %s here.").c_str()
+#             : jtrans("There isn't anything else to %s here.").c_str(),
+#             bottle_blood ? jtrans("bottle").c_str() : jtrans("butcher").c_str());
+%%%%
+Drain what?
+
+どれを吸う？
+#prompt_invent_item(you.species == SP_VAMPIRE ? jtrans("Drain what?").c_str()
+%%%%
+Eat which item?
+
+どれを食べる？
+#: jtrans("Eat which item?").c_str(),
+%%%%
+It's melded into your body!
+
+それはあなたの体の中に溶けた！
+#mpr(jtrans("It's melded into your body!"));
+%%%%
+You can't eat that!
+
+あなたはそれを食べることができない！
+#mpr(jtrans("You can't eat that!"));
+%%%%
+You crave blood!
+
+あなたは血を欲している！
+#mpr(jtrans("You crave blood!"));
+%%%%
+Just photosynthesize.
+
+いま光合成している
+#mpr(jtrans("Just photosynthesize."));
+%%%%
+You decompose your surroundings.
+
+あなたの周囲を分解している
+#mpr(jtrans("You decompose your surroundings."));
+%%%%
+You can't eat.
+
+あなたは食事ができない
+#mpr(jtrans("You can't eat."));
+%%%%
+You couldn't keep anything down in your present state!
+
+#mpr(jtrans("You couldn't keep anything down in your present state!"));
+%%%%
+You're too full to eat anything.
+
+あなたはお腹いっぱいだ
+#mpr(jtrans("You're too full to eat anything."));
+%%%%
+full
+
+満腹
+#return jtrans("full");
+%%%%
+thirsty
+
+渇望
+#return jtrans("thirsty");
+%%%%
+hungry
+
+空腹
+#return jtrans("hungry");
+%%%%
+Your blood-deprived body can't sustain your rage any longer.
+
+あなたの血を失った肉体はもはや狂戦士でいられない
+#mpr(jtrans("Your blood-deprived body can't sustain your rage any longer."), MSGCH_DURATION);
+%%%%
+Your blood-deprived body can't sustain your transformation much longer.
+
+あなたの血を失った肉体はもはや変化し続けられない
+#mpr(jtrans("Your blood-deprived body can't sustain your transformation much longer."), MSGCH_DURATION);
+%%%%
+Your blood-filled body can't sustain your transformation much longer.
+
+あなたの血に満ちた肉体はもはや変化し続けられない
+#mpr(jtrans("Your blood-filled body can't sustain your transformation much longer."), MSGCH_WARN);
+%%%%
+You can't stomach any more blood right now.
+
+あなたはこれ以上の血を蓄えることはできない
+#mpr(jtrans("You can't stomach any more blood right now."));
+%%%%
+#You
+#
+#string msg = jtrans("You");
+%%%%
+feel devoid of blood!
+
+はひどく血に飢えている！
+#msg += jtrans("feel devoid of blood!");
+%%%%
+are starving!
+
+はひどく飢えている！
+#msg += jtrans("are starving!");
+%%%%
+#%s
+#
+#mprf(MSGCH_FOOD, less_hungry, "%s", msg.c_str());
+%%%%
+feel almost devoid of blood!
+
+はかなり血に飢えている！
+#msg += jtrans("feel almost devoid of blood!");
+%%%%
+are near starving!
+
+はかなり飢えている!
+#msg += jtrans("are near starving!");
+%%%%
+#%s
+#
+#mprf(MSGCH_FOOD, less_hungry, "%s", msg.c_str());
+%%%%
+are feeling %s%s.
+
+%s%sを感じている。
+%%%%
+very 
+
+とても
+#msg += make_stringf(jtrans("are feeling %s%s.").c_str(),
+#                                   you.hunger_state == HS_VERY_HUNGRY ? jtrans("very ").c_str() : "",
+%%%%
+#%s
+#
+#mprf(MSGCH_FOOD, less_hungry, "%s", msg.c_str());
+%%%%
+slightly_food1106
+
+やや
+#mag = jtrans("slightly_food1106");
+%%%%
+somewhat
+
+幾分
+#mag = jtrans("somewhat");
+%%%%
+quite a bit
+
+かなり
+#mag = jtrans("quite a bit");
+%%%%
+a lot
+
+とても
+#mag = jtrans("a lot");
+%%%%
+You feel %s more %s.
+
+あなたは%s%sが増した。
+#msg = make_stringf(jtrans("You feel %s more %s.").c_str(), mag.c_str(), _how_hungry().c_str());
+%%%%
+You feel %s less %s.
+
+あなたは%s%sが薄れた。
+#msg = make_stringf(jtrans("You feel %s less %s.").c_str(), mag.c_str(), _how_hungry().c_str());
+%%%%
+You refuse to eat that rotten meat.
+
+あなたは腐った肉を食べることを拒否した。
+#mpr(jtrans("You refuse to eat that rotten meat."));
+%%%%
+Drink blood from
+
+飲みますか
+%%%%
+Eat
+
+#you.species == SP_VAMPIRE ? "Drink blood from" : "Eat",
+%%%%
+%s%s%s? (ye/n/q/i?)
+
+%s%sを%s？ (はい(y)/いいえ(n)/中止(q)/?)
+#mprf(MSGCH_PROMPT, jtrans("%s%s%s? (ye/n/q/i?)").c_str(),
+%%%%
+one of
+
+ひとつの
+#((item->quantity > 1) ? jtrans("one of").c_str() : ""),
+%%%%
+Drink blood from
+
+飲みますか
+%%%%
+Eat-food
+
+食べますか
+# (you.species == SP_VAMPIRE ? jtrans("Drink blood from").c_str() : jtrans("Eat-food").c_str()));
+%%%%
+%s devoid of blood.
+
+%s血が抜けてしまっている
+#mprf(jtrans("%s devoid of blood.").c_str(),
+%%%%
+This corpse is
+
+この死体は
+#unusable_corpse == 1 ? jtrans("This corpse is").c_str()
+%%%%
+These corpses are
+
+これらの死体は
+#: jtrans("These corpses are").c_str());
+%%%%
+Error: Can eat %s after all?
+
+#mprf(MSGCH_DIAGNOSTICS, "Error: Can eat %s after all?",
+%%%%
+You refuse to eat these food items.
+
+あなたはその食品を食べることを拒否した。
+#mpr(jtrans("You refuse to eat these food items."));
+%%%%
+%s %s%s? (ye/n/q)
+
+%s%sを%s? (ye/n/q)
+#mprf(MSGCH_PROMPT, jtrans("%s %s%s? (ye/n/q)").c_str(),
+%%%%
+#one of
+#
+# ((item->quantity > 1) ? jtrans("one of").c_str() : ""),
+%%%%
+Drink blood from
+
+%%%%
+Eat
+
+#(you.species == SP_VAMPIRE ? jtrans("Drink blood from").c_str() : jtrans("Eat").c_str());
+%%%%
+#%s devoid of blood.
+#
+#mprf(jtrans("%s devoid of blood.").c_str(),
+%%%%
+The corpse you are carrying is
+
+あなたが運んでいる死体は
+#unusable_corpse == 1 ? jtrans("The corpse you are carrying is").c_str()
+%%%%
+The corpses you are carrying are
+
+あなたが運んでいる死体達は
+#: jtrans("The corpses you are carrying are").c_str());
+%%%%
+Error: Can eat %s after all?
+
+#mprf(MSGCH_DIAGNOSTICS, "Error: Can eat %s after all?",
+%%%%
+You refuse to eat these food items.
+
+#mpr(jtrans("You refuse to eat these food items."));
+%%%%
+%s %s%s? (ye/n/q/i?)
+
+%s%sを%s
+#mprf(MSGCH_PROMPT, jtrans("%s %s%s? (ye/n/q/i?)").c_str(),
+%%%%
+#one of
+#
+# ((item->quantity > 1) ? jtrans("one of").c_str() : ""),
+%%%%
+Eat
+
+#(you.species == SP_VAMPIRE ? jtrans("Drink blood from").c_str() : jtrans("Eat").c_str()));
+%%%%
+#%s %s%s.
+#
+#mprf("%s %s%s.",
+%%%%
+#one of
+#
+# ((item->quantity > 1) ? jtrans("one of").c_str() : ""),
+%%%%
+Drinking blood from
+
+吸血している
+#(you.species == SP_VAMPIRE ? jtrans("Drinking blood from").c_str()
+%%%%
+Eating
+
+食事をしている
+#: jtrans("Eating").c_str()));
+%%%%
+tastes unpleasant.
+
+は不快な味がする
+#phrase = jtrans("tastes unpleasant.").c_str();
+%%%%
+tastes good.
+
+はおいしい
+#phrase = jtrans("tastes good.").c_str();
+%%%%
+tastes terrible.
+
+はひどい味だ
+#phrase = jtrans("tastes terrible.").c_str();
+%%%%
+tastes great.
+
+は素晴らしく美味しい
+#phrase = jtrans("tastes great.").c_str();
+%%%%
+tastes like chicken!
+
+は鶏肉のような味だ！
+#phrase = one_chance_in(1000) ? jtrans("tastes like chicken!").c_str()
+%%%%
+#tastes great.
+#
+#: jtrans("tastes great.").c_str();
+%%%%
+tastes very good.
+
+はとてもおいしい
+#phrase = jtrans("tastes very good.").c_str();
+%%%%
+#tastes good.
+#
+#phrase = jtrans("tastes good.").c_str();
+%%%%
+is not very appetising.
+
+は食欲をそそらない
+#phrase = jtrans("is not very appetising.").c_str();
+%%%%
+That was extremely unsatisfying.
+
+それは非常に不満足だった
+#mpr(jtrans("That was extremely unsatisfying."));
+%%%%
+That was not very filling.
+
+それは食べごたえがなかった
+#mpr(jtrans("That was not very filling."));
+%%%%
+Gourmand factor: %d, chunk base: %d, effective: %d, %%: %d
+
+#"Gourmand factor: %d, chunk base: %d, effective: %d, %%: %d",
+%%%%
+This raw flesh %s
+
+この肉は%s
+#mprf("This raw flesh %s", _chunk_flavour_phrase(likes_chunks));
+%%%%
+This meat tastes really weird.
+
+この肉はとても奇妙な味がする
+#mpr(jtrans("This meat tastes really weird."));
+%%%%
+mutagenic meat
+
+#mutate(RANDOM_MUTATION, "mutagenic meat");
+%%%%
+Yeeuch - this meat is poisonous!
+
+うへ！  この肉は有毒だ！
+#mpr(jtrans("Yeeuch - this meat is poisonous!"));
+%%%%
+poisonous meat
+
+#if (poison_player(3 + random2(4), "", "poisonous meat"))
+%%%%
+This %s flesh tastes %s!
+
+この%sな肉は%s!
+#mprf(jtrans("This %s flesh tastes %s!").c_str(),
+%%%%
+rotting
+
+腐敗している
+%%%%
+raw
+
+新鮮
+#chunk_effect == CE_ROTTEN   ? jtrans("rotting").c_str()   : jtrans("raw").c_str(),
+%%%%
+delicious
+
+素晴らしい
+%%%%
+good
+
+おいしい
+#x_chance_in_y(contam, 1000) ? jtrans("delicious").c_str() : jtrans("good").c_str());
+%%%%
+This flesh (%d) tastes buggy!
+
+#mprf(MSGCH_ERROR, "This flesh (%d) tastes buggy!", chunk_effect);
+%%%%
+nutrition: %d
+
+#dprf("nutrition: %d", nutrition);
+%%%%
+You finish eating.
+
+あなたは食事を終えた。
+#mpr(jtrans("You finish eating."));
+%%%%
+Blech - you need greens!
+
+オエ……。あなたには野菜が必要だ！
+#mpr(jtrans("Blech - you need greens!"));
+%%%%
+That meat ration really hit the spot!
+
+肉の保存食は実に満足の行く食事だ！
+#mpr(jtrans("That meat ration really hit the spot!"));
+%%%%
+That beef jerky was %s!
+
+このビーフジャーキーは%s!
+#mprf(jtrans("That beef jerky was %s!").c_str(),
+%%%%
+jerk-a-riffic
+
+噛み応えがある
+#one_chance_in(4) ? jtrans("jerk-a-riffic").c_str()
+%%%%
+#delicious
+#
+#: jtrans("delicious").c_str());
+%%%%
+That sausage was delicious!
+
+このソーセージは素晴らしくおいしい！
+#mpr(jtrans("That sausage was delicious!"));
+%%%%
+Blech - you need meat!
+
+オエ……。あなたには肉が必要だ！
+#mpr(jtrans("Blech - you need meat!"));
+%%%%
+That bread ration really hit the spot!
+
+パンの保存食は実に満足の行く食事だ！
+#mpr(jtrans("That bread ration really hit the spot!"));
+%%%%
+Mmmm... Yummy %s.
+
+むむむ……おいしい%sだ
+#mprf(jtrans("Mmmm... Yummy %s.").c_str(),
+%%%%
+apple
+
+リンゴ
+#(food_type == FOOD_APPLE)   ? jtrans("apple").c_str() :
+%%%%
+pear
+
+洋ナシ
+#(food_type == FOOD_PEAR)    ? jtrans("pear").c_str() :
+%%%%
+apricot
+
+アンズ
+#(food_type == FOOD_APRICOT) ? jtrans("apricot").c_str()
+%%%%
+fruit
+
+果物
+#: jtrans("fruit").c_str());
+%%%%
+That choko was very bland.
+
+このハヤトウリはまるで味がしない。
+#mpr(jtrans("That choko was very bland."));
+%%%%
+That snozzcumber tasted truly putrid!
+
+クサキウリはまさしく腐った味がする！
+#mpr(jtrans("That snozzcumber tasted truly putrid!"));
+%%%%
+That orange was delicious!%s
+
+このオレンジはとてもおいしい！%s
+#mprf(jtrans("That orange was delicious!%s").c_str(),
+%%%%
+Even the peel tasted good!
+
+皮までもおいしかった！
+#one_chance_in(8) ? jtrans("Even the peel tasted good!").c_str() : "");
+%%%%
+That banana was delicious!%s
+
+このバナナはとてもおいしい！%s
+#mprf(jtrans("That banana was delicious!%s").c_str(),
+%%%%
+#
+#
+#one_chance_in(8) ? jtrans("Even the peel tasted good!").c_str() : "");
+%%%%
+That strawberry was delicious!
+
+このイチゴはとてもおいしい！
+#mpr(jtrans("That strawberry was delicious!"));
+%%%%
+That rambutan was delicious!
+
+このランブータンはとてもおいしい！
+#mpr(jtrans("That rambutan was delicious!"));
+%%%%
+That lemon was rather sour... but delicious nonetheless!
+
+このレモンは酸っぱい……だがとてもおいしい！
+#mpr(jtrans("That lemon was rather sour... but delicious nonetheless!"));
+%%%%
+That grape was delicious!
+
+このブドウはとてもおいしい！
+#mpr(jtrans("That grape was delicious!"));
+%%%%
+That sultana was delicious... but very small.
+
+この種なし干しブドウはとてもおいしい！ (だが小さすぎる)
+#mpr(jtrans("That sultana was delicious... but very small."));
+%%%%
+That lychee was delicious!
+
+このライチはとてもおいしい！
+#mpr(jtrans("That lychee was delicious!"));
+%%%%
+That honeycomb was delicious!
+
+この蜂の巣はとてもおいしい
+#mpr(jtrans("That honeycomb was delicious!"));
+%%%%
+That royal jelly was delicious!
+
+このロイヤルゼリーはとてもおいしい！
+#mpr(jtrans("That royal jelly was delicious!"));
+%%%%
+That ambrosia tasted strange.
+
+このアンブロシアは奇妙な味がする
+#mpr(jtrans("That ambrosia tasted strange.")); // inspired messages here --evk
+%%%%
+#eating_pizza
+#
+#string taste = getMiscString("eating_pizza");
+%%%%
+Bleh, bug pizza.
+
+#taste = "Bleh, bug pizza.";
+%%%%
+#%s
+#
+#mprf("%s", taste.c_str());
+%%%%
+#eating_cheese
+#
+#string taste = getMiscString("eating_cheese");
+%%%%
+Yeuchh! Moldy bug cheese.
+
+#taste = "Yeuchh! Moldy bug cheese.";
+%%%%
+#%s
+#
+#mprf("%s", taste.c_str());
+%%%%
+This %sblood tastes delicious!
+
+#mprf(jtrans("This %sblood tastes delicious!").c_str(),
+%%%%
+warm
+
+暖かい
+#mons_class_flag(mons_type, M_WARM_BLOOD) ? jtrans("warm").c_str()
+%%%%
+#
+#
+#: "");
+%%%%
+Somehow this blood was not very filling!
+
+どういうわけか、この血は空腹を埋めてはくれなかった！
+#mpr(jtrans("Somehow this blood was not very filling!"));
+%%%%
+Blech - this blood tastes nasty!
+
+うぇっ！この血は酷い味がした！
+#mpr(jtrans("Blech - this blood tastes nasty!"));
+%%%%
+poisonous blood
+
+#if (poison_player(1 + random2(3), "", "poisonous blood"))
+%%%%
+This blood tastes really weird!
+
+この血は奇妙な味がした！
+#mpr(jtrans("This blood tastes really weird!"));
+%%%%
+mutagenic blood
+
+#mutate(RANDOM_MUTATION, "mutagenic blood");
+%%%%
+Eating this would be a bad idea.
+
+これを食べるのは悪い考えだ
+#mpr(jtrans("Eating this would be a bad idea."));
+%%%%
+It contains deadly poison!
+
+これは致命的な毒を含んでいる！
+#mpr(jtrans("It contains deadly poison!"));
+%%%%
+It is caustic! Not only inedible but also greatly harmful!
+
+それは腐食性だ！食べられないだけでなく非常に有害だ！
+#mpr(jtrans("It is caustic! Not only inedible but also greatly harmful!"));
+%%%%
+Blech - you need blood!
+
+うへっ！あなたは血を求めている！
+#mpr(jtrans("Blech - you need blood!"));
+%%%%
+#Blech - you need blood!
+#
+#mpr(jtrans("Blech - you need blood!"));
+%%%%
+Sorry, you're a carnivore.
+
+残念ながら、あなたは肉食性だ
+#mpr(jtrans("Sorry, you're a carnivore."));
+%%%%
+Sorry, you're a herbivore.
+
+残念ながら、あなたは草食性だ
+#mpr(jtrans("Sorry, you're a herbivore."));
+%%%%
+You aren't quite hungry enough to eat that!
+
+あなたはそれを食べられるほど腹が空いていない！
+#mpr(jtrans("You aren't quite hungry enough to eat that!"));
+%%%%
+#Blech - you need blood!
+#
+#mpr(jtrans("Blech - you need blood!"));
+%%%%
+#Sorry, you're a herbivore.
+#
+#mpr(jtrans("Sorry, you're a herbivore."));
+%%%%
+#Blech - you need blood!
+#
+#mpr(jtrans("Blech - you need blood!"));
+%%%%
+#Sorry, you're a carnivore.
+#
+#mpr(jtrans("Sorry, you're a carnivore."));
+%%%%
+There is no blood in this body!
+
+この死体は血が流れていない！
+#mpr(jtrans("There is no blood in this body!"));
+%%%%
+It's not fresh enough.
+
+この死体は新鮮ではない
+#mpr(jtrans("It's not fresh enough."));
+%%%%
+You feel more resilient.
+
+あなたは元気になったように感じた。
+#mpr(jtrans("You feel more resilient."));
+%%%%
+You lose consciousness!
+
+あなたは意識を失った！
+#mpr(jtrans("You lose consciousness!"), MSGCH_FOOD);
+%%%%
+You have starved to death.
+
+あなたは飢え死にした
+#mpr(jtrans("You have starved to death."), MSGCH_FOOD);
+%%%%
+#N/A
+#
+#return "N/A";
+%%%%
+#%d
+#
+#return make_stringf("%d", hunger);
+%%%%
+None
+
+#return "None";
+%%%%
+want to keep %d chunks
+
+#dprf("want to keep %d chunks", needed);
+%%%%

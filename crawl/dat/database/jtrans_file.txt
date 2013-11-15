@@ -1,0 +1,649 @@
+%%%%
+#
+#
+#return "";
+%%%%
+#/des
+#
+#while (pos != string::npos && filename.find("/des", pos) != pos)
+%%%%
+#_
+#
+#return replace_all_of(filename.substr(pos + 5), " /\\:", "_");
+%%%%
+#/des
+#
+#while (pos != string::npos && filename.find("/des", pos) != pos)
+%%%%
+#_
+#
+#return replace_all_of(filename.substr(pos + 5), " /\\:", "_");
+%%%%
+# 
+#
+#string sep = " ";
+%%%%
+Empty file name.
+
+#throw "Empty file name.";
+%%%%
+\"%s\" contains bad characters.
+
+#throw make_stringf("\"%s\" contains bad characters.",
+%%%%
+\"%s\" is an absolute path.
+
+#throw make_stringf("\"%s\" is an absolute path.", path.c_str());
+%%%%
+#..
+#
+#if (path.find("..") != string::npos)
+%%%%
+\"%s\" contains \"..\" sequences.
+
+#throw make_stringf("\"%s\" contains \"..\" sequences.",
+%%%%
+#/
+#
+#return replace_all_of(replace_all_of(path, "/", sep),
+%%%%
+#\\
+#
+#"\\", sep);
+%%%%
+#
+#
+#!SysEnv.crawl_dir.empty()? SysEnv.crawl_dir : "",
+%%%%
+#
+#
+#!SysEnv.crawl_base.empty()? SysEnv.crawl_base : "",
+%%%%
+#../Resources/
+#
+#SysEnv.crawl_base + "../Resources/",
+%%%%
+#/sdcard/Android/data/org.develz.crawl/files/
+#
+#"/sdcard/Android/data/org.develz.crawl/files/",
+%%%%
+#dat
+#
+#string("dat") + FILE_SEPARATOR,
+%%%%
+#dat/tiles
+#
+#string("dat/tiles") + FILE_SEPARATOR,
+%%%%
+#docs
+#
+#string("docs") + FILE_SEPARATOR,
+%%%%
+#settings
+#
+#string("settings") + FILE_SEPARATOR,
+%%%%
+#docs
+#
+#string("..") + FILE_SEPARATOR + "docs" + FILE_SEPARATOR,
+%%%%
+#dat
+#
+#string("..") + FILE_SEPARATOR + "dat" + FILE_SEPARATOR,
+%%%%
+#dat/tiles
+#
+#string("..") + FILE_SEPARATOR + "dat/tiles" + FILE_SEPARATOR,
+%%%%
+#settings
+#
+#string("..") + FILE_SEPARATOR + "settings" + FILE_SEPARATOR,
+%%%%
+#..
+#
+#string("..") + FILE_SEPARATOR,
+%%%%
+#
+#
+#"",
+%%%%
+Looking for %s as '%s'
+
+#__android_log_print(ANDROID_LOG_INFO,"Crawl","Looking for %s as '%s'",basename.c_str(),name.c_str());
+%%%%
+Cannot find data file '%s' anywhere, aborting\n
+
+#end(1, false, "Cannot find data file '%s' anywhere, aborting\n",
+%%%%
+#
+#
+#return "";
+%%%%
+#Crawl
+#
+#__android_log_print(ANDROID_LOG_INFO, "Crawl",
+%%%%
+%s \"%s\" does not exist and I can't create it.
+
+#"%s \"%s\" does not exist and I can't create it.",
+%%%%
+ does not exist 
+
+#fprintf(stderr, "%s \"%s\" does not exist "
+%%%%
+and I can't create it.\n
+
+#"and I can't create it.\n",
+%%%%
+Save directory
+
+#check_mkdir("Save directory", &dir, false);
+%%%%
+#.
+#
+#dir = ".";
+%%%%
+Bones directory
+
+#check_mkdir("Bones directory", &dir, false);
+%%%%
+#.
+#
+#dir = ".";
+%%%%
+#
+#
+#static string _get_base_savedir_path(const string &subpath = "")
+%%%%
+#cache.
+#
+#_get_base_savedir_path(string("cache.") + Version::Long);
+%%%%
+#tdl
+#
+#chunk_reader fdoll(save, "tdl");
+%%%%
+#.
+#
+#searchpath = ".";
+%%%%
+#tdl
+#
+#if (Options.tile_menu_icons && save.has_chunk("tdl"))
+%%%%
+%s: %s
+
+#dprf("%s: %s", filename.c_str(), E.msg.c_str());
+%%%%
+start-
+
+#return _get_savefile_directory() + "start-"
+%%%%
+-ns.prf
+
+#+ strip_filename_unsafe_chars(Options.game.name) + "-ns.prf";
+%%%%
+start-ns.prf
+
+#return _get_savefile_directory() + "start-ns.prf";
+%%%%
+#wb
+#
+#const char *mode = "wb",
+%%%%
+#.tmp
+#
+#tmp_filename = target_filename + ".tmp";
+%%%%
+failed to rename %s -> %s
+
+#end(1, true, "failed to rename %s -> %s",
+%%%%
+ (%s; locking:%s)
+
+#"Failed to open \"%s\" (%s; locking:%s)",
+%%%%
+#no
+#
+#lock? "YES" : "no");
+%%%%
+%s is following to %s.
+
+#dprf("%s is following to %s.", fol->name(DESC_THE, true).c_str(),
+%%%%
+The ghost fades into the shadows.
+
+その亡霊は影の中に消え去った
+#mpr(jtrans("The ghost fades into the shadows."));
+%%%%
+#can_climb
+#
+#if (!dowan->props.exists("can_climb"))
+%%%%
+#can_climb
+#
+#if (!duvessa->props.exists("can_climb"))
+%%%%
+Your summoned allies%s are left behind.
+
+あなたの召喚した仲間は取り残された
+#mprf(jtrans("Your summoned allies%s are left behind.").c_str(),
+%%%%
+
+
+#non_stair_using_allies > 1 ? "" : "");
+%%%%
+Your mindless thrall%s behind.
+
+あなたの精神なき奴隷は取り残された
+#mprf(jtrans("Your mindless thrall%s behind.").c_str(),
+%%%%
+ 
+
+#non_stair_using_allies > 1 ? "" : " ");
+%%%%
+Error: you smelly wizard, how dare you enter 
+
+#mprf(MSGCH_ERROR, "Error: you smelly wizard, how dare you enter "
+%%%%
+the same level (%s) twice! It will be trampled upon return.\n
+
+#"the same level (%s) twice! It will be trampled upon return.\n"
+%%%%
+The stack has: %s.
+
+#"The stack has: %s.",
+%%%%
+#, 
+#
+#", ", ", ").c_str());
+%%%%
+Attempt to enter a portal (%s) twice; stack: %s
+
+#die("Attempt to enter a portal (%s) twice; stack: %s",
+%%%%
+#, 
+#
+#", ", ", ").c_str());
+%%%%
+Loading... branch: %d, level: %d
+
+#mprf(MSGCH_DIAGNOSTICS, "Loading... branch: %d, level: %d",
+%%%%
+stair_taken = %s
+
+#dprf("stair_taken = %s", dungeon_feature_name(stair_taken));
+%%%%
+<lightmagenta>Deleting level.
+
+#delete_level(old_level), dprf("<lightmagenta>Deleting level.");
+%%%%
+Generating new level for '%s'.
+
+#dprf("Generating new level for '%s'.", level_name.c_str());
+%%%%
+Loading old level '%s'.
+
+#dprf("Loading old level '%s'.", level_name.c_str());
+%%%%
+Level file is invalid.
+
+#_restore_tagged_chunk(you.save, level_name, TAG_LEVEL, "Level file is invalid.");
+%%%%
+arrival time: %d
+
+#dprf("arrival time: %d", you.time_taken);
+%%%%
+Level annotation: %s
+
+#mprf(MSGCH_PLAIN, YELLOW, jtrans("Level annotation: %s").c_str(),
+%%%%
+global_info:: num_visits: %d, levels_seen: %d
+
+#"global_info:: num_visits: %d, levels_seen: %d",
+%%%%
+curr_PlaceInfo:: num_visits: %d, levels_seen: %d
+
+#"curr_PlaceInfo:: num_visits: %d, levels_seen: %d",
+%%%%
+%s slides away from you right after you %s it!
+
+#mprf(jtrans("%s slides away from you right after you %s it!").c_str(),
+%%%%
+%s settles down.
+
+#mprf(jtrans("%s settles down.").c_str(), stair_str.c_str());
+%%%%
+#st
+#
+#SAVEFILE("st", StashTrack.save);
+%%%%
+#lua
+#
+#SAVEFILE("lua", clua.save);
+%%%%
+#kil
+#
+#SAVEFILE("kil", you.kills->save);
+%%%%
+#tc
+#
+#SAVEFILE("tc", travel_cache.save);
+%%%%
+#nts
+#
+#SAVEFILE("nts", save_notes);
+%%%%
+#tut
+#
+#SAVEFILE("tut", save_hints);
+%%%%
+#msg
+#
+#SAVEFILE("msg", save_messages);
+%%%%
+#tdl
+#
+#SAVEFILE("tdl", save_doll_file);
+%%%%
+#you
+#
+#_write_tagged_chunk("you", TAG_YOU);
+%%%%
+#chr
+#
+#_write_tagged_chunk("chr", TAG_CHR);
+%%%%
+Save macros?
+
+#&& yesno("Save macros?", true, 'n'))
+%%%%
+saved
+
+#whereis_record("saved");
+%%%%
+Char dump unsuccessful! Sorry about that.
+
+残念ながらキャラクターのダンプは失敗しました
+#mpr(jtrans("Char dump unsuccessful! Sorry about that."));
+%%%%
+See you soon, %s!
+
+#end(0, false, farewellmsg? "%s" : "See you soon, %s!",
+%%%%
+#bones.
+#
+#return _get_bonefile_directory() + "bones."
+%%%%
+#-
+#
+#+ replace_all(level_id::current().describe(), ":", "-");
+%%%%
+No ghost files for this level.
+
+#mpr("No ghost files for this level.", MSGCH_PROMPT);
+%%%%
+Broken bones file: %s
+
+#mprf(MSGCH_ERROR, "Broken bones file: %s",
+%%%%
+#!
+#
+#"Refusing to load buggy ghost from file \"%s\"!",
+%%%%
+Loaded ghost file with %u ghost(s)
+
+#mprf(MSGCH_DIAGNOSTICS, "Loaded ghost file with %u ghost(s)",
+%%%%
+Placed ghost is not alive.
+
+#mpr("Placed ghost is not alive.", MSGCH_DIAGNOSTICS);
+%%%%
+Placed ghost is not MONS_PLAYER_GHOST, but %s
+
+#"Placed ghost is not MONS_PLAYER_GHOST, but %s",
+%%%%
+Unable to place %u ghost(s)
+
+#mprf(MSGCH_DIAGNOSTICS, "Unable to place %u ghost(s)",
+%%%%
+This game comes from an incompatible version of Crawl (
+
+#if (yesno(("This game comes from an incompatible version of Crawl ("
+%%%%
+#).\n
+#
+#+ you.prev_save_version + ").\n"
+%%%%
+Unless you reinstall that version, you can't load it.\n
+
+#"Unless you reinstall that version, you can't load it.\n"
+%%%%
+Do you want to DELETE that game and start a new one?
+
+#"Do you want to DELETE that game and start a new one?"
+%%%%
+Cannot load an incompatible save from version %s
+
+#fail("Cannot load an incompatible save from version %s",
+%%%%
+This game comes from a previous release of Crawl.  If you 
+
+#if (!yesno("This game comes from a previous release of Crawl.  If you "
+%%%%
+load it now, you won't be able to go back. Continue?
+
+#"load it now, you won't be able to go back. Continue?",
+%%%%
+Please reinstall the stable version then.\n
+
+#end(0, false, "Please reinstall the stable version then.\n");
+%%%%
+Save data is invalid.
+
+#_restore_tagged_chunk(you.save, "you", TAG_YOU, "Save data is invalid.");
+%%%%
+#st
+#
+#if (you.save->has_chunk("st"))
+%%%%
+#st
+#
+#reader inf(you.save, "st", minorVersion);
+%%%%
+#lua
+#
+#if (you.save->has_chunk("lua"))
+%%%%
+#lua
+#
+#chunk_reader inf(you.save, "lua");
+%%%%
+#kil
+#
+#if (you.save->has_chunk("kil"))
+%%%%
+#kil
+#
+#reader inf(you.save, "kil", minorVersion);
+%%%%
+#tc
+#
+#if (you.save->has_chunk("tc"))
+%%%%
+#tc
+#
+#reader inf(you.save, "tc", minorVersion);
+%%%%
+#nts
+#
+#if (you.save->has_chunk("nts"))
+%%%%
+#nts
+#
+#reader inf(you.save, "nts", minorVersion);
+%%%%
+#tut
+#
+#if (you.save->has_chunk("tut"))
+%%%%
+#tut
+#
+#reader inf(you.save, "tut", minorVersion);
+%%%%
+#msg
+#
+#if (you.save->has_chunk("msg"))
+%%%%
+#msg
+#
+#reader inf(you.save, "msg", minorVersion);
+%%%%
+There exists a save by that name but it appears to be invalid.\n
+
+#"There exists a save by that name but it appears to be invalid.\n"
+%%%%
+(Error: %s).  Do you want to delete it?
+
+#"(Error: %s).  Do you want to delete it?", err.msg.c_str()).c_str(),
+%%%%
+Aborting; you may try to recover it somehow.
+
+#fail("Aborting; you may try to recover it somehow.");
+%%%%
+#chr
+#
+#reader inf(save, "chr");
+%%%%
+Save file corrupted (info > 1KB)
+
+#fail("Save file corrupted (info > 1KB)");
+%%%%
+#chr
+#
+#inf.fail_if_not_eof("chr");
+%%%%
+Incompatible character data
+
+#fail("Incompatible character data");
+%%%%
+#chr
+#
+#inf.fail_if_not_eof("chr");
+%%%%
+Save file corrupted
+
+#fail("Save file corrupted");
+%%%%
+File is corrupt.
+
+#*reason = "File is corrupt.";
+%%%%
+ is not compatible with 
+
+#*reason = (CRAWL " " + string(Version::Short) + " is not compatible with "
+%%%%
+save files from older versions. You can continue your 
+
+#"save files from older versions. You can continue your "
+%%%%
+game with the appropriate older version, or you can 
+
+#"game with the appropriate older version, or you can "
+%%%%
+delete it and start a new game.
+
+#"delete it and start a new game.");
+%%%%
+Major version mismatch: %d (want %d).
+
+#*reason = make_stringf("Major version mismatch: %d (want %d).",
+%%%%
+Minor version %d is negative!
+
+#*reason = make_stringf("Minor version %d is negative!",
+%%%%
+Minor version mismatch: %d (want <= %d). 
+
+#*reason = make_stringf("Minor version mismatch: %d (want <= %d). "
+%%%%
+The save is from a newer version.
+
+#"The save is from a newer version.",
+%%%%
+chunk %s: %s
+
+#dprf("chunk %s: %s", name.c_str(), reason.c_str());
+%%%%
+\n%s %s\n
+
+#end(-1, false, "\n%s %s\n", complaint, reason.c_str());
+%%%%
+truncated save chunk (%s)
+
+#fail("truncated save chunk (%s)", name.c_str());
+%%%%
+Ghost version mismatch: ghost was %d.%d; wanted %d.%d
+
+#dprf("Ghost version mismatch: ghost was %d.%d; wanted %d.%d",
+%%%%
+ seems to be invalid (short read); deleting it.
+
+#"Ghost file \"%s\" seems to be invalid (short read); deleting it.",
+%%%%
+#rb
+#
+#FILE *gfile = fopen_u(cha_fil.c_str(), "rb");
+%%%%
+Ghost file for this level already exists.
+
+#mpr("Ghost file for this level already exists.",
+%%%%
+Could not find any ghosts for this level.
+
+#mpr("Could not find any ghosts for this level.",
+%%%%
+#wb
+#
+#safe_file_writer sw(cha_fil, "wb", true);
+%%%%
+Saved ghost (%s).
+
+#mprf(MSGCH_DIAGNOSTICS, "Saved ghost (%s).", cha_fil.c_str());
+%%%%
+ERROR: Could not lock file %s
+
+#mprf(MSGCH_ERROR, "ERROR: Could not lock file %s", file.c_str());
+%%%%
+Unable to open lock file \"%s\"
+
+#end(1, true, "Unable to open lock file \"%s\"", filename.c_str());
+%%%%
+#w
+#
+#return fdopen(fd, "w");
+%%%%
+#title_
+#
+#if (files[j].substr(0, 6) == "title_")
+%%%%
+sighup_save_and_exit() called without a HUP signal; please
+
+#mpr("sighup_save_and_exit() called without a HUP signal; please"
+%%%%
+file a bug report
+
+#"file a bug report", MSGCH_ERROR);
+%%%%
+Received HUP signal, saved and exited game.
+
+#mpr("Received HUP signal, saved and exited game.", MSGCH_ERROR);
+%%%%
+Received HUP signal, saved game.
+
+#save_game(true, "Received HUP signal, saved game.");
+%%%%
+Received HUP signal, game already saved.
+
+#end(0, false, "Received HUP signal, game already saved.");
+%%%%

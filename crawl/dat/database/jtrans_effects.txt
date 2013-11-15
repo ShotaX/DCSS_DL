@@ -1,0 +1,954 @@
+%%%%
+You are blasted by holy energy!
+
+あなたは神聖なエネルギーで焼き焦がされた！
+#mpr(jtrans("You are blasted by holy energy!"));
+%%%%
+holy word
+
+#const char *aux = "holy word";
+%%%%
+scroll of holy word
+
+#aux = "scroll of holy word";
+%%%%
+Zin's holy word
+
+#aux = "Zin's holy word";
+%%%%
+the Shining One's holy word
+
+#aux = "the Shining One's holy word";
+%%%%
+is blasted by Zin's holy word!
+
+#simple_monster_message(mons, jtrans("is blasted by Zin's holy word!").c_str());
+%%%%
+#convulses!
+#
+#--defined.
+#simple_monster_message(mons, jtrans("convulses!").c_str());
+%%%%
+%s speak a Word of immense power!
+
+%s は強大な力を持った言霊を口にした！
+#mprf(jtrans("%s speak a Word of immense power!").c_str(),
+%%%%
+shields you from torment!
+
+はあなたを苦痛から守った！
+#simple_god_message(jtrans("shields you from torment!").c_str());
+%%%%
+partially shields you from torment!
+
+はあなたの苦痛を軽減した！
+#simple_god_message(jtrans("partially shields you from torment!").c_str());
+%%%%
+You feel a surge of unholy energy.
+
+あなたは不浄なエネルギーの高まりを感じた。
+#mpr(jtrans("You feel a surge of unholy energy."));
+%%%%
+Your body is wracked with pain!
+
+あなたの肉体は苦痛に破壊された！
+#mpr(jtrans("Your body is wracked with pain!"));
+%%%%
+torment
+
+#const char *aux = "torment";
+%%%%
+Symbol of Torment
+
+#aux = "Symbol of Torment";
+%%%%
+Sceptre of Torment
+
+#aux = "Sceptre of Torment";
+%%%%
+scroll of torment
+
+#aux = "scroll of torment";
+%%%%
+Xom's torment
+
+#aux = "Xom's torment";
+%%%%
+Kikubaaqudgha's torment
+
+#aux = "Kikubaaqudgha's torment";
+%%%%
+#convulses!
+#
+#--defined.
+#simple_monster_message(mons, jtrans("convulses!").c_str());
+%%%%
+immolation
+
+#const char *aux = "immolation";
+%%%%
+a scroll of immolation
+
+#aux = "a scroll of immolation";
+%%%%
+a fiery explosion
+
+#aux = "a fiery explosion";
+%%%%
+an exploding Tome of Destruction
+
+#aux = "an exploding Tome of Destruction";
+%%%%
+fiery explosion
+
+#beam.name          = "fiery explosion";
+%%%%
+electric current
+
+#beam.name          = "electric current";
+%%%%
+shocks
+
+#beam.hit_verb      = "shocks";
+%%%%
+arcing electricity
+
+#beam.aux_source    = "arcing electricity";
+%%%%
+cleansing flame
+
+#const char *aux = "cleansing flame";
+%%%%
+the Shining One's cleansing flame
+
+#aux = "the Shining One's cleansing flame";
+%%%%
+golden flame
+
+#beam.name         = "golden flame";
+%%%%
+#)
+#
+#return (who.empty() ? who : " (" + who + ")");
+%%%%
+abyss.enter
+
+#mark_milestone("abyss.enter",
+%%%%
+is cast into the Abyss!
+
+#"is cast into the Abyss!" + _who_banished(who));
+%%%%
+You are banished to a different region of the Abyss.
+
+あなたはアビスの別の領域に追放された。
+#mpr(jtrans("You are banished to a different region of the Abyss."), MSGCH_BANISHMENT);
+%%%%
+Cast into the Abyss
+
+#const string what = "Cast into the Abyss" + _who_banished(who);
+%%%%
+wizard command
+
+#if (you_worship(GOD_XOM) && who != "Xom" && who != "wizard command"
+%%%%
+a distortion unwield
+
+#&& who != "a distortion unwield")
+%%%%
+Your knowledge of %s becomes hazy all of a sudden, and you forget the spell!
+
+あなたの %s の知識は突如薄れ、呪文を忘れてしまった！
+#mprf(jtrans("Your knowledge of %s becomes hazy all of a sudden, and you forget the spell!").c_str(), spell_title(you.spells[slot]));
+%%%%
+is smitten.
+
+#simple_monster_message(def, jtrans("is smitten.").c_str());
+%%%%
+Something smites you!
+
+何者かはあなたを打ち据えた！
+#mpr(jtrans("Something smites you!"));
+%%%%
+smiting
+
+#pbolt.name       = "smiting";
+%%%%
+by divine providence
+
+#pbolt.aux_source = "by divine providence";
+%%%%
+is struck by the twisting air!
+
+#simple_monster_message(def, jtrans("is struck by the twisting air!").c_str());
+%%%%
+The air twists around and violently strikes you in flight!
+
+周囲の大気は捻じれ、飛行しているあなたを激しく打った！
+#mpr(jtrans("The air twists around and violently strikes you in flight!"));
+%%%%
+The air twists around and strikes you!
+
+周囲の大気は捻じれ、あなたを打った！
+#mpr(jtrans("The air twists around and strikes you!"));
+%%%%
+airstrike
+
+#pbolt.name       = "airstrike";
+%%%%
+by the air
+
+#pbolt.aux_source = "by the air";
+%%%%
+The water rises up and strikes %s!
+
+#mprf("The water rises up and strikes %s!", defender->name(DESC_THE).c_str());
+%%%%
+The water swirls and strikes %s!
+
+#mprf("The water swirls and strikes %s!", defender->name(DESC_THE).c_str());
+%%%%
+waterstrike
+
+#pbolt.name       = "waterstrike";
+%%%%
+by the raging water
+
+#pbolt.aux_source = "by the raging water";
+%%%%
+Something feeds on your intellect!
+
+何かがあなたの知性を吸い取った！
+#mpr(jtrans("Something feeds on your intellect!"));
+%%%%
+Something tries to feed on your intellect!
+
+何かがあなたの知性を吸い取ろうとした！
+#mpr(jtrans("Something tries to feed on your intellect!"));
+%%%%
+You feel haunted.
+
+あなたはレイスや亡霊に憑依された
+#mpr(jtrans("You feel haunted."));
+%%%%
+You sense an evil presence.
+
+あなたは邪悪な存在を感知した。
+#mpr(jtrans("You sense an evil presence."));
+%%%%
+is surrounded by Orcish apparitions.
+
+はオークの亡霊に囲まれている。
+#simple_monster_message(def, jtrans("is surrounded by Orcish apparitions.").c_str());
+%%%%
+Orcish apparitions take form around you.
+
+オークの亡霊があなたの周囲に現れた。
+#mpr(jtrans("Orcish apparitions take form around you."));
+%%%%
+Blessed fire suddenly surrounds you!
+
+突然聖なる炎があなたを包んだ！
+#mpr(jtrans("Blessed fire suddenly surrounds you!"));
+%%%%
+is surrounded by blessed fire!
+
+は聖なる炎に包まれた！
+#simple_monster_message(def, jtrans("is surrounded by blessed fire!").c_str());
+%%%%
+unknown direct_effect spell: %d
+
+#die("unknown direct_effect spell: %d", spell);
+%%%%
+The dust glows %s!
+
+#mprf("The dust glows %s!", weird_glowing_colour().c_str());
+%%%%
+The scroll reassembles itself in your %s!
+
+#mprf("The scroll reassembles itself in your %s!",
+%%%%
+%s glows %s for a moment.
+
+#mprf("%s glows %s for a moment.",
+%%%%
+Your %s glow %s for a moment.
+
+#mprf("Your %s glow %s for a moment.",
+%%%%
+Your bandages flutter.
+
+#mpr("Your bandages flutter.");
+%%%%
+You smell %s.
+
+#mprf("You smell %s.", weird_smell().c_str());
+%%%%
+You experience a momentary feeling of inescapable doom!
+
+#mpr("You experience a momentary feeling of inescapable doom!");
+%%%%
+Your brain hurts!
+
+#mpr("Your brain hurts!");
+%%%%
+Your ears itch!
+
+#mpr("Your ears itch!");
+%%%%
+Your nose twitches suddenly!
+
+#mpr("Your nose twitches suddenly!");
+%%%%
+You hear the tinkle of a tiny bell.
+
+#mpr("You hear the tinkle of a tiny bell.", MSGCH_SOUND);
+%%%%
+You hear %s.
+
+#mprf(MSGCH_SOUND, "You hear %s.", weird_sound().c_str());
+%%%%
+Charge which item?
+
+#item_slot = prompt_invent_item("Charge which item?", MT_INVLIST,
+%%%%
+Choose an item to recharge, or Esc to abort.
+
+充填するアイテムを選んでください、もしくは Escキーで中止してください。
+#mpr(jtrans("Choose an item to recharge, or Esc to abort."));
+%%%%
+ and now has %d charge%s
+
+#snprintf(info, INFO_SIZE, " and now has %d charge%s",
+%%%%
+#s
+#
+#new_charges, new_charges == 1 ? "" : "s");
+%%%%
+%s %s for a moment%s.
+
+%s は一瞬%s %s
+#mprf(jtrans("%s %s for a moment%s.").c_str(),
+%%%%
+glows
+
+輝いた
+%%%%
+flickers
+
+ちらついた
+#charged ? jtrans("glows").c_str() : jtrans("flickers").c_str(),
+%%%%
+It has %d charges and is fully charged.
+
+それは%dの残り回数があり、完全に充填されている
+#mprf(jtrans("It has %d charges and is fully charged.").c_str(), new_charges);
+%%%%
+%s glows for a moment.
+
+%sは一瞬輝いた
+#mprf(jtrans("%s glows for a moment.").c_str(), wand.name(DESC_YOUR).c_str());
+%%%%
+last_pos
+
+#mi->props.erase("last_pos");
+%%%%
+idle_point
+
+#mi->props.erase("idle_point");
+%%%%
+idle_deadline
+
+#mi->props.erase("idle_deadline");
+%%%%
+blocked_deadline
+
+#mi->props.erase("blocked_deadline");
+%%%%
+You cannot shout while unable to breathe!
+
+#mpr("You cannot shout while unable to breathe!");
+%%%%
+#shout
+#
+#int noise_level = 12; // "shout"
+%%%%
+roar
+
+#if (shout_verb == "roar")
+%%%%
+hiss
+
+#else if (shout_verb == "hiss")
+%%%%
+squeak
+
+#else if (shout_verb == "squeak")
+%%%%
+__NONE
+
+#else if (shout_verb == "__NONE")
+%%%%
+yell
+
+#else if (shout_verb == "yell")
+%%%%
+scream
+
+#else if (shout_verb == "scream")
+%%%%
+You have no mouth, and you must scream!
+
+あなたは口を持っていない、それでも俺は叫ぶ！
+#mpr(jtrans("You have no mouth, and you must scream!"));
+%%%%
+__NONE
+
+#else if (shout_verb == "__NONE" || you.paralysed())
+%%%%
+You feel a strong urge to %s, but you are unable to make a sound!
+
+あなたは強大な醜い%sを感じた、しかしあなたは音をたてることができない！
+#mprf(jtrans("You feel a strong urge to %s, but you are unable to make a sound!").c_str(),
+%%%%
+scream
+
+#shout_verb == "__NONE" ? jtrans("scream").c_str()
+%%%%
+You feel a %s rip itself from your throat, but you make no sound!
+
+あなたはあなたの喉を裂くような %s を感じた、しかしあなたは音をたてられない
+#mprf(jtrans("You feel a %s rip itself from your throat, but you make no sound!").c_str(),
+%%%%
+You have no mouth!
+
+あなたには口が無い！
+#mpr(jtrans("You have no mouth!"));
+%%%%
+You are unable to make a sound!
+
+あなたは音を立てることができない！
+#mpr(jtrans("You are unable to make a sound!"));
+%%%%
+You feel yourself shouting your recitation.
+
+あなたは自身の朗読の叫びを感じた。
+#mpr(jtrans("You feel yourself shouting your recitation."));
+%%%%
+A %s rips itself from your throat!
+
+#mprf(jtrans("A %s rips itself from your throat!").c_str(), shout_verb.c_str());
+%%%%
+What do you say?
+
+何が言いたいのですか？
+#mpr(jtrans("What do you say?"), MSGCH_PROMPT);
+%%%%
+t - %s!
+
+ t - %s!
+#mprf(jtrans("t - %s!").c_str(), cap_shout.c_str());
+%%%%
+   p - Attack previous target.
+
+#previous = "   p - Attack previous target.";
+%%%%
+%s%s
+
+#mprf("%s%s", 
+%%%%
+Orders for allies: a - Attack new target.
+
+ 命令を下す:      a - 新しい目標を狙う
+#jtrans("Orders for allies: a - Attack new target.").c_str(),
+%%%%
+r - Retreat!             s - Stop attacking.
+
+ r - 撤退！       s - 攻撃を中止する
+#mpr(jtrans("r - Retreat!             s - Stop attacking."));
+%%%%
+w - Wait here.           f - Follow me.
+
+ w - ここで止まる f - 自分について来い
+#mpr(jtrans("w - Wait here.           f - Follow me."));
+%%%%
+Anything else - Stay silent
+
+その他の文字 - 沈黙を守る
+#mprf("%s%s", jtrans("Anything else - Stay silent").c_str(),
+%%%%
+(and be thought a fool)
+
+ (馬鹿のごとく)
+#one_chance_in(20) ? jtrans("(and be thought a fool)").c_str() : "");
+%%%%
+You %s%s!
+
+あなたは%s %s した!
+#mprf(MSGCH_SOUND, jtrans("You %s%s!").c_str(),
+%%%%
+wildly
+
+乱暴に
+%%%%
+for attention
+
+注意のため
+#you.berserk() ? jtrans("wildly").c_str() : jtrans("for attention").c_str(),
+%%%%
+Follow me!
+
+付いて来い！
+#mpr(jtrans("Follow me!"));
+%%%%
+Stop fighting!
+
+戦闘を中止せよ！
+#mpr(jtrans("Stop fighting!"));
+%%%%
+Wait here!
+
+ここで止まれ！
+#mpr(jtrans("Wait here!"));
+%%%%
+An ally attacking under your orders might violate sanctuary; order anyway?
+
+あなたの命令を基に戦闘をしている仲間は聖域の法に違反するかもしれません：それでも続行しますか？
+#if (!yesno(jtrans("An ally attacking under your orders might violate sanctuary; order anyway?").c_str(), false, 'n'))
+%%%%
+Gang up on whom?
+
+#args.top_prompt = "Gang up on whom?";
+%%%%
+Retreat in which direction?
+
+#args.top_prompt = "Retreat in which direction?";
+%%%%
+Fall back!
+
+後退せよ！
+#mpr(jtrans("Fall back!"));
+%%%%
+Attack!
+
+攻撃せよ！
+#mpr(jtrans("Attack!"));
+%%%%
+'s power protects you from the chaos of Hell!
+
+#simple_god_message(jtrans("'s power protects you from the chaos of Hell!").c_str());
+%%%%
+hell_effect
+
+#string msg = getMiscString("hell_effect");
+%%%%
+Something hellishly buggy happens.
+
+#msg = "Something hellishly buggy happens.";
+%%%%
+SOUND:
+
+#bool loud = starts_with(msg, "SOUND:");
+%%%%
+the effects of Hell
+
+#"the effects of Hell");
+%%%%
+unknown hell branch
+
+#die("unknown hell branch");
+%%%%
+the effects of Hell
+
+#mgen_data::hostile_at(which_beastie, "the effects of Hell",
+%%%%
+the effects of Hell
+
+#"the effects of Hell");
+%%%%
+the effects of Hell
+
+#mg.non_actor_summoner = "the effects of Hell";
+%%%%
+No unexplored wall grids found!
+
+#mpr(jtrans("No unexplored wall grids found!"));
+%%%%
+Changing labyrinth from (%d, %d) to (%d, %d)
+
+#mprf(MSGCH_DIAGNOSTICS, "Changing labyrinth from (%d, %d) to (%d, %d)",
+%%%%
+#
+#
+#string path_str = "";
+%%%%
+Here's the list of targets:
+
+#mpr(jtrans("Here's the list of targets:"), MSGCH_DIAGNOSTICS);
+%%%%
+#(%d, %d)  
+#
+#snprintf(info, INFO_SIZE, "(%d, %d)  ", targets[i].x, targets[i].y);
+%%%%
+-> #targets = %u
+
+#mprf(MSGCH_DIAGNOSTICS, "-> #targets = %u", (unsigned int)targets.size());
+%%%%
+Something went badly wrong - no path found!
+
+#mpr("Something went badly wrong - no path found!",
+%%%%
+Switch %d (%d, %d) with %d (%d, %d).
+
+#mprf(MSGCH_DIAGNOSTICS, "Switch %d (%d, %d) with %d (%d, %d).",
+%%%%
+No adjacent walls at pos (%d, %d)?
+
+#"No adjacent walls at pos (%d, %d)?", p.x, p.y);
+%%%%
+Need to move around some items at pos (%d, %d)...
+
+#"Need to move around some items at pos (%d, %d)...",
+%%%%
+Moved items over to (%d, %d)
+
+#mprf(MSGCH_DIAGNOSTICS, "Moved items over to (%d, %d)",
+%%%%
+You hear an odd grinding sound!
+
+あなたは岩を削る騒音を耳にした！
+#case 0: mpr(jtrans("You hear an odd grinding sound!")); break;
+%%%%
+You hear the creaking of ancient gears!
+
+あなたは太古の歯車がきしむのを耳にした！
+#case 1: mpr(jtrans("You hear the creaking of ancient gears!")); break;
+%%%%
+The floor suddenly vibrates beneath you!
+
+あなたの下の床は突然振動した！
+#case 2: mpr(jtrans("The floor suddenly vibrates beneath you!")); break;
+%%%%
+You feel a sudden draft!
+
+あなたは突然すきま風を感じた！
+#case 3: mpr(jtrans("You feel a sudden draft!")); break;
+%%%%
+rotting_warned
+
+##define ROTTING_WARNED_KEY "rotting_warned"
+%%%%
+#
+#
+#string msg = "";
+%%%%
+You smell something rotten.
+
+あなたの持ち物の何かは腐った
+#msg = (temp_rand  < 5) ? jtrans("You smell something rotten.") :
+%%%%
+You smell rotting flesh.
+
+#(temp_rand == 5) ? jtrans("You smell rotting flesh.") :
+%%%%
+You smell decay.
+
+#(temp_rand == 6) ? jtrans("You smell decay.")
+%%%%
+There is something rotten in your inventory.
+
+#: jtrans("There is something rotten in your inventory.");
+%%%%
+#You smell something rotten.
+#
+#--defined.
+#msg = (temp_rand  < 5) ? jtrans("You smell something rotten.") :
+%%%%
+The smell of rotting flesh makes you hungry.
+
+#(temp_rand == 5) ? jtrans("The smell of rotting flesh makes you hungry.") :
+%%%%
+You smell decay. Yum-yum.
+
+#(temp_rand == 6) ? jtrans("You smell decay. Yum-yum.")
+%%%%
+Wow! There is something tasty in your inventory.
+
+#: jtrans("Wow! There is something tasty in your inventory.");
+%%%%
+You smell something rotten.
+
+#msg = (temp_rand  < 5) ? jtrans("You smell something rotten.") :
+%%%%
+The smell of rotting flesh makes you sick.
+
+#(temp_rand == 5) ? jtrans("The smell of rotting flesh makes you sick.") :
+%%%%
+You smell decay. Yuck!
+
+#(temp_rand == 6) ? jtrans("You smell decay. Yuck!")
+%%%%
+Ugh! There is something really disgusting in your inventory.
+
+#: jtrans("Ugh! There is something really disgusting in your inventory.");
+%%%%
+Something in your inventory has become rotten.
+
+#msg = jtrans("Something in your inventory has become rotten.");
+%%%%
+%s (slot %s)
+
+%s (%s スロットのアイテム)
+#mprf(MSGCH_ROTTEN_MEAT, jtrans("%s (slot %s)").c_str(),
+%%%%
+in your inventory have
+
+#		msg += jtrans("in your inventory have");
+%%%%
+All of the
+
+全ての
+#msg += jtrans("All of the");
+%%%%
+Some of the
+
+いくつかの
+#msg += jtrans("Some of the");
+%%%%
+chunks of flesh
+
+肉片
+#strs.push_back(jtrans("chunks of flesh"));
+%%%%
+skeletons
+
+骨
+#strs.push_back(jtrans("skeletons"));
+%%%%
+corpses
+
+死体
+#strs.push_back(jtrans("corpses"));
+%%%%
+completely
+
+完全に
+#msg += jtrans("completely");
+%%%%
+partially
+
+部分的に
+#msg += jtrans("partially");
+%%%%
+completely or partially
+
+完全にまたは部分的に
+#msg += jtrans("completely or partially");
+%%%%
+ in your inventory have %s rotted away.
+
+あなたの持っている%sは%s腐り落ちた
+#msg += make_stringf(jtrans("%s in your inventory have %s rotted away.").c_str(),
+%%%%
+#%s
+#
+#mprf(MSGCH_ROTTEN_MEAT, "%s", msg.c_str());
+%%%%
+Your body momentarily shudders from a surge of wild 
+
+#mpr("Your body momentarily shudders from a surge of wild "
+%%%%
+energies until Zin's power calms it.
+
+#"energies until Zin's power calms it.", MSGCH_GOD);
+%%%%
+Your body shudders with the violent release 
+
+#mpr("Your body shudders with the violent release "
+%%%%
+of wild energies!
+
+#"of wild energies!", MSGCH_WARN);
+%%%%
+magical storm
+
+#beam.name         = "magical storm";
+%%%%
+a magical explosion
+
+#beam.aux_source   = "a magical explosion";
+%%%%
+mutagenic glow
+
+#"mutagenic glow", true,
+%%%%
+Your disease is taking its toll.
+
+あなたの病気が体力を奪っていく。
+#mpr(jtrans("Your disease is taking its toll."), MSGCH_WARN);
+%%%%
+disease
+
+#lose_stat(STAT_RANDOM, 1, false, "disease");
+%%%%
+deterioration mutation
+
+#lose_stat(STAT_RANDOM, 1, false, "deterioration mutation");
+%%%%
+Jiyva
+
+#mg.non_actor_summoner = "Jiyva";
+%%%%
+gurgles merrily.
+
+陽気にごぼごぼ言った
+#simple_god_message(jtrans("gurgles merrily.").c_str());
+%%%%
+You hear %s splatter.
+
+あなたは%sぴしゃぴしゃ跳ねる音を聞いた
+#mprf(MSGCH_SOUND, jtrans("You hear %s splatter.").c_str(),
+%%%%
+a series of
+
+一連の
+#total_jellies > 1 ? "a series of" : "");
+%%%%
+says: Divide and consume!
+
+言った：分離し消化せよ！
+#simple_god_message(jtrans("says: Divide and consume!").c_str());
+%%%%
+You feel a genetic drift.
+
+あなたは遺伝的浮動を感じた
+#mpr(jtrans("You feel a genetic drift."));
+%%%%
+evolution
+
+#delete_mutation(RANDOM_BAD_MUTATION, "evolution", false) :
+%%%%
+evolution
+
+#"evolution", false, false, false, false, false, true);
+%%%%
+end of evolution
+
+#evol |= delete_mutation(MUT_EVOLUTION, "end of evolution", false);
+%%%%
+#mon #%d: range %d; 
+#
+#dprf("mon #%d: range %d; "
+%%%%
+#pos (%d,%d); targ %d(%d,%d); flags %
+#
+#"pos (%d,%d); targ %d(%d,%d); flags %" PRIx64,
+%%%%
+#backing off...
+3
+#dprf("backing off...");
+%%%%
+#shifted to (%d, %d)
+#
+#dprf("shifted to (%d, %d)", mon->pos().x, mon->pos().y);
+%%%%
+#moved to (%d, %d)
+#
+#dprf("moved to (%d, %d)", mon->pos().x, mon->pos().y);
+%%%%
+#turns: %d
+#
+#dprf("turns: %d", turns);
+%%%%
+#total monsters on level = %d
+#
+#dprf("total monsters on level = %d", mons_total);
+%%%%
+A ring of toadstools grows before your very eyes.
+
+菌類の輪はまさしくあなたの目の前で成長した
+#mpr(jtrans("A ring of toadstools grows before your very eyes."));
+%%%%
+Some toadstools grow in a peculiar arc.
+
+菌類は独特な弧を描いて成長した
+#mpr(jtrans("Some toadstools grow in a peculiar arc."));
+%%%%
+A toadstool grows.
+
+菌類は成長した
+#mpr(jtrans("A toadstool grows."));
+%%%%
+A toadstool grows %s.
+
+菌類が%sで成長した。
+#mprf(jtrans("A toadstool grows %s.").c_str(),
+%%%%
+at your feet
+
+あなたの足元
+%%%%
+before you
+
+あなたの前
+#player_has_feet() ? jtrans("at your feet").c_str() : jtrans("before you").c_str());
+%%%%
+Some toadstools
+
+幾多の菌類
+#string what  = seen_targets  > 1 ? jtrans("Some toadstools")
+%%%%
+A toadstool
+
+菌類
+#: jtrans("A toadstool");
+%%%%
+nearby corpses
+
+周囲の死体
+#string where = seen_corpses  > 1 ? jtrans("nearby corpses") :
+%%%%
+a nearby corpse
+
+周囲の死体
+#seen_corpses == 1 ? jtrans("a nearby corpse")
+%%%%
+the ground
+
+大地
+#: jtrans("the ground");
+%%%%
+%s grow from %s.
+
+%sは%sから生えた
+#mprf(jtrans("%s grow from %s.").c_str(),
+%%%%
+has recharged.
+
+は完全に再充填された。
+#msg::stream << "" << rod.name(DESC_QUALNAME) << jtrans("has recharged.")
+%%%%
+The walls burn you!
+
+壁はあなたを焼き焦がした！
+#(walls > 1) ? "The walls burn you!"
+%%%%
+The wall burns you!
+
+壁はあなたを焼き焦がした！
+#: "The wall burns you!");
+%%%%
+The walls burn %s!
+
+壁は%sを焼き焦がした！
+%%%%
+The walls burns %s!
+
+壁は%sを焼き焦がした！
+#mprf((walls > 1) ? jtrans("The walls burn %s!").c_str() : jtrans("The wall burns %s!").c_str(),
+%%%%
+Your %s has recharged.
+
+あなたの%sは充填された。
+#mprf("Your %s has recharged.", evoker->name(DESC_QUALNAME).c_str());
+%%%%
