@@ -1,0 +1,26 @@
+%%%%
+%s's aura of fear is muted, and has no effect on you.
+
+%sの恐怖のオーラは薄れた、そのためあなたに効果は無かった
+#mprf(jtrans("%s's aura of fear is muted, and has no effect on you.").c_str(),
+%%%%
+The fearful aura is strangely muted, and has no effect on you.
+
+恐怖に満ちたオーラは奇妙に薄れた、そのためあなたに効果がなかった
+#mpr(jtrans("The fearful aura is strangely muted, and has no effect on you."));
+%%%%
+You are terrified of %s!
+
+あなたは %s を恐れている
+#mprf(MSGCH_WARN, jtrans("You are terrified of %s!").c_str(),
+%%%%
+For a moment, your terror fades away!
+
+一瞬にしてあなたの恐怖は消え去った
+#mprf("%s",jtrans("For a moment, your terror fades away!").c_str());
+%%%%
+You are no longer terrified.
+
+あなたはもう恐怖していない
+#mpr(jtrans("You are no longer terrified."),
+%%%%

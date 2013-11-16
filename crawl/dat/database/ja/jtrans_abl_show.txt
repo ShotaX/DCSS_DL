@@ -691,47 +691,47 @@ HP
 %%%%
 , Glow
 
-、発光
+, 発光
 #ret += ", Glow";
 %%%%
 , Food
 
-、満腹度
+, 満腹度
 #ret += ", Food"; // randomised and exact amount hidden from player
 %%%%
 , Piety
 
-、信仰値
+, 信仰値
 #ret += ", Piety"; // randomised and exact amount hidden from player
 %%%%
 , Breath
 
-、息切れ
+, 息切れ
 #ret += ", Breath";
 %%%%
 , Pain
 
-、苦痛
+, 苦痛
 #ret += ", Pain";
 %%%%
 , Exhaustion
 
-、疲労
+, 疲労
 #ret += ", Exhaustion";
 %%%%
 , Instant
 
-、即時発動
+, 即時発動
 #ret += ", Instant"; // not really a cost, more of a bonus - bwr
 %%%%
 , Fruit
 
-、フルーツ
+, フルーツ
 #ret += ", Fruit";
 %%%%
 , Fruit or Piety
 
-、フルーツか信仰値
+, フルーツか信仰値
 #ret += ", Fruit or Piety";
 %%%%
 , Level drain
@@ -740,7 +740,7 @@ HP
 %%%%
 , Stat drain
 
-、能力値の減少
+, 能力値の減少
 #ret += ", Stat drain";
 %%%%
 None

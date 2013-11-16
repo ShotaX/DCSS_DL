@@ -39,7 +39,7 @@ Xom general gift
 ゾムはあなたに幾らかの道具を与えた
 #Xom grants you an implement of some kind.
 
-『この装置を持っていくがいい!』
+『これを持っていくがいい!』
 #"Take this instrument of something!"
 
 『私の尊敬の印を受け取るがいい』
@@ -203,10 +203,10 @@ Xom zero miscast effect
 ゾムはほとんどあなたに注目している
 #Xom almost notices you.
 
-ゾムの注意は一瞬あなたに移った
+ゾムの注意の大部分は一瞬あなたに移った
 #Xom's attention almost turns to you for a moment.
 
-ゾムの力は一瞬あなたに触れた
+ゾムの力の大部分は一瞬あなたに触れた
 #Xom's power almost touches on you for a moment.
 
 あなたはゾムの狂気の笑い声をほぼ聞いた
@@ -215,13 +215,17 @@ Xom zero miscast effect
 # miscast strength random2(2), harmless/annoying
 Xom minor miscast effect
 
-Xom notices you.
+ゾムはあなたに注目している
+#Xom notices you.
 
-Xom's attention turns to you for a moment.
+ゾムの注意は一瞬あなたに移った
+#Xom's attention turns to you for a moment.
 
-Xom's power touches on you for a moment.
+ゾムの力が一瞬あなたに触れた
+#Xom's power touches on you for a moment.
 
-You hear Xom's maniacal laughter.
+あなたはゾムの狂気の笑い声を聞いた
+#You hear Xom's maniacal laughter.
 %%%%
 # miscast strength random2(3), mostly annoying
 Xom medium miscast effect
@@ -231,24 +235,32 @@ Xom medium miscast effect
 # miscast strength random2(4), up to really nasty
 Xom major miscast effect
 
-"Try this."
+"こいつを試してみよう"
+#"Try this."
 
-Xom's attention turns to you.
+ゾムの注意があなたに移った
+#Xom's attention turns to you.
 
-Xom's power touches on you.
+ゾムの力があなたに振れた
+#Xom's power touches on you.
 
-Xom giggles.
+ゾムはくすくす笑った
+#Xom giggles.
 
 w:1
-"Running a series of toy crash tests now."
+"おもちゃの衝突実験をやってみよう"
+#"Running a series of toy crash tests now."
 %%%%
 Xom rearrange the pieces
 
-Xom decides to rearrange the pieces.
+ゾムは物体を再配置することにした
+#Xom decides to rearrange the pieces.
 
-"First here, now there."
+"最初はそっち、今はこっち"
+#"First here, now there."
 
-"This might be better!"
+"この方がいいだろう!"
+#"This might be better!"
 %%%%
 Xom swap weapons
 
@@ -256,47 +268,64 @@ Xom swap weapons
 %%%%
 Xom teleportation journey
 
-"Whee!"
+"わーい!"
+#"Whee!"
 
-"Let's go for a ride!"
+"ドライブに出かけるとしよう!"
+#"Let's go for a ride!"
 
-"Where it stops, nobody knows!"
+"何処で止まるかって？知らないなぁ!"
+#"Where it stops, nobody knows!"
 
-Xom twists space around you.
+ゾムはあなたの周囲の空間を歪ませた
+#Xom twists space around you.
 %%%%
 Xom confusion
 
-"Heh heh heh..."
+"フハハハハハハハハハ……"
+#"Heh heh heh..."
 
-Xom's power touches on your mind for a moment.
+ゾムの力が一瞬あなたの精神に触れた
+#Xom's power touches on your mind for a moment.
 
-Xom titters.
+ゾムはくすくす笑った
+#Xom titters.
 %%%%
 # 50% stat loss, 25% draining, 25% torment
 Xom draining or torment
 
-"You have displeased me, mortal."
+"定命の者よ、おまえは私の気分を害した"
+#"You have displeased me, mortal."
 
-"You have grown too confident for your meagre worth."
+"ちっぽけな存在のくせに強くなりすぎたようだな"
+#"You have grown too confident for your meagre worth."　Fixme_ja
 
-Xom's power touches on you for a moment.
+ゾムの力が一瞬あなたに触れた
+#Xom's power touches on you for a moment.
 
-You hear Xom's maniacal laughter.
+あなたはゾムの狂気の笑い声を聞いた
+#You hear Xom's maniacal laughter.
 
-"Suffer!"
+"苦しめ!"
+#"Suffer!"
 
-Xom's malign attention turns to you for a moment.
+ゾムの悪意が一瞬あなたに向いたようだ
+#Xom's malign attention turns to you for a moment.
 %%%%
 # 25% chance dancing weapon, else summon hostile monster
 Xom hostile monster
 
-"Time to have some fun!"
+"楽しい時を!"
+#"Time to have some fun!"
 
-"Fight to survive, mortal."
+"定命の者よ、生き残るため戦うのだ"
+#"Fight to survive, mortal."
 
-"Let's see if it's strong enough to survive yet."
+"生き残るための十分な力を持っているか試してみよう"
+#"Let's see if it's strong enough to survive yet."
 
-You hear Xom's maniacal laughter.
+あなたはゾムの狂気の笑い声を聞いた
+#You hear Xom's maniacal laughter.
 %%%%
 Xom animate monster weapon
 
@@ -304,93 +333,122 @@ Xom animate monster weapon
 %%%%
 Xom banishment
 
-"You have grown too comfortable in your little world, mortal!"
+"定命の者よ、おまえはこのちっぽけな世界で快適に成長しすぎている!"
+#"You have grown too comfortable in your little world, mortal!"
 
-Xom casts you into the Abyss!
+ゾムはあなたをアビスに放り込んだ!
+#Xom casts you into the Abyss!
 
-The world seems to spin as Xom's maniacal laughter rings in your ears.
+この世界はゾムの狂気の笑い声と共に回転しだしたようだ
+#The world seems to spin as Xom's maniacal laughter rings in your ears.
 %%%%
 Xom revert own banishment
 
 w:30
-"Kidding!"
+"…冗談だ!"
+#"Kidding!"
 
-"On second thought, though..."
+"…しかし考え直そう"
+#"On second thought, though..."
 
-"No, I've changed my mind."
+"おっと、やはり考え直そう"
+#"No, I've changed my mind."
 
-Xom pulls you back into the comparable quietude of the dungeon.
-%%%%
+ゾムはダンジョンの静寂にあなたを連れ戻した
+#Xom pulls you back into the comparable quietude of the dungeon.
 %%%%
 Xom revert other banishment
 
-"Get back here!"
+"ここに戻ってくるがいい!"
+#"Get back here!"
 
-"No you don't!"
+"おっと、お前ではなかった!"
+#"No you don't!"
 
-Xom pulls you back into the comparable quietude of the dungeon.
+ゾムはダンジョンの静寂にあなたを連れ戻した
+#Xom pulls you back into the comparable quietude of the dungeon.
 %%%%
 # Xom upgrades a nearby hostile monster's weapon to a chaos brand
 Xom chaos upgrade
 
-Xom's power touches on a nearby weapon.
+ゾムの力が近隣の武器に触れた
+#Xom's power touches on a nearby weapon.
 
-"Have a taste of chaos, mortal."
+"定命の者よ、混沌の味を味わうのだ"
+#"Have a taste of chaos, mortal."
 
-Xom chortles.
+ゾムは高笑いをした
+#Xom chortles.
 %%%%
 Xom noise
 
-Xom makes a sudden noise! You hear @weapon_noise@
+ゾムは突然騒音をならした!あなたは@weapon_noise@を聞いた
+#Xom makes a sudden noise! You hear @weapon_noise@
 
 w:1
-Xom does a drum roll.
+ゾムはドラムを鳴らした
+#Xom does a drum roll.
 %%%%
 Xom blink monsters
 
-"Over there now!"
+"今はあっち!"
+#"Over there now!"
 
-"Get over here!"
+"こっちだ!"
+#"Get over here!"
 
-Xom decides to shift things around a little.
+ゾムは少し周囲の物体を移動させることにした
+#Xom decides to shift things around a little.
 %%%%
 #####################
 # other effects
 #####################
 Xom potion effect
 
-"Go forth and destroy!"
+"行け！破壊するのだ！"
+#"Go forth and destroy!"
 
-"Go forth and cause havoc, mortal!"
+"定命の者よ!行け!大混乱をもたらすのだ!"
+#"Go forth and cause havoc, mortal!"
 
-Xom grants you a minor favour.
+ゾムはあなたにほどほどの好意を与えた
+#Xom grants you a minor favour.
 
-Xom smiles on you.
+ゾムはあなたに微笑みかけた
+#Xom smiles on you.
 %%%%
 # random divination (magic mapping, detect items, detect creatures)
 Xom divination
 
-"See what I see, my child!"
+"私の見ている物を見よ、わが子よ!"
+#"See what I see, my child!"
 
-Xom grants you insight.
+ゾムはあなたに洞察力を与えた
+#Xom grants you insight.
 
-Xom smirks.
+ゾムは薄笑いをした
+#Xom smirks.
 %%%%
 # cast a random spell
 Xom spell effect
 
-Xom's power flows through you!
+ゾムの力があなたに流れ込んだ!
+#Xom's power flows through you!
 
-Xom plays with reality for a moment.
+ゾムは一瞬の間現実で遊んだ
+#Xom plays with reality for a moment. Fixme_ja
 
-Xom guffaws.
+ゾムは高笑いをした
+#Xom guffaws.
 %%%%
 # multicoloured smoke trail
 Xom colour smoke trail
 
-"Go forth and redecorate, my child!"
+"行け!そして改装するのだ!わが子よ!"
+#"Go forth and redecorate, my child!"
 
-"This place needs a little more atmosphere."
+"この空間にはもっと空気が必要だな"
+#"This place needs a little more atmosphere."
 %%%%
 # turns walls into glass
 Xom vitrification
@@ -406,13 +464,17 @@ Xom alters the dungeon around you.
 # strengthens friendlies, weakens hostiles
 Xom good monster polymorph
 
-"This might be better!"
+"前よりよくなっただろう!"
+#"This might be better!"
 
-"Hum-dee-hum-dee-hum..."
+"ほう、ほう、ほう……"
+#"Hum-dee-hum-dee-hum..."
 
-Xom's power touches on a nearby monster.
+ゾムの力が近くのモンスターに触れた
+#Xom's power touches on a nearby monster.
 
-You hear Xom's avuncular chuckle.
+あなたはゾムのくすくす笑う声を聞いた
+#You hear Xom's avuncular chuckle.
 %%%%
 # weakens friendlies, strengthens hostiles
 Xom bad monster polymorph
@@ -421,76 +483,103 @@ Xom bad monster polymorph
 %%%%
 Xom good mutations
 
-"You need some minor adjustments, mortal!"
+"定命の者よ!お前には少々の調整が必要なようだ"
+#"You need some minor adjustments, mortal!"
 
-"Let me alter your pitiful body."
+"お前の哀れな体を変化させてやろう"
+#"Let me alter your pitiful body."
 
-Xom's power touches on you for a moment.
+ゾムの力が一瞬あなたに触れた
+#Xom's power touches on you for a moment.
 
-You hear Xom's maniacal cackling.
+あなたはゾムのマニアックな笑い声を聞いた
+#You hear Xom's maniacal cackling.
 %%%%
 Xom random mutations
 
-"You need some minor improvements, mortal!"
+"定命の者よ!お前には少々の改善が必要なようだ"
+#"You need some minor improvements, mortal!"
 
-"Let me alter your body."
+"お前の哀れな体を変化させてやろう"
+#"Let me alter your body."
 
-Xom's power brushes against you for a moment.
+ゾムの力が一瞬あなたを磨き上げた
+#Xom's power brushes against you for a moment.
 
-You hear Xom's avuncular chuckle.
+あなたはゾムのくすくす笑う声を聞いた
+#You hear Xom's avuncular chuckle.
 %%%%
 Xom snakes to sticks
 
-Xom transforms those around you.
+ゾムはあなたの周囲を変化させた
+#Xom transforms those around you.
 
-"I like them better like this."
+"私はこっちの方が好みだ"
+#"I like them better like this."
 
-"Never liked these squiggly things."
+"くねくねしたものはお嫌いか"
+#"Never liked these squiggly things." Fixme_ja
 
-Xom touches your surroundings.
+ゾムはあなたの周囲に触れた
+#Xom touches your surroundings.
 
 @Xom good monster polymorph@
 %%%%
 Xom inner flame
 
-"Burn, baby, burn!"
+"燃えよ!ベイビー!燃えろ!"
+#"Burn, baby, burn!"
 
-Xom turns up the heat.
+ゾムは熱量を変化させた
+#Xom turns up the heat.
 
 w:1
-"Let it end in hellfire!"
+"地獄の炎で燃え尽きるがいい!"
+#"Let it end in hellfire!"
 %%%%
 Xom accidental homicide
 
-"Oops, I didn't mean to do *that*!"
+"おっと！私はそれをするつもりはなかったのに!"
+#"Oops, I didn't mean to do *that*!"
 %%%%
 Xom weird death
 
-"How'd *that* happen? Weird."
+"どうしてこんなことになったのだ？不思議だ！"
+#"How'd *that* happen? Weird."
 %%%%
 Xom resurrection
 
-"Let me repair your body."
+"お前の体を修復させてくれ"
+#"Let me repair your body."
 
-Xom tricks Death into leaving you alone.
+ゾムは死神を騙し、あなたを置いて行かせた
+#Xom tricks Death into leaving you alone.
 
-Xom's maniacal laughter scares Death away.
+ゾムの狂気の笑い声が死神を追い払った
+#Xom's maniacal laughter scares Death away.
 
-Xom's power revives you.
+ゾムの力があなたを復活させた
+#Xom's power revives you.
 
-Xom brings you back to life.
+ゾムはあなたを蘇らせた
+#Xom brings you back to life.
 
-Xom smiles on you.
+ゾムはあなたに微笑みかけた
+#Xom smiles on you.
 %%%%
 Xom repel stairs
 
-Xom changes the scenery.
+ゾムは風景を変貌させた
+#Xom changes the scenery.
 
-Xom pokes at a nearby @staircase@.
+ゾムは周囲の@staircase@を突き飛ばした
+#Xom pokes at a nearby @staircase@.
 
-"Tag, you're it!"
+"おっと、お前はそっちだ!"
+#"Tag, you're it!"
 
-Xom alters the dungeon around you.
+ゾムは周囲のダンジョンを変化させた
+#Xom alters the dungeon around you.
 %%%%
 Xom good enchant monster
 
@@ -502,81 +591,108 @@ Xom bad enchant monster
 %%%%
 Xom life saving general
 
-"What? Wait, NO!"
+"何?駄目だ!NO!"
+#"What? Wait, NO!"
 
-"Hey, things were just getting interesting!"
+"ほう!面白くなってきたな!"
+#"Hey, things were just getting interesting!"
 
-"NOOOOOOO, not my @_xom_plaything_@!"
+"NOOOOOOO!、私の@_xom_plaything_@!"
+#"NOOOOOOO, not my @_xom_plaything_@!"
 
-"Not here, not now."
+"こっちではない、今でも無い"
+#"Not here, not now."
 
-Xom is feeling generous.
+ゾムは寛大に見える
+#Xom is feeling generous.
 %%%%
 Xom life saving actor
 
 w:20
 @Xom life saving general@
 
-"Hey, that's my @_xom_plaything_@!"
+"ほお、私の@_xom_plaything_@!"
+#"Hey, that's my @_xom_plaything_@!"
 
-"Oh, no, you don't!"
+"おっと!NO!駄目だ!"
+#"Oh, no, you don't!"
 
-"That's my @_xom_plaything_@, go get your own!"
+"それは私の@_xom_plaything_@だ!自分で取りに行く!"
+#"That's my @_xom_plaything_@, go get your own!"
 
-"Leave my @_xom_plaything_@ alone!"
+"私の@_xom_plaything_@を残しておいてくれ!"
+#"Leave my @_xom_plaything_@ alone!" Fixme_ja
 %%%%
 Xom boring death
 
-Xom yawns loudly!
+ゾムは大きな声であくびをした!
+#Xom yawns loudly!
 
-"Boring in life, boring in death..."
+"退屈だ、退屈で死にそうだ……"
+#"Boring in life, boring in death..."
 
-"What!? That's it?"
+"何!?これはなんだ?"
+#"What!? That's it?"
 
-"I guess I need a new plaything now."
+"私は新しい遊戯を必要としている"
+#"I guess I need a new plaything now."
 
-"Huh? Did I miss anything?"
+"はぁ?何か見逃したのだろうか?"
+#"Huh? Did I miss anything?"
 %%%%
 # Xom laughing
 # (Currently only used post-game in response to "You die...")
 Xom laughter
 
-Xom guffaws!
+ゾムは高笑いをした!
+#Xom guffaws!
 
-Xom roars with laughter!
+ゾムは笑いながら吠えた!
+#Xom roars with laughter!
 
-Xom thinks this is hilarious!
+ゾムは陽気なようだ!
+#Xom thinks this is hilarious!
 
-Xom is highly amused!
+ゾムは非常に楽しんでいるようだ!
+#Xom is highly amused!
 
-Xom cackles wildly!
+ゾムは激しく高笑いした!
+#Xom cackles wildly!
 
-Xom snickers!
+ゾムはくすくす笑った!
+#Xom snickers!
 
-Xom laughs nastily!
+ゾムは嫌らしく笑った!
+#Xom laughs nastily!
 
-Xom howls with laughter!
+ゾムは吠えるように笑った!
+#Xom howls with laughter!
 
-Xom bursts into laughter!
+ゾムは急に笑い出した!
+#Xom bursts into laughter!
 
-Xom giggles madly!
+ゾムは狂ったようにくすくす笑った!
+#Xom giggles madly!
 
-Xom titters!
+ゾムはくすくす笑った!
+#Xom titters!
 
-Xom chuckles heartily!
+ゾムは心からくすくす笑った!
+#Xom chuckles heartily!
 
-Xom chortles!
+ゾムは高笑いをした!
+#Xom chortles!
 %%%%
 _xom_plaything_
 
 # piety > 180 and > 80, respectively
 {{
 if you.piety_rank() > 4 then
-    return "teddy bear"
+    return "テディベア"
 elseif you.piety_rank() > 2 then
-    return "toy"
+    return "玩具"
 else
-    return "plaything"
+    return "おもちゃ"
 end
 }}
 %%%%
@@ -800,7 +916,7 @@ _xom_child_
 非常識な
 #insane
 
-いたづらな
+いたずらな
 #naughty
 %%%%
 ######################################
@@ -968,9 +1084,11 @@ Vehumet welcome
 %%%%
 Xom bored
 
-Xom yawns.
+ゾムはあくびをした
+#Xom yawns.
 
-"I wonder what else is on..."
+"他にすることはないのか……"
+#"I wonder what else is on..."
 
 @Xom generic@
 %%%%
@@ -981,9 +1099,11 @@ Xom newgame
 %%%%
 Xom generic
 
-Xom snickers.
+ゾムは嘲笑った
+#Xom snickers.
 
-Xom titters.
+ゾムはくすくす笑った
+#Xom titters.
 %%%%
 Yredelemnul penance
 

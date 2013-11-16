@@ -1,0 +1,65 @@
+%%%%
+Electricity arcs through the water!
+
+電弧は水を介して伝わった！
+#mpr(jtrans("Electricity arcs through the water!"));
+%%%%
+Your damage is reflected back at you!
+
+あなたへのダメージは跳ね返された！
+#mpr(jtrans("Your damage is reflected back at you!"));
+%%%%
+mirrors your injury!
+
+はあなたへの損傷を跳ね返した！
+#simple_god_message(jtrans("mirrors your injury!").c_str());
+%%%%
+suffers a backlash!
+
+は反発を被った！
+#simple_monster_message(monster_by_mid(att), jtrans("suffers a backlash!").c_str());
+%%%%
+Trying to spawn %d jellies.
+
+#dprf("Trying to spawn %d jellies.", tospawn);
+%%%%
+%s shudders%s.
+
+%s は %s身震いした
+#mprf(jtrans("%s shudders%s.").c_str(), monnam.c_str(),
+%%%%
+alarmingly
+
+大いに
+#spawned >= 5 ? jtrans("alarmingly").c_str() :
+%%%%
+violently
+
+激しく
+#spawned >= 3 ? jtrans("violently").c_str() :
+%%%%
+vigorously
+
+力強く
+#spawned > 1 ? jtrans("vigorously").c_str() : "");
+%%%%
+%s spits out another jelly.
+
+%s は他のジェリーを生み出した
+#mprf(jtrans("%s spits out another jelly.").c_str(), monnam.c_str());
+%%%%
+%s spits out %s more jellies.
+
+%s は %s 以上のジェリーを生み出した
+#mprf(jtrans("%s spits out %s more jellies.").c_str(),
+%%%%
+One of the royal jelly's fragments survives.
+
+ロイヤルジェリーの断片の一つが生き残っている
+#mpr(jtrans("One of the royal jelly's fragments survives."));
+%%%%
+The dying royal jelly spits out %s more jellies.
+
+%s 以上のジェリー達を死んだロイヤルジェリーが生み出した
+#mprf(jtrans("The dying royal jelly spits out %s more jellies.").c_str(),
+%%%%

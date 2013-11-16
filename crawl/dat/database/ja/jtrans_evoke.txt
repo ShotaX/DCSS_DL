@@ -1,0 +1,398 @@
+%%%%
+You cannot attack while %s.
+
+%sのため攻撃をすることができない
+#mprf(jtrans("You cannot attack while %s.").c_str(), held_status());
+%%%%
+Attack whom?
+
+#args.top_prompt = "Attack whom?";
+%%%%
+Your weapon cannot reach that far!
+
+あなたの武器は遠くまで届かない！
+#mpr(jtrans("Your weapon cannot reach that far!"));
+%%%%
+You swing wildly and hit a wall.
+
+あなたは武器を乱暴に振り回し、壁にぶつけた。
+#mpr(jtrans("You swing wildly and hit a wall."));
+%%%%
+There's a wall in the way.
+
+そこには壁がある。
+#mpr(jtrans("There's a wall in the way."));
+%%%%
+You could not reach far enough!
+
+あなたは十分に遠くまで届かない。
+#mpr(jtrans("You could not reach far enough!"));
+%%%%
+You reach to attack!
+
+あなたは攻撃を遠くに到達した！
+#mpr(jtrans("You reach to attack!"));
+%%%%
+%s%s
+
+#mprf("%s%s",
+%%%%
+Something you can't see
+
+目に見えない何か
+#: jtrans("Something you can't see").c_str(),
+%%%%
+%s is in the way
+
+%s が阻んでいる
+#mprf(jtrans("%s is in the way.").c_str(),
+%%%%
+You swing wildly %s
+
+あなたは武器を乱暴に振り回し
+#mprf(jtrans("You swing wildly%s").c_str(), beam.isMe() ?
+%%%%
+and almost hit yourself!
+
+自分自身に攻撃した！
+#jtrans("and almost hit yourself!").c_str() : ".");
+%%%%
+You attack empty space.
+
+あなたは何もない場所を攻撃した
+#mpr(jtrans("You attack empty space."));
+%%%%
+You can't produce a sound!
+
+あなたは音を出すことができない
+#mpr(jtrans("You can't produce a sound!"));
+%%%%
+You produce a weird and mournful sound.
+
+あなたは奇妙で悲しげな音を引き起こした
+#mpr(jtrans("You produce a weird and mournful sound."));
+%%%%
+But nothing happens...
+
+しかし何も起こらなかった...
+#mpr(jtrans("But nothing happens..."));
+%%%%
+Your way has been unbarred.
+
+あなたの通路はしっかりと固定されていない
+#mpr(jtrans("Your way has been unbarred."));
+%%%%
+You produce a hideous howling noise!
+
+あなたは途方もなく恐ろしい騒音を引き起こした！
+#mpr(jtrans("You produce a hideous howling noise!"), MSGCH_SOUND);
+%%%%
+the horn of Geryon
+
+#mgen_data::hostile_at(MONS_HELL_BEAST, "the horn of Geryon",
+%%%%
+You open the flask...
+
+あなたは瓶を開けた……
+#mpr(jtrans("You open the flask..."));
+%%%%
+...and a huge efreet comes out.
+
+……すると巨大なイフリートが中から出てきた
+#mpr(jtrans("...and a huge efreet comes out."));
+%%%%
+It nods graciously at you.
+
+それはあなたに優雅に頷いた
+#mpr(friendly ? jtrans("It nods graciously at you.")
+%%%%
+It snaps in your direction!
+
+それはあなたの方向に向けパチンと鳴らした
+#: jtrans("It snaps in your direction!"), MSGCH_TALK_VISUAL);
+%%%%
+\"Thank you for releasing me!\"
+
+俺を解放してくれてありがとうよ！
+#mpr(friendly ? jtrans("\"Thank you for releasing me!\"")
+%%%%
+It howls insanely!
+
+それは狂ったように喚いた！
+#: jtrans("It howls insanely!"), MSGCH_TALK);
+%%%%
+These balls have not yet been approved for use by djinn. 
+
+#mpr("These balls have not yet been approved for use by djinn. "
+%%%%
+(OOC: they're supposed to work, but need a redesign.)
+
+#"(OOC: they're supposed to work, but need a redesign.)");
+%%%%
+You lack the intelligence to focus on the shapes in the ball.
+
+あなたが水晶球に集中したために知性を欠いた
+#mpr(jtrans("You lack the intelligence to focus on the shapes in the ball."));
+%%%%
+You are unable to concentrate on the shapes in the ball.
+
+あなたは水晶球に集中することができない
+#mpr(jtrans("You are unable to concentrate on the shapes in the ball."));
+%%%%
+With no energy to recover, the crystal ball of energy is presently useless to you.
+
+MPは全く回復しなかった、魔力の水晶球は現在のあなたにとって役に立たない
+#mpr(jtrans("With no energy to recover, the crystal ball of energy is presently useless to you."));
+%%%%
+You lack the skill to use this item.
+
+あなたはこのアイテムを使うためのスキルに欠いている
+#mpr(jtrans("You lack the skill to use this item."));
+%%%%
+The disc glows for a moment, then fades.
+
+円盤は一瞬輝き、次第に薄れていった
+#mpr(jtrans("The disc glows for a moment, then fades."));
+%%%%
+Little bolts of electricity crackle over the disc.
+
+小さな電光が円盤の周りでバチバチと爆ぜた
+#mpr(jtrans("Little bolts of electricity crackle over the disc."));
+%%%%
+The disc erupts in an explosion of electricity!
+
+円盤は電気の爆発を放射した！
+#mpr(jtrans("The disc erupts in an explosion of electricity!"));
+%%%%
+You can't handle books in this form.
+
+あなたはこの姿では魔法書を扱うことができない
+#return mpr(jtrans("You can't handle books in this form."));
+%%%%
+The book opens to a page covered in 
+
+#msg::stream << "The book opens to a page covered in "
+%%%%
+The page is too blurry for you to read.
+
+このページは文字がかすれていて読めない
+#mpr("The page is too blurry for you to read.");
+%%%%
+You find yourself reciting the magical words!
+
+あなたは気がつくと魔法の言葉を詠唱していた！
+#mpr(jtrans("You find yourself reciting the magical words!"));
+%%%%
+A cloud of weird smoke pours from the book's pages!
+
+気味悪い煙の雲が本のページから立ち昇った！
+#mpr(jtrans("A cloud of weird smoke pours from the book's pages!"));
+%%%%
+A cloud of choking fumes pours from the book's pages!
+
+窒息ガスだ！
+#mpr(jtrans("A cloud of choking fumes pours from the book's pages!"));
+%%%%
+A cloud of freezing gas pours from the book's pages!
+
+凍結ガスだ！
+#mpr(jtrans("A cloud of freezing gas pours from the book's pages!"));
+%%%%
+The book disappears in a mighty explosion!
+
+本は強烈な爆発で消し飛んだ！
+#mpr(jtrans("The book disappears in a mighty explosion!"));
+%%%%
+a tome of Destruction
+
+#"a tome of Destruction",
+%%%%
+A horrible Thing appears!
+
+おぞましい存在が現れた！
+#mpr(jtrans("A horrible Thing appears!"));
+%%%%
+It doesn't look too friendly.
+
+それはとても友好的には見えない
+#mpr(jtrans("It doesn't look too friendly."));
+%%%%
+You have finished your manual of %s and toss it away.
+
+あなたは%sの虎の巻を読了し、放り投げた。
+#mprf("You have finished your manual of %s and toss it away.",
+%%%%
+%lu skills
+
+#sprintf(buf, "%lu skills", (unsigned long) skills.size());
+%%%%
+You open the lid...
+
+あなたは蓋を開いた……
+#mpr("You open the lid...");
+%%%%
+...but the box appears empty, and falls apart.
+
+……しかし箱の中身は空になり、崩壊してしまった
+#mpr(jtrans("...but the box appears empty, and falls apart."));
+%%%%
+...and something leaps out!
+
+…そして何者かが飛び出てきた!
+#mpr(jtrans("...and something leaps out!"));
+%%%%
+...but nothing happens.
+
+……しかし何も起こらなかった
+#mpr(jtrans("...but nothing happens."));
+%%%%
+You reach into the bag...
+
+#mpr("You reach into the bag...");
+%%%%
+...but the bag is empty, and unravels at your touch.
+
+#mpr("...but the bag is empty, and unravels at your touch.");
+%%%%
+...and things crawl out!
+
+……そしてそれは這い出た！
+#mpr(jtrans("...and things crawl out!"));
+%%%%
+#...but nothing happens.
+#
+#--defined.
+#mpr(jtrans("...but nothing happens."));
+%%%%
+You gaze into the crystal ball.
+
+あなたは水晶球にじっと見入った
+#mpr(jtrans("You gaze into the crystal ball."));
+%%%%
+using a ball of energy
+
+#lose_stat(STAT_INT, 1 + random2avg(7, 2), false, "using a ball of energy");
+%%%%
+You feel your power drain away!
+
+あなたは魔力が吸い取られていくのを感じた
+#mpr(jtrans("You feel your power drain away!"));
+%%%%
+#You feel your power drain away!
+#
+#mpr(jtrans("You feel your power drain away!"));
+%%%%
+You are suffused with power!
+
+あなたは魔力に満たされた！
+#mpr(jtrans("You are suffused with power!"));
+%%%%
+Aim the lamp in which direction?
+
+#"Aim the lamp in which direction?", true, NULL))
+%%%%
+The flames dance!
+
+#mpr("The flames dance!");
+%%%%
+trail of fire
+
+#beams[n].name        = "trail of fire";
+%%%%
+A mighty gale blasts forth from the fan!
+
+#mpr("A mighty gale blasts forth from the fan!");
+%%%%
+A fierce wind blows from the fan.
+
+#mpr("A fierce wind blows from the fan.");
+%%%%
+You are blown backwards!
+
+#mpr("You are blown backwards!");
+%%%%
+%s %s blown away by the wind.
+
+#make_stringf("%s %s blown away by the wind.",
+%%%%
+are
+
+#affected_monsters.count() == 1? "is" : "are");
+%%%%
+The monsters around you are blown away!
+
+#mpr("The monsters around you are blown away!");
+%%%%
+The winds coalesce and take form.
+
+#mpr("The winds coalesce and take form.");
+%%%%
+The dungeon trembles and rubble falls from the walls!
+
+#mpr("The dungeon trembles and rubble falls from the walls!");
+%%%%
+falling rubble
+
+#rubble.name        = "falling rubble";
+%%%%
+The door collapses!
+
+#mpr("The door collapses!");
+%%%%
+The rubble rises up and takes form.
+
+#mpr("The rubble rises up and takes form.");
+%%%%
+flood of elemental water
+
+#beam.name = "flood of elemental water";
+%%%%
+Aim the phial where?
+
+#"Aim the phial where?"))
+%%%%
+The water rises up and takes form.
+
+#mpr("The water rises up and takes form.");
+%%%%
+You cannot handle anything in this form.
+
+あなたはこの姿では何も扱うことができない
+#return mpr(jtrans("You cannot handle anything in this form.")), false;
+%%%%
+Evoke which item? (* to show all)
+
+どのアイテムを発動させますか？ (* でアイテムのリスト)
+#slot = prompt_invent_item((jtrans("Evoke which item? (* to show all)").c_str()),
+%%%%
+Your reserves of magic are already full.
+
+あなたのMPは既にいっぱいです
+#mpr(jtrans("Your reserves of magic are already full."));
+%%%%
+You channel some magical energy.
+
+あなたは幾多の魔力を取り込んだ
+#mpr(jtrans("You channel some magical energy."));
+%%%%
+That is presently inert.
+
+#mpr("That is presently inert.");
+%%%%
+That is presently inert.
+
+#mpr("That is presently inert.");
+%%%%
+That is presently inert.
+
+#mpr("That is presently inert.");
+%%%%
+That is presently inert.
+
+#mpr("That is presently inert.");
+%%%%
+QUAD DAMAGE!
+
+クアッドダメージ！
+#mpr(jtrans("QUAD DAMAGE!"));
+%%%%

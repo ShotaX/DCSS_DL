@@ -584,6 +584,7 @@ descending_stairs
 %%%%
 recite
 
+朗読
 #"recite",
 %%%%
 run
