@@ -13,14 +13,17 @@
 %%%%
 The net is swept off %s.
 
+投げ網は%sから払われた
 #mprf("The net is swept off %s.", mvictim->name(DESC_THE).c_str());
 %%%%
 The tide washes the net away!
 
+潮は投げ網を洗い流した!
 #mpr("The tide washes the net away!");
 %%%%
 The tide rushes in under you.
 
+潮があなたの足元に押し寄せた
 #mprf(MSGCH_WARN, "The tide rushes in under you.");
 %%%%
 #tide_seed
@@ -29,10 +32,12 @@ The tide rushes in under you.
 %%%%
 The tide is released from %s call.
 
+潮は%sの招集により解放された
 #mprf(MSGCH_SOUND, "The tide is released from %s call.",
 %%%%
 Not in Shoals or no heightmap; tide not available.
 
+浅瀬に居ないか陸地に居る；潮は利用できない
 #mprf(MSGCH_WARN, "Not in Shoals or no heightmap; tide not available.");
 %%%%
 Tide inertia: %d. New value 

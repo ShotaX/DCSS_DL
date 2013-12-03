@@ -1,58 +1,72 @@
 %%%%
 The Sceptre summons one of its servants.
 
+王笏はしもべのひとつを召換した
 #mpr("The Sceptre summons one of its servants.");
 %%%%
 You don't feel so good about this...
 
+この存在にはあまり好感が持てない……
 #mpr("You don't feel so good about this...");
 %%%%
 The air shimmers briefly.
 
+大気は一瞬かすかに輝いた
 #mpr("The air shimmers briefly.");
 %%%%
 The Sword of Cerebov burns away your fire resistance.
 
+セレボブの剣はあなたの火炎耐性を焼き払った
 #mpr("The Sword of Cerebov burns away your fire resistance.");
 %%%%
 The Sword of Cerebov burns away %s fire resistance.
 
+セレボブの剣は%sの火炎耐性を焼き払った
 #mprf("The Sword of Cerebov burns away %s fire resistance.",
 %%%%
 the Scythe of Curses
 
+呪いの大鎌
 #"the Scythe of Curses", NH_NEVER);
 %%%%
 A shiver runs down your spine.
 
+戦慄が脊髄まで走った
 #_equip_mpr(show_msgs, "A shiver runs down your spine.");
 %%%%
 You're too close to death to use this item.
 
+このアイテムを使用することが出来ないほど死に近づいている
 #mpr("You're too close to death to use this item.");
 %%%%
 You feel the staff feeding on your energy!
 
+杖があなたのエネルギーを消費した！
 #mpr("You feel the staff feeding on your energy!");
 %%%%
 You smell chlorine.
 
+あなたは塩素の臭いを嗅いだ
 #_equip_mpr(show_msgs, "You smell chlorine.");
 %%%%
 The staff glows a sickly green.
 
+杖は弱弱しい緑色に点滅した
 #_equip_mpr(show_msgs, "The staff glows a sickly green.");
 %%%%
 The smell of chlorine vanishes.
 
+塩素の匂いは消え去った
 #_equip_mpr(show_msgs, "The smell of chlorine vanishes.");
 %%%%
 The staff's sickly green glow vanishes.
 
+杖の弱弱しい緑色は消え去った
 #_equip_mpr(show_msgs, "The staff's sickly green glow vanishes.");
 %%%%
 You sense an aura of extreme power.
 
+あなたは凄まじい力の霊気を感じた
 #_equip_mpr(show_msgs, "You sense an aura of extreme power.");
 %%%%
 ss_welcome
@@ -61,6 +75,7 @@ ss_welcome
 %%%%
 The sword says, \"Hi! I'm the Singing Sword!\"
 
+その剣は喋った:『はーい!私は謳う剣!』
 #mprf(MSGCH_TALK, "The sword says, \"Hi! I'm the Singing Sword!\"");
 %%%%
 ss_welcome
@@ -69,33 +84,41 @@ ss_welcome
 %%%%
 The Singing Sword hums in delight!
 
+『謳う剣』は歓喜の唸りを上げた！
 #mpr("The Singing Sword hums in delight!", MSGCH_TALK);
 %%%%
 Singing Sword
 
+『謳う剣』
 #set_artefact_name(*item, "Singing Sword");
 %%%%
 The Singing Sword sighs.
 
+『謳う剣』は溜息を漏らした
 #_equip_mpr(show_msgs, "The Singing Sword sighs.", MSGCH_TALK);
 %%%%
 Sulking Sword
 
+『憂う剣』
 #new_name = "Sulking Sword";
 %%%%
 Singing Sword
 
+『謳う剣』
 #new_name = "Singing Sword";
 %%%%
 Screaming Sword
 
+『叫ぶ剣』
 #new_name = "Screaming Sword";
 %%%%
 silenced
 
+
 #const char *tenname[] =  {"silenced", "no_tension", "low_tension",
 %%%%
 no_tension
+
 
 #const char *tenname[] =  {"silenced", "no_tension", "low_tension",
 %%%%
@@ -111,96 +134,119 @@ SCREAM
 
 #"high_tension", "SCREAM"};
 %%%%
-singing sword 
+#singing sword 
 
 #string msg = getSpeakString("singing sword " + key);
+#ここは翻訳しなくてもいいのでは?
 %%%%
 You feel pruney.
 
+あなたはプルーンの気分になった
 #_equip_mpr(show_msgs, "You feel pruney.");
 %%%%
 A terribly searing pain shoots up your arm!
 
+恐ろしい灼けるような痛みがあなたの腕を駆けのぼった！
 #_equip_mpr(show_msgs, "A terribly searing pain shoots up your arm!");
 %%%%
 You feel bloodthirsty!
 
+あなたは残忍な衝動を覚えた！
 #_equip_mpr(show_msgs, "You feel bloodthirsty!");
 %%%%
 You feel less violent.
 
+あなたの凶暴さは幾分収まった
 #_equip_mpr(show_msgs, "You feel less violent.");
 %%%%
 the Staff of Wucad Mu
 
+ウカド・ムーの杖
 #"the Staff of Wucad Mu", NH_NEVER);
 %%%%
 The staff is unable to affect your essence.
 
+杖はあなたに影響を与えることが出来ない
 #mpr("The staff is unable to affect your essence.");
 %%%%
 Your reserves of magic are full.
 
+あなたの魔力は既に一杯だ
 #mpr("Your reserves of magic are full.");
 %%%%
 Magical energy flows into your mind!
 
+魔力があなたの精神に流れ込んだ!
 #mpr("Magical energy flows into your mind!");
 %%%%
 You feel a strange hunger, and smell blood in the air...
 
+あなたは奇妙な空腹を感じ、そして大気中に血の匂いを嗅いだ……
 #"You feel a strange hunger, and smell blood in the air...");
 %%%%
 You feel a bloodthirsty glee!
 
+あなたは血に飢え喜びを感じる!
 #_equip_mpr(show_msgs, "You feel a bloodthirsty glee!");
 %%%%
 You feel strangely empty.
 
+あなたは不思議と空っぽになったと感じた
 #_equip_mpr(show_msgs, "You feel strangely empty.");
 %%%%
 You sense an extremely unholy aura.
 
+あなたは非常に邪悪な霊気を感じた
 #_equip_mpr(show_msgs, "You sense an extremely unholy aura.");
 %%%%
 the Sword of Zonguldrok
 
+ゾングルドロックの剣
 #"the Sword of Zonguldrok");
 %%%%
 shield of the gong
 
+銅鑼の盾
 #string msg = getSpeakString("shield of the gong");
 %%%%
 You hear a strange loud sound.
 
+あなたは奇妙な大きな音を聞いた
 #msg = "You hear a strange loud sound.";
 %%%%
 A thin mist springs up around you!
 
+薄い煙幕があなたの周囲に湧き出た!
 #_equip_mpr(show_msgs, "A thin mist springs up around you!");
 %%%%
 Visions of slaying %s flood into your mind.
 
+%sを抹殺する光景があなたの精神に浮かんだ
 #mprf("Visions of slaying %s flood into your mind.",
 %%%%
 Your confusion fades away as the thirst for blood takes over your mind.
 
+血の渇きが消え去ると共にあなたの乱心は収まった
 #mpr("Your confusion fades away as the thirst for blood takes over your mind.");
 %%%%
 Your thirst for blood fades away.
 
+あなたの地の渇きは消え去った
 #mpr("Your thirst for blood fades away.");
 %%%%
 You feel an overwhelming desire to commit suicide.
 
+あなたは自殺したいという圧倒的な欲求を感じた
 #? "You feel an overwhelming desire to commit suicide."
 %%%%
 You feel an overwhelming desire to slay dragons!
 
+あなたは龍族を抹殺したいという圧倒的な欲求を感じた
 #: "You feel an overwhelming desire to slay dragons!");
 %%%%
 <green>You see the lance glow as it kills you.</green>
 
+<green>あなたを殺したランスが輝くのを見る</green>
 #mpr("<green>You see the lance glow as it kills you.</green>");
 %%%%
 Killed a drac with hd %d.
@@ -209,46 +255,58 @@ Killed a drac with hd %d.
 %%%%
 <green>The lance glows as it skewers %s.</green>
 
+%sを串刺しにした事で、ランスは輝いた
+<green>The lance glows as it skewers %s.</green>
 #mprf("<green>The lance glows as it skewers %s.</green>",
 %%%%
 %s %s blasted by disruptive energy!
 
+%s %s ディスペルの力に撃たれた!
 #mprf("%s %s blasted by disruptive energy!",
 %%%%
 are
 
+は
 #defender->is_player() ? "are" : "is");
 %%%%
 is
 
+は
 #defender->is_player() ? "are" : "is");
 %%%%
 Time to lay down the shillelagh law.
 
+シュレイリーを擲つ時だ……
 #_equip_mpr(show_msgs, "Time to lay down the shillelagh law.");
 %%%%
 You feel oddly protected from the elements.
 
+あなたは妙に元素から保護されていると感じた
 #_equip_mpr(show_msgs, "You feel oddly protected from the elements.");
 %%%%
 You no longer feel protected from the elements.
 
+あなたは元素から保護されていると感じなくなった
 #_equip_mpr(show_msgs, "You no longer feel protected from the elements.");
 %%%%
 The light fades from your surroundings.
 
+あなたの周囲から光が消え去った
 #_equip_mpr(show_msgs, "The light fades from your surroundings.");
 %%%%
 The light returns to your surroundings.
 
+光があなたの周囲に戻ってきた
 #_equip_mpr(show_msgs, "The light returns to your surroundings.");
 %%%%
 the plutonium sword
 
+『プルトニウムの剣』
 #"the plutonium sword", NH_NEVER);
 %%%%
 Mutagenic energy flows through the plutonium sword!
 
+変異性のエネルギーがプルトニウムの剣から放出された!
 #mpr("Mutagenic energy flows through the plutonium sword!");
 %%%%
 bugger
@@ -257,62 +315,77 @@ bugger
 %%%%
 cleave
 
+切断した
 #case 0: verb = "cleave", adv = " in twain"; break;
 %%%%
  in twain
 
+二つに
 #case 0: verb = "cleave", adv = " in twain"; break;
 %%%%
 pulverise
 
+滅多撃ちにした
 #case 1: verb = "pulverise", adv = " into thin bloody mist"; break;
 %%%%
  into thin bloody mist
 
+薄い血の霧の中になるまで
 #case 1: verb = "pulverise", adv = " into thin bloody mist"; break;
 %%%%
 hew
 
+叩き切った
 #case 2: verb = "hew", adv = " savagely"; break;
 %%%%
  savagely
 
+野生的に
 #case 2: verb = "hew", adv = " savagely"; break;
 %%%%
 fatally mangle
 
+致命的に叩き壊した
 #case 3: verb = "fatally mangle", adv = ""; break;
 %%%%
 dissect
 
+切り裂いた
 #case 4: verb = "dissect", adv = " like a pig carcass"; break;
 %%%%
  like a pig carcass
 
+豚のように
 #case 4: verb = "dissect", adv = " like a pig carcass"; break;
 %%%%
 chop
 
+叩き切った
 #case 5: verb = "chop", adv = " into pieces"; break;
 %%%%
  into pieces
 
+細切れになるまで
 #case 5: verb = "chop", adv = " into pieces"; break;
 %%%%
 butcher
 
+解体した
 #case 6: verb = "butcher", adv = " messily"; break;
 %%%%
  messily
 
+乱雑に
 #case 6: verb = "butcher", adv = " messily"; break;
 %%%%
 slaughter
 
+虐殺した
 #case 7: verb = "slaughter", adv = " joyfully"; break;
 %%%%
  joyfully
 
+楽しげに
 #case 7: verb = "slaughter", adv = " joyfully"; break;
 %%%%
 %s %s%s %s%s.
@@ -322,4 +395,5 @@ slaughter
 s
 
 #attacker->is_player() ? "" : "s", defender->name(DESC_THE).c_str(),
+#消す
 %%%%

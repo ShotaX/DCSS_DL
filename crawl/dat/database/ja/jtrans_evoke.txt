@@ -6,6 +6,7 @@ You cannot attack while %s.
 %%%%
 Attack whom?
 
+誰を攻撃する?
 #args.top_prompt = "Attack whom?";
 %%%%
 Your weapon cannot reach that far!
@@ -123,6 +124,7 @@ It howls insanely!
 %%%%
 These balls have not yet been approved for use by djinn. 
 
+この球体はまだジンによって使用されることがまだ承認されていない
 #mpr("These balls have not yet been approved for use by djinn. "
 %%%%
 (OOC: they're supposed to work, but need a redesign.)
@@ -301,18 +303,22 @@ trail of fire
 %%%%
 A mighty gale blasts forth from the fan!
 
+強大な暴風が扇から放たれた!
 #mpr("A mighty gale blasts forth from the fan!");
 %%%%
 A fierce wind blows from the fan.
 
+激しい風が扇から吹いた
 #mpr("A fierce wind blows from the fan.");
 %%%%
 You are blown backwards!
 
+あなたは後ろに吹き飛ばされた!
 #mpr("You are blown backwards!");
 %%%%
 %s %s blown away by the wind.
 
+%s%sは風により吹き飛ばされた
 #make_stringf("%s %s blown away by the wind.",
 %%%%
 are
@@ -321,14 +327,17 @@ are
 %%%%
 The monsters around you are blown away!
 
+あなたの周囲のモンスターは風により吹き飛ばされた!
 #mpr("The monsters around you are blown away!");
 %%%%
 The winds coalesce and take form.
 
+風が集まり、形状を構成した
 #mpr("The winds coalesce and take form.");
 %%%%
 The dungeon trembles and rubble falls from the walls!
 
+ダンジョンが震え、瓦礫や壁が崩壊した！
 #mpr("The dungeon trembles and rubble falls from the walls!");
 %%%%
 falling rubble
@@ -337,10 +346,12 @@ falling rubble
 %%%%
 The door collapses!
 
+ドアが崩壊した!
 #mpr("The door collapses!");
 %%%%
 The rubble rises up and takes form.
 
+瓦礫が合わさり、形状を構成した
 #mpr("The rubble rises up and takes form.");
 %%%%
 flood of elemental water
@@ -349,10 +360,12 @@ flood of elemental water
 %%%%
 Aim the phial where?
 
+瓶でどこを狙う？
 #"Aim the phial where?"))
 %%%%
 The water rises up and takes form.
 
+水が荒れ狂い、形状を構成した
 #mpr("The water rises up and takes form.");
 %%%%
 You cannot handle anything in this form.
@@ -377,6 +390,7 @@ You channel some magical energy.
 %%%%
 That is presently inert.
 
+それは現在不活性だ
 #mpr("That is presently inert.");
 %%%%
 That is presently inert.

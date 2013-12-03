@@ -1,0 +1,14 @@
+%%%%
+is recalled.
+
+は招集されている
+#simple_monster_message(mons, jtrans("is recalled.").c_str());
+%%%%
+You have no companions.
+
+#mpr("You have no companions.");
+%%%%
+%s (%d)(%s:%d)
+
+#mprf("%s (%d)(%s:%d)", mon->name(DESC_PLAIN, true).c_str(),
+%%%%

@@ -481,114 +481,142 @@ Stop Recall
 %%%%
 Make mushroom circle
 
+マッシュルームの輪の作成
 #{ ABIL_MAKE_FUNGUS, "Make mushroom circle", 0, 0, 0, 0, 10, ABFLAG_ZOTDEF},
 %%%%
 Make dart trap
 
+投げ矢の罠の作成
 #{ ABIL_MAKE_DART_TRAP, "Make dart trap", 0, 0, 0, 0, 5, ABFLAG_ZOTDEF},
 %%%%
 Make plant
 
+迷宮草の作成
 #{ ABIL_MAKE_PLANT, "Make plant", 0, 0, 0, 0, 2, ABFLAG_ZOTDEF},
 %%%%
 Make oklob sapling
 
+オクロブの幼草の作成
 #{ ABIL_MAKE_OKLOB_SAPLING, "Make oklob sapling", 0, 0, 0, 0, 60, ABFLAG_ZOTDEF},
 %%%%
 Make burning bush
 
+火吹き草の作成
 #{ ABIL_MAKE_BURNING_BUSH, "Make burning bush", 0, 0, 0, 0, 200, ABFLAG_ZOTDEF},
 %%%%
 Make oklob plant
 
+オクロブ草の作成
 #{ ABIL_MAKE_OKLOB_PLANT, "Make oklob plant", 0, 0, 0, 0, 250, ABFLAG_ZOTDEF},
 %%%%
 Make ice statue
 
+氷の像の作成
 #{ ABIL_MAKE_ICE_STATUE, "Make ice statue", 0, 0, 0, 0, 2000, ABFLAG_ZOTDEF},
 %%%%
 Make crystal statue
 
+水晶の像の作成
 #{ ABIL_MAKE_OCS, "Make crystal statue", 0, 0, 0, 0, 2000, ABFLAG_ZOTDEF},
 %%%%
 Make silver statue
 
+銀の像の作成
 #{ ABIL_MAKE_SILVER_STATUE, "Make silver statue", 0, 0, 0, 0, 3000, ABFLAG_ZOTDEF},
 %%%%
 Make curse skull
 
+呪いの頭蓋骨の作成
 #{ ABIL_MAKE_CURSE_SKULL, "Make curse skull",
 %%%%
 Zot-teleport
 
+Zotのテレポート
 #{ ABIL_MAKE_TELEPORT, "Zot-teleport", 0, 0, 0, 0, 2, ABFLAG_ZOTDEF},
 %%%%
 Make arrow trap
 
+矢の罠の作成
 #{ ABIL_MAKE_ARROW_TRAP, "Make arrow trap", 0, 0, 0, 0, 30, ABFLAG_ZOTDEF},
 %%%%
 Make bolt trap
 
+クロスボウの罠の作成
 #{ ABIL_MAKE_BOLT_TRAP, "Make bolt trap", 0, 0, 0, 0, 300, ABFLAG_ZOTDEF},
 %%%%
 Make spear trap
 
+槍の罠の作成
 #{ ABIL_MAKE_SPEAR_TRAP, "Make spear trap", 0, 0, 0, 0, 50, ABFLAG_ZOTDEF},
 %%%%
 Make needle trap
 
+吹き矢の罠の作成
 #{ ABIL_MAKE_NEEDLE_TRAP, "Make needle trap", 0, 0, 0, 0, 30, ABFLAG_ZOTDEF},
 %%%%
 Make net trap
 
+投げ網の罠の作成
 #{ ABIL_MAKE_NET_TRAP, "Make net trap", 0, 0, 0, 0, 2, ABFLAG_ZOTDEF},
 %%%%
 Make alarm trap
 
+警報の罠の作成
 #{ ABIL_MAKE_ALARM_TRAP, "Make alarm trap", 0, 0, 0, 0, 2, ABFLAG_ZOTDEF},
 %%%%
 Make blade trap
 
+刃の罠の作成
 #{ ABIL_MAKE_BLADE_TRAP, "Make blade trap", 0, 0, 0, 0, 3000, ABFLAG_ZOTDEF},
 %%%%
 Make oklob circle
 
+オクロブ草の輪の作成
 #{ ABIL_MAKE_OKLOB_CIRCLE, "Make oklob circle", 0, 0, 0, 0, 1000, ABFLAG_ZOTDEF},
 %%%%
 Acquire gold
 
+金貨の獲得
 #{ ABIL_MAKE_ACQUIRE_GOLD, "Acquire gold",
 %%%%
 Acquirement
 
+獲得
 #{ ABIL_MAKE_ACQUIREMENT, "Acquirement",
 %%%%
 Make water
 
+水場の作成
 #{ ABIL_MAKE_WATER, "Make water", 0, 0, 0, 0, 10, ABFLAG_ZOTDEF},
 %%%%
 Make lightning spire
 
+電撃の爆裂球の作成
 #{ ABIL_MAKE_LIGHTNING_SPIRE, "Make lightning spire", 0, 0, 0, 0, 100, ABFLAG_ZOTDEF},
 %%%%
 Make bazaar
 
+バザーの作成
 #{ ABIL_MAKE_BAZAAR, "Make bazaar",
 %%%%
 Make altar
 
+祭壇の作成
 #{ ABIL_MAKE_ALTAR, "Make altar", 0, 0, 0, 0, 50, ABFLAG_ZOTDEF},
 %%%%
 Make grenades
 
+胞子の手榴弾の作成
 #{ ABIL_MAKE_GRENADES, "Make grenades", 0, 0, 0, 0, 2, ABFLAG_ZOTDEF},
 %%%%
 Sage
 
+賢者化
 #{ ABIL_MAKE_SAGE, "Sage", 0, 0, 0, 0, 0, ABFLAG_ZOTDEF|ABFLAG_STAT_DRAIN},
 %%%%
 Remove Curse
 
+解呪
 #{ ABIL_REMOVE_CURSE, "Remove Curse",
 %%%%
 
@@ -626,34 +654,42 @@ DEBUG: NO RELEVANT MONSTER FOR %d
 %%%%
 Tendrils and shoots erupt from the earth and gnarl into the form of a plant.
 
+大地から蔓と芽が吹きだし、植物の形を成した
 #return "Tendrils and shoots erupt from the earth and gnarl into the form of a plant.";
 %%%%
 A rhizome shoots up through the ground and merges with vitriolic spirits in the atmosphere.
 
-#return "A rhizome shoots up through the ground and merges with vitriolic spirits in the atmosphere.";
+地面から根茎が噴出し、大気中の痛烈な精霊と融合した
+#return "A rhizome shoots up through the ground and merges with vitriolic spirits in the atmosphere."; Fixme_ja
 %%%%
 Blackened shoots writhe from the ground and burst into flame!
 
+地面から黒ずんだ物体が身もだえしながら現れ、炎を噴出した！
 #return "Blackened shoots writhe from the ground and burst into flame!";
 %%%%
 Water vapor collects and crystallises into an icy humanoid shape.
 
+水蒸気が人間型に集結し、結晶化した
 #return "Water vapor collects and crystallises into an icy humanoid shape.";
 %%%%
 Quartz juts from the ground and forms a humanoid shape. You smell citrus.
 
+石英が地面から飛出し、人間のような形を形成した。そしてあなたは柑橘類の匂いを嗅いだ
 #return "Quartz juts from the ground and forms a humanoid shape. You smell citrus.";
 %%%%
 Droplets of mercury fall from the ceiling and turn to silver, congealing into a humanoid shape.
 
+水銀の液体が天井から落下し、人間型に凝縮した
 #return "Droplets of mercury fall from the ceiling and turn to silver, congealing into a humanoid shape.";
 %%%%
 You sculpt a terrible being from the primitive principle of evil.
 
+あなたを悪の根本原理からなる恐怖の存在を作り上げた
 #return "You sculpt a terrible being from the primitive principle of evil.";
 %%%%
 You mount a charged rod inside a coil.
 
+あなたは充填された電力を解放した
 #return "You mount a charged rod inside a coil.";
 %%%%
 #
@@ -666,6 +702,7 @@ You mount a charged rod inside a coil.
 %%%%
 Permanent 
 
+(恒久的な喪失)
 #abil.flags & ABFLAG_PERMANENT_MP ? "Permanent " : "");
 %%%%
 , %d %s%s
@@ -859,6 +896,7 @@ It will temporarily drain your strength, intelligence or dexterity when used.
 %%%%
 No description found.\n
 
+この能力の説明は見つからなかった\n
 #lookup = "No description found.\n";
 %%%%
 #\n
@@ -1003,6 +1041,7 @@ You fail to use your ability.
 %%%%
 Bad breath type!
 
+該当しないブレスのタイプだ!
 #die("Bad breath type!");
 %%%%
 Mushrooms don't grow well in such thickets.
@@ -1012,10 +1051,12 @@ Mushrooms don't grow well in such thickets.
 %%%%
 Center fungus circle where?
 
+どこを菌類の輪の中心にしますか？
 #args.top_prompt="Center fungus circle where?";
 %%%%
 Center oklob circle where?
 
+どこをオクロブ草の輪の中心にしますか？
 #args.top_prompt = "Center oklob circle where?";
 %%%%
 The dungeon trembles momentarily.
@@ -1034,6 +1075,7 @@ A mystic portal forms.
 %%%%
 A buggy portal flickers into view, then vanishes.
 
+バグのポータルは消え去った
 #mpr("A buggy portal flickers into view, then vanishes.");
 %%%%
 The dungeon dims for a moment.
@@ -1048,10 +1090,12 @@ You create a living grenade.
 %%%%
 You create a living grenade.
 
+あなたは生きたグレネードを作った
 #mpr("You create a living grenade.");
 %%%%
 zot ability
 
+ゾットの能力
 #lose_stat(STAT_RANDOM, 1, true, "zot ability");
 %%%%
 You infuse your body with magical energy.
@@ -1061,26 +1105,32 @@ You infuse your body with magical energy.
 %%%%
 Aiming: <white>Delayed Fireball</white>
 
+目標: <white>遅延式ファイアボール</white>
 #"Aiming: <white>Delayed Fireball</white>",
 %%%%
 spit at
 
+に吐き出した
 #if (stop_attack_prompt(hitfunc, "spit at", _sticky_flame_can_hit))
 %%%%
 You spit a glob of burning liquid.
 
+あなたは燃えたぎる液体の塊を吐きだした
 #beam, false, "You spit a glob of burning liquid.");
 %%%%
 You breathe a blast of fire%c
 
+あなたは強烈な火炎を吐きだした
 #snprintf(info, INFO_SIZE, "You breathe a blast of fire%c",
 %%%%
 You exhale a wave of freezing cold.
 
+あなたは凍える冷気を吐きだした
 #"You exhale a wave of freezing cold."))
 %%%%
 You exhale a blast of poison gas.
 
+あなたは猛毒のガスを吐きだした
 #"You exhale a blast of poison gas."))
 %%%%
 You breathe a wild blast of lightning!
@@ -1090,22 +1140,27 @@ You breathe a wild blast of lightning!
 %%%%
 You spit a glob of acid.
 
+あなたは酸の塊を吐き出した
 #beam, true, "You spit a glob of acid."))
 %%%%
 You spit a bolt of dispelling energy.
 
+あなたはエンチャントを解除する力の爆風を吐き出した
 #"You spit a bolt of dispelling energy."))
 %%%%
 You spit a glob of burning liquid.
 
+あなたは燃えたぎる液体の塊を吐きだした
 #"You spit a glob of burning liquid."))
 %%%%
 You exhale a blast of scalding steam.
 
+あなたは蒸気の噴出を吹きかけた
 #"You exhale a blast of scalding steam."))
 %%%%
 You exhale a blast of noxious fumes.
 
+あなたは悪臭雲の雲を吹きかけた
 #"You exhale a blast of noxious fumes."))
 %%%%
 You feel very comfortable in the air.
@@ -1200,10 +1255,12 @@ You gain the combat prowess of a mighty hero.
 %%%%
 %s emits a piercing whistle.
 
+%sは耳に突き刺さるような口笛を吹いた
 #if (stasis_blocks_effect(true, true, "%s emits a piercing whistle.",
 %%%%
 %s makes your neck tingle.
 
+%sはあなたの首筋を疼かせた
 #20, "%s makes your neck tingle."))
 %%%%
 Your hands get new energy.
@@ -1281,30 +1338,37 @@ Sorry, you can't do that.
 %%%%
 invalid ability
 
+不正な能力
 #die("invalid ability");
 %%%%
 Cost: mp=%d; hp=%d; food=%d; piety=%d
 
+コスト: mp=%d; hp=%d; 満腹度=%d; 信仰値=%d
 #dprf("Cost: mp=%d; hp=%d; food=%d; piety=%d",
 %%%%
 power out of control
 
+力は制御を失った
 #"power out of control", NH_DEFAULT);
 %%%%
   Ability - do what?                 
 
+  能力    - どれを使用しますか?      
 #new ToggleableMenuEntry("  Ability - do what?                 "
 %%%%
 Cost                       Failure
 
+コスト                     成功率 
 #"Cost                       Failure",
 %%%%
   Ability - describe what?           
 
+  能力    - どの説明を見ますか?      
 #"  Ability - describe what?           "
 %%%%
   Ability - do what?                 
 
+  能力    - どれを使用しますか?      
 #new ToggleableMenuEntry("  Ability - do what?                 "
 %%%%
 #ability
@@ -1313,18 +1377,22 @@ Cost                       Failure
 %%%%
 Press '<w>!</w>' or '<w>?</w>' to toggle 
 
+能力の選択画面と説明画面を
 #"Press '<w>!</w>' or '<w>?</w>' to toggle "
 %%%%
 between ability selection and description.
 
+切り替えるには'<w>!</w>' か '<w>?</w>' を押してください
 #"between ability selection and description."));
 %%%%
     Zot Defence -
 
+    ゾットディフェンス -
 #new ToggleableMenuEntry("    Zot Defence -",
 %%%%
     Invocations - 
 
+    祈祷        - 
 #new ToggleableMenuEntry("    Invocations - ",
 %%%%
 small_abl

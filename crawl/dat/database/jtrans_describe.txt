@@ -9,78 +9,97 @@
 %%%%
 Regen
 
+再生
 #case RING_REGENERATION:      return "Regen";
 %%%%
 SustAb
 
+維持
 #case RING_SUSTAIN_ABILITIES: return "SustAb";
 %%%%
 Hunger-
 
+空腹-
 #case RING_SUSTENANCE:        return "Hunger-";
 %%%%
 Wiz
 
+魔術
 #case RING_WIZARDRY:          return "Wiz";
 %%%%
 Fire
 
+炎
 #case RING_FIRE:              return "Fire";
 %%%%
 Ice
 
+氷
 #case RING_ICE:               return "Ice";
 %%%%
 +/*Tele
 
++/*転移
 #case RING_TELEPORTATION:     return "+/*Tele";
 %%%%
 +cTele
 
++c転移
 #case RING_TELEPORT_CONTROL:  return "+cTele";
 %%%%
 Clar
 
+明晰
 #case AMU_CLARITY:            return "Clar";
 %%%%
 Ward
 
+結界
 #case AMU_WARDING:            return "Ward";
 %%%%
 rCorr
 
+r腐食
 #case AMU_RESIST_CORROSION:   return "rCorr";
 %%%%
 Gourm
 
+悪食
 #case AMU_THE_GOURMAND:       return "Gourm";
 %%%%
 Cons
 
+保全
 #case AMU_CONSERVATION:       return "Cons";
 %%%%
 cFly
 
+c飛行
 #case AMU_CONTROLLED_FLIGHT:  return "cFly";
 %%%%
 rMut
 
+r変異
 #case AMU_RESIST_MUTATION:    return "rMut";
 %%%%
 Spirit
 
+守護霊
 #case AMU_GUARDIAN_SPIRIT:    return "Spirit";
 %%%%
 Faith
 
+信心
 #case AMU_FAITH:              return "Faith";
 %%%%
 Stasis
 
+安定
 #case AMU_STASIS:             return "Stasis";
 %%%%
 Inacc
 
+不正確
 #case AMU_INACCURACY:         return "Inacc";
 %%%%
 #
@@ -89,81 +108,101 @@ Inacc
 %%%%
 -Cast
 
+-詠唱
 #{ "-Cast",  ARTP_PREVENT_SPELLCASTING,  2 },
 %%%%
 -Tele
 
+-転移
 #{ "-Tele",  ARTP_PREVENT_TELEPORTATION, 2 },
 %%%%
 Contam
 
+汚染
 #{ "Contam", ARTP_MUTAGENIC,             2 },
 %%%%
 *Rage
 
+*狂
 #{ "*Rage",  ARTP_ANGRY,                 2 },
 %%%%
 *Tele
 
+*転移
 #{ "*Tele",  ARTP_CAUSE_TELEPORTATION,   2 },
 %%%%
 Hunger
 
+空腹
 #{ "Hunger", ARTP_METABOLISM,            2 }, // handled specially
 %%%%
 Noisy
 
+騒音
 #{ "Noisy",  ARTP_NOISES,                2 },
 %%%%
 +Blink
 
++瞬
 #{ "+Blink", ARTP_BLINK,                 2 },
 %%%%
 +Rage
 
++狂
 #{ "+Rage",  ARTP_BERSERK,               2 },
 %%%%
 +Inv
 
++透
 #{ "+Inv",   ARTP_INVISIBLE,             2 },
 %%%%
 +Fly
 
++飛
 #{ "+Fly",   ARTP_FLY,                   2 },
 %%%%
 +Fog
 
++煙
 #{ "+Fog",   ARTP_FOG,                   2 },
 %%%%
 rElec
 
+r電
 #{ "rElec",  ARTP_ELECTRICITY,           2 },
 %%%%
 rPois
 
+r毒
 #{ "rPois",  ARTP_POISON,                2 },
 %%%%
 rF
 
+r火
 #{ "rF",     ARTP_FIRE,                  1 },
 %%%%
 rC
 
+r冷
 #{ "rC",     ARTP_COLD,                  1 },
 %%%%
 rN
 
+r負
 #{ "rN",     ARTP_NEGATIVE_ENERGY,       1 },
 %%%%
 MR
 
+r魔
 #{ "MR",     ARTP_MAGIC,                 2 }, // handled specially
 %%%%
 HP
 
+
 #{ "HP",     ARTP_HP,                    0 },
 %%%%
 MP
+
 
 #{ "MP",     ARTP_MAGICAL_POWER,         0 },
 %%%%
@@ -175,48 +214,59 @@ EV
 
 #{ "EV",     ARTP_EVASION,               0 },
 %%%%
-Str
+Str_des
 
+腕
 #{ "Str",    ARTP_STRENGTH,              0 },
 %%%%
-Dex
+Dex_des
 
+器
 #{ "Dex",    ARTP_DEXTERITY,             0 },
 %%%%
-Int
+Int_des
 
+知
 #{ "Int",    ARTP_INTELLIGENCE,          0 },
 %%%%
-Acc
+Acc_des
 
+命中
 #{ "Acc",    ARTP_ACCURACY,              0 },
 %%%%
-Dam
+Dam_des
 
+損傷
 #{ "Dam",    ARTP_DAMAGE,                0 },
 %%%%
 SInv
 
+透明視
 #{ "SInv",   ARTP_EYESIGHT,              2 },
 %%%%
 Stlth
 
+隠密
 #{ "Stlth",  ARTP_STEALTH,               2 }, // handled specially
 %%%%
 Curse
 
+呪縛
 #{ "Curse",  ARTP_CURSED,                2 },
 %%%%
 Clar
 
+明晰
 #{ "Clar",   ARTP_CLARITY,               2 },
 %%%%
 RMsl
 
+飛防
 #{ "RMsl",   ARTP_RMSL,                  2 },
 %%%%
 Regen
 
+再生
 #{ "Regen",  ARTP_REGENERATION,          2 },
 %%%%
 #,
@@ -506,52 +556,67 @@ more_des
 %%%%
 dart
 
+投げ矢
 %%%%
 arrow
 
+矢
 %%%%
 spear
 
+槍
 #"dart", "arrow", "spear",
 %%%%
 teleport
 
+テレポート
 %%%%
 alarm
 
+警報
 %%%%
 blade
 
+刃
 #"teleport", "alarm", "blade",
 %%%%
 bolt
 
+クロスボウの矢
 %%%%
 net
 
+投げ網
 %%%%
 Zot
 
+ゾット
 %%%%
 needle
 
+吹き矢
 #"bolt", "net", "Zot", "needle",
 %%%%
 shaft
 
+昇降口
 %%%%
 passage
 
+通路
 %%%%
 pressure plate
 
+落とし戸
 %%%%
 web
 
+蜘蛛の巣
 #"shaft", "passage", "pressure plate", "web",
 %%%%
 gas
 
+ガス
 #"gas",
 %%%%
 #
@@ -2876,6 +2941,7 @@ resistant to
 %%%%
 ha
 
+は
 #result << uppercase_first(pronoun) << jtrans("ha") <<_get_threat_desc(mi.threat)
 %%%%
 looks
@@ -2949,7 +3015,7 @@ can sense the presence of invisible creatures.
 は周囲の見えざるものを感知することが出来る
 #result << uppercase_first(pronoun) << jtrans("can sense the presence of invisible creatures.") + "\n";
 %%%%
-ha
+#ha
 
 #result << uppercase_first(pronoun) << jtrans("ha");
 %%%%
@@ -3045,7 +3111,7 @@ is as big as
 #
 #<< "\n";
 %%%%
-ha
+#ha
 
 #result << uppercase_first(pronoun) << jtrans("ha") << jtrans(sizes[mi.body_size()]) << ".\n";
 %%%%
@@ -3547,452 +3613,557 @@ Lord of the Bugs
 %%%%
 Blasphemer
 
+冒涜者
 %%%%
 Anchorite
 
+陰遁者
 %%%%
 Apologist
 
+弁証者
 %%%%
 Pious
 
+敬虔者
 #{"Blasphemer",         "Anchorite",             "Apologist",                "Pious",
 %%%%
 Devout
 
+導士
 %%%%
 Orthodox
 
+正しき者
 %%%%
 Immaculate
 
+無垢清浄の者
 %%%%
 Bringer of Law
 
+秩序の代行者
 #"Devout",             "Orthodox",              "Immaculate",               "Bringer of Law"},
 %%%%
 Honourless
 
+不名誉な存在
 %%%%
 Acolyte
 
+侍祭
 %%%%
 Righteous
 
+高潔な者
 %%%%
 Unflinching
 
+揺るがぬ者
 #{"Honourless",         "Acolyte",               "Righteous",                "Unflinching",
 %%%%
 Holy Warrior
 
+聖戦者
 %%%%
 Exorcist
 
+悪を祓う者
 %%%%
 Demon Slayer
 
+悪を滅する者
 %%%%
 Bringer of Light
 
+光の代行者
 #"Holy Warrior",       "Exorcist",              "Demon Slayer",             "Bringer of Light"},
 %%%%
 Tormented
 
+苦痛を受けし者
 %%%%
 Purveyor of Pain
 
+痛みを与える者
 %%%%
 Death's Scholar
 
+死を探求する者
 %%%%
 Merchant of Misery
 
+苦痛の商人
 #{"Tormented",          "Purveyor of Pain",      "Death's Scholar",          "Merchant of Misery",
 %%%%
 Death's Artisan
 
+死の芸術家
 %%%%
 Dealer of Despair
 
+絶望を振り撒く者
 %%%%
 Black Sun
 
+『黒き太陽』
 %%%%
 Lord of Darkness
 
+『暗黒の領主』
 #"Death's Artisan",    "Dealer of Despair",     "Black Sun",                "Lord of Darkness"},
 %%%%
 Traitor
 
+反逆者
 %%%%
 Zealot
 
+狂信者
 %%%%
 Exhumer
 
+墓荒らし
 %%%%
 Fey %s
 
-#{"Traitor",            "Zealot",                "Exhumer",                  "Fey %s",
+狂気の%s
 %%%%
 Soul Tainter
 
+魂を堕落させる者
 %%%%
 Sculptor of Flesh
 
+死体を彩る者
 %%%%
 Harbinger of Death
 
+『死の体現者』
 %%%%
 Grim Reaper
 
-#"Soul Tainter",       "Sculptor of Flesh",     "Harbinger of Death",       "Grim Reaper"},
+『永遠なる死の支配者』
 %%%%
 Toy
 
-#{"Toy",                "Toy",                   "Toy",                      "Toy",
-%%%%
-#Toy
-#
-#"Toy",                "Toy",                   "Toy",                      "Toy"},
+ゾムの玩具
 %%%%
 Meek
 
+敗北者
 %%%%
 Sorcerer's Apprentice
 
+魔術師見習い
 %%%%
 Scholar of Destruction
 
+破壊を探求する者
 %%%%
 Caster of Ruination
 
-#{"Meek",               "Sorcerer's Apprentice", "Scholar of Destruction",   "Caster of Ruination",
+破滅の詠唱者
 %%%%
 Battle Magician
 
+戦闘魔術師
 %%%%
 Warlock
 
+大魔術師
 %%%%
 Annihilator
 
+『破滅の魔導師』
 %%%%
 Luminary of Lethal Lore
 
-#"Battle Magician",    "Warlock",               "Annihilator",              "Luminary of Lethal Lore"},
+『破壊魔術の指導者』
 %%%%
 Coward
 
+卑怯者
 %%%%
 Struggler
 
+奮闘者
 %%%%
 Combatant
 
+闘士
 %%%%
 Warrior
 
-#{"Coward",             "Struggler",             "Combatant",                "Warrior",
+武人
 %%%%
 Knight
 
+騎士
 %%%%
 Warmonger
 
+戦争屋
 %%%%
 Commander
 
+『司令官』
 %%%%
 Victor of a Thousand Battles
 
-#"Knight",             "Warmonger",             "Commander",                "Victor of a Thousand Battles"},
+『千の戦の支配者』
 %%%%
 Orderly
 
+従卒
 %%%%
 Spawn of Chaos
 
+混沌の種
 %%%%
 Disciple of Annihilation
 
+破壊者の門弟
 %%%%
 Fanfare of Bloodshed
 
-#{"Orderly",            "Spawn of Chaos",        "Disciple of Annihilation", "Fanfare of Bloodshed",
+虐殺の凱歌
 %%%%
 Fiendish
 
+悪魔の化身
 %%%%
 Demolition %s
 
+%sの破壊者
 %%%%
 Pandemonic
 
+『修羅』
 %%%%
 Champion of Chaos
 
-#"Fiendish",           "Demolition %s",         "Pandemonic",               "Champion of Chaos"},
+『混沌の代行者』
 %%%%
 Ignorant
 
+愚か者
 %%%%
 Disciple
 
+門弟
 %%%%
 Student
 
+研究者
 %%%%
 Adept
 
-#{"Ignorant",           "Disciple",              "Student",                  "Adept",
+熟練者
 %%%%
 Scribe
 
+知識を残す者
 %%%%
 Scholar
 
+魔法学者
 %%%%
 Sage
 
+『賢者』
 %%%%
 Genius of the Arcane
 
-#"Scribe",             "Scholar",               "Sage",                     "Genius of the Arcane"},
+『秘術の支配者』
 %%%%
 Puny
 
+弱者
 %%%%
 Troglodyte
 
+世捨て人
 %%%%
 Angry Troglodyte
 
+怒れる奇人
 %%%%
 Frenzied
 
-#{"Puny",               "Troglodyte",            "Angry Troglodyte",         "Frenzied",
+荒れ狂う者
 %%%%
 %s of Prey
 
+猛襲の %s
 %%%%
 Rampant
 
+猛威をふるう者
 %%%%
 Wild %s
 
+激怒する %s
 %%%%
 Bane of Scribes
 
-#"%s of Prey",         "Rampant",               "Wild %s",                  "Bane of Scribes"},
+文明の破壊者
 %%%%
 Unlucky %s
 
+不運な%s
 %%%%
 Pannier
 
+アイテム収拾人
 %%%%
 Jester
 
+道化
 %%%%
 Fortune-Teller
 
-#{"Unlucky %s",         "Pannier",               "Jester",                   "Fortune-Teller",
+占い師
 %%%%
 Soothsayer
 
+予言者
 %%%%
 Magus
 
+カードの魔術師
 %%%%
 Cardsharp
 
+イカサマ師
 %%%%
 Hand of Fortune
 
-#"Soothsayer",         "Magus",                 "Cardsharp",                "Hand of Fortune"},
+運命を手にする者
 %%%%
 Sinner
 
+罪人
 %%%%
 Comforter
 
+慰める者
 %%%%
 Caregiver
 
+癒す者
 %%%%
 Practitioner
 
-#{"Sinner",             "Comforter",             "Caregiver",                "Practitioner",
+癒しに長ける者
 %%%%
 Pacifier
 
+調停者
 %%%%
 Purifying %s
 
+%sの浄罪者
 %%%%
 Faith Healer
 
+奇跡の癒し手
 %%%%
 Bringer of Life
 
-#"Pacifier",           "Purifying %s",          "Faith Healer",             "Bringer of Life"},
+生命を司る者
 %%%%
 Pure
 
+純粋な者
 %%%%
 Abyss-Baptised
 
+深淵の洗礼を受けた者
 %%%%
 Unweaver
 
+瓦解させる者
 %%%%
 Distorting %s
 
-#{"Pure",               "Abyss-Baptised",        "Unweaver",                 "Distorting %s",
+歪んだ%s
 %%%%
 Agent of Entropy
 
+エントロピーの代行者
 %%%%
 Schismatic
 
+乖離させる者
 %%%%
 Envoy of Void
 
+虚空の使者
 %%%%
 Corrupter of Planes
 
-#"Agent of Entropy",   "Schismatic",            "Envoy of Void",            "Corrupter of Planes"},
+次元の破壊者
 %%%%
 Apostate
 
+背信者
 %%%%
 Messenger
 
+伝令
 %%%%
 Proselytiser
 
+改宗者
 %%%%
 Priest
 
-#{"Apostate",           "Messenger",             "Proselytiser",             "Priest",
+司祭
 %%%%
 Missionary
 
+宣教師
 %%%%
 Evangelist
 
+福音伝道者
 %%%%
 Apostle
 
+使徒
 %%%%
 Messiah
 
-#"Missionary",         "Evangelist",            "Apostle",                  "Messiah"},
+救世主
 %%%%
 Scum
 
+塵屑
 %%%%
 Jelly
 
+柔らかき者
 %%%%
 Squelcher
 
+咀嚼する者
 %%%%
 Dissolver
 
-#{"Scum",               "Jelly",                 "Squelcher",                "Dissolver",
+溶解者
 %%%%
 Putrid Slime
 
+腐食のスライム
 %%%%
 Consuming %s
 
+喰らい尽くす%s
 %%%%
 Archjelly
 
+アークジェリー
 %%%%
 Royal Jelly
 
-#"Putrid Slime",       "Consuming %s",          "Archjelly",                "Royal Jelly"},
+ロイヤルジェリー
 %%%%
 Walking Fertiliser
 
+歩く肥料
 %%%%
 Green %s
 
+緑の%s
 %%%%
 Inciter
 
+助長する者
 %%%%
 Photosynthesist
 
-#{"Walking Fertiliser", "Green %s",              "Inciter",                  "Photosynthesist",
+光合成する者
 %%%%
 Cultivator
 
+繁茂させる者
 %%%%
 Green Death
 
+緑の殲滅者
 %%%%
 Nimbus
 
+雨雲を呼ぶ者
 %%%%
 Force of Nature
 
-#"Cultivator",         "Green Death",           "Nimbus",                   "Force of Nature"},
+自然の化身
 %%%%
 Unwound %s
 
+解けた%s
 %%%%
 Timekeeper
 
+計時係
 %%%%
 Righteous Timekeeper
 
+時を推し量る者
 %%%%
 Chronographer
 
-#{"Unwound %s",         "Timekeeper",            "Righteous Timekeeper",     "Chronographer",
+時を計測するもの
 %%%%
 Splendid Chronographer
 
+時を管理する者
 %%%%
 Chronicler
 
+時を綴るもの
 %%%%
 Eternal Chronicler
 
+永き時をたゆたうもの
 %%%%
 Ticktocktomancer
 
-#"Splendid Chronographer", "Chronicler",        "Eternal Chronicler",       "Ticktocktomancer"},
+秒針を動かす者
 %%%%
 Star-crossed
 
+薄幸の者
 %%%%
 Cursed
 
+呪われし者
 %%%%
 Initiated
 
+秘呪に通じる者
 %%%%
 Seer
 
-#{"Star-crossed",       "Cursed",                "Initiated",                "Seer",
+千里眼
 %%%%
 Soothsayer
 
+予言者
 %%%%
 Oracle
 
+託宣者
 %%%%
 Illuminatus
 
+啓示を受けし者
 %%%%
 Omniscient
 
+全知全能の賢者
 #"Soothsayer",         "Oracle",                "Illuminatus",              "Omniscient"},
 %%%%
 #%s
@@ -4001,38 +4172,47 @@ Omniscient
 %%%%
 Ashenzari won't support your skills until you bind yourself with cursed items.
 
+アシェンザリはあなた自身を呪縛するまでスキルを支援しない
 #return jtrans("Ashenzari won't support your skills until you bind yourself with cursed items.");
 %%%%
 Shield hand
 
+左手
 #static const char* bondage_parts[NUM_ET] = { "Weapon hand", "Shield hand",
 %%%%
 Jewellery
 
+装飾具
 #"Armour", "Jewellery" };
 %%%%
 High
 
+高い
 #static const char* bonus_level[3] = { "Low", "Medium", "High" };
 %%%%
 Bound part
 
+呪縛個所
 #desc << setw(18) << "Bound part";
 %%%%
 Boosted skills
 
+ブーストされたスキル
 #desc << setw(30) << "Boosted skills";
 %%%%
 Bonus\n
 
+ボーナス
 #desc << "Bonus\n";
 %%%%
 Hands
 
+腕
 #desc << "Hands";
 %%%%
 Magic schools
 
+魔法領域
 #skills += "Magic schools";
 %%%%
 #, 
@@ -4077,34 +4257,42 @@ Magic schools
 %%%%
 Note that Trog does not demand training of the Invocations skill. All abilities are purely based on piety.
 
+トログの能力の成功率は祈祷スキルではなく、信仰値に依存していることに注意せよ
 #broken = jtrans("Note that Trog does not demand training of the Invocations skill. All abilities are purely based on piety.");
 %%%%
 Healing hostile monsters may pacify them, turning them
 
+敵対しているモンスターを癒すことで講和し中立的にすることが出来る。
 #broken = jtrans("Healing hostile monsters may pacify them, turning them")
 %%%%
 neutral. Pacification works best on natural beasts,
 
+モンスターとの講和は獣が最も結びやすく、あなたと同じ種族、違う種族、悪魔とアンデッドの順で難しくなっていく。
 #+  jtrans("neutral. Pacification works best on natural beasts,")
 %%%%
 worse on monsters of your species, worse on other
 
+寝ているモンスターや精神の無いモンスターと講和を結ぶことはできない。
 #+  jtrans("worse on monsters of your species, worse on other")
 %%%%
 species, worst of all on demons and undead, and not at
 
+モンスターと講和を結ぶとそのモンスターを倒したときの経験値の半分と幾らかの信仰値が手に入る。
 #+  jtrans("species, worst of all on demons and undead, and not at")
 %%%%
 all on sleeping or mindless monsters. If it succeeds,
 
+講和を結んだモンスターはその階を離れようと試みる。
 #+  jtrans("all on sleeping or mindless monsters. If it succeeds,");
 %%%%
 The piety increase when sacrificing mostly depends
 
+信仰値の増加は奉げられたアイテムの価値に依存している。
 #broken = jtrans("The piety increase when sacrificing mostly depends")
 %%%%
 on the value of the item. To prevent items from
 
+アイテムが奉げられることを予防したいならば、!p(アイテムを束ごと守る)、=p(一つのアイテムだけを守る)、!D(生贄の対象から外す)を刻め。
 #+  jtrans("on the value of the item. To prevent items from")
 %%%%
 #\n\n
@@ -4113,18 +4301,22 @@ on the value of the item. To prevent items from
 %%%%
 Nemelex Xobeh gifts various types of decks of cards.
 
+ネメレクス・ソベーは様々な種類のデッキを下賜する。
 #+  jtrans("Nemelex Xobeh gifts various types of decks of cards.")
 %%%%
 Each deck type comes in three power levels: plain,
 
+デッキには平凡(plain)、飾られた(ornate)、伝説的(legendary)といった３つのレベルがある。あとのデッキほど強力な効果を発揮しやすい。
 #+  jtrans("Each deck type comes in three power levels: plain,")
 %%%%
 ornate, legendary. The latter contain very powerful
 
+強力な発動スキルと信仰値はデッキの力を高め、またネメレクスの能力は祈祷スキルではなく発動スキルに依存する。
 #+  jtrans("ornate, legendary. The latter contain very powerful")
 %%%%
 card effects, potentially hazardous. High piety and
 
+下賜されるデッキの種類は奉げたアイテムに大きく依存される。対応する文字を押して奉げるアイテムを切り替えることが出来る。
 #+  jtrans("card effects, potentially hazardous. High piety and")
 %%%%
 #\n\n
@@ -4137,22 +4329,27 @@ card effects, potentially hazardous. High piety and
 %%%%
 decks of Escape      -- armour
 
+脱出のデッキ         -- 防具(鎧、盾、クローク、兜、ブーツ)
 #desc = jtrans("decks of Escape      -- armour");
 %%%%
 decks of Destruction -- weapons and ammunition
 
+破壊のデッキ         -- 武器(近接武器、遠距離武器、矢玉、杖)
 #desc = jtrans("decks of Destruction -- weapons and ammunition");
 %%%%
 decks of Dungeons    -- jewellery, books, miscellaneous items
 
+迷宮のデッキ         -- 装飾品、本、その他のアイテム
 #desc = jtrans("decks of Dungeons    -- jewellery, books, miscellaneous items");
 %%%%
 decks of Summoning   -- corpses, chunks, blood
 
+召喚のデッキ         -- 死体、肉片、血
 #desc = jtrans("decks of Summoning   -- corpses, chunks, blood");
 %%%%
 decks of Wonders     -- consumables: food, potions, scrolls, wands
 
+不思議のデッキ       -- 消耗品(食糧、薬、巻物、ワンド)
 #desc = jtrans("decks of Wonders     -- consumables: food, potions, scrolls, wands");
 %%%%
 # <white>%c</white> %s%s%s\n
@@ -4193,6 +4390,7 @@ description.
 %%%%
 Religion
 
+                                  信仰
 #cprintf(jtrans("Religion").c_str());
 %%%%
 #\n
@@ -4205,6 +4403,7 @@ Religion
 %%%%
 You are not religious.
 
+あなたは何も信仰していない
 #cprintf(jtrans("You are not religious.").c_str());
 %%%%
 #%s
@@ -4225,6 +4424,7 @@ You are not religious.
 %%%%
 Title -
 
+称号  - 
 #cprintf(jtrans("Title -").c_str());
 %%%%
 # 
@@ -4241,6 +4441,7 @@ Title -
 %%%%
 Favour-
 
+好意  -
 #cprintf(jtrans("Favour-").c_str());
 %%%%
 # 
@@ -4253,30 +4454,37 @@ Come back to the one true church!
 %%%%
 %s doesn't play fair with you.
 
+%s はあなたとフェアで遊ばない
 #? jtrans("%s doesn't play fair with you.").c_str() :
 %%%%
 %s's wrath is upon you!
 
+%s はあなたに激怒している！
 #(which_god_penance >= 50)   ? jtrans("%s's wrath is upon you!").c_str() :
 %%%%
 %s is annoyed with you.
 
+%s はあなたに苛立っている。
 #(which_god_penance >= 20)   ? jtrans("%s is annoyed with you.").c_str() :
 %%%%
 %s well remembers your sins.
 
+%s はあなたの罪をはっきりと覚えている
 #(which_god_penance >=  5)   ? jtrans("%s well remembers your sins.").c_str() :
 %%%%
 %s is ready to forgive your sins.
 
+%s はあなたの罪を赦そうとしている
 #(which_god_penance >   0)   ? jtrans("%s is ready to forgive your sins.").c_str() :
 %%%%
 %s is ambivalent towards you.
 
+%s はあなたに曖昧な感情を抱いている
 #(you.worshipped[which_god]) ? jtrans("%s is ambivalent towards you.").c_str()
 %%%%
 %s is neutral towards you.
 
+%s はあなたに対して中立である
 #: jtrans("%s is neutral towards you.").c_str(),
 %%%%
 #\n%s
@@ -4285,10 +4493,12 @@ Come back to the one true church!
 %%%%
 Granted powers:
 
+与えられた能力:
 #const char *header = jtrans("Granted powers:").c_str();
 %%%%
 (Cost)
 
+(コスト)
 #const char *cost   = jtrans("(Cost)").c_str();
 %%%%
 #\n\n%s%*s%s\n
@@ -4301,18 +4511,22 @@ Granted powers:
 %%%%
 carefully2
 
+は注意して
 #const char *how = (prot_chance >= 85) ? "carefully2" :
 %%%%
 often2
 
+はいつも
 #(prot_chance >= 55) ? "often2" :
 %%%%
 sometimes2
 
+は時々
 #(prot_chance >= 25) ? "sometimes2"
 %%%%
 occasionally2
 
+は時折
 #: "occasionally2";
 %%%%
 #
@@ -4321,10 +4535,12 @@ occasionally2
 %%%%
 , especially when called upon
 
+、あなたから呼びかけられた時は特に！
 #when = jtrans(", especially when called upon").c_str();
 %%%%
 , and always does so when called upon
 
+、あなたから呼びかけられた時はいつも！
 #when = jtrans(", and always does so when called upon").c_str();
 %%%%
 #
@@ -4333,6 +4549,7 @@ occasionally2
 %%%%
 watches over you
 
+あなたを見守っている
 #buf += jtrans("watches over you");
 %%%%
 #
@@ -4341,18 +4558,22 @@ watches over you
 %%%%
 carefully3
 
+『ジン』は注意して
 #const char *how = (you.piety >= 150) ? jtrans("carefully3").c_str() :
 %%%%
 often3
 
+『ジン』はいつも
 #(you.piety >= 100) ? jtrans("often3").c_str() :
 %%%%
 sometimes3
 
+『ジン』は時々
 #(you.piety >=  50) ? jtrans("sometimes3").c_str() :
 %%%%
 occasionally3
 
+『ジン』は時折
 #jtrans("occasionally3").c_str();
 %%%%
 # 
@@ -4361,6 +4582,7 @@ occasionally3
 %%%%
 shields you from chaos.
 
+あなたを混沌から見守る
 #buf += jtrans("shields you from chaos.");
 %%%%
 #
@@ -4369,18 +4591,22 @@ shields you from chaos.
 %%%%
 carefully4
 
+『輝ける者』は注意して
 #const char *how = (you.piety >= 150) ? jtrans("carefully4").c_str() :
 %%%%
 often4
 
+『輝ける者』はいつも
 #(you.piety >= 100) ? jtrans("often4").c_str() :
 %%%%
 sometimes4
 
+『輝ける者』は時々
 #(you.piety >=  50) ? jtrans("sometimes4").c_str() :
 %%%%
 occasionally4
 
+『輝ける者』は時折
 #jtrans("occasionally4").c_str();
 %%%%
 # 
@@ -4389,6 +4615,7 @@ occasionally4
 %%%%
 shields you from negative energy.
 
+あなたを不浄な力から見守る
 #buf += jtrans("shields you from negative energy.");
 %%%%
 #
@@ -4397,26 +4624,32 @@ shields you from negative energy.
 %%%%
 You can call upon
 
+あなたは 
 #string buf = jtrans("You can call upon")
 %%%%
 to burn spellbooks in your surroundings.
 
+ にあなたの周囲の魔法書を燃やすように呼びかける
 #+ jtrans("to burn spellbooks in your surroundings.");
 %%%%
 carefully5
 
+『ジーヴァ』は注意して
 #const char *how = (you.piety >= 150) ? jtrans("carefully5").c_str() :
 %%%%
 often5
 
+『ジーヴァ』はいつも
 #(you.piety >= 100) ? jtrans("often5").c_str() :
 %%%%
 sometimes5
 
+『ジーヴァ』は時々
 #(you.piety >=  50) ? jtrans("sometimes5").c_str() :
 %%%%
 occasionally5
 
+『ジーヴァ』は時折
 #jtrans("occasionally5").c_str();
 %%%%
 # 
@@ -4425,6 +4658,7 @@ occasionally5
 %%%%
 shields your consumables from destruction.
 
+あなたの食物(アイテム)の破壊から守る
 #buf += jtrans("shields your consumables from destruction.");
 %%%%
 
@@ -4433,6 +4667,7 @@ shields your consumables from destruction.
 %%%%
 %s shields you from corrosive effects.
 
+%s はあなたを酸の効力から見守る
 #cprintf(jtrans("%s shields you from corrosive effects.").c_str(),
 %%%%
 #\n
@@ -4441,18 +4676,22 @@ shields your consumables from destruction.
 %%%%
 when your fellow slimes consume items.
 
+あなたの僕のスライムがアイテムを消費した時、
 #string buf = jtrans("when your fellow slimes consume items.");
 %%%%
 You gain nutrition
 
+あなたは栄養を得る
 #	buf += jtrans("You gain nutrition");
 %%%%
 , power and health
 
+(同時に魔力と体力を得る)
 #buf += jtrans(", power and health");
 %%%%
 and power
 
+(同時に魔力も得る)
 #buf += jtrans("and power");
 %%%%
 #\n
@@ -4461,42 +4700,52 @@ and power
 %%%%
 You can pray to speed up decomposition.
 
+あなたは祈りにより死体の腐敗を早めることが出来る
 #jtrans("You can pray to speed up decomposition.").c_str(),
 %%%%
 You can walk through plants and fire through allied plants.
 
+あなたは植物の間を通り、仲間の植物に発射物が当たらなくなる
 #jtrans("You can walk through plants and fire through allied plants.").c_str(),
 %%%%
 You are provided with a bounty of information.
 
+あなたは装備の情報を得ることが出来る
 #jtrans("You are provided with a bounty of information.").c_str(),
 %%%%
 You can pray to bestow
 
+あなたは 
 #string buf = jtrans("You can pray to bestow").c_str()
 %%%%
 curse upon scrolls that usually remove them.
 
+ に祈ることで解呪の巻物を呪いの巻物に変化できる
 #+ jtrans("curse upon scrolls that usually remove them.").c_str();
 %%%%
 slows and strengthens your metabolism.
 
+ はあなたの速度を低下させ、新陳代謝を遅くする
 #+ jtrans("slows and strengthens your metabolism.").c_str(),
 %%%%
 You can provide lesser healing for others.
 
+あなたは他者に小さき癒しを与えることが出来る
 #jtrans("You can provide lesser healing for others.").c_str(),
 %%%%
 some of Vehumet's most lethal spells
 
+ヴェフメットの最も致命的な呪文の一つ
 #offer = jtrans("some of Vehumet's most lethal spells").c_str();
 %%%%
 memorisecan
 
+ を記憶することが出来る
 #jtrans("You cann").c_str() + offer + jtrans("memorisecan").c_str(),
 %%%%
 None.
 
+(無し)
 #cprintf(jtrans("None.").c_str());
 %%%%
 #\n
@@ -4537,6 +4786,7 @@ description.
 %%%%
 How on earth did you manage to pick this up?
 
+一体どうして、あなたはこれを選んでのけたのですか？
 #result += jtrans("How on earth did you manage to pick this up?").c_str();
 %%%%
 #\n
@@ -4545,6 +4795,7 @@ How on earth did you manage to pick this up?
 %%%%
 Note that Trog doesn't use Invocations, due to its close connection to magic.
 
+トログは魔法に関わりを持っていないため、能力の使用に祈祷スキルを使わないことに注意せよ
 #result += jtrans("Note that Trog doesn't use Invocations, due to its close connection to magic.").c_str();
 %%%%
 #\n
@@ -4553,6 +4804,7 @@ Note that Trog doesn't use Invocations, due to its close connection to magic.
 %%%%
 Note that Nemelex uses Evocations rather than Invocations.
 
+ネメレクスは祈祷スキルよりも発動スキルを使用することに注意せよ
 #result += jtrans("Note that Nemelex uses Evocations rather than Invocations.").c_str();
 %%%%
 #\n
@@ -4561,6 +4813,7 @@ Note that Nemelex uses Evocations rather than Invocations.
 %%%%
 This is the skill all of Nemelex's abilities rely on.
 
+これはネメレクスの全ての能力が頼るスキルだ
 #result += jtrans("This is the skill all of Nemelex's abilities rely on.").c_str();
 %%%%
 #\n
@@ -4569,6 +4822,7 @@ This is the skill all of Nemelex's abilities rely on.
 %%%%
 Keep in mind, though, that Trog will greatly disapprove of this.
 
+トログはこの学習を大きく非難するであろうことを心に留めておくように
 #result += jtrans("Keep in mind, though, that Trog will greatly disapprove of this.").c_str();
 %%%%
 #describe_skill

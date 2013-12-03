@@ -1,5 +1,6 @@
 #
 #dat/dlua/autofight.lua
+#とりあえず必要無さそうなところ、分からないところをコメントアウトしました
 ##############
 %%%%
 weapon
@@ -9,49 +10,50 @@ weapon
 %%%%
 Failed to move towards target.
 
+目標まで向かう事に失敗した
 #crawl.mpr("Failed to move towards target.")
 %%%%
-orc wizard
+#orc wizard
 
 %%%%
-orc_priest
+#orc_priest
 
 #info.orc_priest_wizard = (name == "orc priest" or name == "orc wizard") and 1 or 0
 %%%%
-can_attack
+#can_attack
 
 %%%%
-safe
+#safe
 
 %%%%
-distance
+#distance
 
 %%%%
-constricting_you
+#constricting_you
 
 %%%%
-very_stabbable
+#very_stabbable
 
 %%%%
-injury
+#injury
 
 %%%%
-threat
+#threat
 
 %%%%
-orc_priest_wizard
+#orc_priest_wizard
 
 #flag_order = {"can_attack", "safe", "distance", "constricting_you", "very_stabbable", "injury", "threat", "orc_priest_wizard"}
 %%%%
-Checking: (
+#Checking: (
 
 #--if m then crawl.mpr("Checking: (" .. x .. "," .. y .. ") " .. m:name()) end
 %%%%
-butterfly
+#butterfly
 
 #if m:name() == "butterfly"
 %%%%
-orb of destruction
+#orb of destruction
 
 #or m:name() == "orb of destruction" then
 %%%%
@@ -61,19 +63,19 @@ orb of destruction
 
 #--crawl.mpr("... is firewood.")
 %%%%
-ballistomycete
+#ballistomycete
 
 #if string.find(m:name(), "ballistomycete") then
 %%%%
-false
+#false
 
 #AUTOFIGHT_THROW = string.lower(value) ~= "false"
 %%%%
-false
+#false
 
 #AUTOFIGHT_THROW_NOMOVE = string.lower(value) ~= "false"
 %%%%
-false
+#false
 
 #AUTOFIGHT_FIRE_STOP = string.lower(value) ~= "false"
 %%%%
@@ -102,10 +104,10 @@ No target in range!
 敵が射程内に居ない！
 #crawl.mpr("No target in range!")
 %%%%
-Enabling autothrow.
+#Enabling autothrow.
 
 %%%%
-Disabling autothrow.
+#Disabling autothrow.
 
 #crawl.mpr(AUTOFIGHT_THROW and "Enabling autothrow." or "Disabling autothrow.")
 %%%%

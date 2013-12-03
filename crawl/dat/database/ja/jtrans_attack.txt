@@ -10,10 +10,12 @@ its
 %%%%
 something
 
+何者かの
 #return actor_invisible? jtrans("it").c_str() : jtrans("something").c_str();
 %%%%
 it
 
+その
 #case PRONOUN_SUBJECTIVE:    return jtrans("it").c_str();
 %%%%
 #its
@@ -82,7 +84,7 @@ barely
 僅かに
 #: jtrans("barely");
 %%%%
-attack280%s %s %s%s"
+attack280%s %s %s%s
 
 %s は%sを%s%s
 #jtrans("attack280%s %s %s%s").c_str(),

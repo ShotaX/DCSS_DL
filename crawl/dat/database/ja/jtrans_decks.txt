@@ -42,226 +42,282 @@ This card doesn't seem to belong here.
 %%%%
 the Portal
 
+テレポートのカード
 #case CARD_PORTAL:          return "the Portal";
 %%%%
 the Warp
 
+瞬間移動のカード
 #case CARD_WARP:            return "the Warp";
 %%%%
 Swap
 
+位置交換のカード
 #case CARD_SWAP:            return "Swap";
 %%%%
 Velocity
 
+加速のカード
 #case CARD_VELOCITY:        return "Velocity";
 %%%%
 Damnation
 
+追放のカード
 #case CARD_DAMNATION:       return "Damnation";
 %%%%
 Solitude
 
+孤独のカード
 #case CARD_SOLITUDE:        return "Solitude";
 %%%%
 the Elixir
 
+癒しの霊薬のカード
 #case CARD_ELIXIR:          return "the Elixir";
 %%%%
 Battlelust
 
+戦闘欲求のカード
 #case CARD_BATTLELUST:      return "Battlelust";
 %%%%
 Metamorphosis
 
+変身のカード
 #case CARD_METAMORPHOSIS:   return "Metamorphosis";
 %%%%
 the Helm
 
+兜のカード
 #case CARD_HELM:            return "the Helm";
 %%%%
 the Blade
 
+刃のカード
 #case CARD_BLADE:           return "the Blade";
 %%%%
 the Shadow
 
+影のカード
 #case CARD_SHADOW:          return "the Shadow";
 %%%%
 the Potion
 
+薬のカード
 #case CARD_POTION:          return "the Potion";
 %%%%
 Focus
 
+一点集中のカード
 #case CARD_FOCUS:           return "Focus";
 %%%%
 Shuffle
 
+シャッフルのカード
 #case CARD_SHUFFLE:         return "Shuffle";
 %%%%
 Experience
 
+経験のカード
 #case CARD_EXPERIENCE:      return "Experience";
 %%%%
 the Helix
 
+遺伝子操作のカード
 #case CARD_HELIX:           return "the Helix";
 %%%%
 the Sage
 
+賢人のカード
 #case CARD_SAGE:            return "the Sage";
 %%%%
 Dowsing
 
+探査のカード
 #case CARD_DOWSING:         return "Dowsing";
 %%%%
 the Trowel
 
+職工のカード
 #case CARD_TROWEL:          return "the Trowel";
 %%%%
 the Minefield
 
+地雷原のカード
 #case CARD_MINEFIELD:       return "the Minefield";
 %%%%
 the Stairs
 
+階段のカード
 #case CARD_STAIRS:          return "the Stairs";
 %%%%
 the Genie
 
+魔神のカード
 #case CARD_GENIE:           return "the Genie";
 %%%%
 the Tomb
 
+玄室のカード
 #case CARD_TOMB:            return "the Tomb";
 %%%%
 Water
 
+湧水のカード
 #case CARD_WATER:           return "Water";
 %%%%
 Vitrification
 
+玻璃のカード
 #case CARD_GLASS:           return "Vitrification";
 %%%%
 the Banshee
 
+バンシーのカード
 #case CARD_BANSHEE:         return "the Banshee";
 %%%%
 Wild Magic
 
+でたらめ魔法のカード
 #case CARD_WILD_MAGIC:      return "Wild Magic";
 %%%%
 the Crusade
 
+聖戦のカード
 #case CARD_CRUSADE:         return "the Crusade";
 %%%%
 the Herd
 
+大群のカード
 #case CARD_SUMMON_ANIMAL:   return "the Herd";
 %%%%
 the Pentagram
 
+悪魔召喚のカード
 #case CARD_SUMMON_DEMON:    return "the Pentagram";
 %%%%
 the Dance
 
+踊る武器のカード
 #case CARD_SUMMON_WEAPON:   return "the Dance";
 %%%%
 Foxfire
 
+狐火のカード
 #case CARD_SUMMON_FLYING:   return "Foxfire";
 %%%%
 the Bones
 
+骸骨のカード
 #case CARD_SUMMON_SKELETON: return "the Bones";
 %%%%
 Repulsiveness
 
+不快なるもののカード
 #case CARD_SUMMON_UGLY:     return "Repulsiveness";
 %%%%
 Xom
 
+ゾムのカード
 #case CARD_XOM:             return "Xom";
 %%%%
 Famine
 
+飢餓のカード
 #case CARD_FAMINE:          return "Famine";
 %%%%
 the Feast
 
+御馳走のカード
 #case CARD_FEAST:           return "the Feast";
 %%%%
 Warpwright
 
+転移の罠設置のカード
 #case CARD_WARPWRIGHT:      return "Warpwright";
 %%%%
 Flight
 
+移動のカード
 #case CARD_FLIGHT:          return "Flight";
 %%%%
 Vitriol
 
+強酸のカード
 #case CARD_VITRIOL:         return "Vitriol";
 %%%%
 Flame
 
+火炎のカード
 #case CARD_FLAME:           return "Flame";
 %%%%
 Frost
 
+霜のカード
 #case CARD_FROST:           return "Frost";
 %%%%
 Venom
 
+毒害のカード
 #case CARD_VENOM:           return "Venom";
 %%%%
 the Spark
 
+稲光のカード
 #case CARD_SPARK:           return "the Spark";
 %%%%
 the Hammer
 
+石槌のカード
 #case CARD_HAMMER:          return "the Hammer";
 %%%%
 Pain
 
+激痛のカード
 #case CARD_PAIN:            return "Pain";
 %%%%
 Torment
 
+苦痛のカード
 #case CARD_TORMENT:         return "Torment";
 %%%%
 the Bargain
 
+特売のカード
 #case CARD_BARGAIN:         return "the Bargain";
 %%%%
 Wrath
 
+神罰のカード
 #case CARD_WRATH:           return "Wrath";
 %%%%
 the Wraith
 
+亡霊のカード
 #case CARD_WRAITH:          return "the Wraith";
 %%%%
 the Curse
 
+呪縛のカード
 #case CARD_CURSE:           return "the Curse";
 %%%%
 the Swine
 
+豚のカード
 #case CARD_SWINE:           return "the Swine";
 %%%%
 the Alchemist
 
+錬金術のカード
 #case CARD_ALCHEMIST:       return "the Alchemist";
 %%%%
 the Orb
 
+オーブのカード
 #case CARD_ORB:             return "the Orb";
 %%%%
 the Mercenary
 
+傭兵のカード
 #case CARD_MERCENARY:       return "the Mercenary";
 %%%%
 a buggy card
@@ -317,6 +373,7 @@ You %s a card... It is %s.
 %%%%
 This isn't a deck at all!
 
+これはデッキではない!
 #strm << "This isn't a deck at all!" << endl;
 %%%%
 #cards
@@ -337,6 +394,7 @@ This isn't a deck at all!
 %%%%
 Seems this deck never had any cards in the first place!
 
+まずこのデッキには全くカードが入っていない!
 #strm << "Seems this deck never had any cards in the first place!";
 %%%%
 #cards
@@ -357,6 +415,7 @@ Seems this deck never had any cards in the first place!
 %%%%
 Strange, this deck is already empty.
 
+奇妙なことにこのデッキは既に空だ
 #strm << "Strange, this deck is already empty.";
 %%%%
  But there should have been 
@@ -389,6 +448,7 @@ and whisks it away.
 %%%%
 Oops, all of the cards seem to be gone.
 
+おっと、全てのカードは既に引き切られているようだ
 #strm << "Oops, all of the cards seem to be gone." << endl
 %%%%
 A swarm of software bugs snatches the deck from you 
@@ -401,30 +461,37 @@ and whisks it away.
 %%%%
 Deck was created with zero cards???
 
+0枚のデッキが作成されている？？？
 #strm << "Deck was created with zero cards???" << endl;
 %%%%
 Deck was created with *negative* cards?!
 
+カードがマイナスの枚数のデッキが作成された!?
 #strm << "Deck was created with *negative* cards?!" << endl;
 %%%%
 Deck has more cards than it was created with?
 
+デッキにはそれが作成された時点より多くのカードがある!?
 #strm << "Deck has more cards than it was created with?" << endl;
 %%%%
  more cards than flags.
 
+#wiz
 #strm << (num_cards - num_flags) << " more cards than flags.";
 %%%%
 More cards than flags.
 
+#wiz
 #strm << "More cards than flags.";
 %%%%
  more cards than flags.
 
+#wiz
 #strm << (num_cards - num_flags) << " more cards than flags.";
 %%%%
 More cards than flags.
 
+#wiz
 #strm << "More cards than flags.";
 %%%%
 #num_marked
@@ -433,6 +500,7 @@ More cards than flags.
 %%%%
 More cards marked than in the deck?
 
+デッキに入っている以上のマークされたカードがある?
 #strm << "More cards marked than in the deck?" << endl;
 %%%%
 #num_marked
@@ -445,10 +513,12 @@ More cards marked than in the deck?
 %%%%
 Oops, counted 
 
+#wiz
 #strm << "Oops, counted " << static_cast<int>(num_marked)
 %%%%
  marked cards, but num_marked is 
 
+#wiz
 #<< " marked cards, but num_marked is "
 %%%%
 #num_marked
@@ -465,34 +535,42 @@ Oops, book-keeping on marked cards is wrong.
 %%%%
  cards, or 
 
+#wiz
 #strm << "Have you used " << deck.plus2 << " cards, or "
 %%%%
 ? Oops.
 
+#wiz
 #<< (deck.plus - num_cards) << "? Oops.";
 %%%%
 Oops, book-keeping on used cards is wrong.
 
+#wiz
 #strm << "Oops, book-keeping on used cards is wrong.";
 %%%%
  cards left, not 
 
+#wiz
 #strm << "There are " << num_cards << " cards left, not "
 %%%%
 .  Oops.
 
+#wiz
 #<< (-deck.plus2) << ".  Oops.";
 %%%%
 Oops, book-keeping on cards left is wrong.
 
+#wiz
 #strm << "Oops, book-keeping on cards left is wrong.";
 %%%%
 Problems might not have been completely fixed; 
 
+問題は完全に解決されなかったかもしれません
 #if (!yesno("Problems might not have been completely fixed; "
 %%%%
 still use deck?
 
+デッキを使用しますか？
 #"still use deck?", true, 'n'))
 %%%%
 That isn't a deck!
@@ -502,6 +580,7 @@ That isn't a deck!
 %%%%
 Draw from which deck?
 
+どのデッキを引くか?
 #const int slot = _choose_inventory_deck("Draw from which deck?");
 %%%%
 This is %s.
@@ -511,6 +590,7 @@ This is %s.
 %%%%
 Peek at which deck?
 
+どのデッキを覗き見るか?
 #const int slot = _choose_inventory_deck("Peek at which deck?");
 %%%%
 A card falls out of the deck.
@@ -598,6 +678,7 @@ Nemelex gives you another card to finish dealing.
 %%%%
 No description found.
 
+説明が見つからなかった
 #desc = "No description found.";
 %%%%
 #</w>\n
@@ -610,6 +691,7 @@ No description found.
 %%%%
 Stack which deck?
 
+どのデッキを積み込むか?
 #const int slot = _choose_inventory_deck("Stack which deck?");
 %%%%
 #num_marked
@@ -628,6 +710,7 @@ You can't stack a marked deck.
 %%%%
 The deck only has %d cards.
 
+そのデッキには%dだけのカードがある
 #mprf(jtrans("The deck only has %d cards.").c_str(), num_cards);
 %%%%
 The deck has exactly five cards.
@@ -654,6 +737,7 @@ You draw the first five cards out of %d and discard the rest.
 %%%%
 Press a digit to select a card, then another digit 
 
+カードの数字を選択し、入れ替えたいカードを選択せよ
 #cprintf("Press a digit to select a card, then another digit "
 %%%%
 to swap it.
@@ -662,6 +746,7 @@ to swap it.
 %%%%
 Press ? for the card descriptions, or Enter to 
 
+「?」でカードの説明を見る、またエンターでカードを入れ替える
 #cprintf("Press ? for the card descriptions, or Enter to "
 %%%%
 accept.
@@ -670,14 +755,17 @@ accept.
 %%%%
 Are you done? (press y or Y to confirm)
 
+実行しますか? (y か Y で決定)
 #cprintf("Are you done? (press y or Y to confirm)");
 %%%%
 Triple draw from which deck?
 
+どのデッキから3枚引きますか?
 #const int slot = _choose_inventory_deck("Triple draw from which deck?");
 %%%%
 There's only one card left!
 
+このデッキには1枚のカードしか残っていない!
 #mpr(jtrans("There's only one card left!"));
 %%%%
 You draw... (choose one card, ? for their descriptions)
@@ -739,14 +827,17 @@ Your skill with magical items lets you identify the deck.
 %%%%
 You spin around.
 
+あなたの周囲が開店した
 #mpr(jtrans("You spin around."));
 %%%%
-protects you from inadvertent hurry.
+#protects you from inadvertent hurry.
 
+#は不注意による加速からあなたを守った
 #return simple_god_message(jtrans("protects you from inadvertent hurry.").c_str());
 %%%%
 drawing a card
 
+カードを引いている
 #banished("drawing a card");
 %%%%
 The power of the Abyss blocks your magic.
@@ -766,6 +857,7 @@ A shaft materialises beneath you!
 %%%%
 No stairs available to move.
 
+移動できる階段が無い
 #mpr(jtrans("No stairs available to move."));
 %%%%
 dealt
@@ -784,6 +876,7 @@ You have %s %s.
 %%%%
 You have 
 
+あなたは　を持っている
 #string prompt = "You have ";
 %%%%
  
@@ -796,10 +889,12 @@ You have
 %%%%
 You feel deadly.
 
+あなたは致死性を感じた
 #0, "You feel deadly.");
 %%%%
 You feel your rage building.
 
+あなたは怒りが込みあがってくるのを感じた
 #0, "You feel your rage building.");
 %%%%
 You feel resistant.
@@ -819,10 +914,12 @@ You feel like a smilodon for a moment.
 %%%%
 %s vibrate crazily for a second.
 
+%sが少しの間熱狂的に振動した
 #mprf(jtrans("%s vibrate crazily for a second.").c_str(),
 %%%%
 Your %s twitch.
 
+あなたの%sは痙攣した
 #mprf(jtrans("Your %s twitch.").c_str(), you.hand_name(true).c_str());
 %%%%
 You feel more catlike.
@@ -832,6 +929,7 @@ You feel more catlike.
 %%%%
 You feel stealthy.
 
+あなたは動きが静かになったようだ
 #: jtrans("You feel stealthy."));
 %%%%
 #protects you from inadvertent hurry.
@@ -841,22 +939,27 @@ You feel stealthy.
 %%%%
 the wrath of 
 
+の怒り
 #cause = "the wrath of " + god_name(which_god);
 %%%%
 the capriciousness of Xom
 
+ゾムの気まぐれ
 #cause = "the capriciousness of Xom";
 %%%%
 the 'helpfulness' of 
 
+の手助け
 #cause = "the 'helpfulness' of " + god_name(which_god);
 %%%%
 the Focus card
 
+一点集中のカード
 #const string cause = _god_wrath_stat_check("the Focus card");
 %%%%
 the Shuffle card
 
+シャッフルのカード
 #const string cause = _god_wrath_stat_check("the Shuffle card");
 %%%%
 Shuffle card: Str %d[%d], Int %d[%d], Dex %d[%d]
@@ -875,6 +978,7 @@ You feel knowledgeable.
 %%%%
 helix card
 
+遺伝子操作のカード
 #if (!delete_mutation(RANDOM_BAD_MUTATION, "helix card", false, false, false, true))
 %%%%
 You feel transcendent for a moment.
@@ -882,7 +986,7 @@ You feel transcendent for a moment.
 あなたは一瞬超越したと感じた。
 #mpr(jtrans("You feel transcendent for a moment."));
 %%%%
-helix card
+#helix card
 
 #mutate(RANDOM_MUTATION, "helix card");
 %%%%
@@ -944,6 +1048,7 @@ helix card
 %%%%
 You feel omnipotent.
 
+あなたは全能になったと感じた
 #mpr(jtrans("You feel omnipotent."));  // All skills maxed.
 %%%%
 You feel studious about %s.
@@ -982,6 +1087,7 @@ You sense items nearby.
 %%%%
 You feel telepathic!
 
+あなたはテレパシーを感じた!
 #"You feel telepathic!");
 %%%%
 An altar to %s grows from the floor before you!
@@ -996,6 +1102,7 @@ The dungeon trembles momentarily.
 %%%%
 trowel_portal
 
+職工のポータル
 #const map_def *map = random_map_for_tag("trowel_portal", true, true);
 %%%%
 A portal flickers into view, then vanishes.
@@ -1010,6 +1117,7 @@ A mystic portal forms.
 %%%%
 the Trowel card
 
+職工のカード
 #RANDOM_ELEMENT(statues), "the Trowel card",
 %%%%
 A menacing statue appears!
@@ -1052,10 +1160,12 @@ You feel a malignant aura surround you.
 %%%%
 is converted.
 
+は改宗した
 #simple_monster_message(*mi, jtrans("is converted.").c_str());
 %%%%
 You see a puff of smoke.
 
+あなたはひと吹きの煙を目撃した
 #mpr(jtrans("You see a puff of smoke."));
 %%%%
 #You see a puff of smoke.
@@ -1085,6 +1195,7 @@ You sense the presence of something unfriendly.
 %%%%
 is repulsed!
 
+は撃退された！
 #simple_monster_message(mon, jtrans("is repulsed!").c_str());
 %%%%
 You cannot afford %s fee of %d gold!
@@ -1126,10 +1237,12 @@ joins your ranks!
 %%%%
 %d gold available to spend.
 
+Wiz
 #dprf("%d gold available to spend.", gold_available);
 %%%%
 You feel better.
 
+あなたは気分が良くなった
 #mpr(jtrans("You feel better."));
 %%%%
 Gained %d health, %d gold remaining.
@@ -1138,6 +1251,7 @@ Gained %d health, %d gold remaining.
 %%%%
 You feel your power returning.
 
+あなたは魔法の力が戻ってくるのを感じた
 #mpr(jtrans("You feel your power returning."));
 %%%%
 Gained %d magic, %d gold remaining.
@@ -1159,6 +1273,7 @@ Gained %d magic, %d gold remaining.
 %%%%
 You have %s %s.
 
+あなたは%sを%s
 #mprf(jtrans("You have %s %s.").c_str(), participle, card_name(which_card));
 %%%%
 Xom roars with laughter!
@@ -1173,6 +1288,7 @@ Xom laughs nastily.
 %%%%
 a card of wild magic
 
+でたらめ魔法のカード
 #"a card of wild magic");
 %%%%
 You feel rather smug.
@@ -1187,6 +1303,7 @@ You feel a horrible emptiness.
 %%%%
 You feel like a pig.
 
+あなたは豚になったように感じた
 #mpr(jtrans("You feel like a pig."));
 %%%%
 You have %s a buggy card!
@@ -1243,13 +1360,16 @@ You have %s a buggy card!
 %%%%
 Shuffling: %s on %s
 
+#wiz
 #mprf(MSGCH_DIAGNOSTICS, "Shuffling: %s on %s",
 %%%%
 Shuffling in inventory: %s
 
+#wiz
 #mprf(MSGCH_DIAGNOSTICS, "Shuffling in inventory: %s",
 %%%%
 You hear Nemelex Xobeh chuckle.
 
+あなたはネメレクス・ソベーのくすくす笑いを聞いた
 #god_speaks(GOD_NEMELEX_XOBEH, "You hear Nemelex Xobeh chuckle.");
 %%%%

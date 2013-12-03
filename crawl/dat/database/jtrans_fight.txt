@@ -9,13 +9,16 @@ spectral_weapon
 %%%%
 unarmed?
 
+
 #tmp = "unarmed?";
 %%%%
 wielding %s? 
 
+%sを装備する?
 #tmp = make_stringf(jtrans("wielding %s? ").c_str(), weapon->name(DESC_YOUR));
 %%%%
 Really attack while %s
+
 
 #prompt = make_stringf(jtrans("Really attack while %s").c_str(), tmp.c_str());
 %%%%
