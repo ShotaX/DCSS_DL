@@ -6,22 +6,27 @@ You are blasted by holy energy!
 %%%%
 holy word
 
+聖なる御言葉
 #const char *aux = "holy word";
 %%%%
 scroll of holy word
 
+聖なる御言葉の巻物
 #aux = "scroll of holy word";
 %%%%
 Zin's holy word
 
+『ジン』の聖なる御言葉
 #aux = "Zin's holy word";
 %%%%
 the Shining One's holy word
 
+『輝けるもの』の聖なる御言葉
 #aux = "the Shining One's holy word";
 %%%%
 is blasted by Zin's holy word!
 
+は『ジン』の聖なる御言葉に撃たれた!
 #simple_monster_message(mons, jtrans("is blasted by Zin's holy word!").c_str());
 %%%%
 #convulses!
@@ -56,22 +61,27 @@ Your body is wracked with pain!
 %%%%
 torment
 
+苦痛
 #const char *aux = "torment";
 %%%%
 Symbol of Torment
 
+苦痛の紋章
 #aux = "Symbol of Torment";
 %%%%
 Sceptre of Torment
 
+苦痛の王笏
 #aux = "Sceptre of Torment";
 %%%%
 scroll of torment
 
+苦痛の巻物
 #aux = "scroll of torment";
 %%%%
 Xom's torment
 
+『ゾム』による苦痛
 #aux = "Xom's torment";
 %%%%
 Kikubaaqudgha's torment
@@ -85,22 +95,27 @@ Kikubaaqudgha's torment
 %%%%
 immolation
 
+焼け打ち
 #const char *aux = "immolation";
 %%%%
 a scroll of immolation
 
+焼け打ちの巻物
 #aux = "a scroll of immolation";
 %%%%
 a fiery explosion
 
+火炎の爆発
 #aux = "a fiery explosion";
 %%%%
 an exploding Tome of Destruction
 
+破壊大全の爆発
 #aux = "an exploding Tome of Destruction";
 %%%%
 fiery explosion
 
+火炎の爆発
 #beam.name          = "fiery explosion";
 %%%%
 electric current
@@ -194,14 +209,17 @@ The air twists around and strikes you!
 %%%%
 airstrike
 
+旋風の一撃
 #pbolt.name       = "airstrike";
 %%%%
 by the air
 
+大気によって
 #pbolt.aux_source = "by the air";
 %%%%
 The water rises up and strikes %s!
 
+水は
 #mprf("The water rises up and strikes %s!", defender->name(DESC_THE).c_str());
 %%%%
 The water swirls and strikes %s!
@@ -210,10 +228,12 @@ The water swirls and strikes %s!
 %%%%
 waterstrike
 
+水の一撃
 #pbolt.name       = "waterstrike";
 %%%%
 by the raging water
 
+荒れ狂う水によって
 #pbolt.aux_source = "by the raging water";
 %%%%
 Something feeds on your intellect!
@@ -262,54 +282,67 @@ unknown direct_effect spell: %d
 %%%%
 The dust glows %s!
 
+塵は%sに輝いた!
 #mprf("The dust glows %s!", weird_glowing_colour().c_str());
 %%%%
 The scroll reassembles itself in your %s!
 
+巻き物はあなたの%sの中に再構成された！
 #mprf("The scroll reassembles itself in your %s!",
 %%%%
 %s glows %s for a moment.
 
+%s は一瞬の間%sに輝いた
 #mprf("%s glows %s for a moment.",
 %%%%
 Your %s glow %s for a moment.
 
+あなたの%sは一瞬%sに輝いた
 #mprf("Your %s glow %s for a moment.",
 %%%%
 Your bandages flutter.
 
+あなたの包帯がひらひらと翻った
 #mpr("Your bandages flutter.");
 %%%%
 You smell %s.
 
+あなたは%sの匂いを嗅いだ
 #mprf("You smell %s.", weird_smell().c_str());
 %%%%
 You experience a momentary feeling of inescapable doom!
 
+あなたは一瞬、逃れえぬ破滅の感覚を経験した！
 #mpr("You experience a momentary feeling of inescapable doom!");
 %%%%
 Your brain hurts!
 
+あなたの頭が痛くなった！
 #mpr("Your brain hurts!");
 %%%%
 Your ears itch!
 
+あなたの耳が痛くなった
 #mpr("Your ears itch!");
 %%%%
 Your nose twitches suddenly!
 
+鼻が突然ぴくぴくした！
 #mpr("Your nose twitches suddenly!");
 %%%%
 You hear the tinkle of a tiny bell.
 
+あなたは小さなベルが鳴る音を耳にした
 #mpr("You hear the tinkle of a tiny bell.", MSGCH_SOUND);
 %%%%
 You hear %s.
 
+あなたは%sを聞いた
 #mprf(MSGCH_SOUND, "You hear %s.", weird_sound().c_str());
 %%%%
 Charge which item?
 
+どのアイテムを充填するか?
 #item_slot = prompt_invent_item("Charge which item?", MT_INVLIST,
 %%%%
 Choose an item to recharge, or Esc to abort.
@@ -319,6 +352,7 @@ Choose an item to recharge, or Esc to abort.
 %%%%
  and now has %d charge%s
 
+そして今%dの使用回数がある
 #snprintf(info, INFO_SIZE, " and now has %d charge%s",
 %%%%
 #s

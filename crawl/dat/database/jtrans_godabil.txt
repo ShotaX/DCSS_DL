@@ -1,0 +1,1454 @@
+%%%%
+hordes of the Abyss
+
+#"hordes of the Abyss",
+%%%%
+bastard children of Xom
+
+#"bastard children of Xom",
+%%%%
+amorphous wretches
+
+#"amorphous wretches",
+%%%%
+fetid masses
+
+#"fetid masses",
+%%%%
+agents of filth
+
+#"agents of filth",
+%%%%
+squalid dregs
+
+#"squalid dregs",
+%%%%
+unbelievers
+
+#"unbelievers",
+%%%%
+heretics
+
+#"heretics",
+%%%%
+guilty
+
+#"guilty",
+%%%%
+legions of the damned
+
+#"legions of the damned",
+%%%%
+servants of Hell
+
+#"servants of Hell",
+%%%%
+forces of darkness
+
+#"forces of darkness",
+%%%%
+chaotic
+
+#"chaotic",
+%%%%
+discordant
+
+#"discordant",
+%%%%
+anarchic
+
+#"anarchic",
+%%%%
+unclean
+
+#"unclean",
+%%%%
+impure
+
+#"impure",
+%%%%
+contaminated
+
+#"contaminated",
+%%%%
+unfaithful
+
+#"unfaithful",
+%%%%
+disloyal
+
+#"disloyal",
+%%%%
+doubting
+
+#"doubting",
+%%%%
+profane
+
+#"profane",
+%%%%
+blasphemous
+
+#"blasphemous",
+%%%%
+sacrilegious
+
+#"sacrilegious",
+%%%%
+chaos
+
+#"chaos",
+%%%%
+discord
+
+#"discord",
+%%%%
+anarchy
+
+#"anarchy",
+%%%%
+uncleanliness
+
+#"uncleanliness",
+%%%%
+impurity
+
+#"impurity",
+%%%%
+contamination
+
+#"contamination",
+%%%%
+unfaithfulness
+
+#"unfaithfulness",
+%%%%
+disloyalty
+
+#"disloyalty",
+%%%%
+doubt
+
+#"doubt",
+%%%%
+profanity
+
+#"profanity",
+%%%%
+blasphemy
+
+#"blasphemy",
+%%%%
+sacrilege
+
+#"sacrilege",
+%%%%
+ordered
+
+#"ordered",
+%%%%
+harmonic
+
+#"harmonic",
+%%%%
+lawful
+
+#"lawful",
+%%%%
+clean
+
+#"clean",
+%%%%
+pure
+
+#"pure",
+%%%%
+hygienic
+
+#"hygienic",
+%%%%
+faithful
+
+#"faithful",
+%%%%
+loyal
+
+#"loyal",
+%%%%
+believing
+
+#"believing",
+%%%%
+reverent
+
+#"reverent",
+%%%%
+pious
+
+#"pious",
+%%%%
+obedient
+
+#"obedient",
+%%%%
+order
+
+#"order",
+%%%%
+harmony
+
+#"harmony",
+%%%%
+lawfulness
+
+#"lawfulness",
+%%%%
+cleanliness
+
+#"cleanliness",
+%%%%
+purity
+
+#"purity",
+%%%%
+hygiene
+
+#"hygiene",
+%%%%
+faithfulness
+
+#"faithfulness",
+%%%%
+loyalty
+
+#"loyalty",
+%%%%
+belief
+
+#"belief",
+%%%%
+reverence
+
+#"reverence",
+%%%%
+piety
+
+#"piety",
+%%%%
+obedience
+
+#"obedience",
+%%%%
+purify
+
+#"purify",
+%%%%
+censure
+
+#"censure",
+%%%%
+condemn
+
+#"condemn",
+%%%%
+strike down
+
+#"strike down",
+%%%%
+expel
+
+#"expel",
+%%%%
+oust
+
+#"oust",
+%%%%
+smite
+
+#"smite",
+%%%%
+castigate
+
+#"castigate",
+%%%%
+rebuke
+
+#"rebuke",
+%%%%
+purified
+
+#"purified",
+%%%%
+censured
+
+#"censured",
+%%%%
+condemned
+
+#"condemned",
+%%%%
+struck down
+
+#"struck down",
+%%%%
+expelled
+
+#"expelled",
+%%%%
+ousted
+
+#"ousted",
+%%%%
+smitten
+
+#"smitten",
+%%%%
+castigated
+
+#"castigated",
+%%%%
+rebuked
+
+#"rebuked",
+%%%%
+This is only here because arrays start from 0.
+
+#string turn[4] = {"This is only here because arrays start from 0.",
+%%%%
+Zin is a buggy god.
+
+%%%%
+Please report this.
+
+#"Zin is a buggy god.", "Please report this.",
+%%%%
+This isn't right at all.
+
+#"This isn't right at all."};
+%%%%
+It was the word of Zin that there would not be %s...
+
+#turn[1] = make_stringf("It was the word of Zin that there would not be %s...",
+%%%%
+...and did the people not suffer until they had %s...
+
+#turn[2] = make_stringf("...and did the people not suffer until they had %s...",
+%%%%
+...the %s, after which all was well?
+
+#turn[3] = make_stringf("...the %s, after which all was well?", sinner.c_str());
+%%%%
+The voice of Zin, pure and clear, did say that the %s...
+
+#turn[1] = make_stringf("The voice of Zin, pure and clear, did say that the %s...",
+%%%%
+...were not %s! And hearing this, the people rose up...
+
+#turn[2] = make_stringf("...were not %s! And hearing this, the people rose up...",
+%%%%
+...and embraced %s, for they feared Zin's wrath.
+
+#turn[3] = make_stringf("...and embraced %s, for they feared Zin's wrath.",
+%%%%
+Zin spoke of the doctrine of %s, and...
+
+#turn[1] = make_stringf("Zin spoke of the doctrine of %s, and...",
+%%%%
+...saw the %s filled with fear, for they were...
+
+#turn[2] = make_stringf("...saw the %s filled with fear, for they were...",
+%%%%
+...%s and knew Zin's wrath would come for them.
+
+#turn[3] = make_stringf("...%s and knew Zin's wrath would come for them.",
+%%%%
+And so Zin bade the %s to come before...
+
+#turn[1] = make_stringf("And so Zin bade the %s to come before...",
+%%%%
+...the altar, that judgement might be passed...
+
+#turn[2] = make_stringf("...the altar, that judgement might be passed...");
+%%%%
+...upon those who were not %s.
+
+#turn[3] = make_stringf("...upon those who were not %s.", virtue[0].c_str());
+%%%%
+To the devout, Zin provideth. From the rest...
+
+#turn[1] = make_stringf("To the devout, Zin provideth. From the rest...");
+%%%%
+...ye %s, ye guilty...
+
+#turn[2] = make_stringf("...ye %s, ye guilty...", sinner.c_str());
+%%%%
+...of %s, Zin taketh.
+
+#turn[3] = make_stringf("...of %s, Zin taketh.", sin[1].c_str());
+%%%%
+Zin saw the %s of the %s, and...
+
+#turn[1] = make_stringf("Zin saw the %s of the %s, and...",
+%%%%
+...was displeased, for did the law not say that...
+
+#turn[2] = make_stringf("...was displeased, for did the law not say that...");
+%%%%
+...those who did not become %s would be %s?
+
+#turn[3] = make_stringf("...those who did not become %s would be %s?",
+%%%%
+Zin said that %s shall be the law of the land, and...
+
+#turn[1] = make_stringf("Zin said that %s shall be the law of the land, and...",
+%%%%
+...those who turn to %s will be %s. This was fair...
+
+#turn[2] = make_stringf("...those who turn to %s will be %s. This was fair...",
+%%%%
+...and just, and not a voice dissented.
+
+#turn[3] = make_stringf("...and just, and not a voice dissented.");
+%%%%
+Damned, damned be the %s and...
+
+#turn[1] = make_stringf("Damned, damned be the %s and...", sinner.c_str());
+%%%%
+...all else who abandon %s! Let them...
+
+#turn[2] = make_stringf("...all else who abandon %s! Let them...",
+%%%%
+...be %s by the jurisprudence of Zin!
+
+#turn[3] = make_stringf("...be %s by the jurisprudence of Zin!",
+%%%%
+And Zin said to all in attendance, 'Which of ye...
+
+#turn[1] = make_stringf("And Zin said to all in attendance, 'Which of ye...");
+%%%%
+...number among the %s? Come before me, that...
+
+#turn[2] = make_stringf("...number among the %s? Come before me, that...",
+%%%%
+...I may %s you now for your %s!'
+
+#turn[3] = make_stringf("...I may %s you now for your %s!'",
+%%%%
+Yea, I say unto thee, bring forth...
+
+#turn[1] = make_stringf("Yea, I say unto thee, bring forth...");
+%%%%
+...the %s that they may know...
+
+#turn[2] = make_stringf("...the %s that they may know...", sinner.c_str());
+%%%%
+...the wrath of Zin, and thus be %s!
+
+#turn[3] = make_stringf("...the wrath of Zin, and thus be %s!",
+%%%%
+In a great set of silver scales are weighed the...
+
+#turn[1] = make_stringf("In a great set of silver scales are weighed the...");
+%%%%
+...souls of the %s, and with their %s...
+
+#turn[2] = make_stringf("...souls of the %s, and with their %s...",
+%%%%
+...ways, the balance hath tipped against them!
+
+#turn[3] = make_stringf("...ways, the balance hath tipped against them!");
+%%%%
+It is just that the %s shall be %s...
+
+#turn[1] = make_stringf("It is just that the %s shall be %s...",
+%%%%
+...in due time, for %s is what Zin has declared...
+
+#turn[2] = make_stringf("...in due time, for %s is what Zin has declared...",
+%%%%
+...the law of the land, and Zin's word is law!
+
+#turn[3] = make_stringf("...the law of the land, and Zin's word is law!");
+%%%%
+Thus the people made the covenant of %s with...
+
+#turn[1] = make_stringf("Thus the people made the covenant of %s with...",
+%%%%
+...Zin, and all was good, for they knew that the...
+
+#turn[2] = make_stringf("...Zin, and all was good, for they knew that the...");
+%%%%
+...%s would trouble them no longer.
+
+#turn[3] = make_stringf("...%s would trouble them no longer.", sinner.c_str());
+%%%%
+What of the %s? %s for their...
+
+#turn[1] = make_stringf("What of the %s? %s for their...",
+%%%%
+...%s they shall be! Zin will %s them again...
+
+#turn[2] = make_stringf("...%s they shall be! Zin will %s them again...",
+%%%%
+...and again, and again!
+
+#turn[3] = make_stringf("...and again, and again!");
+%%%%
+And lo, the wrath of Zin did find...
+
+#turn[1] = make_stringf("And lo, the wrath of Zin did find...");
+%%%%
+...them wherever they hid, and the %s...
+
+#turn[2] = make_stringf("...them wherever they hid, and the %s...",
+%%%%
+...were %s for their %s!
+
+#turn[3] = make_stringf("...were %s for their %s!",
+%%%%
+Zin looked out upon the remains of the %s...
+
+#turn[1] = make_stringf("Zin looked out upon the remains of the %s...",
+%%%%
+...and declared it good that they had been...
+
+#turn[2] = make_stringf("...and declared it good that they had been...");
+%%%%
+...%s. And thus justice was done.
+
+#turn[3] = make_stringf("...%s. And thus justice was done.", smite[1].c_str());
+%%%%
+The law of Zin demands thee...
+
+#turn[1] = make_stringf("The law of Zin demands thee...");
+%%%%
+...be %s, and that the punishment for %s...
+
+#turn[2] = make_stringf("...be %s, and that the punishment for %s...",
+%%%%
+...shall be swift and harsh!
+
+#turn[3] = make_stringf("...shall be swift and harsh!");
+%%%%
+It was then that Zin bade them...
+
+#turn[1] = make_stringf("It was then that Zin bade them...");
+%%%%
+...not to stray from %s, lest...
+
+#turn[2] = make_stringf("...not to stray from %s, lest...", virtue[1].c_str());
+%%%%
+...they become as damned as the %s.
+
+#turn[3] = make_stringf("...they become as damned as the %s.", sinner.c_str());
+%%%%
+Only the %s shall be judged worthy, and...
+
+#turn[1] = make_stringf("Only the %s shall be judged worthy, and...",
+%%%%
+...all the %s will be found wanting. Such is...
+
+#turn[2] = make_stringf("...all the %s will be found wanting. Such is...",
+%%%%
+...the word of Zin, and such is the law!
+
+#turn[3] = make_stringf("...the word of Zin, and such is the law!");
+%%%%
+To those who would swear an oath of %s on my altar...
+
+#turn[1] = make_stringf("To those who would swear an oath of %s on my altar...",
+%%%%
+...I bring ye salvation. To the rest, ye %s...
+
+#turn[2] = make_stringf("...I bring ye salvation. To the rest, ye %s...",
+%%%%
+...and the %s, the name of Zin shall be thy damnation.
+
+#turn[3] = make_stringf("...and the %s, the name of Zin shall be thy damnation.",
+%%%%
+And Zin decreed that the people would be...
+
+#turn[1] = make_stringf("And Zin decreed that the people would be...");
+%%%%
+...protected from %s in all its forms, and...
+
+#turn[2] = make_stringf("...protected from %s in all its forms, and...",
+%%%%
+...preserved in their %s for all the days to come.
+
+#turn[3] = make_stringf("...preserved in their %s for all the days to come.",
+%%%%
+For those who would enter Zin's holy bosom...
+
+#turn[1] = make_stringf("For those who would enter Zin's holy bosom...");
+%%%%
+...and live in %s, Zin provideth. Such is...
+
+#turn[2] = make_stringf("...and live in %s, Zin provideth. Such is...",
+%%%%
+...the covenant, and such is the way of things.
+
+#turn[3] = make_stringf("...the covenant, and such is the way of things.");
+%%%%
+Zin hath not damned the %s, but it is they...
+
+#turn[1] = make_stringf("Zin hath not damned the %s, but it is they...",
+%%%%
+...that have damned themselves for their %s, for...
+
+#turn[2] = make_stringf("...that have damned themselves for their %s, for...",
+%%%%
+...did Zin not decree that to be %s was wrong?
+
+#turn[3] = make_stringf("...did Zin not decree that to be %s was wrong?",
+%%%%
+And Zin, furious at their %s, held...
+
+#turn[1] = make_stringf("And Zin, furious at their %s, held...", sin[1].c_str());
+%%%%
+...aloft a silver sceptre! The %s...
+
+#turn[2] = make_stringf("...aloft a silver sceptre! The %s...", sinner.c_str());
+%%%%
+...were %s, and thus the way of things was maintained.
+
+#turn[3] = make_stringf("...were %s, and thus the way of things was maintained.",
+%%%%
+When the law of the land faltered, Zin rose...
+
+#turn[1] = make_stringf("When the law of the land faltered, Zin rose...");
+%%%%
+...from the silver throne, and the %s were...
+
+#turn[2] = make_stringf("...from the silver throne, and the %s were...",
+%%%%
+...%s. And it was thus that the law was made good.
+
+#turn[3] = make_stringf("...%s. And it was thus that the law was made good.",
+%%%%
+Zin descended from on high in a silver chariot...
+
+#turn[1] = make_stringf("Zin descended from on high in a silver chariot...");
+%%%%
+...to %s the %s for their...
+
+#turn[2] = make_stringf("...to %s the %s for their...",
+%%%%
+...%s, and thus judgement was rendered.
+
+#turn[3] = make_stringf("...%s, and thus judgement was rendered.",
+%%%%
+The %s stood before Zin, and in that instant...
+
+#turn[1] = make_stringf("The %s stood before Zin, and in that instant...",
+%%%%
+...they knew they would be found guilty of %s...
+
+#turn[2] = make_stringf("...they knew they would be found guilty of %s...",
+%%%%
+...for that is the word of Zin, and Zin's word is law.
+
+#turn[3] = make_stringf("...for that is the word of Zin, and Zin's word is law.");
+%%%%
+Hail Satan.
+
+#string recite = "Hail Satan.";
+%%%%
+Abominations
+
+#string bookname = (prayertype == RECITE_CHAOTIC)  ?  "Abominations"  :
+%%%%
+Ablutions
+
+#(prayertype == RECITE_IMPURE)   ?  "Ablutions"     :
+%%%%
+Apostates
+
+#(prayertype == RECITE_HERETIC)  ?  "Apostates"     :
+%%%%
+Anathema
+
+#(prayertype == RECITE_UNHOLY)   ?  "Anathema"      :
+%%%%
+Alliances
+
+#(prayertype == RECITE_ALLY)     ?  "Alliances"     :
+%%%%
+Bugginess
+
+#"Bugginess";
+%%%%
+:
+
+#numbers << ":";
+%%%%
+ 
+
+#recite = bookname + " " + numbers.str();
+%%%%
+Eligibility: %s
+
+#dprf("Eligibility: %s", elig.c_str());
+%%%%
+Finish your current sermon first, please.
+
+#mpr("Finish your current sermon first, please.");
+%%%%
+You're too short of breath to recite.
+
+あなたは朗読により息切れした
+#mpr(jtrans("You're too short of breath to recite."));
+%%%%
+Abominations (harms the forces of chaos and mutation)
+
+#"Abominations (harms the forces of chaos and mutation)",
+%%%%
+Ablutions (harms the unclean and corporeal undead)
+
+#"Ablutions (harms the unclean and corporeal undead)",
+%%%%
+Apostates (harms the faithless and heretics)
+
+#"Apostates (harms the faithless and heretics)",
+%%%%
+Anathema (harms demons and incorporeal undead)
+
+#"Anathema (harms demons and incorporeal undead)",
+%%%%
+Alliances (blesses intelligent allies)
+
+#"Alliances (blesses intelligent allies)",
+%%%%
+No audience found!
+
+#dprf("No audience found!");
+%%%%
+No sensible audience found!
+
+#dprf("No sensible audience found!");
+%%%%
+Recite a passage from which book of the Axioms of Law?
+
+法の公理の本の一節を暗唱しますか？
+#mpr(jtrans("Recite a passage from which book of the Axioms of Law?"), MSGCH_PROMPT);
+%%%%
+    [%c] - %s
+
+#mprf("    [%c] - %s", 'a' + menu_cnt, zin_book_desc[i]);
+%%%%
+guffaws at your puny god.
+
+はあなたのちっぽけ神に大笑いした
+#simple_monster_message(mon, jtrans("guffaws at your puny god.").c_str());
+%%%%
+sneers at your recitation.
+
+はあなたの朗読を嘲笑っている
+#simple_monster_message(mon, jtrans("sneers at your recitation.").c_str());
+%%%%
+invalid recite type
+
+#die("invalid recite type");
+%%%%
+nods off for a moment.
+
+は一瞬うなずいた
+#simple_monster_message(mon, jtrans("nods off for a moment.").c_str());
+%%%%
+is dazed by your recitation.
+
+はあなたの朗読に夢中になった
+#simple_monster_message(mon, jtrans("is dazed by your recitation.").c_str());
+%%%%
+is confused by your recitation.
+
+はあなたの朗読によって困惑した
+#simple_monster_message(mon, jtrans("is confused by your recitation.").c_str());
+%%%%
+stumbles about in disarray.
+
+は混乱によって躓いた
+#simple_monster_message(mon, jtrans("stumbles about in disarray.").c_str());
+%%%%
+is terrified by your recitation.
+
+はあなたの朗読に恐れをなした
+#simple_monster_message(mon, jtrans("is terrified by your recitation.").c_str());
+%%%%
+tries to escape the wrath of Zin.
+
+はジンの怒りから逃れようと試みた
+#simple_monster_message(mon, jtrans("tries to escape the wrath of Zin.").c_str());
+%%%%
+flees in terror at the wrath of Zin!
+
+はジンの怒りに恐怖し逃げ出した！
+#simple_monster_message(mon, jtrans("flees in terror at the wrath of Zin!").c_str());
+%%%%
+is awed by your recitation.
+
+はあなたの朗読に畏敬の念を抱いている
+#minor ? jtrans("is awed by your recitation.").c_str()
+%%%%
+is aghast at the heresy of your recitation.
+
+は異端じみたあなたの朗読に驚愕している
+#: jtrans("is aghast at the heresy of your recitation.").c_str());
+%%%%
+'s eyes and ears begin to bleed.
+
+の目と耳から血が流れ始めた
+#simple_monster_message(mon, jtrans("'s eyes and ears begin to bleed.").c_str());
+%%%%
+%s bleeds profusely from %s eyes and ears.
+
+%s の眼と耳からやたらと出血した
+#mprf(jtrans("%s bleeds profusely from %s eyes and ears.").c_str(),
+%%%%
+'s chaotic flesh is covered in bleeding sores.
+
+の混沌の肉体は傷で爛れた
+#minor ? jtrans("'s chaotic flesh is covered in bleeding sores.").c_str()
+%%%%
+'s chaotic flesh erupts into weeping sores!
+
+の混沌の肉体に涙を流す程の傷が噴出した！
+#: jtrans("'s chaotic flesh erupts into weeping sores!").c_str());
+%%%%
+'s impure flesh is covered in bleeding sores.
+
+の不浄な肉体は傷で爛れた
+#minor ? jtrans("'s impure flesh is covered in bleeding sores.").c_str()
+%%%%
+'s impure flesh erupts into weeping sores!
+
+の不浄な肉体に涙を流す程の傷が噴出した！
+#: jtrans("'s impure flesh erupts into weeping sores!").c_str());
+%%%%
+bad recite bleed
+
+#die("bad recite bleed");
+%%%%
+is smitten by the wrath of Zin.
+
+はジンの憤怒に撃ちのめされた
+#simple_monster_message(mon, jtrans("is smitten by the wrath of Zin.").c_str());
+%%%%
+is blasted by the fury of Zin!
+
+はジンの激怒に焼き焦がされた！
+#simple_monster_message(mon, jtrans("is blasted by the fury of Zin!").c_str());
+%%%%
+is struck blind by the wrath of Zin!
+
+はジンの憤怒によって盲目にされた!
+#simple_monster_message(mon, jtrans("is struck blind by the wrath of Zin!").c_str());
+%%%%
+is limned with silver light.
+
+は銀の輝きによって描写された
+#simple_monster_message(mon, jtrans("is limned with silver light.").c_str());
+%%%%
+quails at your recitation.
+
+はあなたの朗読にひるんだ
+#minor ? jtrans("quails at your recitation.").c_str()
+%%%%
+looks feeble and powerless before your recitation.
+
+はあなたの朗読の前にして脆く、無力になったように見える
+#: jtrans("looks feeble and powerless before your recitation.").c_str());
+%%%%
+is struck mute by the wrath of Zin!
+
+はジンの憤怒によって音を消された！
+#simple_monster_message(mon, jtrans("is struck mute by the wrath of Zin!").c_str());
+%%%%
+is driven mad by the wrath of Zin!
+
+はジンの憤怒にイライラした！
+#simple_monster_message(mon, jtrans("is driven mad by the wrath of Zin!").c_str());
+%%%%
+is left stupefied by the wrath of Zin!
+
+はジンの激怒によって感覚を麻痺させられた！
+#simple_monster_message(mon, jtrans("is left stupefied by the wrath of Zin!").c_str());
+%%%%
+'s chaotic flesh sizzles and spatters!
+
+の混沌の肉体はジュージューと音をたて、弾けた！
+#(damage < 25) ? jtrans("'s chaotic flesh sizzles and spatters!").c_str() :
+%%%%
+'s chaotic flesh bubbles and boils.
+
+の混沌の肉体は泡立ち、茹であがった
+#(damage < 50) ? jtrans("'s chaotic flesh bubbles and boils.").c_str()
+%%%%
+'s chaotic flesh runs like molten wax.
+
+の混沌の肉体は溶解し溶岩のようになった
+#: jtrans("'s chaotic flesh runs like molten wax.").c_str());
+%%%%
+melts away into a sizzling puddle of chaotic flesh.
+
+の混沌の肉体はジュージューと水たまりのように融けだした
+#jtrans("melts away into a sizzling puddle of chaotic flesh.").c_str());
+%%%%
+'s impure flesh begins to rot away.
+
+の不浄な肉体は腐り始めた
+#minor ? jtrans("'s impure flesh begins to rot away.").c_str()
+%%%%
+'s impure flesh sloughs off!
+
+の不浄な肉体は肉が削げ落ちた！
+#: jtrans("'s impure flesh sloughs off!").c_str());
+%%%%
+is turned into a pillar of salt by the wrath of Zin!
+
+はジンの激怒によって塩の柱になった！
+#simple_monster_message(mon, jtrans("is turned into a pillar of salt by the wrath of Zin!").c_str());
+%%%%
+Your recitation is interrupted.
+
+あなたの朗読は中断させられた
+#mpr("Your recitation is interrupted.", MSGCH_DURATION);
+%%%%
+You feel short of breath.
+
+あなたは息切れを感じた
+#mpr("You feel short of breath.");
+%%%%
+grants you divine stamina.
+
+はあなたに神聖なスタミナを与えた
+#simple_god_message(jtrans("grants you divine stamina.").c_str());
+%%%%
+#
+#
+#notify_stat_change(STAT_STR, stamina_amt, true, "");
+%%%%
+#
+#
+#notify_stat_change(STAT_INT, stamina_amt, true, "");
+%%%%
+#
+#
+#notify_stat_change(STAT_DEX, stamina_amt, true, "");
+%%%%
+Your divine stamina fades away.
+
+あなたの神聖なスタミナは消え去った
+#mpr(jtrans("Your divine stamina fades away."), MSGCH_DURATION);
+%%%%
+Zin's divine stamina running out
+
+#true, "Zin's divine stamina running out");
+%%%%
+#Zin's divine stamina running out
+#
+#true, "Zin's divine stamina running out");
+%%%%
+#Zin's divine stamina running out
+#
+#true, "Zin's divine stamina running out");
+%%%%
+You have no mutations to be cured!
+
+あなたは治すべき突然変異を持っていない！
+#mpr(jtrans("You have no mutations to be cured!"));
+%%%%
+draws all chaos from your body!
+
+あなたの肉体の全ての混沌は取り除かれた！
+#simple_god_message(jtrans("draws all chaos from your body!").c_str());
+%%%%
+Zin's power
+
+#delete_all_mutations("Zin's power");
+%%%%
+You hear a choir sing!
+
+あなたは聖歌隊の歌声を聴いた！
+#mpr(jtrans("You hear a choir sing!"), MSGCH_SOUND);
+%%%%
+You are suddenly bathed in radiance!
+
+あなたは突然輝きを帯びた！
+#mpr(jtrans("You are suddenly bathed in radiance!"));
+%%%%
+Your shield is strengthened by %s divine power.
+
+あなたの盾は %s の神聖な力によって強化されている
+#mprf(jtrans("Your shield is strengthened by %s divine power.").c_str(),
+%%%%
+A divine shield forms around you!
+
+神聖な盾があなたの周りに形成された！
+#mpr(jtrans("A divine shield forms around you!"));
+%%%%
+Your divine shield is renewed.
+
+あなたの神聖な盾は新しくなった
+#mpr(jtrans("Your divine shield is renewed."));
+%%%%
+Your divine shield disappears!
+
+あなたの神聖な盾は消え去った
+#mpr(jtrans("Your divine shield disappears!"), MSGCH_DURATION);
+%%%%
+You feel purified!
+
+あなたは浄化された！
+#mpr(jtrans("You feel purified!"));
+%%%%
+%s grants you divine vigour.
+
+%sは神聖な活力を与えた
+#mprf(jtrans("%s grants you divine vigour.").c_str(), god_name(GOD_ELYVILON).c_str());
+%%%%
+Your divine vigour fades away.
+
+あなたの神聖な活力は消え去った
+#mpr(jtrans("Your divine vigour fades away."), MSGCH_DURATION);
+%%%%
+Burning your own %s might not be such a smart idea!
+
+あなたの足元の魔法書を燃やすことは賢い考えではない
+#mprf(jtrans("Burning your own %s might not be such a smart idea!").c_str(),
+%%%%
+Won't ignite {!D} inscribed spellbook.
+
+燃やしたくない魔法書には {!D} を刻め
+#mpr(jtrans("Won't ignite {!D} inscribed spellbook."));
+%%%%
+Burned spellbook rarity: %d
+
+#dprf("Burned spellbook rarity: %d", rarity);
+%%%%
+The fire roars with new energy!
+
+炎は新たな力と共に燃え上がった！
+#mpr(jtrans("The fire roars with new energy!"));
+%%%%
+The spellbook burst into flames.
+
+魔法書は炎上した
+#mprf(MSGCH_GOD, "%s", jtrans("The spellbook burst into flames.").c_str());
+%%%%
+is delighted!
+
+は大喜びしている！
+#simple_god_message(jtrans("is delighted!").c_str(), GOD_TROG);
+%%%%
+The spellbook fail to ignite!
+
+魔法書の発火に失敗した
+#mprf("%s",jtrans("The spellbook fail to ignite!").c_str());
+%%%%
+You cannot see a spellbook to ignite!
+
+発火する魔法書が見当たらない！
+#mpr(jtrans("You cannot see a spellbook to ignite!"));
+%%%%
+You %s prayer to %s.
+
+あなたは %s に祈りを%s
+#mprf(MSGCH_PRAY, jtrans("You %s prayer to %s.").c_str(),
+%%%%
+renew your
+
+再び奉げた
+#you.duration[DUR_JELLY_PRAYER] ? jtrans("renew your").c_str() 
+%%%%
+offer a
+
+奉げた
+#: jtrans("offer a").c_str());
+%%%%
+The nearby slimes join your prayer.
+
+周囲のスライム達はあなたの祈りに続いた
+#mpr(jtrans("The nearby slimes join your prayer."), MSGCH_PRAY);
+%%%%
+A nearby slime joins your prayer.
+
+周囲のスライムはあなたの祈りに続いた
+#mpr(jtrans("A nearby slime joins your prayer."), MSGCH_PRAY);
+%%%%
+You have no bad mutations to be cured!
+
+あなたには治すべき悪性変異が無い！
+#mpr(jtrans("You have no bad mutations to be cured!"));
+%%%%
+Jiyva's power
+
+#if (!delete_mutation(RANDOM_BAD_MUTATION, "Jiyva's power", true, false, true, true))
+%%%%
+You feel cleansed.
+
+あなたは綺麗になったと感じた。
+#mpr(jtrans("You feel cleansed."));
+%%%%
+#
+#
+#MHITYOU, &you, "", GOD_YREDELEMNUL);
+%%%%
+#
+#
+#MHITYOU, &you, "", GOD_YREDELEMNUL) < 0)
+%%%%
+There are no remains here to animate!
+
+ここには蘇生するための死体がない！
+#mpr(jtrans("There are no remains here to animate!"));
+%%%%
+%s soul %s.
+
+%sの魂は%s
+#mprf(jtrans("%s soul %s.").c_str(), whose.c_str(),
+%%%%
+is now yours
+
+もうあなたの物だ！
+#!force_hostile ? jtrans("is now yours").c_str() 
+%%%%
+fights you
+
+あなたに抵抗している！
+#: jtrans("fights you").c_str());
+%%%%
+kiku_receive_corpses() power: %d
+
+#dprf("kiku_receive_corpses() power: %d", pow);
+%%%%
+#never_hide
+#
+#mitm[index_of_corpse_created].props["never_hide"] = true;
+%%%%
+delivers you corpses!
+
+はあなたに幾つかの死体を届けた！
+#simple_god_message(corpses_created > 1 ? jtrans("delivers you corpses!").c_str()
+%%%%
+delivers you a corpse!
+
+はあなたに死体を届けた！
+#: jtrans("delivers you a corpse!").c_str());
+%%%%
+can find no cadavers for you!
+
+はあなたに届けることが出来る死体が無い！
+#simple_god_message(jtrans("can find no cadavers for you!").c_str());
+%%%%
+lightning arc
+
+#&& beam.name != "lightning arc"
+%%%%
+'s flesh rots away.
+
+の死体は腐った
+#simple_monster_message(target, jtrans("'s flesh rots away.").c_str());
+%%%%
+rots away and dies.
+
+は腐り、そして崩れた
+#simple_monster_message(target, jtrans("rots away and dies.").c_str());
+%%%%
+That felt like a moral victory.
+
+それは道徳的な勝利のように感じた
+#mpr(jtrans("That felt like a moral victory."));
+%%%%
+appreciates your contribution to the ecosystem.
+
+はあなたの生態系への貢献を高く評価している
+#simple_god_message(jtrans("appreciates your contribution to the ecosystem.").c_str());
+%%%%
+A plant, strengthened by %s, grows up from the ground.
+
+%sによって頑丈にされた迷宮草が地面から生えてきた
+#mprf(jtrans("A plant, strengthened by %s, grows up from the ground.").c_str(),
+%%%%
+A plant grows up from the ground.
+
+迷宮草が地面から生えて来た
+#mpr(jtrans("A plant grows up from the ground."));
+%%%%
+Select sunlight destination.
+
+#args.top_prompt = "Select sunlight destination.";
+%%%%
+In the bright light, you notice %s.
+
+あなたは眩しい光の中に、%sを感知した
+#mprf(jtrans("In the bright light, you notice %s.").c_str(), revealed_count == 1 ?
+%%%%
+an invisible shape
+
+透明な存在
+#jtrans("an invisible shape").c_str() 
+%%%%
+some invisible shapes
+
+幾多の透明な存在
+# : jtrans("some invisible shapes").c_str());
+%%%%
+Some water evaporates in the bright sunlight.
+
+水は眩しい日光の中で蒸発した
+#mpr(jtrans("Some water evaporates in the bright sunlight."));
+%%%%
+# max) 
+#
+#msg::streams(MSGCH_PROMPT) << prompt << " (" << max << " max) " << endl;
+%%%%
+%d pieces of fruit are consumed!
+
+%dの果物が消費された！
+#mprf(jtrans("%d pieces of fruit are consumed!").c_str(), total_decrease);
+%%%%
+A piece of fruit is consumed!
+
+果物が消費された！
+#mpr(jtrans("A piece of fruit is consumed!"));
+%%%%
+No empty adjacent squares.
+
+隣接する生育可能な空間が無い
+#mpr(jtrans("No empty adjacent squares."));
+%%%%
+No fruit available.
+
+利用できるフルーツが無い
+#mpr(jtrans("No fruit available."));
+%%%%
+How many plants will you create?
+
+#"How many plants will you create?"))
+%%%%
+%s grow in the rain.
+
+は雨の中で成長した
+#mprf(jtrans("%s grow in the rain.").c_str(),
+%%%%
+A plant
+
+#(spawned_count > 1 ? "Some plants" : "A plant"));
+%%%%
+Will you create these spores?
+
+本当に巨大胞子を作りますか？
+#if (interactive && yesnoquit(jtrans("Will you create these spores?").c_str(),
+%%%%
+The mold grows into a ballistomycete.
+
+菌糸は射出菌糸の中で成長した
+#mpr(jtrans("The mold grows into a ballistomycete."));
+%%%%
+Your piety has decreased.
+
+あなたの信仰値は消費された
+#mpr(jtrans("Your piety has decreased."));
+%%%%
+No evolvable flora in sight.
+
+視界内に進化できる植物が無い
+#mpr(jtrans("No evolvable flora in sight."));
+%%%%
+Select plant or fungus to evolve.
+
+#args.top_prompt = "Select plant or fungus to evolve.";
+%%%%
+The tree has already reached the pinnacle of evolution.
+
+その木は既に成長の限界に達している
+#mpr(jtrans("The tree has already reached the pinnacle of evolution."));
+%%%%
+You must target a plant or fungus.
+
+あなたは菌糸か迷宮草を目標にしなければならない
+#mpr(jtrans("You must target a plant or fungus."));
+%%%%
+You can evolve only complete plants, not seeds.
+
+あなたは種ではなく完全な植物しか進化させることができない
+#mpr(jtrans("You can evolve only complete plants, not seeds."));
+%%%%
+has already reached the pinnacle of evolution.
+
+は既に成長の限界に達している
+#simple_monster_message(plant, jtrans("has already reached the pinnacle of evolution.").c_str());
+%%%%
+Only plants or fungi may be evolved.
+
+迷宮草か菌糸だけを進化させることができる
+#mpr(jtrans("Only plants or fungi may be evolved."));
+%%%%
+Not enough fruit available.
+
+充分な果物が無い
+#mpr(jtrans("Not enough fruit available."));
+%%%%
+Not enough piety available.
+
+充分な信仰値がない
+#mpr(jtrans("Not enough piety available."));
+%%%%
+can now spit acid
+
+酸を吐くことができる
+#string evolve_desc = jtrans("can now spit acid");
+%%%%
+continuously
+
+:際限なく連続的に
+#evolve_desc += jtrans("continuously");
+%%%%
+quickly
+
+:迅速に
+#evolve_desc += jtrans("quickly");
+%%%%
+rather quickly
+
+:だいぶ迅速に
+#evolve_desc += jtrans("rather quickly");
+%%%%
+somewhat quickly
+
+:少し早く
+#evolve_desc += jtrans("somewhat quickly");
+%%%%
+#
+#
+#evolve_desc += "";
+%%%%
+appears stronger.
+
+は強力になった
+#simple_monster_message(plant, jtrans("appears stronger.").c_str());
+%%%%
+can now pick up its mycelia and move.
+
+は菌糸体を取り込み動くことができるようになった
+#jtrans("can now pick up its mycelia and move.").c_str());
+%%%%
+appears agitated.
+
+は攪拌された
+#simple_monster_message(plant, jtrans("appears agitated.").c_str());
+%%%%
+Your piety has decreased.
+
+#mpr(jtrans("Your piety has decreased."));
+%%%%
+%s basks in the distortional energy.
+
+は歪曲エネルギーによって満たされた
+#mprf(jtrans("%s basks in the distortional energy.").c_str(),
+%%%%
+Space bends %saround you!
+
+あなたの周囲の空間が%s歪んだ
+%%%%
+sharply
+
+くっきりと
+#mprf(jtrans("Space bends %saround you!").c_str(), area_warp ? jtrans("sharply").c_str() : "");
+%%%%
+a spatial distortion
+
+#ouch(damage, NON_MONSTER, KILLED_BY_WILD_MAGIC, "a spatial distortion");
+%%%%
+The flow of time bends around you.
+
+あなたの周囲の時間の流れが曲がった
+#mpr(jtrans("The flow of time bends around you."));
+%%%%
+#%s%s
+#
+#mprf("%s%s",
+%%%%
+rebukes %s.
+
+%sを譴責した
+#make_stringf(jtrans("rebukes %s.").c_str(),
+%%%%
+There's no one hasty visible. Invoke Slouch anyway?
+
+#if (!yesno("There's no one hasty visible. Invoke Slouch anyway?",
+%%%%
+hurt
+
+#if (stop_attack_prompt(hitfunc, "hurt", _act_slouchable))
+%%%%
+You can feel time thicken for a moment.
+
+あなたは一瞬時間を厚く感じることができる
+#mpr(jtrans("You can feel time thicken for a moment."));
+%%%%
+your speed is %d
+
+#dprf("your speed is %d", player_movement_speed());
+%%%%
+You warp the flow of time around you!
+
+あなたは周囲の時間の流れを歪ませた！
+#mpr(jtrans("You warp the flow of time around you!"));
+%%%%
+You step out of the flow of time.
+
+あなたは時間の流れの外に出た
+#mpr(jtrans("You step out of the flow of time."));
+%%%%
+You return to the normal time flow.
+
+あなたは通常の時間の流れの中に戻った
+#mpr(jtrans("You return to the normal time flow."));
+%%%%
+As you forget about %s, you feel ready to understand %s.
+
+あなたは%sスキルを忘れることで、%sスキルを学ぶ準備が出来たと感じる
+#mprf(jtrans("As you forget about %s, you feel ready to understand %s.").c_str(),
+%%%%
+You are currently transferring knowledge from %s to %s.
+
+現在あなたは%sから%sに知識の移行を行っている
+#mprf(jtrans("You are currently transferring knowledge from %s to %s.").c_str(),
+%%%%
+Are you sure you want to cancel the transfer?
+
+この知識の移行を中止しますか？
+#if (!yesno(jtrans("Are you sure you want to cancel the transfer?").c_str(), false, 'n'))
+%%%%
+You %s forgetting about %s and learning about %s.
+
+あなたは%sを忘れ、%sを学習することを%s
+#mprf(jtrans("You %s forgetting about %s and learning about %s.").c_str(),
+%%%%
+have finished
+
+完了した
+%%%%
+stoplearn
+
+中止した
+#finished ? jtrans("have finished").c_str() : jtrans("stoplearn").c_str(),
+%%%%
+#orc_priest_apostate
+#
+#mprf(MSGCH_TALK, "%s", getSpeakString("orc_priest_apostate").c_str());
+%%%%
+The priest welcomes you and lets you live.
+
+#mpr("The priest welcomes you and lets you live.");
+%%%%
+With a roar of approval, the orcs welcome you as one of their own, 
+
+#mprf("With a roar of approval, the orcs welcome you as one of their own, "
+%%%%
+and spare your life.
+
+#"and spare your life.");
+%%%%

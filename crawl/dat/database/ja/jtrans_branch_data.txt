@@ -1,9 +1,11 @@
 %%%%
 Dungeon
 
+ダンジョン
 %%%%
 the Dungeon
 
+ダンジョン
 %%%%
 D
 
@@ -11,184 +13,237 @@ D
 %%%%
 Temple
 
+寺院
 %%%%
 the Ecumenical Temple
 
+諸宗派の寺院
 %%%%
 Temple
 
+宗
 #"Temple", "the Ecumenical Temple", "Temple",
 %%%%
 the Orcish Mines
 
+オークの坑道
 %%%%
 Orcish Mines
 
+オークの坑道
 %%%%
 Orc
 
+オーク
 #"Orcish Mines", "the Orcish Mines", "Orc",
 %%%%
 Elven Halls
 
+エルフの大広間
 %%%%
 the Elven Halls
 
+エルフの大広間
 %%%%
 Elf
 
+エルフ
 #"Elven Halls", "the Elven Halls", "Elf",
 %%%%
 Dwarven Hall
 
+ドワーフの大広間
 %%%%
 the Dwarven Hall
 
+ドワーフの大広間
 %%%%
 Dwarf
 
+ドワーフ
 #"Dwarven Hall", "the Dwarven Hall", "Dwarf",
 %%%%
 the Lair of Beasts
 
+獣の棲み処
 %%%%
 Lair
 
+獣
 #"Lair", "the Lair of Beasts", "Lair",
 %%%%
 Swamp
 
+沼
 %%%%
 the Swamp
 
+沼
 #"Swamp", "the Swamp", "Swamp",
 %%%%
 Shoals
 
+浅瀬
 %%%%
 the Shoals
 
+浅瀬
 #"Shoals", "the Shoals", "Shoals",
 %%%%
 Snake Pit
 
+蛇穴
 %%%%
 the Snake Pit
 
+蛇穴
 %%%%
 Snake
 
+蛇
 #"Snake Pit", "the Snake Pit", "Snake",
 %%%%
 Spider Nest
 
+蜘蛛の巣
 %%%%
 the Spider Nest
 
+蜘蛛の巣
 %%%%
 Spider
 
+蜘蛛
 #"Spider Nest", "the Spider Nest", "Spider",
 %%%%
 Slime Pits
 
+スライムの穴ぐら
 %%%%
 the Pits of Slime
 
+スライムの穴ぐら
 %%%%
 Slime
 
+スライム
 #"Slime Pits", "the Pits of Slime", "Slime",
 %%%%
 Vaults
 
+宝物庫
 %%%%
 the Vaults
 
+宝物庫
 #"Vaults", "the Vaults", "Vaults",
 %%%%
 Hall of Blades
 
+刃の広間
 %%%%
 the Hall of Blades
 
+刃の広間
 %%%%
 Blade
 
+刃
 #"Hall of Blades", "the Hall of Blades", "Blade",
 %%%%
 Crypt
 
+墓地
 %%%%
 the Crypt
 
+地下墓地
 #"Crypt", "the Crypt", "Crypt",
 %%%%
 Tomb
 
+霊廟
 %%%%
 the Tomb of the Ancients
 
+太古の霊廟
 #"Tomb", "the Tomb of the Ancients", "Tomb",
 %%%%
 Hell
 
+地獄
 %%%%
 the Vestibule of Hell
 
+地獄の玄関
 #"Hell", "the Vestibule of Hell", "Hell",
 %%%%
 Dis
 
+ディース
 %%%%
 the Iron City of Dis
 
+鉄の都『ディース』
 #"Dis", "the Iron City of Dis", "Dis",
 %%%%
 Gehenna
 
+ゲヘナ
 %%%%
 Geh
 
+#ゲヘナ
 #"Gehenna", "Gehenna", "Geh",
 %%%%
 Cocytus
 
+コキュートス
 %%%%
 Coc
 
+#コキュートス
 #"Cocytus", "Cocytus", "Coc",
 %%%%
 Tartarus
 
+タルタロス
 %%%%
 Tar
 
+#タルタロス
 #"Tartarus", "Tartarus", "Tar",
 %%%%
 Zot
 
+ゾット
 %%%%
 the Realm of Zot
 
+ゾットの領域
 #"Zot", "the Realm of Zot", "Zot",
 %%%%
 Forest
 
+森
 %%%%
 the Enchanted Forest
 
+幻惑の森
 #"Forest", "the Enchanted Forest", "Forest",
 %%%%
 Abyss
 
+アビス
 %%%%
 the Abyss
 
+アビス
 #"Abyss", "the Abyss", "Abyss",
 %%%%
 Pandemonium
 
+パンデモニウム
 %%%%
 Pan
 
@@ -196,9 +251,11 @@ Pan
 %%%%
 Ziggurat
 
+ジッグラト
 %%%%
 a ziggurat
 
+ジッグラト
 %%%%
 Zig
 
@@ -206,13 +263,16 @@ Zig
 %%%%
 You land on top of a ziggurat so tall you cannot make out the ground.
 
+あなたは地面が確認できないほどの高さのジッグラトの頂上に舞い降りた
 #"You land on top of a ziggurat so tall you cannot make out the ground.",
 %%%%
 Labyrinth
 
+ラビリンス
 %%%%
 a labyrinth
 
+ラビリンス
 %%%%
 Lab
 
@@ -220,74 +280,95 @@ Lab
 %%%%
 Bazaar
 
+バザー
 %%%%
 a bazaar
 
+バザー
 #"Bazaar", "a bazaar", "Bazaar",
 %%%%
 You enter an inter-dimensional bazaar!
 
+あなたはバザーの次元の中に入り込んだ!
 #"You enter an inter-dimensional bazaar!",
 %%%%
 Trove
 
+秘宝
 %%%%
 a treasure trove
 
+秘宝館
 #"Trove", "a treasure trove", "Trove",
 %%%%
 Sewer
 
+下水道
 %%%%
 a sewer
 
+下水道
 #"Sewer", "a sewer", "Sewer",
 %%%%
 Ossuary
 
+納骨堂
 %%%%
 an ossuary
 
+納骨堂
 #"Ossuary", "an ossuary", "Ossuary",
 %%%%
 Bailey
 
+要塞
 %%%%
 a bailey
 
+要塞
 #"Bailey", "a bailey", "Bailey",
 %%%%
 Ice Cave
 
+氷の洞窟
 %%%%
 an ice cave
 
+氷の洞窟
 %%%%
 IceCv
 
+氷窟
 #"Ice Cave", "an ice cave", "IceCv",
 %%%%
 Volcano
 
+火山
 %%%%
 a volcano
 
+火山
 #"Volcano", "a volcano", "Volcano",
 %%%%
 Wizlab
 
+魔術師の研究室
 %%%%
 a wizard's laboratory
 
+魔術師の研究室
 %%%%
 WizLab
 
+研究
 #"Wizlab", "a wizard's laboratory", "WizLab",
 %%%%
 Void
 
+虚空
 %%%%
 a void
 
+虚空
 #"Void", "a void", "Void",
 %%%%

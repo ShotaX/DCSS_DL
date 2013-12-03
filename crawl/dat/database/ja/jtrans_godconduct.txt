@@ -1,0 +1,425 @@
+%%%%
+forgives your inadvertent blood-drinking, just this once.
+
+ はあなたが不注意に血を飲んでしまったことを今回だけ許す
+#simple_god_message(jtrans("forgives your inadvertent blood-drinking, just this once.").c_str());
+%%%%
+forgives your inadvertent necromancy, just this once.
+
+ はあなたが不注意に死霊術を使ってしまったことを今回だけ許す
+#simple_god_message(jtrans("forgives your inadvertent necromancy, just this once.").c_str());
+%%%%
+appreciates your desecration of holy remains.
+
+ はあなたが神聖な存在を破壊したことを喜んだ
+#simple_god_message(jtrans("appreciates your desecration of holy remains.").c_str());
+%%%%
+forgives your inadvertent unholy act, just this once.
+
+ はあなたの邪悪な行いを今回だけ許す
+#simple_god_message(jtrans("forgives your inadvertent unholy act, just this once.").c_str());
+%%%%
+forgives your inadvertent holy act, just this once.
+
+ はあなたの神聖な行いを今回だけ許す
+#simple_god_message(jtrans("forgives your inadvertent holy act, just this once.").c_str());
+%%%%
+forgives your inadvertent dishonourable attack, just this once.
+
+ はあなたの不意打ちを今回だけ許す
+#simple_god_message(jtrans("forgives your inadvertent dishonourable attack, just this once.").c_str());
+%%%%
+forgives your inadvertent attack on a neutral, just this once.
+
+ はあなたの敵対していない者への攻撃を今回だけ許す
+#simple_god_message(jtrans("forgives your inadvertent attack on a neutral, just this once.").c_str());
+%%%%
+#forgives your inadvertent attack on a neutral, just this once.
+#
+#simple_god_message(jtrans("forgives your inadvertent attack on a neutral, just this once.").c_str());
+%%%%
+forgives your inadvertent attack on an ally, just this once.
+
+ はあなたの仲間への攻撃を今回だけ許す
+#simple_god_message(jtrans("forgives your inadvertent attack on an ally, just this once.").c_str());
+%%%%
+does not appreciate your shedding blood when asking for salvation!
+
+ は自分は助けを求めながら他者の血を流す行為を許さない！
+#simple_god_message(jtrans("does not appreciate your shedding blood when asking for salvation!").c_str());
+%%%%
+claims a new guest.
+
+ はさらに新しい訪問者を要求した
+#simple_god_message(jtrans("claims a new guest.").c_str());
+%%%%
+accepts your kill.
+
+ はあなたの殺しを善しとした
+#simple_god_message(jtrans("accepts your kill.").c_str());
+%%%%
+#accepts your kill.
+#
+#simple_god_message(jtrans("accepts your kill.").c_str());
+%%%%
+#accepts your kill.
+#
+#simple_god_message(jtrans("accepts your kill.").c_str());
+%%%%
+#accepts your kill.
+#
+#simple_god_message(jtrans("accepts your kill.").c_str());
+%%%%
+#accepts your kill.
+#
+#simple_god_message(jtrans("accepts your kill.").c_str());
+%%%%
+appreciates your killing of a heretic priest.
+
+ はあなたの異端の司祭の殺害を喜んだ
+#simple_god_message(jtrans("appreciates your killing of a heretic priest.").c_str());
+%%%%
+appreciates your killing of a magic user.
+
+ はあなたが魔法の遣い手を殺したことを喜んだ
+#simple_god_message(jtrans("appreciates your killing of a magic user.").c_str());
+%%%%
+Che DID_KILL_FAST: %s speed delta: %d
+
+#dprf("Che DID_KILL_FAST: %s speed delta: %d",
+%%%%
+thoroughly appreciates the change of pace.
+
+ はあなたの徹底的な減速を高く評価している
+#simple_god_message(jtrans("thoroughly appreciates the change of pace.").c_str());
+%%%%
+appreciates the change of pace.
+
+ はあなたの減速を高く評価している
+#simple_god_message(jtrans("appreciates the change of pace.").c_str());
+%%%%
+#accepts your kill.
+#
+#simple_god_message(jtrans("accepts your kill.").c_str());
+%%%%
+#accepts your kill.
+#
+#simple_god_message(jtrans("accepts your kill.").c_str());
+%%%%
+appreciates your killing of a holy being.
+
+ はあなたの神聖な存在の殺害を評価している
+#simple_god_message(jtrans("appreciates your killing of a holy being.").c_str());
+%%%%
+accepts your slave's kill.
+
+ はあなたの奴隷の殺しを善しとした
+#simple_god_message(jtrans("accepts your slave's kill.").c_str());
+%%%%
+accepts your collateral kill.
+
+ はあなたのしもべの殺しを善しとした
+#simple_god_message(jtrans("accepts your collateral kill.").c_str());
+%%%%
+#accepts your slave's kill.
+#
+#simple_god_message(jtrans("accepts your slave's kill.").c_str());
+%%%%
+#accepts your collateral kill.
+#
+#simple_god_message(jtrans("accepts your collateral kill.").c_str());
+%%%%
+#accepts your slave's kill.
+#
+#simple_god_message(jtrans("accepts your slave's kill.").c_str());
+%%%%
+#accepts your collateral kill.
+#
+#simple_god_message(jtrans("accepts your collateral kill.").c_str());
+%%%%
+#accepts your slave's kill.
+#
+#simple_god_message(jtrans("accepts your slave's kill.").c_str());
+%%%%
+#accepts your collateral kill.
+#
+#simple_god_message(jtrans("accepts your collateral kill.").c_str());
+%%%%
+#accepts your collateral kill.
+#
+#simple_god_message(jtrans("accepts your collateral kill.").c_str());
+%%%%
+#accepts your collateral kill.
+#
+#simple_god_message(jtrans("accepts your collateral kill.").c_str());
+%%%%
+#accepts your slave's kill.
+#
+#simple_god_message(jtrans("accepts your slave's kill.").c_str());
+%%%%
+doesn't appreciate your training magic!
+
+ はあなたの魔術の訓練を良く思っていない！
+#simple_god_message(jtrans("doesn't appreciate your training magic!").c_str());
+%%%%
+Countdown down to %d
+
+#mprf(MSGCH_DIAGNOSTICS, "Countdown down to %d",
+%%%%
+forgives your inadvertent chaotic act, just this once.
+
+ はあなたの混沌の行いを今回だけ許す
+#simple_god_message(jtrans("forgives your inadvertent chaotic act, just this once.").c_str());
+%%%%
+is not enthusiastic about the mutagenic glow surrounding you.
+
+ はあなたを取り巻く変異性の輝きを喜んでいない
+#simple_god_message(jtrans("is not enthusiastic about the mutagenic glow surrounding you.").c_str());
+%%%%
+does not appreciate the extra mutagenic glow surrounding you!
+
+ はあなたを取り巻く変異性の輝きを良く思っていない！
+#simple_god_message(jtrans("does not appreciate the extra mutagenic glow surrounding you!").c_str());
+%%%%
+forgives your inadvertent unclean act, just this once.
+
+ はあなたの不浄な行いを今回だけ許す
+#simple_god_message(jtrans("forgives your inadvertent unclean act, just this once.").c_str());
+%%%%
+forgives your inadvertent chaotic act, just this once.
+
+#simple_god_message(jtrans("forgives your inadvertent chaotic act, just this once.").c_str());
+%%%%
+forgives your accidental hurry, just this once.
+
+ はあなたの不注意な加速を今回だけ許す
+#simple_god_message(jtrans("forgives your accidental hurry, just this once.").c_str());
+%%%%
+thinks you should slow down.
+
+ はあなたが減速すべきだと考えている
+#simple_god_message(jtrans("thinks you should slow down.").c_str());
+%%%%
+fuzzied monster difficulty: %4.2f
+
+#dprf("fuzzied monster difficulty: %4.2f", piety_change * 0.01);
+%%%%
+appreciates your kill.
+
+ はあなたの殺しを高く評価している
+#simple_god_message(jtrans("appreciates your kill.").c_str());
+%%%%
+#accepts your kill.
+#
+#simple_god_message(jtrans("accepts your kill.").c_str());
+%%%%
+#
+#
+#"",
+%%%%
+Necromancy
+
+%%%%
+Holy
+
+%%%%
+Unholy
+
+%%%%
+Attack Holy
+
+%%%%
+Attack Neutral
+
+#"Necromancy", "Holy", "Unholy", "Attack Holy", "Attack Neutral",
+%%%%
+Attack Friend
+
+%%%%
+Friend Died
+
+%%%%
+Unchivalric Attack
+
+#"Attack Friend", "Friend Died", "Unchivalric Attack",
+%%%%
+Poison
+
+%%%%
+Kill Living
+
+%%%%
+Kill Undead
+
+#"Poison", "Kill Living", "Kill Undead",
+%%%%
+Kill Demon
+
+%%%%
+Kill Natural Unholy
+
+%%%%
+Kill Natural Evil
+
+#"Kill Demon", "Kill Natural Unholy", "Kill Natural Evil",
+%%%%
+Kill Unclean
+
+%%%%
+Kill Chaotic
+
+%%%%
+Kill Wizard
+
+%%%%
+Kill Priest
+
+#"Kill Unclean", "Kill Chaotic", "Kill Wizard", "Kill Priest",
+%%%%
+Kill Holy
+
+%%%%
+Kill Fast
+
+%%%%
+Undead Slave Kill Living
+
+#"Kill Holy", "Kill Fast", "Undead Slave Kill Living",
+%%%%
+Servant Kill Living
+
+%%%%
+Undead Slave Kill Undead
+
+#"Servant Kill Living", "Undead Slave Kill Undead",
+%%%%
+Servant Kill Undead
+
+%%%%
+Undead Slave Kill Demon
+
+#"Servant Kill Undead", "Undead Slave Kill Demon",
+%%%%
+Servant Kill Demon
+
+%%%%
+Servant Kill Natural Unholy
+
+#"Servant Kill Demon", "Servant Kill Natural Unholy",
+%%%%
+Servant Kill Natural Evil
+
+%%%%
+Undead Slave Kill Holy
+
+#"Servant Kill Natural Evil", "Undead Slave Kill Holy",
+%%%%
+Servant Kill Holy
+
+%%%%
+Banishment
+
+%%%%
+Spell Memorise
+
+%%%%
+Spell Cast
+
+#"Servant Kill Holy", "Banishment", "Spell Memorise", "Spell Cast",
+%%%%
+Spell Practise
+
+%%%%
+Cards
+
+#"Spell Practise", "Cards",
+%%%%
+Drink Blood
+
+%%%%
+Cannibalism
+
+%%%%
+Eat Souled Being
+
+#"Drink Blood", "Cannibalism","Eat Souled Being",
+%%%%
+Deliberate Mutation
+
+%%%%
+Cause Glowing
+
+%%%%
+Use Unclean
+
+#"Deliberate Mutation", "Cause Glowing", "Use Unclean",
+%%%%
+Use Chaos
+
+%%%%
+Desecrate Orcish Remains
+
+%%%%
+Destroy Orcish Idol
+
+#"Use Chaos", "Desecrate Orcish Remains", "Destroy Orcish Idol",
+%%%%
+Kill Slime
+
+%%%%
+Kill Plant
+
+%%%%
+Servant Kill Plant
+
+#"Kill Slime", "Kill Plant", "Servant Kill Plant",
+%%%%
+Was Hasty
+
+%%%%
+Corpse Violation
+
+#"Was Hasty", "Corpse Violation",
+%%%%
+Souled Friend Died
+
+%%%%
+Servant Kill Unclean
+
+#"Souled Friend Died", "Servant Kill Unclean",
+%%%%
+Servant Kill Chaotic
+
+%%%%
+Attack In Sanctuary
+
+#"Servant Kill Chaotic", "Attack In Sanctuary",
+%%%%
+Kill Artificial
+
+%%%%
+Undead Slave Kill Artificial
+
+#"Kill Artificial", "Undead Slave Kill Artificial",
+%%%%
+Servant Kill Artificial
+
+%%%%
+Destroy Spellbook
+
+#"Servant Kill Artificial", "Destroy Spellbook",
+%%%%
+Exploration
+
+%%%%
+Desecrate Holy Remains
+
+%%%%
+Seen Monster
+
+#"Exploration", "Desecrate Holy Remains", "Seen Monster",
+%%%%
+conduct: %s; piety: %d (%+d/%d); penance: %d (%+d)
+
+#dprf("conduct: %s; piety: %d (%+d/%d); penance: %d (%+d)",
+%%%%

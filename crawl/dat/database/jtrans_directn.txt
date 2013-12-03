@@ -288,8 +288,8 @@ Aim
 照準
 #target_prefix ? target_prefix : jtrans("Aim").c_str(),
 %%%%
-%s.
-
+#%s.
+#
 #mprf(MSGCH_FLOOR_ITEMS, "%s.",
 %%%%
 There is something else lying underneath.
@@ -474,62 +474,77 @@ Beware, for starvation awaits!
 %%%%
 dart trap
 
+投げ矢の罠
 #return "dart trap";
 %%%%
 arrow trap
 
+矢の罠
 #return "arrow trap";
 %%%%
 needle trap
 
+吹き矢の罠
 #return "needle trap";
 %%%%
 bolt trap
 
+クロスボウの矢
 #return "bolt trap";
 %%%%
 spear trap
 
+槍の罠
 #return "spear trap";
 %%%%
 blade trap
 
+刃の罠
 #return "blade trap";
 %%%%
 net trap
 
+投げ網の罠
 #return "net trap";
 %%%%
 gas trap
 
+ガスの罠
 #return "gas trap";
 %%%%
 alarm trap
 
+警報の罠
 #return "alarm trap";
 %%%%
 shaft
 
+落とし穴の罠
 #return "shaft";
 %%%%
 teleportation trap
 
+テレポートの罠
 #return "teleportation trap";
 %%%%
 Zot trap
 
+ゾットの罠
 #return "Zot trap";
 %%%%
 passage of Golubria
 
+ゴルブリアの通り道
 #return "passage of Golubria";
 %%%%
 pressure plate
 
+落とし戸
 #return "pressure plate";
 %%%%
 web
 
+蜘蛛の網
 #return "web";
 %%%%
 Error: invalid trap type %d
@@ -538,426 +553,532 @@ Error: invalid trap type %d
 %%%%
 undefined trap
 
+未定義の罠
 #return "undefined trap";
 %%%%
 stone wall
 
+石の壁
 #return "stone wall";
 %%%%
 wall of the weird stuff which makes up Pandemonium
 
+パンデモニウムを構成する不気味な素材の壁
 #return "wall of the weird stuff which makes up Pandemonium";
 %%%%
 rock wall
 
+岩の壁
 #return "rock wall";
 %%%%
 slime covered rock wall
 
+粘着物に覆われた岩の壁
 #return "slime covered rock wall";
 %%%%
 unnaturally hard rock wall
 
+人工的な強度な岩の壁
 #return "unnaturally hard rock wall";
 %%%%
 the open sea
 
+広大な海
 #return "the open sea";
 %%%%
 the endless lava
 
+終わりなき溶岩沼
 #return "the endless lava";
 %%%%
 closed door
 
+閉じたドア
 #return "closed door";
 %%%%
 runed door
 
+ルーンで封印されたドア
 #return "runed door";
 %%%%
 sealed door
 
+封印の印が刻まれたドア
 #return "sealed door";
 %%%%
 metal wall
 
+金属の壁
 #return "metal wall";
 %%%%
 wall of green crystal
 
+緑の水晶の壁
 #return "wall of green crystal";
 %%%%
 translucent rock wall
 
+半透明の岩の壁
 #return "translucent rock wall";
 %%%%
 translucent stone wall
 
+半透明の石の壁
 #return "translucent stone wall";
 %%%%
 translucent unnaturally hard rock wall
 
+半透明の人工的な強固な岩の壁
 #return "translucent unnaturally hard rock wall";
 %%%%
 iron grate
 
+鉄の格子
 #return "iron grate";
 %%%%
 tree
 
+木
 #return "tree";
 %%%%
 mangrove
 
+マングローブ
 #return "mangrove";
 %%%%
 idol of Beogh
 
+ビオの偶像
 #return "idol of Beogh";
 %%%%
 orcish idol
 
+オークの偶像
 #return "orcish idol";
 %%%%
 granite statue
 
+花崗岩の彫像
 #return "granite statue";
 %%%%
 some lava
 
+少々の溶岩
 #return "some lava";
 %%%%
 some deep water
 
+少々の深い水脈
 #return "some deep water";
 %%%%
 some shallow water
 
+少々の浅い水脈
 #return "some shallow water";
 %%%%
 floor
 
+床
 #return "floor";
 %%%%
 open door
 
+開かれたドア
 #return "open door";
 %%%%
 escape hatch in the floor
 
+床の脱出ハッチ
 #return "escape hatch in the floor";
 %%%%
 escape hatch in the ceiling
 
+天井の脱出ハッチ
 #return "escape hatch in the ceiling";
 %%%%
 stone staircase leading down
 
+石の下り階段
 #return "stone staircase leading down";
 %%%%
 stone staircase leading up
 
+石の登り階段
 #return "stone staircase leading up";
 %%%%
 sealed passage leading down
 
+封印された下り経路
 #return "sealed passage leading down";
 %%%%
 sealed passage leading up
 
+封印された登り経路
 #return "sealed passage leading up";
 %%%%
 staircase leading out of the dungeon
 
+ダンジョンの出口
 #return "staircase leading out of the dungeon";
 %%%%
 gateway to Hell
 
+地獄の門
 #return "gateway to Hell";
 %%%%
 gateway back into the Dungeon
 
+ダンジョンに戻る門
 #return "gateway back into the Dungeon";
 %%%%
 short-range portal
 
+短距離のポータル
 #return "short-range portal";
 %%%%
 mechanical trap
 
+機械式のトラップ
 #return "mechanical trap";
 %%%%
 magical trap
 
+魔法の罠
 #return "magical trap";
 %%%%
 natural trap
 
+自然の罠
 #return "natural trap";
 %%%%
 web
 
+蜘蛛の網
 #return "web";
 %%%%
 shop
 
+店
 #return "shop";
 %%%%
 abandoned shop
 
+放棄された店
 #return "abandoned shop";
 %%%%
 labyrinth entrance
 
+ラビリンスの入口
 #return "labyrinth entrance";
 %%%%
 gateway to the Iron City of Dis
 
+鉄の都ディースへの門
 #return "gateway to the Iron City of Dis";
 %%%%
 gateway to the ashen valley of Gehenna
 
+灰の谷ゲヘナへの門
 #return "gateway to the ashen valley of Gehenna";
 %%%%
 gateway to the freezing wastes of Cocytus
 
+コキュートスの凍れる荒野への門
 #return "gateway to the freezing wastes of Cocytus";
 %%%%
 gateway to the decaying netherworld of Tartarus
 
+タルタロスの腐朽地獄への門
 #return "gateway to the decaying netherworld of Tartarus";
 %%%%
 one-way gate to the infinite horrors of the Abyss
 
+アビスの無限地獄への門
 #return "one-way gate to the infinite horrors of the Abyss";
 %%%%
 gateway leading out of the Abyss
 
+アビスからの出口の門
 #return "gateway leading out of the Abyss";
 %%%%
 gateway leading deeper into the Abyss
 
+アビスの深層への門
 #return "gateway leading deeper into the Abyss";
 %%%%
 exit through the horrors of the Abyss
 
+アビスを通じた脱出の門
 #return "exit through the horrors of the Abyss";
 %%%%
 empty arch of ancient stone
 
+古代の石で造られたアーチ
 #return "empty arch of ancient stone";
 %%%%
 one-way gate leading to the halls of Pandemonium
 
+パンデモニウムの大広間へと続く門
 #return "one-way gate leading to the halls of Pandemonium";
 %%%%
 gate leading out of Pandemonium
 
+パンデモニウムからの出口の門
 #return "gate leading out of Pandemonium";
 %%%%
 gate leading to another region of Pandemonium
 
+パンデモニウムの別領域への門
 #return "gate leading to another region of Pandemonium";
 %%%%
 staircase to the Dwarven Hall
 
+ドワーフの大広間への階段
 #return "staircase to the Dwarven Hall";
 %%%%
 staircase to the Orcish Mines
 
+オークの坑道への階段
 #return "staircase to the Orcish Mines";
 %%%%
 staircase to the Lair
 
+獣の棲み処への階段
 #return "staircase to the Lair";
 %%%%
 staircase to the Slime Pits
 
+スライムの穴ぐらへの階段
 #return "staircase to the Slime Pits";
 %%%%
 staircase to the Vaults
 
+宝物庫への階段
 #return "staircase to the Vaults";
 %%%%
 staircase to the Crypt
 
+地下墓地への階段
 #return "staircase to the Crypt";
 %%%%
 staircase to the Hall of Blades
 
+刃の広間への階段
 #return "staircase to the Hall of Blades";
 %%%%
 gate to the Realm of Zot
 
+ゾットの領域への門
 #return "gate to the Realm of Zot";
 %%%%
 staircase to the Ecumenical Temple
 
+諸宗派の寺院への階段
 #return "staircase to the Ecumenical Temple";
 %%%%
 staircase to the Snake Pit
 
+蛇穴への階段
 #return "staircase to the Snake Pit";
 %%%%
 staircase to the Elven Halls
 
+エルフの大広間への階段
 #return "staircase to the Elven Halls";
 %%%%
 staircase to the Tomb
 
+霊廟への階段
 #return "staircase to the Tomb";
 %%%%
 staircase to the Swamp
 
+沼への階段
 #return "staircase to the Swamp";
 %%%%
 staircase to the Shoals
 
+浅瀬への階段
 #return "staircase to the Shoals";
 %%%%
 hole to the Spider Nest
 
+蜘蛛の巣への階段
 #return "hole to the Spider Nest";
 %%%%
 staircase to the Enchanted Forest
 
+魅惑の森への階段
 #return "staircase to the Enchanted Forest";
 %%%%
 gate leading to a distant place
 
+遠方に繋がる門
 #return "gate leading to a distant place";
 %%%%
 gate leading back out of here
 
+ここから脱出する門
 #return "gate leading back out of here";
 %%%%
 portal to somewhere
 
+どこかに続くポータル
 #return "portal to somewhere";
 %%%%
 collapsed entrance
 
+潰された
 #return "collapsed entrance";
 %%%%
 staircase back to the Dungeon
 
+ダンジョンに戻る出口の階段
 #return "staircase back to the Dungeon";
 %%%%
 staircase back to the Lair
 
+獣の棲み処に戻る出口の階段
 #return "staircase back to the Lair";
 %%%%
 crawl-hole back to the Lair
 
+獣の棲み処に戻る出口の穴
 #return "crawl-hole back to the Lair";
 %%%%
 staircase back to the Vaults
 
+宝物庫に戻る出口の階段
 #return "staircase back to the Vaults";
 %%%%
 staircase back to the Mines
 
+坑道に戻る出口の階段
 #return "staircase back to the Mines";
 %%%%
 staircase back to the Forest
 
+森に戻る出口の階段
 #return "staircase back to the Forest";
 %%%%
 staircase back to the Crypt
 
+地下墓地に戻る出口の階段
 #return "staircase back to the Crypt";
 %%%%
 gate leading back out of this place
 
+この場所から外に出る門
 #return "gate leading back out of this place";
 %%%%
 glowing silver altar of Zin
 
+『ジン』の輝く銀の祭壇
 #return "glowing silver altar of Zin";
 %%%%
 glowing golden altar of the Shining One
 
+『輝けるもの』の輝く黄金の祭壇
 #return "glowing golden altar of the Shining One";
 %%%%
 ancient bone altar of Kikubaaqudgha
 
+『キクバークッグァ』の古代の骨で作られた祭壇
 #return "ancient bone altar of Kikubaaqudgha";
 %%%%
 basalt altar of Yredelemnul
 
+『イレデレンヌル』の玄武岩で作られた祭壇
 #return "basalt altar of Yredelemnul";
 %%%%
 shimmering altar of Xom
 
+『ゾム』の微光が揺らめく祭壇
 #return "shimmering altar of Xom";
 %%%%
 radiant altar of Vehumet
 
+『ヴェフメット』の輝きを放つ祭壇
 #return "radiant altar of Vehumet";
 %%%%
 iron altar of Okawaru
 
+『オカワル』の鉄の祭壇
 #return "iron altar of Okawaru";
 %%%%
 burning altar of Makhleb
 
+『マクレブ』の炎を上げる祭壇
 #return "burning altar of Makhleb";
 %%%%
 deep blue altar of Sif Muna
 
+『シフ・ムーナ』の紺碧の祭壇
 #return "deep blue altar of Sif Muna";
 %%%%
 bloodstained altar of Trog
 
+『トログ』の血に染まった祭壇
 #return "bloodstained altar of Trog";
 %%%%
 sparkling altar of Nemelex Xobeh
 
+『ネメレクス・ソベー』の煌く祭壇
 #return "sparkling altar of Nemelex Xobeh";
 %%%%
 white marble altar of Elyvilon
 
+『エリヴィロン』の白い大理石の祭壇
 #return "white marble altar of Elyvilon";
 %%%%
 corrupted altar of Lugonu
 
+『ルゴヌ』の崩壊した祭壇
 #return "corrupted altar of Lugonu";
 %%%%
 roughly hewn altar of Beogh
 
+『ビオ』の乱暴に刻み造られた祭壇
 #return "roughly hewn altar of Beogh";
 %%%%
 viscous altar of Jiyva
 
+『ジーヴァ』の粘着性の祭壇
 #return "viscous altar of Jiyva";
 %%%%
 blossoming altar of Fedhas
 
+『フェダス』の芽吹きに覆われた祭壇
 #return "blossoming altar of Fedhas";
 %%%%
 snail-covered altar of Cheibriados
 
+『ケイブリアドス』の蝸牛で覆われた祭壇
 #return "snail-covered altar of Cheibriados";
 %%%%
 shattered altar of Ashenzari
 
+『アシェンザリ』の砕け落ちた祭壇
 #return "shattered altar of Ashenzari";
 %%%%
 fountain of clear blue water
 
+澄んだ青い水の泉
 #return "fountain of clear blue water";
 %%%%
 fountain of sparkling water
 
+煌く水の泉
 #return "fountain of sparkling water";
 %%%%
 fountain of blood
 
+血の泉
 #return "fountain of blood";
 %%%%
 dry fountain
 
+枯れた泉
 #return "dry fountain";
 %%%%
 explore horizon
@@ -986,14 +1107,17 @@ feature_description
 %%%%
 , spattered with blood
 
+血の飛び散った
 #covering_description = ", spattered with blood";
 %%%%
 , covered with glowing mold
 
+輝く苔で覆われた
 #covering_description = ", covered with glowing mold";
 %%%%
 , covered with mold
 
+苔に覆われた
 #covering_description = ", covered with mold";
 %%%%
 door_description_prefix
@@ -1022,22 +1146,27 @@ veto
 %%%%
 open 
 
+開いた
 #desc += "open ";
 %%%%
 runed 
 
+ルーンの刻まれた
 #desc += "runed ";
 %%%%
 sealed 
 
+封印された
 #desc += "sealed ";
 %%%%
 closed 
 
+閉じた
 #desc += "closed ";
 %%%%
 an abandoned shop
 
+放棄された店
 #return thing_do_grammar(dtype, add_stop, false, "an abandoned shop");
 %%%%
 UNAMED PORTAL VAULT ENTRY
@@ -1138,6 +1267,7 @@ durably summoned
 %%%%
 expiring
 
+期限切れが近い
 #descs.push_back("expiring");
 %%%%
 haloed
@@ -1193,6 +1323,7 @@ fire blocked by
 %%%%
 You are mesmerised by her song.\n
 
+あなたは彼女の歌に魅了されている
 #text += "You are mesmerised by her song.\n";
 %%%%
  appears to be 
@@ -1478,34 +1609,42 @@ a wand
 %%%%
 lies inside a sanctuary
 
+は聖域内部に居る
 #areas.push_back("lies inside a sanctuary");
 %%%%
 is shrouded in silence
 
+は静寂に包まれている
 #areas.push_back("is shrouded in silence");
 %%%%
 is lit by a halo
 
+は光輪に照らされている
 #areas.push_back("is lit by a halo");
 %%%%
 is wreathed by an umbra
 
+は陰影に取り巻かれている
 #areas.push_back("is wreathed by an umbra");
 %%%%
 thrums with a field of magical suppression
 
+は音をかき鳴らし、魔力を抑圧するフィールドを作り出す
 #areas.push_back("thrums with a field of magical suppression");
 %%%%
 is liquefied
 
+は液化した
 #areas.push_back("is liquefied");
 %%%%
 is covered in magical glow
 
+は魔力汚染の輝きに包まれた
 #areas.push_back("is covered in magical glow");
 %%%%
 is bathed in translocation energy
 
+は転移のエネルギーを浴びた
 #areas.push_back("is bathed in translocation energy");
 %%%%
 This square %s.
@@ -1555,14 +1694,17 @@ You.
 %%%%
 There is a non-visible %smonster here.
 
+ここには%sによって姿が明らかになった透明なモンスターが居る
 #mprf(MSGCH_DIAGNOSTICS, "There is a non-visible %smonster here.",
 %%%%
 exposed by water 
 
+水によって
 #_mon_exposed_in_water(mon) ? "exposed by water " :
 %%%%
+exposed by cloud 
 
-
+煙によって
 #_mon_exposed_in_cloud(mon) ? "exposed by cloud " : "");
 %%%%
 There is a strange disturbance in the water here.

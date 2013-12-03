@@ -1,6 +1,7 @@
 %%%%
  glares at your weapon.
 
+はあなたの武器を睨みつけた
 #<< " glares at your weapon."
 %%%%
 abandons you!

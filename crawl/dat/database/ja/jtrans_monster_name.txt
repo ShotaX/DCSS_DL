@@ -1405,399 +1405,400 @@ large simulacrum
 %%%%
 big fish
 
-
+巨大魚
 %%%%
 giant goldfish
 
-
+巨大金魚
 %%%%
 electric eel
 
-
+電気ウナギ
 %%%%
 jellyfish
 
-
+巨大クラゲ
 %%%%
 shark
 
-
+巨大鮫
 %%%%
 kraken
 
-
+クラーケン
 %%%%
 tentacle
 
-
+触手
 %%%%
 tentacle segment
 
-
+触手の一部
 %%%%
 octopode
 
-
+オクトポード
 %%%%
 lava worm
 
-
+溶岩ワーム
 %%%%
 lava fish
 
-
+溶岩魚
 %%%%
 lava snake
 
-
+溶岩蛇
 %%%%
 salamander
 
-
+サラマンダー
 %%%%
 rock worm
 
-
+岩ワーム
 %%%%
 human
 
-
+人間
 %%%%
 slave
 
-
+奴隷
 %%%%
 hell knight
 
-
+地獄の騎士
 %%%%
 necromancer
 
-
+死人使い
 %%%%
 wizard
 
-
+魔術師
 %%%%
 vault guard
 
-
+宝物庫の番人
 %%%%
 shapeshifter
 
-
+変身能力者
 %%%%
 glowing shapeshifter
 
-
+暴走した変身能力者
 %%%%
 Hellbinder
 
-
+地獄に繋がれし者
 %%%%
 Cloud Mage
 
-
+雲の魔術師
 %%%%
 Killer Klown
 
-
+『殺人ピエロ』
 %%%%
 demonspawn
 
-
+悪魔の血族
 %%%%
 demigod
 
-
+神々の末裔
 %%%%
 halfling
 
-
+ハーフリング
 %%%%
 vault sentinel
 
-
+宝物庫の警告者
 %%%%
 vault warden
 
-
+宝物庫の監視者
 %%%%
 ironbrand convoker
 
-
+焼印の招集者
 %%%%
 ironheart preserver
 
-
+不屈の保護者
+#Fixme_ja
 %%%%
 inept item mimic
 
-
+間抜けなアイテムのミミック
 %%%%
 inept feature mimic
 
-
+間抜けな建造物のミミック
 %%%%
 item mimic
 
-
+アイテムのミミック
 %%%%
 feature mimic
 
-
+建造物のミミック
 %%%%
 ravenous item mimic
 
-
+飢えたアイテムのミミック
 %%%%
 ravenous feature mimic
 
-
+飢えた建造物のミミック
 %%%%
 monstrous item mimic
 
-
+巨大なアイテムのミミック
 %%%%
 dancing weapon
 
-
+踊る武器
 %%%%
 eldritch tentacle
 
-
+別次元の触手
 %%%%
 eldritch tentacle segment
 
-
+触手の一部
 %%%%
 crimson imp
 
-
+紅インプ
 %%%%
 quasit
 
-
+クアシト
 %%%%
 white imp
 
-
+白インプ
 %%%%
 lemure
 
-
+レムレス
 %%%%
 ufetubus
 
-
+ウフェツバス
 %%%%
 iron imp
 
-
+鉄インプ
 %%%%
 shadow imp
 
-
+影インプ
 %%%%
 blue devil
 
-
+蒼の悪魔
 %%%%
 iron devil
 
-
+鉄の悪魔
 %%%%
 orange demon
 
-
+オレンジデーモン
 %%%%
 red devil
 
-
+紅の悪魔
 %%%%
 rotting devil
 
-
+腐爛の悪魔
 %%%%
 sixfirhy
 
-
+シクスファルハイ
 %%%%
 hellwing
 
-
+ヘルウイング
 %%%%
 sun demon
 
-
+サンデーモン
 %%%%
 soul eater
 
-
+魂を貪るもの
 %%%%
 ice devil
 
-
+氷の悪魔
 %%%%
 smoke demon
 
-
+噴煙のデーモン
 %%%%
 neqoxec
 
-
+ネクオゼク
 %%%%
 ynoxinul
 
-
+ヱノクシヌル
 %%%%
 chaos spawn
 
-
+混沌の落とし子
 %%%%
 shadow demon
 
-
+シャドウデーモン
 %%%%
 green death
 
-
+緑の殲滅者
 %%%%
 blizzard demon
 
-
+氷河の悪魔
 %%%%
 balrug
 
-
+バルログ
 %%%%
 cacodemon
 
-
+混沌の悪鬼
 %%%%
 hell beast
 
-
+地獄の獣人
 %%%%
 hellion
 
-
+ヘリオン
 %%%%
 reaper
 
-
+切り裂きの悪魔
 %%%%
 lorocyproca
 
-
+ロロキプロカ
 %%%%
 tormentor
 
-
+拷問の悪魔
 %%%%
 Brimstone Fiend
 
-
+激情の魔神
 %%%%
 Ice Fiend
 
-
+氷の魔神
 %%%%
 Shadow Fiend
 
-
+影の魔神
 %%%%
 Hell Sentinel
 
-
+地獄の番人
 %%%%
 Executioner
 
-
+処刑の悪魔
 %%%%
 animated tree
 
-
+活性化された木
 %%%%
 golem
 
-
+ゴーレム
 %%%%
 clay golem
 
-
+土のゴーレム
 %%%%
 stone golem
 
-
+石のゴーレム
 %%%%
 iron golem
 
-
+鉄のゴーレム
 %%%%
 crystal golem
 
-
+水晶のゴーレム
 %%%%
 toenail golem
 
-
+爪のゴーレム
 %%%%
 electric golem
 
-
+電気のゴーレム
 %%%%
 ice statue
 
-
+氷の像
 %%%%
 silver statue
 
-
+銀の像
 %%%%
 orange crystal statue
 
-
+オレンジの水晶像
 %%%%
 statue
 
-
+彫像
 %%%%
 training dummy
 
-
+訓練用ダミー
 %%%%
 pillar of salt
 
-
+塩の柱
 %%%%
 diamond obelisk
 
-
+金剛石の方尖塔
 %%%%
 lightning spire
 
-
+稲妻の渦巻
 %%%%
 gargoyle
 
-
+ガーゴイル
 %%%%
 metal gargoyle
 
-
+鋼鉄ガーゴイル
 %%%%
 molten gargoyle
 
-
+溶岩ガーゴイル
 %%%%
 pandemonium lord
 
-
+パンデモニウムの君主
 %%%%
 hell lord
 
-
+地獄の君主
 %%%%
 battlesphere
 
@@ -1805,11 +1806,11 @@ battlesphere
 %%%%
 wretched star
 
-惨めな星
+惨めな星形
 %%%%
 silver star
 
-銀の星
+銀の星形
 %%%%
 fulminant prism
 
@@ -1821,23 +1822,23 @@ orb of destruction
 %%%%
 orb of fire
 
-
+炎の球体
 %%%%
 lurking horror
 
-
+潜伏する恐怖
 %%%%
 lost soul
 
-
+滅亡せる霊魂
 %%%%
 giant spore
 
-
+巨大胞子
 %%%%
 ball lightning
 
-
+球雷
 %%%%
 death cob
 

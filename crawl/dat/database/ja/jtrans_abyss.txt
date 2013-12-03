@@ -134,5 +134,6 @@ This place is already infused with evil and corruption.
 %%%%
 Corrupted %s
 
+%sは崩壊した
 #take_note(Note(NOTE_MESSAGE, 0, 0, make_stringf("Corrupted %s",
 %%%%

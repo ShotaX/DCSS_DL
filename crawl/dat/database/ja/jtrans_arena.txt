@@ -1,6 +1,8 @@
+#モンスター闘技場については分からないので後回し
 %%%%
 Failed to create monster at (%d,%d) grd: %s
 
+#(%d,%d) grd: %sのモンスターの作成に失敗した
 #"Failed to create monster at (%d,%d) grd: %s",
 %%%%
 (%d) %s
@@ -17,10 +19,12 @@ arena_
 %%%%
 "No arena maps named \"%s\""
 
+#%sのマップが見つかりません
 #throw make_stringf("No arena maps named \"%s\"", arena_type.c_str());
 %%%%
 "Failed to create arena named \"%s\""
 
+#%sのマップの生成に失敗しました
 #throw make_stringf("Failed to create arena named \"%s\"",
 %%%%
 random v random

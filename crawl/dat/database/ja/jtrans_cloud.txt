@@ -66,10 +66,12 @@ You choke on the stench!
 %%%%
 Strange energies course through your body.
 
+奇妙なエネルギーがあなたの身体を巡った
 #mpr(jtrans("Strange energies course through your body."));
 %%%%
 mutagenic cloud
 
+変異性の雲
 #"mutagenic cloud");
 %%%%
 #mutagenic cloud
@@ -78,11 +80,11 @@ mutagenic cloud
 #
 #else if (mons->malmutate("mutagenic cloud"))
 %%%%
-%s %s %d damage from cloud: %s.
+#%s %s %d damage from cloud: %s.
 
-#mprf(MSGCH_DIAGNOSTICS, "%s %s %d damage from cloud: %s.",
+#mprf(MSGCH_DIAGNOSTICS, "%s %s %d damage from cloud: %s.", Fixme_ja(デバック用のコマンドは必要ない気がします)
 %%%%
-take
+#take
 
 #act->conj_verb("take").c_str(),
 %%%%
@@ -96,85 +98,108 @@ take
 %%%%
 flame
 
+火炎
 %%%%
 noxious fumes
 
+悪臭雲
 %%%%
 freezing vapour
 
+冷気の雲
 %%%%
 poison gas
 
+猛毒のガス
 #"flame", "noxious fumes", "freezing vapour", "poison gas",
 %%%%
 black smoke
 
+黒い煙幕
 %%%%
 grey smoke
 
+灰色の煙幕
 %%%%
 blue smoke
 
+青色の煙幕
 #"black smoke", "grey smoke", "blue smoke",
 %%%%
 purple smoke
 
+紫色の煙幕
 %%%%
 translocational energy
 
+転移性のエネルギー
 %%%%
 fire
 
+猛火
 #"purple smoke", "translocational energy", "fire",
 %%%%
 steam
 
+蒸気
 #"steam",
 %%%%
-gloom
+#gloom
 
 #"gloom",
 %%%%
 ink
 
+墨
 #"ink",
 %%%%
 calcifying dust
 
+石化中の霧
 #"calcifying dust",
 %%%%
 blessed fire
 
+神聖な炎
 %%%%
 foul pestilence
 
+穢れし疫病
 %%%%
 thin mist
 
+薄い霧
 #"blessed fire", "foul pestilence", "thin mist",
 %%%%
 seething chaos
 
+煮えたぎる混沌
 %%%%
 rain
 
+雨雲
 %%%%
 mutagenic fog
 
+変異性の雲
 %%%%
 magical condensation
 
+不思議な結露
 #"seething chaos", "rain", "mutagenic fog", "magical condensation",
 %%%%
 raging winds
 
+吹きあがる風
 #"raging winds",
 %%%%
 sparse dust
 
+まばらな塵
 %%%%
 ghostly flame
 
+鬼火
 #"sparse dust", "ghostly flame",
 %%%%
 #?
@@ -183,6 +208,7 @@ ghostly flame
 %%%%
 roaring flames
 
+唸る猛火
 %%%%
 #noxious fumes
 #
@@ -218,13 +244,14 @@ roaring flames
 %%%%
 a cloud of scalding steam
 
+高熱蒸気の雲
 #"a cloud of scalding steam",
 %%%%
-thick gloom
+#thick gloom
 
 #"thick gloom",
 %%%%
-ink
+#ink
 
 #"ink",
 %%%%
@@ -234,20 +261,22 @@ ink
 #
 #"calcifying dust",
 %%%%
-blessed fire
+#blessed fire
+
 
 %%%%
 dark miasma
 
+瘴気
 %%%%
 #thin mist
 #
 #--defined.
 %%%%
-seething chaos
+#seething chaos
 
 %%%%
-the rain
+#the rain
 
 #"blessed fire", "dark miasma", "thin mist", "seething chaos", "the rain",
 %%%%

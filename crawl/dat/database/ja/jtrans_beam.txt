@@ -122,7 +122,7 @@ Some
 #                agent() && agent()->is_player() ? "The" : "Some",
 #                wall.c_str());
 %%%%
-veto
+#veto
 
 #|| env.markers.property_at(pos(), MAT_ANY, "veto_fire") == "veto"
 %%%%
@@ -133,6 +133,7 @@ The tree burns like a torch!
 %%%%
 You smell burning wood.
 
+あなたは木が焼ける匂いを嗅いだ
 #emit_message(MSGCH_PLAIN, "You smell burning wood.");
 %%%%
 #You hear a grinding noise.
@@ -191,14 +192,17 @@ You hear timber falling.
 %%%%
 Your line of fire to 
 
-#string prompt = "Your line of fire to ";
+あなたの
+#string prompt = "Your line of fire to "; Fixme_ja順番の入れ替えが必要
 %%%%
 the targeted 
 
+目標
 #prompt += "the targeted "
 %%%%
  is blocked by 
 
+への射線は防がれている
 #prompt += " is blocked by "
 %%%%
 Continue anyway?
@@ -270,6 +274,7 @@ shrugs off the wave.
 %%%%
  is doused terribly!
 
+は凄まじい波に撃たれている!
 #simple_monster_message(mons, " is doused terribly!");
 %%%%
 #completely resists.
@@ -322,7 +327,7 @@ partially resists.
 #
 #simple_monster_message(mons, jtrans("completely resists.").c_str());
 %%%%
- resists.
+resists.
 
 は抵抗した。
 #simple_monster_message(mons, " resists.");
@@ -342,9 +347,10 @@ writhes in agony!
 %%%%
 appears unharmed.
 
+は無事の様だ
 #hurted == 0 ? jtrans("appears unharmed.").c_str():
 %%%%
- is terribly seared!
+is terribly seared!
 
 はひどく焼き爛れた！
 #dam > 30	   ? " is terribly seared!"
@@ -396,6 +402,7 @@ is seared!
 %%%%
 The beam of light passes harmlessly through %s.
 
+光の光線は損傷を与えることなく%sを通りすぎた
 #mprf(jtrans("The beam of light passes harmlessly through %s.").c_str(),
 %%%%
 #is burned terribly!
@@ -412,17 +419,17 @@ gets badly buffeted.
 は酷く打ちのめされた。
 #simple_monster_message(mons, jtrans("gets badly buffeted.").c_str());
 %%%%
- partially resists.
+partially resists.
 
 は幾らか耐性を示した。
 #simple_monster_message(mons, " partially resists.");
 %%%%
- completely resists.
+completely resists.
 
 は完全に抵抗した。
 #(original > 0) ? " completely resists."
 %%%%
- appears unharmed.
+appears unharmed.
 
 には効いていないようだ。
 #: " appears unharmed.");
@@ -432,18 +439,19 @@ is unaffected.
 は影響を受けていない。
 #if (simple_monster_message(mons, jtrans("is unaffected.").c_str()))
 %%%%
- looks frightened!
+looks frightened!
  
 は脅えあがったようだ！
 #case ENCH_FEAR:      msg = " looks frightened!";      break;
 %%%%
- looks rather confused.
+looks rather confused.
 
 はひどく混乱したようだ。
 #case ENCH_CONFUSION: msg = " looks rather confused."; break;
 %%%%
- submits to your will.
+submits to your will.
 
+はあなたの意思に服従した
 #case ENCH_CHARM:     msg = " submits to your will.";  break;
 %%%%
 suddenly stops moving!
@@ -491,14 +499,17 @@ The orb of energy explodes!
 %%%%
 %s life force is offered up.
 
+%sの生命力は最大限抜き取られた
 #mprf("%s life force is offered up.", victim->name(DESC_ITS).c_str());
 %%%%
 %s %s healed.
 
+%s %s 癒された
 #mprf("%s %s healed.", ai->name(DESC_THE).c_str(),
 %%%%
 are
 
+は
 #ai->conj_verb("are").c_str());
 %%%%
 #noxious blast
@@ -802,10 +813,12 @@ You feel like a pig.
 %%%%
 You feel %sfirmly anchored in space.
 
+あなたは%sしっかり空間に停留していると感じた
 #mprf(jtrans("You feel %sfirmly anchored in space.").c_str(),
 %%%%
-more
+more_beam3598
 
+さらに
 #you.duration[DUR_DIMENSION_ANCHOR] ? jtrans("more").c_str() : "");
 %%%%
 Your teleport is interrupted.
@@ -820,6 +833,7 @@ Your magical defenses are stripped away!
 %%%%
 Software bugs nibble your toes!
 
+ソフトウェアのバグがあなたのつま先を齧った
 #mpr(jtrans("Software bugs nibble your toes!").c_str());
 %%%%
 #engulfs
@@ -878,8 +892,8 @@ You feel a little better.
 #
 #if (simple_monster_message(mon, jtrans("is unaffected.").c_str()))
 %%%%
-is dazzled.
-
+#is dazzled.
+#
 %%%%
 is dazzled.
 
@@ -919,8 +933,9 @@ The sticky flame splashes onto %s!
 #
 #if (name == "spray of energy")
 %%%%
- is bolstered by the flame.
+is bolstered by the flame.
 
+は火炎によって強化されている
 #simple_monster_message(mon, " is bolstered by the flame.");
 %%%%
 #chilling blast
@@ -1215,8 +1230,9 @@ is filled with an inner flame.
 は内なる炎に満たされている！
 #: jtrans("is filled with an inner flame.").c_str()))
 %%%%
- is firmly anchored in space.
+is firmly anchored in space.
 
+はしっかりと空間に固定されている
 #if (simple_monster_message(mon, " is firmly anchored in space."))
 %%%%
 %s magical defenses are stripped away.
@@ -1234,16 +1250,19 @@ is filled with an inner flame.
 #
 #else if (name.find("hellfire") != string::npos)
 %%%%
-The 
+The
 
+その
 #tmp  = "The " + item->name(DESC_PLAIN, false, false, false)
 %%%%
- explodes!
+explodes!
 
+は爆発した!
 #+ " explodes!";
 %%%%
 You hear an explosion!
 
+あなたは爆音を耳にした
 #hearMsg = "You hear an explosion!";
 %%%%
 #hellfire
@@ -1252,10 +1271,12 @@ You hear an explosion!
 %%%%
 The hellfire explodes!
 
+地獄の業火が爆発した！
 #seeMsg  = "The hellfire explodes!";
 %%%%
 You hear a strangely unpleasant explosion!
 
+妙に不快な爆発を聞いた！
 #hearMsg = "You hear a strangely unpleasant explosion!";
 %%%%
 #fireball
@@ -1266,7 +1287,7 @@ You hear a strangely unpleasant explosion!
 #
 #seeMsg  = "The fireball explodes!";
 %%%%
-You hear an explosion!
+#You hear an explosion!
 
 #hearMsg = "You hear an explosion!";
 %%%%
@@ -1276,10 +1297,12 @@ You hear an explosion!
 %%%%
 The orb of electricity explodes!
 
+電撃の爆裂球が爆発した！
 #seeMsg  = "The orb of electricity explodes!";
 %%%%
 You hear a clap of thunder!
 
+あなたは電気のパチパチする音を聞いた！
 #hearMsg = "You hear a clap of thunder!";
 %%%%
 #metal orb
@@ -1288,6 +1311,7 @@ You hear a clap of thunder!
 %%%%
 The orb explodes into a blast of deadly shrapnel!
 
+球体が爆発し、致命的な散弾が撒き散らされた！
 #seeMsg  = "The orb explodes into a blast of deadly shrapnel!";
 %%%%
 #You hear an explosion!
@@ -1308,6 +1332,7 @@ A raging storm of fire appears!
 %%%%
 You hear a raging storm!
 
+あなたは激しい嵐の音を耳にした!
 #hearMsg = "You hear a raging storm!";
 %%%%
 #great blast of cold
@@ -1316,10 +1341,12 @@ You hear a raging storm!
 %%%%
 The blast explodes into a great storm of ice!
 
+爆風が炸裂して凄まじい氷の嵐が巻き起こった！
 #seeMsg  = "The blast explodes into a great storm of ice!";
 %%%%
 You hear a raging storm!
 
+あなたは激しい嵐の音を耳にした!
 #hearMsg = "You hear a raging storm!";
 %%%%
 #ice storm
@@ -1336,6 +1363,7 @@ You hear a raging storm!
 %%%%
 You hear a loud \'bang\'!
 
+あなたは「バン！」という大きな音を聞いた！
 #hearMsg    = "You hear a loud \'bang\'!";
 %%%%
 #foul vapour
@@ -1344,9 +1372,10 @@ You hear a loud \'bang\'!
 %%%%
 The ball explodes into a vile cloud!
 
+悪臭雲の光線が爆発した！
 #seeMsg     = "The ball explodes into a vile cloud!";
 %%%%
-You hear a loud \'bang\'!
+#You hear a loud \'bang\'!
 
 #hearMsg    = "You hear a loud \'bang\'!";
 %%%%
@@ -1360,10 +1389,12 @@ You hear a loud \'bang\'!
 %%%%
 The silver bolt explodes into a blast of light!
 
+銀の矢は光を放ち爆発した！
 #seeMsg  = "The silver bolt explodes into a blast of light!";
 %%%%
 The dungeon gets brighter for a moment.
 
+一瞬迷宮内に激しい閃光が発生した
 #hearMsg = "The dungeon gets brighter for a moment.";
 %%%%
 #ghostly fireball
@@ -1372,10 +1403,12 @@ The dungeon gets brighter for a moment.
 %%%%
 The ghostly flame explodes!
 
+鬼火が爆発した!
 #seeMsg  = "The ghostly flame explodes!";
 %%%%
 You hear the shriek of haunting fire!
 
+あなたは鬼火の悲鳴を聞いた!
 #hearMsg = "You hear the shriek of haunting fire!";
 %%%%
 The beam explodes into a cloud of software bugs!

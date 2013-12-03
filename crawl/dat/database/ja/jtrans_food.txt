@@ -39,18 +39,22 @@ butcher
 %%%%
 corpse
 
+死体
 #noun    = "corpse";
 %%%%
 it
 
+それ
 #pronoun = jtrans("it");
 %%%%
 corpses
 
+死体達
 #noun    = "corpses";
 %%%%
 them
 
+それら
 #pronoun = jtrans("them");
 %%%%
 You might want to also %s the %s in your pack.
@@ -359,9 +363,11 @@ You refuse to eat these food items.
 %%%%
 Drink blood from
 
+から血を飲む
 %%%%
 Eat
 
+食事
 #(you.species == SP_VAMPIRE ? jtrans("Drink blood from").c_str() : jtrans("Eat").c_str());
 %%%%
 #%s devoid of blood.
@@ -384,6 +390,7 @@ Error: Can eat %s after all?
 %%%%
 You refuse to eat these food items.
 
+あなたはこの食品を食べることを拒否する
 #mpr(jtrans("You refuse to eat these food items."));
 %%%%
 %s %s%s? (ye/n/q/i?)
@@ -397,6 +404,7 @@ You refuse to eat these food items.
 %%%%
 Eat
 
+食事
 #(you.species == SP_VAMPIRE ? jtrans("Drink blood from").c_str() : jtrans("Eat").c_str()));
 %%%%
 #%s %s%s.
@@ -821,6 +829,7 @@ You have starved to death.
 %%%%
 None
 
+無し
 #return "None";
 %%%%
 want to keep %d chunks

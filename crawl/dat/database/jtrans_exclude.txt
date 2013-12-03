@@ -1,6 +1,7 @@
 %%%%
 Marking area around %s as unsafe for travelling.
 
+%sの周囲のマーキングされた領域は探索するのに安全でない
 #"Marking area around %s as unsafe for travelling.",
 %%%%
 #
@@ -29,14 +30,17 @@ exclusion not up-to-date: e (%d,%d) p (%d,%d)
 %%%%
 door
 
+扉
 #desc = "door";
 %%%%
 upstairs
 
+登り階段
 #desc = "upstairs";
 %%%%
 downstairs
 
+下り階段
 #desc = "downstairs";
 %%%%
  cloud
@@ -45,6 +49,7 @@ downstairs
 %%%%
 cloud
 
+雲
 #if (strstr(ex.desc.c_str(), "cloud"))
 %%%%
 #

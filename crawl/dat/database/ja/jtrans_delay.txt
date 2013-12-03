@@ -11,6 +11,7 @@ bottling blood from
 %%%%
 sacrificing
 
+生贄
 #: "sacrificing");
 %%%%
 You stop %s the corpse.
@@ -40,10 +41,12 @@ All blood oozes out of the corpse!
 %%%%
 Keep equipping yourself?
 
+装備を続けますか?
 #"Keep equipping yourself?" :
 %%%%
 Keep disrobing?
 
+装備の解除を続けますか?
 #"Keep disrobing?", false, 0, false))
 %%%%
 You stop %s your armour.
@@ -83,6 +86,7 @@ Your meditation is interrupted.
 %%%%
 Switch back to main weapon?
 
+メインの武器に戻しますか?
 #const char* prompt_str  = "Switch back to main weapon?";
 %%%%
 #handle_interrupted_swap() called while already swapping weapons
@@ -385,9 +389,9 @@ appears from thin air!
 はどこからともなく現れた！
 #text += jtrans("appears from thin air!");
 %%%%
- leaps into view!
+leaps into view!
 
-視界に跳び込んできた！
+は視界に跳び込んできた！
 #text += " leaps into view!";
 %%%%
 surfaces briefly.
@@ -409,7 +413,6 @@ surfaces.
 
 は地上に出てきた
 #text += jtrans("surfaces.");
-%%%%
 %%%%
 lava
 
@@ -440,7 +443,7 @@ emerges from the water.
 は水の中から現れた
 #text += jtrans("emerges from the water.");
 %%%%
- comes into view.
+comes into view.
 
 に遭遇した
 #text += (jtrans("Delay-1111"));
@@ -492,50 +495,65 @@ MPは完全に回復した
 %%%%
 force
 
+#中断のどこで使われているんだろう？
 %%%%
 keypress
 
+キー入力
 %%%%
 full_hp
 
+完全なHPの回復
 %%%%
 full_mp
 
+完全なMPの回復
 %%%%
 statue
 
+像
 #"force", "keypress", "full_hp", "full_mp", "statue",
 %%%%
 hungry
 
+空腹
 %%%%
 message
 
+メッセージ
 %%%%
 hp_loss
 
+HPの損傷
 %%%%
 burden
 
+重荷
 %%%%
 stat
 
+能力変化
 #"hungry", "message", "hp_loss", "burden", "stat",
 %%%%
 monster
 
+モンスター
 %%%%
 monster_attack
 
+モンスターの攻撃
 %%%%
 teleport
 
+テレポート
 %%%%
 hit_monster
 
+モンスターへの命中
 %%%%
 sense_monster
 
+モンスターの感知
 #"monster", "monster_attack", "teleport", "hit_monster", "sense_monster"
 %%%%
 #
@@ -544,42 +562,54 @@ sense_monster
 %%%%
 not_delayed
 
+遅延無し
 %%%%
 eat
 
+食事
 %%%%
 vampire_feed
 
+吸血鬼の食事
 %%%%
 armour_on
 
+鎧の装備
 %%%%
 armour_off
 
+鎧の取り外し
 #"not_delayed", "eat", "vampire_feed", "armour_on", "armour_off",
 %%%%
 jewellery_on
 
+装飾具の装備
 %%%%
 memorise
 
+暗記
 %%%%
 butcher
 
+解体
 %%%%
 bottle_blood
 
+血詰め
 %%%%
 weapon_swap
 
+武器の変更
 #"jewellery_on", "memorise", "butcher", "bottle_blood", "weapon_swap",
 %%%%
 ascending_stairs
 
+階層の上昇
 #"passwall", "drop_item", "multidrop", "ascending_stairs",
 %%%%
 descending_stairs
 
+階層の下降
 #"descending_stairs",
 %%%%
 recite
@@ -589,25 +619,32 @@ recite
 %%%%
 run
 
+疾走
 %%%%
 rest
 
+休息
 %%%%
 travel
 
+探索
 %%%%
 macro
 
+マクロ
 #"run", "rest", "travel", "macro",
 %%%%
 macro_process_key
 
+マクロのキー
 %%%%
 interruptible
 
+中断可能の
 %%%%
 uninterruptible
 
+無中断の
 #"macro_process_key", "interruptible", "uninterruptible"
 %%%%
 #armor_on
